@@ -62,6 +62,11 @@ hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
 metafile = true
 
 [[files]]
+file = "mods/globalpacks.pw.toml"
+hash = "83650ffbad97ff20b09e8db87784ef4aa6d8d6857f55abe24f6e09bf900cb9af"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "de9842a74bad2677a92f96157171b3108dcacb6a517d395006a1f158d5f46bbb"
 metafile = true
@@ -104,6 +109,11 @@ metafile = true
 [[files]]
 file = "mods/placeholder-api.pw.toml"
 hash = "2e2c1b47b513663871e71c89a699c66ac9fcc97633f007ed064ce4410f220f5a"
+metafile = true
+
+[[files]]
+file = "mods/resourcify.pw.toml"
+hash = "3fdebddfeba339be4b0685674bb980dff168f06ed3ee7077b7c4397efa3fe6c5"
 metafile = true
 
 [[files]]
