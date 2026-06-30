@@ -10,11 +10,21 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "21b2eac5073c43c4a34c1f3166d6d08bcc83a06748e45e0b25bdf052807b8ceb"
+hash = "d5bfd02bc7a5713e66215a1a12d1feca2aedcabae45fdb80f75586711197ec74"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
 hash = "490b0cec5f1734c3eed5ea5661e812015cc63f20aeb2272ffd01c25e13a60d63"
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "446c173c87b7908daee86b0dee89c6b628c77beb7a0bc091ff5252b7c0062080"
+metafile = true
+
+[[files]]
+file = "mods/configured.pw.toml"
+hash = "b5bdeb1177654fc3914be329612778078231cd3dc1b9157669c641c905146690"
+metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
@@ -27,8 +37,23 @@ hash = "9d37d326d9557fdd25c97d72ac1bbd1e74c524aa5dca437a91d0de645dff6545"
 metafile = true
 
 [[files]]
+file = "mods/forge-config-api-port.pw.toml"
+hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
+metafile = true
+
+[[files]]
 file = "mods/indium.pw.toml"
 hash = "5f694b0c16bfbf69b05cb28eef7a553ae548e623bc2cbccc98e01d950d3611db"
+metafile = true
+
+[[files]]
+file = "mods/modmenu.pw.toml"
+hash = "4a33f888af603e0859359f44b068854e4148d4fba35ee0818bb977171236a805"
+metafile = true
+
+[[files]]
+file = "mods/placeholder-api.pw.toml"
+hash = "2e2c1b47b513663871e71c89a699c66ac9fcc97633f007ed064ce4410f220f5a"
 metafile = true
 
 [[files]]
@@ -37,8 +62,13 @@ hash = "019188864eb8efd6803ba70ceb00d5a195dac16e332883a515cee1e4e15bb39f"
 metafile = true
 
 [[files]]
+file = "mods/yacl.pw.toml"
+hash = "af20070dd9497817a83162c17b181a0a44f7213ea302d059a81c5aed02d0c877"
+metafile = true
+
+[[files]]
 file = "reference/commit-message-guide.zh-CN.md"
-hash = "6407bda69877b99e8440476d45385b389de9109753d28d8a056006a52c1275f7"
+hash = "69ce40ce8de90759608ea230bc13b60e5d4b4949edf47631542c87b63017b9b2"
 
 [[files]]
 file = "reference/mod-candidates.zh-CN.md"
