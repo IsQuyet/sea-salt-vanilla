@@ -1,5 +1,6 @@
 dist/
 build/
+reference/
 *.mrpack
 *.zip
 *.jar
