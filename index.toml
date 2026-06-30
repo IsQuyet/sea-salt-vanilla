@@ -1,13 +1,35 @@
 hash-format = "sha256"
 
 [[files]]
-file = "CHANGELOG.md"
-hash = "af40150958f409c44af5325d464d9e68ebaf80fe9102ec5cd1c4b6f5cfc31416"
-
-[[files]]
 file = "README.md"
-hash = "f9783dc358a8e84a03cd4a8883d371bb4e73d60aae549a68832c12a3dbe703ce"
+hash = "256c35f030a0186ad205417cd6ba3e8af967ac6168aeedbae5affc88a299f503"
 
 [[files]]
-file = "docs/recovered-cursor-chat-minecraft-modpack-maintenance.md"
-hash = "7c3f0c6a26b3e56982536c0ae53137a94f7ebf814e544f6041312b5db6f5ddad"
+file = "README.zh-CN.md"
+hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
+
+[[files]]
+file = "docs/mod-matrix.md"
+hash = "21b2eac5073c43c4a34c1f3166d6d08bcc83a06748e45e0b25bdf052807b8ceb"
+
+[[files]]
+file = "docs/mod-matrix.zh-CN.md"
+hash = "490b0cec5f1734c3eed5ea5661e812015cc63f20aeb2272ffd01c25e13a60d63"
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "8b055e1997973e615d20848f0c7d0712ebad4aa24ab8a3ee6d9682ea53642309"
+metafile = true
+
+[[files]]
+file = "mods/fabric-language-kotlin.pw.toml"
+hash = "9d37d326d9557fdd25c97d72ac1bbd1e74c524aa5dca437a91d0de645dff6545"
+metafile = true
+
+[[files]]
+file = "reference/commit-message-guide.zh-CN.md"
+hash = "6407bda69877b99e8440476d45385b389de9109753d28d8a056006a52c1275f7"
+
+[[files]]
+file = "reference/mod-candidates.zh-CN.md"
+hash = "88319a423833832d4fb4c7a68d28fd30fa9f7715f396cf5f49734bffb7a9e2d7"
