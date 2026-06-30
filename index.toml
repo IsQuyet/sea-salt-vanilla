@@ -27,6 +27,16 @@ hash = "9d37d326d9557fdd25c97d72ac1bbd1e74c524aa5dca437a91d0de645dff6545"
 metafile = true
 
 [[files]]
+file = "mods/indium.pw.toml"
+hash = "5f694b0c16bfbf69b05cb28eef7a553ae548e623bc2cbccc98e01d950d3611db"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "019188864eb8efd6803ba70ceb00d5a195dac16e332883a515cee1e4e15bb39f"
+metafile = true
+
+[[files]]
 file = "reference/commit-message-guide.zh-CN.md"
 hash = "6407bda69877b99e8440476d45385b389de9109753d28d8a056006a52c1275f7"
 
