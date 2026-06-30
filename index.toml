@@ -1,0 +1,13 @@
+hash-format = "sha256"
+
+[[files]]
+file = "CHANGELOG.md"
+hash = "af40150958f409c44af5325d464d9e68ebaf80fe9102ec5cd1c4b6f5cfc31416"
+
+[[files]]
+file = "README.md"
+hash = "f9783dc358a8e84a03cd4a8883d371bb4e73d60aae549a68832c12a3dbe703ce"
+
+[[files]]
+file = "docs/recovered-cursor-chat-minecraft-modpack-maintenance.md"
+hash = "7c3f0c6a26b3e56982536c0ae53137a94f7ebf814e544f6041312b5db6f5ddad"

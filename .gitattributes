@@ -1,0 +1,2 @@
+*.afma filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text

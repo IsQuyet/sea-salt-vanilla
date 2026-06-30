@@ -1,0 +1,29 @@
+dist/
+build/
+*.mrpack
+*.zip
+*.jar
+*.disabled
+
+# Minecraft runtime files
+logs/
+crash-reports/
+saves/
+backups/
+.minecraft/
+screenshots/
+resourcepacks/*.zip
+shaderpacks/*.zip
+
+# Local player/client state
+options.txt
+optionsof.txt
+servers.dat
+usercache.json
+usernamecache.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
