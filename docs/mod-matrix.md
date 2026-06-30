@@ -214,16 +214,6 @@ These entries provide client-side map, minimap, and location presentation tools.
 | World map | Xaero's World Map |
 | Location title cards | Traveler's Titles |
 
-### Optional multiplayer features
-
-These entries add features that work best on compatible multiplayer servers.
-
-| Feature | 1.21.1 |
-| --- | --- |
-| Proximity voice chat | Simple Voice Chat |
-| Server resource-pack unpacking | Server Unpacker |
-| Multiplayer client enhancements | Noxesium |
-
 ### Creative tools and diagnostics
 
 These entries are useful for building, testing, profiling, or personal creative workflows.
@@ -233,3 +223,13 @@ These entries are useful for building, testing, profiling, or personal creative 
 | Performance profiler | Spark |
 | World editing | WorldEdit |
 | Creative builder tools | LotTweaks |
+
+### Optional multiplayer features
+
+These entries add features that work best on compatible multiplayer servers.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Proximity voice chat | Simple Voice Chat |
+| Server resource-pack unpacking | Server Unpacker |
+| Multiplayer client enhancements | Noxesium |
