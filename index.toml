@@ -17,6 +17,11 @@ file = "docs/mod-matrix.zh-CN.md"
 hash = "490b0cec5f1734c3eed5ea5661e812015cc63f20aeb2272ffd01c25e13a60d63"
 
 [[files]]
+file = "mods/asyncparticles.pw.toml"
+hash = "376d9f98e4b807355ade1e800fc8a455ae34dd0ee5913e04484c87e2a67ca717"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "446c173c87b7908daee86b0dee89c6b628c77beb7a0bc091ff5252b7c0062080"
 metafile = true
@@ -24,6 +29,21 @@ metafile = true
 [[files]]
 file = "mods/configured.pw.toml"
 hash = "b5bdeb1177654fc3914be329612778078231cd3dc1b9157669c641c905146690"
+metafile = true
+
+[[files]]
+file = "mods/cull-leaves.pw.toml"
+hash = "2f62ae4c00af9ef9bdb8cae7c66b4eac578612dc5bf35bc33ffa0b9f9db09759"
+metafile = true
+
+[[files]]
+file = "mods/ebe.pw.toml"
+hash = "b1f89407254a20cde6c60994a6315bd841b7f562669a1d29b436ec97463ff2ae"
+metafile = true
+
+[[files]]
+file = "mods/entityculling.pw.toml"
+hash = "f23a0d6d48cc27e24e8c4cacf9231fe146f82e9ff27c90b2fd96e1de4482e765"
 metafile = true
 
 [[files]]
@@ -42,8 +62,33 @@ hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
 metafile = true
 
 [[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "de9842a74bad2677a92f96157171b3108dcacb6a517d395006a1f158d5f46bbb"
+metafile = true
+
+[[files]]
 file = "mods/indium.pw.toml"
 hash = "5f694b0c16bfbf69b05cb28eef7a553ae548e623bc2cbccc98e01d950d3611db"
+metafile = true
+
+[[files]]
+file = "mods/krypton.pw.toml"
+hash = "c4e45594c8d1ab3dacc3b49142f16fb253178dd31d97cc917bf4a4d54f21e081"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "e10e639f71700a67d7f9b9d747e1685f838d703dadd432464b54e31b26f4742b"
+metafile = true
+
+[[files]]
+file = "mods/midnightlib.pw.toml"
+hash = "647807ff387e333abd790b47082a3cf6b7d41a2b27a4337ff65a611f096a7315"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "b9651d06e56ad51c1cdcf4b03b6a34328b7dc941f263ff92b189ee26a47cc224"
 metafile = true
 
 [[files]]
@@ -52,8 +97,18 @@ hash = "4a33f888af603e0859359f44b068854e4148d4fba35ee0818bb977171236a805"
 metafile = true
 
 [[files]]
+file = "mods/moreculling.pw.toml"
+hash = "adbf75e453327143c292fb63a4391e1f437744a5ee7397e9baa8c9f367b251c2"
+metafile = true
+
+[[files]]
 file = "mods/placeholder-api.pw.toml"
 hash = "2e2c1b47b513663871e71c89a699c66ac9fcc97633f007ed064ce4410f220f5a"
+metafile = true
+
+[[files]]
+file = "mods/scalablelux.pw.toml"
+hash = "ceb180c764fa9c7c12c7e750cc7b726171277cb2b68e47370888c4ff4679a4ed"
 metafile = true
 
 [[files]]
