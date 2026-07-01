@@ -198,9 +198,9 @@
 
 | 功能 | 1.21.1 | 整合包状态 |
 | --- | --- | --- |
-| 小地图 | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) | 计划加入 |
-| 世界地图 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | 计划加入 |
-| 位置标题卡 | [Traveler's Titles](https://modrinth.com/mod/travelers-titles) | 计划加入 |
+| 小地图 | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) | 已加入 |
+| 世界地图 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | 已加入 |
+| 位置标题卡 | [Traveler's Titles](https://modrinth.com/mod/travelers-titles) | 已加入 |
 
 ### 创造工具与诊断
 

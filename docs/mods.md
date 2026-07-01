@@ -198,9 +198,9 @@ These entries provide client-side map, minimap, and location presentation tools.
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Minimap | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) | Planned |
-| World map | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | Planned |
-| Location title cards | [Traveler's Titles](https://modrinth.com/mod/travelers-titles) | Planned |
+| Minimap | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) | Added |
+| World map | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | Added |
+| Location title cards | [Traveler's Titles](https://modrinth.com/mod/travelers-titles) | Added |
 
 ### Creative tools and diagnostics
 
