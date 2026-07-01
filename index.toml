@@ -10,15 +10,20 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "6762cd1b136a7b8be88dbf8e1d7663fc1665bb698cb55a5f41b9e95508945899"
+hash = "4f8675c097a41c581dd3d3155e636a9b3803bf95c75b7b9417c1f1cc74426bc3"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
-hash = "0c6a22b8539e21b14b0d155fd12e411e7a2f7b05fbd26b46d5549b019d45301b"
+hash = "d0892c452f9a3b2b24842ef371ea4d822d29f0976a0efd7461b8065a471ec0d2"
 
 [[files]]
 file = "mods/asyncparticles.pw.toml"
 hash = "376d9f98e4b807355ade1e800fc8a455ae34dd0ee5913e04484c87e2a67ca717"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "11cad75407ec196d35462b8bad0d7aeff6efe4810a91e756db6c0d7c4050af90"
 metafile = true
 
 [[files]]
@@ -34,6 +39,11 @@ metafile = true
 [[files]]
 file = "mods/cull-leaves.pw.toml"
 hash = "2f62ae4c00af9ef9bdb8cae7c66b4eac578612dc5bf35bc33ffa0b9f9db09759"
+metafile = true
+
+[[files]]
+file = "mods/default-options.pw.toml"
+hash = "6b7d8a2adb16b48dd3adf27f795c816eff5f5421f2b9fcb920e32363bc79b909"
 metafile = true
 
 [[files]]
@@ -133,3 +143,35 @@ hash = "69ce40ce8de90759608ea230bc13b60e5d4b4949edf47631542c87b63017b9b2"
 [[files]]
 file = "reference/mod-candidates.zh-CN.md"
 hash = "88319a423833832d4fb4c7a68d28fd30fa9f7715f396cf5f49734bffb7a9e2d7"
+
+[[files]]
+file = "reference/modrinth-collections/candidates.zh-CN.md"
+hash = "179c72720ccfdb9e9bef50fec0a924b6b9c0025c7889d53ef6a5205fcb727417"
+
+[[files]]
+file = "reference/modrinth-collections/collections-inventory.md"
+hash = "00528d857907b50fa0b57816d71647535831246f7422e539af361296fb125e0c"
+
+[[files]]
+file = "reference/modrinth-collections/collections.mods.json"
+hash = "3f0ea785a75c40322b23b29d3c72db1a194dbe780c51c0bf970c58cc5489e58e"
+
+[[files]]
+file = "reference/modrinth-collections/collections.raw.json"
+hash = "dc42ae6555f947d2a727917c06be676c4aae4c4a1aa57fd0b62345128071afeb"
+
+[[files]]
+file = "reference/modrinth-collections/fetch-mod-collections.ps1"
+hash = "1fb476d688469a314af78c2facf9572fb8db4628eaeeb628d94a16eada8653ba"
+
+[[files]]
+file = "reference/modrinth-collections/projects.mods.json"
+hash = "ac9235090789a9b82e5ea441d8ba877738d0dabb0c1178bdfbc2081013a397f1"
+
+[[files]]
+file = "reference/modrinth-collections/shortlist-review.md"
+hash = "785947eb45520f1f83782d402e793c979d2656ad1a13bbe5f1ba1bae5636bb8b"
+
+[[files]]
+file = "reference/modrinth-collections/user.json"
+hash = "ac8fe4d3e359b44a51a431a4f4dc765d86860293df3f63737cfd6420a52b1790"
