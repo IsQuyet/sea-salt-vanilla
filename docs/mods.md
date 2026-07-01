@@ -182,15 +182,15 @@ These entries surface gameplay information or remove small interface friction.
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Advanced HUD overlays | [MiniHUD](https://modrinth.com/mod/minihud) | Planned |
-| Inventory HUD overlay | [Inventory HUD+](https://modrinth.com/mod/inventoryhudplus) | Planned |
-| Mount HUD improvements | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) | Planned |
-| Statistics screen improvements | [Better Stats](https://modrinth.com/mod/better-stats) | Planned |
-| Armor detail display | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) | Planned |
-| Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) | Planned |
-| Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | Planned |
-| Resource pack warning suppression | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) | Planned |
-| Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) | Planned |
+| Advanced HUD overlays | [MiniHUD](https://modrinth.com/mod/minihud) | Added |
+| Inventory HUD overlay | [Inventory HUD+](https://modrinth.com/mod/inventoryhudplus) | Added |
+| Mount HUD improvements | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) | Added |
+| Statistics screen improvements | [Better Stats](https://modrinth.com/mod/better-stats) | Added |
+| Armor detail display | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) | Added |
+| Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) | Added |
+| Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | Added |
+| Resource pack warning suppression | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) | Added |
+| Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) | Added |
 
 ### Map and navigation
 

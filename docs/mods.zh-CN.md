@@ -182,15 +182,15 @@
 
 | 功能 | 1.21.1 | 整合包状态 |
 | --- | --- | --- |
-| 高级 HUD 浮层 | [MiniHUD](https://modrinth.com/mod/minihud) | 计划加入 |
-| 背包 HUD 浮层 | [Inventory HUD+](https://modrinth.com/mod/inventoryhudplus) | 计划加入 |
-| 骑乘 HUD 改进 | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) | 计划加入 |
-| 统计界面改进 | [Better Stats](https://modrinth.com/mod/better-stats) | 计划加入 |
-| 盔甲细节显示 | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) | 计划加入 |
-| 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) | 计划加入 |
-| 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | 计划加入 |
-| 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) | 计划加入 |
-| 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) | 计划加入 |
+| 高级 HUD 浮层 | [MiniHUD](https://modrinth.com/mod/minihud) | 已加入 |
+| 背包 HUD 浮层 | [Inventory HUD+](https://modrinth.com/mod/inventoryhudplus) | 已加入 |
+| 骑乘 HUD 改进 | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) | 已加入 |
+| 统计界面改进 | [Better Stats](https://modrinth.com/mod/better-stats) | 已加入 |
+| 盔甲细节显示 | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) | 已加入 |
+| 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) | 已加入 |
+| 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | 已加入 |
+| 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) | 已加入 |
+| 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) | 已加入 |
 
 ### 地图与导航
 
