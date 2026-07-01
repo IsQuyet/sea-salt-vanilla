@@ -21,21 +21,21 @@
 
 这些条目改善帧率稳定性、内存使用、光照、网络和渲染开销。
 
-| 功能 | 1.21.1 | 整合包状态 |
-| --- | --- | --- |
-| 渲染引擎优化 | [Sodium](https://modrinth.com/mod/sodium) | 已加入 |
-| 游戏逻辑优化 | [Lithium](https://modrinth.com/mod/lithium) | 已加入 |
-| 启动与内存修复 | [ModernFix](https://modrinth.com/mod/modernfix) | 已加入 |
-| 即时渲染优化 | [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) | 已加入 |
-| 网络栈优化 | [Krypton](https://modrinth.com/mod/krypton) | 已加入 |
-| 光照引擎优化 | [ScalableLux](https://modrinth.com/mod/scalablelux) | 已加入 |
-| 实体渲染剔除 | [Entity Culling](https://modrinth.com/mod/entityculling) | 已加入 |
-| 通用渲染剔除 | [More Culling](https://modrinth.com/mod/moreculling) | 已加入 |
-| 方块实体渲染优化 | [Enhanced Block Entities](https://modrinth.com/mod/ebe) | 已加入 |
-| 树叶渲染剔除 | [Cull Leaves](https://modrinth.com/mod/cull-leaves) | 已加入 |
-| 粒子性能优化 | [AsyncParticles](https://modrinth.com/mod/asyncparticles) | 已加入 |
-| 内存分配优化 | [FerriteCore](https://modrinth.com/mod/ferrite-core) | 已加入 |
-| 客户端性能微调 | [BadOptimizations](https://modrinth.com/mod/badoptimizations) | 已加入 |
+| 功能 | 1.21.1 | 可选替代 | 整合包状态 |
+| --- | --- | --- | --- |
+| 渲染引擎优化 | [Sodium](https://modrinth.com/mod/sodium) |  | 已加入 |
+| 游戏逻辑优化 | [Lithium](https://modrinth.com/mod/lithium) |  | 已加入 |
+| 启动与内存修复 | [ModernFix](https://modrinth.com/mod/modernfix) |  | 已加入 |
+| 即时渲染优化 | [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) |  | 已加入 |
+| 网络栈优化 | [Krypton](https://modrinth.com/mod/krypton) |  | 已加入 |
+| 光照引擎优化 | [ScalableLux](https://modrinth.com/mod/scalablelux) |  | 已加入 |
+| 实体渲染剔除 | [Entity Culling](https://modrinth.com/mod/entityculling) |  | 已加入 |
+| 通用渲染剔除 | [More Culling](https://modrinth.com/mod/moreculling) |  | 已加入 |
+| 方块实体渲染优化 | [Enhanced Block Entities](https://modrinth.com/mod/ebe) | [Better Block Entities](https://modrinth.com/mod/better-block-entities) | 已加入 |
+| 树叶渲染剔除 | [Cull Leaves](https://modrinth.com/mod/cull-leaves) |  | 已加入 |
+| 粒子性能优化 | [AsyncParticles](https://modrinth.com/mod/asyncparticles) |  | 已加入 |
+| 内存分配优化 | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  | 已加入 |
+| 客户端性能微调 | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  | 已加入 |
 
 ### 包管理与默认设置
 
@@ -89,12 +89,16 @@
 | 氛围粒子 | [Visuality](https://modrinth.com/mod/visuality) | 已加入 |
 | 洞穴尘埃氛围 | [Cave Dust](https://modrinth.com/mod/cave-dust) | 已加入 |
 | 船上物品显示 | [Boat Item View](https://modrinth.com/mod/boat-item-view) | 已加入 |
+| 连接方块轮廓 | [Seamless](https://modrinth.com/mod/seamless) | 已加入 |
 | 细节视觉效果 | [Subtle Effects](https://modrinth.com/mod/subtle-effects) | 已加入 |
 | 额外粒子效果 | [Particle Effects](https://modrinth.com/mod/particle-effects) | 已加入 |
+| 背包粒子效果 | [Inventory Particles](https://modrinth.com/mod/inventory-particles) | 已加入 |
+| 氛围视觉效果 | [Mas Effects](https://modrinth.com/mod/mas-effects) | 已加入 |
 | 粒子交互 | [EG Particle Interactions](https://modrinth.com/mod/particle-interactions) | 已加入 |
 | 气泡破裂效果 | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) | 已加入 |
 | 落叶粒子 | [Falling Leaves](https://modrinth.com/mod/fallingleaves) | 已加入 |
 | 爆炸效果 | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) | 已加入 |
+| 弹射物视觉风格 | [2D Projectiles](https://modrinth.com/mod/twod_projectiles) | 已加入 |
 | 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) | 已加入 |
 | 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception) | 已加入 |
 
@@ -117,6 +121,7 @@
 | 玩家动画 | [Not Enough Animations](https://modrinth.com/mod/not-enough-animations) | 已加入 |
 | 进食动画 | [Eating Animation](https://modrinth.com/mod/eating-animation) | 已加入 |
 | 物品掉落物理 | [ItemPhysic Lite](https://modrinth.com/mod/itemphysic-lite) | 已加入 |
+| 下落方块动画 | [Vectorientation](https://modrinth.com/mod/vectorientation) | 已加入 |
 | 方块放置动画 | [A Good Place](https://modrinth.com/mod/a-good-place) | 已加入 |
 | 第一人称物品动画 | [Hold My Items](https://modrinth.com/mod/hold-my-items) | 已加入 |
 | 手持物品显示 | [YDM's Weapon Master](https://modrinth.com/mod/weaponmaster) | 已加入 |
@@ -173,6 +178,7 @@
 | --- | --- | --- | --- |
 | 物品与配方浏览 | [Roughly Enough Items](https://modrinth.com/mod/rei) |  | 已加入 |
 | 方块与实体信息浮层 | [Jade](https://modrinth.com/mod/jade) |  | 已加入 |
+| 额外物品与方块提示 | [Peek](https://modrinth.com/mod/peek) |  | 已加入 |
 | 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |  | 已加入 |
 | 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  | 已加入 |
 | 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  | 已加入 |
@@ -180,6 +186,7 @@
 | 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove) |  | 已加入 |
 | 背包移动兼容 | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  | 已加入 |
 | 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  | 已加入 |
+| 可视化键位总览 | [VisualKeys](https://modrinth.com/mod/visualkeys) |  | 已加入 |
 | 输入法冲突处理 | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | 已加入 |
 | 中文字符搜索支持 | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  | 已加入 |
 | 缩放控制 | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | 已加入 |
@@ -205,26 +212,30 @@
 | 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | 已加入 |
 | 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) | 已加入 |
 | 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) | 已加入 |
+| 截图查看器 | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) | 已加入 |
+| 截图用界面隐藏 | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) | 已加入 |
 
 ### 地图与导航
 
 这些条目提供客户端小地图、世界地图和位置呈现工具。
 
-| 功能 | 1.21.1 | 整合包状态 |
-| --- | --- | --- |
-| 小地图 | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) | 已加入 |
-| 世界地图 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | 已加入 |
-| 位置标题卡 | [Traveler's Titles](https://modrinth.com/mod/travelers-titles) | 已加入 |
+| 功能 | 1.21.1 | 可选替代 | 整合包状态 |
+| --- | --- | --- | --- |
+| 小地图 | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) |  | 已加入 |
+| 世界地图 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) |  | 已加入 |
+| 位置标题卡 | [Traveler's Titles](https://modrinth.com/mod/travelers-titles) | [BiomeInfo](https://modrinth.com/mod/biomeinfo) | 已加入 |
 
 ### 创造工具与诊断
 
 这些条目用于建造、测试、性能分析或个人创造工作流。
 
-| 功能 | 1.21.1 | 整合包状态 |
-| --- | --- | --- |
-| 性能分析 | [Spark](https://modrinth.com/mod/spark) | 已加入 |
-| 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) | 已加入 |
-| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | 已加入 |
+| 功能 | 1.21.1 | 可选替代 | 整合包状态 |
+| --- | --- | --- | --- |
+| 性能分析 | [Spark](https://modrinth.com/mod/spark) |  | 已加入 |
+| 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) |  | 已加入 |
+| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  | 已加入 |
+| 游戏内笔记 | [Vanilla Notebook](https://modrinth.com/mod/notebook) |  | 已加入 |
+| 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) | 暂不加入 |
 
 ### 可选多人功能
 
@@ -235,3 +246,4 @@
 | 近距离语音聊天 | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) | 暂不加入 |
 | 服务器资源包解包 | [Server Unpacker](https://modrinth.com/mod/server-unpacker) | 暂不加入 |
 | 多人服务器客户端增强 | [Noxesium](https://modrinth.com/mod/noxesium) | 暂不加入 |
+| 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) | 暂不加入 |

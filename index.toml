@@ -46,6 +46,11 @@ hash = "a7a6a8396dd3842912b9483e6dfd0f39d165700e7eab470d4eab2244fc5d624e"
 metafile = true
 
 [[files]]
+file = "mods/better-f1-reborn.pw.toml"
+hash = "5c3eaf036c6725c2a0be6507f73217571eda0d71744796e104799ca83ab60616"
+metafile = true
+
+[[files]]
 file = "mods/better-mount-hud.pw.toml"
 hash = "7c45c50ac2431db0dd3697e16a180a55ac0f2a753540b0bd310eb593b8b0bd0a"
 metafile = true
@@ -286,6 +291,11 @@ hash = "8e54aa67b2e446ba49f4c0a877a87b9e22a72f61e30e5d9b650f97b5c0f335a4"
 metafile = true
 
 [[files]]
+file = "mods/inventory-particles.pw.toml"
+hash = "d7fbfa2729afc76585d90c443b45db7ae15c18bfdf7b9cec367bf29f5633ca3c"
+metafile = true
+
+[[files]]
 file = "mods/inventory-profiles-next.pw.toml"
 hash = "e7820822a31d29cf5227b19046d7e84e73b7ae3e689c96e5fbdf1f8073b6f9ad"
 metafile = true
@@ -366,6 +376,11 @@ hash = "4842a349ba8e18407a4e32ef184ad1d2a437ff8e5b0c158391b6225216b4b8ce"
 metafile = true
 
 [[files]]
+file = "mods/mas-effects.pw.toml"
+hash = "2ff2eda74b3dd162770b5e8304e8dc1d7cc1c89aa05968716be3ff3ba712fe69"
+metafile = true
+
+[[files]]
 file = "mods/melody.pw.toml"
 hash = "114f57ad1875c16cd7d9b9cf850025f40e1b008f0865f3e5783da8cfc128b291"
 metafile = true
@@ -411,6 +426,11 @@ hash = "adbf75e453327143c292fb63a4391e1f437744a5ee7397e9baa8c9f367b251c2"
 metafile = true
 
 [[files]]
+file = "mods/mossylib.pw.toml"
+hash = "1b477791964db6c8dd55bfbcad36d170e7921ea3c7e2fe787632d6592d2b46e7"
+metafile = true
+
+[[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "7fc969e77edc3b0b9946b42070fd858349a74555f0cf9648907241af8a3a2d25"
 metafile = true
@@ -436,6 +456,11 @@ hash = "de8e4e5701944ed7089011bce857333fde54e7d19deeb8364deab3072265d609"
 metafile = true
 
 [[files]]
+file = "mods/notebook.pw.toml"
+hash = "8f38c8bdb232e601ecebaf7b2da4225025dd14557cca5d42fc3b782f209b5c23"
+metafile = true
+
+[[files]]
 file = "mods/optigui.pw.toml"
 hash = "6f45c3f2ec9005b18846088784d291f4dabcce7b569031fb44855845a33aa8f7"
 metafile = true
@@ -453,6 +478,11 @@ metafile = true
 [[files]]
 file = "mods/particle-interactions.pw.toml"
 hash = "6a085c05e1c4f0712bf68d60cd3ed4d658e87e6fd186caaf380015ece32eaf57"
+metafile = true
+
+[[files]]
+file = "mods/peek.pw.toml"
+hash = "9a231802010f57e98e78a7bc980511ee19f0b0fa66f43236854ee0cf18a3ce09"
 metafile = true
 
 [[files]]
@@ -481,6 +511,11 @@ hash = "d31e198b99f302fd2bcb19e48675a96b7fbe4aa009988f754b0d5b3657ee22bc"
 metafile = true
 
 [[files]]
+file = "mods/reacharound.pw.toml"
+hash = "f5aa8a4410d84e6ab5dd3797e2b900b26f669bd801ace7aab19ed987c4a05001"
+metafile = true
+
+[[files]]
 file = "mods/rei.pw.toml"
 hash = "d22546ad55b555931eb527f163b3564e00c12c7dc8101378b87447dfcc8e0652"
 metafile = true
@@ -493,6 +528,16 @@ metafile = true
 [[files]]
 file = "mods/scalablelux.pw.toml"
 hash = "ceb180c764fa9c7c12c7e750cc7b726171277cb2b68e47370888c4ff4679a4ed"
+metafile = true
+
+[[files]]
+file = "mods/screenshot-viewer.pw.toml"
+hash = "ba23c74355d05314b666f63512ebc1b91abc4926a48b00c137bd5e2be6868e82"
+metafile = true
+
+[[files]]
+file = "mods/seamless.pw.toml"
+hash = "c42f17d185f150c9962bed6b9dc0ee6e119ec3b700b7d1a8315e9a9e2481eae4"
 metafile = true
 
 [[files]]
@@ -566,8 +611,23 @@ hash = "ffbe86f7b3e1108d5abae3d1a53a7d1ea62dc5a4ec83ed440781ddec228139a3"
 metafile = true
 
 [[files]]
+file = "mods/twod_projectiles.pw.toml"
+hash = "329ef4d3f411f88dd49e41f7d3ba5061ae1df00c0242213f252be502d93fe08b"
+metafile = true
+
+[[files]]
+file = "mods/vectorientation.pw.toml"
+hash = "a60d22e7afb11217b377cb07e4f4c2f90753379c2edf0f05e7ae535eae677a5e"
+metafile = true
+
+[[files]]
 file = "mods/visuality.pw.toml"
 hash = "39426bfeeab22ea17f94fd3904dd9b78f9a3c9b4ddcb732b734ddbfd0e3568af"
+metafile = true
+
+[[files]]
+file = "mods/visualkeys.pw.toml"
+hash = "cb57f7d1a7fd0420fa05c7396a2aeacb1bd82f79719f2d954bb54b541d4a118d"
 metafile = true
 
 [[files]]

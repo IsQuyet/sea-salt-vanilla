@@ -190,6 +190,18 @@
           }
         },
         {
+          "id": "connected-block-outlines",
+          "feature": {
+            "en": "Connected block outlines",
+            "zh": "连接方块轮廓"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "seamless"
+            }
+          }
+        },
+        {
           "id": "subtle-visual-effects",
           "feature": {
             "en": "Subtle visual effects",
@@ -210,6 +222,30 @@
           "versions": {
             "1.21.1": {
               "selected": "particle-effects"
+            }
+          }
+        },
+        {
+          "id": "inventory-particle-effects",
+          "feature": {
+            "en": "Inventory particle effects",
+            "zh": "背包粒子效果"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "inventory-particles"
+            }
+          }
+        },
+        {
+          "id": "ambient-visual-effects",
+          "feature": {
+            "en": "Ambient visual effects",
+            "zh": "氛围视觉效果"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "mas-effects"
             }
           }
         },
@@ -258,6 +294,18 @@
           "versions": {
             "1.21.1": {
               "selected": "explosive-enhancement"
+            }
+          }
+        },
+        {
+          "id": "projectile-visual-style",
+          "feature": {
+            "en": "Projectile visual style",
+            "zh": "弹射物视觉风格"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "twod_projectiles"
             }
           }
         },
@@ -380,6 +428,18 @@
           "versions": {
             "1.21.1": {
               "selected": "itemphysic-lite"
+            }
+          }
+        },
+        {
+          "id": "falling-block-animations",
+          "feature": {
+            "en": "Falling block animations",
+            "zh": "下落方块动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "vectorientation"
             }
           }
         },

@@ -161,7 +161,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "ebe"
+              "selected": "ebe",
+              "alternatives": [
+                "better-block-entities"
+              ]
             }
           }
         },

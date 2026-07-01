@@ -1,0 +1,13 @@
+name = "Peek"
+filename = "peek-fabric-1.21.1-1.4.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/TnOXNf5e/versions/kjw4LuVa/peek-fabric-1.21.1-1.4.11.jar"
+hash-format = "sha512"
+hash = "156b90d3e4f84ba3d58fb46e7408cba9dea593e37692baecb8f857f0de2c1a01f97f58e00f0aa8212ab4d1e3613f81abe2a1454213310c7c555e10726f901629"
+
+[update]
+[update.modrinth]
+mod-id = "TnOXNf5e"
+version = "kjw4LuVa"

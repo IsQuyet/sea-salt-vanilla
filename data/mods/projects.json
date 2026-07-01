@@ -553,5 +553,85 @@
     "name": "InvMoveCompats",
     "source": "modrinth",
     "slug": "invmovecompats"
+  },
+  "seamless": {
+    "name": "Seamless",
+    "source": "modrinth",
+    "slug": "seamless"
+  },
+  "inventory-particles": {
+    "name": "Inventory Particles",
+    "source": "modrinth",
+    "slug": "inventory-particles"
+  },
+  "vectorientation": {
+    "name": "Vectorientation",
+    "source": "modrinth",
+    "slug": "vectorientation"
+  },
+  "twod_projectiles": {
+    "name": "2D Projectiles",
+    "source": "modrinth",
+    "slug": "twod_projectiles"
+  },
+  "mas-effects": {
+    "name": "Mas Effects",
+    "source": "modrinth",
+    "slug": "mas-effects"
+  },
+  "visualkeys": {
+    "name": "VisualKeys",
+    "source": "modrinth",
+    "slug": "visualkeys"
+  },
+  "notebook": {
+    "name": "Vanilla Notebook",
+    "source": "modrinth",
+    "slug": "notebook"
+  },
+  "screenshot-viewer": {
+    "name": "Screenshot Viewer",
+    "source": "modrinth",
+    "slug": "screenshot-viewer"
+  },
+  "better-f1-reborn": {
+    "name": "Better F1 Reborn",
+    "source": "modrinth",
+    "slug": "better-f1-reborn"
+  },
+  "peek": {
+    "name": "Peek",
+    "source": "modrinth",
+    "slug": "peek"
+  },
+  "reacharound": {
+    "name": "Reacharound",
+    "source": "modrinth",
+    "slug": "reacharound"
+  },
+  "biomeinfo": {
+    "name": "BiomeInfo",
+    "source": "modrinth",
+    "slug": "biomeinfo"
+  },
+  "wearthat": {
+    "name": "WearThat",
+    "source": "modrinth",
+    "slug": "wearthat"
+  },
+  "better-block-entities": {
+    "name": "Better Block Entities",
+    "source": "modrinth",
+    "slug": "better-block-entities"
+  },
+  "orthocamera": {
+    "name": "OrthoCamera",
+    "source": "modrinth",
+    "slug": "orthocamera"
+  },
+  "pixelshot": {
+    "name": "Pixelshot",
+    "source": "modrinth",
+    "slug": "pixelshot"
   }
 }

@@ -45,6 +45,18 @@
           }
         },
         {
+          "id": "extra-item-and-block-hints",
+          "feature": {
+            "en": "Extra item and block hints",
+            "zh": "额外物品与方块提示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "peek"
+            }
+          }
+        },
+        {
           "id": "food-value-display",
           "feature": {
             "en": "Food value display",
@@ -125,6 +137,18 @@
           "versions": {
             "1.21.1": {
               "selected": "controlling"
+            }
+          }
+        },
+        {
+          "id": "visual-keybinding-overview",
+          "feature": {
+            "en": "Visual keybinding overview",
+            "zh": "可视化键位总览"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "visualkeys"
             }
           }
         },
@@ -360,6 +384,30 @@
               "selected": "dcwa"
             }
           }
+        },
+        {
+          "id": "screenshot-viewer",
+          "feature": {
+            "en": "Screenshot viewer",
+            "zh": "截图查看器"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "screenshot-viewer"
+            }
+          }
+        },
+        {
+          "id": "hide-interface-for-screenshots",
+          "feature": {
+            "en": "Hide interface for screenshots",
+            "zh": "截图用界面隐藏"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "better-f1-reborn"
+            }
+          }
         }
       ]
     },
@@ -406,7 +454,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "travelers-titles"
+              "selected": "travelers-titles",
+              "alternatives": [
+                "biomeinfo"
+              ]
             }
           }
         }
@@ -458,6 +509,34 @@
               "selected": "lottweaks"
             }
           }
+        },
+        {
+          "id": "in-game-notes",
+          "feature": {
+            "en": "In-game notes",
+            "zh": "游戏内笔记"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "notebook"
+            }
+          }
+        },
+        {
+          "id": "orthographic-screenshot-tools",
+          "feature": {
+            "en": "Orthographic screenshot tools",
+            "zh": "正交截图工具"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "orthocamera",
+              "alternatives": [
+                "pixelshot"
+              ]
+            }
+          },
+          "policy": "skipped"
         }
       ]
     },
@@ -507,6 +586,19 @@
           "versions": {
             "1.21.1": {
               "selected": "noxesium"
+            }
+          },
+          "policy": "skipped"
+        },
+        {
+          "id": "client-side-wearable-rendering",
+          "feature": {
+            "en": "Client-side wearable rendering",
+            "zh": "客户端穿戴渲染"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "wearthat"
             }
           },
           "policy": "skipped"
