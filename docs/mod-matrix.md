@@ -82,17 +82,17 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Distant terrain renderer | Distant Horizons | Planned |
-| Complementary shader visual extensions | Euphoria Patches | Planned |
-| Ambient particles | Visuality | Planned |
-| Subtle visual effects | Subtle Effects | Planned |
-| Additional particle effects | Particle Effects | Planned |
-| Particle interactions | EG Particle Interactions | Planned |
-| Bubble pop effects | Make Bubbles Pop | Planned |
-| Falling leaf particles | Falling Leaves | Planned |
-| Explosion effects | Explosive Enhancement | Planned |
+| Distant terrain renderer | Distant Horizons | Added |
+| Complementary shader visual extensions | Euphoria Patches | Added |
+| Ambient particles | Visuality | Added |
+| Subtle visual effects | Subtle Effects | Added |
+| Additional particle effects | Particle Effects | Added |
+| Particle interactions | EG Particle Interactions | Added |
+| Bubble pop effects | Make Bubbles Pop | Added |
+| Falling leaf particles | Falling Leaves | Added |
+| Explosion effects | Explosive Enhancement | Added |
 | Mining visual feedback | Mining Quakes | Planned |
-| Immersive visual effects | Perception | Planned |
+| Immersive visual effects | Perception | Added |
 
 ### Audio
 

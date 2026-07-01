@@ -10,11 +10,11 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "9d532f88c00ffe069f9ceab2ba1a664db87fc016d4aaf29dae70a53e5593d86b"
+hash = "430faa477f01a5c197367393b07aee1193620b2c101da73192b31e6c326605b3"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
-hash = "1ccf3b75dd7cc3f824493d8624ff2ec5dce0057e36574d67807fc4ad2f8efe0d"
+hash = "b17ee47a6b2b52c7c7a7ea99d5022921ddc99326ac3b38b9d69e0d2f7891a22f"
 
 [[files]]
 file = "mods/asyncparticles.pw.toml"
@@ -57,6 +57,11 @@ hash = "6b7d8a2adb16b48dd3adf27f795c816eff5f5421f2b9fcb920e32363bc79b909"
 metafile = true
 
 [[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "937a5af04455f2afb7bac9184749d36b0e340ab5c4e70fc21ae8ec74de043c08"
+metafile = true
+
+[[files]]
 file = "mods/ebe.pw.toml"
 hash = "b1f89407254a20cde6c60994a6315bd841b7f562669a1d29b436ec97463ff2ae"
 metafile = true
@@ -77,6 +82,16 @@ hash = "8c091c9a660b84f152e47c0d835d8865463ad79636264a68ca6d312399b46538"
 metafile = true
 
 [[files]]
+file = "mods/euphoria-patches.pw.toml"
+hash = "93c14684652eae26a5015d4b2663403d5384bcd63e0b196ec042b56cea725a86"
+metafile = true
+
+[[files]]
+file = "mods/explosive-enhancement.pw.toml"
+hash = "b9971aa45df874975e051c11291b040e0f325e3d36c4ee6e93f252fdf7c0ffc3"
+metafile = true
+
+[[files]]
 file = "mods/fabric-api.pw.toml"
 hash = "8b055e1997973e615d20848f0c7d0712ebad4aa24ab8a3ee6d9682ea53642309"
 metafile = true
@@ -87,8 +102,18 @@ hash = "9d37d326d9557fdd25c97d72ac1bbd1e74c524aa5dca437a91d0de645dff6545"
 metafile = true
 
 [[files]]
+file = "mods/fallingleaves.pw.toml"
+hash = "ad4e8689c50fedd770fb5cf28561edbd41f6b483bcfd6e3dd3d0c337789c0110"
+metafile = true
+
+[[files]]
 file = "mods/forge-config-api-port.pw.toml"
 hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
+metafile = true
+
+[[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "dce0df1d0cb1a7f05811ba502f3a3de0458e0c5154f1b72ae493a339f3866083"
 metafile = true
 
 [[files]]
@@ -117,6 +142,11 @@ hash = "e10e639f71700a67d7f9b9d747e1685f838d703dadd432464b54e31b26f4742b"
 metafile = true
 
 [[files]]
+file = "mods/make_bubbles_pop.pw.toml"
+hash = "f531a8ee70e9d78ee62a84e3fd18088070dcf8f2cee2384a8aabed16dbfafe6c"
+metafile = true
+
+[[files]]
 file = "mods/midnightlib.pw.toml"
 hash = "647807ff387e333abd790b47082a3cf6b7d41a2b27a4337ff65a611f096a7315"
 metafile = true
@@ -139,6 +169,21 @@ metafile = true
 [[files]]
 file = "mods/optigui.pw.toml"
 hash = "6f45c3f2ec9005b18846088784d291f4dabcce7b569031fb44855845a33aa8f7"
+metafile = true
+
+[[files]]
+file = "mods/particle-effects.pw.toml"
+hash = "1201266618a477c1e417ef6b50ca3b30cf0e5bd164bb093a333168656ba6a7b0"
+metafile = true
+
+[[files]]
+file = "mods/particle-interactions.pw.toml"
+hash = "6a085c05e1c4f0712bf68d60cd3ed4d658e87e6fd186caaf380015ece32eaf57"
+metafile = true
+
+[[files]]
+file = "mods/perception.pw.toml"
+hash = "71afec2ba0e7735e05ca9489afa0e88a5f483b3d3de4704e98e691a58af14bfe"
 metafile = true
 
 [[files]]
@@ -169,6 +214,16 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "019188864eb8efd6803ba70ceb00d5a195dac16e332883a515cee1e4e15bb39f"
+metafile = true
+
+[[files]]
+file = "mods/subtle-effects.pw.toml"
+hash = "39b0c31561fba4814a23e0c398888652d5f610920b4e33681c194bc1668f9e75"
+metafile = true
+
+[[files]]
+file = "mods/visuality.pw.toml"
+hash = "39426bfeeab22ea17f94fd3904dd9b78f9a3c9b4ddcb732b734ddbfd0e3568af"
 metafile = true
 
 [[files]]

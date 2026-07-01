@@ -93,17 +93,17 @@
 
 | 功能                 | 1.21.1                   | 整合包状态 |
 | ------------------ | ------------------------ | ----- |
-| 远景地形渲染             | Distant Horizons         | 计划加入  |
-| Complementary 光影视觉扩展 | Euphoria Patches         | 计划加入  |
-| 氛围粒子               | Visuality                | 计划加入  |
-| 细节视觉效果             | Subtle Effects           | 计划加入  |
-| 额外粒子效果             | Particle Effects         | 计划加入  |
-| 粒子交互               | EG Particle Interactions | 计划加入  |
-| 气泡破裂效果             | Make Bubbles Pop         | 计划加入  |
-| 落叶粒子               | Falling Leaves           | 计划加入  |
-| 爆炸效果               | Explosive Enhancement    | 计划加入  |
+| 远景地形渲染             | Distant Horizons         | 已加入   |
+| Complementary 光影视觉扩展 | Euphoria Patches         | 已加入   |
+| 氛围粒子               | Visuality                | 已加入   |
+| 细节视觉效果             | Subtle Effects           | 已加入   |
+| 额外粒子效果             | Particle Effects         | 已加入   |
+| 粒子交互               | EG Particle Interactions | 已加入   |
+| 气泡破裂效果             | Make Bubbles Pop         | 已加入   |
+| 落叶粒子               | Falling Leaves           | 已加入   |
+| 爆炸效果               | Explosive Enhancement    | 已加入   |
 | 挖掘视觉反馈             | Mining Quakes            | 计划加入  |
-| 沉浸式视觉效果            | Perception               | 计划加入  |
+| 沉浸式视觉效果            | Perception               | 已加入   |
 
 
 ### 音效
