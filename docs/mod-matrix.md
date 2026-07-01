@@ -110,14 +110,14 @@ These entries improve first-person, third-person, item, block, and movement pres
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Player animations | Not Enough Animations | Planned |
-| Eating animations | Eating Animation | Planned |
-| Item drop physics | ItemPhysic Lite | Planned |
-| Block placement animations | A Good Place | Planned |
-| First-person item animations | Hold My Items | Planned |
-| Held item display | YDM's Weapon Master | Planned |
-| Camera motion | Camera Overhaul | Planned |
-| Elytra flight controls | Do a Barrel Roll | Planned |
+| Player animations | Not Enough Animations | Added |
+| Eating animations | Eating Animation | Added |
+| Item drop physics | ItemPhysic Lite | Added |
+| Block placement animations | A Good Place | Added |
+| First-person item animations | Hold My Items | Added |
+| Held item display | YDM's Weapon Master | Added |
+| Camera motion | Camera Overhaul | Added |
+| Elytra flight controls | Do a Barrel Roll | Added |
 
 ### Interface polish
 

@@ -125,14 +125,14 @@
 
 | 功能       | 1.21.1                | 整合包状态 |
 | -------- | --------------------- | ----- |
-| 玩家动画     | Not Enough Animations | 计划加入  |
-| 进食动画     | Eating Animation      | 计划加入  |
-| 物品掉落物理   | ItemPhysic Lite       | 计划加入  |
-| 方块放置动画   | A Good Place          | 计划加入  |
-| 第一人称物品动画 | Hold My Items         | 计划加入  |
-| 手持物品显示   | YDM's Weapon Master   | 计划加入  |
-| 镜头运动     | Camera Overhaul       | 计划加入  |
-| 鞘翅飞行控制   | Do a Barrel Roll      | 计划加入  |
+| 玩家动画     | Not Enough Animations | 已加入   |
+| 进食动画     | Eating Animation      | 已加入   |
+| 物品掉落物理   | ItemPhysic Lite       | 已加入   |
+| 方块放置动画   | A Good Place          | 已加入   |
+| 第一人称物品动画 | Hold My Items         | 已加入   |
+| 手持物品显示   | YDM's Weapon Master   | 已加入   |
+| 镜头运动     | Camera Overhaul       | 已加入   |
+| 鞘翅飞行控制   | Do a Barrel Roll      | 已加入   |
 
 
 ### 界面美化

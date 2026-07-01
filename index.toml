@@ -10,11 +10,16 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "194981f01e03c3ecd9cf97642226dfbf1f62309aeaddac66167388b49dc7ecab"
+hash = "86c0f4d8aff9bf57bab79de9d523a1f99adcc446eda8011816d5af60d14e82d7"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
-hash = "17d1aec4bc869bb20ce8c856f779c592c8bfc5d2aac047d5fda9be18ec946ce4"
+hash = "5f23e398d6030e9a6a6769bd9e19d0004af5e9062d5c7353467761bcdde46cc2"
+
+[[files]]
+file = "mods/a-good-place.pw.toml"
+hash = "21274e0ad1dba39400ca748b092c3782166000dc3906a14833c74ab6c02673ef"
+metafile = true
 
 [[files]]
 file = "mods/ambientsounds.pw.toml"
@@ -29,6 +34,16 @@ metafile = true
 [[files]]
 file = "mods/balm.pw.toml"
 hash = "11cad75407ec196d35462b8bad0d7aeff6efe4810a91e756db6c0d7c4050af90"
+metafile = true
+
+[[files]]
+file = "mods/cameraoverhaul.pw.toml"
+hash = "3f4cc7439e4c169e9094ea87f7b6e51e60727ef7d5c0fa385fa5ad9d8d2b939d"
+metafile = true
+
+[[files]]
+file = "mods/cicada.pw.toml"
+hash = "e5196147e561521c5a3ebaea601191e442d252cc8f0a7be8ba8db136f93c44fe"
 metafile = true
 
 [[files]]
@@ -69,6 +84,16 @@ metafile = true
 [[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "937a5af04455f2afb7bac9184749d36b0e340ab5c4e70fc21ae8ec74de043c08"
+metafile = true
+
+[[files]]
+file = "mods/do-a-barrel-roll.pw.toml"
+hash = "24d6c27315866a6dd672daef2f844b1b202aa173953824cb3586bed8667f3d5c"
+metafile = true
+
+[[files]]
+file = "mods/eating-animation.pw.toml"
+hash = "cc46728d8879ff5ab1e00f17bb63bacaf30ea2699bb692c0ca5e084572ae3e8e"
 metafile = true
 
 [[files]]
@@ -132,6 +157,11 @@ hash = "83650ffbad97ff20b09e8db87784ef4aa6d8d6857f55abe24f6e09bf900cb9af"
 metafile = true
 
 [[files]]
+file = "mods/hold-my-items.pw.toml"
+hash = "d82a9b3f9ba777fcfa871322fcc168745c28f9a8ea18032e4ed6f0a3d3d9c32a"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "de9842a74bad2677a92f96157171b3108dcacb6a517d395006a1f158d5f46bbb"
 metafile = true
@@ -139,6 +169,11 @@ metafile = true
 [[files]]
 file = "mods/iris.pw.toml"
 hash = "6ee94689dd67f0210e07feafac8140e8968bcbcd67defcfbdcd677cf78943900"
+metafile = true
+
+[[files]]
+file = "mods/itemphysic-lite.pw.toml"
+hash = "02bd5feee43bd8e0afc59393ec4cacc2599e4594f770748b99629a0d0db2a1e6"
 metafile = true
 
 [[files]]
@@ -179,6 +214,11 @@ metafile = true
 [[files]]
 file = "mods/mru.pw.toml"
 hash = "230b1f5cd118accacf41f268e122bd420420d9e5248d43513090804739a832f3"
+metafile = true
+
+[[files]]
+file = "mods/not-enough-animations.pw.toml"
+hash = "de8e4e5701944ed7089011bce857333fde54e7d19deeb8364deab3072265d609"
 metafile = true
 
 [[files]]
@@ -249,6 +289,11 @@ metafile = true
 [[files]]
 file = "mods/visuality.pw.toml"
 hash = "39426bfeeab22ea17f94fd3904dd9b78f9a3c9b4ddcb732b734ddbfd0e3568af"
+metafile = true
+
+[[files]]
+file = "mods/weaponmaster.pw.toml"
+hash = "0bc23d89ae54273bfcbf46b02b175fe796c94f08b12252001fca3f100b5e82ea"
 metafile = true
 
 [[files]]
