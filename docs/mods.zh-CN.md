@@ -237,6 +237,7 @@
 | 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) | 已加入 |
 | 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | 已加入 |
 | 游戏内笔记 | [Vanilla Notebook](https://modrinth.com/mod/notebook) | 已加入 |
+| 边缘方块放置 | [Reacharound](https://modrinth.com/mod/reacharound) | 已加入 |
 
 ## 可选能力
 

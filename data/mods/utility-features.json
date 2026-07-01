@@ -521,6 +521,18 @@
               "selected": "notebook"
             }
           }
+        },
+        {
+          "id": "edge-block-placement",
+          "feature": {
+            "en": "Edge block placement",
+            "zh": "边缘方块放置"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "reacharound"
+            }
+          }
         }
       ]
     }

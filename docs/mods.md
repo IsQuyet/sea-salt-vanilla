@@ -237,6 +237,7 @@ These entries are useful for building, testing, profiling, or personal creative 
 | World editing | [WorldEdit](https://modrinth.com/mod/worldedit) | Added |
 | Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | Added |
 | In-game notes | [Vanilla Notebook](https://modrinth.com/mod/notebook) | Added |
+| Edge block placement | [Reacharound](https://modrinth.com/mod/reacharound) | Added |
 
 ## Optional capabilities
 
