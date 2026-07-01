@@ -28,3 +28,7 @@ usernamecache.json
 Thumbs.db
 .idea/
 .vscode/
+
+# Python runtime/cache files
+__pycache__/
+*.py[cod]

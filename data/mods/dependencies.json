@@ -1,0 +1,168 @@
+{
+  "architectury-api": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "Architectury API",
+    "modrinth_id": "lhGA9TYQ",
+    "required_by": [
+      "rei",
+      "seamless"
+    ]
+  },
+  "balm": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "Balm",
+    "modrinth_id": "MBAkmtvl",
+    "required_by": [
+      "default-options"
+    ]
+  },
+  "cicada": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "CICADA",
+    "modrinth_id": "IwCkru1D",
+    "required_by": [
+      "do-a-barrel-roll"
+    ]
+  },
+  "creativecore": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "CreativeCore",
+    "modrinth_id": "OsZiaDHq",
+    "required_by": [
+      "ambientsounds",
+      "itemphysic-lite"
+    ]
+  },
+  "fzzy-config": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "Fzzy Config",
+    "modrinth_id": "hYykXjDp",
+    "required_by": [
+      "subtle-effects"
+    ]
+  },
+  "kiwi": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "Kiwi 🥝",
+    "modrinth_id": "ufdDoWPd",
+    "required_by": [
+      "mini-effects"
+    ]
+  },
+  "konkrete": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "Konkrete",
+    "modrinth_id": "J81TRJWm",
+    "required_by": [
+      "fancymenu"
+    ]
+  },
+  "libipn": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "libIPN",
+    "modrinth_id": "onSQdWhM",
+    "required_by": [
+      "inventory-profiles-next"
+    ]
+  },
+  "malilib": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "MaLiLib",
+    "modrinth_id": "GcWjdA9I",
+    "required_by": [
+      "minihud"
+    ]
+  },
+  "melody": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "Melody",
+    "modrinth_id": "CVT4pFB2",
+    "required_by": [
+      "fancymenu"
+    ]
+  },
+  "midnightlib": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "MidnightLib",
+    "modrinth_id": "codAaoxh",
+    "required_by": [
+      "blur-plus",
+      "cull-leaves",
+      "puzzle"
+    ]
+  },
+  "mossylib": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "MossyLib",
+    "modrinth_id": "ffLDUGbm",
+    "required_by": [
+      "inventory-particles"
+    ]
+  },
+  "mru": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "M.R.U",
+    "modrinth_id": "SNVQ2c0g",
+    "required_by": [
+      "sound"
+    ]
+  },
+  "placeholder-api": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "Text Placeholder API",
+    "modrinth_id": "eXts2L7r",
+    "required_by": [
+      "modmenu"
+    ]
+  },
+  "searchables": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "Searchables",
+    "modrinth_id": "fuuu3xnx",
+    "required_by": [
+      "controlling"
+    ]
+  },
+  "shatterbyte-lib": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "ShatterLib | OctoLib",
+    "modrinth_id": "RH2KUdKJ",
+    "required_by": [
+      "immersive-ui"
+    ]
+  },
+  "tcdcommons": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "TCDCommons API",
+    "modrinth_id": "Eldc1g37",
+    "required_by": [
+      "better-stats"
+    ]
+  },
+  "yungs-api": {
+    "policy": "dependency",
+    "source": "modrinth",
+    "name": "YUNG's API",
+    "modrinth_id": "Ua7DFN59",
+    "required_by": [
+      "travelers-titles"
+    ]
+  }
+}

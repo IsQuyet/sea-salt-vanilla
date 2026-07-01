@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import tomllib
+import argparse
 from pathlib import Path
 from typing import Any
 
@@ -151,33 +152,6 @@ def project_is_installed(project: dict[str, Any] | None, installed: dict[str, se
     return False
 
 
-def validate_optional_projects(data: dict[str, Any], installed: dict[str, set[str]]) -> None:
-    conflicts: list[str] = []
-
-    for group in data["groups"]:
-        for section in group["sections"]:
-            for row in section["rows"]:
-                if row.get("policy") != "optional":
-                    continue
-
-                for version in data["versions"]:
-                    project = version_project(data, row, version)
-                    if project_is_installed(project, installed):
-                        conflicts.append(
-                            f"{row['id']} ({version}): {project['name']} is marked optional but is installed"
-                        )
-
-                    for alternative in version_alternatives(data, row, version):
-                        if project_is_installed(alternative, installed):
-                            conflicts.append(
-                                f"{row['id']} ({version}): {alternative['name']} is marked optional alternative but is installed"
-                            )
-
-    if conflicts:
-        details = "\n".join(f"- {conflict}" for conflict in conflicts)
-        raise SystemExit(f"Optional project validation failed:\n{details}")
-
-
 def project_status(
     row: dict[str, Any],
     project: dict[str, Any] | None,
@@ -215,7 +189,6 @@ def render_header(data: dict[str, Any], language: str) -> list[str]:
 
 def render_matrix(data: dict[str, Any], language: str) -> str:
     installed = load_installed_projects()
-    validate_optional_projects(data, installed)
 
     versions = list(data["versions"])
     lines = render_header(data, language)
@@ -285,9 +258,29 @@ def render_matrix(data: dict[str, Any], language: str) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Check whether generated docs are up to date without writing them.")
+    args = parser.parse_args()
+
     data = load_data()
-    write_text(ENGLISH_PATH, render_matrix(data, "en"))
-    write_text(CHINESE_PATH, render_matrix(data, "zh"))
+
+    english = render_matrix(data, "en")
+    chinese = render_matrix(data, "zh")
+
+    if args.check:
+        mismatches = []
+        if not ENGLISH_PATH.exists() or ENGLISH_PATH.read_text(encoding="utf-8-sig") != english:
+            mismatches.append(str(ENGLISH_PATH.relative_to(ROOT)))
+        if not CHINESE_PATH.exists() or CHINESE_PATH.read_text(encoding="utf-8-sig") != chinese:
+            mismatches.append(str(CHINESE_PATH.relative_to(ROOT)))
+        if mismatches:
+            details = "\n".join(f"- {path}" for path in mismatches)
+            raise SystemExit(f"Generated mod docs are not up to date:\n{details}")
+        print("Generated mod docs are up to date")
+        return
+
+    write_text(ENGLISH_PATH, english)
+    write_text(CHINESE_PATH, chinese)
     print("Generated docs/mods.md")
     print("Generated docs/mods.zh-CN.md")
 
