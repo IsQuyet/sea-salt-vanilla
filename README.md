@@ -1,8 +1,8 @@
-# Immersive Vanilla
+# Sea Salt Vanilla
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-Immersive Vanilla is a primarily client-side Fabric modpack that enhances the vanilla Minecraft experience without requiring server-side gameplay content.
+Sea Salt Vanilla is a client-first Fabric modpack that improves the everyday Minecraft client experience across singleplayer and multiplayer.
 
 The goal: keep the vanilla experience recognizable, then quietly improve visuals, sound, interaction, ambience, and quality-of-life. Think vanilla ice cream with a pinch of sea salt: still vanilla, but with a quietly upgraded recipe.
 
@@ -30,6 +30,12 @@ resourcepacks/   # Resource packs, as packwiz metadata or local files
 shaderpacks/     # Shader packs, as packwiz metadata or local files
 dist/            # Local export output, not committed
 ```
+
+## Acknowledgements
+
+Sea Salt Vanilla exists not only because Minecraft itself offers a world worth returning to, but also because open-source projects like Sodium, Iris, and many others are sustained by developers who often give their time, skill, and care with little expectation of reward. These projects are not just convenient downloads; behind them are real people, real labor, and persistence that is often far from easy.
+
+If this pack helps you enjoy Minecraft, please consider learning about the projects it includes, leaving kind feedback, reporting issues responsibly, and supporting the original authors when you can. Even a little attention and appreciation can help keep this community healthier.
 
 ## License notes
 
