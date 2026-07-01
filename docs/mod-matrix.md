@@ -141,8 +141,8 @@ These entries improve chat readability and presentation without requiring server
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Chat avatars | Chat Heads | Planned |
-| Chat message animation | Chat Animation | Planned |
+| Chat avatars | Chat Heads | Added |
+| Chat message animation | Chat Animation | Added |
 
 ### Skin and cosmetics
 

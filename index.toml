@@ -10,11 +10,11 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "fae0c4a995cbb50496aff5acdcb50d96a9b50a4fe8db3ac5d5724095991afc82"
+hash = "48a218ee03bb74de247f2716f87b9580f28524ebd333b24cd3c905537161a07d"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
-hash = "76219f0894325285e26c72520c992752f61a7da0e07692e886a0baf4040b3e2e"
+hash = "a99a02152dcb9c40877e0fb9fb2348a04f717234971561478d87e4da1a674025"
 
 [[files]]
 file = "mods/a-good-place.pw.toml"
@@ -44,6 +44,16 @@ metafile = true
 [[files]]
 file = "mods/cameraoverhaul.pw.toml"
 hash = "3f4cc7439e4c169e9094ea87f7b6e51e60727ef7d5c0fa385fa5ad9d8d2b939d"
+metafile = true
+
+[[files]]
+file = "mods/chat-heads.pw.toml"
+hash = "8930742455a522a015389fdcab8861d4e079145aae94db1d76195f639971d452"
+metafile = true
+
+[[files]]
+file = "mods/chatanimation.pw.toml"
+hash = "a592ae5dcb745d3fa6c4c6d60e7631e5e9a0bd56133671238dfdf81bb2f06ac7"
 metafile = true
 
 [[files]]
