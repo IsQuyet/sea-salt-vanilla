@@ -36,6 +36,7 @@ These entries improve frame pacing, memory use, lighting, networking, and render
 | Particle performance | [AsyncParticles](https://modrinth.com/mod/asyncparticles) |  | Added |
 | Memory allocation optimization | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  | Added |
 | Client performance tweaks | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  | Added |
+| Input event polling optimization | [Ixeris](https://modrinth.com/mod/ixeris) |  | Added |
 
 ### Pack management and defaults
 
@@ -136,6 +137,7 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 | --- | --- | --- |
 | Menu customization | [FancyMenu](https://modrinth.com/mod/fancymenu) | Added |
 | Player paper doll | [Paper Doll](https://modrinth.com/mod/paperdoll) | Added |
+| Head cosmetic disguises | [DisguiseHeads](https://modrinth.com/mod/disguiseheads) | Added |
 | Status effect folding | [Mini Effects](https://modrinth.com/mod/mini-effects) | Added |
 | Inventory item animations | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) | Added |
 | Inventory item swap animations | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) | Added |
@@ -229,21 +231,53 @@ These entries provide client-side map, minimap, and location presentation tools.
 
 These entries are useful for building, testing, profiling, or personal creative workflows.
 
-| Feature | 1.21.1 | Alternatives | Pack status |
-| --- | --- | --- | --- |
-| Performance profiler | [Spark](https://modrinth.com/mod/spark) |  | Added |
-| World editing | [WorldEdit](https://modrinth.com/mod/worldedit) |  | Added |
-| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  | Added |
-| In-game notes | [Vanilla Notebook](https://modrinth.com/mod/notebook) |  | Added |
-| Orthographic screenshot tools | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) | Skipped |
+| Feature | 1.21.1 | Pack status |
+| --- | --- | --- |
+| Performance profiler | [Spark](https://modrinth.com/mod/spark) | Added |
+| World editing | [WorldEdit](https://modrinth.com/mod/worldedit) | Added |
+| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | Added |
+| In-game notes | [Vanilla Notebook](https://modrinth.com/mod/notebook) | Added |
 
-### Optional multiplayer features
+## Optional capabilities
 
-These entries add features that work best on compatible multiplayer servers.
+These entries are useful extensions that are recognized by the pack, but are not part of the default distribution.
+
+### Online play enhancements
+
+These entries mainly improve the client-side experience when playing online or on compatible servers.
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Proximity voice chat | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) | Skipped |
-| Server resource-pack unpacking | [Server Unpacker](https://modrinth.com/mod/server-unpacker) | Skipped |
-| Multiplayer client enhancements | [Noxesium](https://modrinth.com/mod/noxesium) | Skipped |
-| Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) | Skipped |
+| Proximity voice chat | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) | Optional |
+| Server resource-pack unpacking | [Server Unpacker](https://modrinth.com/mod/server-unpacker) | Optional |
+| Multiplayer client enhancements | [Noxesium](https://modrinth.com/mod/noxesium) | Optional |
+| Remote view-distance cache | [Bobby](https://modrinth.com/mod/bobby) | Optional |
+| Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) | Optional |
+| Social client layer | [Essential Mod](https://modrinth.com/mod/essential) | Optional |
+| Player emotes | [Emotecraft](https://modrinth.com/mod/emotecraft) | Optional |
+| Voice chat bubbles | [TalkBubbles](https://modrinth.com/mod/talkbubbles) | Optional |
+| Talking head indicators | [Talking Heads](https://modrinth.com/mod/talkingheads) | Optional |
+| Chat image display | [ChatImage](https://modrinth.com/mod/chatimage) | Optional |
+| Collectible heads | [REPO Heads](https://modrinth.com/mod/repo-heads) | Optional |
+| Friendly interactions | [Headpat a Friend!](https://modrinth.com/mod/headpat) | Optional |
+
+### Optional audiovisual ambience
+
+These entries can strongly shape visual or audio ambience, so they are kept as opt-in choices.
+
+| Feature | 1.21.1 | Pack status |
+| --- | --- | --- |
+| Dynamic lighting | [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights) | Optional |
+| Sound physics | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) | Optional |
+| Weather particle ambience | [Particle Rain](https://modrinth.com/mod/particle-rain) | Optional |
+
+### Optional tools and workflows
+
+These entries support specific creative, building, recording, or input workflows.
+
+| Feature | 1.21.1 | Alternatives | Pack status |
+| --- | --- | --- | --- |
+| Orthographic screenshot tools | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) | Optional |
+| Schematic building | [Litematica](https://modrinth.com/mod/litematica) |  | Optional |
+| Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |  | Optional |
+| Controller support | [Controlify](https://modrinth.com/mod/controlify) |  | Optional |

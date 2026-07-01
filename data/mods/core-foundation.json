@@ -215,6 +215,18 @@
               "selected": "badoptimizations"
             }
           }
+        },
+        {
+          "id": "input-event-polling-optimization",
+          "feature": {
+            "en": "Input event polling optimization",
+            "zh": "输入事件轮询优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "ixeris"
+            }
+          }
         }
       ]
     },

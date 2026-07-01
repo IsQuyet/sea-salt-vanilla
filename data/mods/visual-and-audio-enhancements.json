@@ -541,6 +541,18 @@
           }
         },
         {
+          "id": "head-cosmetic-disguises",
+          "feature": {
+            "en": "Head cosmetic disguises",
+            "zh": "头部外观伪装"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "disguiseheads"
+            }
+          }
+        },
+        {
           "id": "status-effect-folding",
           "feature": {
             "en": "Status effect folding",

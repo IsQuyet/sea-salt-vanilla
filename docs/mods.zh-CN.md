@@ -36,6 +36,7 @@
 | 粒子性能优化 | [AsyncParticles](https://modrinth.com/mod/asyncparticles) |  | 已加入 |
 | 内存分配优化 | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  | 已加入 |
 | 客户端性能微调 | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  | 已加入 |
+| 输入事件轮询优化 | [Ixeris](https://modrinth.com/mod/ixeris) |  | 已加入 |
 
 ### 包管理与默认设置
 
@@ -136,6 +137,7 @@
 | --- | --- | --- |
 | 菜单定制 | [FancyMenu](https://modrinth.com/mod/fancymenu) | 已加入 |
 | 纸娃娃显示 | [Paper Doll](https://modrinth.com/mod/paperdoll) | 已加入 |
+| 头部外观伪装 | [DisguiseHeads](https://modrinth.com/mod/disguiseheads) | 已加入 |
 | 状态效果折叠 | [Mini Effects](https://modrinth.com/mod/mini-effects) | 已加入 |
 | 背包物品动画 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) | 已加入 |
 | 背包物品交换动画 | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) | 已加入 |
@@ -229,21 +231,53 @@
 
 这些条目用于建造、测试、性能分析或个人创造工作流。
 
-| 功能 | 1.21.1 | 可选替代 | 整合包状态 |
-| --- | --- | --- | --- |
-| 性能分析 | [Spark](https://modrinth.com/mod/spark) |  | 已加入 |
-| 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) |  | 已加入 |
-| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  | 已加入 |
-| 游戏内笔记 | [Vanilla Notebook](https://modrinth.com/mod/notebook) |  | 已加入 |
-| 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) | 暂不加入 |
+| 功能 | 1.21.1 | 整合包状态 |
+| --- | --- | --- |
+| 性能分析 | [Spark](https://modrinth.com/mod/spark) | 已加入 |
+| 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) | 已加入 |
+| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | 已加入 |
+| 游戏内笔记 | [Vanilla Notebook](https://modrinth.com/mod/notebook) | 已加入 |
 
-### 可选多人功能
+## 可选能力
 
-这些条目在兼容的多人服务器上效果更完整。
+这些条目是整合包认可的有用扩展，但不作为默认分发内容加入。
+
+### 联机体验增强
+
+这些条目主要改善玩家联机或加入兼容服务器时的客户端体验。
 
 | 功能 | 1.21.1 | 整合包状态 |
 | --- | --- | --- |
-| 近距离语音聊天 | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) | 暂不加入 |
-| 服务器资源包解包 | [Server Unpacker](https://modrinth.com/mod/server-unpacker) | 暂不加入 |
-| 多人服务器客户端增强 | [Noxesium](https://modrinth.com/mod/noxesium) | 暂不加入 |
-| 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) | 暂不加入 |
+| 近距离语音聊天 | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) | 可选 |
+| 服务器资源包解包 | [Server Unpacker](https://modrinth.com/mod/server-unpacker) | 可选 |
+| 多人服务器客户端增强 | [Noxesium](https://modrinth.com/mod/noxesium) | 可选 |
+| 服务器远视距缓存 | [Bobby](https://modrinth.com/mod/bobby) | 可选 |
+| 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) | 可选 |
+| 社交客户端层 | [Essential Mod](https://modrinth.com/mod/essential) | 可选 |
+| 玩家表情动作 | [Emotecraft](https://modrinth.com/mod/emotecraft) | 可选 |
+| 语音聊天气泡 | [TalkBubbles](https://modrinth.com/mod/talkbubbles) | 可选 |
+| 说话头像提示 | [Talking Heads](https://modrinth.com/mod/talkingheads) | 可选 |
+| 聊天图片显示 | [ChatImage](https://modrinth.com/mod/chatimage) | 可选 |
+| 收藏头像 | [REPO Heads](https://modrinth.com/mod/repo-heads) | 可选 |
+| 好友互动 | [Headpat a Friend!](https://modrinth.com/mod/headpat) | 可选 |
+
+### 可选视听氛围
+
+这些条目会明显影响画面或声音氛围，因此作为可选项保留。
+
+| 功能 | 1.21.1 | 整合包状态 |
+| --- | --- | --- |
+| 动态光源 | [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights) | 可选 |
+| 物理音效 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) | 可选 |
+| 天气粒子氛围 | [Particle Rain](https://modrinth.com/mod/particle-rain) | 可选 |
+
+### 可选工具与工作流
+
+这些条目服务于特定的创作、建造、录制或输入工作流。
+
+| 功能 | 1.21.1 | 可选替代 | 整合包状态 |
+| --- | --- | --- | --- |
+| 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) | 可选 |
+| 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |  | 可选 |
+| 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |  | 可选 |
+| 手柄支持 | [Controlify](https://modrinth.com/mod/controlify) |  | 可选 |

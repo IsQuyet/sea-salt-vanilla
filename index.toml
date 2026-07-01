@@ -171,6 +171,11 @@ hash = "183a686a2e5076c6dbb6c6d8145a5b10d544295cf1a7bbffd8bbceaf072ede4f"
 metafile = true
 
 [[files]]
+file = "mods/disguiseheads.pw.toml"
+hash = "b046ce0ceb6e608c11a55c21c2624c91e6a814787541c3e6db4c587935ab9980"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "937a5af04455f2afb7bac9184749d36b0e340ab5c4e70fc21ae8ec74de043c08"
 metafile = true
@@ -323,6 +328,11 @@ metafile = true
 [[files]]
 file = "mods/itemphysic-lite.pw.toml"
 hash = "02bd5feee43bd8e0afc59393ec4cacc2599e4594f770748b99629a0d0db2a1e6"
+metafile = true
+
+[[files]]
+file = "mods/ixeris.pw.toml"
+hash = "364e3a776803353e433c6fc9b9f8961ce32225da9503261c29f4a3b51d4a8656"
 metafile = true
 
 [[files]]
