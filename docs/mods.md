@@ -176,6 +176,7 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Inventory movement | [InvMove](https://modrinth.com/mod/invmove) |  | Added |
 | Keybinding search and conflicts | [Controlling](https://modrinth.com/mod/controlling) |  | Added |
 | Input method conflict handling | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | Added |
+| Chinese character search support | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  | Added |
 | Zoom controls | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | Added |
 
 ### HUD information and client convenience
@@ -188,6 +189,9 @@ These entries surface gameplay information or remove small interface friction.
 | Inventory HUD overlay | [Inventory HUD+](https://modrinth.com/mod/inventoryhudplus) | Added |
 | Mount HUD improvements | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) | Added |
 | Statistics screen improvements | [Better Stats](https://modrinth.com/mod/better-stats) | Added |
+| Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) | Added |
+| World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) | Added |
+| Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) | Added |
 | Armor detail display | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) | Added |
 | Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) | Added |
 | Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | Added |

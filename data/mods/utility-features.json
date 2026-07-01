@@ -129,6 +129,18 @@
           }
         },
         {
+          "id": "chinese-character-search",
+          "feature": {
+            "en": "Chinese character search support",
+            "zh": "中文字符搜索支持"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "justenoughcharacters"
+            }
+          }
+        },
+        {
           "id": "zoom-controls",
           "feature": {
             "en": "Zoom controls",
@@ -202,6 +214,42 @@
           "versions": {
             "1.21.1": {
               "selected": "better-stats"
+            }
+          }
+        },
+        {
+          "id": "debug-screen-improvements",
+          "feature": {
+            "en": "Debug screen improvements",
+            "zh": "调试界面改进"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "betterf3"
+            }
+          }
+        },
+        {
+          "id": "world-favorite-management",
+          "feature": {
+            "en": "World favorite management",
+            "zh": "世界收藏管理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "cherished-worlds"
+            }
+          }
+        },
+        {
+          "id": "advancement-screen-improvements",
+          "feature": {
+            "en": "Advancement screen improvements",
+            "zh": "进度界面改进"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "better-advancements"
             }
           }
         },

@@ -176,6 +176,7 @@
 | 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove) |  | 已加入 |
 | 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  | 已加入 |
 | 输入法冲突处理 | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | 已加入 |
+| 中文字符搜索支持 | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  | 已加入 |
 | 缩放控制 | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | 已加入 |
 
 ### HUD 信息与客户端便利功能
@@ -188,6 +189,9 @@
 | 背包 HUD 浮层 | [Inventory HUD+](https://modrinth.com/mod/inventoryhudplus) | 已加入 |
 | 骑乘 HUD 改进 | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) | 已加入 |
 | 统计界面改进 | [Better Stats](https://modrinth.com/mod/better-stats) | 已加入 |
+| 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) | 已加入 |
+| 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) | 已加入 |
+| 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) | 已加入 |
 | 盔甲细节显示 | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) | 已加入 |
 | 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) | 已加入 |
 | 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | 已加入 |

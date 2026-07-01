@@ -493,5 +493,25 @@
     "name": "Noxesium",
     "source": "modrinth",
     "slug": "noxesium"
+  },
+  "betterf3": {
+    "name": "BetterF3",
+    "source": "modrinth",
+    "slug": "betterf3"
+  },
+  "cherished-worlds": {
+    "name": "Cherished Worlds",
+    "source": "modrinth",
+    "slug": "cherished-worlds"
+  },
+  "better-advancements": {
+    "name": "Better Advancements",
+    "source": "modrinth",
+    "slug": "better-advancements"
+  },
+  "justenoughcharacters": {
+    "name": "JustEnoughCharacters",
+    "source": "modrinth",
+    "slug": "justenoughcharacters"
   }
 }
