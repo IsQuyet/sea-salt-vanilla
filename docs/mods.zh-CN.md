@@ -87,6 +87,8 @@
 | 远景地形渲染 | [Distant Horizons](https://modrinth.com/mod/distanthorizons) | 已加入 |
 | Complementary 光影视觉扩展 | [Euphoria Patches](https://modrinth.com/mod/euphoria-patches) | 已加入 |
 | 氛围粒子 | [Visuality](https://modrinth.com/mod/visuality) | 已加入 |
+| 洞穴尘埃氛围 | [Cave Dust](https://modrinth.com/mod/cave-dust) | 已加入 |
+| 船上物品显示 | [Boat Item View](https://modrinth.com/mod/boat-item-view) | 已加入 |
 | 细节视觉效果 | [Subtle Effects](https://modrinth.com/mod/subtle-effects) | 已加入 |
 | 额外粒子效果 | [Particle Effects](https://modrinth.com/mod/particle-effects) | 已加入 |
 | 粒子交互 | [EG Particle Interactions](https://modrinth.com/mod/particle-interactions) | 已加入 |
@@ -127,9 +129,11 @@
 
 | 功能 | 1.21.1 | 整合包状态 |
 | --- | --- | --- |
+| 菜单定制 | [FancyMenu](https://modrinth.com/mod/fancymenu) | 已加入 |
 | 纸娃娃显示 | [Paper Doll](https://modrinth.com/mod/paperdoll) | 已加入 |
 | 状态效果折叠 | [Mini Effects](https://modrinth.com/mod/mini-effects) | 已加入 |
 | 背包物品动画 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) | 已加入 |
+| 背包物品交换动画 | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) | 已加入 |
 | HUD 位置调整 | [Raised](https://modrinth.com/mod/raised) | 已加入 |
 | UI 背景模糊 | [Blur](https://modrinth.com/mod/blur-plus) | 已加入 |
 | 平滑滚动 | [Smooth Scroll](https://modrinth.com/mod/smooth-scroll) | 已加入 |
@@ -174,6 +178,7 @@
 | 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  | 已加入 |
 | 鼠标背包操作 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  | 已加入 |
 | 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove) |  | 已加入 |
+| 背包移动兼容 | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  | 已加入 |
 | 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  | 已加入 |
 | 输入法冲突处理 | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | 已加入 |
 | 中文字符搜索支持 | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  | 已加入 |
@@ -192,6 +197,9 @@
 | 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) | 已加入 |
 | 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) | 已加入 |
 | 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) | 已加入 |
+| 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) | 已加入 |
+| 聊天界面便利功能 | [Chat Patches](https://modrinth.com/mod/chatpatches) | 已加入 |
+| 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) | 已加入 |
 | 盔甲细节显示 | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) | 已加入 |
 | 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) | 已加入 |
 | 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | 已加入 |

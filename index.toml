@@ -66,6 +66,11 @@ hash = "8e4e965d925ec5074a480e3d02ac522cd9b11fe72372a80654a65454128e9f6b"
 metafile = true
 
 [[files]]
+file = "mods/boat-item-view.pw.toml"
+hash = "c5833c66008b22b8cdcbc719300e34f9e29a14f5c67789c0498451448ab40296"
+metafile = true
+
+[[files]]
 file = "mods/cameraoverhaul.pw.toml"
 hash = "3f4cc7439e4c169e9094ea87f7b6e51e60727ef7d5c0fa385fa5ad9d8d2b939d"
 metafile = true
@@ -76,6 +81,11 @@ hash = "c899acdc322ab52800a6e305a16427297f411c1c39d97983be96e8b6a34e157c"
 metafile = true
 
 [[files]]
+file = "mods/cave-dust.pw.toml"
+hash = "be7918d29b7fc9f820b6574f3906c1d1decc0fd485d55db5f408429e02bf70b1"
+metafile = true
+
+[[files]]
 file = "mods/chat-heads.pw.toml"
 hash = "8930742455a522a015389fdcab8861d4e079145aae94db1d76195f639971d452"
 metafile = true
@@ -83,6 +93,11 @@ metafile = true
 [[files]]
 file = "mods/chatanimation.pw.toml"
 hash = "a592ae5dcb745d3fa6c4c6d60e7631e5e9a0bd56133671238dfdf81bb2f06ac7"
+metafile = true
+
+[[files]]
+file = "mods/chatpatches.pw.toml"
+hash = "50a6452407be21007f1cdd1b24244734bf59588878c7791d9bcfb45078eef8a4"
 metafile = true
 
 [[files]]
@@ -221,6 +236,16 @@ hash = "ad4e8689c50fedd770fb5cf28561edbd41f6b483bcfd6e3dd3d0c337789c0110"
 metafile = true
 
 [[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "edc165c6bfcef522ae15b83ee7227189daced7ddd611c550c3291ada645963a1"
+metafile = true
+
+[[files]]
+file = "mods/fast-ip-ping.pw.toml"
+hash = "29df9165f974e5d190751cc39d689f7db3c6584610bb322e34add7a8f571df7c"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "1d5799cd3b6ea714602c18546b99ba894e7511835b77803304792468fb7ee187"
 metafile = true
@@ -276,6 +301,11 @@ hash = "44f1fbc496fb2d54467ccbe0df5362c54542193e33b8541ad75b532e1baf775e"
 metafile = true
 
 [[files]]
+file = "mods/invmovecompats.pw.toml"
+hash = "6a1fd74a1307161a86e40af4a68ebb5c2b3a04036d688c6a1021f70671f492ef"
+metafile = true
+
+[[files]]
 file = "mods/iris.pw.toml"
 hash = "6ee94689dd67f0210e07feafac8140e8968bcbcd67defcfbdcd677cf78943900"
 metafile = true
@@ -298,6 +328,11 @@ metafile = true
 [[files]]
 file = "mods/kiwi.pw.toml"
 hash = "1062609b58162aef42230cdebb6c63fa15c5ed7de9ae7709d38c85ba1078578c"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "34d75daff8b8260780d97bbc2dc545739399df1d5ac304eeb2f80e23354cf3af"
 metafile = true
 
 [[files]]
@@ -328,6 +363,11 @@ metafile = true
 [[files]]
 file = "mods/malilib.pw.toml"
 hash = "4842a349ba8e18407a4e32ef184ad1d2a437ff8e5b0c158391b6225216b4b8ce"
+metafile = true
+
+[[files]]
+file = "mods/melody.pw.toml"
+hash = "114f57ad1875c16cd7d9b9cf850025f40e1b008f0865f3e5783da8cfc128b291"
 metafile = true
 
 [[files]]
@@ -378,6 +418,11 @@ metafile = true
 [[files]]
 file = "mods/mru.pw.toml"
 hash = "230b1f5cd118accacf41f268e122bd420420d9e5248d43513090804739a832f3"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-reports.pw.toml"
+hash = "f3c5cb21ff2e78c7e8cdbd14d1535e6edd464d5a436dbfa4e60b8ea91374674d"
 metafile = true
 
 [[files]]
@@ -473,6 +518,11 @@ metafile = true
 [[files]]
 file = "mods/smooth-scroll.pw.toml"
 hash = "69d9366753ade6e5dbcbbac31372fae83d6b37b81a63a797a217aa69e97f2992"
+metafile = true
+
+[[files]]
+file = "mods/smooth-swapping.pw.toml"
+hash = "d1bf7f6b6033b5adcb0e3efe98e66edfb57c1263a10aa364c1fd6242e1252c7a"
 metafile = true
 
 [[files]]

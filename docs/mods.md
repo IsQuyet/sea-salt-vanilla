@@ -87,6 +87,8 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Distant terrain renderer | [Distant Horizons](https://modrinth.com/mod/distanthorizons) | Added |
 | Complementary shader visual extensions | [Euphoria Patches](https://modrinth.com/mod/euphoria-patches) | Added |
 | Ambient particles | [Visuality](https://modrinth.com/mod/visuality) | Added |
+| Cave dust ambience | [Cave Dust](https://modrinth.com/mod/cave-dust) | Added |
+| Boat item display | [Boat Item View](https://modrinth.com/mod/boat-item-view) | Added |
 | Subtle visual effects | [Subtle Effects](https://modrinth.com/mod/subtle-effects) | Added |
 | Additional particle effects | [Particle Effects](https://modrinth.com/mod/particle-effects) | Added |
 | Particle interactions | [EG Particle Interactions](https://modrinth.com/mod/particle-interactions) | Added |
@@ -127,9 +129,11 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
+| Menu customization | [FancyMenu](https://modrinth.com/mod/fancymenu) | Added |
 | Player paper doll | [Paper Doll](https://modrinth.com/mod/paperdoll) | Added |
 | Status effect folding | [Mini Effects](https://modrinth.com/mod/mini-effects) | Added |
 | Inventory item animations | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) | Added |
+| Inventory item swap animations | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) | Added |
 | HUD positioning | [Raised](https://modrinth.com/mod/raised) | Added |
 | UI background blur | [Blur](https://modrinth.com/mod/blur-plus) | Added |
 | Smooth scrolling | [Smooth Scroll](https://modrinth.com/mod/smooth-scroll) | Added |
@@ -174,6 +178,7 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Inventory profiles and sorting | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  | Added |
 | Mouse inventory actions | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  | Added |
 | Inventory movement | [InvMove](https://modrinth.com/mod/invmove) |  | Added |
+| Inventory movement compatibility | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  | Added |
 | Keybinding search and conflicts | [Controlling](https://modrinth.com/mod/controlling) |  | Added |
 | Input method conflict handling | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | Added |
 | Chinese character search support | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  | Added |
@@ -192,6 +197,9 @@ These entries surface gameplay information or remove small interface friction.
 | Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) | Added |
 | World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) | Added |
 | Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) | Added |
+| Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) | Added |
+| Chat interface convenience | [Chat Patches](https://modrinth.com/mod/chatpatches) | Added |
+| Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) | Added |
 | Armor detail display | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) | Added |
 | Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) | Added |
 | Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) | Added |

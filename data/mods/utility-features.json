@@ -105,6 +105,18 @@
           }
         },
         {
+          "id": "inventory-movement-compatibility",
+          "feature": {
+            "en": "Inventory movement compatibility",
+            "zh": "背包移动兼容"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "invmovecompats"
+            }
+          }
+        },
+        {
           "id": "keybinding-search-and-conflicts",
           "feature": {
             "en": "Keybinding search and conflicts",
@@ -250,6 +262,42 @@
           "versions": {
             "1.21.1": {
               "selected": "better-advancements"
+            }
+          }
+        },
+        {
+          "id": "chat-report-friction-removal",
+          "feature": {
+            "en": "Chat report friction removal",
+            "zh": "聊天举报提示与摩擦移除"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "no-chat-reports"
+            }
+          }
+        },
+        {
+          "id": "chat-interface-convenience",
+          "feature": {
+            "en": "Chat interface convenience",
+            "zh": "聊天界面便利功能"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "chatpatches"
+            }
+          }
+        },
+        {
+          "id": "server-list-ping-optimization",
+          "feature": {
+            "en": "Server list ping optimization",
+            "zh": "服务器列表 Ping 优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "fast-ip-ping"
             }
           }
         },

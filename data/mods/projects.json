@@ -513,5 +513,45 @@
     "name": "JustEnoughCharacters",
     "source": "modrinth",
     "slug": "justenoughcharacters"
+  },
+  "fancymenu": {
+    "name": "FancyMenu",
+    "source": "modrinth",
+    "slug": "fancymenu"
+  },
+  "no-chat-reports": {
+    "name": "No Chat Reports",
+    "source": "modrinth",
+    "slug": "no-chat-reports"
+  },
+  "fast-ip-ping": {
+    "name": "Fast IP Ping",
+    "source": "modrinth",
+    "slug": "fast-ip-ping"
+  },
+  "boat-item-view": {
+    "name": "Boat Item View",
+    "source": "modrinth",
+    "slug": "boat-item-view"
+  },
+  "cave-dust": {
+    "name": "Cave Dust",
+    "source": "modrinth",
+    "slug": "cave-dust"
+  },
+  "chatpatches": {
+    "name": "Chat Patches",
+    "source": "modrinth",
+    "slug": "chatpatches"
+  },
+  "smooth-swapping": {
+    "name": "Smooth Swapping",
+    "source": "modrinth",
+    "slug": "smooth-swapping"
+  },
+  "invmovecompats": {
+    "name": "InvMoveCompats",
+    "source": "modrinth",
+    "slug": "invmovecompats"
   }
 }

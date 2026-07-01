@@ -166,6 +166,30 @@
           }
         },
         {
+          "id": "cave-dust-ambience",
+          "feature": {
+            "en": "Cave dust ambience",
+            "zh": "洞穴尘埃氛围"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "cave-dust"
+            }
+          }
+        },
+        {
+          "id": "boat-item-display",
+          "feature": {
+            "en": "Boat item display",
+            "zh": "船上物品显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "boat-item-view"
+            }
+          }
+        },
+        {
           "id": "subtle-visual-effects",
           "feature": {
             "en": "Subtle visual effects",
@@ -433,6 +457,18 @@
       },
       "rows": [
         {
+          "id": "menu-customization",
+          "feature": {
+            "en": "Menu customization",
+            "zh": "菜单定制"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "fancymenu"
+            }
+          }
+        },
+        {
           "id": "player-paper-doll",
           "feature": {
             "en": "Player paper doll",
@@ -465,6 +501,18 @@
           "versions": {
             "1.21.1": {
               "selected": "tiny-item-animations"
+            }
+          }
+        },
+        {
+          "id": "inventory-item-swap-animations",
+          "feature": {
+            "en": "Inventory item swap animations",
+            "zh": "背包物品交换动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "smooth-swapping"
             }
           }
         },
