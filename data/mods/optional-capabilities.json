@@ -1,0 +1,302 @@
+{
+  "id": "optional-capabilities",
+  "title": {
+    "en": "Optional capabilities",
+    "zh": "可选能力"
+  },
+  "description": {
+    "en": "These entries are useful extensions that are recognized by the pack, but are not part of the default distribution.",
+    "zh": "这些条目是整合包认可的有用扩展，但不作为默认分发内容加入。"
+  },
+  "sections": [
+    {
+      "id": "online-play-enhancements",
+      "title": {
+        "en": "Online play enhancements",
+        "zh": "联机体验增强"
+      },
+      "description": {
+        "en": "These entries mainly improve the client-side experience when playing online or on compatible servers.",
+        "zh": "这些条目主要改善玩家联机或加入兼容服务器时的客户端体验。"
+      },
+      "rows": [
+        {
+          "id": "proximity-voice-chat",
+          "feature": {
+            "en": "Proximity voice chat",
+            "zh": "近距离语音聊天"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "simple-voice-chat"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "server-resource-pack-unpacking",
+          "feature": {
+            "en": "Server resource-pack unpacking",
+            "zh": "服务器资源包解包"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "server-unpacker"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "multiplayer-client-enhancements",
+          "feature": {
+            "en": "Multiplayer client enhancements",
+            "zh": "多人服务器客户端增强"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "noxesium"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "remote-view-distance-cache",
+          "feature": {
+            "en": "Remote view-distance cache",
+            "zh": "服务器远视距缓存"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "bobby"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "client-side-wearable-rendering",
+          "feature": {
+            "en": "Client-side wearable rendering",
+            "zh": "客户端穿戴渲染"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "wearthat"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "social-client-layer",
+          "feature": {
+            "en": "Social client layer",
+            "zh": "社交客户端层"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "essential"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "player-emotes",
+          "feature": {
+            "en": "Player emotes",
+            "zh": "玩家表情动作"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "emotecraft"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "voice-chat-bubbles",
+          "feature": {
+            "en": "Voice chat bubbles",
+            "zh": "语音聊天气泡"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "talkbubbles"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "talking-head-indicators",
+          "feature": {
+            "en": "Talking head indicators",
+            "zh": "说话头像提示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "talkingheads"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "chat-image-display",
+          "feature": {
+            "en": "Chat image display",
+            "zh": "聊天图片显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "chatimage"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "collectible-heads",
+          "feature": {
+            "en": "Collectible heads",
+            "zh": "收藏头像"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "repo-heads"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "friendly-interactions",
+          "feature": {
+            "en": "Friendly interactions",
+            "zh": "好友互动"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "headpat"
+            }
+          },
+          "policy": "optional"
+        }
+      ]
+    },
+    {
+      "id": "optional-audiovisual-ambience",
+      "title": {
+        "en": "Optional audiovisual ambience",
+        "zh": "可选视听氛围"
+      },
+      "description": {
+        "en": "These entries can strongly shape visual or audio ambience, so they are kept as opt-in choices.",
+        "zh": "这些条目会明显影响画面或声音氛围，因此作为可选项保留。"
+      },
+      "rows": [
+        {
+          "id": "dynamic-lighting",
+          "feature": {
+            "en": "Dynamic lighting",
+            "zh": "动态光源"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "lambdynamiclights"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "sound-physics",
+          "feature": {
+            "en": "Sound physics",
+            "zh": "物理音效"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "sound-physics-remastered"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "weather-particle-ambience",
+          "feature": {
+            "en": "Weather particle ambience",
+            "zh": "天气粒子氛围"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "particle-rain"
+            }
+          },
+          "policy": "optional"
+        }
+      ]
+    },
+    {
+      "id": "optional-tools-and-workflows",
+      "title": {
+        "en": "Optional tools and workflows",
+        "zh": "可选工具与工作流"
+      },
+      "description": {
+        "en": "These entries support specific creative, building, recording, or input workflows.",
+        "zh": "这些条目服务于特定的创作、建造、录制或输入工作流。"
+      },
+      "rows": [
+        {
+          "id": "orthographic-screenshot-tools",
+          "feature": {
+            "en": "Orthographic screenshot tools",
+            "zh": "正交截图工具"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "orthocamera",
+              "alternatives": [
+                "pixelshot"
+              ]
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "schematic-building",
+          "feature": {
+            "en": "Schematic building",
+            "zh": "投影建造"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "litematica"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "replay-recording",
+          "feature": {
+            "en": "Replay recording",
+            "zh": "回放录制"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "replaymod"
+            }
+          },
+          "policy": "optional"
+        },
+        {
+          "id": "controller-support",
+          "feature": {
+            "en": "Controller support",
+            "zh": "手柄支持"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "controlify"
+            }
+          },
+          "policy": "optional"
+        }
+      ]
+    }
+  ]
+}

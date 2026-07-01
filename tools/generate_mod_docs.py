@@ -19,11 +19,13 @@ GROUP_FILES = [
     "core-foundation.json",
     "visual-and-audio-enhancements.json",
     "utility-features.json",
+    "optional-capabilities.json",
 ]
 
 STATUS_LABELS = {
     "added": {"en": "Added", "zh": "已加入"},
     "planned": {"en": "Planned", "zh": "计划加入"},
+    "optional": {"en": "Optional", "zh": "可选"},
     "skipped": {"en": "Skipped", "zh": "暂不加入"},
 }
 
@@ -135,25 +137,59 @@ def version_alternatives(data: dict[str, Any], row: dict[str, Any], version: str
     ]
 
 
+def project_is_installed(project: dict[str, Any] | None, installed: dict[str, set[str]]) -> bool:
+    if project is None:
+        return False
+
+    if project.get("slug") and str(project["slug"]).lower() in installed["slugs"]:
+        return True
+    if project.get("name") and str(project["name"]).lower() in installed["names"]:
+        return True
+    if project.get("modrinth_id") and str(project["modrinth_id"]) in installed["modrinth_ids"]:
+        return True
+
+    return False
+
+
+def validate_optional_projects(data: dict[str, Any], installed: dict[str, set[str]]) -> None:
+    conflicts: list[str] = []
+
+    for group in data["groups"]:
+        for section in group["sections"]:
+            for row in section["rows"]:
+                if row.get("policy") != "optional":
+                    continue
+
+                for version in data["versions"]:
+                    project = version_project(data, row, version)
+                    if project_is_installed(project, installed):
+                        conflicts.append(
+                            f"{row['id']} ({version}): {project['name']} is marked optional but is installed"
+                        )
+
+                    for alternative in version_alternatives(data, row, version):
+                        if project_is_installed(alternative, installed):
+                            conflicts.append(
+                                f"{row['id']} ({version}): {alternative['name']} is marked optional alternative but is installed"
+                            )
+
+    if conflicts:
+        details = "\n".join(f"- {conflict}" for conflict in conflicts)
+        raise SystemExit(f"Optional project validation failed:\n{details}")
+
+
 def project_status(
     row: dict[str, Any],
     project: dict[str, Any] | None,
     installed: dict[str, set[str]],
     language: str,
 ) -> str:
+    if row.get("policy") == "optional":
+        return STATUS_LABELS["optional"][language]
     if row.get("policy") == "skipped":
         return STATUS_LABELS["skipped"][language]
 
-    added = False
-    if project:
-        if project.get("slug") and str(project["slug"]).lower() in installed["slugs"]:
-            added = True
-        if project.get("name") and str(project["name"]).lower() in installed["names"]:
-            added = True
-        if project.get("modrinth_id") and str(project["modrinth_id"]) in installed["modrinth_ids"]:
-            added = True
-
-    return STATUS_LABELS["added" if added else "planned"][language]
+    return STATUS_LABELS["added" if project_is_installed(project, installed) else "planned"][language]
 
 
 def render_header(data: dict[str, Any], language: str) -> list[str]:
@@ -179,6 +215,8 @@ def render_header(data: dict[str, Any], language: str) -> list[str]:
 
 def render_matrix(data: dict[str, Any], language: str) -> str:
     installed = load_installed_projects()
+    validate_optional_projects(data, installed)
+
     versions = list(data["versions"])
     lines = render_header(data, language)
 

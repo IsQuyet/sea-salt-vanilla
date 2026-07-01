@@ -633,5 +633,85 @@
     "name": "Pixelshot",
     "source": "modrinth",
     "slug": "pixelshot"
+  },
+  "ixeris": {
+    "name": "Ixeris",
+    "source": "modrinth",
+    "slug": "ixeris"
+  },
+  "disguiseheads": {
+    "name": "DisguiseHeads",
+    "source": "modrinth",
+    "slug": "disguiseheads"
+  },
+  "bobby": {
+    "name": "Bobby",
+    "source": "modrinth",
+    "slug": "bobby"
+  },
+  "essential": {
+    "name": "Essential Mod",
+    "source": "modrinth",
+    "slug": "essential"
+  },
+  "emotecraft": {
+    "name": "Emotecraft",
+    "source": "modrinth",
+    "slug": "emotecraft"
+  },
+  "talkbubbles": {
+    "name": "TalkBubbles",
+    "source": "modrinth",
+    "slug": "talkbubbles"
+  },
+  "talkingheads": {
+    "name": "Talking Heads",
+    "source": "modrinth",
+    "slug": "talkingheads"
+  },
+  "chatimage": {
+    "name": "ChatImage",
+    "source": "modrinth",
+    "slug": "chatimage"
+  },
+  "repo-heads": {
+    "name": "REPO Heads",
+    "source": "modrinth",
+    "slug": "repo-heads"
+  },
+  "headpat": {
+    "name": "Headpat a Friend!",
+    "source": "modrinth",
+    "slug": "headpat"
+  },
+  "sound-physics-remastered": {
+    "name": "Sound Physics Remastered",
+    "source": "modrinth",
+    "slug": "sound-physics-remastered"
+  },
+  "lambdynamiclights": {
+    "name": "LambDynamicLights",
+    "source": "modrinth",
+    "slug": "lambdynamiclights"
+  },
+  "particle-rain": {
+    "name": "Particle Rain",
+    "source": "modrinth",
+    "slug": "particle-rain"
+  },
+  "litematica": {
+    "name": "Litematica",
+    "source": "modrinth",
+    "slug": "litematica"
+  },
+  "replaymod": {
+    "name": "ReplayMod",
+    "source": "modrinth",
+    "slug": "replaymod"
+  },
+  "controlify": {
+    "name": "Controlify",
+    "source": "modrinth",
+    "slug": "controlify"
   }
 }
