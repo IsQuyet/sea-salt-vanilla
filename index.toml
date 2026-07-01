@@ -286,6 +286,11 @@ hash = "e10e639f71700a67d7f9b9d747e1685f838d703dadd432464b54e31b26f4742b"
 metafile = true
 
 [[files]]
+file = "mods/lottweaks.pw.toml"
+hash = "16d3957412f2ab2f78c0316380092fab0cb2de0f79ad4f61f33adeea94c6c49d"
+metafile = true
+
+[[files]]
 file = "mods/make_bubbles_pop.pw.toml"
 hash = "f531a8ee70e9d78ee62a84e3fd18088070dcf8f2cee2384a8aabed16dbfafe6c"
 metafile = true
@@ -456,6 +461,11 @@ hash = "1d0e54184bf7982547240482dd90ae24a34eea89927ca3b3f23b37e7b2c17574"
 metafile = true
 
 [[files]]
+file = "mods/spark.pw.toml"
+hash = "9bdd041fb29ab003ef5bb1f0ba53516847e32e3010a3fce247f743fc98e08a6b"
+metafile = true
+
+[[files]]
 file = "mods/subtle-effects.pw.toml"
 hash = "39b0c31561fba4814a23e0c398888652d5f610920b4e33681c194bc1668f9e75"
 metafile = true
@@ -488,6 +498,11 @@ metafile = true
 [[files]]
 file = "mods/weaponmaster.pw.toml"
 hash = "0bc23d89ae54273bfcbf46b02b175fe796c94f08b12252001fca3f100b5e82ea"
+metafile = true
+
+[[files]]
+file = "mods/worldedit.pw.toml"
+hash = "08d4775f8546564ad812b09062633ffc48f44b76328efe3832c021651af86b14"
 metafile = true
 
 [[files]]

@@ -208,9 +208,9 @@
 
 | 功能 | 1.21.1 | 整合包状态 |
 | --- | --- | --- |
-| 性能分析 | [Spark](https://modrinth.com/mod/spark) | 计划加入 |
-| 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) | 计划加入 |
-| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | 计划加入 |
+| 性能分析 | [Spark](https://modrinth.com/mod/spark) | 已加入 |
+| 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) | 已加入 |
+| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | 已加入 |
 
 ### 可选多人功能
 

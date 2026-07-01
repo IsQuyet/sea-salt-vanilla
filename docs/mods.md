@@ -208,9 +208,9 @@ These entries are useful for building, testing, profiling, or personal creative 
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Performance profiler | [Spark](https://modrinth.com/mod/spark) | Planned |
-| World editing | [WorldEdit](https://modrinth.com/mod/worldedit) | Planned |
-| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | Planned |
+| Performance profiler | [Spark](https://modrinth.com/mod/spark) | Added |
+| World editing | [WorldEdit](https://modrinth.com/mod/worldedit) | Added |
+| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | Added |
 
 ### Optional multiplayer features
 
