@@ -113,9 +113,9 @@
 
 | 功能     | 1.21.1             | 整合包状态 |
 | ------ | ------------------ | ----- |
-| 环境音景   | AmbientSounds      | 计划加入  |
-| 脚步声    | Presence Footsteps | 计划加入  |
-| 声音事件改进 | Sounds             | 计划加入  |
+| 环境音景   | AmbientSounds      | 已加入   |
+| 脚步声    | Presence Footsteps | 已加入   |
+| 声音事件改进 | Sounds             | 已加入   |
 
 
 ### 动画与移动

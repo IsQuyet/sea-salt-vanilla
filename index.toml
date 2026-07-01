@@ -10,11 +10,16 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "430faa477f01a5c197367393b07aee1193620b2c101da73192b31e6c326605b3"
+hash = "194981f01e03c3ecd9cf97642226dfbf1f62309aeaddac66167388b49dc7ecab"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
-hash = "b17ee47a6b2b52c7c7a7ea99d5022921ddc99326ac3b38b9d69e0d2f7891a22f"
+hash = "17d1aec4bc869bb20ce8c856f779c592c8bfc5d2aac047d5fda9be18ec946ce4"
+
+[[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "40b05643462be7f587ef8d513445fc6382705802274626f4123f09eeda868450"
+metafile = true
 
 [[files]]
 file = "mods/asyncparticles.pw.toml"
@@ -44,6 +49,11 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "4f97764f3cb4c74f84afbe32cf8a1d2cefecda129c0f1441906562dcb8f2b8cb"
+metafile = true
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "cf82858ab1b2ccb3ac0af8f11d8e5f71440c903ef94525e2b6b45a41a4ccf43d"
 metafile = true
 
 [[files]]
@@ -167,6 +177,11 @@ hash = "adbf75e453327143c292fb63a4391e1f437744a5ee7397e9baa8c9f367b251c2"
 metafile = true
 
 [[files]]
+file = "mods/mru.pw.toml"
+hash = "230b1f5cd118accacf41f268e122bd420420d9e5248d43513090804739a832f3"
+metafile = true
+
+[[files]]
 file = "mods/optigui.pw.toml"
 hash = "6f45c3f2ec9005b18846088784d291f4dabcce7b569031fb44855845a33aa8f7"
 metafile = true
@@ -192,6 +207,11 @@ hash = "2e2c1b47b513663871e71c89a699c66ac9fcc97633f007ed064ce4410f220f5a"
 metafile = true
 
 [[files]]
+file = "mods/presence-footsteps.pw.toml"
+hash = "8083e49b94eb72deca40e87757359cfaceef8d1f6a1a07c82f9e8bc9285eb5f2"
+metafile = true
+
+[[files]]
 file = "mods/puzzle.pw.toml"
 hash = "d4ad5c4462a3ee981f6ac3eff82c3cc1d6f08b3c01c99e16face1261a6161684"
 metafile = true
@@ -214,6 +234,11 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "019188864eb8efd6803ba70ceb00d5a195dac16e332883a515cee1e4e15bb39f"
+metafile = true
+
+[[files]]
+file = "mods/sound.pw.toml"
+hash = "1d0e54184bf7982547240482dd90ae24a34eea89927ca3b3f23b37e7b2c17574"
 metafile = true
 
 [[files]]

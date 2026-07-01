@@ -100,9 +100,9 @@ These entries add ambience and improve how sound events feel in play.
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Ambient soundscapes | AmbientSounds | Planned |
-| Footstep sounds | Presence Footsteps | Planned |
-| Sound event improvements | Sounds | Planned |
+| Ambient soundscapes | AmbientSounds | Added |
+| Footstep sounds | Presence Footsteps | Added |
+| Sound event improvements | Sounds | Added |
 
 ### Animation and movement
 
