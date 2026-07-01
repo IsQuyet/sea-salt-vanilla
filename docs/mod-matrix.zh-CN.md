@@ -102,7 +102,7 @@
 | 气泡破裂效果             | Make Bubbles Pop         | 已加入   |
 | 落叶粒子               | Falling Leaves           | 已加入   |
 | 爆炸效果               | Explosive Enhancement    | 已加入   |
-| 挖掘视觉反馈             | Mining Quakes            | 计划加入  |
+| 挖掘视觉反馈             | Mining & Placing Animations | 已加入   |
 | 沉浸式视觉效果            | Perception               | 已加入   |
 
 

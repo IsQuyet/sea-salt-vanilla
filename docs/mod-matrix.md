@@ -91,7 +91,7 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Bubble pop effects | Make Bubbles Pop | Added |
 | Falling leaf particles | Falling Leaves | Added |
 | Explosion effects | Explosive Enhancement | Added |
-| Mining visual feedback | Mining Quakes | Planned |
+| Mining visual feedback | Mining & Placing Animations | Added |
 | Immersive visual effects | Perception | Added |
 
 ### Audio

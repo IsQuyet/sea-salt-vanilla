@@ -1,0 +1,13 @@
+name = "Mining & Placing Animations"
+filename = "mining_and_placing_animations-fabric-2.0.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/LKVZxR8L/versions/ygdFGWeG/mining_and_placing_animations-fabric-2.0.0.jar"
+hash-format = "sha512"
+hash = "e66d6022fba91ed0759f9bf116d811e419ab287c4065b0437e1e3a0d05aa6a55e50f9b1bb3e25b3e2df06ae650ea6a277cdf288b96e5857255de5d402d61cfdd"
+
+[update]
+[update.modrinth]
+mod-id = "LKVZxR8L"
+version = "ygdFGWeG"
