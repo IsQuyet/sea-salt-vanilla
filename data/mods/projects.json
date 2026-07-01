@@ -64,6 +64,16 @@
     "source": "modrinth",
     "slug": "asyncparticles"
   },
+  "ferrite-core": {
+    "name": "FerriteCore",
+    "source": "modrinth",
+    "slug": "ferrite-core"
+  },
+  "badoptimizations": {
+    "name": "BadOptimizations",
+    "source": "modrinth",
+    "slug": "badoptimizations"
+  },
   "resourcify": {
     "name": "Resourcify",
     "source": "modrinth",
@@ -78,6 +88,11 @@
     "name": "Default Options",
     "source": "modrinth",
     "slug": "default-options"
+  },
+  "yosbr": {
+    "name": "Your Options Shall Be Respected (YOSBR)",
+    "source": "modrinth",
+    "slug": "yosbr"
   },
   "modmenu": {
     "name": "Mod Menu",

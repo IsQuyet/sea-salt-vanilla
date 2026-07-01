@@ -188,6 +188,30 @@
               "selected": "asyncparticles"
             }
           }
+        },
+        {
+          "id": "memory-allocation-optimization",
+          "feature": {
+            "en": "Memory allocation optimization",
+            "zh": "内存分配优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "ferrite-core"
+            }
+          }
+        },
+        {
+          "id": "client-performance-tweaks",
+          "feature": {
+            "en": "Client performance tweaks",
+            "zh": "客户端性能微调"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "badoptimizations"
+            }
+          }
         }
       ]
     },
@@ -234,7 +258,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "default-options"
+              "selected": "default-options",
+              "alternatives": [
+                "yosbr"
+              ]
             }
           }
         }

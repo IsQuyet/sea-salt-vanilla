@@ -34,16 +34,18 @@
 | 方块实体渲染优化 | [Enhanced Block Entities](https://modrinth.com/mod/ebe) | 已加入 |
 | 树叶渲染剔除 | [Cull Leaves](https://modrinth.com/mod/cull-leaves) | 已加入 |
 | 粒子性能优化 | [AsyncParticles](https://modrinth.com/mod/asyncparticles) | 已加入 |
+| 内存分配优化 | [FerriteCore](https://modrinth.com/mod/ferrite-core) | 已加入 |
+| 客户端性能微调 | [BadOptimizations](https://modrinth.com/mod/badoptimizations) | 已加入 |
 
 ### 包管理与默认设置
 
 这些条目用于发现、加载或分发整合包层面的资源和默认客户端设置。
 
-| 功能 | 1.21.1 | 整合包状态 |
-| --- | --- | --- |
-| 资源包浏览 | [Resourcify](https://modrinth.com/mod/resourcify) | 已加入 |
-| 全局包加载 | [Global Packs](https://modrinth.com/mod/globalpacks) | 已加入 |
-| 默认选项与键位 | [Default Options](https://modrinth.com/mod/default-options) | 已加入 |
+| 功能 | 1.21.1 | 可选替代 | 整合包状态 |
+| --- | --- | --- | --- |
+| 资源包浏览 | [Resourcify](https://modrinth.com/mod/resourcify) |  | 已加入 |
+| 全局包加载 | [Global Packs](https://modrinth.com/mod/globalpacks) |  | 已加入 |
+| 默认选项与键位 | [Default Options](https://modrinth.com/mod/default-options) | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | 已加入 |
 
 ### Mod 管理与配置框架
 

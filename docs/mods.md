@@ -34,16 +34,18 @@ These entries improve frame pacing, memory use, lighting, networking, and render
 | Block entity rendering optimization | [Enhanced Block Entities](https://modrinth.com/mod/ebe) | Added |
 | Leaf rendering culling | [Cull Leaves](https://modrinth.com/mod/cull-leaves) | Added |
 | Particle performance | [AsyncParticles](https://modrinth.com/mod/asyncparticles) | Added |
+| Memory allocation optimization | [FerriteCore](https://modrinth.com/mod/ferrite-core) | Added |
+| Client performance tweaks | [BadOptimizations](https://modrinth.com/mod/badoptimizations) | Added |
 
 ### Pack management and defaults
 
 These entries help discover, load, or distribute pack-level resources and default client settings.
 
-| Feature | 1.21.1 | Pack status |
-| --- | --- | --- |
-| Resource pack discovery | [Resourcify](https://modrinth.com/mod/resourcify) | Added |
-| Global pack loading | [Global Packs](https://modrinth.com/mod/globalpacks) | Added |
-| Default options and keybinds | [Default Options](https://modrinth.com/mod/default-options) | Added |
+| Feature | 1.21.1 | Alternatives | Pack status |
+| --- | --- | --- | --- |
+| Resource pack discovery | [Resourcify](https://modrinth.com/mod/resourcify) |  | Added |
+| Global pack loading | [Global Packs](https://modrinth.com/mod/globalpacks) |  | Added |
+| Default options and keybinds | [Default Options](https://modrinth.com/mod/default-options) | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | Added |
 
 ### Mod management and configuration frameworks
 
