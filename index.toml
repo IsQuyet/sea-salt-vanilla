@@ -10,11 +10,11 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "d5bfd02bc7a5713e66215a1a12d1feca2aedcabae45fdb80f75586711197ec74"
+hash = "6762cd1b136a7b8be88dbf8e1d7663fc1665bb698cb55a5f41b9e95508945899"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
-hash = "490b0cec5f1734c3eed5ea5661e812015cc63f20aeb2272ffd01c25e13a60d63"
+hash = "0c6a22b8539e21b14b0d155fd12e411e7a2f7b05fbd26b46d5549b019d45301b"
 
 [[files]]
 file = "mods/asyncparticles.pw.toml"
@@ -69,11 +69,6 @@ metafile = true
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "de9842a74bad2677a92f96157171b3108dcacb6a517d395006a1f158d5f46bbb"
-metafile = true
-
-[[files]]
-file = "mods/indium.pw.toml"
-hash = "5f694b0c16bfbf69b05cb28eef7a553ae548e623bc2cbccc98e01d950d3611db"
 metafile = true
 
 [[files]]

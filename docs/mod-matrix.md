@@ -6,7 +6,7 @@ This page tracks which mod provides each feature in released Minecraft versions.
 
 ## Core foundation
 
-These entries provide the runtime, rendering, performance, and configuration base for the pack.
+These entries provide the runtime, performance, pack management, and configuration base for the pack.
 
 ### Runtime and APIs
 
@@ -17,21 +17,13 @@ These entries provide loader-level APIs and language runtimes used by other mods
 | Fabric API support | Fabric API |
 | Kotlin runtime | Fabric Language Kotlin |
 
-### Rendering base
-
-These entries replace vanilla rendering or keep Fabric rendering features compatible.
-
-| Feature | 1.21.1 |
-| --- | --- |
-| Rendering engine | Sodium |
-| Fabric Rendering API compatibility | Indium |
-
 ### Performance
 
 These entries improve frame pacing, memory use, lighting, networking, and rendering cost.
 
 | Feature | 1.21.1 |
 | --- | --- |
+| Rendering engine optimization | Sodium |
 | Game logic optimization | Lithium |
 | Startup and memory fixes | ModernFix |
 | Immediate rendering optimization | ImmediatelyFast |
@@ -63,6 +55,7 @@ These entries provide mod lists, in-game config screens, and config frameworks u
 | YACL configuration framework | YetAnotherConfigLib |
 | Cloth Config framework | Cloth Config |
 | Forge config compatibility | Forge Config API Port |
+| Default options and keybinds | Default Options |
 
 ## Visual and audio enhancements
 
@@ -76,6 +69,7 @@ These entries provide OptiFine-style visual and resource-pack features through F
 | --- | --- |
 | Shader loader | Iris |
 | Sodium video option extensions | Sodium Extra |
+| OptiFine alternatives integration | Puzzle |
 | Complementary shader extensions | Euphoria Patcher |
 | Custom entity models | Entity Model Features |
 | Custom entity textures | Entity Texture Features |

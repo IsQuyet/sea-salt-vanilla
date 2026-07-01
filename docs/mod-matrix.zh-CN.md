@@ -6,7 +6,7 @@
 
 ## 基础必备
 
-这些条目提供整合包运行、渲染、性能和配置所需的基础能力。
+这些条目提供整合包运行、性能、包管理和配置所需的基础能力。
 
 ### 运行时与 API
 
@@ -19,17 +19,6 @@
 | Kotlin 运行时    | Fabric Language Kotlin |
 
 
-### 渲染基础
-
-这些条目替换原版渲染，或保持 Fabric 渲染特性兼容。
-
-
-| 功能                      | 1.21.1 |
-| ----------------------- | ------ |
-| 渲染引擎                    | Sodium |
-| Fabric Rendering API 兼容 | Indium |
-
-
 ### 性能优化
 
 这些条目改善帧率稳定性、内存使用、光照、网络和渲染开销。
@@ -37,6 +26,7 @@
 
 | 功能       | 1.21.1                  |
 | -------- | ----------------------- |
+| 渲染引擎优化   | Sodium                  |
 | 游戏逻辑优化   | Lithium                 |
 | 启动与内存修复  | ModernFix               |
 | 即时渲染优化   | ImmediatelyFast         |
@@ -72,6 +62,7 @@
 | YACL 配置框架         | YetAnotherConfigLib   |
 | Cloth Config 配置框架 | Cloth Config          |
 | Forge 配置兼容        | Forge Config API Port |
+| 默认选项与键位           | Default Options       |
 
 
 ## 视听美化
@@ -87,6 +78,7 @@
 | ------------------ | ----------------------- |
 | 光影加载               | Iris                    |
 | Sodium 视频选项扩展      | Sodium Extra            |
+| OptiFine 平替集成       | Puzzle                  |
 | Complementary 光影扩展 | Euphoria Patcher        |
 | 自定义实体模型            | Entity Model Features   |
 | 自定义实体纹理            | Entity Texture Features |
@@ -246,18 +238,6 @@
 | 位置标题卡 | Traveler's Titles |
 
 
-### 可选多人功能
-
-这些条目在兼容的多人服务器上效果更完整。
-
-
-| 功能         | 1.21.1            |
-| ---------- | ----------------- |
-| 近距离语音聊天    | Simple Voice Chat |
-| 服务器资源包解包   | Server Unpacker   |
-| 多人服务器客户端增强 | Noxesium          |
-
-
 ### 创造工具与诊断
 
 这些条目用于建造、测试、性能分析或个人创造工作流。
@@ -270,3 +250,13 @@
 | 创造模式建造工具 | LotTweaks |
 
 
+### 可选多人功能
+
+这些条目在兼容的多人服务器上效果更完整。
+
+
+| 功能         | 1.21.1            |
+| ---------- | ----------------- |
+| 近距离语音聊天    | Simple Voice Chat |
+| 服务器资源包解包   | Server Unpacker   |
+| 多人服务器客户端增强 | Noxesium          |
