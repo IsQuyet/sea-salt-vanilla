@@ -1,0 +1,13 @@
+name = "Mini Effects"
+filename = "MiniEffects-1.21.1-Fabric-9.1.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/UqcThEX0/versions/6GUR9WQP/MiniEffects-1.21.1-Fabric-9.1.0.jar"
+hash-format = "sha512"
+hash = "0b12e5567b3da48f2c4c8d2e1b140ffbd7c6259e54849a5e843e11d233d97bb6f26830c00a8c05c827601f99691269953d373f541b97126fcbf8e0d15425d08e"
+
+[update]
+[update.modrinth]
+mod-id = "UqcThEX0"
+version = "6GUR9WQP"

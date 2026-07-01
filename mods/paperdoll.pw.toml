@@ -1,0 +1,13 @@
+name = "Paper Doll"
+filename = "paperdoll-fabric-1.4.0-mc1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/edwFXb9k/versions/EjK0IN3m/paperdoll-fabric-1.4.0-mc1.21.1.jar"
+hash-format = "sha512"
+hash = "f05178fa36867575779cae2503b8ac2166e8187e50577f474acb877e4275e78ae36af159e2ee39c4c1aa52cd73b1d621bb50197f0b307b615582137fb5a3f9bd"
+
+[update]
+[update.modrinth]
+mod-id = "edwFXb9k"
+version = "EjK0IN3m"

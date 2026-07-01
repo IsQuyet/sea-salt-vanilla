@@ -10,11 +10,11 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "86c0f4d8aff9bf57bab79de9d523a1f99adcc446eda8011816d5af60d14e82d7"
+hash = "b8ee16ace71a2132eed42c84e93fd2f9486c95e65b22822449411a37292b4198"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
-hash = "5f23e398d6030e9a6a6769bd9e19d0004af5e9062d5c7353467761bcdde46cc2"
+hash = "6de3bcacaf3a6267a4eb18bcd2dbad33e3deff550f33228989a6e9a0d01050ed"
 
 [[files]]
 file = "mods/a-good-place.pw.toml"
@@ -34,6 +34,11 @@ metafile = true
 [[files]]
 file = "mods/balm.pw.toml"
 hash = "11cad75407ec196d35462b8bad0d7aeff6efe4810a91e756db6c0d7c4050af90"
+metafile = true
+
+[[files]]
+file = "mods/blur-plus.pw.toml"
+hash = "8e4e965d925ec5074a480e3d02ac522cd9b11fe72372a80654a65454128e9f6b"
 metafile = true
 
 [[files]]
@@ -167,6 +172,11 @@ hash = "de9842a74bad2677a92f96157171b3108dcacb6a517d395006a1f158d5f46bbb"
 metafile = true
 
 [[files]]
+file = "mods/immersive-ui.pw.toml"
+hash = "8e54aa67b2e446ba49f4c0a877a87b9e22a72f61e30e5d9b650f97b5c0f335a4"
+metafile = true
+
+[[files]]
 file = "mods/iris.pw.toml"
 hash = "6ee94689dd67f0210e07feafac8140e8968bcbcd67defcfbdcd677cf78943900"
 metafile = true
@@ -174,6 +184,11 @@ metafile = true
 [[files]]
 file = "mods/itemphysic-lite.pw.toml"
 hash = "02bd5feee43bd8e0afc59393ec4cacc2599e4594f770748b99629a0d0db2a1e6"
+metafile = true
+
+[[files]]
+file = "mods/kiwi.pw.toml"
+hash = "1062609b58162aef42230cdebb6c63fa15c5ed7de9ae7709d38c85ba1078578c"
 metafile = true
 
 [[files]]
@@ -194,6 +209,16 @@ metafile = true
 [[files]]
 file = "mods/midnightlib.pw.toml"
 hash = "647807ff387e333abd790b47082a3cf6b7d41a2b27a4337ff65a611f096a7315"
+metafile = true
+
+[[files]]
+file = "mods/mini-effects.pw.toml"
+hash = "d57cb43941ddbc3f6cc74cadc6cc6bf2160fdcad8dc1d022f66b3e596afebd3d"
+metafile = true
+
+[[files]]
+file = "mods/modern-ui.pw.toml"
+hash = "59959b399bd357ebe7aad4fa80022ecf0e290f4cc9bd7285ae8af337d94f9374"
 metafile = true
 
 [[files]]
@@ -227,6 +252,11 @@ hash = "6f45c3f2ec9005b18846088784d291f4dabcce7b569031fb44855845a33aa8f7"
 metafile = true
 
 [[files]]
+file = "mods/paperdoll.pw.toml"
+hash = "f819a3b4b7bf7c9bf2c273898f149ac83b96019473fe48a6f453b5cb170a3649"
+metafile = true
+
+[[files]]
 file = "mods/particle-effects.pw.toml"
 hash = "1201266618a477c1e417ef6b50ca3b30cf0e5bd164bb093a333168656ba6a7b0"
 metafile = true
@@ -257,6 +287,11 @@ hash = "d4ad5c4462a3ee981f6ac3eff82c3cc1d6f08b3c01c99e16face1261a6161684"
 metafile = true
 
 [[files]]
+file = "mods/raised.pw.toml"
+hash = "d31e198b99f302fd2bcb19e48675a96b7fbe4aa009988f754b0d5b3657ee22bc"
+metafile = true
+
+[[files]]
 file = "mods/resourcify.pw.toml"
 hash = "3fdebddfeba339be4b0685674bb980dff168f06ed3ee7077b7c4397efa3fe6c5"
 metafile = true
@@ -264,6 +299,21 @@ metafile = true
 [[files]]
 file = "mods/scalablelux.pw.toml"
 hash = "ceb180c764fa9c7c12c7e750cc7b726171277cb2b68e47370888c4ff4679a4ed"
+metafile = true
+
+[[files]]
+file = "mods/shatterbyte-lib.pw.toml"
+hash = "9c9c2a9cc191c7cce4bb5143f19a5520253333e13d6c9f6ed873dcf63bc56628"
+metafile = true
+
+[[files]]
+file = "mods/smooth-gui.pw.toml"
+hash = "3cc2f693db80c6a53289e33028d7fec3029c7b8f6a1721f9b0e1141ef13e2397"
+metafile = true
+
+[[files]]
+file = "mods/smooth-scroll.pw.toml"
+hash = "69d9366753ade6e5dbcbbac31372fae83d6b37b81a63a797a217aa69e97f2992"
 metafile = true
 
 [[files]]
@@ -284,6 +334,11 @@ metafile = true
 [[files]]
 file = "mods/subtle-effects.pw.toml"
 hash = "39b0c31561fba4814a23e0c398888652d5f610920b4e33681c194bc1668f9e75"
+metafile = true
+
+[[files]]
+file = "mods/tiny-item-animations.pw.toml"
+hash = "d7655654c6b8fc819f2a01a4b50bb8b133efb1b5da88394b4af5581599a34a5e"
 metafile = true
 
 [[files]]

@@ -142,15 +142,15 @@
 
 | 功能            | 1.21.1               | 整合包状态 |
 | ------------- | -------------------- | ----- |
-| 纸娃娃显示         | Paper Doll           | 计划加入  |
-| 状态效果折叠        | Mini Effects         | 计划加入  |
-| 背包物品动画        | Tiny Item Animations | 计划加入  |
-| HUD 位置调整      | Raised               | 计划加入  |
-| UI 背景模糊       | Blur                 | 计划加入  |
-| 平滑滚动          | Smooth Scroll        | 计划加入  |
-| 平滑 GUI 动画     | Smooth GUI           | 计划加入  |
-| 现代 UI 框架与文字渲染 | Modern UI            | 计划加入  |
-| 沉浸式 UI 交互     | Immersive UI         | 计划加入  |
+| 纸娃娃显示         | Paper Doll           | 已加入   |
+| 状态效果折叠        | Mini Effects         | 已加入   |
+| 背包物品动画        | Tiny Item Animations | 已加入   |
+| HUD 位置调整      | Raised               | 已加入   |
+| UI 背景模糊       | Blur                 | 已加入   |
+| 平滑滚动          | Smooth Scroll        | 已加入   |
+| 平滑 GUI 动画     | Smooth GUI           | 已加入   |
+| 现代 UI 框架与文字渲染 | Modern UI            | 已加入   |
+| 沉浸式 UI 交互     | Immersive UI         | 已加入   |
 
 
 ### 聊天与社交 UI

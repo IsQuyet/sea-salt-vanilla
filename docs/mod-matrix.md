@@ -125,15 +125,15 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Player paper doll | Paper Doll | Planned |
-| Status effect folding | Mini Effects | Planned |
-| Inventory item animations | Tiny Item Animations | Planned |
-| HUD positioning | Raised | Planned |
-| UI background blur | Blur | Planned |
-| Smooth scrolling | Smooth Scroll | Planned |
-| Smooth GUI animation | Smooth GUI | Planned |
-| Modern UI framework and text rendering | Modern UI | Planned |
-| Immersive UI interactions | Immersive UI | Planned |
+| Player paper doll | Paper Doll | Added |
+| Status effect folding | Mini Effects | Added |
+| Inventory item animations | Tiny Item Animations | Added |
+| HUD positioning | Raised | Added |
+| UI background blur | Blur | Added |
+| Smooth scrolling | Smooth Scroll | Added |
+| Smooth GUI animation | Smooth GUI | Added |
+| Modern UI framework and text rendering | Modern UI | Added |
+| Immersive UI interactions | Immersive UI | Added |
 
 ### Chat and social UI
 
