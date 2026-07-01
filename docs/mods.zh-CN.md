@@ -189,6 +189,8 @@
 | 背包移动兼容 | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  | 已加入 |
 | 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  | 已加入 |
 | 可视化键位总览 | [VisualKeys](https://modrinth.com/mod/visualkeys) |  | 已加入 |
+| 闪烁提醒 | [Flash](https://modrinth.com/mod/flash) |  | 已加入 |
+| 背包物品高亮 | [Item Highlighter](https://modrinth.com/mod/item-highlighter) |  | 已加入 |
 | 输入法冲突处理 | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | 已加入 |
 | 中文字符搜索支持 | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  | 已加入 |
 | 缩放控制 | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | 已加入 |

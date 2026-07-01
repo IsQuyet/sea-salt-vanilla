@@ -14,11 +14,43 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "mods"
+MATRIX = DATA / "matrix"
+GENERATED = DATA / "generated"
 MODS = ROOT / "mods"
+PACK = ROOT / "pack.toml"
 CACHE = ROOT / "reference" / "modrinth-collections"
 DEPENDENCY_CACHE = CACHE / "modrinth-version-dependencies.json"
-TARGET_VERSION = "1.21.1"
+PROJECT_CACHE = CACHE / "modrinth-projects.json"
+PROJECTS_PATH = GENERATED / "projects.json"
+DEPENDENCIES_PATH = GENERATED / "dependencies.json"
 MODRINTH_VERSIONS_API = "https://api.modrinth.com/v2/versions"
+MODRINTH_PROJECT_API = "https://api.modrinth.com/v2/project"
+OPTIONAL_FEATURE_FILE = DATA / "optional.json"
+
+
+def feature_group_order(path: Path) -> tuple[int, str]:
+    try:
+        group = json.loads(path.read_text(encoding="utf-8-sig"))
+    except (OSError, json.JSONDecodeError):
+        return (9999, path.name)
+    return (int(group.get("order", 9999)), path.name)
+
+
+def load_default_feature_files() -> list[Path]:
+    return sorted(MATRIX.glob("*.json"), key=feature_group_order)
+
+
+DEFAULT_FEATURE_FILES = load_default_feature_files()
+FEATURE_GROUP_FILES = [*DEFAULT_FEATURE_FILES, OPTIONAL_FEATURE_FILE]
+
+
+def load_target_version() -> str:
+    with PACK.open("rb") as file:
+        metadata = tomllib.load(file)
+    return str(metadata.get("versions", {}).get("minecraft") or "1.21.1")
+
+
+TARGET_VERSION = load_target_version()
 
 
 def read_json(path: Path) -> Any:
@@ -73,11 +105,66 @@ def load_dependency_cache() -> dict[str, Any]:
 
 
 def load_declared_dependencies() -> dict[str, dict[str, Any]]:
-    path = DATA / "dependencies.json"
-    if not path.exists():
+    if not DEPENDENCIES_PATH.exists():
         return {}
-    data = read_json(path)
+    data = read_json(DEPENDENCIES_PATH)
     return {str(slug).lower(): value for slug, value in data.items()}
+
+
+def load_project_meta() -> dict[str, dict[str, Any]]:
+    if not PROJECTS_PATH.exists():
+        return {}
+    return read_json(PROJECTS_PATH)
+
+
+def load_project_cache() -> dict[str, Any]:
+    if not PROJECT_CACHE.exists():
+        return {}
+    return read_json(PROJECT_CACHE)
+
+
+def collect_matrix_project_refs() -> list[str]:
+    refs: set[str] = set()
+
+    def remember(ref: Any) -> None:
+        if ref is None or isinstance(ref, dict):
+            return
+        refs.add(str(ref))
+
+    for file_name in FEATURE_GROUP_FILES:
+        group = read_json(file_name)
+        for section in group.get("sections", []):
+            for row in section.get("rows", []):
+                for version_data in row.get("versions", {}).values():
+                    remember(version_data.get("selected"))
+                    for ref in version_data.get("alternatives", []):
+                        remember(ref)
+
+    return sorted(refs)
+
+
+def fetch_modrinth_project(project_ref: str, cache: dict[str, Any]) -> dict[str, Any] | None:
+    if project_ref in cache:
+        cached = cache[project_ref]
+        return cached if isinstance(cached, dict) and "error" not in cached else None
+
+    request = urllib.request.Request(
+        f"{MODRINTH_PROJECT_API}/{urllib.parse.quote(project_ref, safe='')}",
+        headers={"User-Agent": "SeaSaltVanillaModDataTools/0.1 (local script)"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            project = json.loads(response.read().decode("utf-8"))
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
+        cache[project_ref] = {"error": str(error)}
+        return None
+
+    cache[project_ref] = project
+    if project.get("id"):
+        cache[str(project["id"])] = project
+    if project.get("slug"):
+        cache[str(project["slug"])] = project
+    return project
 
 
 def cache_version(data: dict[str, Any], cache: dict[str, Any]) -> None:
@@ -182,10 +269,8 @@ def build_documented_sets(project_meta: dict[str, dict[str, Any]]) -> dict[str, 
             for child in value:
                 walk_rows(child)
 
-    for path in sorted(DATA.glob("*.json")):
-        if path.name in {"meta.json", "projects.json", "dependencies.json"}:
-            continue
-        walk_rows(read_json(path))
+    for file_name in FEATURE_GROUP_FILES:
+        walk_rows(read_json(file_name))
 
     return documented
 
@@ -217,11 +302,9 @@ def expected_dependency_data(
         if not dependents:
             continue
         entries[mod["slug"]] = {
-            "policy": "dependency",
             "source": "modrinth" if mod["modrinth_id"] else "unknown",
             "name": mod["name"],
             "modrinth_id": mod["modrinth_id"],
             "required_by": sorted({dependent["slug"] for dependent in dependents}),
         }
     return dict(sorted(entries.items()))
-

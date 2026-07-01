@@ -3,11 +3,13 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import tomllib
-import argparse
 from pathlib import Path
 from typing import Any
+
+from mod_data_common import FEATURE_GROUP_FILES, OPTIONAL_FEATURE_FILE, PROJECTS_PATH
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,18 +18,10 @@ ENGLISH_PATH = ROOT / "docs" / "mods.md"
 CHINESE_PATH = ROOT / "docs" / "mods.zh-CN.md"
 MODS_PATH = ROOT / "mods"
 
-GROUP_FILES = [
-    "core-foundation.json",
-    "visual-and-audio-enhancements.json",
-    "utility-features.json",
-    "optional-capabilities.json",
-]
-
 STATUS_LABELS = {
     "added": {"en": "Added", "zh": "已加入"},
     "planned": {"en": "Planned", "zh": "计划加入"},
     "optional": {"en": "Optional", "zh": "可选"},
-    "skipped": {"en": "Skipped", "zh": "暂不加入"},
 }
 
 
@@ -50,8 +44,12 @@ def write_text(path: Path, text: str) -> None:
 
 def load_data() -> dict[str, Any]:
     meta = read_json(DATA_DIR / "meta.json")
-    projects = read_json(DATA_DIR / "projects.json")
-    groups = [read_json(DATA_DIR / file_name) for file_name in GROUP_FILES]
+    projects = read_json(PROJECTS_PATH)
+    groups = []
+    for file_name in FEATURE_GROUP_FILES:
+        group = read_json(file_name)
+        group["_source_file"] = file_name
+        groups.append(group)
 
     return {
         "versions": meta["versions"],
@@ -157,11 +155,10 @@ def project_status(
     project: dict[str, Any] | None,
     installed: dict[str, set[str]],
     language: str,
+    is_optional_group: bool,
 ) -> str:
-    if row.get("policy") == "optional":
+    if is_optional_group:
         return STATUS_LABELS["optional"][language]
-    if row.get("policy") == "skipped":
-        return STATUS_LABELS["skipped"][language]
 
     return STATUS_LABELS["added" if project_is_installed(project, installed) else "planned"][language]
 
@@ -194,6 +191,7 @@ def render_matrix(data: dict[str, Any], language: str) -> str:
     lines = render_header(data, language)
 
     for group in data["groups"]:
+        is_optional_group = group.get("_source_file") == OPTIONAL_FEATURE_FILE
         lines.extend([
             f"## {group['title'][language]}",
             "",
@@ -246,7 +244,7 @@ def render_matrix(data: dict[str, Any], language: str) -> str:
                     ]
                     cells.append(", ".join(alternatives))
 
-                cells.append(project_status(row, status_project, installed, language))
+                cells.append(project_status(row, status_project, installed, language, is_optional_group))
                 lines.append(f"| {' | '.join(cells)} |")
 
             lines.append("")

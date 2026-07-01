@@ -1,5 +1,5 @@
 {
-  "id": "optional-capabilities",
+  "id": "optional",
   "title": {
     "en": "Optional capabilities",
     "zh": "可选能力"
@@ -30,8 +30,7 @@
             "1.21.1": {
               "selected": "simple-voice-chat"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "server-resource-pack-unpacking",
@@ -43,8 +42,7 @@
             "1.21.1": {
               "selected": "server-unpacker"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "multiplayer-client-enhancements",
@@ -56,8 +54,7 @@
             "1.21.1": {
               "selected": "noxesium"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "remote-view-distance-cache",
@@ -69,8 +66,7 @@
             "1.21.1": {
               "selected": "bobby"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "client-side-wearable-rendering",
@@ -82,8 +78,7 @@
             "1.21.1": {
               "selected": "wearthat"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "social-client-layer",
@@ -95,8 +90,7 @@
             "1.21.1": {
               "selected": "essential"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "player-emotes",
@@ -108,8 +102,7 @@
             "1.21.1": {
               "selected": "emotecraft"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "voice-chat-bubbles",
@@ -121,8 +114,7 @@
             "1.21.1": {
               "selected": "talkbubbles"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "talking-head-indicators",
@@ -134,8 +126,7 @@
             "1.21.1": {
               "selected": "talkingheads"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "chat-image-display",
@@ -147,8 +138,7 @@
             "1.21.1": {
               "selected": "chatimage"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "collectible-heads",
@@ -160,8 +150,7 @@
             "1.21.1": {
               "selected": "repo-heads"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "friendly-interactions",
@@ -173,8 +162,7 @@
             "1.21.1": {
               "selected": "headpat"
             }
-          },
-          "policy": "optional"
+          }
         }
       ]
     },
@@ -199,8 +187,7 @@
             "1.21.1": {
               "selected": "lambdynamiclights"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "sound-physics",
@@ -212,8 +199,7 @@
             "1.21.1": {
               "selected": "sound-physics-remastered"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "weather-particle-ambience",
@@ -225,8 +211,7 @@
             "1.21.1": {
               "selected": "particle-rain"
             }
-          },
-          "policy": "optional"
+          }
         }
       ]
     },
@@ -254,8 +239,7 @@
                 "pixelshot"
               ]
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "schematic-building",
@@ -267,8 +251,7 @@
             "1.21.1": {
               "selected": "litematica"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "replay-recording",
@@ -280,8 +263,7 @@
             "1.21.1": {
               "selected": "replaymod"
             }
-          },
-          "policy": "optional"
+          }
         },
         {
           "id": "controller-support",
@@ -293,8 +275,7 @@
             "1.21.1": {
               "selected": "controlify"
             }
-          },
-          "policy": "optional"
+          }
         }
       ]
     }

@@ -189,6 +189,8 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Inventory movement compatibility | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  | Added |
 | Keybinding search and conflicts | [Controlling](https://modrinth.com/mod/controlling) |  | Added |
 | Visual keybinding overview | [VisualKeys](https://modrinth.com/mod/visualkeys) |  | Added |
+| Attention flash notifications | [Flash](https://modrinth.com/mod/flash) |  | Added |
+| Inventory item highlighting | [Item Highlighter](https://modrinth.com/mod/item-highlighter) |  | Added |
 | Input method conflict handling | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | Added |
 | Chinese character search support | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  | Added |
 | Zoom controls | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | Added |

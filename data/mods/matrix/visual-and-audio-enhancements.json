@@ -1,5 +1,6 @@
 {
   "id": "visual-and-audio-enhancements",
+  "order": 20,
   "title": {
     "en": "Visual and audio enhancements",
     "zh": "视听美化"

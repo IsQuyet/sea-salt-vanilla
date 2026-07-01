@@ -1,6 +1,5 @@
 {
   "architectury-api": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "Architectury API",
     "modrinth_id": "lhGA9TYQ",
@@ -10,7 +9,6 @@
     ]
   },
   "balm": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "Balm",
     "modrinth_id": "MBAkmtvl",
@@ -19,7 +17,6 @@
     ]
   },
   "cicada": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "CICADA",
     "modrinth_id": "IwCkru1D",
@@ -28,7 +25,6 @@
     ]
   },
   "creativecore": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "CreativeCore",
     "modrinth_id": "OsZiaDHq",
@@ -38,7 +34,6 @@
     ]
   },
   "fzzy-config": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "Fzzy Config",
     "modrinth_id": "hYykXjDp",
@@ -46,8 +41,15 @@
       "subtle-effects"
     ]
   },
+  "iceberg": {
+    "source": "modrinth",
+    "name": "Iceberg",
+    "modrinth_id": "5faXoLqX",
+    "required_by": [
+      "item-highlighter"
+    ]
+  },
   "kiwi": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "Kiwi 🥝",
     "modrinth_id": "ufdDoWPd",
@@ -56,7 +58,6 @@
     ]
   },
   "konkrete": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "Konkrete",
     "modrinth_id": "J81TRJWm",
@@ -65,7 +66,6 @@
     ]
   },
   "libipn": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "libIPN",
     "modrinth_id": "onSQdWhM",
@@ -74,7 +74,6 @@
     ]
   },
   "malilib": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "MaLiLib",
     "modrinth_id": "GcWjdA9I",
@@ -83,7 +82,6 @@
     ]
   },
   "melody": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "Melody",
     "modrinth_id": "CVT4pFB2",
@@ -92,7 +90,6 @@
     ]
   },
   "midnightlib": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "MidnightLib",
     "modrinth_id": "codAaoxh",
@@ -103,7 +100,6 @@
     ]
   },
   "mossylib": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "MossyLib",
     "modrinth_id": "ffLDUGbm",
@@ -112,7 +108,6 @@
     ]
   },
   "mru": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "M.R.U",
     "modrinth_id": "SNVQ2c0g",
@@ -121,7 +116,6 @@
     ]
   },
   "placeholder-api": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "Text Placeholder API",
     "modrinth_id": "eXts2L7r",
@@ -130,7 +124,6 @@
     ]
   },
   "searchables": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "Searchables",
     "modrinth_id": "fuuu3xnx",
@@ -139,7 +132,6 @@
     ]
   },
   "shatterbyte-lib": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "ShatterLib | OctoLib",
     "modrinth_id": "RH2KUdKJ",
@@ -148,7 +140,6 @@
     ]
   },
   "tcdcommons": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "TCDCommons API",
     "modrinth_id": "Eldc1g37",
@@ -157,7 +148,6 @@
     ]
   },
   "yungs-api": {
-    "policy": "dependency",
     "source": "modrinth",
     "name": "YUNG's API",
     "modrinth_id": "Ua7DFN59",

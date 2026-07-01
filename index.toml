@@ -261,6 +261,11 @@ hash = "1d5799cd3b6ea714602c18546b99ba894e7511835b77803304792468fb7ee187"
 metafile = true
 
 [[files]]
+file = "mods/flash.pw.toml"
+hash = "fd39f92be7217d120beb79c905a5c6da2a0f824dba936e1a84591c4d4af1ad3d"
+metafile = true
+
+[[files]]
 file = "mods/forge-config-api-port.pw.toml"
 hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
 metafile = true
@@ -278,6 +283,11 @@ metafile = true
 [[files]]
 file = "mods/hold-my-items.pw.toml"
 hash = "d82a9b3f9ba777fcfa871322fcc168745c28f9a8ea18032e4ed6f0a3d3d9c32a"
+metafile = true
+
+[[files]]
+file = "mods/iceberg.pw.toml"
+hash = "c104293981bbfbf0b194c9428e8ec71fd980e80d80050204a83835a01deeecf3"
 metafile = true
 
 [[files]]
@@ -323,6 +333,11 @@ metafile = true
 [[files]]
 file = "mods/iris.pw.toml"
 hash = "6ee94689dd67f0210e07feafac8140e8968bcbcd67defcfbdcd677cf78943900"
+metafile = true
+
+[[files]]
+file = "mods/item-highlighter.pw.toml"
+hash = "d4cc5eb15f8287ccf25849a183feb07ffe80eeab05c7080e7ac6fb17065a7149"
 metafile = true
 
 [[files]]

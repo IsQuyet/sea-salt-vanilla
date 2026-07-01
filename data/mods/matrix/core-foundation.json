@@ -1,5 +1,6 @@
 {
   "id": "core-foundation",
+  "order": 10,
   "title": {
     "en": "Core foundation",
     "zh": "基础必备"
