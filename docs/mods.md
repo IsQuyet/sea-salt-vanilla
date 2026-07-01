@@ -150,10 +150,10 @@ These entries improve player skin, cape, and cosmetic display.
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| 3D skin layers | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) | Planned |
-| Cape physics | [WaveyCapes](https://modrinth.com/mod/wavey-capes) | Planned |
-| Cape provider support | [Capes](https://modrinth.com/mod/capes) | Planned |
-| Custom skin loading | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) | Planned |
+| 3D skin layers | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) | Added |
+| Cape physics | [WaveyCapes](https://modrinth.com/mod/wavey-capes) | Added |
+| Cape provider support | [Capes](https://modrinth.com/mod/capes) | Added |
+| Custom skin loading | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) | Added |
 
 ## Utility features
 

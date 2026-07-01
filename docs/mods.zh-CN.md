@@ -150,10 +150,10 @@
 
 | 功能 | 1.21.1 | 整合包状态 |
 | --- | --- | --- |
-| 3D 皮肤层 | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) | 计划加入 |
-| 披风物理效果 | [WaveyCapes](https://modrinth.com/mod/wavey-capes) | 计划加入 |
-| 披风来源支持 | [Capes](https://modrinth.com/mod/capes) | 计划加入 |
-| 自定义皮肤加载 | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) | 计划加入 |
+| 3D 皮肤层 | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) | 已加入 |
+| 披风物理效果 | [WaveyCapes](https://modrinth.com/mod/wavey-capes) | 已加入 |
+| 披风来源支持 | [Capes](https://modrinth.com/mod/capes) | 已加入 |
+| 自定义皮肤加载 | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) | 已加入 |
 
 ## 实用功能
 

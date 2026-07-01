@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/3dskinlayers.pw.toml"
+hash = "abd853502542de7e87f6bbe6d4f08f1185058689fe8a5b2cafafab0d2c74a2d5"
+metafile = true
+
+[[files]]
 file = "mods/a-good-place.pw.toml"
 hash = "21274e0ad1dba39400ca748b092c3782166000dc3906a14833c74ab6c02673ef"
 metafile = true
@@ -28,6 +33,11 @@ metafile = true
 [[files]]
 file = "mods/cameraoverhaul.pw.toml"
 hash = "3f4cc7439e4c169e9094ea87f7b6e51e60727ef7d5c0fa385fa5ad9d8d2b939d"
+metafile = true
+
+[[files]]
+file = "mods/capes.pw.toml"
+hash = "c899acdc322ab52800a6e305a16427297f411c1c39d97983be96e8b6a34e157c"
 metafile = true
 
 [[files]]
@@ -73,6 +83,11 @@ metafile = true
 [[files]]
 file = "mods/cull-leaves.pw.toml"
 hash = "2f62ae4c00af9ef9bdb8cae7c66b4eac578612dc5bf35bc33ffa0b9f9db09759"
+metafile = true
+
+[[files]]
+file = "mods/customskinloader.pw.toml"
+hash = "aec1df84ab0edd3ab36d80a08765ab0ae3754c2bdbb4e9f568e979f01f470234"
 metafile = true
 
 [[files]]
@@ -343,6 +358,11 @@ metafile = true
 [[files]]
 file = "mods/visuality.pw.toml"
 hash = "39426bfeeab22ea17f94fd3904dd9b78f9a3c9b4ddcb732b734ddbfd0e3568af"
+metafile = true
+
+[[files]]
+file = "mods/wavey-capes.pw.toml"
+hash = "4468feed50244b4fc7f292d8cf996285273a4df340cefb8810f068cb3056649e"
 metafile = true
 
 [[files]]
