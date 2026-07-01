@@ -1,0 +1,644 @@
+{
+  "id": "visual-and-audio-enhancements",
+  "title": {
+    "en": "Visual and audio enhancements",
+    "zh": "视听美化"
+  },
+  "description": {
+    "en": "These entries improve immersion through visuals, audio, animation, and presentation.",
+    "zh": "这些条目通过画面、声音、动画和呈现方式提升沉浸感。"
+  },
+  "sections": [
+    {
+      "id": "optifine-feature-parity",
+      "title": {
+        "en": "OptiFine feature parity",
+        "zh": "OptiFine 功能平替"
+      },
+      "description": {
+        "en": "These entries provide OptiFine-style visual and resource-pack features through Fabric-friendly mods.",
+        "zh": "这些条目通过 Fabric 友好的 Mod 提供类似 OptiFine 的视觉和资源包功能。"
+      },
+      "rows": [
+        {
+          "id": "shader-loader",
+          "feature": {
+            "en": "Shader loader",
+            "zh": "光影加载"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "iris"
+            }
+          }
+        },
+        {
+          "id": "sodium-video-option-extensions",
+          "feature": {
+            "en": "Sodium video option extensions",
+            "zh": "Sodium 视频选项扩展"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "sodium-extra"
+            }
+          }
+        },
+        {
+          "id": "optifine-alternatives-integration",
+          "feature": {
+            "en": "OptiFine alternatives integration",
+            "zh": "OptiFine 平替集成"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "puzzle"
+            }
+          }
+        },
+        {
+          "id": "custom-entity-models",
+          "feature": {
+            "en": "Custom entity models",
+            "zh": "自定义实体模型"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "entity-model-features"
+            }
+          }
+        },
+        {
+          "id": "custom-entity-textures",
+          "feature": {
+            "en": "Custom entity textures",
+            "zh": "自定义实体纹理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "entitytexturefeatures"
+            }
+          }
+        },
+        {
+          "id": "custom-item-textures",
+          "feature": {
+            "en": "Custom item textures",
+            "zh": "自定义物品纹理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "cit-resewn"
+            }
+          }
+        },
+        {
+          "id": "connected-textures",
+          "feature": {
+            "en": "Connected textures",
+            "zh": "连接纹理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "continuity"
+            }
+          }
+        },
+        {
+          "id": "custom-gui-resource-pack-support",
+          "feature": {
+            "en": "Custom GUI resource pack support",
+            "zh": "自定义 GUI 资源包支持"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "optigui"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "visual-effects",
+      "title": {
+        "en": "Visual effects",
+        "zh": "视觉效果"
+      },
+      "description": {
+        "en": "These entries add client-side ambience, distant terrain, shader enhancements, particles, and small visual feedback effects.",
+        "zh": "这些条目添加客户端氛围、远景地形、光影扩展、粒子和细节视觉反馈。"
+      },
+      "rows": [
+        {
+          "id": "distant-terrain-renderer",
+          "feature": {
+            "en": "Distant terrain renderer",
+            "zh": "远景地形渲染"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "distanthorizons"
+            }
+          }
+        },
+        {
+          "id": "complementary-shader-visual-extensions",
+          "feature": {
+            "en": "Complementary shader visual extensions",
+            "zh": "Complementary 光影视觉扩展"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "euphoria-patches"
+            }
+          }
+        },
+        {
+          "id": "ambient-particles",
+          "feature": {
+            "en": "Ambient particles",
+            "zh": "氛围粒子"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "visuality"
+            }
+          }
+        },
+        {
+          "id": "subtle-visual-effects",
+          "feature": {
+            "en": "Subtle visual effects",
+            "zh": "细节视觉效果"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "subtle-effects"
+            }
+          }
+        },
+        {
+          "id": "additional-particle-effects",
+          "feature": {
+            "en": "Additional particle effects",
+            "zh": "额外粒子效果"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "particle-effects"
+            }
+          }
+        },
+        {
+          "id": "particle-interactions",
+          "feature": {
+            "en": "Particle interactions",
+            "zh": "粒子交互"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "particle-interactions"
+            }
+          }
+        },
+        {
+          "id": "bubble-pop-effects",
+          "feature": {
+            "en": "Bubble pop effects",
+            "zh": "气泡破裂效果"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "make_bubbles_pop"
+            }
+          }
+        },
+        {
+          "id": "falling-leaf-particles",
+          "feature": {
+            "en": "Falling leaf particles",
+            "zh": "落叶粒子"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "fallingleaves"
+            }
+          }
+        },
+        {
+          "id": "explosion-effects",
+          "feature": {
+            "en": "Explosion effects",
+            "zh": "爆炸效果"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "explosive-enhancement"
+            }
+          }
+        },
+        {
+          "id": "mining-visual-feedback",
+          "feature": {
+            "en": "Mining visual feedback",
+            "zh": "挖掘视觉反馈"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "mining_and_placing_animations"
+            }
+          }
+        },
+        {
+          "id": "immersive-visual-effects",
+          "feature": {
+            "en": "Immersive visual effects",
+            "zh": "沉浸式视觉效果"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "perception"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "title": {
+        "en": "Audio",
+        "zh": "音效"
+      },
+      "description": {
+        "en": "These entries add ambience and improve how sound events feel in play.",
+        "zh": "这些条目添加环境音，并改善游戏中的声音事件感受。"
+      },
+      "rows": [
+        {
+          "id": "ambient-soundscapes",
+          "feature": {
+            "en": "Ambient soundscapes",
+            "zh": "环境音景"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "ambientsounds"
+            }
+          }
+        },
+        {
+          "id": "footstep-sounds",
+          "feature": {
+            "en": "Footstep sounds",
+            "zh": "脚步声"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "presence-footsteps"
+            }
+          }
+        },
+        {
+          "id": "sound-event-improvements",
+          "feature": {
+            "en": "Sound event improvements",
+            "zh": "声音事件改进"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "sound"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "animation-and-movement",
+      "title": {
+        "en": "Animation and movement",
+        "zh": "动画与移动"
+      },
+      "description": {
+        "en": "These entries improve first-person, third-person, item, block, and movement presentation.",
+        "zh": "这些条目改善第一人称、第三人称、物品、方块和移动表现。"
+      },
+      "rows": [
+        {
+          "id": "player-animations",
+          "feature": {
+            "en": "Player animations",
+            "zh": "玩家动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "not-enough-animations"
+            }
+          }
+        },
+        {
+          "id": "eating-animations",
+          "feature": {
+            "en": "Eating animations",
+            "zh": "进食动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "eating-animation"
+            }
+          }
+        },
+        {
+          "id": "item-drop-physics",
+          "feature": {
+            "en": "Item drop physics",
+            "zh": "物品掉落物理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "itemphysic-lite"
+            }
+          }
+        },
+        {
+          "id": "block-placement-animations",
+          "feature": {
+            "en": "Block placement animations",
+            "zh": "方块放置动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "a-good-place"
+            }
+          }
+        },
+        {
+          "id": "first-person-item-animations",
+          "feature": {
+            "en": "First-person item animations",
+            "zh": "第一人称物品动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "hold-my-items"
+            }
+          }
+        },
+        {
+          "id": "held-item-display",
+          "feature": {
+            "en": "Held item display",
+            "zh": "手持物品显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "weaponmaster"
+            }
+          }
+        },
+        {
+          "id": "camera-motion",
+          "feature": {
+            "en": "Camera motion",
+            "zh": "镜头运动"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "cameraoverhaul"
+            }
+          }
+        },
+        {
+          "id": "elytra-flight-controls",
+          "feature": {
+            "en": "Elytra flight controls",
+            "zh": "鞘翅飞行控制"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "do-a-barrel-roll"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "interface-polish",
+      "title": {
+        "en": "Interface polish",
+        "zh": "界面美化"
+      },
+      "description": {
+        "en": "These entries adjust menus, UI motion, text rendering, and screen layout.",
+        "zh": "这些条目调整菜单、UI 动效、文字渲染和界面布局。"
+      },
+      "rows": [
+        {
+          "id": "player-paper-doll",
+          "feature": {
+            "en": "Player paper doll",
+            "zh": "纸娃娃显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "paperdoll"
+            }
+          }
+        },
+        {
+          "id": "status-effect-folding",
+          "feature": {
+            "en": "Status effect folding",
+            "zh": "状态效果折叠"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "mini-effects"
+            }
+          }
+        },
+        {
+          "id": "inventory-item-animations",
+          "feature": {
+            "en": "Inventory item animations",
+            "zh": "背包物品动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "tiny-item-animations"
+            }
+          }
+        },
+        {
+          "id": "hud-positioning",
+          "feature": {
+            "en": "HUD positioning",
+            "zh": "HUD 位置调整"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "raised"
+            }
+          }
+        },
+        {
+          "id": "ui-background-blur",
+          "feature": {
+            "en": "UI background blur",
+            "zh": "UI 背景模糊"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "blur-plus"
+            }
+          }
+        },
+        {
+          "id": "smooth-scrolling",
+          "feature": {
+            "en": "Smooth scrolling",
+            "zh": "平滑滚动"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "smooth-scroll"
+            }
+          }
+        },
+        {
+          "id": "smooth-gui-animation",
+          "feature": {
+            "en": "Smooth GUI animation",
+            "zh": "平滑 GUI 动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "smooth-gui"
+            }
+          }
+        },
+        {
+          "id": "modern-ui-framework-and-text-rendering",
+          "feature": {
+            "en": "Modern UI framework and text rendering",
+            "zh": "现代 UI 框架与文字渲染"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "modern-ui"
+            }
+          }
+        },
+        {
+          "id": "immersive-ui-interactions",
+          "feature": {
+            "en": "Immersive UI interactions",
+            "zh": "沉浸式 UI 交互"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "immersive-ui"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "chat-and-social-ui",
+      "title": {
+        "en": "Chat and social UI",
+        "zh": "聊天与社交 UI"
+      },
+      "description": {
+        "en": "These entries improve chat readability and presentation without requiring server-side gameplay content.",
+        "zh": "这些条目改善聊天可读性和呈现方式，不要求服务器添加玩法内容。"
+      },
+      "rows": [
+        {
+          "id": "chat-avatars",
+          "feature": {
+            "en": "Chat avatars",
+            "zh": "聊天头像"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "chat-heads"
+            }
+          }
+        },
+        {
+          "id": "chat-message-animation",
+          "feature": {
+            "en": "Chat message animation",
+            "zh": "聊天消息动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "chatanimation"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "skin-and-cosmetics",
+      "title": {
+        "en": "Skin and cosmetics",
+        "zh": "皮肤与外观"
+      },
+      "description": {
+        "en": "These entries improve player skin, cape, and cosmetic display.",
+        "zh": "这些条目改善玩家皮肤、披风和外观显示。"
+      },
+      "rows": [
+        {
+          "id": "3d-skin-layers",
+          "feature": {
+            "en": "3D skin layers",
+            "zh": "3D 皮肤层"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "3dskinlayers"
+            }
+          }
+        },
+        {
+          "id": "cape-physics",
+          "feature": {
+            "en": "Cape physics",
+            "zh": "披风物理效果"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "wavey-capes"
+            }
+          }
+        },
+        {
+          "id": "cape-provider-support",
+          "feature": {
+            "en": "Cape provider support",
+            "zh": "披风来源支持"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "capes"
+            }
+          }
+        },
+        {
+          "id": "custom-skin-loading",
+          "feature": {
+            "en": "Custom skin loading",
+            "zh": "自定义皮肤加载"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "customskinloader"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

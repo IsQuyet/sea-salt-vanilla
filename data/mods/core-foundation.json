@@ -1,0 +1,317 @@
+{
+  "id": "core-foundation",
+  "title": {
+    "en": "Core foundation",
+    "zh": "基础必备"
+  },
+  "description": {
+    "en": "These entries provide the runtime, performance, pack management, and configuration base for the pack.",
+    "zh": "这些条目提供整合包运行、性能、包管理和配置所需的基础能力。"
+  },
+  "sections": [
+    {
+      "id": "runtime-and-apis",
+      "title": {
+        "en": "Runtime and APIs",
+        "zh": "运行时与 API"
+      },
+      "description": {
+        "en": "These entries provide loader-level APIs and language runtimes used by other mods.",
+        "zh": "这些条目提供其他 Mod 需要的加载器 API 和语言运行时。"
+      },
+      "rows": [
+        {
+          "id": "fabric-api-support",
+          "feature": {
+            "en": "Fabric API support",
+            "zh": "Fabric API 支持"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "fabric-api"
+            }
+          }
+        },
+        {
+          "id": "kotlin-runtime",
+          "feature": {
+            "en": "Kotlin runtime",
+            "zh": "Kotlin 运行时"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "fabric-language-kotlin"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "title": {
+        "en": "Performance",
+        "zh": "性能优化"
+      },
+      "description": {
+        "en": "These entries improve frame pacing, memory use, lighting, networking, and rendering cost.",
+        "zh": "这些条目改善帧率稳定性、内存使用、光照、网络和渲染开销。"
+      },
+      "rows": [
+        {
+          "id": "rendering-engine-optimization",
+          "feature": {
+            "en": "Rendering engine optimization",
+            "zh": "渲染引擎优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "sodium"
+            }
+          }
+        },
+        {
+          "id": "game-logic-optimization",
+          "feature": {
+            "en": "Game logic optimization",
+            "zh": "游戏逻辑优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "lithium"
+            }
+          }
+        },
+        {
+          "id": "startup-and-memory-fixes",
+          "feature": {
+            "en": "Startup and memory fixes",
+            "zh": "启动与内存修复"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "modernfix"
+            }
+          }
+        },
+        {
+          "id": "immediate-rendering-optimization",
+          "feature": {
+            "en": "Immediate rendering optimization",
+            "zh": "即时渲染优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "immediatelyfast"
+            }
+          }
+        },
+        {
+          "id": "network-stack-optimization",
+          "feature": {
+            "en": "Network stack optimization",
+            "zh": "网络栈优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "krypton"
+            }
+          }
+        },
+        {
+          "id": "light-engine-optimization",
+          "feature": {
+            "en": "Light engine optimization",
+            "zh": "光照引擎优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "scalablelux"
+            }
+          }
+        },
+        {
+          "id": "entity-render-culling",
+          "feature": {
+            "en": "Entity render culling",
+            "zh": "实体渲染剔除"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "entityculling"
+            }
+          }
+        },
+        {
+          "id": "general-render-culling",
+          "feature": {
+            "en": "General render culling",
+            "zh": "通用渲染剔除"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "moreculling"
+            }
+          }
+        },
+        {
+          "id": "block-entity-rendering-optimization",
+          "feature": {
+            "en": "Block entity rendering optimization",
+            "zh": "方块实体渲染优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "ebe"
+            }
+          }
+        },
+        {
+          "id": "leaf-rendering-culling",
+          "feature": {
+            "en": "Leaf rendering culling",
+            "zh": "树叶渲染剔除"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "cull-leaves"
+            }
+          }
+        },
+        {
+          "id": "particle-performance",
+          "feature": {
+            "en": "Particle performance",
+            "zh": "粒子性能优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "asyncparticles"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "pack-management-and-defaults",
+      "title": {
+        "en": "Pack management and defaults",
+        "zh": "包管理与默认设置"
+      },
+      "description": {
+        "en": "These entries help discover, load, or distribute pack-level resources and default client settings.",
+        "zh": "这些条目用于发现、加载或分发整合包层面的资源和默认客户端设置。"
+      },
+      "rows": [
+        {
+          "id": "resource-pack-discovery",
+          "feature": {
+            "en": "Resource pack discovery",
+            "zh": "资源包浏览"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "resourcify"
+            }
+          }
+        },
+        {
+          "id": "global-pack-loading",
+          "feature": {
+            "en": "Global pack loading",
+            "zh": "全局包加载"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "globalpacks"
+            }
+          }
+        },
+        {
+          "id": "default-options-and-keybinds",
+          "feature": {
+            "en": "Default options and keybinds",
+            "zh": "默认选项与键位"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "default-options"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "mod-management-and-configuration-frameworks",
+      "title": {
+        "en": "Mod management and configuration frameworks",
+        "zh": "Mod 管理与配置框架"
+      },
+      "description": {
+        "en": "These entries provide mod lists, in-game config screens, and config frameworks used by other mods.",
+        "zh": "这些条目提供 Mod 列表、游戏内配置界面，以及其他 Mod 使用的配置框架。"
+      },
+      "rows": [
+        {
+          "id": "mod-list-and-config-entry",
+          "feature": {
+            "en": "Mod list and config entry",
+            "zh": "Mod 列表与配置入口"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "modmenu"
+            }
+          }
+        },
+        {
+          "id": "in-game-configuration-screens",
+          "feature": {
+            "en": "In-game configuration screens",
+            "zh": "游戏内配置界面"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "configured"
+            }
+          }
+        },
+        {
+          "id": "yacl-configuration-framework",
+          "feature": {
+            "en": "YACL configuration framework",
+            "zh": "YACL 配置框架"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "yacl"
+            }
+          }
+        },
+        {
+          "id": "cloth-config-framework",
+          "feature": {
+            "en": "Cloth Config framework",
+            "zh": "Cloth Config 配置框架"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "cloth-config"
+            }
+          }
+        },
+        {
+          "id": "forge-config-compatibility",
+          "feature": {
+            "en": "Forge config compatibility",
+            "zh": "Forge 配置兼容"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "forge-config-api-port"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

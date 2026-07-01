@@ -1,0 +1,421 @@
+{
+  "id": "utility-features",
+  "title": {
+    "en": "Utility features",
+    "zh": "实用功能"
+  },
+  "description": {
+    "en": "These entries make information, navigation, controls, multiplayer use, and creative workflows easier.",
+    "zh": "这些条目让信息查询、导航、控制、多人体验和创造/诊断工作流更方便。"
+  },
+  "sections": [
+    {
+      "id": "lookup-inventory-and-controls",
+      "title": {
+        "en": "Lookup, inventory, and controls",
+        "zh": "查询、背包与控制"
+      },
+      "description": {
+        "en": "These entries improve item lookup, inventory interaction, controls, and input handling.",
+        "zh": "这些条目改善物品查询、背包交互、控制和输入处理。"
+      },
+      "rows": [
+        {
+          "id": "item-and-recipe-browser",
+          "feature": {
+            "en": "Item and recipe browser",
+            "zh": "物品与配方浏览"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "rei"
+            }
+          }
+        },
+        {
+          "id": "block-and-entity-overlay",
+          "feature": {
+            "en": "Block and entity overlay",
+            "zh": "方块与实体信息浮层"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "jade"
+            }
+          }
+        },
+        {
+          "id": "food-value-display",
+          "feature": {
+            "en": "Food value display",
+            "zh": "食物数值显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "appleskin"
+            }
+          }
+        },
+        {
+          "id": "shulker-box-preview",
+          "feature": {
+            "en": "Shulker box preview",
+            "zh": "潜影盒预览"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "shulkerboxtooltip"
+            }
+          }
+        },
+        {
+          "id": "inventory-profiles-and-sorting",
+          "feature": {
+            "en": "Inventory profiles and sorting",
+            "zh": "背包配置与整理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "inventory-profiles-next"
+            }
+          }
+        },
+        {
+          "id": "mouse-inventory-actions",
+          "feature": {
+            "en": "Mouse inventory actions",
+            "zh": "鼠标背包操作"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "mouse-tweaks"
+            }
+          }
+        },
+        {
+          "id": "inventory-movement",
+          "feature": {
+            "en": "Inventory movement",
+            "zh": "打开背包时移动"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "invmove"
+            }
+          }
+        },
+        {
+          "id": "keybinding-search-and-conflicts",
+          "feature": {
+            "en": "Keybinding search and conflicts",
+            "zh": "键位搜索与冲突提示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "controlling"
+            }
+          }
+        },
+        {
+          "id": "input-method-conflict-handling",
+          "feature": {
+            "en": "Input method conflict handling",
+            "zh": "输入法冲突处理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "imblocker-original"
+            }
+          }
+        },
+        {
+          "id": "zoom-controls",
+          "feature": {
+            "en": "Zoom controls",
+            "zh": "缩放控制"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "zoomify",
+              "alternatives": [
+                "logical-zoom",
+                "ok-zoomer"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "hud-information-and-client-convenience",
+      "title": {
+        "en": "HUD information and client convenience",
+        "zh": "HUD 信息与客户端便利功能"
+      },
+      "description": {
+        "en": "These entries surface gameplay information or remove small interface friction.",
+        "zh": "这些条目展示游戏信息，或减少界面操作中的小摩擦。"
+      },
+      "rows": [
+        {
+          "id": "advanced-hud-overlays",
+          "feature": {
+            "en": "Advanced HUD overlays",
+            "zh": "高级 HUD 浮层"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "minihud"
+            }
+          }
+        },
+        {
+          "id": "inventory-hud-overlay",
+          "feature": {
+            "en": "Inventory HUD overlay",
+            "zh": "背包 HUD 浮层"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "inventory-hud"
+            }
+          }
+        },
+        {
+          "id": "mount-hud-improvements",
+          "feature": {
+            "en": "Mount HUD improvements",
+            "zh": "骑乘 HUD 改进"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "better-mount-hud"
+            }
+          }
+        },
+        {
+          "id": "statistics-screen-improvements",
+          "feature": {
+            "en": "Statistics screen improvements",
+            "zh": "统计界面改进"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "better-stats"
+            }
+          }
+        },
+        {
+          "id": "armor-detail-display",
+          "feature": {
+            "en": "Armor detail display",
+            "zh": "盔甲细节显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "detail-armor-bar"
+            }
+          }
+        },
+        {
+          "id": "dynamic-crosshair",
+          "feature": {
+            "en": "Dynamic crosshair",
+            "zh": "动态准星"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "dynamiccrosshair"
+            }
+          }
+        },
+        {
+          "id": "draggable-resource-pack-lists",
+          "feature": {
+            "en": "Draggable resource pack lists",
+            "zh": "可拖动资源包列表"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "draggable-lists"
+            }
+          }
+        },
+        {
+          "id": "resource-pack-warning-suppression",
+          "feature": {
+            "en": "Resource pack warning suppression",
+            "zh": "资源包警告隐藏"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "no-resource-pack-warnings"
+            }
+          }
+        },
+        {
+          "id": "custom-world-warning-suppression",
+          "feature": {
+            "en": "Custom world warning suppression",
+            "zh": "自定义世界警告隐藏"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "dcwa"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "map-and-navigation",
+      "title": {
+        "en": "Map and navigation",
+        "zh": "地图与导航"
+      },
+      "description": {
+        "en": "These entries provide client-side map, minimap, and location presentation tools.",
+        "zh": "这些条目提供客户端小地图、世界地图和位置呈现工具。"
+      },
+      "rows": [
+        {
+          "id": "minimap",
+          "feature": {
+            "en": "Minimap",
+            "zh": "小地图"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "xaeros-minimap"
+            }
+          }
+        },
+        {
+          "id": "world-map",
+          "feature": {
+            "en": "World map",
+            "zh": "世界地图"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "xaeros-world-map"
+            }
+          }
+        },
+        {
+          "id": "location-title-cards",
+          "feature": {
+            "en": "Location title cards",
+            "zh": "位置标题卡"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "travelers-titles"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "creative-tools-and-diagnostics",
+      "title": {
+        "en": "Creative tools and diagnostics",
+        "zh": "创造工具与诊断"
+      },
+      "description": {
+        "en": "These entries are useful for building, testing, profiling, or personal creative workflows.",
+        "zh": "这些条目用于建造、测试、性能分析或个人创造工作流。"
+      },
+      "rows": [
+        {
+          "id": "performance-profiler",
+          "feature": {
+            "en": "Performance profiler",
+            "zh": "性能分析"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "spark"
+            }
+          }
+        },
+        {
+          "id": "world-editing",
+          "feature": {
+            "en": "World editing",
+            "zh": "世界编辑"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "worldedit"
+            }
+          }
+        },
+        {
+          "id": "creative-builder-tools",
+          "feature": {
+            "en": "Creative builder tools",
+            "zh": "创造模式建造工具"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "lottweaks"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "optional-multiplayer-features",
+      "title": {
+        "en": "Optional multiplayer features",
+        "zh": "可选多人功能"
+      },
+      "description": {
+        "en": "These entries add features that work best on compatible multiplayer servers.",
+        "zh": "这些条目在兼容的多人服务器上效果更完整。"
+      },
+      "rows": [
+        {
+          "id": "proximity-voice-chat",
+          "feature": {
+            "en": "Proximity voice chat",
+            "zh": "近距离语音聊天"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "simple-voice-chat"
+            }
+          },
+          "policy": "skipped"
+        },
+        {
+          "id": "server-resource-pack-unpacking",
+          "feature": {
+            "en": "Server resource-pack unpacking",
+            "zh": "服务器资源包解包"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "server-unpacker"
+            }
+          },
+          "policy": "skipped"
+        },
+        {
+          "id": "multiplayer-client-enhancements",
+          "feature": {
+            "en": "Multiplayer client enhancements",
+            "zh": "多人服务器客户端增强"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "noxesium"
+            }
+          },
+          "policy": "skipped"
+        }
+      ]
+    }
+  ]
+}

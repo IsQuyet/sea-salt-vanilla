@@ -1,0 +1,22 @@
+# Repository maintenance files
+README.md
+README.zh-CN.md
+data/
+docs/
+tools/
+reference/
+
+# Git and editor metadata
+.git/
+.gitignore
+.packwizignore
+.idea/
+.vscode/
+
+# Local build/export outputs
+dist/
+build/
+*.mrpack
+*.zip
+*.jar
+*.disabled
