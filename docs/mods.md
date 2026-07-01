@@ -165,16 +165,16 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 
 | Feature | 1.21.1 | Alternatives | Pack status |
 | --- | --- | --- | --- |
-| Item and recipe browser | [Roughly Enough Items](https://modrinth.com/mod/rei) |  | Planned |
-| Block and entity overlay | [Jade](https://modrinth.com/mod/jade) |  | Planned |
-| Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |  | Planned |
-| Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  | Planned |
-| Inventory profiles and sorting | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  | Planned |
-| Mouse inventory actions | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  | Planned |
-| Inventory movement | [InvMove](https://modrinth.com/mod/invmove) |  | Planned |
-| Keybinding search and conflicts | [Controlling](https://modrinth.com/mod/controlling) |  | Planned |
-| Input method conflict handling | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | Planned |
-| Zoom controls | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | Planned |
+| Item and recipe browser | [Roughly Enough Items](https://modrinth.com/mod/rei) |  | Added |
+| Block and entity overlay | [Jade](https://modrinth.com/mod/jade) |  | Added |
+| Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |  | Added |
+| Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  | Added |
+| Inventory profiles and sorting | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  | Added |
+| Mouse inventory actions | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  | Added |
+| Inventory movement | [InvMove](https://modrinth.com/mod/invmove) |  | Added |
+| Keybinding search and conflicts | [Controlling](https://modrinth.com/mod/controlling) |  | Added |
+| Input method conflict handling | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | Added |
+| Zoom controls | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | Added |
 
 ### HUD information and client convenience
 
@@ -210,7 +210,7 @@ These entries are useful for building, testing, profiling, or personal creative 
 | --- | --- | --- |
 | Performance profiler | [Spark](https://modrinth.com/mod/spark) | Planned |
 | World editing | [WorldEdit](https://modrinth.com/mod/worldedit) | Planned |
-| Creative builder tools | LotTweaks | Planned |
+| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | Planned |
 
 ### Optional multiplayer features
 

@@ -165,16 +165,16 @@
 
 | 功能 | 1.21.1 | 可选替代 | 整合包状态 |
 | --- | --- | --- | --- |
-| 物品与配方浏览 | [Roughly Enough Items](https://modrinth.com/mod/rei) |  | 计划加入 |
-| 方块与实体信息浮层 | [Jade](https://modrinth.com/mod/jade) |  | 计划加入 |
-| 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |  | 计划加入 |
-| 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  | 计划加入 |
-| 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  | 计划加入 |
-| 鼠标背包操作 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  | 计划加入 |
-| 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove) |  | 计划加入 |
-| 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  | 计划加入 |
-| 输入法冲突处理 | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | 计划加入 |
-| 缩放控制 | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | 计划加入 |
+| 物品与配方浏览 | [Roughly Enough Items](https://modrinth.com/mod/rei) |  | 已加入 |
+| 方块与实体信息浮层 | [Jade](https://modrinth.com/mod/jade) |  | 已加入 |
+| 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |  | 已加入 |
+| 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  | 已加入 |
+| 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  | 已加入 |
+| 鼠标背包操作 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  | 已加入 |
+| 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove) |  | 已加入 |
+| 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  | 已加入 |
+| 输入法冲突处理 | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  | 已加入 |
+| 缩放控制 | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) | 已加入 |
 
 ### HUD 信息与客户端便利功能
 
@@ -210,7 +210,7 @@
 | --- | --- | --- |
 | 性能分析 | [Spark](https://modrinth.com/mod/spark) | 计划加入 |
 | 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) | 计划加入 |
-| 创造模式建造工具 | LotTweaks | 计划加入 |
+| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) | 计划加入 |
 
 ### 可选多人功能
 

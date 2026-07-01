@@ -16,6 +16,16 @@ hash = "40b05643462be7f587ef8d513445fc6382705802274626f4123f09eeda868450"
 metafile = true
 
 [[files]]
+file = "mods/appleskin.pw.toml"
+hash = "17fc9c6cab5ae0ea6973440f143ad6ffa4e5d373749c80077b631dbbe4df3f3b"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
+metafile = true
+
+[[files]]
 file = "mods/asyncparticles.pw.toml"
 hash = "376d9f98e4b807355ade1e800fc8a455ae34dd0ee5913e04484c87e2a67ca717"
 metafile = true
@@ -73,6 +83,11 @@ metafile = true
 [[files]]
 file = "mods/continuity.pw.toml"
 hash = "4f97764f3cb4c74f84afbe32cf8a1d2cefecda129c0f1441906562dcb8f2b8cb"
+metafile = true
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "eecdc8127f69c74ff55fd183d1f1d7d5ef3e714d73845a239fe9e086147a67b1"
 metafile = true
 
 [[files]]
@@ -176,6 +191,11 @@ hash = "d82a9b3f9ba777fcfa871322fcc168745c28f9a8ea18032e4ed6f0a3d3d9c32a"
 metafile = true
 
 [[files]]
+file = "mods/imblocker-original.pw.toml"
+hash = "25b9cb9eeb832c1bcd2494ea9330c579be5b8da34bca148528ea1fbe3e1f28c1"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "de9842a74bad2677a92f96157171b3108dcacb6a517d395006a1f158d5f46bbb"
 metafile = true
@@ -183,6 +203,16 @@ metafile = true
 [[files]]
 file = "mods/immersive-ui.pw.toml"
 hash = "8e54aa67b2e446ba49f4c0a877a87b9e22a72f61e30e5d9b650f97b5c0f335a4"
+metafile = true
+
+[[files]]
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "e7820822a31d29cf5227b19046d7e84e73b7ae3e689c96e5fbdf1f8073b6f9ad"
+metafile = true
+
+[[files]]
+file = "mods/invmove.pw.toml"
+hash = "44f1fbc496fb2d54467ccbe0df5362c54542193e33b8541ad75b532e1baf775e"
 metafile = true
 
 [[files]]
@@ -196,6 +226,11 @@ hash = "02bd5feee43bd8e0afc59393ec4cacc2599e4594f770748b99629a0d0db2a1e6"
 metafile = true
 
 [[files]]
+file = "mods/jade.pw.toml"
+hash = "37a45ed98e4edc9c8224cb06f72be8914fae69687601d4e15009f1cb9f27563c"
+metafile = true
+
+[[files]]
 file = "mods/kiwi.pw.toml"
 hash = "1062609b58162aef42230cdebb6c63fa15c5ed7de9ae7709d38c85ba1078578c"
 metafile = true
@@ -203,6 +238,11 @@ metafile = true
 [[files]]
 file = "mods/krypton.pw.toml"
 hash = "c4e45594c8d1ab3dacc3b49142f16fb253178dd31d97cc917bf4a4d54f21e081"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "78eafe609d6474acab89104fe0f47d15c00348974c1d4d9b95599ee20a213dbe"
 metafile = true
 
 [[files]]
@@ -248,6 +288,11 @@ metafile = true
 [[files]]
 file = "mods/moreculling.pw.toml"
 hash = "adbf75e453327143c292fb63a4391e1f437744a5ee7397e9baa8c9f367b251c2"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "7fc969e77edc3b0b9946b42070fd858349a74555f0cf9648907241af8a3a2d25"
 metafile = true
 
 [[files]]
@@ -306,6 +351,11 @@ hash = "d31e198b99f302fd2bcb19e48675a96b7fbe4aa009988f754b0d5b3657ee22bc"
 metafile = true
 
 [[files]]
+file = "mods/rei.pw.toml"
+hash = "d22546ad55b555931eb527f163b3564e00c12c7dc8101378b87447dfcc8e0652"
+metafile = true
+
+[[files]]
 file = "mods/resourcify.pw.toml"
 hash = "3fdebddfeba339be4b0685674bb980dff168f06ed3ee7077b7c4397efa3fe6c5"
 metafile = true
@@ -316,8 +366,18 @@ hash = "ceb180c764fa9c7c12c7e750cc7b726171277cb2b68e47370888c4ff4679a4ed"
 metafile = true
 
 [[files]]
+file = "mods/searchables.pw.toml"
+hash = "8302da862578554b012b2cfe58a3c1e75b514d09f94d842e7303be41a2157aeb"
+metafile = true
+
+[[files]]
 file = "mods/shatterbyte-lib.pw.toml"
 hash = "9c9c2a9cc191c7cce4bb5143f19a5520253333e13d6c9f6ed873dcf63bc56628"
+metafile = true
+
+[[files]]
+file = "mods/shulkerboxtooltip.pw.toml"
+hash = "83b5a1c0b39aa94492a13f319c097ff8e7e55a6718e287e5d73b32f7500f1727"
 metafile = true
 
 [[files]]
@@ -373,4 +433,9 @@ metafile = true
 [[files]]
 file = "mods/yacl.pw.toml"
 hash = "af20070dd9497817a83162c17b181a0a44f7213ea302d059a81c5aed02d0c877"
+metafile = true
+
+[[files]]
+file = "mods/zoomify.pw.toml"
+hash = "96f866de9f3ebaa42dfcb92392684c241ff189f82ce24c3e7a32c1d0b8f37db8"
 metafile = true

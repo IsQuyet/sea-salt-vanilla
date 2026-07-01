@@ -460,7 +460,9 @@
     "slug": "worldedit"
   },
   "lottweaks": {
-    "name": "LotTweaks"
+    "name": "LotTweaks",
+    "source": "curseforge",
+    "slug": "lottweaks"
   },
   "simple-voice-chat": {
     "name": "Simple Voice Chat",
