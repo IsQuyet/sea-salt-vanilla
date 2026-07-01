@@ -67,14 +67,14 @@ These entries provide OptiFine-style visual and resource-pack features through F
 
 | Feature | 1.21.1 | Pack status |
 | --- | --- | --- |
-| Shader loader | Iris | Planned |
-| Sodium video option extensions | Sodium Extra | Planned |
-| OptiFine alternatives integration | Puzzle | Planned |
-| Custom entity models | Entity Model Features | Planned |
-| Custom entity textures | Entity Texture Features | Planned |
-| Custom item textures | CIT Resewn | Planned |
-| Connected textures | Continuity | Planned |
-| Custom GUI resource pack support | OptiGUI | Planned |
+| Shader loader | Iris | Added |
+| Sodium video option extensions | Sodium Extra | Added |
+| OptiFine alternatives integration | Puzzle | Added |
+| Custom entity models | Entity Model Features | Added |
+| Custom entity textures | Entity Texture Features | Added |
+| Custom item textures | CIT Resewn | Added |
+| Connected textures | Continuity | Added |
+| Custom GUI resource pack support | OptiGUI | Added |
 
 ### Visual effects
 

@@ -10,11 +10,11 @@ hash = "760d03104a22e227c1c1d94717f62aa311a2054249715835648affaac32d7dfd"
 
 [[files]]
 file = "docs/mod-matrix.md"
-hash = "4f8675c097a41c581dd3d3155e636a9b3803bf95c75b7b9417c1f1cc74426bc3"
+hash = "9d532f88c00ffe069f9ceab2ba1a664db87fc016d4aaf29dae70a53e5593d86b"
 
 [[files]]
 file = "docs/mod-matrix.zh-CN.md"
-hash = "d0892c452f9a3b2b24842ef371ea4d822d29f0976a0efd7461b8065a471ec0d2"
+hash = "1ccf3b75dd7cc3f824493d8624ff2ec5dce0057e36574d67807fc4ad2f8efe0d"
 
 [[files]]
 file = "mods/asyncparticles.pw.toml"
@@ -27,6 +27,11 @@ hash = "11cad75407ec196d35462b8bad0d7aeff6efe4810a91e756db6c0d7c4050af90"
 metafile = true
 
 [[files]]
+file = "mods/cit-resewn.pw.toml"
+hash = "6d511d91e17e09d36b0b0c7065b07eb604146bc9f3df0fbc932948aaf33aa440"
+metafile = true
+
+[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "446c173c87b7908daee86b0dee89c6b628c77beb7a0bc091ff5252b7c0062080"
 metafile = true
@@ -34,6 +39,11 @@ metafile = true
 [[files]]
 file = "mods/configured.pw.toml"
 hash = "b5bdeb1177654fc3914be329612778078231cd3dc1b9157669c641c905146690"
+metafile = true
+
+[[files]]
+file = "mods/continuity.pw.toml"
+hash = "4f97764f3cb4c74f84afbe32cf8a1d2cefecda129c0f1441906562dcb8f2b8cb"
 metafile = true
 
 [[files]]
@@ -52,8 +62,18 @@ hash = "b1f89407254a20cde6c60994a6315bd841b7f562669a1d29b436ec97463ff2ae"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "eb8252941ef1fd3cf0eeb8df8d0a77213f33306cd3a64e8fce0f65e1db9ef76e"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
 hash = "f23a0d6d48cc27e24e8c4cacf9231fe146f82e9ff27c90b2fd96e1de4482e765"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
+hash = "8c091c9a660b84f152e47c0d835d8865463ad79636264a68ca6d312399b46538"
 metafile = true
 
 [[files]]
@@ -79,6 +99,11 @@ metafile = true
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "de9842a74bad2677a92f96157171b3108dcacb6a517d395006a1f158d5f46bbb"
+metafile = true
+
+[[files]]
+file = "mods/iris.pw.toml"
+hash = "6ee94689dd67f0210e07feafac8140e8968bcbcd67defcfbdcd677cf78943900"
 metafile = true
 
 [[files]]
@@ -112,8 +137,18 @@ hash = "adbf75e453327143c292fb63a4391e1f437744a5ee7397e9baa8c9f367b251c2"
 metafile = true
 
 [[files]]
+file = "mods/optigui.pw.toml"
+hash = "6f45c3f2ec9005b18846088784d291f4dabcce7b569031fb44855845a33aa8f7"
+metafile = true
+
+[[files]]
 file = "mods/placeholder-api.pw.toml"
 hash = "2e2c1b47b513663871e71c89a699c66ac9fcc97633f007ed064ce4410f220f5a"
+metafile = true
+
+[[files]]
+file = "mods/puzzle.pw.toml"
+hash = "d4ad5c4462a3ee981f6ac3eff82c3cc1d6f08b3c01c99e16face1261a6161684"
 metafile = true
 
 [[files]]
@@ -124,6 +159,11 @@ metafile = true
 [[files]]
 file = "mods/scalablelux.pw.toml"
 hash = "ceb180c764fa9c7c12c7e750cc7b726171277cb2b68e47370888c4ff4679a4ed"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "a1d480c169158c9fdd151631b1a9b0999b2a640b7df555f5eb0cf8b13639d1ff"
 metafile = true
 
 [[files]]

@@ -76,14 +76,14 @@
 
 | 功能                 | 1.21.1                  | 整合包状态 |
 | ------------------ | ----------------------- | ----- |
-| 光影加载               | Iris                    | 计划加入  |
-| Sodium 视频选项扩展      | Sodium Extra            | 计划加入  |
-| OptiFine 平替集成       | Puzzle                  | 计划加入  |
-| 自定义实体模型            | Entity Model Features   | 计划加入  |
-| 自定义实体纹理            | Entity Texture Features | 计划加入  |
-| 自定义物品纹理            | CIT Resewn              | 计划加入  |
-| 连接纹理               | Continuity              | 计划加入  |
-| 自定义 GUI 资源包支持      | OptiGUI                 | 计划加入  |
+| 光影加载               | Iris                    | 已加入   |
+| Sodium 视频选项扩展      | Sodium Extra            | 已加入   |
+| OptiFine 平替集成       | Puzzle                  | 已加入   |
+| 自定义实体模型            | Entity Model Features   | 已加入   |
+| 自定义实体纹理            | Entity Texture Features | 已加入   |
+| 自定义物品纹理            | CIT Resewn              | 已加入   |
+| 连接纹理               | Continuity              | 已加入   |
+| 自定义 GUI 资源包支持      | OptiGUI                 | 已加入   |
 
 
 ### 视觉效果
