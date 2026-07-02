@@ -20,15 +20,32 @@
 - 必要时提供 CurseForge 包
 - 版本更新说明发布在 GitHub Releases 与 Modrinth 版本页面
 
+## 项目文档
+
+- [模组](docs/mods.zh-CN.md)
+- [资源包](docs/resourcepacks.zh-CN.md)
+- [光影包](docs/shaderpacks.zh-CN.md)
+
 ## 目录约定
 
 ```text
-mods/            # Mod，packwiz 元数据或本地文件
-config/          # 随包分发的客户端/通用配置
-defaultconfigs/  # 创建新世界时复制的默认配置
-resourcepacks/   # 资源包，packwiz 元数据或本地文件
-shaderpacks/     # 光影包，packwiz 元数据或本地文件
-dist/            # 本地导出产物，不提交
+sea-salt-vanilla/
+|-- mods/                 # Mod 的 packwiz 元数据
+|-- resourcepacks/        # 资源包的 packwiz 元数据
+|-- shaderpacks/          # 光影包的 packwiz 元数据
+|-- config/               # 随包分发的游戏配置
+|-- defaultconfigs/       # 创建新世界时复制的默认配置
+|-- docs/
+|   |-- config/
+|   |   `-- <category>/                # mods、resourcepacks、shaderpacks 等
+|   |       |-- meta.json              # 生成文档的元数据
+|   |       |-- matrix/*.json          # 文档可见项目矩阵
+|   |       `-- optional.json          # 已记录的可选项目
+|   `-- *.md                           # 自动生成的公开文档
+|-- data/
+|   |-- projects.json                  # 自动生成的可见项目注册表
+|   `-- dependencies.json              # 自动生成的 dependency-only 注册表
+`-- tools/                             # 生成和检查脚本
 ```
 
 ## 致谢

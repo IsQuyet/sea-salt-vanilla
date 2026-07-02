@@ -1,6 +1,6 @@
 # 光影包功能矩阵
 
-[English](shaderpacks.md) | [简体中文](shaderpacks.zh-CN.md)
+[返回 README](../README.zh-CN.md)
 
 这页跟踪每个已发布 Minecraft 版本中，由哪个光影包提供对应视觉风格。章节用于归类相关观感，表格行描述具体光影目标，版本列填写该版本使用的光影包。
 

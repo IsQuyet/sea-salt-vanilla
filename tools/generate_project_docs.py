@@ -90,11 +90,12 @@ def version_alternatives(data: dict[str, Any], row: dict[str, Any], version: str
 
 
 def render_header(data: dict[str, Any], language: str) -> list[str]:
-    name = data["name"]
+    readme_label = "返回 README" if language == "zh" else "Back to README"
+    readme_path = "../README.zh-CN.md" if language == "zh" else "../README.md"
     return [
         f"# {data['title'][language]}",
         "",
-        f"[English]({name}.md) | [简体中文]({name}.zh-CN.md)",
+        f"[{readme_label}]({readme_path})",
         "",
         data["introduction"][language],
         "",

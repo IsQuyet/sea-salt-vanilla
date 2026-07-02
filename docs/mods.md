@@ -1,6 +1,6 @@
 # Mod feature matrix
 
-[English](mods.md) | [简体中文](mods.zh-CN.md)
+[Back to README](../README.md)
 
 This page tracks which mod provides each feature in released Minecraft versions. Sections group related features, rows describe specific features, and version columns name the mod used for that version.
 

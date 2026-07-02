@@ -1,6 +1,6 @@
 # Shader pack feature matrix
 
-[English](shaderpacks.md) | [简体中文](shaderpacks.zh-CN.md)
+[Back to README](../README.md)
 
 This page tracks which shader pack provides each visual style in released Minecraft versions. Sections group related looks, rows describe specific shader goals, and version columns name the shader pack used for that version.
 

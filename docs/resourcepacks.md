@@ -1,6 +1,6 @@
 # Resource pack feature matrix
 
-[English](resourcepacks.md) | [简体中文](resourcepacks.zh-CN.md)
+[Back to README](../README.md)
 
 This page tracks which resource pack provides each feature in released Minecraft versions. Sections group related features, rows describe specific features, and version columns name the resource pack used for that version.
 

@@ -20,15 +20,32 @@ The goal: keep the vanilla experience recognizable, then quietly improve visuals
 - CurseForge packages may be provided when needed
 - Release notes are published through GitHub Releases and Modrinth version pages
 
+## Project documentation
+
+- [Mods](docs/mods.md)
+- [Resource packs](docs/resourcepacks.md)
+- [Shader packs](docs/shaderpacks.md)
+
 ## Directory layout
 
 ```text
-mods/            # Mods, as packwiz metadata or local files
-config/          # Client/common configs shipped with the pack
-defaultconfigs/  # Default configs copied into new worlds
-resourcepacks/   # Resource packs, as packwiz metadata or local files
-shaderpacks/     # Shader packs, as packwiz metadata or local files
-dist/            # Local export output, not committed
+sea-salt-vanilla/
+|-- mods/                 # Mod packwiz metadata
+|-- resourcepacks/        # Resource pack packwiz metadata
+|-- shaderpacks/          # Shader pack packwiz metadata
+|-- config/               # shipped game config
+|-- defaultconfigs/       # default configs copied into new worlds
+|-- docs/
+|   |-- config/
+|   |   `-- <category>/                # mods, resourcepacks, shaderpacks, ...
+|   |       |-- meta.json              # generated document metadata
+|   |       |-- matrix/*.json          # visible project matrices
+|   |       `-- optional.json          # documented optional projects
+|   `-- *.md                           # generated public documentation
+|-- data/
+|   |-- projects.json                  # generated visible project registry
+|   `-- dependencies.json              # generated dependency-only registry
+`-- tools/                             # generation and check scripts
 ```
 
 ## Acknowledgements

@@ -1,6 +1,6 @@
 # 资源包功能矩阵
 
-[English](resourcepacks.md) | [简体中文](resourcepacks.zh-CN.md)
+[返回 README](../README.zh-CN.md)
 
 这页跟踪每个已发布 Minecraft 版本中，由哪个资源包提供对应功能。章节用于归类相关功能，表格行描述具体功能，版本列填写该版本使用的资源包。
 
