@@ -1,0 +1,99 @@
+{
+  "id": "visual-styles",
+  "order": 10,
+  "title": {
+    "en": "Visual styles",
+    "zh": "视觉风格"
+  },
+  "description": {
+    "en": "These shader packs provide the default curated shader styles for the pack.",
+    "zh": "这些光影包提供整合包默认收录的精选光影风格。"
+  },
+  "sections": [
+    {
+      "id": "curated-shaderpacks",
+      "title": {
+        "en": "Curated shader packs",
+        "zh": "精选光影包"
+      },
+      "description": {
+        "en": "These entries come from the maintained Modrinth shader pack collection and are installed as default shader choices.",
+        "zh": "这些条目来自维护中的 Modrinth 光影包收藏夹，并作为默认光影选择安装。"
+      },
+      "rows": [
+        {
+          "id": "bliss-shaders",
+          "feature": {
+            "en": "Balanced cinematic shader style",
+            "zh": "均衡电影感光影风格"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "bliss-shader"
+            }
+          }
+        },
+        {
+          "id": "bsl-shaders",
+          "feature": {
+            "en": "Classic BSL shader style",
+            "zh": "经典 BSL 光影风格"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "bsl-shaders"
+            }
+          }
+        },
+        {
+          "id": "complementary-reimagined",
+          "feature": {
+            "en": "Vanilla-preserving Complementary style",
+            "zh": "保留原版观感的 Complementary 风格"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "complementary-reimagined"
+            }
+          }
+        },
+        {
+          "id": "complementary-unbound",
+          "feature": {
+            "en": "Realistic Complementary style",
+            "zh": "偏写实的 Complementary 风格"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "complementary-unbound"
+            }
+          }
+        },
+        {
+          "id": "photon-shaders",
+          "feature": {
+            "en": "Modern realistic lighting",
+            "zh": "现代写实光照"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "photon-shader"
+            }
+          }
+        },
+        {
+          "id": "rethinking-voxels",
+          "feature": {
+            "en": "Voxel-inspired lighting style",
+            "zh": "体素灵感光照风格"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "rethinking-voxels"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

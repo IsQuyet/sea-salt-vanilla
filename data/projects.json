@@ -90,6 +90,13 @@
     "slug": "biomeinfo",
     "modrinth_id": "Fws7jX8r"
   },
+  "bliss-shader": {
+    "name": "Bliss Shaders",
+    "source": "modrinth",
+    "type": "shader",
+    "slug": "bliss-shader",
+    "modrinth_id": "ZvMtQlho"
+  },
   "blur-plus": {
     "name": "Blur",
     "source": "modrinth",
@@ -110,6 +117,13 @@
     "type": "mod",
     "slug": "bobby",
     "modrinth_id": "M08ruV16"
+  },
+  "bsl-shaders": {
+    "name": "BSL Shaders",
+    "source": "modrinth",
+    "type": "shader",
+    "slug": "bsl-shaders",
+    "modrinth_id": "Q1vvjJYV"
   },
   "cameraoverhaul": {
     "name": "Camera Overhaul",
@@ -180,6 +194,20 @@
     "type": "mod",
     "slug": "cloth-config",
     "modrinth_id": "9s6osm5g"
+  },
+  "complementary-reimagined": {
+    "name": "Complementary Shaders - Reimagined",
+    "source": "modrinth",
+    "type": "shader",
+    "slug": "complementary-reimagined",
+    "modrinth_id": "HVnmMxH1"
+  },
+  "complementary-unbound": {
+    "name": "Complementary Shaders - Unbound",
+    "source": "modrinth",
+    "type": "shader",
+    "slug": "complementary-unbound",
+    "modrinth_id": "R6NEzAwj"
   },
   "configured": {
     "name": "Configured",
@@ -739,6 +767,13 @@
     "slug": "perception",
     "modrinth_id": "P8STLvzB"
   },
+  "photon-shader": {
+    "name": "Photon Shaders",
+    "source": "modrinth",
+    "type": "shader",
+    "slug": "photon-shader",
+    "modrinth_id": "lLqFfGNs"
+  },
   "pixelshot": {
     "name": "Pixelshot",
     "source": "modrinth",
@@ -801,6 +836,13 @@
     "type": "mod",
     "slug": "resourcify",
     "modrinth_id": "RLzHAoZe"
+  },
+  "rethinking-voxels": {
+    "name": "Rethinking Voxels",
+    "source": "modrinth",
+    "type": "shader",
+    "slug": "rethinking-voxels",
+    "modrinth_id": "kmwfVOoi"
   },
   "scalablelux": {
     "name": "ScalableLux",

@@ -1,0 +1,13 @@
+{
+  "title": {
+    "en": "Shader pack feature matrix",
+    "zh": "光影包功能矩阵"
+  },
+  "versions": [
+    "1.21.1"
+  ],
+  "introduction": {
+    "en": "This page tracks which shader pack provides each visual style in released Minecraft versions. Sections group related looks, rows describe specific shader goals, and version columns name the shader pack used for that version.",
+    "zh": "这页跟踪每个已发布 Minecraft 版本中，由哪个光影包提供对应视觉风格。章节用于归类相关观感，表格行描述具体光影目标，版本列填写该版本使用的光影包。"
+  }
+}
