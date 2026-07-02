@@ -1,0 +1,30 @@
+# Resource pack feature matrix
+
+[English](resourcepacks.md) | [简体中文](resourcepacks.zh-CN.md)
+
+This page tracks which resource pack provides each feature in released Minecraft versions. Sections group related features, rows describe specific features, and version columns name the resource pack used for that version.
+
+## Localization
+
+These entries translate mod interfaces that ship only in English.
+
+### Mod translations
+
+These resource packs add translations for mods that do not localize their own strings.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Sodium option translations | [Translations for Sodium](https://modrinth.com/resourcepack/translations-for-sodium) |
+
+## Entity visuals
+
+These entries change how entities are animated or rendered.
+
+### Entity animations
+
+These resource packs add or extend smooth entity animations. Extension packs depend on their base pack being installed.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Smooth entity animations | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) |
+| Fresh Animations extensions | [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |

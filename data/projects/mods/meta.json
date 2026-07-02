@@ -1,4 +1,8 @@
 {
+  "title": {
+    "en": "Mod feature matrix",
+    "zh": "Mod 功能矩阵"
+  },
   "versions": [
     "1.21.1"
   ],

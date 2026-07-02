@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check packwiz mod metadata against structured mod data."""
+"""Check packwiz project metadata (mods, resource packs, shaders, ...) against structured data."""
 
 from __future__ import annotations
 
@@ -7,31 +7,30 @@ import argparse
 import json
 from typing import Any
 
-from mod_data_common import (
+from project_data_common import (
     CACHE,
-    DATA,
-    DEFAULT_FEATURE_FILES,
     DEPENDENCY_CACHE,
-    FEATURE_GROUP_FILES,
-    OPTIONAL_FEATURE_FILE,
+    PROJECT_CACHE,
     TARGET_VERSION,
     build_documented_sets,
+    build_missing_required,
     build_required_by,
     is_documented,
     load_declared_dependencies,
     load_dependency_cache,
-    load_installed_mods,
+    load_feature_groups,
+    load_installed_projects,
+    load_project_cache,
     load_project_meta,
     markdown_escape,
     markdown_link,
-    read_json,
     required_by_names,
     write_json,
     write_text,
 )
 
 
-OUTPUT = CACHE / "mod-data-check.zh-CN.md"
+OUTPUT = CACHE / "project-data-check.zh-CN.md"
 
 
 def project_identity(project: dict[str, Any] | None, fallback: Any = None) -> str | None:
@@ -76,13 +75,29 @@ def is_project_installed(project: dict[str, Any] | None, installed: list[dict[st
     return False
 
 
-def load_feature_groups() -> list[dict[str, Any]]:
-    groups = []
-    for file_name in FEATURE_GROUP_FILES:
-        group = read_json(file_name)
-        group["_source_file"] = file_name
-        groups.append(group)
-    return groups
+def folder_type_conflicts(
+    installed: list[dict[str, Any]],
+    project_meta: dict[str, dict[str, Any]],
+) -> list[str]:
+    type_by_id: dict[str, str] = {}
+    type_by_slug: dict[str, str] = {}
+    for entry in project_meta.values():
+        declared_type = str(entry.get("type") or "")
+        if not declared_type:
+            continue
+        if entry.get("modrinth_id"):
+            type_by_id[str(entry["modrinth_id"])] = declared_type
+        if entry.get("slug"):
+            type_by_slug[str(entry["slug"]).lower()] = declared_type
+
+    conflicts: list[str] = []
+    for project in installed:
+        expected = type_by_id.get(project["modrinth_id"]) or type_by_slug.get(project["slug"])
+        if expected and expected != project["type"]:
+            conflicts.append(
+                f"{project['file']}: installed as {project['type']} but Modrinth project type is {expected}"
+            )
+    return conflicts
 
 
 def unexpected_installed_projects(
@@ -93,7 +108,7 @@ def unexpected_installed_projects(
     conflicts: list[str] = []
 
     for group in groups:
-        is_optional_group = group.get("_source_file") == OPTIONAL_FEATURE_FILE
+        is_optional_group = bool(group["_optional"])
         for section in group["sections"]:
             for row in section["rows"]:
                 for version, version_data in row.get("versions", {}).items():
@@ -169,7 +184,7 @@ def expected_default_projects(
 ) -> list[dict[str, Any]]:
     expected: list[dict[str, Any]] = []
     for group in groups:
-        if group.get("_source_file") not in DEFAULT_FEATURE_FILES:
+        if group["_optional"]:
             continue
         for section in group["sections"]:
             for row in section["rows"]:
@@ -185,8 +200,8 @@ def expected_default_projects(
 def table(lines: list[str], rows: list[dict[str, object]], required_by: dict[str, list[dict[str, object]]]) -> None:
     lines.extend(
         [
-            "| Mod | Slug | Side | Pack file | Required by |",
-            "| --- | --- | --- | --- | --- |",
+            "| Project | Type | Slug | Side | Pack file | Required by |",
+            "| --- | --- | --- | --- | --- | --- |",
         ]
     )
     for mod in rows:
@@ -195,7 +210,8 @@ def table(lines: list[str], rows: list[dict[str, object]], required_by: dict[str
             "| "
             + " | ".join(
                 [
-                    markdown_link(str(mod["name"]), project_id),
+                    markdown_link(str(mod["name"]), project_id, str(mod.get("type") or "")),
+                    markdown_escape(mod.get("type")),
                     markdown_escape(mod["slug"]),
                     markdown_escape(mod["side"]),
                     markdown_escape(mod["file"]),
@@ -207,14 +223,17 @@ def table(lines: list[str], rows: list[dict[str, object]], required_by: dict[str
 
 
 def check() -> dict[str, object]:
-    installed = load_installed_mods()
+    installed = load_installed_projects()
     project_meta: dict[str, dict[str, object]] = load_project_meta()
     groups = load_feature_groups()
     documented = build_documented_sets(project_meta)
     declared_dependencies = load_declared_dependencies()
     dependency_cache = load_dependency_cache()
+    project_cache = load_project_cache()
     required_by = build_required_by(installed, dependency_cache)
+    missing_dependencies = build_missing_required(installed, dependency_cache, project_cache)
     write_json(DEPENDENCY_CACHE, dependency_cache)
+    write_json(PROJECT_CACHE, project_cache)
 
     documented_installed: list[dict[str, object]] = []
     dependency_declared: list[dict[str, object]] = []
@@ -244,6 +263,8 @@ def check() -> dict[str, object]:
         "unknown_refs": unknown_project_refs(groups, project_meta),
         "duplicate_refs": duplicate_project_refs(groups, project_meta),
         "missing_defaults": missing_defaults,
+        "missing_dependencies": missing_dependencies,
+        "folder_conflicts": folder_type_conflicts(installed, project_meta),
     }
 
 
@@ -256,6 +277,8 @@ def render_report(result: dict[str, object]) -> str:
     unknown_refs = result["unknown_refs"]
     duplicate_refs = result["duplicate_refs"]
     missing_defaults = result["missing_defaults"]
+    missing_dependencies = result["missing_dependencies"]
+    folder_conflicts = result["folder_conflicts"]
     required_by = result["required_by"]
 
     assert isinstance(installed, list)
@@ -266,19 +289,23 @@ def render_report(result: dict[str, object]) -> str:
     assert isinstance(unknown_refs, list)
     assert isinstance(duplicate_refs, list)
     assert isinstance(missing_defaults, list)
+    assert isinstance(missing_dependencies, dict)
+    assert isinstance(folder_conflicts, list)
     assert isinstance(required_by, dict)
 
     lines = [
-        "# Mod 数据一致性检查",
+        "# 项目数据一致性检查",
         "",
-        "这份报告对比 packwiz 实际安装的 `mods/*.pw.toml` 与 `data/mods/*.json` 数据层，并通过 Modrinth versions API 解析 required 依赖关系。",
+        "这份报告对比 packwiz 实际安装的项目元文件（mods、resourcepacks、shaderpacks 等目录下的 `*.pw.toml`）与 `data/projects/` 数据层，并通过 Modrinth versions API 解析 required 依赖关系。",
         "",
         f"- 目标 Minecraft 版本：{TARGET_VERSION}",
-        f"- 已安装 packwiz Mod：{len(installed)}",
+        f"- 已安装 packwiz 项目：{len(installed)}",
         f"- 功能矩阵覆盖：{len(documented_installed)}",
         f"- dependencies.json 覆盖：{len(dependency_declared)}",
         f"- 未解释项目：{len(unexplained)}",
         f"- 默认包缺失：{len(missing_defaults)}",
+        f"- 缺失 required 依赖：{len(missing_dependencies)}",
+        f"- 安装目录不符：{len(folder_conflicts)}",
         f"- 意外安装项目：{len(unexpected)}",
         f"- 未知项目引用：{len(unknown_refs)}",
         f"- 重复项目引用：{len(duplicate_refs)}",
@@ -288,6 +315,23 @@ def render_report(result: dict[str, object]) -> str:
     ]
     if missing_defaults:
         lines.extend(f"- {project['name']}" for project in missing_defaults)
+    else:
+        lines.append("无。")
+
+    lines.extend(["", "## 缺失 required 依赖", ""])
+    if missing_dependencies:
+        lines.append("这些 Modrinth 项目被已安装项目声明为 required 依赖，但没有安装在任何 packwiz 目录中。")
+        lines.append("")
+        for project_id, entry in missing_dependencies.items():
+            title = markdown_link(str(entry["name"]), project_id, str(entry.get("type") or ""))
+            type_note = f"（{entry['type']}）" if entry.get("type") else ""
+            lines.append(f"- {title}{type_note}：被 {', '.join(entry['required_by'])} 依赖")
+    else:
+        lines.append("无。")
+
+    lines.extend(["", "## 安装目录不符", ""])
+    if folder_conflicts:
+        lines.extend(f"- {conflict}" for conflict in folder_conflicts)
     else:
         lines.append("无。")
 
@@ -311,7 +355,7 @@ def render_report(result: dict[str, object]) -> str:
 
     lines.extend(["", "## 未解释项目", ""])
     if unexplained:
-        lines.append("这些项目已经进入默认包，但当前既没有进入功能矩阵，也没有进入 `data/mods/generated/dependencies.json`。需要补功能矩阵、补依赖清单、修 alias，或手动归类。")
+        lines.append("这些项目已经进入默认包，但当前既没有进入功能矩阵，也没有进入 `data/projects/generated/dependencies.json`。需要补功能矩阵、补依赖清单、修 alias，或手动归类。")
         lines.append("")
         table(lines, unexplained, required_by)
     else:
@@ -319,7 +363,7 @@ def render_report(result: dict[str, object]) -> str:
 
     lines.extend(["", "## dependencies.json 覆盖", ""])
     if dependency_declared:
-        lines.append("这些项目没有进入公开功能矩阵，但已经在 `data/mods/generated/dependencies.json` 中声明为 dependency-only。")
+        lines.append("这些项目没有进入公开功能矩阵，但已经在 `data/projects/generated/dependencies.json` 中声明为 dependency-only。")
         lines.append("")
         table(lines, dependency_declared, required_by)
     else:
@@ -345,11 +389,15 @@ def main() -> None:
     unknown_refs = result["unknown_refs"]
     duplicate_refs = result["duplicate_refs"]
     missing_defaults = result["missing_defaults"]
+    missing_dependencies = result["missing_dependencies"]
+    folder_conflicts = result["folder_conflicts"]
     assert isinstance(unexplained, list)
     assert isinstance(unexpected, list)
     assert isinstance(unknown_refs, list)
     assert isinstance(duplicate_refs, list)
     assert isinstance(missing_defaults, list)
+    assert isinstance(missing_dependencies, dict)
+    assert isinstance(folder_conflicts, list)
 
     summary = {
         "installed": len(result["installed"]),
@@ -357,6 +405,8 @@ def main() -> None:
         "dependencies": len(result["dependency_declared"]),
         "unexplained": len(unexplained),
         "missing_defaults": len(missing_defaults),
+        "missing_dependencies": len(missing_dependencies),
+        "folder_conflicts": len(folder_conflicts),
         "unexpected_installed": len(unexpected),
         "unknown_refs": len(unknown_refs),
         "duplicate_refs": len(duplicate_refs),
@@ -364,19 +414,34 @@ def main() -> None:
     }
     print(json.dumps(summary, ensure_ascii=False, indent=2))
 
-    if args.check and (unexplained or missing_defaults or unexpected or unknown_refs or duplicate_refs):
+    if args.check and (
+        unexplained
+        or missing_defaults
+        or missing_dependencies
+        or folder_conflicts
+        or unexpected
+        or unknown_refs
+        or duplicate_refs
+    ):
         issues = []
         if unexplained:
             issues.extend(f"- undocumented: {mod['name']} ({mod['slug']})" for mod in unexplained)
         if missing_defaults:
             issues.extend(f"- missing default: {project['name']}" for project in missing_defaults)
+        if missing_dependencies:
+            issues.extend(
+                f"- missing dependency: {entry['name']} ({project_id}) required by {', '.join(entry['required_by'])}"
+                for project_id, entry in missing_dependencies.items()
+            )
+        if folder_conflicts:
+            issues.extend(f"- folder conflict: {conflict}" for conflict in folder_conflicts)
         if unexpected:
             issues.extend(f"- unexpected installed: {conflict}" for conflict in unexpected)
         if unknown_refs:
             issues.extend(f"- unknown ref: {item}" for item in unknown_refs)
         if duplicate_refs:
             issues.extend(f"- duplicate ref: {item}" for item in duplicate_refs)
-        raise SystemExit("Mod data check failed:\n" + "\n".join(issues))
+        raise SystemExit("Project data check failed:\n" + "\n".join(issues))
 
 
 if __name__ == "__main__":

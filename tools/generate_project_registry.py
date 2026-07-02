@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sync project metadata used by the mod feature matrix."""
+"""Sync the global project registry used by the feature matrices."""
 
 from __future__ import annotations
 
@@ -8,12 +8,12 @@ import json
 from pathlib import Path
 from typing import Any
 
-from mod_data_common import (
+from project_data_common import (
     PROJECTS_PATH,
     PROJECT_CACHE,
     collect_matrix_project_refs,
     fetch_modrinth_project,
-    load_installed_mods,
+    load_installed_projects,
     load_project_cache,
     load_project_meta,
     write_json,
@@ -26,7 +26,7 @@ def project_json_text(data: dict[str, dict[str, Any]]) -> str:
 
 def normalize_entry(entry: dict[str, Any]) -> dict[str, Any]:
     ordered: dict[str, Any] = {}
-    for key in ["name", "source", "slug", "modrinth_id", "links"]:
+    for key in ["name", "source", "type", "slug", "modrinth_id", "links"]:
         if key in entry and entry[key]:
             ordered[key] = entry[key]
     for key in sorted(entry):
@@ -40,6 +40,7 @@ def entry_from_modrinth(project: dict[str, Any]) -> dict[str, Any]:
         {
             "name": project.get("title"),
             "source": "modrinth",
+            "type": project.get("project_type"),
             "slug": project.get("slug"),
             "modrinth_id": project.get("id"),
         }
@@ -56,10 +57,29 @@ def entry_from_installed(mod: dict[str, Any], project_cache: dict[str, Any]) -> 
         {
             "name": mod.get("name"),
             "source": "modrinth" if mod.get("modrinth_id") else "unknown",
+            "type": mod.get("type"),
             "slug": mod.get("slug"),
             "modrinth_id": mod.get("modrinth_id"),
         }
     )
+
+
+def backfill_entry(entry: dict[str, Any], ref: str, project_cache: dict[str, Any]) -> dict[str, Any]:
+    """Fill in type (and a missing modrinth_id) from Modrinth without touching curated fields."""
+    if entry.get("type") or entry.get("source") not in (None, "", "modrinth"):
+        return entry
+
+    lookup = str(entry.get("modrinth_id") or entry.get("slug") or ref)
+    project = fetch_modrinth_project(lookup, project_cache)
+    if not project:
+        return entry
+
+    updated = dict(entry)
+    if project.get("project_type"):
+        updated["type"] = project["project_type"]
+    if not updated.get("modrinth_id") and project.get("id"):
+        updated["modrinth_id"] = project["id"]
+    return normalize_entry(updated)
 
 
 def missing_entry(ref: str, installed: list[dict[str, Any]], project_cache: dict[str, Any]) -> dict[str, Any]:
@@ -79,11 +99,14 @@ def missing_entry(ref: str, installed: list[dict[str, Any]], project_cache: dict
 
 def expected_projects() -> dict[str, dict[str, Any]]:
     current = load_project_meta()
-    installed = load_installed_mods()
+    installed = load_installed_projects()
     project_cache = load_project_cache()
     refs = collect_matrix_project_refs()
 
-    expected = {key: normalize_entry(value) for key, value in current.items()}
+    expected = {
+        key: backfill_entry(normalize_entry(value), key, project_cache)
+        for key, value in current.items()
+    }
     for ref in refs:
         if ref not in expected:
             expected[ref] = missing_entry(ref, installed, project_cache)
@@ -105,12 +128,12 @@ def main() -> None:
         if PROJECTS_PATH.exists():
             current_text = PROJECTS_PATH.read_text(encoding="utf-8-sig")
         if current_text != expected_text:
-            raise SystemExit("data/mods/generated/projects.json is not up to date. Run python tools/generate_mod_projects.py")
-        print("data/mods/generated/projects.json is up to date")
+            raise SystemExit("data/projects/generated/projects.json is not up to date. Run python tools/generate_project_registry.py")
+        print("data/projects/generated/projects.json is up to date")
         return
 
     PROJECTS_PATH.write_text(expected_text, encoding="utf-8", newline="\n")
-    print(f"Generated {Path('data/mods/generated/projects.json')}")
+    print(f"Generated {Path('data/projects/generated/projects.json')}")
 
 
 if __name__ == "__main__":

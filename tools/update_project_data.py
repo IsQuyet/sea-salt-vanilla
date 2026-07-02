@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Update or check generated mod data and documentation."""
+"""Update or check generated project data and documentation."""
 
 from __future__ import annotations
 
@@ -12,10 +12,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 COMMANDS = {
-    "projects": "tools/generate_mod_projects.py",
-    "dependencies": "tools/generate_mod_dependencies.py",
-    "docs": "tools/generate_mod_docs.py",
-    "report": "tools/check_mod_data.py",
+    "projects": "tools/generate_project_registry.py",
+    "dependencies": "tools/generate_project_dependencies.py",
+    "docs": "tools/generate_project_docs.py",
+    "report": "tools/check_project_data.py",
 }
 
 

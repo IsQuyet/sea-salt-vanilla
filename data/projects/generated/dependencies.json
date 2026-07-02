@@ -2,6 +2,7 @@
   "architectury-api": {
     "source": "modrinth",
     "name": "Architectury API",
+    "type": "mod",
     "modrinth_id": "lhGA9TYQ",
     "required_by": [
       "rei",
@@ -11,6 +12,7 @@
   "balm": {
     "source": "modrinth",
     "name": "Balm",
+    "type": "mod",
     "modrinth_id": "MBAkmtvl",
     "required_by": [
       "default-options"
@@ -19,6 +21,7 @@
   "cicada": {
     "source": "modrinth",
     "name": "CICADA",
+    "type": "mod",
     "modrinth_id": "IwCkru1D",
     "required_by": [
       "do-a-barrel-roll"
@@ -27,6 +30,7 @@
   "creativecore": {
     "source": "modrinth",
     "name": "CreativeCore",
+    "type": "mod",
     "modrinth_id": "OsZiaDHq",
     "required_by": [
       "ambientsounds",
@@ -36,6 +40,7 @@
   "fzzy-config": {
     "source": "modrinth",
     "name": "Fzzy Config",
+    "type": "mod",
     "modrinth_id": "hYykXjDp",
     "required_by": [
       "subtle-effects"
@@ -44,6 +49,7 @@
   "iceberg": {
     "source": "modrinth",
     "name": "Iceberg",
+    "type": "mod",
     "modrinth_id": "5faXoLqX",
     "required_by": [
       "item-highlighter"
@@ -52,6 +58,7 @@
   "kiwi": {
     "source": "modrinth",
     "name": "Kiwi 🥝",
+    "type": "mod",
     "modrinth_id": "ufdDoWPd",
     "required_by": [
       "mini-effects"
@@ -60,6 +67,7 @@
   "konkrete": {
     "source": "modrinth",
     "name": "Konkrete",
+    "type": "mod",
     "modrinth_id": "J81TRJWm",
     "required_by": [
       "fancymenu"
@@ -68,6 +76,7 @@
   "libipn": {
     "source": "modrinth",
     "name": "libIPN",
+    "type": "mod",
     "modrinth_id": "onSQdWhM",
     "required_by": [
       "inventory-profiles-next"
@@ -76,6 +85,7 @@
   "malilib": {
     "source": "modrinth",
     "name": "MaLiLib",
+    "type": "mod",
     "modrinth_id": "GcWjdA9I",
     "required_by": [
       "minihud"
@@ -84,6 +94,7 @@
   "melody": {
     "source": "modrinth",
     "name": "Melody",
+    "type": "mod",
     "modrinth_id": "CVT4pFB2",
     "required_by": [
       "fancymenu"
@@ -92,6 +103,7 @@
   "midnightlib": {
     "source": "modrinth",
     "name": "MidnightLib",
+    "type": "mod",
     "modrinth_id": "codAaoxh",
     "required_by": [
       "blur-plus",
@@ -102,6 +114,7 @@
   "mossylib": {
     "source": "modrinth",
     "name": "MossyLib",
+    "type": "mod",
     "modrinth_id": "ffLDUGbm",
     "required_by": [
       "inventory-particles"
@@ -110,6 +123,7 @@
   "mru": {
     "source": "modrinth",
     "name": "M.R.U",
+    "type": "mod",
     "modrinth_id": "SNVQ2c0g",
     "required_by": [
       "sound"
@@ -118,6 +132,7 @@
   "placeholder-api": {
     "source": "modrinth",
     "name": "Text Placeholder API",
+    "type": "mod",
     "modrinth_id": "eXts2L7r",
     "required_by": [
       "modmenu"
@@ -126,6 +141,7 @@
   "searchables": {
     "source": "modrinth",
     "name": "Searchables",
+    "type": "mod",
     "modrinth_id": "fuuu3xnx",
     "required_by": [
       "controlling"
@@ -134,6 +150,7 @@
   "shatterbyte-lib": {
     "source": "modrinth",
     "name": "ShatterLib | OctoLib",
+    "type": "mod",
     "modrinth_id": "RH2KUdKJ",
     "required_by": [
       "immersive-ui"
@@ -142,6 +159,7 @@
   "tcdcommons": {
     "source": "modrinth",
     "name": "TCDCommons API",
+    "type": "mod",
     "modrinth_id": "Eldc1g37",
     "required_by": [
       "better-stats"
@@ -150,6 +168,7 @@
   "yungs-api": {
     "source": "modrinth",
     "name": "YUNG's API",
+    "type": "mod",
     "modrinth_id": "Ua7DFN59",
     "required_by": [
       "travelers-titles"

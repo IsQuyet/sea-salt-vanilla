@@ -1,4 +1,4 @@
-"""Shared helpers for packwiz mod data tooling."""
+"""Shared helpers for packwiz project data tooling (mods, resource packs, shaders, ...)."""
 
 from __future__ import annotations
 
@@ -13,10 +13,17 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data" / "mods"
-MATRIX = DATA / "matrix"
+DATA = ROOT / "data" / "projects"
 GENERATED = DATA / "generated"
-MODS = ROOT / "mods"
+# packwiz folder name -> Modrinth project_type
+PROJECT_TYPE_DIRS = {
+    "mods": "mod",
+    "resourcepacks": "resourcepack",
+    "shaderpacks": "shader",
+    "datapacks": "datapack",
+    "plugins": "plugin",
+}
+DEFAULT_PROJECT_TYPE = "mod"
 PACK = ROOT / "pack.toml"
 CACHE = ROOT / "reference" / "modrinth-collections"
 DEPENDENCY_CACHE = CACHE / "modrinth-version-dependencies.json"
@@ -25,7 +32,6 @@ PROJECTS_PATH = GENERATED / "projects.json"
 DEPENDENCIES_PATH = GENERATED / "dependencies.json"
 MODRINTH_VERSIONS_API = "https://api.modrinth.com/v2/versions"
 MODRINTH_PROJECT_API = "https://api.modrinth.com/v2/project"
-OPTIONAL_FEATURE_FILE = DATA / "optional.json"
 
 
 def feature_group_order(path: Path) -> tuple[int, str]:
@@ -36,12 +42,39 @@ def feature_group_order(path: Path) -> tuple[int, str]:
     return (int(group.get("order", 9999)), path.name)
 
 
-def load_default_feature_files() -> list[Path]:
-    return sorted(MATRIX.glob("*.json"), key=feature_group_order)
+def discover_categories() -> list[dict[str, Any]]:
+    """Each documentation category is a subdirectory of DATA holding a meta.json."""
+    categories: list[dict[str, Any]] = []
+    if not DATA.is_dir():
+        return categories
+    for directory in sorted(DATA.iterdir()):
+        if not directory.is_dir() or directory.name == "generated":
+            continue
+        meta_path = directory / "meta.json"
+        if not meta_path.exists():
+            continue
+        matrix_dir = directory / "matrix"
+        default_files = (
+            sorted(matrix_dir.glob("*.json"), key=feature_group_order) if matrix_dir.is_dir() else []
+        )
+        optional_path = directory / "optional.json"
+        categories.append(
+            {
+                "name": directory.name,
+                "meta_path": meta_path,
+                "default_files": default_files,
+                "optional_file": optional_path if optional_path.exists() else None,
+            }
+        )
+    return categories
 
 
-DEFAULT_FEATURE_FILES = load_default_feature_files()
-FEATURE_GROUP_FILES = [*DEFAULT_FEATURE_FILES, OPTIONAL_FEATURE_FILE]
+CATEGORIES = discover_categories()
+DEFAULT_FEATURE_FILES = [path for category in CATEGORIES for path in category["default_files"]]
+FEATURE_GROUP_FILES = [
+    *DEFAULT_FEATURE_FILES,
+    *[category["optional_file"] for category in CATEGORIES if category["optional_file"]],
+]
 
 
 def load_target_version() -> str:
@@ -55,6 +88,22 @@ TARGET_VERSION = load_target_version()
 
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
+def load_feature_groups() -> list[dict[str, Any]]:
+    """Load every feature group across categories, tagged with its category and optional flag."""
+    groups: list[dict[str, Any]] = []
+    for category in CATEGORIES:
+        files = [(path, False) for path in category["default_files"]]
+        if category["optional_file"]:
+            files.append((category["optional_file"], True))
+        for path, is_optional in files:
+            group = read_json(path)
+            group["_source_file"] = path
+            group["_category"] = category["name"]
+            group["_optional"] = is_optional
+            groups.append(group)
+    return groups
 
 
 def write_json(path: Path, data: Any) -> None:
@@ -71,30 +120,36 @@ def markdown_escape(value: Any) -> str:
     return str(value or "").replace("|", r"\|").replace("\n", "<br>")
 
 
-def markdown_link(title: str, project_id: str | None) -> str:
+def markdown_link(title: str, project_id: str | None, project_type: str | None = None) -> str:
     escaped = markdown_escape(title)
     if not project_id:
         return escaped
-    return f"[{escaped}](https://modrinth.com/mod/{project_id})"
+    return f"[{escaped}](https://modrinth.com/{project_type or DEFAULT_PROJECT_TYPE}/{project_id})"
 
 
-def load_installed_mods() -> list[dict[str, Any]]:
+def load_installed_projects() -> list[dict[str, Any]]:
     installed: list[dict[str, Any]] = []
-    for path in sorted(MODS.glob("*.pw.toml")):
-        with path.open("rb") as file:
-            metadata = tomllib.load(file)
+    for folder, project_type in PROJECT_TYPE_DIRS.items():
+        directory = ROOT / folder
+        if not directory.is_dir():
+            continue
+        for path in sorted(directory.glob("*.pw.toml")):
+            with path.open("rb") as file:
+                metadata = tomllib.load(file)
 
-        modrinth = metadata.get("update", {}).get("modrinth", {})
-        installed.append(
-            {
-                "file": path.name,
-                "slug": path.name.removesuffix(".pw.toml").lower(),
-                "name": str(metadata.get("name") or path.name.removesuffix(".pw.toml")),
-                "side": str(metadata.get("side") or ""),
-                "modrinth_id": str(modrinth.get("mod-id") or ""),
-                "modrinth_version": str(modrinth.get("version") or ""),
-            }
-        )
+            modrinth = metadata.get("update", {}).get("modrinth", {})
+            installed.append(
+                {
+                    "file": f"{folder}/{path.name}",
+                    "type": project_type,
+                    "slug": path.name.removesuffix(".pw.toml").lower(),
+                    "name": str(metadata.get("name") or path.name.removesuffix(".pw.toml")),
+                    "side": str(metadata.get("side") or ""),
+                    "modrinth_id": str(modrinth.get("mod-id") or ""),
+                    "modrinth_version": str(modrinth.get("version") or ""),
+                }
+            )
+    installed.sort(key=lambda project: (project["slug"], project["type"]))
     return installed
 
 
@@ -229,6 +284,39 @@ def build_required_by(installed: list[dict[str, Any]], cache: dict[str, Any]) ->
     return required_by
 
 
+def build_missing_required(
+    installed: list[dict[str, Any]],
+    cache: dict[str, Any],
+    project_cache: dict[str, Any],
+) -> dict[str, dict[str, Any]]:
+    """Collect required Modrinth dependencies that are not installed in any project folder."""
+    installed_ids = {project["modrinth_id"] for project in installed if project["modrinth_id"]}
+    fetch_missing_modrinth_versions([project["modrinth_version"] for project in installed], cache)
+
+    dependents_by_id: dict[str, set[str]] = defaultdict(set)
+    for project in installed:
+        version_data = cache.get(project["modrinth_version"])
+        if not version_data:
+            continue
+        for dependency in version_data.get("dependencies", []):
+            if dependency.get("dependency_type") != "required":
+                continue
+            project_id = str(dependency.get("project_id") or "")
+            if project_id and project_id not in installed_ids:
+                dependents_by_id[project_id].add(project["slug"])
+
+    missing: dict[str, dict[str, Any]] = {}
+    for project_id, dependents in sorted(dependents_by_id.items()):
+        dependency_project = fetch_modrinth_project(project_id, project_cache)
+        missing[project_id] = {
+            "name": str((dependency_project or {}).get("title") or project_id),
+            "type": str((dependency_project or {}).get("project_type") or ""),
+            "slug": str((dependency_project or {}).get("slug") or ""),
+            "required_by": sorted(dependents),
+        }
+    return missing
+
+
 def build_documented_sets(project_meta: dict[str, dict[str, Any]]) -> dict[str, set[str]]:
     documented = {"refs": set(), "slugs": set(), "names": set(), "ids": set()}
 
@@ -304,6 +392,7 @@ def expected_dependency_data(
         entries[mod["slug"]] = {
             "source": "modrinth" if mod["modrinth_id"] else "unknown",
             "name": mod["name"],
+            "type": mod["type"],
             "modrinth_id": mod["modrinth_id"],
             "required_by": sorted({dependent["slug"] for dependent in dependents}),
         }

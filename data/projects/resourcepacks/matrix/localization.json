@@ -1,0 +1,39 @@
+{
+  "id": "localization",
+  "order": 10,
+  "title": {
+    "en": "Localization",
+    "zh": "本地化"
+  },
+  "description": {
+    "en": "These entries translate mod interfaces that ship only in English.",
+    "zh": "这些条目为仅提供英文的 Mod 界面补充翻译。"
+  },
+  "sections": [
+    {
+      "id": "mod-translations",
+      "title": {
+        "en": "Mod translations",
+        "zh": "Mod 翻译"
+      },
+      "description": {
+        "en": "These resource packs add translations for mods that do not localize their own strings.",
+        "zh": "这些资源包为未自带本地化的 Mod 补充翻译。"
+      },
+      "rows": [
+        {
+          "id": "sodium-translations",
+          "feature": {
+            "en": "Sodium option translations",
+            "zh": "Sodium 选项翻译"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "translations-for-sodium"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "entity-visuals",
+  "order": 20,
+  "title": {
+    "en": "Entity visuals",
+    "zh": "实体视觉"
+  },
+  "description": {
+    "en": "These entries change how entities are animated or rendered.",
+    "zh": "这些条目改变实体的动画或渲染表现。"
+  },
+  "sections": [
+    {
+      "id": "entity-animations",
+      "title": {
+        "en": "Entity animations",
+        "zh": "实体动画"
+      },
+      "description": {
+        "en": "These resource packs add or extend smooth entity animations. Extension packs depend on their base pack being installed.",
+        "zh": "这些资源包新增或扩展平滑的实体动画。扩展包依赖其基础包被安装。"
+      },
+      "rows": [
+        {
+          "id": "fresh-animations-base",
+          "feature": {
+            "en": "Smooth entity animations",
+            "zh": "平滑实体动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "fresh-animations"
+            }
+          }
+        },
+        {
+          "id": "fresh-animations-extensions",
+          "feature": {
+            "en": "Fresh Animations extensions",
+            "zh": "Fresh Animations 扩展"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "fresh-animations-extensions"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

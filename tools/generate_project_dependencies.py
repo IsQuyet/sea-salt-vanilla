@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate dependency-only mod data from packwiz and Modrinth metadata."""
+"""Generate dependency-only project data from packwiz and Modrinth metadata."""
 
 from __future__ import annotations
 
@@ -8,14 +8,14 @@ import json
 from pathlib import Path
 from typing import Any
 
-from mod_data_common import (
+from project_data_common import (
     DEPENDENCIES_PATH,
     DEPENDENCY_CACHE,
     build_documented_sets,
     build_required_by,
     expected_dependency_data,
     load_dependency_cache,
-    load_installed_mods,
+    load_installed_projects,
     load_project_meta,
     write_json,
 )
@@ -26,7 +26,7 @@ def dependency_json_text(data: dict[str, dict[str, Any]]) -> str:
 
 
 def load_expected_dependencies() -> dict[str, dict[str, Any]]:
-    installed = load_installed_mods()
+    installed = load_installed_projects()
     project_meta: dict[str, dict[str, Any]] = load_project_meta()
     documented = build_documented_sets(project_meta)
     dependency_cache = load_dependency_cache()
@@ -48,12 +48,12 @@ def main() -> None:
         if DEPENDENCIES_PATH.exists():
             current_text = DEPENDENCIES_PATH.read_text(encoding="utf-8-sig")
         if current_text != expected_text:
-            raise SystemExit("data/mods/generated/dependencies.json is not up to date. Run python tools/generate_mod_dependencies.py")
-        print("data/mods/generated/dependencies.json is up to date")
+            raise SystemExit("data/projects/generated/dependencies.json is not up to date. Run python tools/generate_project_dependencies.py")
+        print("data/projects/generated/dependencies.json is up to date")
         return
 
     DEPENDENCIES_PATH.write_text(expected_text, encoding="utf-8", newline="\n")
-    print(f"Generated {Path('data/mods/generated/dependencies.json')}")
+    print(f"Generated {Path('data/projects/generated/dependencies.json')}")
 
 
 if __name__ == "__main__":
