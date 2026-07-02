@@ -13,8 +13,8 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data" / "projects"
-GENERATED = DATA / "generated"
+DATA = ROOT / "data"
+DOCS_CONFIG = ROOT / "docs" / "config"
 # packwiz folder name -> Modrinth project_type
 PROJECT_TYPE_DIRS = {
     "mods": "mod",
@@ -28,8 +28,8 @@ PACK = ROOT / "pack.toml"
 CACHE = ROOT / "reference" / "modrinth-collections"
 DEPENDENCY_CACHE = CACHE / "modrinth-version-dependencies.json"
 PROJECT_CACHE = CACHE / "modrinth-projects.json"
-PROJECTS_PATH = GENERATED / "projects.json"
-DEPENDENCIES_PATH = GENERATED / "dependencies.json"
+PROJECTS_PATH = DATA / "projects.json"
+DEPENDENCIES_PATH = DATA / "dependencies.json"
 MODRINTH_VERSIONS_API = "https://api.modrinth.com/v2/versions"
 MODRINTH_PROJECT_API = "https://api.modrinth.com/v2/project"
 
@@ -43,12 +43,12 @@ def feature_group_order(path: Path) -> tuple[int, str]:
 
 
 def discover_categories() -> list[dict[str, Any]]:
-    """Each documentation category is a subdirectory of DATA holding a meta.json."""
+    """Each documentation category is a subdirectory of DOCS_CONFIG holding a meta.json."""
     categories: list[dict[str, Any]] = []
-    if not DATA.is_dir():
+    if not DOCS_CONFIG.is_dir():
         return categories
-    for directory in sorted(DATA.iterdir()):
-        if not directory.is_dir() or directory.name == "generated":
+    for directory in sorted(DOCS_CONFIG.iterdir()):
+        if not directory.is_dir():
             continue
         meta_path = directory / "meta.json"
         if not meta_path.exists():

@@ -296,7 +296,7 @@ def render_report(result: dict[str, object]) -> str:
     lines = [
         "# 项目数据一致性检查",
         "",
-        "这份报告对比 packwiz 实际安装的项目元文件（mods、resourcepacks、shaderpacks 等目录下的 `*.pw.toml`）与 `data/projects/` 数据层，并通过 Modrinth versions API 解析 required 依赖关系。",
+        "这份报告对比 packwiz 实际安装的项目元文件（mods、resourcepacks、shaderpacks 等目录下的 `*.pw.toml`）、`docs/config/` 文档配置与 `data/` 生成数据，并通过 Modrinth versions API 解析 required 依赖关系。",
         "",
         f"- 目标 Minecraft 版本：{TARGET_VERSION}",
         f"- 已安装 packwiz 项目：{len(installed)}",
@@ -355,7 +355,7 @@ def render_report(result: dict[str, object]) -> str:
 
     lines.extend(["", "## 未解释项目", ""])
     if unexplained:
-        lines.append("这些项目已经进入默认包，但当前既没有进入功能矩阵，也没有进入 `data/projects/generated/dependencies.json`。需要补功能矩阵、补依赖清单、修 alias，或手动归类。")
+        lines.append("这些项目已经进入默认包，但当前既没有进入功能矩阵，也没有进入 `data/dependencies.json`。需要补功能矩阵、补依赖清单、修 alias，或手动归类。")
         lines.append("")
         table(lines, unexplained, required_by)
     else:
@@ -363,7 +363,7 @@ def render_report(result: dict[str, object]) -> str:
 
     lines.extend(["", "## dependencies.json 覆盖", ""])
     if dependency_declared:
-        lines.append("这些项目没有进入公开功能矩阵，但已经在 `data/projects/generated/dependencies.json` 中声明为 dependency-only。")
+        lines.append("这些项目没有进入公开功能矩阵，但已经在 `data/dependencies.json` 中声明为 dependency-only。")
         lines.append("")
         table(lines, dependency_declared, required_by)
     else:

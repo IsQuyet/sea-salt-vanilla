@@ -128,12 +128,12 @@ def main() -> None:
         if PROJECTS_PATH.exists():
             current_text = PROJECTS_PATH.read_text(encoding="utf-8-sig")
         if current_text != expected_text:
-            raise SystemExit("data/projects/generated/projects.json is not up to date. Run python tools/generate_project_registry.py")
-        print("data/projects/generated/projects.json is up to date")
+            raise SystemExit("data/projects.json is not up to date. Run python tools/generate_project_registry.py")
+        print("data/projects.json is up to date")
         return
 
     PROJECTS_PATH.write_text(expected_text, encoding="utf-8", newline="\n")
-    print(f"Generated {Path('data/projects/generated/projects.json')}")
+    print(f"Generated {Path('data/projects.json')}")
 
 
 if __name__ == "__main__":

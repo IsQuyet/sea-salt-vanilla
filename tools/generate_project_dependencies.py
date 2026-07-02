@@ -48,12 +48,12 @@ def main() -> None:
         if DEPENDENCIES_PATH.exists():
             current_text = DEPENDENCIES_PATH.read_text(encoding="utf-8-sig")
         if current_text != expected_text:
-            raise SystemExit("data/projects/generated/dependencies.json is not up to date. Run python tools/generate_project_dependencies.py")
-        print("data/projects/generated/dependencies.json is up to date")
+            raise SystemExit("data/dependencies.json is not up to date. Run python tools/generate_project_dependencies.py")
+        print("data/dependencies.json is up to date")
         return
 
     DEPENDENCIES_PATH.write_text(expected_text, encoding="utf-8", newline="\n")
-    print(f"Generated {Path('data/projects/generated/dependencies.json')}")
+    print(f"Generated {Path('data/dependencies.json')}")
 
 
 if __name__ == "__main__":
