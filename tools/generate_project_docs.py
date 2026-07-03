@@ -11,7 +11,9 @@ from typing import Any
 from project_data_common import (
     CATEGORIES,
     PROJECTS_PATH,
+    PROJECT_TYPE_CURSEFORGE_PATHS,
     load_feature_groups,
+    project_ref_key,
 )
 
 
@@ -43,6 +45,9 @@ def project_from_ref(data: dict[str, Any], ref: Any) -> dict[str, Any] | None:
     if ref is None:
         return None
     if isinstance(ref, dict):
+        key = project_ref_key(ref)
+        if key and key in data.get("projects", {}):
+            return data["projects"][key]
         return ref
     return data.get("projects", {}).get(str(ref))
 
@@ -52,15 +57,13 @@ def markdown_escape(value: str) -> str:
 
 
 def project_link(project: dict[str, Any]) -> str | None:
-    links = project.get("links", {})
-    if links.get("modrinth"):
-        return str(links["modrinth"])
     if project.get("source") == "modrinth" and project.get("slug"):
         return f"https://modrinth.com/{project.get('type') or 'mod'}/{project['slug']}"
-    if links.get("curseforge"):
-        return str(links["curseforge"])
     if project.get("source") == "curseforge" and project.get("slug"):
-        return f"https://www.curseforge.com/minecraft/mc-mods/{project['slug']}"
+        curseforge_path = PROJECT_TYPE_CURSEFORGE_PATHS.get(str(project.get("type") or "mod"), "mc-mods")
+        return f"https://www.curseforge.com/minecraft/{curseforge_path}/{project['slug']}"
+    if project.get("url"):
+        return str(project["url"])
     return None
 
 
@@ -68,7 +71,7 @@ def render_project(project: dict[str, Any] | None) -> str:
     if project is None:
         return ""
 
-    name = markdown_escape(str(project["name"]))
+    name = markdown_escape(str(project.get("name") or project.get("slug") or project.get("id") or ""))
     link = project_link(project)
     if not link:
         return name

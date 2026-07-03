@@ -56,8 +56,8 @@ These entries provide mod lists, in-game config screens, and config frameworks u
 | --- | --- |
 | Mod list and config entry | [Mod Menu](https://modrinth.com/mod/modmenu) |
 | In-game configuration screens | [Configured](https://modrinth.com/mod/configured) |
-| YACL configuration framework | [YetAnotherConfigLib](https://modrinth.com/mod/yacl) |
-| Cloth Config framework | [Cloth Config](https://modrinth.com/mod/cloth-config) |
+| YACL configuration framework | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) |
+| Cloth Config framework | [Cloth Config API](https://modrinth.com/mod/cloth-config) |
 | Forge config compatibility | [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) |
 
 ## Visual and audio enhancements
@@ -70,11 +70,11 @@ These entries provide OptiFine-style visual and resource-pack features through F
 
 | Feature | 1.21.1 |
 | --- | --- |
-| Shader loader | [Iris](https://modrinth.com/mod/iris) |
+| Shader loader | [Iris Shaders](https://modrinth.com/mod/iris) |
 | Sodium video option extensions | [Sodium Extra](https://modrinth.com/mod/sodium-extra) |
 | OptiFine alternatives integration | [Puzzle](https://modrinth.com/mod/puzzle) |
-| Custom entity models | [Entity Model Features](https://modrinth.com/mod/entity-model-features) |
-| Custom entity textures | [Entity Texture Features](https://modrinth.com/mod/entitytexturefeatures) |
+| Custom entity models | [[EMF] Entity Model Features](https://modrinth.com/mod/entity-model-features) |
+| Custom entity textures | [[ETF] Entity Texture Features](https://modrinth.com/mod/entitytexturefeatures) |
 | Custom item textures | [CIT Resewn](https://modrinth.com/mod/cit-resewn) |
 | Connected textures | [Continuity](https://modrinth.com/mod/continuity) |
 | Custom GUI resource pack support | [OptiGUI](https://modrinth.com/mod/optigui) |
@@ -95,11 +95,11 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Additional particle effects | [Particle Effects](https://modrinth.com/mod/particle-effects) |
 | Inventory particle effects | [Inventory Particles](https://modrinth.com/mod/inventory-particles) |
 | Ambient visual effects | [Mas Effects](https://modrinth.com/mod/mas-effects) |
-| Particle interactions | [EG Particle Interactions](https://modrinth.com/mod/particle-interactions) |
+| Particle interactions | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |
 | Bubble pop effects | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |
 | Falling leaf particles | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |
 | Explosion effects | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |
-| Projectile visual style | [2D Projectiles](https://modrinth.com/mod/twod_projectiles) |
+| Projectile visual style | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |
 | Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |
 | Immersive visual effects | [Perception](https://modrinth.com/mod/perception) |
 
@@ -142,9 +142,9 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 | Inventory item animations | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) |
 | Inventory item swap animations | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) |
 | HUD positioning | [Raised](https://modrinth.com/mod/raised) |
-| UI background blur | [Blur](https://modrinth.com/mod/blur-plus) |
-| Smooth scrolling | [Smooth Scroll](https://modrinth.com/mod/smooth-scroll) |
-| Smooth GUI animation | [Smooth GUI](https://modrinth.com/mod/smooth-gui) |
+| UI background blur | [Blur+](https://modrinth.com/mod/blur-plus) |
+| Smooth scrolling | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) |
+| Smooth GUI animation | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |
 | Modern UI framework and text rendering | [Modern UI](https://modrinth.com/mod/modern-ui) |
 | Immersive UI interactions | [Immersive UI](https://modrinth.com/mod/immersive-ui) |
 
@@ -155,7 +155,7 @@ These entries improve chat readability and presentation without requiring server
 | Feature | 1.21.1 |
 | --- | --- |
 | Chat avatars | [Chat Heads](https://modrinth.com/mod/chat-heads) |
-| Chat message animation | [Chat Animation](https://modrinth.com/mod/chatanimation) |
+| Chat message animation | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |
 
 ### Skin and cosmetics
 
@@ -164,7 +164,7 @@ These entries improve player skin, cape, and cosmetic display.
 | Feature | 1.21.1 |
 | --- | --- |
 | 3D skin layers | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) |
-| Cape physics | [WaveyCapes](https://modrinth.com/mod/wavey-capes) |
+| Cape physics | [Wavey Capes](https://modrinth.com/mod/wavey-capes) |
 | Cape provider support | [Capes](https://modrinth.com/mod/capes) |
 | Custom skin loading | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) |
 
@@ -178,8 +178,8 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 
 | Feature | 1.21.1 | Alternatives |
 | --- | --- | --- |
-| Item and recipe browser | [Roughly Enough Items](https://modrinth.com/mod/rei) |  |
-| Block and entity overlay | [Jade](https://modrinth.com/mod/jade) |  |
+| Item and recipe browser | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |  |
+| Block and entity overlay | [Jade 🔍](https://modrinth.com/mod/jade) |  |
 | Extra item and block hints | [Peek](https://modrinth.com/mod/peek) |  |
 | Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
 | Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
@@ -193,7 +193,7 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Inventory item highlighting | [Item Highlighter](https://modrinth.com/mod/item-highlighter) |  |
 | Input method conflict handling | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  |
 | Chinese character search support | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  |
-| Zoom controls | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) |
+| Zoom controls | [Zoomify (Zoom)](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer - It's Zoom!](https://modrinth.com/mod/ok-zoomer) |
 
 ### HUD information and client convenience
 
@@ -202,9 +202,9 @@ These entries surface gameplay information or remove small interface friction.
 | Feature | 1.21.1 |
 | --- | --- |
 | Advanced HUD overlays | [MiniHUD](https://modrinth.com/mod/minihud) |
-| Inventory HUD overlay | [Inventory HUD+](https://modrinth.com/mod/inventoryhudplus) |
+| Inventory HUD overlay | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |
 | Mount HUD improvements | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
-| Statistics screen improvements | [Better Stats](https://modrinth.com/mod/better-stats) |
+| Statistics screen improvements | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |
 | Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) |
 | World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |
 | Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) |
@@ -235,9 +235,9 @@ These entries are useful for building, testing, profiling, or personal creative 
 
 | Feature | 1.21.1 |
 | --- | --- |
-| Performance profiler | [Spark](https://modrinth.com/mod/spark) |
+| Performance profiler | [spark](https://modrinth.com/mod/spark) |
 | World editing | [WorldEdit](https://modrinth.com/mod/worldedit) |
-| In-game notes | [Vanilla Notebook](https://modrinth.com/mod/notebook) |
+| In-game notes | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |
 | Edge block placement | [Reacharound](https://modrinth.com/mod/reacharound) |
 
 ## Optional capabilities
@@ -269,7 +269,7 @@ These entries can strongly shape visual or audio ambience, so they are kept as o
 
 | Feature | 1.21.1 |
 | --- | --- |
-| Dynamic lighting | [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights) |
+| Dynamic lighting | [LambDynamicLights - Dynamic Lights](https://modrinth.com/mod/lambdynamiclights) |
 | Sound physics | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) |
 | Weather particle ambience | [Particle Rain](https://modrinth.com/mod/particle-rain) |
 
@@ -281,6 +281,6 @@ These entries support specific creative, building, recording, or input workflows
 | --- | --- | --- |
 | Orthographic screenshot tools | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
 | Schematic building | [Litematica](https://modrinth.com/mod/litematica) |  |
-| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
+| Creative builder tools | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
 | Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
-| Controller support | [Controlify](https://modrinth.com/mod/controlify) |  |
+| Controller support | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |

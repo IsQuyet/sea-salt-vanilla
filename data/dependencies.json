@@ -1,110 +1,122 @@
 {
   "architectury-api": {
-    "source": "modrinth",
     "name": "Architectury API",
     "type": "mod",
-    "modrinth_id": "lhGA9TYQ",
+    "source": "modrinth",
+    "slug": "architectury-api",
+    "id": "lhGA9TYQ",
     "required_by": [
       "rei",
       "seamless"
     ]
   },
   "balm": {
-    "source": "modrinth",
     "name": "Balm",
     "type": "mod",
-    "modrinth_id": "MBAkmtvl",
+    "source": "modrinth",
+    "slug": "balm",
+    "id": "MBAkmtvl",
     "required_by": [
       "default-options"
     ]
   },
   "cicada": {
-    "source": "modrinth",
     "name": "CICADA",
     "type": "mod",
-    "modrinth_id": "IwCkru1D",
+    "source": "modrinth",
+    "slug": "cicada",
+    "id": "IwCkru1D",
     "required_by": [
       "do-a-barrel-roll"
     ]
   },
   "creativecore": {
-    "source": "modrinth",
     "name": "CreativeCore",
     "type": "mod",
-    "modrinth_id": "OsZiaDHq",
+    "source": "modrinth",
+    "slug": "creativecore",
+    "id": "OsZiaDHq",
     "required_by": [
       "ambientsounds",
       "itemphysic-lite"
     ]
   },
   "fzzy-config": {
-    "source": "modrinth",
     "name": "Fzzy Config",
     "type": "mod",
-    "modrinth_id": "hYykXjDp",
+    "source": "modrinth",
+    "slug": "fzzy-config",
+    "id": "hYykXjDp",
     "required_by": [
       "subtle-effects"
     ]
   },
   "iceberg": {
-    "source": "modrinth",
     "name": "Iceberg",
     "type": "mod",
-    "modrinth_id": "5faXoLqX",
+    "source": "modrinth",
+    "slug": "iceberg",
+    "id": "5faXoLqX",
     "required_by": [
       "item-highlighter"
     ]
   },
   "kiwi": {
-    "source": "modrinth",
     "name": "Kiwi 🥝",
     "type": "mod",
-    "modrinth_id": "ufdDoWPd",
+    "source": "modrinth",
+    "slug": "kiwi",
+    "id": "ufdDoWPd",
     "required_by": [
       "mini-effects"
     ]
   },
   "konkrete": {
-    "source": "modrinth",
     "name": "Konkrete",
     "type": "mod",
-    "modrinth_id": "J81TRJWm",
+    "source": "modrinth",
+    "slug": "konkrete",
+    "id": "J81TRJWm",
     "required_by": [
       "fancymenu"
     ]
   },
   "libipn": {
-    "source": "modrinth",
     "name": "libIPN",
     "type": "mod",
-    "modrinth_id": "onSQdWhM",
+    "source": "modrinth",
+    "slug": "libipn",
+    "id": "onSQdWhM",
     "required_by": [
       "inventory-profiles-next"
     ]
   },
   "malilib": {
-    "source": "modrinth",
     "name": "MaLiLib",
     "type": "mod",
-    "modrinth_id": "GcWjdA9I",
+    "source": "modrinth",
+    "slug": "malilib",
+    "id": "GcWjdA9I",
     "required_by": [
       "minihud"
     ]
   },
   "melody": {
-    "source": "modrinth",
     "name": "Melody",
     "type": "mod",
-    "modrinth_id": "CVT4pFB2",
+    "source": "modrinth",
+    "slug": "melody",
+    "id": "CVT4pFB2",
     "required_by": [
       "fancymenu"
     ]
   },
   "midnightlib": {
-    "source": "modrinth",
     "name": "MidnightLib",
     "type": "mod",
-    "modrinth_id": "codAaoxh",
+    "source": "modrinth",
+    "slug": "midnightlib",
+    "id": "codAaoxh",
     "required_by": [
       "blur-plus",
       "cull-leaves",
@@ -112,64 +124,71 @@
     ]
   },
   "mossylib": {
-    "source": "modrinth",
     "name": "MossyLib",
     "type": "mod",
-    "modrinth_id": "ffLDUGbm",
+    "source": "modrinth",
+    "slug": "mossylib",
+    "id": "ffLDUGbm",
     "required_by": [
       "inventory-particles"
     ]
   },
   "mru": {
-    "source": "modrinth",
     "name": "M.R.U",
     "type": "mod",
-    "modrinth_id": "SNVQ2c0g",
+    "source": "modrinth",
+    "slug": "mru",
+    "id": "SNVQ2c0g",
     "required_by": [
       "sound"
     ]
   },
   "placeholder-api": {
-    "source": "modrinth",
     "name": "Text Placeholder API",
     "type": "mod",
-    "modrinth_id": "eXts2L7r",
+    "source": "modrinth",
+    "slug": "placeholder-api",
+    "id": "eXts2L7r",
     "required_by": [
       "modmenu"
     ]
   },
   "searchables": {
-    "source": "modrinth",
     "name": "Searchables",
     "type": "mod",
-    "modrinth_id": "fuuu3xnx",
+    "source": "modrinth",
+    "slug": "searchables",
+    "id": "fuuu3xnx",
     "required_by": [
       "controlling"
     ]
   },
   "shatterbyte-lib": {
-    "source": "modrinth",
     "name": "ShatterLib | OctoLib",
     "type": "mod",
-    "modrinth_id": "RH2KUdKJ",
+    "source": "modrinth",
+    "slug": "shatterbyte-lib",
+    "id": "RH2KUdKJ",
     "required_by": [
       "immersive-ui"
     ]
   },
   "tcdcommons": {
-    "source": "modrinth",
     "name": "TCDCommons API",
     "type": "mod",
-    "modrinth_id": "Eldc1g37",
+    "source": "modrinth",
+    "slug": "tcdcommons",
+    "id": "Eldc1g37",
     "required_by": [
       "better-stats"
     ]
   },
   "yungs-api": {
-    "source": "modrinth",
     "name": "YUNG's API",
     "type": "mod",
-    "modrinth_id": "Ua7DFN59",
+    "source": "modrinth",
+    "slug": "yungs-api",
+    "id": "Ua7DFN59",
     "required_by": [
       "travelers-titles"
     ]

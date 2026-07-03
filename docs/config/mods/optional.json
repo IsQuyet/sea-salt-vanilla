@@ -261,7 +261,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "lottweaks"
+              "selected": {
+                "source": "curseforge",
+                "slug": "lottweaks"
+              }
             }
           }
         },

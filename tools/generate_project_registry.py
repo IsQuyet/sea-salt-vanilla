@@ -12,10 +12,9 @@ from project_data_common import (
     PROJECTS_PATH,
     PROJECT_CACHE,
     collect_matrix_project_refs,
-    fetch_modrinth_project,
     load_installed_projects,
     load_project_cache,
-    load_project_meta,
+    project_ref_key,
     write_json,
 )
 
@@ -26,13 +25,26 @@ def project_json_text(data: dict[str, dict[str, Any]]) -> str:
 
 def normalize_entry(entry: dict[str, Any]) -> dict[str, Any]:
     ordered: dict[str, Any] = {}
-    for key in ["name", "source", "type", "slug", "modrinth_id", "links"]:
+    for key in ["name", "type", "source", "slug", "id"]:
         if key in entry and entry[key]:
             ordered[key] = entry[key]
     for key in sorted(entry):
         if key not in ordered and entry[key]:
             ordered[key] = entry[key]
     return ordered
+
+
+def display_name_from_slug(slug: str) -> str:
+    """Create a readable fallback name without requiring network metadata."""
+    return " ".join(word.capitalize() for word in slug.replace("_", "-").split("-") if word)
+
+
+def cached_modrinth_project(project_ref: str, project_cache: dict[str, Any]) -> dict[str, Any] | None:
+    """Read cached Modrinth project metadata without blocking registry generation on the network."""
+    cached_project = project_cache.get(project_ref)
+    if isinstance(cached_project, dict) and "error" not in cached_project:
+        return cached_project
+    return None
 
 
 def entry_from_modrinth(project: dict[str, Any]) -> dict[str, Any]:
@@ -42,76 +54,84 @@ def entry_from_modrinth(project: dict[str, Any]) -> dict[str, Any]:
             "source": "modrinth",
             "type": project.get("project_type"),
             "slug": project.get("slug"),
-            "modrinth_id": project.get("id"),
+            "id": project.get("id"),
         }
     )
 
 
 def entry_from_installed(mod: dict[str, Any], project_cache: dict[str, Any]) -> dict[str, Any]:
-    if mod.get("modrinth_id"):
-        project = fetch_modrinth_project(str(mod["modrinth_id"]), project_cache)
+    if mod.get("source") == "modrinth" and mod.get("id"):
+        project = cached_modrinth_project(str(mod["id"]), project_cache)
         if project:
             return entry_from_modrinth(project)
 
     return normalize_entry(
         {
             "name": mod.get("name"),
-            "source": "modrinth" if mod.get("modrinth_id") else "unknown",
             "type": mod.get("type"),
+            "source": mod.get("source") or "unknown",
             "slug": mod.get("slug"),
-            "modrinth_id": mod.get("modrinth_id"),
+            "id": mod.get("id"),
         }
     )
 
 
-def backfill_entry(entry: dict[str, Any], ref: str, project_cache: dict[str, Any]) -> dict[str, Any]:
-    """Fill in type (and a missing modrinth_id) from Modrinth without touching curated fields."""
-    if entry.get("type") or entry.get("source") not in (None, "", "modrinth"):
-        return entry
+def entry_from_ref(ref: dict[str, Any], installed: list[dict[str, Any]], project_cache: dict[str, Any]) -> dict[str, Any]:
+    ref_key = str(project_ref_key(ref) or "")
+    ref_source = str(ref.get("source") or "")
+    ref_slug = str(ref.get("slug") or ref_key).lower()
+    ref_id = str(ref.get("id") or "")
 
-    lookup = str(entry.get("modrinth_id") or entry.get("slug") or ref)
-    project = fetch_modrinth_project(lookup, project_cache)
-    if not project:
-        return entry
-
-    updated = dict(entry)
-    if project.get("project_type"):
-        updated["type"] = project["project_type"]
-    if not updated.get("modrinth_id") and project.get("id"):
-        updated["modrinth_id"] = project["id"]
-    return normalize_entry(updated)
-
-
-def missing_entry(ref: str, installed: list[dict[str, Any]], project_cache: dict[str, Any]) -> dict[str, Any]:
-    ref_lower = ref.lower()
     for mod in installed:
-        if ref_lower in {str(mod.get("slug", "")).lower(), str(mod.get("name", "")).lower()}:
-            return entry_from_installed(mod, project_cache)
-        if ref == str(mod.get("modrinth_id") or ""):
+        installed_identity_matches = bool(ref_source and ref_source == mod.get("source") and ref_slug == mod.get("slug"))
+        installed_key_matches = ref_key in {str(mod.get("slug", "")).lower(), str(mod.get("name", "")).lower()}
+        installed_id_matches = bool(ref_id and ref_id == str(mod.get("id") or ""))
+        if installed_identity_matches or installed_key_matches or installed_id_matches:
             return entry_from_installed(mod, project_cache)
 
-    project = fetch_modrinth_project(ref, project_cache)
+    if ref_source in ("", "modrinth"):
+        lookup = ref_id or ref_slug or ref_key
+        project = cached_modrinth_project(lookup, project_cache) if lookup else None
+        if project:
+            return entry_from_modrinth(project)
+
+    if ref_source == "curseforge":
+        return normalize_entry(
+            {
+                "name": ref.get("name") or display_name_from_slug(ref_slug),
+                "type": ref.get("type"),
+                "source": "curseforge",
+                "slug": ref_slug,
+                "id": ref_id,
+            }
+        )
+
+    project = cached_modrinth_project(ref_key, project_cache) if ref_key else None
     if project:
         return entry_from_modrinth(project)
 
-    return normalize_entry({"name": ref, "source": "unknown", "slug": ref})
+    fallback_slug = ref_slug or ref_key
+    return normalize_entry(
+        {
+            "name": ref.get("name") or display_name_from_slug(fallback_slug),
+            "type": ref.get("type"),
+            "source": ref_source or "unknown",
+            "slug": fallback_slug,
+        }
+    )
 
 
 def expected_projects() -> dict[str, dict[str, Any]]:
-    current = load_project_meta()
     installed = load_installed_projects()
     project_cache = load_project_cache()
     refs = collect_matrix_project_refs()
 
-    expected = {
-        key: backfill_entry(normalize_entry(value), key, project_cache)
-        for key, value in current.items()
-    }
+    expected = {str(mod["slug"]): entry_from_installed(mod, project_cache) for mod in installed}
     for ref in refs:
-        if ref not in expected:
-            expected[ref] = missing_entry(ref, installed, project_cache)
+        key = project_ref_key(ref)
+        if key and key not in expected:
+            expected[key] = entry_from_ref(ref, installed, project_cache)
 
-    write_json(PROJECT_CACHE, project_cache)
     return dict(sorted(expected.items()))
 
 

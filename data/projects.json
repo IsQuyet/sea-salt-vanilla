@@ -1,1087 +1,1219 @@
 {
   "3dskinlayers": {
     "name": "3D Skin Layers",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "3dskinlayers",
-    "modrinth_id": "zV5r3pPn"
+    "id": "zV5r3pPn"
   },
   "a-good-place": {
     "name": "A Good Place",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "a-good-place",
-    "modrinth_id": "BwPeriwJ"
+    "id": "BwPeriwJ"
   },
   "ambientsounds": {
     "name": "AmbientSounds",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "ambientsounds",
-    "modrinth_id": "fM515JnW"
+    "id": "fM515JnW"
   },
   "appleskin": {
     "name": "AppleSkin",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "appleskin",
-    "modrinth_id": "EsAfCjCV"
+    "id": "EsAfCjCV"
+  },
+  "architectury-api": {
+    "name": "Architectury API",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "architectury-api",
+    "id": "lhGA9TYQ"
   },
   "asyncparticles": {
     "name": "AsyncParticles",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "asyncparticles",
-    "modrinth_id": "c3onkd5k"
+    "id": "c3onkd5k"
   },
   "badoptimizations": {
     "name": "BadOptimizations",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "badoptimizations",
-    "modrinth_id": "g96Z4WVZ"
+    "id": "g96Z4WVZ"
+  },
+  "balm": {
+    "name": "Balm",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "balm",
+    "id": "MBAkmtvl"
   },
   "better-advancements": {
     "name": "Better Advancements",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "better-advancements",
-    "modrinth_id": "Q2OqKxDG"
+    "id": "Q2OqKxDG"
   },
   "better-block-entities": {
     "name": "Better Block Entities",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "better-block-entities",
-    "modrinth_id": "ONZm0H7Y"
+    "id": "ONZm0H7Y"
   },
   "better-f1-reborn": {
     "name": "Better F1 Reborn",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "better-f1-reborn",
-    "modrinth_id": "2JIeCmxb"
+    "id": "2JIeCmxb"
   },
   "better-mount-hud": {
     "name": "Better Mount HUD",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "better-mount-hud",
-    "modrinth_id": "kqJFAPU9"
+    "id": "kqJFAPU9"
   },
   "better-stats": {
-    "name": "Better Stats",
-    "source": "modrinth",
+    "name": "Better Statistics Screen",
     "type": "mod",
+    "source": "modrinth",
     "slug": "better-stats",
-    "modrinth_id": "n6PXGAoM"
+    "id": "n6PXGAoM"
   },
   "betterf3": {
     "name": "BetterF3",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "betterf3",
-    "modrinth_id": "8shC1gFX"
+    "id": "8shC1gFX"
   },
   "biomeinfo": {
     "name": "BiomeInfo",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "biomeinfo",
-    "modrinth_id": "Fws7jX8r"
+    "id": "Fws7jX8r"
   },
   "bliss-shader": {
     "name": "Bliss Shaders",
-    "source": "modrinth",
     "type": "shader",
+    "source": "modrinth",
     "slug": "bliss-shader",
-    "modrinth_id": "ZvMtQlho"
+    "id": "ZvMtQlho"
   },
   "blur-plus": {
-    "name": "Blur",
-    "source": "modrinth",
+    "name": "Blur+",
     "type": "mod",
+    "source": "modrinth",
     "slug": "blur-plus",
-    "modrinth_id": "NK39zBp2"
+    "id": "NK39zBp2"
   },
   "boat-item-view": {
     "name": "Boat Item View",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "boat-item-view",
-    "modrinth_id": "BdKIyOLe"
+    "id": "BdKIyOLe"
   },
   "bobby": {
     "name": "Bobby",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "bobby",
-    "modrinth_id": "M08ruV16"
+    "id": "M08ruV16"
   },
   "bsl-shaders": {
     "name": "BSL Shaders",
-    "source": "modrinth",
     "type": "shader",
+    "source": "modrinth",
     "slug": "bsl-shaders",
-    "modrinth_id": "Q1vvjJYV"
+    "id": "Q1vvjJYV"
   },
   "cameraoverhaul": {
     "name": "Camera Overhaul",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "cameraoverhaul",
-    "modrinth_id": "m0oRwcZx"
+    "id": "m0oRwcZx"
   },
   "capes": {
     "name": "Capes",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "capes",
-    "modrinth_id": "89Wsn8GD"
+    "id": "89Wsn8GD"
   },
   "cave-dust": {
     "name": "Cave Dust",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "cave-dust",
-    "modrinth_id": "jawg7zT1"
+    "id": "jawg7zT1"
   },
   "chat-heads": {
     "name": "Chat Heads",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "chat-heads",
-    "modrinth_id": "Wb5oqrBJ"
+    "id": "Wb5oqrBJ"
   },
   "chatanimation": {
-    "name": "Chat Animation",
-    "source": "modrinth",
+    "name": "Chat Animation [Smooth Chat]",
     "type": "mod",
+    "source": "modrinth",
     "slug": "chatanimation",
-    "modrinth_id": "DnNYdJsx"
+    "id": "DnNYdJsx"
   },
   "chatimage": {
     "name": "ChatImage",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "chatimage",
-    "modrinth_id": "zhVN1dvW"
+    "id": "zhVN1dvW"
   },
   "chatpatches": {
     "name": "Chat Patches",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "chatpatches",
-    "modrinth_id": "MOqt4Z5n"
+    "id": "MOqt4Z5n"
   },
   "cherished-worlds": {
     "name": "Cherished Worlds",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "cherished-worlds",
-    "modrinth_id": "3azQ6p0W"
+    "id": "3azQ6p0W"
+  },
+  "cicada": {
+    "name": "CICADA",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "cicada",
+    "id": "IwCkru1D"
   },
   "cit-resewn": {
     "name": "CIT Resewn",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "cit-resewn",
-    "modrinth_id": "otVJckYQ"
+    "id": "otVJckYQ"
   },
   "cloth-config": {
-    "name": "Cloth Config",
-    "source": "modrinth",
+    "name": "Cloth Config API",
     "type": "mod",
+    "source": "modrinth",
     "slug": "cloth-config",
-    "modrinth_id": "9s6osm5g"
+    "id": "9s6osm5g"
   },
   "complementary-reimagined": {
     "name": "Complementary Shaders - Reimagined",
-    "source": "modrinth",
     "type": "shader",
+    "source": "modrinth",
     "slug": "complementary-reimagined",
-    "modrinth_id": "HVnmMxH1"
+    "id": "HVnmMxH1"
   },
   "complementary-unbound": {
     "name": "Complementary Shaders - Unbound",
-    "source": "modrinth",
     "type": "shader",
+    "source": "modrinth",
     "slug": "complementary-unbound",
-    "modrinth_id": "R6NEzAwj"
+    "id": "R6NEzAwj"
   },
   "configured": {
     "name": "Configured",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "configured",
-    "modrinth_id": "HlpEBg3R"
+    "id": "HlpEBg3R"
   },
   "continuity": {
     "name": "Continuity",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "continuity",
-    "modrinth_id": "1IjD5062"
+    "id": "1IjD5062"
   },
   "controlify": {
-    "name": "Controlify",
-    "source": "modrinth",
+    "name": "Controlify (Controller support)",
     "type": "mod",
+    "source": "modrinth",
     "slug": "controlify",
-    "modrinth_id": "DOUdJVEm"
+    "id": "DOUdJVEm"
   },
   "controlling": {
     "name": "Controlling",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "controlling",
-    "modrinth_id": "xv94TkTM"
+    "id": "xv94TkTM"
+  },
+  "creativecore": {
+    "name": "CreativeCore",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "creativecore",
+    "id": "OsZiaDHq"
   },
   "cull-leaves": {
     "name": "Cull Leaves",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "cull-leaves",
-    "modrinth_id": "GNxdLCoP"
+    "id": "GNxdLCoP"
   },
   "customskinloader": {
     "name": "CustomSkinLoader",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "customskinloader",
-    "modrinth_id": "idMHQ4n2"
+    "id": "idMHQ4n2"
   },
   "dcwa": {
     "name": "Disable Custom Worlds Advice",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "dcwa",
-    "modrinth_id": "HdwRs3kc"
+    "id": "HdwRs3kc"
   },
   "default-options": {
     "name": "Default Options",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "default-options",
-    "modrinth_id": "WEg59z5b"
+    "id": "WEg59z5b"
   },
   "detail-armor-bar": {
     "name": "Detail Armor Bar",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "detail-armor-bar",
-    "modrinth_id": "hAt6ty93"
+    "id": "hAt6ty93"
   },
   "disguiseheads": {
     "name": "DisguiseHeads",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "disguiseheads",
-    "modrinth_id": "u4pgScAU"
+    "id": "u4pgScAU"
   },
   "distanthorizons": {
     "name": "Distant Horizons",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "distanthorizons",
-    "modrinth_id": "uCdwusMi"
+    "id": "uCdwusMi"
   },
   "do-a-barrel-roll": {
     "name": "Do a Barrel Roll",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "do-a-barrel-roll",
-    "modrinth_id": "6FtRfnLg"
+    "id": "6FtRfnLg"
   },
   "draggable-lists": {
     "name": "Draggable Lists",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "draggable-lists",
-    "modrinth_id": "aLcHfalx"
+    "id": "aLcHfalx"
   },
   "dynamiccrosshair": {
     "name": "Dynamic Crosshair",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "dynamiccrosshair",
-    "modrinth_id": "ZcR9weSm"
+    "id": "ZcR9weSm"
   },
   "eating-animation": {
     "name": "Eating Animation",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "eating-animation",
-    "modrinth_id": "rUgZvGzi"
+    "id": "rUgZvGzi"
   },
   "ebe": {
     "name": "Enhanced Block Entities",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "ebe",
-    "modrinth_id": "OVuFYfre"
+    "id": "OVuFYfre"
   },
   "emotecraft": {
     "name": "Emotecraft",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "emotecraft",
-    "modrinth_id": "pZ2wrerK"
+    "id": "pZ2wrerK"
   },
   "entity-model-features": {
-    "name": "Entity Model Features",
-    "source": "modrinth",
+    "name": "[EMF] Entity Model Features",
     "type": "mod",
+    "source": "modrinth",
     "slug": "entity-model-features",
-    "modrinth_id": "4I1XuqiY"
+    "id": "4I1XuqiY"
   },
   "entityculling": {
     "name": "Entity Culling",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "entityculling",
-    "modrinth_id": "NNAgCjsB"
+    "id": "NNAgCjsB"
   },
   "entitytexturefeatures": {
-    "name": "Entity Texture Features",
-    "source": "modrinth",
+    "name": "[ETF] Entity Texture Features",
     "type": "mod",
+    "source": "modrinth",
     "slug": "entitytexturefeatures",
-    "modrinth_id": "BVzZfTc1"
+    "id": "BVzZfTc1"
   },
   "essential": {
     "name": "Essential Mod",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "essential",
-    "modrinth_id": "k2ZPuTBm"
+    "id": "k2ZPuTBm"
   },
   "euphoria-patches": {
     "name": "Euphoria Patches",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "euphoria-patches",
-    "modrinth_id": "4H6sumDB"
+    "id": "4H6sumDB"
   },
   "explosive-enhancement": {
     "name": "Explosive Enhancement",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "explosive-enhancement",
-    "modrinth_id": "OSQ8mw2r"
+    "id": "OSQ8mw2r"
   },
   "fabric-api": {
     "name": "Fabric API",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "fabric-api",
-    "modrinth_id": "P7dR8mSH"
+    "id": "P7dR8mSH"
   },
   "fabric-language-kotlin": {
     "name": "Fabric Language Kotlin",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "fabric-language-kotlin",
-    "modrinth_id": "Ha28R6CL"
+    "id": "Ha28R6CL"
   },
   "fallingleaves": {
     "name": "Falling Leaves",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "fallingleaves",
-    "modrinth_id": "WhbRG4iK"
+    "id": "WhbRG4iK"
   },
   "fancymenu": {
     "name": "FancyMenu",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "fancymenu",
-    "modrinth_id": "Wq5SjeWM"
+    "id": "Wq5SjeWM"
   },
   "fast-ip-ping": {
     "name": "Fast IP Ping",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "fast-ip-ping",
-    "modrinth_id": "9mtu0sUO"
+    "id": "9mtu0sUO"
   },
   "ferrite-core": {
     "name": "FerriteCore",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "ferrite-core",
-    "modrinth_id": "uXXizFIs"
+    "id": "uXXizFIs"
   },
   "flash": {
     "name": "Flash",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "flash",
-    "modrinth_id": "Zmu8jXWA"
+    "id": "Zmu8jXWA"
   },
   "forge-config-api-port": {
     "name": "Forge Config API Port",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "forge-config-api-port",
-    "modrinth_id": "ohNO6lps"
+    "id": "ohNO6lps"
   },
   "fresh-animations": {
     "name": "Fresh Animations",
-    "source": "modrinth",
     "type": "resourcepack",
+    "source": "modrinth",
     "slug": "fresh-animations",
-    "modrinth_id": "50dA9Sha"
+    "id": "50dA9Sha"
   },
   "fresh-animations-extensions": {
     "name": "Fresh Animations: Extensions",
-    "source": "modrinth",
     "type": "resourcepack",
+    "source": "modrinth",
     "slug": "fresh-animations-extensions",
-    "modrinth_id": "YAVTU8mK"
+    "id": "YAVTU8mK"
+  },
+  "fzzy-config": {
+    "name": "Fzzy Config",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "fzzy-config",
+    "id": "hYykXjDp"
   },
   "globalpacks": {
     "name": "Global Packs",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "globalpacks",
-    "modrinth_id": "NRLPy2mk"
+    "id": "NRLPy2mk"
   },
   "headpat": {
     "name": "Headpat a Friend!",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "headpat",
-    "modrinth_id": "vETxChiy"
+    "id": "vETxChiy"
   },
   "hold-my-items": {
     "name": "Hold My Items",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "hold-my-items",
-    "modrinth_id": "AP8rDDLS"
+    "id": "AP8rDDLS"
+  },
+  "iceberg": {
+    "name": "Iceberg",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "iceberg",
+    "id": "5faXoLqX"
   },
   "imblocker-original": {
     "name": "IMBlocker",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "imblocker-original",
-    "modrinth_id": "WMDesFsZ"
+    "id": "WMDesFsZ"
   },
   "immediatelyfast": {
     "name": "ImmediatelyFast",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "immediatelyfast",
-    "modrinth_id": "5ZwdcRci"
+    "id": "5ZwdcRci"
   },
   "immersive-ui": {
     "name": "Immersive UI",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "immersive-ui",
-    "modrinth_id": "9wv7LuMc"
-  },
-  "inventory-hud": {
-    "name": "Inventory HUD+",
-    "source": "modrinth",
-    "type": "mod",
-    "slug": "inventoryhudplus",
-    "modrinth_id": "Kp2uclYl"
+    "id": "9wv7LuMc"
   },
   "inventory-particles": {
     "name": "Inventory Particles",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "inventory-particles",
-    "modrinth_id": "XYnKrsxH"
+    "id": "XYnKrsxH"
   },
   "inventory-profiles-next": {
     "name": "Inventory Profiles Next",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "inventory-profiles-next",
-    "modrinth_id": "O7RBXm3n"
+    "id": "O7RBXm3n"
+  },
+  "inventoryhudplus": {
+    "name": "InventoryHUD+",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "inventoryhudplus",
+    "id": "Kp2uclYl"
   },
   "invmove": {
     "name": "InvMove",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "invmove",
-    "modrinth_id": "REfW2AEX"
+    "id": "REfW2AEX"
   },
   "invmovecompats": {
     "name": "InvMoveCompats",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "invmovecompats",
-    "modrinth_id": "6IpcGP7T"
+    "id": "6IpcGP7T"
   },
   "iris": {
-    "name": "Iris",
-    "source": "modrinth",
+    "name": "Iris Shaders",
     "type": "mod",
+    "source": "modrinth",
     "slug": "iris",
-    "modrinth_id": "YL57xq9U"
+    "id": "YL57xq9U"
   },
   "item-highlighter": {
     "name": "Item Highlighter",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "item-highlighter",
-    "modrinth_id": "cVNW5lr6"
+    "id": "cVNW5lr6"
   },
   "itemphysic-lite": {
     "name": "ItemPhysic Lite",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "itemphysic-lite",
-    "modrinth_id": "OuyCgP8t"
+    "id": "OuyCgP8t"
   },
   "ixeris": {
     "name": "Ixeris",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "ixeris",
-    "modrinth_id": "p8RJPJIC"
+    "id": "p8RJPJIC"
   },
   "jade": {
-    "name": "Jade",
-    "source": "modrinth",
+    "name": "Jade 🔍",
     "type": "mod",
+    "source": "modrinth",
     "slug": "jade",
-    "modrinth_id": "nvQzSEkH"
+    "id": "nvQzSEkH"
   },
   "justenoughcharacters": {
     "name": "JustEnoughCharacters",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "justenoughcharacters",
-    "modrinth_id": "I7k4B65h"
+    "id": "I7k4B65h"
+  },
+  "kiwi": {
+    "name": "Kiwi 🥝",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "kiwi",
+    "id": "ufdDoWPd"
+  },
+  "konkrete": {
+    "name": "Konkrete",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "konkrete",
+    "id": "J81TRJWm"
   },
   "krypton": {
     "name": "Krypton",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "krypton",
-    "modrinth_id": "fQEb0iXm"
+    "id": "fQEb0iXm"
   },
   "lambdynamiclights": {
-    "name": "LambDynamicLights",
-    "source": "modrinth",
+    "name": "LambDynamicLights - Dynamic Lights",
     "type": "mod",
+    "source": "modrinth",
     "slug": "lambdynamiclights",
-    "modrinth_id": "yBW8D80W"
+    "id": "yBW8D80W"
+  },
+  "libipn": {
+    "name": "libIPN",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "libipn",
+    "id": "onSQdWhM"
   },
   "litematica": {
     "name": "Litematica",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "litematica",
-    "modrinth_id": "bEpr0Arc"
+    "id": "bEpr0Arc"
   },
   "lithium": {
     "name": "Lithium",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "lithium",
-    "modrinth_id": "gvQqBUqZ"
+    "id": "gvQqBUqZ"
   },
   "logical-zoom": {
     "name": "Logical Zoom",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "logical-zoom",
-    "modrinth_id": "8bOImuGU"
+    "id": "8bOImuGU"
   },
   "lottweaks": {
-    "name": "LotTweaks",
+    "name": "Lottweaks",
+    "type": "mod",
     "source": "curseforge",
     "slug": "lottweaks"
   },
   "make_bubbles_pop": {
     "name": "Make Bubbles Pop",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "make_bubbles_pop",
-    "modrinth_id": "gPCdW0Wr"
+    "id": "gPCdW0Wr"
+  },
+  "malilib": {
+    "name": "MaLiLib",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "malilib",
+    "id": "GcWjdA9I"
   },
   "mas-effects": {
     "name": "Mas Effects",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "mas-effects",
-    "modrinth_id": "YsP4hqhn"
+    "id": "YsP4hqhn"
+  },
+  "melody": {
+    "name": "Melody",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "melody",
+    "id": "CVT4pFB2"
+  },
+  "midnightlib": {
+    "name": "MidnightLib",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "midnightlib",
+    "id": "codAaoxh"
   },
   "mini-effects": {
     "name": "Mini Effects",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "mini-effects",
-    "modrinth_id": "UqcThEX0"
+    "id": "UqcThEX0"
   },
   "minihud": {
     "name": "MiniHUD",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "minihud",
-    "modrinth_id": "UMxybHE8"
+    "id": "UMxybHE8"
   },
   "mining_and_placing_animations": {
     "name": "Mining & Placing Animations",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "mining_and_placing_animations",
-    "modrinth_id": "LKVZxR8L"
+    "id": "LKVZxR8L"
   },
   "modern-ui": {
     "name": "Modern UI",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "modern-ui",
-    "modrinth_id": "3sjzyvGR"
+    "id": "3sjzyvGR"
   },
   "modernfix": {
     "name": "ModernFix",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "modernfix",
-    "modrinth_id": "nmDcB62a"
+    "id": "nmDcB62a"
   },
   "modmenu": {
     "name": "Mod Menu",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "modmenu",
-    "modrinth_id": "mOgUt4GM"
+    "id": "mOgUt4GM"
   },
   "moreculling": {
     "name": "More Culling",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "moreculling",
-    "modrinth_id": "51shyZVL"
+    "id": "51shyZVL"
+  },
+  "mossylib": {
+    "name": "MossyLib",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "mossylib",
+    "id": "ffLDUGbm"
   },
   "mouse-tweaks": {
     "name": "Mouse Tweaks",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "mouse-tweaks",
-    "modrinth_id": "aC3cM3Vq"
+    "id": "aC3cM3Vq"
+  },
+  "mru": {
+    "name": "M.R.U",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "mru",
+    "id": "SNVQ2c0g"
   },
   "no-chat-reports": {
     "name": "No Chat Reports",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "no-chat-reports",
-    "modrinth_id": "qQyHxfxd"
+    "id": "qQyHxfxd"
   },
   "no-resource-pack-warnings": {
     "name": "No Resource Pack Warnings",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "no-resource-pack-warnings",
-    "modrinth_id": "6xKUDQcB"
+    "id": "6xKUDQcB"
   },
   "not-enough-animations": {
     "name": "Not Enough Animations",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "not-enough-animations",
-    "modrinth_id": "MPCX6s5C"
+    "id": "MPCX6s5C"
   },
   "notebook": {
-    "name": "Vanilla Notebook",
-    "source": "modrinth",
+    "name": "Vanilla Notebook ",
     "type": "mod",
+    "source": "modrinth",
     "slug": "notebook",
-    "modrinth_id": "KaKEuH9Q"
+    "id": "KaKEuH9Q"
   },
   "noxesium": {
     "name": "Noxesium",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "noxesium",
-    "modrinth_id": "Kw7Sm3Xf"
+    "id": "Kw7Sm3Xf"
   },
   "ok-zoomer": {
-    "name": "Ok Zoomer",
-    "source": "modrinth",
+    "name": "Ok Zoomer - It's Zoom!",
     "type": "mod",
+    "source": "modrinth",
     "slug": "ok-zoomer",
-    "modrinth_id": "aXf2OSFU"
+    "id": "aXf2OSFU"
   },
   "optigui": {
     "name": "OptiGUI",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "optigui",
-    "modrinth_id": "JuksLGBQ"
+    "id": "JuksLGBQ"
   },
   "orthocamera": {
     "name": "OrthoCamera",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "orthocamera",
-    "modrinth_id": "OB69KhRA"
+    "id": "OB69KhRA"
   },
   "paperdoll": {
     "name": "Paper Doll",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "paperdoll",
-    "modrinth_id": "edwFXb9k"
+    "id": "edwFXb9k"
   },
   "particle-effects": {
     "name": "Particle Effects",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "particle-effects",
-    "modrinth_id": "PLAGcSFJ"
+    "id": "PLAGcSFJ"
   },
   "particle-interactions": {
-    "name": "EG Particle Interactions",
-    "source": "modrinth",
+    "name": "Particle Interactions",
     "type": "mod",
+    "source": "modrinth",
     "slug": "particle-interactions",
-    "modrinth_id": "xFCYuAs8"
+    "id": "xFCYuAs8"
   },
   "particle-rain": {
     "name": "Particle Rain",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "particle-rain",
-    "modrinth_id": "nrikgvxm"
+    "id": "nrikgvxm"
   },
   "peek": {
     "name": "Peek",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "peek",
-    "modrinth_id": "TnOXNf5e"
+    "id": "TnOXNf5e"
   },
   "perception": {
     "name": "Perception",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "perception",
-    "modrinth_id": "P8STLvzB"
+    "id": "P8STLvzB"
   },
   "photon-shader": {
     "name": "Photon Shaders",
-    "source": "modrinth",
     "type": "shader",
+    "source": "modrinth",
     "slug": "photon-shader",
-    "modrinth_id": "lLqFfGNs"
+    "id": "lLqFfGNs"
   },
   "pixelshot": {
     "name": "Pixelshot",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "pixelshot",
-    "modrinth_id": "MUoQGQVU"
+    "id": "MUoQGQVU"
+  },
+  "placeholder-api": {
+    "name": "Text Placeholder API",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "placeholder-api",
+    "id": "eXts2L7r"
   },
   "presence-footsteps": {
     "name": "Presence Footsteps",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "presence-footsteps",
-    "modrinth_id": "rcTfTZr3"
+    "id": "rcTfTZr3"
   },
   "puzzle": {
     "name": "Puzzle",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "puzzle",
-    "modrinth_id": "3IuO68q1"
+    "id": "3IuO68q1"
   },
   "raised": {
     "name": "Raised",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "raised",
-    "modrinth_id": "nCQRBEiR"
+    "id": "nCQRBEiR"
   },
   "reacharound": {
     "name": "Reacharound",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "reacharound",
-    "modrinth_id": "r3VgI4QN"
+    "id": "r3VgI4QN"
   },
   "rei": {
-    "name": "Roughly Enough Items",
-    "source": "modrinth",
+    "name": "Roughly Enough Items (REI)",
     "type": "mod",
+    "source": "modrinth",
     "slug": "rei",
-    "modrinth_id": "nfn13YXA"
+    "id": "nfn13YXA"
   },
   "replaymod": {
     "name": "ReplayMod",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "replaymod",
-    "modrinth_id": "Nv2fQJo5"
+    "id": "Nv2fQJo5"
   },
   "repo-heads": {
     "name": "REPO Heads",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "repo-heads",
-    "modrinth_id": "Jaoe8qGe"
+    "id": "Jaoe8qGe"
   },
   "resourcify": {
     "name": "Resourcify",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "resourcify",
-    "modrinth_id": "RLzHAoZe"
+    "id": "RLzHAoZe"
   },
   "rethinking-voxels": {
     "name": "Rethinking Voxels",
-    "source": "modrinth",
     "type": "shader",
+    "source": "modrinth",
     "slug": "rethinking-voxels",
-    "modrinth_id": "kmwfVOoi"
+    "id": "kmwfVOoi"
   },
   "scalablelux": {
     "name": "ScalableLux",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "scalablelux",
-    "modrinth_id": "Ps1zyz6x"
+    "id": "Ps1zyz6x"
   },
   "screenshot-viewer": {
     "name": "Screenshot Viewer",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "screenshot-viewer",
-    "modrinth_id": "laNoi025"
+    "id": "laNoi025"
   },
   "seamless": {
     "name": "Seamless",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "seamless",
-    "modrinth_id": "rhyHyQke"
+    "id": "rhyHyQke"
+  },
+  "searchables": {
+    "name": "Searchables",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "searchables",
+    "id": "fuuu3xnx"
   },
   "server-unpacker": {
     "name": "Server Unpacker",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "server-unpacker",
-    "modrinth_id": "B3fgRqfr"
+    "id": "B3fgRqfr"
+  },
+  "shatterbyte-lib": {
+    "name": "ShatterLib | OctoLib",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "shatterbyte-lib",
+    "id": "RH2KUdKJ"
   },
   "shulkerboxtooltip": {
     "name": "Shulker Box Tooltip",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "shulkerboxtooltip",
-    "modrinth_id": "2M01OLQq"
+    "id": "2M01OLQq"
   },
   "simple-voice-chat": {
     "name": "Simple Voice Chat",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "simple-voice-chat",
-    "modrinth_id": "9eGKb6K1"
+    "id": "9eGKb6K1"
   },
   "smooth-gui": {
-    "name": "Smooth GUI",
-    "source": "modrinth",
+    "name": "Smooth Gui",
     "type": "mod",
+    "source": "modrinth",
     "slug": "smooth-gui",
-    "modrinth_id": "j6yrZogB"
+    "id": "j6yrZogB"
   },
   "smooth-scroll": {
-    "name": "Smooth Scroll",
-    "source": "modrinth",
+    "name": "Smooth Scrolling",
     "type": "mod",
+    "source": "modrinth",
     "slug": "smooth-scroll",
-    "modrinth_id": "CllP7wW0"
+    "id": "CllP7wW0"
   },
   "smooth-swapping": {
     "name": "Smooth Swapping",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "smooth-swapping",
-    "modrinth_id": "ydZic5r4"
+    "id": "ydZic5r4"
   },
   "sodium": {
     "name": "Sodium",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "sodium",
-    "modrinth_id": "AANobbMI"
+    "id": "AANobbMI"
   },
   "sodium-extra": {
     "name": "Sodium Extra",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "sodium-extra",
-    "modrinth_id": "PtjYWJkn"
+    "id": "PtjYWJkn"
   },
   "sound": {
     "name": "Sounds",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "sound",
-    "modrinth_id": "ZouiUX7t"
+    "id": "ZouiUX7t"
   },
   "sound-physics-remastered": {
     "name": "Sound Physics Remastered",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "sound-physics-remastered",
-    "modrinth_id": "qyVF9oeo"
+    "id": "qyVF9oeo"
   },
   "spark": {
-    "name": "Spark",
-    "source": "modrinth",
+    "name": "spark",
     "type": "mod",
+    "source": "modrinth",
     "slug": "spark",
-    "modrinth_id": "l6YH9Als"
+    "id": "l6YH9Als"
   },
   "stay-true": {
     "name": "Stay True",
-    "source": "curseforge",
     "type": "resourcepack",
+    "source": "curseforge",
     "slug": "stay-true",
-    "links": {
-      "curseforge": "https://www.curseforge.com/minecraft/texture-packs/stay-true"
-    }
+    "id": "353554"
   },
   "subtle-effects": {
     "name": "Subtle Effects",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "subtle-effects",
-    "modrinth_id": "4q8UOK1d"
+    "id": "4q8UOK1d"
   },
   "talkbubbles": {
     "name": "TalkBubbles",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "talkbubbles",
-    "modrinth_id": "BUpChT1v"
+    "id": "BUpChT1v"
   },
   "talkingheads": {
     "name": "Talking Heads",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "talkingheads",
-    "modrinth_id": "Os35nfkh"
+    "id": "Os35nfkh"
+  },
+  "tcdcommons": {
+    "name": "TCDCommons API",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "tcdcommons",
+    "id": "Eldc1g37"
   },
   "tiny-item-animations": {
     "name": "Tiny Item Animations",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "tiny-item-animations",
-    "modrinth_id": "wMkevcSR"
+    "id": "wMkevcSR"
   },
   "translations-for-sodium": {
     "name": "Translations for Sodium",
-    "source": "modrinth",
     "type": "resourcepack",
+    "source": "modrinth",
     "slug": "translations-for-sodium",
-    "modrinth_id": "yfDziwn1"
+    "id": "yfDziwn1"
   },
   "travelers-titles": {
     "name": "Traveler's Titles",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "travelers-titles",
-    "modrinth_id": "JtifUr64"
+    "id": "JtifUr64"
   },
   "twod_projectiles": {
-    "name": "2D Projectiles",
-    "source": "modrinth",
+    "name": "2D Projectiles ➵",
     "type": "mod",
+    "source": "modrinth",
     "slug": "twod_projectiles",
-    "modrinth_id": "W2K5WNdH"
+    "id": "W2K5WNdH"
   },
   "vectorientation": {
     "name": "Vectorientation",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "vectorientation",
-    "modrinth_id": "NpPKJQg6"
+    "id": "NpPKJQg6"
   },
   "visuality": {
     "name": "Visuality",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "visuality",
-    "modrinth_id": "rI0hvYcd"
+    "id": "rI0hvYcd"
   },
   "visualkeys": {
     "name": "VisualKeys",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "visualkeys",
-    "modrinth_id": "HEds12HI"
+    "id": "HEds12HI"
   },
   "wavey-capes": {
-    "name": "WaveyCapes",
-    "source": "modrinth",
+    "name": "Wavey Capes",
     "type": "mod",
+    "source": "modrinth",
     "slug": "wavey-capes",
-    "modrinth_id": "kYuIpRLv"
+    "id": "kYuIpRLv"
   },
   "weaponmaster": {
     "name": "YDM's Weapon Master",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "weaponmaster",
-    "modrinth_id": "qi1sj2da"
+    "id": "qi1sj2da"
   },
   "wearthat": {
     "name": "WearThat",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "wearthat",
-    "modrinth_id": "FT20RvJM"
+    "id": "FT20RvJM"
   },
   "worldedit": {
     "name": "WorldEdit",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "worldedit",
-    "modrinth_id": "1u6JkXh5"
+    "id": "1u6JkXh5"
   },
   "xaeros-minimap": {
     "name": "Xaero's Minimap",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "xaeros-minimap",
-    "modrinth_id": "1bokaNcj"
+    "id": "1bokaNcj"
   },
   "xaeros-world-map": {
     "name": "Xaero's World Map",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "xaeros-world-map",
-    "modrinth_id": "NcUtCpym"
+    "id": "NcUtCpym"
   },
   "yacl": {
-    "name": "YetAnotherConfigLib",
-    "source": "modrinth",
+    "name": "YetAnotherConfigLib (YACL)",
     "type": "mod",
+    "source": "modrinth",
     "slug": "yacl",
-    "modrinth_id": "1eAoo2KR"
+    "id": "1eAoo2KR"
   },
   "yosbr": {
     "name": "Your Options Shall Be Respected (YOSBR)",
-    "source": "modrinth",
     "type": "mod",
+    "source": "modrinth",
     "slug": "yosbr",
-    "modrinth_id": "WwbubTsV"
+    "id": "WwbubTsV"
+  },
+  "yungs-api": {
+    "name": "YUNG's API",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "yungs-api",
+    "id": "Ua7DFN59"
   },
   "zoomify": {
-    "name": "Zoomify",
-    "source": "modrinth",
+    "name": "Zoomify (Zoom)",
     "type": "mod",
+    "source": "modrinth",
     "slug": "zoomify",
-    "modrinth_id": "w7ThoJFB"
+    "id": "w7ThoJFB"
   }
 }

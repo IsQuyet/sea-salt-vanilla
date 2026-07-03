@@ -56,8 +56,8 @@
 | --- | --- |
 | Mod 列表与配置入口 | [Mod Menu](https://modrinth.com/mod/modmenu) |
 | 游戏内配置界面 | [Configured](https://modrinth.com/mod/configured) |
-| YACL 配置框架 | [YetAnotherConfigLib](https://modrinth.com/mod/yacl) |
-| Cloth Config 配置框架 | [Cloth Config](https://modrinth.com/mod/cloth-config) |
+| YACL 配置框架 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) |
+| Cloth Config 配置框架 | [Cloth Config API](https://modrinth.com/mod/cloth-config) |
 | Forge 配置兼容 | [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) |
 
 ## 视听美化
@@ -70,11 +70,11 @@
 
 | 功能 | 1.21.1 |
 | --- | --- |
-| 光影加载 | [Iris](https://modrinth.com/mod/iris) |
+| 光影加载 | [Iris Shaders](https://modrinth.com/mod/iris) |
 | Sodium 视频选项扩展 | [Sodium Extra](https://modrinth.com/mod/sodium-extra) |
 | OptiFine 平替集成 | [Puzzle](https://modrinth.com/mod/puzzle) |
-| 自定义实体模型 | [Entity Model Features](https://modrinth.com/mod/entity-model-features) |
-| 自定义实体纹理 | [Entity Texture Features](https://modrinth.com/mod/entitytexturefeatures) |
+| 自定义实体模型 | [[EMF] Entity Model Features](https://modrinth.com/mod/entity-model-features) |
+| 自定义实体纹理 | [[ETF] Entity Texture Features](https://modrinth.com/mod/entitytexturefeatures) |
 | 自定义物品纹理 | [CIT Resewn](https://modrinth.com/mod/cit-resewn) |
 | 连接纹理 | [Continuity](https://modrinth.com/mod/continuity) |
 | 自定义 GUI 资源包支持 | [OptiGUI](https://modrinth.com/mod/optigui) |
@@ -95,11 +95,11 @@
 | 额外粒子效果 | [Particle Effects](https://modrinth.com/mod/particle-effects) |
 | 背包粒子效果 | [Inventory Particles](https://modrinth.com/mod/inventory-particles) |
 | 氛围视觉效果 | [Mas Effects](https://modrinth.com/mod/mas-effects) |
-| 粒子交互 | [EG Particle Interactions](https://modrinth.com/mod/particle-interactions) |
+| 粒子交互 | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |
 | 气泡破裂效果 | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |
 | 落叶粒子 | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |
 | 爆炸效果 | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |
-| 弹射物视觉风格 | [2D Projectiles](https://modrinth.com/mod/twod_projectiles) |
+| 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |
 | 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |
 | 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception) |
 
@@ -142,9 +142,9 @@
 | 背包物品动画 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) |
 | 背包物品交换动画 | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) |
 | HUD 位置调整 | [Raised](https://modrinth.com/mod/raised) |
-| UI 背景模糊 | [Blur](https://modrinth.com/mod/blur-plus) |
-| 平滑滚动 | [Smooth Scroll](https://modrinth.com/mod/smooth-scroll) |
-| 平滑 GUI 动画 | [Smooth GUI](https://modrinth.com/mod/smooth-gui) |
+| UI 背景模糊 | [Blur+](https://modrinth.com/mod/blur-plus) |
+| 平滑滚动 | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) |
+| 平滑 GUI 动画 | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |
 | 现代 UI 框架与文字渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) |
 | 沉浸式 UI 交互 | [Immersive UI](https://modrinth.com/mod/immersive-ui) |
 
@@ -155,7 +155,7 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 聊天头像 | [Chat Heads](https://modrinth.com/mod/chat-heads) |
-| 聊天消息动画 | [Chat Animation](https://modrinth.com/mod/chatanimation) |
+| 聊天消息动画 | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |
 
 ### 皮肤与外观
 
@@ -164,7 +164,7 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 3D 皮肤层 | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) |
-| 披风物理效果 | [WaveyCapes](https://modrinth.com/mod/wavey-capes) |
+| 披风物理效果 | [Wavey Capes](https://modrinth.com/mod/wavey-capes) |
 | 披风来源支持 | [Capes](https://modrinth.com/mod/capes) |
 | 自定义皮肤加载 | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) |
 
@@ -178,8 +178,8 @@
 
 | 功能 | 1.21.1 | 可选替代 |
 | --- | --- | --- |
-| 物品与配方浏览 | [Roughly Enough Items](https://modrinth.com/mod/rei) |  |
-| 方块与实体信息浮层 | [Jade](https://modrinth.com/mod/jade) |  |
+| 物品与配方浏览 | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |  |
+| 方块与实体信息浮层 | [Jade 🔍](https://modrinth.com/mod/jade) |  |
 | 额外物品与方块提示 | [Peek](https://modrinth.com/mod/peek) |  |
 | 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
 | 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
@@ -193,7 +193,7 @@
 | 背包物品高亮 | [Item Highlighter](https://modrinth.com/mod/item-highlighter) |  |
 | 输入法冲突处理 | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  |
 | 中文字符搜索支持 | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  |
-| 缩放控制 | [Zoomify](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer](https://modrinth.com/mod/ok-zoomer) |
+| 缩放控制 | [Zoomify (Zoom)](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer - It's Zoom!](https://modrinth.com/mod/ok-zoomer) |
 
 ### HUD 信息与客户端便利功能
 
@@ -202,9 +202,9 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 高级 HUD 浮层 | [MiniHUD](https://modrinth.com/mod/minihud) |
-| 背包 HUD 浮层 | [Inventory HUD+](https://modrinth.com/mod/inventoryhudplus) |
+| 背包 HUD 浮层 | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |
 | 骑乘 HUD 改进 | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
-| 统计界面改进 | [Better Stats](https://modrinth.com/mod/better-stats) |
+| 统计界面改进 | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |
 | 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |
 | 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |
 | 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |
@@ -235,9 +235,9 @@
 
 | 功能 | 1.21.1 |
 | --- | --- |
-| 性能分析 | [Spark](https://modrinth.com/mod/spark) |
+| 性能分析 | [spark](https://modrinth.com/mod/spark) |
 | 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) |
-| 游戏内笔记 | [Vanilla Notebook](https://modrinth.com/mod/notebook) |
+| 游戏内笔记 | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |
 | 边缘方块放置 | [Reacharound](https://modrinth.com/mod/reacharound) |
 
 ## 可选能力
@@ -269,7 +269,7 @@
 
 | 功能 | 1.21.1 |
 | --- | --- |
-| 动态光源 | [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights) |
+| 动态光源 | [LambDynamicLights - Dynamic Lights](https://modrinth.com/mod/lambdynamiclights) |
 | 物理音效 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) |
 | 天气粒子氛围 | [Particle Rain](https://modrinth.com/mod/particle-rain) |
 
@@ -281,6 +281,6 @@
 | --- | --- | --- |
 | 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
 | 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |  |
-| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
+| 创造模式建造工具 | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
 | 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
-| 手柄支持 | [Controlify](https://modrinth.com/mod/controlify) |  |
+| 手柄支持 | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |

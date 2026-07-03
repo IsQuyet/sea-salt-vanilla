@@ -23,6 +23,13 @@ PROJECT_TYPE_DIRS = {
     "datapacks": "datapack",
     "plugins": "plugin",
 }
+PROJECT_TYPE_CURSEFORGE_PATHS = {
+    "mod": "mc-mods",
+    "resourcepack": "texture-packs",
+    "shader": "customization",
+    "datapack": "data-packs",
+    "plugin": "bukkit-plugins",
+}
 DEFAULT_PROJECT_TYPE = "mod"
 PACK = ROOT / "pack.toml"
 CACHE = ROOT / "reference" / "modrinth-collections"
@@ -127,6 +134,36 @@ def markdown_link(title: str, project_id: str | None, project_type: str | None =
     return f"[{escaped}](https://modrinth.com/{project_type or DEFAULT_PROJECT_TYPE}/{project_id})"
 
 
+def category_project_type(category_name: str | None) -> str:
+    """Infer a project type from a docs/config category directory name."""
+    if not category_name:
+        return DEFAULT_PROJECT_TYPE
+    return PROJECT_TYPE_DIRS.get(category_name, DEFAULT_PROJECT_TYPE)
+
+
+def project_ref_key(ref: Any) -> str | None:
+    """Return the registry key used for a string or compact object project reference."""
+    if ref is None:
+        return None
+    if isinstance(ref, dict):
+        for key in ["key", "slug", "id", "name"]:
+            if value := ref.get(key):
+                return str(value).lower()
+        return None
+    return str(ref).lower()
+
+
+def normalize_project_ref(ref: Any, category_name: str | None = None) -> dict[str, Any] | None:
+    """Normalize a docs/config project reference into a compact metadata object."""
+    if ref is None:
+        return None
+    if isinstance(ref, dict):
+        normalized = dict(ref)
+        normalized.setdefault("type", category_project_type(category_name))
+        return normalized
+    return {"key": str(ref).lower(), "slug": str(ref).lower(), "type": category_project_type(category_name)}
+
+
 def load_installed_projects() -> list[dict[str, Any]]:
     installed: list[dict[str, Any]] = []
     for folder, project_type in PROJECT_TYPE_DIRS.items():
@@ -137,7 +174,23 @@ def load_installed_projects() -> list[dict[str, Any]]:
             with path.open("rb") as file:
                 metadata = tomllib.load(file)
 
-            modrinth = metadata.get("update", {}).get("modrinth", {})
+            updates = metadata.get("update", {})
+            modrinth = updates.get("modrinth", {})
+            curseforge = updates.get("curseforge", {})
+            source = "unknown"
+            project_id = ""
+            modrinth_id = ""
+            modrinth_version = ""
+            curseforge_file_id = ""
+            if modrinth:
+                source = "modrinth"
+                modrinth_id = str(modrinth.get("mod-id") or "")
+                modrinth_version = str(modrinth.get("version") or "")
+                project_id = modrinth_id
+            elif curseforge:
+                source = "curseforge"
+                project_id = str(curseforge.get("project-id") or "")
+                curseforge_file_id = str(curseforge.get("file-id") or "")
             installed.append(
                 {
                     "file": f"{folder}/{path.name}",
@@ -145,8 +198,11 @@ def load_installed_projects() -> list[dict[str, Any]]:
                     "slug": path.name.removesuffix(".pw.toml").lower(),
                     "name": str(metadata.get("name") or path.name.removesuffix(".pw.toml")),
                     "side": str(metadata.get("side") or ""),
-                    "modrinth_id": str(modrinth.get("mod-id") or ""),
-                    "modrinth_version": str(modrinth.get("version") or ""),
+                    "source": source,
+                    "id": project_id,
+                    "modrinth_id": modrinth_id,
+                    "modrinth_version": modrinth_version,
+                    "curseforge_file_id": curseforge_file_id,
                 }
             )
     installed.sort(key=lambda project: (project["slug"], project["type"]))
@@ -178,24 +234,27 @@ def load_project_cache() -> dict[str, Any]:
     return read_json(PROJECT_CACHE)
 
 
-def collect_matrix_project_refs() -> list[str]:
-    refs: set[str] = set()
+def collect_matrix_project_refs() -> list[dict[str, Any]]:
+    refs: dict[str, dict[str, Any]] = {}
 
-    def remember(ref: Any) -> None:
-        if ref is None or isinstance(ref, dict):
+    def remember(ref: Any, category_name: str | None) -> None:
+        normalized = normalize_project_ref(ref, category_name)
+        if not normalized:
             return
-        refs.add(str(ref))
+        key = project_ref_key(normalized)
+        if not key:
+            return
+        refs.setdefault(key, normalized)
 
-    for file_name in FEATURE_GROUP_FILES:
-        group = read_json(file_name)
+    for group in load_feature_groups():
         for section in group.get("sections", []):
             for row in section.get("rows", []):
                 for version_data in row.get("versions", {}).values():
-                    remember(version_data.get("selected"))
+                    remember(version_data.get("selected"), group.get("_category"))
                     for ref in version_data.get("alternatives", []):
-                        remember(ref)
+                        remember(ref, group.get("_category"))
 
-    return sorted(refs)
+    return [refs[key] for key in sorted(refs)]
 
 
 def fetch_modrinth_project(project_ref: str, cache: dict[str, Any]) -> dict[str, Any] | None:
@@ -318,18 +377,28 @@ def build_missing_required(
 
 
 def build_documented_sets(project_meta: dict[str, dict[str, Any]]) -> dict[str, set[str]]:
-    documented = {"refs": set(), "slugs": set(), "names": set(), "ids": set()}
+    documented = {"refs": set(), "slugs": set(), "names": set(), "ids": set(), "source_ids": set()}
+
+    def remember_project(project: dict[str, Any]) -> None:
+        if slug := project.get("slug"):
+            documented["slugs"].add(str(slug).lower())
+        if name := project.get("name"):
+            documented["names"].add(str(name).lower())
+        if project_id := project.get("id"):
+            documented["ids"].add(str(project_id))
+            if source := project.get("source"):
+                documented["source_ids"].add(f"{source}:{project_id}")
+        if modrinth_id := project.get("modrinth_id"):
+            documented["ids"].add(str(modrinth_id))
 
     def remember_ref(ref: Any) -> None:
         if not ref:
             return
         if isinstance(ref, dict):
-            if slug := ref.get("slug"):
-                documented["slugs"].add(str(slug).lower())
-            if name := ref.get("name"):
-                documented["names"].add(str(name).lower())
-            if modrinth_id := ref.get("modrinth_id"):
-                documented["ids"].add(str(modrinth_id))
+            remember_project(ref)
+            key = project_ref_key(ref)
+            if key and (project := project_meta.get(key)):
+                remember_project(project)
             return
 
         key = str(ref)
@@ -337,12 +406,7 @@ def build_documented_sets(project_meta: dict[str, dict[str, Any]]) -> dict[str, 
         project = project_meta.get(key)
         if not project:
             return
-        if slug := project.get("slug"):
-            documented["slugs"].add(str(slug).lower())
-        if name := project.get("name"):
-            documented["names"].add(str(name).lower())
-        if modrinth_id := project.get("modrinth_id"):
-            documented["ids"].add(str(modrinth_id))
+        remember_project(project)
 
     def walk_rows(value: Any) -> None:
         if isinstance(value, dict):
@@ -364,10 +428,13 @@ def build_documented_sets(project_meta: dict[str, dict[str, Any]]) -> dict[str, 
 
 
 def is_documented(mod: dict[str, Any], documented: dict[str, set[str]]) -> bool:
+    source_id = f"{mod.get('source')}:{mod.get('id')}" if mod.get("source") and mod.get("id") else ""
     return (
         mod["slug"] in documented["refs"]
         or mod["slug"] in documented["slugs"]
         or mod["name"].lower() in documented["names"]
+        or (source_id and source_id in documented["source_ids"])
+        or (mod.get("id") and str(mod["id"]) in documented["ids"])
         or (mod["modrinth_id"] and mod["modrinth_id"] in documented["ids"])
     )
 
@@ -390,10 +457,11 @@ def expected_dependency_data(
         if not dependents:
             continue
         entries[mod["slug"]] = {
-            "source": "modrinth" if mod["modrinth_id"] else "unknown",
             "name": mod["name"],
             "type": mod["type"],
-            "modrinth_id": mod["modrinth_id"],
+            "source": mod.get("source") or "unknown",
+            "slug": mod["slug"],
+            "id": mod.get("id") or mod["modrinth_id"],
             "required_by": sorted({dependent["slug"] for dependent in dependents}),
         }
     return dict(sorted(entries.items()))

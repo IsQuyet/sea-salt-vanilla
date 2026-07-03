@@ -24,6 +24,7 @@ from project_data_common import (
     load_project_meta,
     markdown_escape,
     markdown_link,
+    project_ref_key,
     required_by_names,
     write_json,
     write_text,
@@ -37,9 +38,9 @@ def project_identity(project: dict[str, Any] | None, fallback: Any = None) -> st
     if project is None:
         return str(fallback).lower() if fallback else None
 
-    if modrinth_id := project.get("modrinth_id"):
-        return f"modrinth:{modrinth_id}"
     if source := project.get("source"):
+        if project_id := project.get("id"):
+            return f"{source}:{project_id}"
         if slug := project.get("slug"):
             return f"{source}:{str(slug).lower()}"
     if slug := project.get("slug"):
@@ -53,6 +54,9 @@ def project_from_ref(project_meta: dict[str, dict[str, Any]], ref: Any) -> dict[
     if ref is None:
         return None
     if isinstance(ref, dict):
+        key = project_ref_key(ref)
+        if key and key in project_meta:
+            return project_meta[key]
         return ref
     return project_meta.get(str(ref))
 
@@ -63,9 +67,13 @@ def is_project_installed(project: dict[str, Any] | None, installed: list[dict[st
 
     slug = str(project.get("slug") or "").lower()
     name = str(project.get("name") or "").lower()
+    source = str(project.get("source") or "")
+    project_id = str(project.get("id") or "")
     modrinth_id = str(project.get("modrinth_id") or "")
 
     for mod in installed:
+        if source and project_id and source == str(mod.get("source") or "") and project_id == str(mod.get("id") or ""):
+            return True
         if slug and slug == str(mod["slug"]):
             return True
         if name and name == str(mod["name"]).lower():
@@ -80,19 +88,26 @@ def folder_type_conflicts(
     project_meta: dict[str, dict[str, Any]],
 ) -> list[str]:
     type_by_id: dict[str, str] = {}
+    type_by_source_id: dict[tuple[str, str], str] = {}
     type_by_slug: dict[str, str] = {}
     for entry in project_meta.values():
         declared_type = str(entry.get("type") or "")
         if not declared_type:
             continue
-        if entry.get("modrinth_id"):
-            type_by_id[str(entry["modrinth_id"])] = declared_type
+        if entry.get("source") and entry.get("id"):
+            type_by_source_id[(str(entry["source"]), str(entry["id"]))] = declared_type
+        if entry.get("source") == "modrinth" and entry.get("id"):
+            type_by_id[str(entry["id"])] = declared_type
         if entry.get("slug"):
             type_by_slug[str(entry["slug"]).lower()] = declared_type
 
     conflicts: list[str] = []
     for project in installed:
-        expected = type_by_id.get(project["modrinth_id"]) or type_by_slug.get(project["slug"])
+        expected = (
+            type_by_source_id.get((str(project.get("source") or ""), str(project.get("id") or "")))
+            or type_by_id.get(project["modrinth_id"])
+            or type_by_slug.get(project["slug"])
+        )
         if expected and expected != project["type"]:
             conflicts.append(
                 f"{project['file']}: installed as {project['type']} but Modrinth project type is {expected}"

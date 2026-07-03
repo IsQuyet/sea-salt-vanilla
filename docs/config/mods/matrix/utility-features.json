@@ -250,7 +250,7 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "inventory-hud"
+              "selected": "inventoryhudplus"
             }
           }
         },
