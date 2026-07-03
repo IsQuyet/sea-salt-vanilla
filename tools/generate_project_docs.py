@@ -10,9 +10,9 @@ from typing import Any
 
 from project_data_common import (
     CATEGORIES,
-    PROJECTS_PATH,
     PROJECT_TYPE_CURSEFORGE_PATHS,
     load_feature_groups,
+    load_project_catalog,
     project_ref_key,
 )
 
@@ -36,7 +36,7 @@ def load_category_data(category: dict[str, Any], all_groups: list[dict[str, Any]
         "title": meta["title"],
         "versions": meta["versions"],
         "introduction": meta["introduction"],
-        "projects": read_json(PROJECTS_PATH),
+        "projects": load_project_catalog(),
         "groups": [group for group in all_groups if group["_category"] == category["name"]],
     }
 

@@ -1,0 +1,184 @@
+{
+  "better-block-entities": {
+    "name": "Better Block Entities",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "better-block-entities",
+    "id": "ONZm0H7Y"
+  },
+  "biomeinfo": {
+    "name": "BiomeInfo",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "biomeinfo",
+    "id": "Fws7jX8r"
+  },
+  "bobby": {
+    "name": "Bobby",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "bobby",
+    "id": "M08ruV16"
+  },
+  "chatimage": {
+    "name": "ChatImage",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "chatimage",
+    "id": "zhVN1dvW"
+  },
+  "controlify": {
+    "name": "Controlify (Controller support)",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "controlify",
+    "id": "DOUdJVEm"
+  },
+  "emotecraft": {
+    "name": "Emotecraft",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "emotecraft",
+    "id": "pZ2wrerK"
+  },
+  "essential": {
+    "name": "Essential Mod",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "essential",
+    "id": "k2ZPuTBm"
+  },
+  "headpat": {
+    "name": "Headpat a Friend!",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "headpat",
+    "id": "vETxChiy"
+  },
+  "lambdynamiclights": {
+    "name": "LambDynamicLights - Dynamic Lights",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "lambdynamiclights",
+    "id": "yBW8D80W"
+  },
+  "litematica": {
+    "name": "Litematica",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "litematica",
+    "id": "bEpr0Arc"
+  },
+  "logical-zoom": {
+    "name": "Logical Zoom",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "logical-zoom",
+    "id": "8bOImuGU"
+  },
+  "lottweaks": {
+    "name": "LotTweaks",
+    "type": "mod",
+    "source": "curseforge",
+    "slug": "lottweaks",
+    "id": "417768"
+  },
+  "noxesium": {
+    "name": "Noxesium",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "noxesium",
+    "id": "Kw7Sm3Xf"
+  },
+  "orthocamera": {
+    "name": "OrthoCamera",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "orthocamera",
+    "id": "OB69KhRA"
+  },
+  "ok-zoomer": {
+    "name": "Ok Zoomer - It's Zoom!",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "ok-zoomer",
+    "id": "aXf2OSFU"
+  },
+  "particle-rain": {
+    "name": "Particle Rain",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "particle-rain",
+    "id": "nrikgvxm"
+  },
+  "pixelshot": {
+    "name": "Pixelshot",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "pixelshot",
+    "id": "MUoQGQVU"
+  },
+  "replaymod": {
+    "name": "ReplayMod",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "replaymod",
+    "id": "Nv2fQJo5"
+  },
+  "repo-heads": {
+    "name": "REPO Heads",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "repo-heads",
+    "id": "Jaoe8qGe"
+  },
+  "server-unpacker": {
+    "name": "Server Unpacker",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "server-unpacker",
+    "id": "B3fgRqfr"
+  },
+  "simple-voice-chat": {
+    "name": "Simple Voice Chat",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "simple-voice-chat",
+    "id": "9eGKb6K1"
+  },
+  "sound-physics-remastered": {
+    "name": "Sound Physics Remastered",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "sound-physics-remastered",
+    "id": "qyVF9oeo"
+  },
+  "talkbubbles": {
+    "name": "TalkBubbles",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "talkbubbles",
+    "id": "BUpChT1v"
+  },
+  "talkingheads": {
+    "name": "Talking Heads",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "talkingheads",
+    "id": "Os35nfkh"
+  },
+  "wearthat": {
+    "name": "WearThat",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "wearthat",
+    "id": "FT20RvJM"
+  },
+  "yosbr": {
+    "name": "Your Options Shall Be Respected (YOSBR)",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "yosbr",
+    "id": "WwbubTsV"
+  }
+}

@@ -21,7 +21,7 @@ from project_data_common import (
     load_feature_groups,
     load_installed_projects,
     load_project_cache,
-    load_project_meta,
+    load_project_catalog,
     markdown_escape,
     markdown_link,
     project_ref_key,
@@ -147,9 +147,12 @@ def unknown_project_refs(groups: list[dict[str, Any]], project_meta: dict[str, d
     unknown: list[str] = []
 
     def check_ref(ref: Any, location: str) -> None:
-        if ref is None or isinstance(ref, dict):
+        if ref is None:
             return
-        if str(ref) not in project_meta:
+        key = project_ref_key(ref)
+        if not key:
+            return
+        if key not in project_meta:
             unknown.append(f"{location}: unknown project ref {ref}")
 
     for group in groups:
@@ -239,7 +242,7 @@ def table(lines: list[str], rows: list[dict[str, object]], required_by: dict[str
 
 def check() -> dict[str, object]:
     installed = load_installed_projects()
-    project_meta: dict[str, dict[str, object]] = load_project_meta()
+    project_meta: dict[str, dict[str, object]] = load_project_catalog()
     groups = load_feature_groups()
     documented = build_documented_sets(project_meta)
     declared_dependencies = load_declared_dependencies()

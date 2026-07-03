@@ -16,7 +16,7 @@ from project_data_common import (
     expected_dependency_data,
     load_dependency_cache,
     load_installed_projects,
-    load_project_meta,
+    load_project_catalog,
     write_json,
 )
 
@@ -27,7 +27,7 @@ def dependency_json_text(data: dict[str, dict[str, Any]]) -> str:
 
 def load_expected_dependencies() -> dict[str, dict[str, Any]]:
     installed = load_installed_projects()
-    project_meta: dict[str, dict[str, Any]] = load_project_meta()
+    project_meta: dict[str, dict[str, Any]] = load_project_catalog()
     documented = build_documented_sets(project_meta)
     dependency_cache = load_dependency_cache()
     required_by = build_required_by(installed, dependency_cache)

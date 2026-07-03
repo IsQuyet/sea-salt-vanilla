@@ -36,6 +36,7 @@ CACHE = ROOT / "reference" / "modrinth-collections"
 DEPENDENCY_CACHE = CACHE / "modrinth-version-dependencies.json"
 PROJECT_CACHE = CACHE / "modrinth-projects.json"
 PROJECTS_PATH = DATA / "projects.json"
+OPTIONAL_PATH = DATA / "optional.json"
 DEPENDENCIES_PATH = DATA / "dependencies.json"
 MODRINTH_VERSIONS_API = "https://api.modrinth.com/v2/versions"
 MODRINTH_PROJECT_API = "https://api.modrinth.com/v2/project"
@@ -226,6 +227,19 @@ def load_project_meta() -> dict[str, dict[str, Any]]:
     if not PROJECTS_PATH.exists():
         return {}
     return read_json(PROJECTS_PATH)
+
+
+def load_optional_meta() -> dict[str, dict[str, Any]]:
+    if not OPTIONAL_PATH.exists():
+        return {}
+    return read_json(OPTIONAL_PATH)
+
+
+def load_project_catalog() -> dict[str, dict[str, Any]]:
+    """Return all projects known to documentation: installed first, optional as fallback."""
+    catalog = load_optional_meta()
+    catalog.update(load_project_meta())
+    return catalog
 
 
 def load_project_cache() -> dict[str, Any]:

@@ -62,13 +62,6 @@
     "slug": "better-advancements",
     "id": "Q2OqKxDG"
   },
-  "better-block-entities": {
-    "name": "Better Block Entities",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "better-block-entities",
-    "id": "ONZm0H7Y"
-  },
   "better-f1-reborn": {
     "name": "Better F1 Reborn",
     "type": "mod",
@@ -97,13 +90,6 @@
     "slug": "betterf3",
     "id": "8shC1gFX"
   },
-  "biomeinfo": {
-    "name": "BiomeInfo",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "biomeinfo",
-    "id": "Fws7jX8r"
-  },
   "bliss-shader": {
     "name": "Bliss Shaders",
     "type": "shader",
@@ -124,13 +110,6 @@
     "source": "modrinth",
     "slug": "boat-item-view",
     "id": "BdKIyOLe"
-  },
-  "bobby": {
-    "name": "Bobby",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "bobby",
-    "id": "M08ruV16"
   },
   "bsl-shaders": {
     "name": "BSL Shaders",
@@ -173,13 +152,6 @@
     "source": "modrinth",
     "slug": "chatanimation",
     "id": "DnNYdJsx"
-  },
-  "chatimage": {
-    "name": "ChatImage",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "chatimage",
-    "id": "zhVN1dvW"
   },
   "chatpatches": {
     "name": "Chat Patches",
@@ -243,13 +215,6 @@
     "source": "modrinth",
     "slug": "continuity",
     "id": "1IjD5062"
-  },
-  "controlify": {
-    "name": "Controlify (Controller support)",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "controlify",
-    "id": "DOUdJVEm"
   },
   "controlling": {
     "name": "Controlling",
@@ -349,13 +314,6 @@
     "slug": "ebe",
     "id": "OVuFYfre"
   },
-  "emotecraft": {
-    "name": "Emotecraft",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "emotecraft",
-    "id": "pZ2wrerK"
-  },
   "entity-model-features": {
     "name": "[EMF] Entity Model Features",
     "type": "mod",
@@ -376,13 +334,6 @@
     "source": "modrinth",
     "slug": "entitytexturefeatures",
     "id": "BVzZfTc1"
-  },
-  "essential": {
-    "name": "Essential Mod",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "essential",
-    "id": "k2ZPuTBm"
   },
   "euphoria-patches": {
     "name": "Euphoria Patches",
@@ -481,13 +432,6 @@
     "source": "modrinth",
     "slug": "globalpacks",
     "id": "NRLPy2mk"
-  },
-  "headpat": {
-    "name": "Headpat a Friend!",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "headpat",
-    "id": "vETxChiy"
   },
   "hold-my-items": {
     "name": "Hold My Items",
@@ -622,13 +566,6 @@
     "slug": "krypton",
     "id": "fQEb0iXm"
   },
-  "lambdynamiclights": {
-    "name": "LambDynamicLights - Dynamic Lights",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "lambdynamiclights",
-    "id": "yBW8D80W"
-  },
   "libipn": {
     "name": "libIPN",
     "type": "mod",
@@ -636,32 +573,12 @@
     "slug": "libipn",
     "id": "onSQdWhM"
   },
-  "litematica": {
-    "name": "Litematica",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "litematica",
-    "id": "bEpr0Arc"
-  },
   "lithium": {
     "name": "Lithium",
     "type": "mod",
     "source": "modrinth",
     "slug": "lithium",
     "id": "gvQqBUqZ"
-  },
-  "logical-zoom": {
-    "name": "Logical Zoom",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "logical-zoom",
-    "id": "8bOImuGU"
-  },
-  "lottweaks": {
-    "name": "Lottweaks",
-    "type": "mod",
-    "source": "curseforge",
-    "slug": "lottweaks"
   },
   "make_bubbles_pop": {
     "name": "Make Bubbles Pop",
@@ -796,33 +713,12 @@
     "slug": "notebook",
     "id": "KaKEuH9Q"
   },
-  "noxesium": {
-    "name": "Noxesium",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "noxesium",
-    "id": "Kw7Sm3Xf"
-  },
-  "ok-zoomer": {
-    "name": "Ok Zoomer - It's Zoom!",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "ok-zoomer",
-    "id": "aXf2OSFU"
-  },
   "optigui": {
     "name": "OptiGUI",
     "type": "mod",
     "source": "modrinth",
     "slug": "optigui",
     "id": "JuksLGBQ"
-  },
-  "orthocamera": {
-    "name": "OrthoCamera",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "orthocamera",
-    "id": "OB69KhRA"
   },
   "paperdoll": {
     "name": "Paper Doll",
@@ -845,13 +741,6 @@
     "slug": "particle-interactions",
     "id": "xFCYuAs8"
   },
-  "particle-rain": {
-    "name": "Particle Rain",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "particle-rain",
-    "id": "nrikgvxm"
-  },
   "peek": {
     "name": "Peek",
     "type": "mod",
@@ -872,13 +761,6 @@
     "source": "modrinth",
     "slug": "photon-shader",
     "id": "lLqFfGNs"
-  },
-  "pixelshot": {
-    "name": "Pixelshot",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "pixelshot",
-    "id": "MUoQGQVU"
   },
   "placeholder-api": {
     "name": "Text Placeholder API",
@@ -922,20 +804,6 @@
     "slug": "rei",
     "id": "nfn13YXA"
   },
-  "replaymod": {
-    "name": "ReplayMod",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "replaymod",
-    "id": "Nv2fQJo5"
-  },
-  "repo-heads": {
-    "name": "REPO Heads",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "repo-heads",
-    "id": "Jaoe8qGe"
-  },
   "resourcify": {
     "name": "Resourcify",
     "type": "mod",
@@ -978,13 +846,6 @@
     "slug": "searchables",
     "id": "fuuu3xnx"
   },
-  "server-unpacker": {
-    "name": "Server Unpacker",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "server-unpacker",
-    "id": "B3fgRqfr"
-  },
   "shatterbyte-lib": {
     "name": "ShatterLib | OctoLib",
     "type": "mod",
@@ -998,13 +859,6 @@
     "source": "modrinth",
     "slug": "shulkerboxtooltip",
     "id": "2M01OLQq"
-  },
-  "simple-voice-chat": {
-    "name": "Simple Voice Chat",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "simple-voice-chat",
-    "id": "9eGKb6K1"
   },
   "smooth-gui": {
     "name": "Smooth Gui",
@@ -1048,13 +902,6 @@
     "slug": "sound",
     "id": "ZouiUX7t"
   },
-  "sound-physics-remastered": {
-    "name": "Sound Physics Remastered",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "sound-physics-remastered",
-    "id": "qyVF9oeo"
-  },
   "spark": {
     "name": "spark",
     "type": "mod",
@@ -1075,20 +922,6 @@
     "source": "modrinth",
     "slug": "subtle-effects",
     "id": "4q8UOK1d"
-  },
-  "talkbubbles": {
-    "name": "TalkBubbles",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "talkbubbles",
-    "id": "BUpChT1v"
-  },
-  "talkingheads": {
-    "name": "Talking Heads",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "talkingheads",
-    "id": "Os35nfkh"
   },
   "tcdcommons": {
     "name": "TCDCommons API",
@@ -1160,13 +993,6 @@
     "slug": "weaponmaster",
     "id": "qi1sj2da"
   },
-  "wearthat": {
-    "name": "WearThat",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "wearthat",
-    "id": "FT20RvJM"
-  },
   "worldedit": {
     "name": "WorldEdit",
     "type": "mod",
@@ -1194,13 +1020,6 @@
     "source": "modrinth",
     "slug": "yacl",
     "id": "1eAoo2KR"
-  },
-  "yosbr": {
-    "name": "Your Options Shall Be Respected (YOSBR)",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "yosbr",
-    "id": "WwbubTsV"
   },
   "yungs-api": {
     "name": "YUNG's API",

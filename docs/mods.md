@@ -281,6 +281,6 @@ These entries support specific creative, building, recording, or input workflows
 | --- | --- | --- |
 | Orthographic screenshot tools | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
 | Schematic building | [Litematica](https://modrinth.com/mod/litematica) |  |
-| Creative builder tools | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
+| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
 | Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
 | Controller support | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |

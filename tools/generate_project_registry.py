@@ -10,12 +10,8 @@ from typing import Any
 
 from project_data_common import (
     PROJECTS_PATH,
-    PROJECT_CACHE,
-    collect_matrix_project_refs,
     load_installed_projects,
     load_project_cache,
-    project_ref_key,
-    write_json,
 )
 
 
@@ -76,63 +72,10 @@ def entry_from_installed(mod: dict[str, Any], project_cache: dict[str, Any]) -> 
     )
 
 
-def entry_from_ref(ref: dict[str, Any], installed: list[dict[str, Any]], project_cache: dict[str, Any]) -> dict[str, Any]:
-    ref_key = str(project_ref_key(ref) or "")
-    ref_source = str(ref.get("source") or "")
-    ref_slug = str(ref.get("slug") or ref_key).lower()
-    ref_id = str(ref.get("id") or "")
-
-    for mod in installed:
-        installed_identity_matches = bool(ref_source and ref_source == mod.get("source") and ref_slug == mod.get("slug"))
-        installed_key_matches = ref_key in {str(mod.get("slug", "")).lower(), str(mod.get("name", "")).lower()}
-        installed_id_matches = bool(ref_id and ref_id == str(mod.get("id") or ""))
-        if installed_identity_matches or installed_key_matches or installed_id_matches:
-            return entry_from_installed(mod, project_cache)
-
-    if ref_source in ("", "modrinth"):
-        lookup = ref_id or ref_slug or ref_key
-        project = cached_modrinth_project(lookup, project_cache) if lookup else None
-        if project:
-            return entry_from_modrinth(project)
-
-    if ref_source == "curseforge":
-        return normalize_entry(
-            {
-                "name": ref.get("name") or display_name_from_slug(ref_slug),
-                "type": ref.get("type"),
-                "source": "curseforge",
-                "slug": ref_slug,
-                "id": ref_id,
-            }
-        )
-
-    project = cached_modrinth_project(ref_key, project_cache) if ref_key else None
-    if project:
-        return entry_from_modrinth(project)
-
-    fallback_slug = ref_slug or ref_key
-    return normalize_entry(
-        {
-            "name": ref.get("name") or display_name_from_slug(fallback_slug),
-            "type": ref.get("type"),
-            "source": ref_source or "unknown",
-            "slug": fallback_slug,
-        }
-    )
-
-
 def expected_projects() -> dict[str, dict[str, Any]]:
     installed = load_installed_projects()
     project_cache = load_project_cache()
-    refs = collect_matrix_project_refs()
-
-    expected = {str(mod["slug"]): entry_from_installed(mod, project_cache) for mod in installed}
-    for ref in refs:
-        key = project_ref_key(ref)
-        if key and key not in expected:
-            expected[key] = entry_from_ref(ref, installed, project_cache)
-
-    return dict(sorted(expected.items()))
+    return dict(sorted((str(mod["slug"]), entry_from_installed(mod, project_cache)) for mod in installed))
 
 
 def main() -> None:
