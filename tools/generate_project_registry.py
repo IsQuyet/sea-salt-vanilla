@@ -11,9 +11,10 @@ from typing import Any
 from project_data_common import (
     OPTIONAL_PATH,
     PROJECTS_PATH,
-    collect_matrix_project_refs,
-    load_installed_projects,
+    category_project_type,
+    load_feature_groups,
     load_project_cache,
+    project_ref_key,
 )
 
 
@@ -78,40 +79,54 @@ def entry_from_documented_ref(ref: dict[str, Any], project_cache: dict[str, Any]
     )
 
 
-def entry_from_installed(mod: dict[str, Any], project_cache: dict[str, Any]) -> dict[str, Any]:
-    if mod.get("source") == "modrinth" and mod.get("id"):
-        project = cached_modrinth_project(str(mod["id"]), project_cache)
-        if project:
-            return entry_from_modrinth(project)
+def remember_project_ref(refs: dict[str, dict[str, Any]], ref: Any, project_type: str) -> None:
+    if ref is None:
+        return
 
-    return normalize_entry(
-        {
-            "name": mod.get("name"),
-            "type": mod.get("type"),
-            "source": mod.get("source") or "unknown",
-            "slug": mod.get("slug"),
-            "id": mod.get("id"),
-        }
-    )
+    if isinstance(ref, dict):
+        documented_ref = dict(ref)
+    else:
+        documented_ref = {"source": "unknown", "slug": str(ref).lower()}
+
+    documented_ref.setdefault("type", project_type)
+    key = project_ref_key(documented_ref)
+    if key:
+        refs.setdefault(key, documented_ref)
 
 
-def expected_projects() -> dict[str, dict[str, Any]]:
-    installed = load_installed_projects()
+def collect_documented_project_refs() -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
+    default_refs: dict[str, dict[str, Any]] = {}
+    optional_refs: dict[str, dict[str, Any]] = {}
+
+    for group in load_feature_groups():
+        is_optional_group = bool(group.get("_optional"))
+        project_type = category_project_type(str(group.get("_category") or ""))
+        for section in group.get("sections", []):
+            for row in section.get("rows", []):
+                for version_data in row.get("versions", {}).values():
+                    selected_ref = version_data.get("selected")
+                    if is_optional_group:
+                        remember_project_ref(optional_refs, selected_ref, project_type)
+                    else:
+                        remember_project_ref(default_refs, selected_ref, project_type)
+
+                    for alternative_ref in version_data.get("alternatives", []):
+                        remember_project_ref(optional_refs, alternative_ref, project_type)
+
+    for key in list(optional_refs):
+        if key in default_refs:
+            del optional_refs[key]
+
+    return default_refs, optional_refs
+
+
+def build_project_catalog(refs: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
     project_cache = load_project_cache()
-    return dict(sorted((str(mod["slug"]), entry_from_installed(mod, project_cache)) for mod in installed))
-
-
-def expected_optional_projects(installed_projects: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
-    project_cache = load_project_cache()
-    optional_projects: dict[str, dict[str, Any]] = {}
-
-    for ref in collect_matrix_project_refs():
-        slug = str(ref.get("slug") or ref.get("key") or "").lower()
-        if not slug or slug in installed_projects:
-            continue
-        optional_projects[slug] = entry_from_documented_ref(ref, project_cache)
-
-    return dict(sorted(optional_projects.items()))
+    entries = {
+        str(ref.get("slug") or ref.get("key") or key).lower(): entry_from_documented_ref(ref, project_cache)
+        for key, ref in refs.items()
+    }
+    return dict(sorted(entries.items()))
 
 
 def main() -> None:
@@ -119,10 +134,11 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Check whether generated project catalogs are up to date without writing them.")
     args = parser.parse_args()
 
-    expected_installed_projects = expected_projects()
-    expected_optional_catalog = expected_optional_projects(expected_installed_projects)
+    default_refs, optional_refs = collect_documented_project_refs()
+    expected_default_catalog = build_project_catalog(default_refs)
+    expected_optional_catalog = build_project_catalog(optional_refs)
     expected_files = {
-        PROJECTS_PATH: project_json_text(expected_installed_projects),
+        PROJECTS_PATH: project_json_text(expected_default_catalog),
         OPTIONAL_PATH: project_json_text(expected_optional_catalog),
     }
 

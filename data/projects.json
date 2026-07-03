@@ -27,13 +27,6 @@
     "slug": "appleskin",
     "id": "EsAfCjCV"
   },
-  "architectury-api": {
-    "name": "Architectury API",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "architectury-api",
-    "id": "lhGA9TYQ"
-  },
   "asyncparticles": {
     "name": "AsyncParticles",
     "type": "mod",
@@ -47,13 +40,6 @@
     "source": "modrinth",
     "slug": "badoptimizations",
     "id": "g96Z4WVZ"
-  },
-  "balm": {
-    "name": "Balm",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "balm",
-    "id": "MBAkmtvl"
   },
   "better-advancements": {
     "name": "Better Advancements",
@@ -167,13 +153,6 @@
     "slug": "cherished-worlds",
     "id": "3azQ6p0W"
   },
-  "cicada": {
-    "name": "CICADA",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "cicada",
-    "id": "IwCkru1D"
-  },
   "cit-resewn": {
     "name": "CIT Resewn",
     "type": "mod",
@@ -222,13 +201,6 @@
     "source": "modrinth",
     "slug": "controlling",
     "id": "xv94TkTM"
-  },
-  "creativecore": {
-    "name": "CreativeCore",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "creativecore",
-    "id": "OsZiaDHq"
   },
   "cull-leaves": {
     "name": "Cull Leaves",
@@ -419,13 +391,6 @@
     "slug": "fresh-animations-extensions",
     "id": "YAVTU8mK"
   },
-  "fzzy-config": {
-    "name": "Fzzy Config",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "fzzy-config",
-    "id": "hYykXjDp"
-  },
   "globalpacks": {
     "name": "Global Packs",
     "type": "mod",
@@ -439,13 +404,6 @@
     "source": "modrinth",
     "slug": "hold-my-items",
     "id": "AP8rDDLS"
-  },
-  "iceberg": {
-    "name": "Iceberg",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "iceberg",
-    "id": "5faXoLqX"
   },
   "imblocker-original": {
     "name": "IMBlocker",
@@ -545,33 +503,12 @@
     "slug": "justenoughcharacters",
     "id": "I7k4B65h"
   },
-  "kiwi": {
-    "name": "Kiwi 🥝",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "kiwi",
-    "id": "ufdDoWPd"
-  },
-  "konkrete": {
-    "name": "Konkrete",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "konkrete",
-    "id": "J81TRJWm"
-  },
   "krypton": {
     "name": "Krypton",
     "type": "mod",
     "source": "modrinth",
     "slug": "krypton",
     "id": "fQEb0iXm"
-  },
-  "libipn": {
-    "name": "libIPN",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "libipn",
-    "id": "onSQdWhM"
   },
   "lithium": {
     "name": "Lithium",
@@ -587,33 +524,12 @@
     "slug": "make_bubbles_pop",
     "id": "gPCdW0Wr"
   },
-  "malilib": {
-    "name": "MaLiLib",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "malilib",
-    "id": "GcWjdA9I"
-  },
   "mas-effects": {
     "name": "Mas Effects",
     "type": "mod",
     "source": "modrinth",
     "slug": "mas-effects",
     "id": "YsP4hqhn"
-  },
-  "melody": {
-    "name": "Melody",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "melody",
-    "id": "CVT4pFB2"
-  },
-  "midnightlib": {
-    "name": "MidnightLib",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "midnightlib",
-    "id": "codAaoxh"
   },
   "mini-effects": {
     "name": "Mini Effects",
@@ -664,26 +580,12 @@
     "slug": "moreculling",
     "id": "51shyZVL"
   },
-  "mossylib": {
-    "name": "MossyLib",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "mossylib",
-    "id": "ffLDUGbm"
-  },
   "mouse-tweaks": {
     "name": "Mouse Tweaks",
     "type": "mod",
     "source": "modrinth",
     "slug": "mouse-tweaks",
     "id": "aC3cM3Vq"
-  },
-  "mru": {
-    "name": "M.R.U",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "mru",
-    "id": "SNVQ2c0g"
   },
   "no-chat-reports": {
     "name": "No Chat Reports",
@@ -762,13 +664,6 @@
     "slug": "photon-shader",
     "id": "lLqFfGNs"
   },
-  "placeholder-api": {
-    "name": "Text Placeholder API",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "placeholder-api",
-    "id": "eXts2L7r"
-  },
   "presence-footsteps": {
     "name": "Presence Footsteps",
     "type": "mod",
@@ -839,20 +734,6 @@
     "slug": "seamless",
     "id": "rhyHyQke"
   },
-  "searchables": {
-    "name": "Searchables",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "searchables",
-    "id": "fuuu3xnx"
-  },
-  "shatterbyte-lib": {
-    "name": "ShatterLib | OctoLib",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "shatterbyte-lib",
-    "id": "RH2KUdKJ"
-  },
   "shulkerboxtooltip": {
     "name": "Shulker Box Tooltip",
     "type": "mod",
@@ -913,8 +794,7 @@
     "name": "Stay True",
     "type": "resourcepack",
     "source": "curseforge",
-    "slug": "stay-true",
-    "id": "353554"
+    "slug": "stay-true"
   },
   "subtle-effects": {
     "name": "Subtle Effects",
@@ -922,13 +802,6 @@
     "source": "modrinth",
     "slug": "subtle-effects",
     "id": "4q8UOK1d"
-  },
-  "tcdcommons": {
-    "name": "TCDCommons API",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "tcdcommons",
-    "id": "Eldc1g37"
   },
   "tiny-item-animations": {
     "name": "Tiny Item Animations",
@@ -1020,13 +893,6 @@
     "source": "modrinth",
     "slug": "yacl",
     "id": "1eAoo2KR"
-  },
-  "yungs-api": {
-    "name": "YUNG's API",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "yungs-api",
-    "id": "Ua7DFN59"
   },
   "zoomify": {
     "name": "Zoomify (Zoom)",

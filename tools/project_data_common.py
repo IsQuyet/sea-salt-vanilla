@@ -236,7 +236,7 @@ def load_optional_meta() -> dict[str, dict[str, Any]]:
 
 
 def load_project_catalog() -> dict[str, dict[str, Any]]:
-    """Return all projects known to documentation: installed first, optional as fallback."""
+    """Return all projects declared by docs config, with defaults overriding optional entries."""
     catalog = load_optional_meta()
     catalog.update(load_project_meta())
     return catalog
