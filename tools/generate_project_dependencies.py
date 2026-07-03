@@ -25,13 +25,14 @@ def dependency_json_text(data: dict[str, dict[str, Any]]) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2) + "\n"
 
 
-def load_expected_dependencies() -> dict[str, dict[str, Any]]:
+def load_expected_dependencies(*, persist_cache: bool = True) -> dict[str, dict[str, Any]]:
     installed = load_installed_projects()
     project_meta: dict[str, dict[str, Any]] = load_project_catalog()
     documented = build_documented_sets(project_meta)
     dependency_cache = load_dependency_cache()
     required_by = build_required_by(installed, dependency_cache)
-    write_json(DEPENDENCY_CACHE, dependency_cache)
+    if persist_cache:
+        write_json(DEPENDENCY_CACHE, dependency_cache)
     return expected_dependency_data(installed, documented, required_by)
 
 
@@ -40,7 +41,7 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Check whether dependencies.json is up to date without writing it.")
     args = parser.parse_args()
 
-    expected = load_expected_dependencies()
+    expected = load_expected_dependencies(persist_cache=not args.check)
     expected_text = dependency_json_text(expected)
 
     if args.check:

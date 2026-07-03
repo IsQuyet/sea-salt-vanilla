@@ -14,8 +14,8 @@ from project_data_common import (
     category_project_type,
     load_feature_groups,
     load_project_cache,
-    project_ref_key,
 )
+from project_data_identity import project_entry_key, project_ref_key
 
 
 def project_json_text(data: dict[str, dict[str, Any]]) -> str:
@@ -123,8 +123,9 @@ def collect_documented_project_refs() -> tuple[dict[str, dict[str, Any]], dict[s
 def build_project_catalog(refs: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
     project_cache = load_project_cache()
     entries = {
-        str(ref.get("slug") or ref.get("key") or key).lower(): entry_from_documented_ref(ref, project_cache)
+        generated_key: entry_from_documented_ref(ref, project_cache)
         for key, ref in refs.items()
+        if (generated_key := project_entry_key(ref, key))
     }
     return dict(sorted(entries.items()))
 

@@ -11,6 +11,8 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
+from project_data_identity import project_ref_key
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -142,18 +144,6 @@ def category_project_type(category_name: str | None) -> str:
     return PROJECT_TYPE_DIRS.get(category_name, DEFAULT_PROJECT_TYPE)
 
 
-def project_ref_key(ref: Any) -> str | None:
-    """Return the registry key used for a string or compact object project reference."""
-    if ref is None:
-        return None
-    if isinstance(ref, dict):
-        for key in ["key", "slug", "id", "name"]:
-            if value := ref.get(key):
-                return str(value).lower()
-        return None
-    return str(ref).lower()
-
-
 def normalize_project_ref(ref: Any, category_name: str | None = None) -> dict[str, Any] | None:
     """Normalize a docs/config project reference into a compact metadata object."""
     if ref is None:
@@ -248,6 +238,20 @@ def load_project_cache() -> dict[str, Any]:
     return read_json(PROJECT_CACHE)
 
 
+def cache_entry_has_error(entry: Any) -> bool:
+    """Return whether a cached API entry represents an unresolved fetch error."""
+    return isinstance(entry, dict) and "error" in entry
+
+
+def collect_cache_errors(cache: dict[str, Any], cache_name: str) -> list[str]:
+    """Collect unresolved cache errors for human-readable check output."""
+    errors: list[str] = []
+    for cache_key, entry in sorted(cache.items()):
+        if cache_entry_has_error(entry):
+            errors.append(f"{cache_name}:{cache_key}: {entry.get('error')}")
+    return errors
+
+
 def collect_matrix_project_refs() -> list[dict[str, Any]]:
     refs: dict[str, dict[str, Any]] = {}
 
@@ -274,7 +278,8 @@ def collect_matrix_project_refs() -> list[dict[str, Any]]:
 def fetch_modrinth_project(project_ref: str, cache: dict[str, Any]) -> dict[str, Any] | None:
     if project_ref in cache:
         cached = cache[project_ref]
-        return cached if isinstance(cached, dict) and "error" not in cached else None
+        if isinstance(cached, dict) and "error" not in cached:
+            return cached
 
     request = urllib.request.Request(
         f"{MODRINTH_PROJECT_API}/{urllib.parse.quote(project_ref, safe='')}",
@@ -284,7 +289,7 @@ def fetch_modrinth_project(project_ref: str, cache: dict[str, Any]) -> dict[str,
         with urllib.request.urlopen(request, timeout=30) as response:
             project = json.loads(response.read().decode("utf-8"))
     except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
-        cache[project_ref] = {"error": str(error)}
+        cache[project_ref] = {"error": str(error), "retryable": True}
         return None
 
     cache[project_ref] = project
@@ -308,7 +313,11 @@ def cache_version(data: dict[str, Any], cache: dict[str, Any]) -> None:
 
 
 def fetch_missing_modrinth_versions(version_ids: list[str], cache: dict[str, Any]) -> None:
-    missing = [version_id for version_id in sorted(set(version_ids)) if version_id and version_id not in cache]
+    missing = [
+        version_id
+        for version_id in sorted(set(version_ids))
+        if version_id and (version_id not in cache or cache_entry_has_error(cache.get(version_id)))
+    ]
     if not missing:
         return
 
@@ -324,7 +333,7 @@ def fetch_missing_modrinth_versions(version_ids: list[str], cache: dict[str, Any
                 versions = json.loads(response.read().decode("utf-8"))
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
             for version_id in batch:
-                cache[version_id] = {"error": str(error), "dependencies": []}
+                cache[version_id] = {"error": str(error), "retryable": True}
             continue
 
         found_ids = set()
@@ -335,7 +344,7 @@ def fetch_missing_modrinth_versions(version_ids: list[str], cache: dict[str, Any
 
         for version_id in batch:
             if version_id not in found_ids and version_id not in cache:
-                cache[version_id] = {"error": "Version not returned by Modrinth API", "dependencies": []}
+                cache[version_id] = {"error": "Version not returned by Modrinth API", "retryable": False}
 
 
 def build_required_by(installed: list[dict[str, Any]], cache: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:

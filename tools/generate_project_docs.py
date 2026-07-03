@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import json
 from pathlib import Path
 from typing import Any
 
@@ -13,47 +12,35 @@ from project_data_common import (
     PROJECT_TYPE_CURSEFORGE_PATHS,
     load_feature_groups,
     load_project_catalog,
-    project_ref_key,
+    markdown_escape,
+    read_json,
+    write_text,
 )
+from project_data_identity import resolve_project_ref
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS_DIR = ROOT / "docs"
 
 
-def read_json(path: Path) -> Any:
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def write_text(path: Path, text: str) -> None:
-    path.write_text(text, encoding="utf-8", newline="\n")
-
-
-def load_category_data(category: dict[str, Any], all_groups: list[dict[str, Any]]) -> dict[str, Any]:
+def load_category_data(
+    category: dict[str, Any],
+    all_groups: list[dict[str, Any]],
+    project_catalog: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
     meta = read_json(category["meta_path"])
     return {
         "name": category["name"],
         "title": meta["title"],
         "versions": meta["versions"],
         "introduction": meta["introduction"],
-        "projects": load_project_catalog(),
+        "projects": project_catalog,
         "groups": [group for group in all_groups if group["_category"] == category["name"]],
     }
 
 
 def project_from_ref(data: dict[str, Any], ref: Any) -> dict[str, Any] | None:
-    if ref is None:
-        return None
-    if isinstance(ref, dict):
-        key = project_ref_key(ref)
-        if key and key in data.get("projects", {}):
-            return data["projects"][key]
-        return ref
-    return data.get("projects", {}).get(str(ref))
-
-
-def markdown_escape(value: str) -> str:
-    return value.replace("|", r"\|")
+    return resolve_project_ref(data.get("projects", {}), ref)
 
 
 def project_link(project: dict[str, Any]) -> str | None:
@@ -168,8 +155,12 @@ def render_matrix(data: dict[str, Any], language: str) -> str:
     return "\n".join(lines) + "\n"
 
 
-def category_outputs(category: dict[str, Any], all_groups: list[dict[str, Any]]) -> dict[Path, str]:
-    data = load_category_data(category, all_groups)
+def category_outputs(
+    category: dict[str, Any],
+    all_groups: list[dict[str, Any]],
+    project_catalog: dict[str, dict[str, Any]],
+) -> dict[Path, str]:
+    data = load_category_data(category, all_groups, project_catalog)
     return {
         DOCS_DIR / f"{category['name']}.md": render_matrix(data, "en"),
         DOCS_DIR / f"{category['name']}.zh-CN.md": render_matrix(data, "zh"),
@@ -182,10 +173,11 @@ def main() -> None:
     args = parser.parse_args()
 
     all_groups = load_feature_groups()
+    project_catalog = load_project_catalog()
 
     outputs: dict[Path, str] = {}
     for category in CATEGORIES:
-        outputs.update(category_outputs(category, all_groups))
+        outputs.update(category_outputs(category, all_groups, project_catalog))
 
     if args.check:
         mismatches = [

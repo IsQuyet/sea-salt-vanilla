@@ -25,6 +25,29 @@
 - [模组](docs/mods.zh-CN.md)
 - [资源包](docs/resourcepacks.zh-CN.md)
 - [光影包](docs/shaderpacks.zh-CN.md)
+- [工具使用手册](tools/README.zh-CN.md)
+
+## 数据与工具工作流
+
+公开项目矩阵的唯一真相源是 `docs/config/`。`data/` 下的注册表和 `docs/*.md` 下的公开文档都是生成产物，不建议手动编辑。
+
+推荐命令：
+
+```bash
+python tools/update_project_data.py generate
+python tools/update_project_data.py check
+```
+
+- `generate` 会更新项目注册表、依赖数据、公开文档，以及供人工阅读的一致性检查报告。
+- `check` 会验证生成文件、docs config、packwiz 元数据、依赖数据和项目唯一性，并且不写入生成产物。
+
+当前生成数据的语义：
+
+- `data/projects.json`：由 `docs/config/**/matrix/*.json` 声明的默认项目生成。
+- `data/optional.json`：由 `docs/config/**/optional.json` 和矩阵 alternatives 声明的可选/替代项目生成。
+- `data/dependencies.json`：packwiz 已安装、但不作为公开功能项展示的 dependency-only 项目。
+
+packwiz 元数据代表实际安装事实，用于一致性检查。如果文档与 packwiz 不一致，优先修正 `docs/config/`，然后运行检查，再根据检查结果补装或移除 packwiz 项目。
 
 ## 目录约定
 
@@ -44,6 +67,7 @@ sea-salt-vanilla/
 |   `-- *.md                           # 自动生成的公开文档
 |-- data/
 |   |-- projects.json                  # 自动生成的可见项目注册表
+|   |-- optional.json                  # 自动生成的可选/替代项目注册表
 |   `-- dependencies.json              # 自动生成的 dependency-only 注册表
 `-- tools/                             # 生成和检查脚本
 ```

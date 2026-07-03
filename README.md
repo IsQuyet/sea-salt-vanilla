@@ -25,6 +25,29 @@ The goal: keep the vanilla experience recognizable, then quietly improve visuals
 - [Mods](docs/mods.md)
 - [Resource packs](docs/resourcepacks.md)
 - [Shader packs](docs/shaderpacks.md)
+- [Tooling guide](tools/README.md)
+
+## Data and tooling workflow
+
+The source of truth for the public project matrix is `docs/config/`. Generated files under `data/` and `docs/*.md` should be updated with the tooling instead of edited by hand.
+
+Recommended commands:
+
+```bash
+python tools/update_project_data.py generate
+python tools/update_project_data.py check
+```
+
+- `generate` updates generated project registries, dependency data, public documentation, and the human-readable consistency report.
+- `check` verifies generated files, docs config, packwiz metadata, dependency data, and project uniqueness without writing generated outputs.
+
+Current generated data semantics:
+
+- `data/projects.json`: default projects declared by `docs/config/**/matrix/*.json`.
+- `data/optional.json`: optional projects and alternatives declared by `docs/config/**/optional.json` and matrix alternatives.
+- `data/dependencies.json`: dependency-only projects installed by packwiz but not presented as public feature entries.
+
+Packwiz metadata remains the installation fact used by consistency checks. If documentation and packwiz disagree, update `docs/config/` first, run the check, then add or remove packwiz projects according to the reported result.
 
 ## Directory layout
 
@@ -44,6 +67,7 @@ sea-salt-vanilla/
 |   `-- *.md                           # generated public documentation
 |-- data/
 |   |-- projects.json                  # generated visible project registry
+|   |-- optional.json                  # generated optional/alternative registry
 |   `-- dependencies.json              # generated dependency-only registry
 `-- tools/                             # generation and check scripts
 ```
