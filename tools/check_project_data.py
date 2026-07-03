@@ -22,6 +22,8 @@ from project_data_common import (
     load_installed_projects,
     load_project_cache,
     load_project_catalog,
+    load_optional_meta,
+    load_project_meta,
     markdown_escape,
     markdown_link,
     project_ref_key,
@@ -215,6 +217,76 @@ def expected_default_projects(
     return expected
 
 
+def collect_documented_ref_sets(groups: list[dict[str, Any]]) -> dict[str, set[str]]:
+    """Return the project keys declared by docs config for the target Minecraft version."""
+    default_refs: set[str] = set()
+    optional_refs: set[str] = set()
+
+    def ref_key(ref: Any) -> str | None:
+        key = project_ref_key(ref)
+        return key.lower() if key else None
+
+    for group in groups:
+        is_optional_group = bool(group["_optional"])
+        for section in group["sections"]:
+            for row in section["rows"]:
+                version_data = row.get("versions", {}).get(TARGET_VERSION)
+                if not version_data:
+                    continue
+
+                selected_key = ref_key(version_data.get("selected"))
+                if selected_key:
+                    if is_optional_group:
+                        optional_refs.add(selected_key)
+                    else:
+                        default_refs.add(selected_key)
+
+                for alternative in version_data.get("alternatives", []):
+                    alternative_key = ref_key(alternative)
+                    if alternative_key:
+                        optional_refs.add(alternative_key)
+
+    optional_refs -= default_refs
+    return {
+        "default": default_refs,
+        "optional": optional_refs,
+        "all": default_refs | optional_refs,
+    }
+
+
+def generated_data_invariants(
+    groups: list[dict[str, Any]],
+    installed: list[dict[str, Any]],
+    declared_dependencies: dict[str, dict[str, Any]],
+) -> list[str]:
+    """Verify generated data catalogs remain disjoint and match their source sets."""
+    project_keys = set(load_project_meta())
+    optional_keys = set(load_optional_meta())
+    dependency_keys = set(declared_dependencies)
+    installed_keys = {str(project["slug"]).lower() for project in installed}
+    documented_refs = collect_documented_ref_sets(groups)
+
+    issues: list[str] = []
+
+    def remember_set_difference(label: str, values: set[str]) -> None:
+        if values:
+            issues.append(f"{label}: {', '.join(sorted(values))}")
+
+    remember_set_difference("projects.json intersects optional.json", project_keys & optional_keys)
+    remember_set_difference("projects.json intersects dependencies.json", project_keys & dependency_keys)
+    remember_set_difference("optional.json intersects dependencies.json", optional_keys & dependency_keys)
+    remember_set_difference("projects.json contains entries outside docs default refs", project_keys - documented_refs["default"])
+    remember_set_difference("docs default refs missing from projects.json", documented_refs["default"] - project_keys)
+    remember_set_difference("optional.json contains entries outside docs optional refs", optional_keys - documented_refs["optional"])
+    remember_set_difference("docs optional refs missing from optional.json", documented_refs["optional"] - optional_keys)
+    remember_set_difference("projects.json + optional.json contains entries outside docs refs", (project_keys | optional_keys) - documented_refs["all"])
+    remember_set_difference("docs refs missing from projects.json + optional.json", documented_refs["all"] - (project_keys | optional_keys))
+    remember_set_difference("projects.json + dependencies.json contains entries outside packwiz", (project_keys | dependency_keys) - installed_keys)
+    remember_set_difference("packwiz installed entries missing from projects.json + dependencies.json", installed_keys - (project_keys | dependency_keys))
+
+    return issues
+
+
 def table(lines: list[str], rows: list[dict[str, object]], required_by: dict[str, list[dict[str, object]]]) -> None:
     lines.extend(
         [
@@ -277,6 +349,7 @@ def check() -> dict[str, object]:
         "documented_installed": documented_installed,
         "dependency_declared": dependency_declared,
         "unexplained": unexplained,
+        "generated_data_invariants": generated_data_invariants(groups, installed, declared_dependencies),
         "unexpected_installed": unexpected_installed_projects(groups, project_meta, installed),
         "unknown_refs": unknown_project_refs(groups, project_meta),
         "duplicate_refs": duplicate_project_refs(groups, project_meta),
@@ -291,6 +364,7 @@ def render_report(result: dict[str, object]) -> str:
     documented_installed = result["documented_installed"]
     dependency_declared = result["dependency_declared"]
     unexplained = result["unexplained"]
+    generated_data_invariant_issues = result["generated_data_invariants"]
     unexpected = result["unexpected_installed"]
     unknown_refs = result["unknown_refs"]
     duplicate_refs = result["duplicate_refs"]
@@ -303,6 +377,7 @@ def render_report(result: dict[str, object]) -> str:
     assert isinstance(documented_installed, list)
     assert isinstance(dependency_declared, list)
     assert isinstance(unexplained, list)
+    assert isinstance(generated_data_invariant_issues, list)
     assert isinstance(unexpected, list)
     assert isinstance(unknown_refs, list)
     assert isinstance(duplicate_refs, list)
@@ -321,6 +396,7 @@ def render_report(result: dict[str, object]) -> str:
         f"- 功能矩阵覆盖：{len(documented_installed)}",
         f"- dependencies.json 覆盖：{len(dependency_declared)}",
         f"- 未解释项目：{len(unexplained)}",
+        f"- 生成数据集合不变量问题：{len(generated_data_invariant_issues)}",
         f"- 默认包缺失：{len(missing_defaults)}",
         f"- 缺失 required 依赖：{len(missing_dependencies)}",
         f"- 安装目录不符：{len(folder_conflicts)}",
@@ -328,9 +404,15 @@ def render_report(result: dict[str, object]) -> str:
         f"- 未知项目引用：{len(unknown_refs)}",
         f"- 重复项目引用：{len(duplicate_refs)}",
         "",
-        "## 默认包缺失",
-        "",
     ]
+
+    lines.extend(["## 生成数据集合不变量", ""])
+    if generated_data_invariant_issues:
+        lines.extend(f"- {issue}" for issue in generated_data_invariant_issues)
+    else:
+        lines.append("无。")
+
+    lines.extend(["", "## 默认包缺失", ""])
     if missing_defaults:
         lines.extend(f"- {project['name']}" for project in missing_defaults)
     else:
@@ -403,6 +485,7 @@ def main() -> None:
     write_text(OUTPUT, report)
 
     unexplained = result["unexplained"]
+    generated_data_invariant_issues = result["generated_data_invariants"]
     unexpected = result["unexpected_installed"]
     unknown_refs = result["unknown_refs"]
     duplicate_refs = result["duplicate_refs"]
@@ -410,6 +493,7 @@ def main() -> None:
     missing_dependencies = result["missing_dependencies"]
     folder_conflicts = result["folder_conflicts"]
     assert isinstance(unexplained, list)
+    assert isinstance(generated_data_invariant_issues, list)
     assert isinstance(unexpected, list)
     assert isinstance(unknown_refs, list)
     assert isinstance(duplicate_refs, list)
@@ -422,6 +506,7 @@ def main() -> None:
         "documented": len(result["documented_installed"]),
         "dependencies": len(result["dependency_declared"]),
         "unexplained": len(unexplained),
+        "generated_data_invariants": len(generated_data_invariant_issues),
         "missing_defaults": len(missing_defaults),
         "missing_dependencies": len(missing_dependencies),
         "folder_conflicts": len(folder_conflicts),
@@ -434,6 +519,7 @@ def main() -> None:
 
     if args.check and (
         unexplained
+        or generated_data_invariant_issues
         or missing_defaults
         or missing_dependencies
         or folder_conflicts
@@ -444,6 +530,8 @@ def main() -> None:
         issues = []
         if unexplained:
             issues.extend(f"- undocumented: {mod['name']} ({mod['slug']})" for mod in unexplained)
+        if generated_data_invariant_issues:
+            issues.extend(f"- generated data invariant: {issue}" for issue in generated_data_invariant_issues)
         if missing_defaults:
             issues.extend(f"- missing default: {project['name']}" for project in missing_defaults)
         if missing_dependencies:
