@@ -1,0 +1,39 @@
+{
+  "id": "vanilla-textures",
+  "order": 30,
+  "title": {
+    "en": "Vanilla-style textures",
+    "zh": "原版风格贴图"
+  },
+  "description": {
+    "en": "These entries refine vanilla block and item textures while keeping the default Minecraft art direction recognizable.",
+    "zh": "这些条目在保留 Minecraft 默认美术方向的基础上，润色原版方块与物品贴图。"
+  },
+  "sections": [
+    {
+      "id": "vanilla-texture-refinements",
+      "title": {
+        "en": "Texture refinements",
+        "zh": "贴图润色"
+      },
+      "description": {
+        "en": "These resource packs improve the base game texture set without replacing it with a different visual style.",
+        "zh": "这些资源包改善基础游戏贴图集，但不会将其替换成另一种视觉风格。"
+      },
+      "rows": [
+        {
+          "id": "vanilla-texture-remaster",
+          "feature": {
+            "en": "Vanilla texture remaster",
+            "zh": "原版贴图重制润色"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "stay-true"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

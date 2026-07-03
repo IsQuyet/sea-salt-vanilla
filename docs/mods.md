@@ -237,7 +237,6 @@ These entries are useful for building, testing, profiling, or personal creative 
 | --- | --- |
 | Performance profiler | [Spark](https://modrinth.com/mod/spark) |
 | World editing | [WorldEdit](https://modrinth.com/mod/worldedit) |
-| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
 | In-game notes | [Vanilla Notebook](https://modrinth.com/mod/notebook) |
 | Edge block placement | [Reacharound](https://modrinth.com/mod/reacharound) |
 
@@ -282,5 +281,6 @@ These entries support specific creative, building, recording, or input workflows
 | --- | --- | --- |
 | Orthographic screenshot tools | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
 | Schematic building | [Litematica](https://modrinth.com/mod/litematica) |  |
+| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
 | Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
 | Controller support | [Controlify](https://modrinth.com/mod/controlify) |  |

@@ -28,3 +28,15 @@
 | --- | --- |
 | 平滑实体动画 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) |
 | Fresh Animations 扩展 | [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |
+
+## 原版风格贴图
+
+这些条目在保留 Minecraft 默认美术方向的基础上，润色原版方块与物品贴图。
+
+### 贴图润色
+
+这些资源包改善基础游戏贴图集，但不会将其替换成另一种视觉风格。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 原版贴图重制润色 | [Stay True](https://www.curseforge.com/minecraft/texture-packs/stay-true) |

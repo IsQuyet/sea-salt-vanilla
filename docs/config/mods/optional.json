@@ -254,6 +254,18 @@
           }
         },
         {
+          "id": "creative-builder-tools",
+          "feature": {
+            "en": "Creative builder tools",
+            "zh": "创造模式建造工具"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": "lottweaks"
+            }
+          }
+        },
+        {
           "id": "replay-recording",
           "feature": {
             "en": "Replay recording",

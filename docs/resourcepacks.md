@@ -28,3 +28,15 @@ These resource packs add or extend smooth entity animations. Extension packs dep
 | --- | --- |
 | Smooth entity animations | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) |
 | Fresh Animations extensions | [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |
+
+## Vanilla-style textures
+
+These entries refine vanilla block and item textures while keeping the default Minecraft art direction recognizable.
+
+### Texture refinements
+
+These resource packs improve the base game texture set without replacing it with a different visual style.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Vanilla texture remaster | [Stay True](https://www.curseforge.com/minecraft/texture-packs/stay-true) |

@@ -942,6 +942,15 @@
     "slug": "spark",
     "modrinth_id": "l6YH9Als"
   },
+  "stay-true": {
+    "name": "Stay True",
+    "source": "curseforge",
+    "type": "resourcepack",
+    "slug": "stay-true",
+    "links": {
+      "curseforge": "https://www.curseforge.com/minecraft/texture-packs/stay-true"
+    }
+  },
   "subtle-effects": {
     "name": "Subtle Effects",
     "source": "modrinth",

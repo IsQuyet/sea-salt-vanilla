@@ -237,7 +237,6 @@
 | --- | --- |
 | 性能分析 | [Spark](https://modrinth.com/mod/spark) |
 | 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) |
-| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
 | 游戏内笔记 | [Vanilla Notebook](https://modrinth.com/mod/notebook) |
 | 边缘方块放置 | [Reacharound](https://modrinth.com/mod/reacharound) |
 
@@ -282,5 +281,6 @@
 | --- | --- | --- |
 | 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
 | 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |  |
+| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
 | 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
 | 手柄支持 | [Controlify](https://modrinth.com/mod/controlify) |  |

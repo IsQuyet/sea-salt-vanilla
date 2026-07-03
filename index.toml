@@ -386,11 +386,6 @@ hash = "e10e639f71700a67d7f9b9d747e1685f838d703dadd432464b54e31b26f4742b"
 metafile = true
 
 [[files]]
-file = "mods/lottweaks.pw.toml"
-hash = "16d3957412f2ab2f78c0316380092fab0cb2de0f79ad4f61f33adeea94c6c49d"
-metafile = true
-
-[[files]]
 file = "mods/make_bubbles_pop.pw.toml"
 hash = "f531a8ee70e9d78ee62a84e3fd18088070dcf8f2cee2384a8aabed16dbfafe6c"
 metafile = true
@@ -703,6 +698,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "6a1556a0e4fcb411b33efafc3382b4abd9a6e671f140dc0d42e9aad2808e24f3"
+metafile = true
+
+[[files]]
+file = "resourcepacks/stay-true.pw.toml"
+hash = "e53a1e480f2a8051cc6581a0d7323fb3b31c317562caa12c37eab9e952cc9300"
 metafile = true
 
 [[files]]
