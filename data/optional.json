@@ -77,11 +77,10 @@
     "id": "8bOImuGU"
   },
   "lottweaks": {
-    "name": "LotTweaks",
+    "name": "Lottweaks",
     "type": "mod",
     "source": "curseforge",
-    "slug": "lottweaks",
-    "id": "417768"
+    "slug": "lottweaks"
   },
   "noxesium": {
     "name": "Noxesium",
@@ -90,19 +89,19 @@
     "slug": "noxesium",
     "id": "Kw7Sm3Xf"
   },
-  "orthocamera": {
-    "name": "OrthoCamera",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "orthocamera",
-    "id": "OB69KhRA"
-  },
   "ok-zoomer": {
     "name": "Ok Zoomer - It's Zoom!",
     "type": "mod",
     "source": "modrinth",
     "slug": "ok-zoomer",
     "id": "aXf2OSFU"
+  },
+  "orthocamera": {
+    "name": "OrthoCamera",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "orthocamera",
+    "id": "OB69KhRA"
   },
   "particle-rain": {
     "name": "Particle Rain",

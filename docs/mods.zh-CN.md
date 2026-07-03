@@ -281,6 +281,6 @@
 | --- | --- | --- |
 | 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
 | 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |  |
-| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
+| 创造模式建造工具 | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
 | 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
 | 手柄支持 | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |

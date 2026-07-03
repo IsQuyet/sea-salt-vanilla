@@ -29,7 +29,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "fresh-animations"
+              "selected": {
+                "source": "modrinth",
+                "slug": "fresh-animations"
+              }
             }
           }
         },
@@ -41,7 +44,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "fresh-animations-extensions"
+              "selected": {
+                "source": "modrinth",
+                "slug": "fresh-animations-extensions"
+              }
             }
           }
         }

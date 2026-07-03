@@ -29,7 +29,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "fabric-api"
+              "selected": {
+                "source": "modrinth",
+                "slug": "fabric-api"
+              }
             }
           }
         },
@@ -41,7 +44,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "fabric-language-kotlin"
+              "selected": {
+                "source": "modrinth",
+                "slug": "fabric-language-kotlin"
+              }
             }
           }
         }
@@ -66,7 +72,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "sodium"
+              "selected": {
+                "source": "modrinth",
+                "slug": "sodium"
+              }
             }
           }
         },
@@ -78,7 +87,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "lithium"
+              "selected": {
+                "source": "modrinth",
+                "slug": "lithium"
+              }
             }
           }
         },
@@ -90,7 +102,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "modernfix"
+              "selected": {
+                "source": "modrinth",
+                "slug": "modernfix"
+              }
             }
           }
         },
@@ -102,7 +117,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "immediatelyfast"
+              "selected": {
+                "source": "modrinth",
+                "slug": "immediatelyfast"
+              }
             }
           }
         },
@@ -114,7 +132,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "krypton"
+              "selected": {
+                "source": "modrinth",
+                "slug": "krypton"
+              }
             }
           }
         },
@@ -126,7 +147,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "scalablelux"
+              "selected": {
+                "source": "modrinth",
+                "slug": "scalablelux"
+              }
             }
           }
         },
@@ -138,7 +162,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "entityculling"
+              "selected": {
+                "source": "modrinth",
+                "slug": "entityculling"
+              }
             }
           }
         },
@@ -150,7 +177,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "moreculling"
+              "selected": {
+                "source": "modrinth",
+                "slug": "moreculling"
+              }
             }
           }
         },
@@ -162,9 +192,15 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "ebe",
+              "selected": {
+                "source": "modrinth",
+                "slug": "ebe"
+              },
               "alternatives": [
-                "better-block-entities"
+                {
+                  "source": "modrinth",
+                  "slug": "better-block-entities"
+                }
               ]
             }
           }
@@ -177,7 +213,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "cull-leaves"
+              "selected": {
+                "source": "modrinth",
+                "slug": "cull-leaves"
+              }
             }
           }
         },
@@ -189,7 +228,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "asyncparticles"
+              "selected": {
+                "source": "modrinth",
+                "slug": "asyncparticles"
+              }
             }
           }
         },
@@ -201,7 +243,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "ferrite-core"
+              "selected": {
+                "source": "modrinth",
+                "slug": "ferrite-core"
+              }
             }
           }
         },
@@ -213,7 +258,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "badoptimizations"
+              "selected": {
+                "source": "modrinth",
+                "slug": "badoptimizations"
+              }
             }
           }
         },
@@ -225,7 +273,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "ixeris"
+              "selected": {
+                "source": "modrinth",
+                "slug": "ixeris"
+              }
             }
           }
         }
@@ -250,7 +301,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "resourcify"
+              "selected": {
+                "source": "modrinth",
+                "slug": "resourcify"
+              }
             }
           }
         },
@@ -262,7 +316,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "globalpacks"
+              "selected": {
+                "source": "modrinth",
+                "slug": "globalpacks"
+              }
             }
           }
         },
@@ -274,9 +331,15 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "default-options",
+              "selected": {
+                "source": "modrinth",
+                "slug": "default-options"
+              },
               "alternatives": [
-                "yosbr"
+                {
+                  "source": "modrinth",
+                  "slug": "yosbr"
+                }
               ]
             }
           }
@@ -302,7 +365,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "modmenu"
+              "selected": {
+                "source": "modrinth",
+                "slug": "modmenu"
+              }
             }
           }
         },
@@ -314,7 +380,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "configured"
+              "selected": {
+                "source": "modrinth",
+                "slug": "configured"
+              }
             }
           }
         },
@@ -326,7 +395,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "yacl"
+              "selected": {
+                "source": "modrinth",
+                "slug": "yacl"
+              }
             }
           }
         },
@@ -338,7 +410,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "cloth-config"
+              "selected": {
+                "source": "modrinth",
+                "slug": "cloth-config"
+              }
             }
           }
         },
@@ -350,7 +425,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "forge-config-api-port"
+              "selected": {
+                "source": "modrinth",
+                "slug": "forge-config-api-port"
+              }
             }
           }
         }

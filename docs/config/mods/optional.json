@@ -28,7 +28,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "simple-voice-chat"
+              "selected": {
+                "source": "modrinth",
+                "slug": "simple-voice-chat"
+              }
             }
           }
         },
@@ -40,7 +43,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "server-unpacker"
+              "selected": {
+                "source": "modrinth",
+                "slug": "server-unpacker"
+              }
             }
           }
         },
@@ -52,7 +58,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "noxesium"
+              "selected": {
+                "source": "modrinth",
+                "slug": "noxesium"
+              }
             }
           }
         },
@@ -64,7 +73,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "bobby"
+              "selected": {
+                "source": "modrinth",
+                "slug": "bobby"
+              }
             }
           }
         },
@@ -76,7 +88,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "wearthat"
+              "selected": {
+                "source": "modrinth",
+                "slug": "wearthat"
+              }
             }
           }
         },
@@ -88,7 +103,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "essential"
+              "selected": {
+                "source": "modrinth",
+                "slug": "essential"
+              }
             }
           }
         },
@@ -100,7 +118,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "emotecraft"
+              "selected": {
+                "source": "modrinth",
+                "slug": "emotecraft"
+              }
             }
           }
         },
@@ -112,7 +133,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "talkbubbles"
+              "selected": {
+                "source": "modrinth",
+                "slug": "talkbubbles"
+              }
             }
           }
         },
@@ -124,7 +148,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "talkingheads"
+              "selected": {
+                "source": "modrinth",
+                "slug": "talkingheads"
+              }
             }
           }
         },
@@ -136,7 +163,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "chatimage"
+              "selected": {
+                "source": "modrinth",
+                "slug": "chatimage"
+              }
             }
           }
         },
@@ -148,7 +178,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "repo-heads"
+              "selected": {
+                "source": "modrinth",
+                "slug": "repo-heads"
+              }
             }
           }
         },
@@ -160,7 +193,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "headpat"
+              "selected": {
+                "source": "modrinth",
+                "slug": "headpat"
+              }
             }
           }
         }
@@ -185,7 +221,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "lambdynamiclights"
+              "selected": {
+                "source": "modrinth",
+                "slug": "lambdynamiclights"
+              }
             }
           }
         },
@@ -197,7 +236,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "sound-physics-remastered"
+              "selected": {
+                "source": "modrinth",
+                "slug": "sound-physics-remastered"
+              }
             }
           }
         },
@@ -209,7 +251,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "particle-rain"
+              "selected": {
+                "source": "modrinth",
+                "slug": "particle-rain"
+              }
             }
           }
         }
@@ -234,9 +279,15 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "orthocamera",
+              "selected": {
+                "source": "modrinth",
+                "slug": "orthocamera"
+              },
               "alternatives": [
-                "pixelshot"
+                {
+                  "source": "modrinth",
+                  "slug": "pixelshot"
+                }
               ]
             }
           }
@@ -249,7 +300,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "litematica"
+              "selected": {
+                "source": "modrinth",
+                "slug": "litematica"
+              }
             }
           }
         },
@@ -276,7 +330,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "replaymod"
+              "selected": {
+                "source": "modrinth",
+                "slug": "replaymod"
+              }
             }
           }
         },
@@ -288,7 +345,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "controlify"
+              "selected": {
+                "source": "modrinth",
+                "slug": "controlify"
+              }
             }
           }
         }

@@ -29,7 +29,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "bliss-shader"
+              "selected": {
+                "source": "modrinth",
+                "slug": "bliss-shader"
+              }
             }
           }
         },
@@ -41,7 +44,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "bsl-shaders"
+              "selected": {
+                "source": "modrinth",
+                "slug": "bsl-shaders"
+              }
             }
           }
         },
@@ -53,7 +59,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "complementary-reimagined"
+              "selected": {
+                "source": "modrinth",
+                "slug": "complementary-reimagined"
+              }
             }
           }
         },
@@ -65,7 +74,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "complementary-unbound"
+              "selected": {
+                "source": "modrinth",
+                "slug": "complementary-unbound"
+              }
             }
           }
         },
@@ -77,7 +89,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "photon-shader"
+              "selected": {
+                "source": "modrinth",
+                "slug": "photon-shader"
+              }
             }
           }
         },
@@ -89,7 +104,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "rethinking-voxels"
+              "selected": {
+                "source": "modrinth",
+                "slug": "rethinking-voxels"
+              }
             }
           }
         }

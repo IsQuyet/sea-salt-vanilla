@@ -29,7 +29,10 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": "stay-true"
+              "selected": {
+                "source": "curseforge",
+                "slug": "stay-true"
+              }
             }
           }
         }
