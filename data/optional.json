@@ -34,6 +34,13 @@
     "slug": "controlify",
     "id": "DOUdJVEm"
   },
+  "default-options": {
+    "name": "Default Options",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "default-options",
+    "id": "WEg59z5b"
+  },
   "emotecraft": {
     "name": "Emotecraft",
     "type": "mod",
@@ -172,12 +179,5 @@
     "source": "modrinth",
     "slug": "wearthat",
     "id": "FT20RvJM"
-  },
-  "yosbr": {
-    "name": "Your Options Shall Be Respected (YOSBR)",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "yosbr",
-    "id": "WwbubTsV"
   }
 }

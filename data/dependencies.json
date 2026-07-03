@@ -10,16 +10,6 @@
       "seamless"
     ]
   },
-  "balm": {
-    "name": "Balm",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "balm",
-    "id": "MBAkmtvl",
-    "required_by": [
-      "default-options"
-    ]
-  },
   "cicada": {
     "name": "CICADA",
     "type": "mod",

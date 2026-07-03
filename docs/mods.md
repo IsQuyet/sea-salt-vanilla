@@ -46,7 +46,7 @@ These entries help discover, load, or distribute pack-level resources and defaul
 | --- | --- | --- |
 | Resource pack discovery | [Resourcify](https://modrinth.com/mod/resourcify) |  |
 | Global pack loading | [Global Packs](https://modrinth.com/mod/globalpacks) |  |
-| Default options and keybinds | [Default Options](https://modrinth.com/mod/default-options) | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) |
+| Default client options and config seeding | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | [Default Options](https://modrinth.com/mod/default-options) |
 
 ### Mod management and configuration frameworks
 

@@ -326,19 +326,19 @@
         {
           "id": "default-options-and-keybinds",
           "feature": {
-            "en": "Default options and keybinds",
-            "zh": "默认选项与键位"
+            "en": "Default client options and config seeding",
+            "zh": "默认客户端选项与配置分发"
           },
           "versions": {
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
-                "slug": "default-options"
+                "slug": "yosbr"
               },
               "alternatives": [
                 {
                   "source": "modrinth",
-                  "slug": "yosbr"
+                  "slug": "default-options"
                 }
               ]
             }

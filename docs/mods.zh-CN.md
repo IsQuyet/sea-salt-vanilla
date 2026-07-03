@@ -46,7 +46,7 @@
 | --- | --- | --- |
 | 资源包浏览 | [Resourcify](https://modrinth.com/mod/resourcify) |  |
 | 全局包加载 | [Global Packs](https://modrinth.com/mod/globalpacks) |  |
-| 默认选项与键位 | [Default Options](https://modrinth.com/mod/default-options) | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) |
+| 默认客户端选项与配置分发 | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | [Default Options](https://modrinth.com/mod/default-options) |
 
 ### Mod 管理与配置框架
 

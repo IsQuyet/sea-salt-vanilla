@@ -223,13 +223,6 @@
     "slug": "dcwa",
     "id": "HdwRs3kc"
   },
-  "default-options": {
-    "name": "Default Options",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "default-options",
-    "id": "WEg59z5b"
-  },
   "detail-armor-bar": {
     "name": "Detail Armor Bar",
     "type": "mod",
@@ -893,6 +886,13 @@
     "source": "modrinth",
     "slug": "yacl",
     "id": "1eAoo2KR"
+  },
+  "yosbr": {
+    "name": "Your Options Shall Be Respected (YOSBR)",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "yosbr",
+    "id": "WwbubTsV"
   },
   "zoomify": {
     "name": "Zoomify (Zoom)",
