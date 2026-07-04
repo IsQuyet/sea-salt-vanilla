@@ -140,6 +140,21 @@
           }
         },
         {
+          "id": "multiplayer-client-optimization",
+          "feature": {
+            "en": "Multiplayer client optimization",
+            "zh": "多人客户端优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "noxesium"
+              }
+            }
+          }
+        },
+        {
           "id": "light-engine-optimization",
           "feature": {
             "en": "Light engine optimization",
@@ -334,6 +349,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "globalpacks"
+              }
+            }
+          }
+        },
+        {
+          "id": "packed-pack-management",
+          "feature": {
+            "en": "Packed pack management",
+            "zh": "嵌套包管理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "packed-packs"
               }
             }
           }

@@ -81,6 +81,11 @@ hash = "be7918d29b7fc9f820b6574f3906c1d1decc0fd485d55db5f408429e02bf70b1"
 metafile = true
 
 [[files]]
+file = "mods/centered-crosshair.pw.toml"
+hash = "a67f5aabcc83e6f8af0ea1a775b6e25c96eee4acda5803de1fd986b268522976"
+metafile = true
+
+[[files]]
 file = "mods/chat-heads.pw.toml"
 hash = "8930742455a522a015389fdcab8861d4e079145aae94db1d76195f639971d452"
 metafile = true
@@ -88,6 +93,11 @@ metafile = true
 [[files]]
 file = "mods/chatanimation.pw.toml"
 hash = "a592ae5dcb745d3fa6c4c6d60e7631e5e9a0bd56133671238dfdf81bb2f06ac7"
+metafile = true
+
+[[files]]
+file = "mods/chatimage.pw.toml"
+hash = "086faac630bce93c0e9c6d96fc84f129c8b715a028b222b39eccfde48d910ccd"
 metafile = true
 
 [[files]]
@@ -126,6 +136,11 @@ hash = "4f97764f3cb4c74f84afbe32cf8a1d2cefecda129c0f1441906562dcb8f2b8cb"
 metafile = true
 
 [[files]]
+file = "mods/controlify.pw.toml"
+hash = "9acf9fdf592b704991d45b9f0aa9fe4e0667dce6809c6c70859a92eea831fe5d"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 hash = "eecdc8127f69c74ff55fd183d1f1d7d5ef3e714d73845a239fe9e086147a67b1"
 metafile = true
@@ -156,8 +171,18 @@ hash = "4ab83564a6e16a9b61b13b05e7f13d86ac05069a4b45b678eb0f3b6a66b460d0"
 metafile = true
 
 [[files]]
+file = "mods/delete-worlds-to-trash.pw.toml"
+hash = "5285137cdb3c92ff5adaca4ec87f7278f265e200773b82a1fafecfc798b2ab45"
+metafile = true
+
+[[files]]
 file = "mods/detail-armor-bar-reconstructed.pw.toml"
 hash = "9001d2694a7541d4556df7c82ccba4b42c8280355a914d0424e7f1b32e873dde"
+metafile = true
+
+[[files]]
+file = "mods/disableinsecurechattoast.pw.toml"
+hash = "f2c09b072c6c82915eba8bf15a72e4fedcbdcec4aa78c2b0d119d9e7c6aa2489"
 metafile = true
 
 [[files]]
@@ -236,6 +261,11 @@ hash = "ad4e8689c50fedd770fb5cf28561edbd41f6b483bcfd6e3dd3d0c337789c0110"
 metafile = true
 
 [[files]]
+file = "mods/fancy-toasts.pw.toml"
+hash = "d70f9bc1d9bf5d52cab90829fb2768666fd03092f8db2dcd20c56758a4d38b0c"
+metafile = true
+
+[[files]]
 file = "mods/fancymenu.pw.toml"
 hash = "edc165c6bfcef522ae15b83ee7227189daced7ddd611c550c3291ada645963a1"
 metafile = true
@@ -258,6 +288,11 @@ metafile = true
 [[files]]
 file = "mods/forge-config-api-port.pw.toml"
 hash = "238b3ceb4214a682480ce00eefae5d34efa299ff6ff667e4b2f2ed503c6e76ee"
+metafile = true
+
+[[files]]
+file = "mods/fwa.pw.toml"
+hash = "1bcff15d6b0d6746deafd488e2be1bb93d2155e90e3f60b9ad64797e1b95f99d"
 metafile = true
 
 [[files]]
@@ -288,6 +323,11 @@ metafile = true
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "de9842a74bad2677a92f96157171b3108dcacb6a517d395006a1f158d5f46bbb"
+metafile = true
+
+[[files]]
+file = "mods/immersive-hotbar.pw.toml"
+hash = "3febee460dc66c95501b3781886a9d987aacdf0e14587e8a1c7706234240f5b5"
 metafile = true
 
 [[files]]
@@ -476,13 +516,23 @@ hash = "de8e4e5701944ed7089011bce857333fde54e7d19deeb8364deab3072265d609"
 metafile = true
 
 [[files]]
-file = "mods/notebook.pw.toml"
-hash = "8f38c8bdb232e601ecebaf7b2da4225025dd14557cca5d42fc3b782f209b5c23"
+file = "mods/noxesium.pw.toml"
+hash = "06b532f3d1c5202664e749c190db51e10e8531d124468db57079355a1ad355f5"
 metafile = true
 
 [[files]]
 file = "mods/optigui.pw.toml"
 hash = "6f45c3f2ec9005b18846088784d291f4dabcce7b569031fb44855845a33aa8f7"
+metafile = true
+
+[[files]]
+file = "mods/orthocamera.pw.toml"
+hash = "40996012c15ea906547200f539f09f3d85ee7e5691d8a93bb4349d4dc58c2f35"
+metafile = true
+
+[[files]]
+file = "mods/packed-packs.pw.toml"
+hash = "b5cbf684d2e174200d3bf03e98dbb6785c91fa9f405c1ba744e66e3b898506e9"
 metafile = true
 
 [[files]]
@@ -546,6 +596,11 @@ hash = "d22546ad55b555931eb527f163b3564e00c12c7dc8101378b87447dfcc8e0652"
 metafile = true
 
 [[files]]
+file = "mods/repo-heads.pw.toml"
+hash = "9a3bfde1a02992720bade1262be3ea3bbf88a7872a71198c014d6b8da555eef7"
+metafile = true
+
+[[files]]
 file = "mods/resourcify.pw.toml"
 hash = "3fdebddfeba339be4b0685674bb980dff168f06ed3ee7077b7c4397efa3fe6c5"
 metafile = true
@@ -591,6 +646,11 @@ hash = "83b5a1c0b39aa94492a13f319c097ff8e7e55a6718e287e5d73b32f7500f1727"
 metafile = true
 
 [[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "cf11a6410ad4097983f806684ac343085053eca1d4106f2b45d75147ae4b5f94"
+metafile = true
+
+[[files]]
 file = "mods/skinshuffle.pw.toml"
 hash = "f0514cffe232d6c2f33b98176f0b61929caa91786547cda99a85dce28d65969f"
 metafile = true
@@ -631,8 +691,18 @@ hash = "9bdd041fb29ab003ef5bb1f0ba53516847e32e3010a3fce247f743fc98e08a6b"
 metafile = true
 
 [[files]]
+file = "mods/stylish-effects.pw.toml"
+hash = "930858d34968e333b3d8c4a11fdea69391d274c3ef67cd7d92dd7d579f383ec4"
+metafile = true
+
+[[files]]
 file = "mods/subtle-effects.pw.toml"
 hash = "39b0c31561fba4814a23e0c398888652d5f610920b4e33681c194bc1668f9e75"
+metafile = true
+
+[[files]]
+file = "mods/talkingheads.pw.toml"
+hash = "8d86a2cda26210903efce16b915fcfc9d0938d4cfef17f1039ba1ba1f044b86b"
 metafile = true
 
 [[files]]
@@ -683,6 +753,11 @@ metafile = true
 [[files]]
 file = "mods/weaponmaster.pw.toml"
 hash = "0bc23d89ae54273bfcbf46b02b175fe796c94f08b12252001fca3f100b5e82ea"
+metafile = true
+
+[[files]]
+file = "mods/wearthat.pw.toml"
+hash = "88f3573b6da151f5fd7e38679cd338e1a2be9cf7bb90716043381b453b84ab4d"
 metafile = true
 
 [[files]]

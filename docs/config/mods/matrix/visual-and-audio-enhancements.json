@@ -660,6 +660,21 @@
               }
             }
           }
+        },
+        {
+          "id": "world-animation-polish",
+          "feature": {
+            "en": "World animation polish",
+            "zh": "世界动画润色"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "fwa"
+              }
+            }
+          }
         }
       ]
     },
@@ -846,6 +861,36 @@
           }
         },
         {
+          "id": "chat-message-animation",
+          "feature": {
+            "en": "Chat message animation",
+            "zh": "聊天消息动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "chatanimation"
+              }
+            }
+          }
+        },
+        {
+          "id": "toast-notification-polish",
+          "feature": {
+            "en": "Toast notification polish",
+            "zh": "弹出提示润色"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "fancy-toasts"
+              }
+            }
+          }
+        },
+        {
           "id": "modern-ui-framework-and-text-rendering",
           "feature": {
             "en": "Modern UI framework and text rendering",
@@ -904,16 +949,46 @@
           }
         },
         {
-          "id": "chat-message-animation",
+          "id": "proximity-voice-chat",
           "feature": {
-            "en": "Chat message animation",
-            "zh": "聊天消息动画"
+            "en": "Proximity voice chat",
+            "zh": "近距离语音聊天"
           },
           "versions": {
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
-                "slug": "chatanimation"
+                "slug": "simple-voice-chat"
+              }
+            }
+          }
+        },
+        {
+          "id": "chat-image-display",
+          "feature": {
+            "en": "Chat image display",
+            "zh": "聊天图片显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "chatimage"
+              }
+            }
+          }
+        },
+        {
+          "id": "talking-head-indicators",
+          "feature": {
+            "en": "Talking head indicators",
+            "zh": "说话头像提示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "talkingheads"
               }
             }
           }
@@ -942,6 +1017,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "3dskinlayers"
+              }
+            }
+          }
+        },
+        {
+          "id": "collectible-heads",
+          "feature": {
+            "en": "Collectible heads",
+            "zh": "收藏头像"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "repo-heads"
               }
             }
           }

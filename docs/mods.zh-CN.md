@@ -28,6 +28,7 @@
 | 启动与内存修复 | [ModernFix](https://modrinth.com/mod/modernfix) |  |
 | 即时渲染优化 | [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) |  |
 | 网络栈优化 | [Krypton](https://modrinth.com/mod/krypton) |  |
+| 多人客户端优化 | [Noxesium](https://modrinth.com/mod/noxesium) |  |
 | 光照引擎优化 | [ScalableLux](https://modrinth.com/mod/scalablelux) |  |
 | 实体渲染剔除 | [Entity Culling](https://modrinth.com/mod/entityculling) |  |
 | 通用渲染剔除 | [More Culling](https://modrinth.com/mod/moreculling) |  |
@@ -47,6 +48,7 @@
 | --- | --- | --- |
 | 资源包浏览 | [Resourcify](https://modrinth.com/mod/resourcify) |  |
 | 全局包加载 | [Global Packs](https://modrinth.com/mod/globalpacks) |  |
+| 嵌套包管理 | [Packed Packs](https://modrinth.com/mod/packed-packs) |  |
 | 默认客户端选项与配置分发 | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | [Default Options](https://modrinth.com/mod/default-options) |
 
 ### Mod 管理与配置框架
@@ -131,6 +133,7 @@
 | 镜头运动 | [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul) |  |
 | 第三人称肩视角镜头 | [Shoulder Surfing Reloaded](https://modrinth.com/mod/shoulder-surfing-reloaded) | [Leawind Third Person](https://modrinth.com/mod/leawind-third-person) |
 | 鞘翅飞行控制 | [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) |  |
+| 世界动画润色 | [Fwa](https://modrinth.com/mod/fwa) |  |
 
 ### 界面美化
 
@@ -149,6 +152,8 @@
 | 平滑滚动 | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) | [Smooth Scrolling Refurbished](https://modrinth.com/mod/smooth-scrolling-refurbished) |
 | 自动 GUI 深色模式 | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |  |
 | 平滑 GUI 动画 | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
+| 聊天消息动画 | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |  |
+| 弹出提示润色 | [Fancy Toasts](https://modrinth.com/mod/fancy-toasts) |  |
 | 现代 UI 框架与文字渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
 | 沉浸式 UI 交互 | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
 
@@ -159,7 +164,9 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 聊天头像 | [Chat Heads](https://modrinth.com/mod/chat-heads) |
-| 聊天消息动画 | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |
+| 近距离语音聊天 | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) |
+| 聊天图片显示 | [ChatImage](https://modrinth.com/mod/chatimage) |
+| 说话头像提示 | [Talking Heads](https://modrinth.com/mod/talkingheads) |
 
 ### 皮肤与外观
 
@@ -168,6 +175,7 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 3D 皮肤层 | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) |
+| 收藏头像 | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | 披风物理效果 | [Wavey Capes](https://modrinth.com/mod/wavey-capes) |
 | 披风来源支持 | [Capes](https://modrinth.com/mod/capes) |
 | 自定义皮肤加载 | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) |
@@ -189,6 +197,7 @@
 | 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
 | 鼠标背包操作 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  |
+| 边缘方块放置 | [Reacharound](https://modrinth.com/mod/reacharound) |  |
 | 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove) |  |
 | 背包移动兼容 | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  |
 | 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  |
@@ -208,17 +217,23 @@
 | --- | --- | --- |
 | 高级 HUD 浮层 | [MiniHUD](https://modrinth.com/mod/minihud) |  |
 | 背包 HUD 浮层 | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |  |
+| 沉浸式快捷栏显示 | [Immersive Hotbar](https://modrinth.com/mod/immersive-hotbar) |  |
 | 骑乘 HUD 改进 | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
+| 状态效果显示 | [Stylish Effects](https://modrinth.com/mod/stylish-effects) |  |
 | 统计界面改进 | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
 | 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |  |
 | 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
+| 世界删除到回收站 | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
 | 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
 | 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
+| 不安全聊天弹窗隐藏 | [Disableinsecurechattoast](https://modrinth.com/mod/disableinsecurechattoast) |  |
 | 聊天界面便利功能 | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
 | 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | 盔甲细节显示 | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
+| 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) |  |
 | 游戏内皮肤管理 | [Skinshuffle](https://modrinth.com/mod/skinshuffle) |  |
 | 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
+| 居中准星 | [Centered Crosshair](https://modrinth.com/mod/centered-crosshair) |  |
 | 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
 | 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |  |
 | 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
@@ -239,12 +254,12 @@
 
 这些条目用于建造、测试、性能分析或个人创造工作流。
 
-| 功能 | 1.21.1 |
-| --- | --- |
-| 性能分析 | [spark](https://modrinth.com/mod/spark) |
-| 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) |
-| 游戏内笔记 | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |
-| 边缘方块放置 | [Reacharound](https://modrinth.com/mod/reacharound) |
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
+| 性能分析 | [spark](https://modrinth.com/mod/spark) |  |
+| 世界编辑 | [WorldEdit](https://modrinth.com/mod/worldedit) |  |
+| 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
+| 手柄支持 | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |
 
 ## 可选能力
 
@@ -256,16 +271,10 @@
 
 | 功能 | 1.21.1 |
 | --- | --- |
-| 近距离语音聊天 | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) |
 | 服务器资源包解包 | [Server Unpacker](https://modrinth.com/mod/server-unpacker) |
-| 多人服务器客户端增强 | [Noxesium](https://modrinth.com/mod/noxesium) |
-| 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) |
 | 社交客户端层 | [Essential Mod](https://modrinth.com/mod/essential) |
 | 玩家表情动作 | [Emotecraft](https://modrinth.com/mod/emotecraft) |
 | 语音聊天气泡 | [TalkBubbles](https://modrinth.com/mod/talkbubbles) |
-| 说话头像提示 | [Talking Heads](https://modrinth.com/mod/talkingheads) |
-| 聊天图片显示 | [ChatImage](https://modrinth.com/mod/chatimage) |
-| 收藏头像 | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | 好友互动 | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
 
 ### 可选客户端便利功能
@@ -276,6 +285,8 @@
 | --- | --- |
 | 附魔提示说明 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |
 | 物品拾取通知 | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |
+| 物品切换工具 | [Itemswapper](https://modrinth.com/mod/itemswapper) |
+| 完成度追踪索引 | [Completionists Index](https://modrinth.com/mod/completionists-index) |
 
 ### 可选包管理
 
@@ -284,6 +295,7 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 资源包覆盖控制 | [Resource Pack Overrides](https://modrinth.com/mod/resource-pack-overrides) |
+| 递归资源加载 | [Recursiveresources](https://modrinth.com/mod/recursiveresources) |
 
 ### 可选视听氛围
 
@@ -294,16 +306,17 @@
 | 动态光源 | [LambDynamicLights - Dynamic Lights](https://modrinth.com/mod/lambdynamiclights) |
 | 物理音效 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) |
 | 天气粒子氛围 | [Particle Rain](https://modrinth.com/mod/particle-rain) |
+| 写实镜头视角 | [Real Camera](https://modrinth.com/mod/real-camera) |
+| 大气视觉氛围 | [Atmospherics](https://modrinth.com/mod/atmospherics) |
 
 ### 可选工具与工作流
 
 这些条目服务于特定的创作、建造、录制或输入工作流。
 
-| 功能 | 1.21.1 | 可选替代 |
-| --- | --- | --- |
-| 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
-| 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |  |
-| 创造模式建造工具 | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
-| 高级创造建造工具 | [Axiom](https://modrinth.com/mod/axiom) |  |
-| 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
-| 手柄支持 | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |
+| 功能 | 1.21.1 |
+| --- | --- |
+| 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |
+| 创造模式建造工具 | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
+| 高级创造建造工具 | [Axiom](https://modrinth.com/mod/axiom) |
+| 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |
+| 游戏内笔记 | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |

@@ -28,6 +28,7 @@ These entries improve frame pacing, memory use, lighting, networking, and render
 | Startup and memory fixes | [ModernFix](https://modrinth.com/mod/modernfix) |  |
 | Immediate rendering optimization | [ImmediatelyFast](https://modrinth.com/mod/immediatelyfast) |  |
 | Network stack optimization | [Krypton](https://modrinth.com/mod/krypton) |  |
+| Multiplayer client optimization | [Noxesium](https://modrinth.com/mod/noxesium) |  |
 | Light engine optimization | [ScalableLux](https://modrinth.com/mod/scalablelux) |  |
 | Entity render culling | [Entity Culling](https://modrinth.com/mod/entityculling) |  |
 | General render culling | [More Culling](https://modrinth.com/mod/moreculling) |  |
@@ -47,6 +48,7 @@ These entries help discover, load, or distribute pack-level resources and defaul
 | --- | --- | --- |
 | Resource pack discovery | [Resourcify](https://modrinth.com/mod/resourcify) |  |
 | Global pack loading | [Global Packs](https://modrinth.com/mod/globalpacks) |  |
+| Packed pack management | [Packed Packs](https://modrinth.com/mod/packed-packs) |  |
 | Default client options and config seeding | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | [Default Options](https://modrinth.com/mod/default-options) |
 
 ### Mod management and configuration frameworks
@@ -131,6 +133,7 @@ These entries improve first-person, third-person, item, block, and movement pres
 | Camera motion | [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul) |  |
 | Third-person shoulder camera | [Shoulder Surfing Reloaded](https://modrinth.com/mod/shoulder-surfing-reloaded) | [Leawind Third Person](https://modrinth.com/mod/leawind-third-person) |
 | Elytra flight controls | [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) |  |
+| World animation polish | [Fwa](https://modrinth.com/mod/fwa) |  |
 
 ### Interface polish
 
@@ -149,6 +152,8 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 | Smooth scrolling | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) | [Smooth Scrolling Refurbished](https://modrinth.com/mod/smooth-scrolling-refurbished) |
 | Automatic GUI dark mode | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |  |
 | Smooth GUI animation | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
+| Chat message animation | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |  |
+| Toast notification polish | [Fancy Toasts](https://modrinth.com/mod/fancy-toasts) |  |
 | Modern UI framework and text rendering | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
 | Immersive UI interactions | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
 
@@ -159,7 +164,9 @@ These entries improve chat readability and presentation without requiring server
 | Feature | 1.21.1 |
 | --- | --- |
 | Chat avatars | [Chat Heads](https://modrinth.com/mod/chat-heads) |
-| Chat message animation | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |
+| Proximity voice chat | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) |
+| Chat image display | [ChatImage](https://modrinth.com/mod/chatimage) |
+| Talking head indicators | [Talking Heads](https://modrinth.com/mod/talkingheads) |
 
 ### Skin and cosmetics
 
@@ -168,6 +175,7 @@ These entries improve player skin, cape, and cosmetic display.
 | Feature | 1.21.1 |
 | --- | --- |
 | 3D skin layers | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) |
+| Collectible heads | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | Cape physics | [Wavey Capes](https://modrinth.com/mod/wavey-capes) |
 | Cape provider support | [Capes](https://modrinth.com/mod/capes) |
 | Custom skin loading | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) |
@@ -189,6 +197,7 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | Inventory profiles and sorting | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
 | Mouse inventory actions | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  |
+| Edge block placement | [Reacharound](https://modrinth.com/mod/reacharound) |  |
 | Inventory movement | [InvMove](https://modrinth.com/mod/invmove) |  |
 | Inventory movement compatibility | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  |
 | Keybinding search and conflicts | [Controlling](https://modrinth.com/mod/controlling) |  |
@@ -208,17 +217,23 @@ These entries surface gameplay information or remove small interface friction.
 | --- | --- | --- |
 | Advanced HUD overlays | [MiniHUD](https://modrinth.com/mod/minihud) |  |
 | Inventory HUD overlay | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |  |
+| Immersive hotbar display | [Immersive Hotbar](https://modrinth.com/mod/immersive-hotbar) |  |
 | Mount HUD improvements | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
+| Status effect display | [Stylish Effects](https://modrinth.com/mod/stylish-effects) |  |
 | Statistics screen improvements | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
 | Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) |  |
 | World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
+| Safe world deletion | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
 | Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
 | Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
+| Insecure chat toast suppression | [Disableinsecurechattoast](https://modrinth.com/mod/disableinsecurechattoast) |  |
 | Chat interface convenience | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
 | Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | Armor detail display | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
+| Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) |  |
 | In-game skin management | [Skinshuffle](https://modrinth.com/mod/skinshuffle) |  |
 | Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
+| Centered crosshair | [Centered Crosshair](https://modrinth.com/mod/centered-crosshair) |  |
 | Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
 | Resource pack warning suppression | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |  |
 | Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
@@ -239,12 +254,12 @@ These entries provide client-side map, minimap, and location presentation tools.
 
 These entries are useful for building, testing, profiling, or personal creative workflows.
 
-| Feature | 1.21.1 |
-| --- | --- |
-| Performance profiler | [spark](https://modrinth.com/mod/spark) |
-| World editing | [WorldEdit](https://modrinth.com/mod/worldedit) |
-| In-game notes | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |
-| Edge block placement | [Reacharound](https://modrinth.com/mod/reacharound) |
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
+| Performance profiler | [spark](https://modrinth.com/mod/spark) |  |
+| World editing | [WorldEdit](https://modrinth.com/mod/worldedit) |  |
+| Orthographic screenshot tools | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
+| Controller support | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |
 
 ## Optional capabilities
 
@@ -256,16 +271,10 @@ These entries mainly improve the client-side experience when playing online or o
 
 | Feature | 1.21.1 |
 | --- | --- |
-| Proximity voice chat | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) |
 | Server resource-pack unpacking | [Server Unpacker](https://modrinth.com/mod/server-unpacker) |
-| Multiplayer client enhancements | [Noxesium](https://modrinth.com/mod/noxesium) |
-| Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) |
 | Social client layer | [Essential Mod](https://modrinth.com/mod/essential) |
 | Player emotes | [Emotecraft](https://modrinth.com/mod/emotecraft) |
 | Voice chat bubbles | [TalkBubbles](https://modrinth.com/mod/talkbubbles) |
-| Talking head indicators | [Talking Heads](https://modrinth.com/mod/talkingheads) |
-| Chat image display | [ChatImage](https://modrinth.com/mod/chatimage) |
-| Collectible heads | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | Friendly interactions | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
 
 ### Optional client convenience
@@ -276,6 +285,8 @@ These entries add small client-side quality-of-life features that are useful but
 | --- | --- |
 | Enchantment tooltip descriptions | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |
 | Item pickup notifications | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |
+| Item swapping tools | [Itemswapper](https://modrinth.com/mod/itemswapper) |
+| Completion tracking index | [Completionists Index](https://modrinth.com/mod/completionists-index) |
 
 ### Optional pack management
 
@@ -284,6 +295,7 @@ These entries provide opt-in controls for resource packs, modpack resources, or 
 | Feature | 1.21.1 |
 | --- | --- |
 | Resource pack override control | [Resource Pack Overrides](https://modrinth.com/mod/resource-pack-overrides) |
+| Recursive resource loading | [Recursiveresources](https://modrinth.com/mod/recursiveresources) |
 
 ### Optional audiovisual ambience
 
@@ -294,16 +306,17 @@ These entries can strongly shape visual or audio ambience, so they are kept as o
 | Dynamic lighting | [LambDynamicLights - Dynamic Lights](https://modrinth.com/mod/lambdynamiclights) |
 | Sound physics | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) |
 | Weather particle ambience | [Particle Rain](https://modrinth.com/mod/particle-rain) |
+| Realistic camera perspective | [Real Camera](https://modrinth.com/mod/real-camera) |
+| Atmospheric visual ambience | [Atmospherics](https://modrinth.com/mod/atmospherics) |
 
 ### Optional tools and workflows
 
 These entries support specific creative, building, recording, or input workflows.
 
-| Feature | 1.21.1 | Alternatives |
-| --- | --- | --- |
-| Orthographic screenshot tools | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
-| Schematic building | [Litematica](https://modrinth.com/mod/litematica) |  |
-| Creative builder tools | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
-| Advanced creative building tools | [Axiom](https://modrinth.com/mod/axiom) |  |
-| Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
-| Controller support | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |
+| Feature | 1.21.1 |
+| --- | --- |
+| Schematic building | [Litematica](https://modrinth.com/mod/litematica) |
+| Creative builder tools | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
+| Advanced creative building tools | [Axiom](https://modrinth.com/mod/axiom) |
+| Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |
+| In-game notes | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |

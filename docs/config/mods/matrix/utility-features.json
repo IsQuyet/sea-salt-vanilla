@@ -127,6 +127,21 @@
           }
         },
         {
+          "id": "edge-block-placement",
+          "feature": {
+            "en": "Edge block placement",
+            "zh": "边缘方块放置"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "reacharound"
+              }
+            }
+          }
+        },
+        {
           "id": "inventory-movement",
           "feature": {
             "en": "Inventory movement",
@@ -330,6 +345,21 @@
           }
         },
         {
+          "id": "immersive-hotbar-display",
+          "feature": {
+            "en": "Immersive hotbar display",
+            "zh": "沉浸式快捷栏显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "immersive-hotbar"
+              }
+            }
+          }
+        },
+        {
           "id": "mount-hud-improvements",
           "feature": {
             "en": "Mount HUD improvements",
@@ -347,6 +377,21 @@
                   "slug": "better-mount-hud"
                 }
               ]
+            }
+          }
+        },
+        {
+          "id": "status-effect-display",
+          "feature": {
+            "en": "Status effect display",
+            "zh": "状态效果显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "stylish-effects"
+              }
             }
           }
         },
@@ -396,6 +441,21 @@
           }
         },
         {
+          "id": "safe-world-deletion",
+          "feature": {
+            "en": "Safe world deletion",
+            "zh": "世界删除到回收站"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "delete-worlds-to-trash"
+              }
+            }
+          }
+        },
+        {
           "id": "advancement-screen-improvements",
           "feature": {
             "en": "Advancement screen improvements",
@@ -421,6 +481,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "no-chat-reports"
+              }
+            }
+          }
+        },
+        {
+          "id": "insecure-chat-toast-suppression",
+          "feature": {
+            "en": "Insecure chat toast suppression",
+            "zh": "不安全聊天弹窗隐藏"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "disableinsecurechattoast"
               }
             }
           }
@@ -477,6 +552,21 @@
           }
         },
         {
+          "id": "client-side-wearable-rendering",
+          "feature": {
+            "en": "Client-side wearable rendering",
+            "zh": "客户端穿戴渲染"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "wearthat"
+              }
+            }
+          }
+        },
+        {
           "id": "in-game-skin-management",
           "feature": {
             "en": "In-game skin management",
@@ -502,6 +592,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "dynamiccrosshair"
+              }
+            }
+          }
+        },
+        {
+          "id": "centered-crosshair",
+          "feature": {
+            "en": "Centered crosshair",
+            "zh": "居中准星"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "centered-crosshair"
               }
             }
           }
@@ -689,31 +794,37 @@
           }
         },
         {
-          "id": "in-game-notes",
+          "id": "orthographic-screenshot-tools",
           "feature": {
-            "en": "In-game notes",
-            "zh": "游戏内笔记"
+            "en": "Orthographic screenshot tools",
+            "zh": "正交截图工具"
           },
           "versions": {
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
-                "slug": "notebook"
-              }
+                "slug": "orthocamera"
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "pixelshot"
+                }
+              ]
             }
           }
         },
         {
-          "id": "edge-block-placement",
+          "id": "controller-support",
           "feature": {
-            "en": "Edge block placement",
-            "zh": "边缘方块放置"
+            "en": "Controller support",
+            "zh": "手柄支持"
           },
           "versions": {
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
-                "slug": "reacharound"
+                "slug": "controlify"
               }
             }
           }

@@ -118,6 +118,12 @@
     "slug": "cave-dust",
     "id": "jawg7zT1"
   },
+  "centered-crosshair": {
+    "name": "Centered Crosshair",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "centered-crosshair"
+  },
   "chat-heads": {
     "name": "Chat Heads",
     "type": "mod",
@@ -131,6 +137,13 @@
     "source": "modrinth",
     "slug": "chatanimation",
     "id": "DnNYdJsx"
+  },
+  "chatimage": {
+    "name": "ChatImage",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "chatimage",
+    "id": "zhVN1dvW"
   },
   "chatpatches": {
     "name": "Chat Patches",
@@ -188,6 +201,13 @@
     "slug": "continuity",
     "id": "1IjD5062"
   },
+  "controlify": {
+    "name": "Controlify (Controller support)",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "controlify",
+    "id": "DOUdJVEm"
+  },
   "controlling": {
     "name": "Controlling",
     "type": "mod",
@@ -222,11 +242,23 @@
     "slug": "dcwa",
     "id": "HdwRs3kc"
   },
+  "delete-worlds-to-trash": {
+    "name": "Delete Worlds To Trash",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "delete-worlds-to-trash"
+  },
   "detail-armor-bar-reconstructed": {
     "name": "Detail Armor Bar Reconstructed",
     "type": "mod",
     "source": "modrinth",
     "slug": "detail-armor-bar-reconstructed"
+  },
+  "disableinsecurechattoast": {
+    "name": "Disableinsecurechattoast",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "disableinsecurechattoast"
   },
   "disguiseheads": {
     "name": "DisguiseHeads",
@@ -333,6 +365,12 @@
     "slug": "fallingleaves",
     "id": "WhbRG4iK"
   },
+  "fancy-toasts": {
+    "name": "Fancy Toasts",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "fancy-toasts"
+  },
   "fancymenu": {
     "name": "FancyMenu",
     "type": "mod",
@@ -382,6 +420,12 @@
     "slug": "fresh-animations-extensions",
     "id": "YAVTU8mK"
   },
+  "fwa": {
+    "name": "Fwa",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "fwa"
+  },
   "globalpacks": {
     "name": "Global Packs",
     "type": "mod",
@@ -409,6 +453,12 @@
     "source": "modrinth",
     "slug": "immediatelyfast",
     "id": "5ZwdcRci"
+  },
+  "immersive-hotbar": {
+    "name": "Immersive Hotbar",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "immersive-hotbar"
   },
   "immersive-ui": {
     "name": "Immersive UI",
@@ -611,12 +661,12 @@
     "slug": "not-enough-animations",
     "id": "MPCX6s5C"
   },
-  "notebook": {
-    "name": "Vanilla Notebook ",
+  "noxesium": {
+    "name": "Noxesium",
     "type": "mod",
     "source": "modrinth",
-    "slug": "notebook",
-    "id": "KaKEuH9Q"
+    "slug": "noxesium",
+    "id": "Kw7Sm3Xf"
   },
   "optigui": {
     "name": "OptiGUI",
@@ -624,6 +674,19 @@
     "source": "modrinth",
     "slug": "optigui",
     "id": "JuksLGBQ"
+  },
+  "orthocamera": {
+    "name": "OrthoCamera",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "orthocamera",
+    "id": "OB69KhRA"
+  },
+  "packed-packs": {
+    "name": "Packed Packs",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "packed-packs"
   },
   "paperdoll": {
     "name": "Paper Doll",
@@ -702,6 +765,13 @@
     "slug": "rei",
     "id": "nfn13YXA"
   },
+  "repo-heads": {
+    "name": "REPO Heads",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "repo-heads",
+    "id": "Jaoe8qGe"
+  },
   "resourcify": {
     "name": "Resourcify",
     "type": "mod",
@@ -755,6 +825,13 @@
     "source": "modrinth",
     "slug": "shulkerboxtooltip",
     "id": "2M01OLQq"
+  },
+  "simple-voice-chat": {
+    "name": "Simple Voice Chat",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "simple-voice-chat",
+    "id": "9eGKb6K1"
   },
   "skinshuffle": {
     "name": "Skinshuffle",
@@ -817,12 +894,25 @@
     "source": "curseforge",
     "slug": "stay-true"
   },
+  "stylish-effects": {
+    "name": "Stylish Effects",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "stylish-effects"
+  },
   "subtle-effects": {
     "name": "Subtle Effects",
     "type": "mod",
     "source": "modrinth",
     "slug": "subtle-effects",
     "id": "4q8UOK1d"
+  },
+  "talkingheads": {
+    "name": "Talking Heads",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "talkingheads",
+    "id": "Os35nfkh"
   },
   "threadtweak": {
     "name": "Threadtweak",
@@ -892,6 +982,13 @@
     "source": "modrinth",
     "slug": "weaponmaster",
     "id": "qi1sj2da"
+  },
+  "wearthat": {
+    "name": "WearThat",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "wearthat",
+    "id": "FT20RvJM"
   },
   "worldedit": {
     "name": "WorldEdit",

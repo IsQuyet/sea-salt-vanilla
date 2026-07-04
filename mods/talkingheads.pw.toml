@@ -1,0 +1,13 @@
+name = "Talking Heads"
+filename = "TalkingHeads-1.1.2+1.21.1+fabric.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/Os35nfkh/versions/VkWWGVWI/TalkingHeads-1.1.2%2B1.21.1%2Bfabric.jar"
+hash-format = "sha512"
+hash = "92570a872140cd810bf9deaeff5cd1c1c7398e02e62b720c215373d935288293c3650866e8fd61b1f5394e986ca9b0571b4bf6402f4436b2ad40905178806216"
+
+[update]
+[update.modrinth]
+mod-id = "Os35nfkh"
+version = "VkWWGVWI"

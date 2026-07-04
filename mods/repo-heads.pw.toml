@@ -1,0 +1,13 @@
+name = "REPO Heads"
+filename = "repo-heads-1.2.0+1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/Jaoe8qGe/versions/ruLNW5qP/repo-heads-1.2.0%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "965c58af1fb648f7970070eab8c605684c829e7967b8e9e3ed385464880ea1f1121d94585ced767fb3f92d871c732268b3c2fc873650fba54128e24e6a74e994"
+
+[update]
+[update.modrinth]
+mod-id = "Jaoe8qGe"
+version = "ruLNW5qP"

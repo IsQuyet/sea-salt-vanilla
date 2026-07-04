@@ -21,21 +21,6 @@
       },
       "rows": [
         {
-          "id": "proximity-voice-chat",
-          "feature": {
-            "en": "Proximity voice chat",
-            "zh": "近距离语音聊天"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "simple-voice-chat"
-              }
-            }
-          }
-        },
-        {
           "id": "server-resource-pack-unpacking",
           "feature": {
             "en": "Server resource-pack unpacking",
@@ -46,36 +31,6 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "server-unpacker"
-              }
-            }
-          }
-        },
-        {
-          "id": "multiplayer-client-enhancements",
-          "feature": {
-            "en": "Multiplayer client enhancements",
-            "zh": "多人服务器客户端增强"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "noxesium"
-              }
-            }
-          }
-        },
-        {
-          "id": "client-side-wearable-rendering",
-          "feature": {
-            "en": "Client-side wearable rendering",
-            "zh": "客户端穿戴渲染"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "wearthat"
               }
             }
           }
@@ -121,51 +76,6 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "talkbubbles"
-              }
-            }
-          }
-        },
-        {
-          "id": "talking-head-indicators",
-          "feature": {
-            "en": "Talking head indicators",
-            "zh": "说话头像提示"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "talkingheads"
-              }
-            }
-          }
-        },
-        {
-          "id": "chat-image-display",
-          "feature": {
-            "en": "Chat image display",
-            "zh": "聊天图片显示"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "chatimage"
-              }
-            }
-          }
-        },
-        {
-          "id": "collectible-heads",
-          "feature": {
-            "en": "Collectible heads",
-            "zh": "收藏头像"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "repo-heads"
               }
             }
           }
@@ -227,6 +137,36 @@
               }
             }
           }
+        },
+        {
+          "id": "item-swapping-tools",
+          "feature": {
+            "en": "Item swapping tools",
+            "zh": "物品切换工具"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "itemswapper"
+              }
+            }
+          }
+        },
+        {
+          "id": "completion-tracking-index",
+          "feature": {
+            "en": "Completion tracking index",
+            "zh": "完成度追踪索引"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "completionists-index"
+              }
+            }
+          }
         }
       ]
     },
@@ -252,6 +192,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "resource-pack-overrides"
+              }
+            }
+          }
+        },
+        {
+          "id": "recursive-resource-loading",
+          "feature": {
+            "en": "Recursive resource loading",
+            "zh": "递归资源加载"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "recursiveresources"
               }
             }
           }
@@ -313,6 +268,36 @@
               }
             }
           }
+        },
+        {
+          "id": "realistic-camera-perspective",
+          "feature": {
+            "en": "Realistic camera perspective",
+            "zh": "写实镜头视角"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "real-camera"
+              }
+            }
+          }
+        },
+        {
+          "id": "atmospheric-visual-ambience",
+          "feature": {
+            "en": "Atmospheric visual ambience",
+            "zh": "大气视觉氛围"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "atmospherics"
+              }
+            }
+          }
         }
       ]
     },
@@ -327,27 +312,6 @@
         "zh": "这些条目服务于特定的创作、建造、录制或输入工作流。"
       },
       "rows": [
-        {
-          "id": "orthographic-screenshot-tools",
-          "feature": {
-            "en": "Orthographic screenshot tools",
-            "zh": "正交截图工具"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "orthocamera"
-              },
-              "alternatives": [
-                {
-                  "source": "modrinth",
-                  "slug": "pixelshot"
-                }
-              ]
-            }
-          }
-        },
         {
           "id": "schematic-building",
           "feature": {
@@ -409,16 +373,16 @@
           }
         },
         {
-          "id": "controller-support",
+          "id": "in-game-notes",
           "feature": {
-            "en": "Controller support",
-            "zh": "手柄支持"
+            "en": "In-game notes",
+            "zh": "游戏内笔记"
           },
           "versions": {
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
-                "slug": "controlify"
+                "slug": "notebook"
               }
             }
           }

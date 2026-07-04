@@ -1,0 +1,13 @@
+name = "ChatImage"
+filename = "ChatImage-1.4.7+1.21+fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/zhVN1dvW/versions/UXeFgRSY/ChatImage-1.4.7%2B1.21%2Bfabric.jar"
+hash-format = "sha512"
+hash = "0ef2eb4fb01cbc23ded87ffa7f7ae97ce4fe2903c0b3585062f6d57c36d56ea81658ba1687f03e2bc1456480f4df8f5b983f68f17f3cbd8ddd42fda2ad0dac27"
+
+[update]
+[update.modrinth]
+mod-id = "zhVN1dvW"
+version = "UXeFgRSY"

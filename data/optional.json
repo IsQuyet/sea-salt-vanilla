@@ -1,4 +1,10 @@
 {
+  "atmospherics": {
+    "name": "Atmospherics",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "atmospherics"
+  },
   "axiom": {
     "name": "Axiom",
     "type": "mod",
@@ -33,19 +39,11 @@
     "slug": "bobby",
     "id": "M08ruV16"
   },
-  "chatimage": {
-    "name": "ChatImage",
+  "completionists-index": {
+    "name": "Completionists Index",
     "type": "mod",
     "source": "modrinth",
-    "slug": "chatimage",
-    "id": "zhVN1dvW"
-  },
-  "controlify": {
-    "name": "Controlify (Controller support)",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "controlify",
-    "id": "DOUdJVEm"
+    "slug": "completionists-index"
   },
   "default-options": {
     "name": "Default Options",
@@ -88,6 +86,12 @@
     "slug": "headpat",
     "id": "vETxChiy"
   },
+  "itemswapper": {
+    "name": "Itemswapper",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "itemswapper"
+  },
   "lambdynamiclights": {
     "name": "LambDynamicLights - Dynamic Lights",
     "type": "mod",
@@ -121,12 +125,12 @@
     "source": "curseforge",
     "slug": "lottweaks"
   },
-  "noxesium": {
-    "name": "Noxesium",
+  "notebook": {
+    "name": "Vanilla Notebook ",
     "type": "mod",
     "source": "modrinth",
-    "slug": "noxesium",
-    "id": "Kw7Sm3Xf"
+    "slug": "notebook",
+    "id": "KaKEuH9Q"
   },
   "ok-zoomer": {
     "name": "Ok Zoomer - It's Zoom!",
@@ -134,13 +138,6 @@
     "source": "modrinth",
     "slug": "ok-zoomer",
     "id": "aXf2OSFU"
-  },
-  "orthocamera": {
-    "name": "OrthoCamera",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "orthocamera",
-    "id": "OB69KhRA"
   },
   "particle-rain": {
     "name": "Particle Rain",
@@ -162,19 +159,24 @@
     "slug": "pixelshot",
     "id": "MUoQGQVU"
   },
+  "real-camera": {
+    "name": "Real Camera",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "real-camera"
+  },
+  "recursiveresources": {
+    "name": "Recursiveresources",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "recursiveresources"
+  },
   "replaymod": {
     "name": "ReplayMod",
     "type": "mod",
     "source": "modrinth",
     "slug": "replaymod",
     "id": "Nv2fQJo5"
-  },
-  "repo-heads": {
-    "name": "REPO Heads",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "repo-heads",
-    "id": "Jaoe8qGe"
   },
   "resource-pack-overrides": {
     "name": "Resource Pack Overrides",
@@ -188,13 +190,6 @@
     "source": "modrinth",
     "slug": "server-unpacker",
     "id": "B3fgRqfr"
-  },
-  "simple-voice-chat": {
-    "name": "Simple Voice Chat",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "simple-voice-chat",
-    "id": "9eGKb6K1"
   },
   "smooth-scrolling-refurbished": {
     "name": "Smooth Scrolling Refurbished",
@@ -216,24 +211,10 @@
     "slug": "talkbubbles",
     "id": "BUpChT1v"
   },
-  "talkingheads": {
-    "name": "Talking Heads",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "talkingheads",
-    "id": "Os35nfkh"
-  },
   "voxy": {
     "name": "Voxy",
     "type": "mod",
     "source": "modrinth",
     "slug": "voxy"
-  },
-  "wearthat": {
-    "name": "WearThat",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "wearthat",
-    "id": "FT20RvJM"
   }
 }
