@@ -25,6 +25,7 @@ The goal: keep the vanilla experience recognizable, then quietly improve visuals
 - [Mods](docs/mods.md)
 - [Resource packs](docs/resourcepacks.md)
 - [Shader packs](docs/shaderpacks.md)
+- [Data packs](docs/datapacks.md)
 - [Tooling guide](tools/README.md)
 
 ## Data and tooling workflow
@@ -56,6 +57,7 @@ sea-salt-vanilla/
 |-- mods/                 # Mod packwiz metadata
 |-- resourcepacks/        # Resource pack packwiz metadata
 |-- shaderpacks/          # Shader pack packwiz metadata
+|-- datapacks/            # Data pack content and packwiz metadata
 |-- config/               # shipped game config
 |-- defaultconfigs/       # default configs copied into new worlds
 |-- docs/

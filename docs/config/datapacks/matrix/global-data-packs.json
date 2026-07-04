@@ -1,0 +1,117 @@
+{
+  "id": "global-data-packs",
+  "order": 10,
+  "title": {
+    "en": "Global data packs",
+    "zh": "全局数据包"
+  },
+  "description": {
+    "en": "These entries are distributed through the pack-level datapacks directory and loaded globally by the selected global pack loader.",
+    "zh": "这些条目通过整合包层面的 datapacks 目录分发，并由当前选用的全局包加载器全局加载。"
+  },
+  "sections": [
+    {
+      "id": "pack-provided-data-packs",
+      "title": {
+        "en": "Pack-provided data packs",
+        "zh": "整合包分发数据包"
+      },
+      "description": {
+        "en": "These rows will document data packs that ship as default pack content instead of optional user additions.",
+        "zh": "这些行用于记录随整合包默认分发的数据包，而不是用户自行添加的可选内容。"
+      },
+      "rows": [
+        {
+          "id": "dungeon-and-structure-expansion",
+          "feature": {
+            "en": "Dungeon and structure expansion",
+            "zh": "地牢与结构扩展"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "dungeons-and-taverns"
+              }
+            }
+          }
+        },
+        {
+          "id": "town-and-tower-structures",
+          "feature": {
+            "en": "Town and tower structures",
+            "zh": "城镇与高塔结构"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "towns-and-towers"
+              }
+            }
+          }
+        },
+        {
+          "id": "overworld-terrain-shaping",
+          "feature": {
+            "en": "Overworld terrain shaping",
+            "zh": "主世界地形塑造"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "tectonic"
+              }
+            }
+          }
+        },
+        {
+          "id": "nether-dimension-expansion",
+          "feature": {
+            "en": "Nether dimension expansion",
+            "zh": "下界维度扩展"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "incendium"
+              }
+            }
+          }
+        },
+        {
+          "id": "overworld-biome-overhaul",
+          "feature": {
+            "en": "Overworld biome overhaul",
+            "zh": "主世界生物群系翻新"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "william-wythers-overhauled-overworld-(datapack)"
+              }
+            }
+          }
+        },
+        {
+          "id": "continent-scale-terrain-layout",
+          "feature": {
+            "en": "Continent-scale terrain layout",
+            "zh": "大陆尺度地形布局"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "continents"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

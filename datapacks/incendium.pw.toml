@@ -1,0 +1,13 @@
+name = "Incendium"
+filename = "Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZVzW5oNS/versions/pwe1kTJE/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip"
+hash-format = "sha512"
+hash = "926bd6e7418548ab475fa66681c57998c638a8abed92688a289def0220c833d4257f4d20046f29d8801d14f3a63156b38624968e05423cac8d58f0897cd1126b"
+
+[update]
+[update.modrinth]
+mod-id = "ZVzW5oNS"
+version = "pwe1kTJE"

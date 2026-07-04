@@ -85,7 +85,7 @@ Generates:
 
 Inputs:
 
-- packwiz metadata under `mods/`, `resourcepacks/`, `shaderpacks/`, and other supported project folders
+- packwiz metadata under `mods/`, `resourcepacks/`, `shaderpacks/`, `datapacks/`, and other supported project folders
 - generated project catalogs
 - Modrinth version dependency cache/API data
 
@@ -101,6 +101,8 @@ Generates bilingual public docs:
 - `docs/resourcepacks.zh-CN.md`
 - `docs/shaderpacks.md`
 - `docs/shaderpacks.zh-CN.md`
+- `docs/datapacks.md`
+- `docs/datapacks.zh-CN.md`
 
 Inputs:
 
@@ -146,4 +148,3 @@ These helper modules are not meant to be run directly.
 3. If the checker reports missing or unexpected packwiz projects, update packwiz metadata accordingly.
 4. Run `python tools/update_project_data.py generate` again.
 5. Run `python tools/update_project_data.py check` before committing.
-

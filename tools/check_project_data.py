@@ -15,6 +15,7 @@ from project_data_common import (
     build_documented_sets,
     build_missing_required,
     build_required_by,
+    cache_entry_has_error,
     collect_cache_errors,
     is_documented,
     load_declared_dependencies,
@@ -40,6 +41,9 @@ from project_data_identity import (
 
 
 OUTPUT = CACHE / "project-data-check.zh-CN.md"
+EXPECTED_FOLDER_VERSION_LOADERS = {
+    "datapack": "datapack",
+}
 
 
 def folder_type_conflicts(
@@ -71,6 +75,37 @@ def folder_type_conflicts(
             conflicts.append(
                 f"{project['file']}: installed as {project['type']} but Modrinth project type is {expected}"
             )
+    return conflicts
+
+
+def version_loader_conflicts(
+    installed: list[dict[str, Any]],
+    dependency_cache: dict[str, Any],
+) -> list[str]:
+    conflicts: list[str] = []
+
+    for project in installed:
+        expected_loader = EXPECTED_FOLDER_VERSION_LOADERS.get(str(project.get("type") or ""))
+        if not expected_loader or project.get("source") != "modrinth":
+            continue
+
+        version_id = str(project.get("modrinth_version") or "")
+        version_data = dependency_cache.get(version_id)
+        if not isinstance(version_data, dict) or cache_entry_has_error(version_data):
+            continue
+
+        actual_loaders = {str(loader).lower() for loader in version_data.get("loaders", [])}
+        if expected_loader in actual_loaders:
+            continue
+
+        loader_summary = ", ".join(sorted(actual_loaders)) or "none"
+        filename = str(project.get("filename") or "")
+        conflicts.append(
+            f"{project['file']}: installed as {project['type']} but Modrinth version "
+            f"{version_id} loaders are [{loader_summary}]"
+            + (f" (filename: {filename})" if filename else "")
+        )
+
     return conflicts
 
 
@@ -250,6 +285,7 @@ def check(*, persist_cache: bool = True) -> dict[str, object]:
         "missing_defaults": missing_defaults,
         "missing_dependencies": missing_dependencies,
         "folder_conflicts": folder_type_conflicts(installed, project_meta),
+        "version_loader_conflicts": version_loader_conflicts(installed, dependency_cache),
     }
 
 
@@ -266,6 +302,7 @@ def render_report(result: dict[str, object]) -> str:
     missing_defaults = result["missing_defaults"]
     missing_dependencies = result["missing_dependencies"]
     folder_conflicts = result["folder_conflicts"]
+    version_loader_conflict_issues = result["version_loader_conflicts"]
     required_by = result["required_by"]
 
     assert isinstance(installed, list)
@@ -280,12 +317,13 @@ def render_report(result: dict[str, object]) -> str:
     assert isinstance(missing_defaults, list)
     assert isinstance(missing_dependencies, dict)
     assert isinstance(folder_conflicts, list)
+    assert isinstance(version_loader_conflict_issues, list)
     assert isinstance(required_by, dict)
 
     lines = [
         "# 项目数据一致性检查",
         "",
-        "这份报告对比 packwiz 实际安装的项目元文件（mods、resourcepacks、shaderpacks 等目录下的 `*.pw.toml`）、`docs/config/` 文档配置与 `data/` 生成数据，并通过 Modrinth versions API 解析 required 依赖关系。",
+        "这份报告对比 packwiz 实际安装的项目元文件（mods、resourcepacks、shaderpacks、datapacks 等目录下的 `*.pw.toml`）、`docs/config/` 文档配置与 `data/` 生成数据，并通过 Modrinth versions API 解析 required 依赖关系。",
         "",
         f"- 目标 Minecraft 版本：{TARGET_VERSION}",
         f"- 已安装 packwiz 项目：{len(installed)}",
@@ -297,6 +335,7 @@ def render_report(result: dict[str, object]) -> str:
         f"- 默认包缺失：{len(missing_defaults)}",
         f"- 缺失 required 依赖：{len(missing_dependencies)}",
         f"- 安装目录不符：{len(folder_conflicts)}",
+        f"- 版本加载器不符：{len(version_loader_conflict_issues)}",
         f"- 意外安装项目：{len(unexpected)}",
         f"- 未知项目引用：{len(unknown_refs)}",
         f"- 重复项目引用：{len(duplicate_refs)}",
@@ -335,6 +374,14 @@ def render_report(result: dict[str, object]) -> str:
     lines.extend(["", "## 安装目录不符", ""])
     if folder_conflicts:
         lines.extend(f"- {conflict}" for conflict in folder_conflicts)
+    else:
+        lines.append("无。")
+
+    lines.extend(["", "## 版本加载器不符", ""])
+    if version_loader_conflict_issues:
+        lines.append("这些项目安装在需要特定 Modrinth loader 的目录中，但锁定的具体版本没有声明对应 loader。")
+        lines.append("")
+        lines.extend(f"- {conflict}" for conflict in version_loader_conflict_issues)
     else:
         lines.append("无。")
 
@@ -397,6 +444,7 @@ def main() -> None:
     missing_defaults = result["missing_defaults"]
     missing_dependencies = result["missing_dependencies"]
     folder_conflicts = result["folder_conflicts"]
+    version_loader_conflict_issues = result["version_loader_conflicts"]
     assert isinstance(unexplained, list)
     assert isinstance(cache_errors, list)
     assert isinstance(generated_data_invariant_issues, list)
@@ -406,6 +454,7 @@ def main() -> None:
     assert isinstance(missing_defaults, list)
     assert isinstance(missing_dependencies, dict)
     assert isinstance(folder_conflicts, list)
+    assert isinstance(version_loader_conflict_issues, list)
 
     summary = {
         "installed": len(result["installed"]),
@@ -417,6 +466,7 @@ def main() -> None:
         "missing_defaults": len(missing_defaults),
         "missing_dependencies": len(missing_dependencies),
         "folder_conflicts": len(folder_conflicts),
+        "version_loader_conflicts": len(version_loader_conflict_issues),
         "unexpected_installed": len(unexpected),
         "unknown_refs": len(unknown_refs),
         "duplicate_refs": len(duplicate_refs),
@@ -431,6 +481,7 @@ def main() -> None:
         or missing_defaults
         or missing_dependencies
         or folder_conflicts
+        or version_loader_conflict_issues
         or unexpected
         or unknown_refs
         or duplicate_refs
@@ -451,6 +502,8 @@ def main() -> None:
             )
         if folder_conflicts:
             issues.extend(f"- folder conflict: {conflict}" for conflict in folder_conflicts)
+        if version_loader_conflict_issues:
+            issues.extend(f"- version loader conflict: {conflict}" for conflict in version_loader_conflict_issues)
         if unexpected:
             issues.extend(f"- unexpected installed: {conflict}" for conflict in unexpected)
         if unknown_refs:

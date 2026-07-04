@@ -1,0 +1,13 @@
+name = "Tectonic"
+filename = "tectonic-datapack-3.0.25.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/lWDHr9jE/versions/CmzMQNDL/tectonic-datapack-3.0.25.zip"
+hash-format = "sha512"
+hash = "7b3c5dee391337b21bdfee5362f4a986417b4fffd6aa617dddaf3444b729b326e3651e7cd87cd7d68d39c301d28767648753784cd50f0a94eda904f85cd6d5bd"
+
+[update]
+[update.modrinth]
+mod-id = "lWDHr9jE"
+version = "CmzMQNDL"

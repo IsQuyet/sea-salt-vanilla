@@ -85,7 +85,7 @@ python tools/update_project_data.py report
 
 输入：
 
-- `mods/`、`resourcepacks/`、`shaderpacks/` 等受支持项目目录中的 packwiz 元数据
+- `mods/`、`resourcepacks/`、`shaderpacks/`、`datapacks/` 等受支持项目目录中的 packwiz 元数据
 - 已生成的项目注册表
 - Modrinth 版本依赖缓存/API 数据
 
@@ -101,6 +101,8 @@ python tools/update_project_data.py report
 - `docs/resourcepacks.zh-CN.md`
 - `docs/shaderpacks.md`
 - `docs/shaderpacks.zh-CN.md`
+- `docs/datapacks.md`
+- `docs/datapacks.zh-CN.md`
 
 输入：
 
@@ -146,4 +148,3 @@ reference/modrinth-collections/project-data-check.zh-CN.md
 3. 如果检查器报告缺失或意外的 packwiz 项目，根据结果更新 packwiz 元数据。
 4. 再次运行 `python tools/update_project_data.py generate`。
 5. 提交前运行 `python tools/update_project_data.py check`。
-

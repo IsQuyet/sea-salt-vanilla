@@ -25,6 +25,7 @@
 - [模组](docs/mods.zh-CN.md)
 - [资源包](docs/resourcepacks.zh-CN.md)
 - [光影包](docs/shaderpacks.zh-CN.md)
+- [数据包](docs/datapacks.zh-CN.md)
 - [工具使用手册](tools/README.zh-CN.md)
 
 ## 数据与工具工作流
@@ -56,6 +57,7 @@ sea-salt-vanilla/
 |-- mods/                 # Mod 的 packwiz 元数据
 |-- resourcepacks/        # 资源包的 packwiz 元数据
 |-- shaderpacks/          # 光影包的 packwiz 元数据
+|-- datapacks/            # 数据包内容与 packwiz 元数据
 |-- config/               # 随包分发的游戏配置
 |-- defaultconfigs/       # 创建新世界时复制的默认配置
 |-- docs/

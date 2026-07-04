@@ -188,6 +188,7 @@ def load_installed_projects() -> list[dict[str, Any]]:
                     "type": project_type,
                     "slug": path.name.removesuffix(".pw.toml").lower(),
                     "name": str(metadata.get("name") or path.name.removesuffix(".pw.toml")),
+                    "filename": str(metadata.get("filename") or ""),
                     "side": str(metadata.get("side") or ""),
                     "source": source,
                     "id": project_id,
@@ -308,6 +309,8 @@ def cache_version(data: dict[str, Any], cache: dict[str, Any]) -> None:
         "id": data.get("id"),
         "project_id": data.get("project_id"),
         "version_number": data.get("version_number"),
+        "loaders": data.get("loaders", []),
+        "files": [file.get("filename") for file in data.get("files", []) if file.get("filename")],
         "dependencies": data.get("dependencies", []),
     }
 
@@ -316,7 +319,13 @@ def fetch_missing_modrinth_versions(version_ids: list[str], cache: dict[str, Any
     missing = [
         version_id
         for version_id in sorted(set(version_ids))
-        if version_id and (version_id not in cache or cache_entry_has_error(cache.get(version_id)))
+        if version_id
+        and (
+            version_id not in cache
+            or cache_entry_has_error(cache.get(version_id))
+            or not isinstance(cache.get(version_id), dict)
+            or "loaders" not in cache[version_id]
+        )
     ]
     if not missing:
         return

@@ -1,6 +1,36 @@
 hash-format = "sha256"
 
 [[files]]
+file = "datapacks/continents.pw.toml"
+hash = "3b09047e919cedab7efc86db2ddfb751c6b4028abe090223789a925ed15b0de3"
+metafile = true
+
+[[files]]
+file = "datapacks/dungeons-and-taverns.pw.toml"
+hash = "20abe9a665ed77b271bd132e646a21d73a057aec4a5e9f6f3889267518d1ec6c"
+metafile = true
+
+[[files]]
+file = "datapacks/incendium.pw.toml"
+hash = "3b9148316d33630109898d716ac10f99716d8e3b6ae5359289a4153bd1e63fce"
+metafile = true
+
+[[files]]
+file = "datapacks/tectonic.pw.toml"
+hash = "3ac9bee99007383d72233a92a87481ff8bd14b255e5ddca0c2d9aafc15b37034"
+metafile = true
+
+[[files]]
+file = "datapacks/towns-and-towers.pw.toml"
+hash = "a068ddf471bcb8c2f607a6c1df6e28c84f04e5e03788acd8e6f8789e766caf17"
+metafile = true
+
+[[files]]
+file = "datapacks/william-wythers-overhauled-overworld-(datapack).pw.toml"
+hash = "bd03fa430bb8b864e5d39a254f8c3d5dc0d64f65c4a1d90e49316c42edb853b9"
+metafile = true
+
+[[files]]
 file = "mods/3dskinlayers.pw.toml"
 hash = "abd853502542de7e87f6bbe6d4f08f1185058689fe8a5b2cafafab0d2c74a2d5"
 metafile = true

@@ -187,6 +187,12 @@
     "slug": "configured",
     "id": "HlpEBg3R"
   },
+  "continents": {
+    "name": "Continents",
+    "type": "datapack",
+    "source": "modrinth",
+    "slug": "continents"
+  },
   "continuity": {
     "name": "Continuity",
     "type": "mod",
@@ -280,6 +286,12 @@
     "source": "modrinth",
     "slug": "draggable-lists",
     "id": "aLcHfalx"
+  },
+  "dungeons-and-taverns": {
+    "name": "Dungeons And Taverns",
+    "type": "datapack",
+    "source": "modrinth",
+    "slug": "dungeons-and-taverns"
   },
   "dynamiccrosshair": {
     "name": "Dynamic Crosshair",
@@ -483,6 +495,12 @@
     "source": "modrinth",
     "slug": "immersive-ui",
     "id": "9wv7LuMc"
+  },
+  "incendium": {
+    "name": "Incendium",
+    "type": "datapack",
+    "source": "modrinth",
+    "slug": "incendium"
   },
   "inventory-particles": {
     "name": "Inventory Particles",
@@ -949,6 +967,12 @@
     "slug": "talkingheads",
     "id": "Os35nfkh"
   },
+  "tectonic": {
+    "name": "Tectonic",
+    "type": "datapack",
+    "source": "modrinth",
+    "slug": "tectonic"
+  },
   "threadtweak": {
     "name": "Threadtweak",
     "type": "mod",
@@ -961,6 +985,12 @@
     "source": "modrinth",
     "slug": "tiny-item-animations",
     "id": "wMkevcSR"
+  },
+  "towns-and-towers": {
+    "name": "Towns And Towers",
+    "type": "datapack",
+    "source": "modrinth",
+    "slug": "towns-and-towers"
   },
   "translations-for-sodium": {
     "name": "Translations for Sodium",
@@ -1030,6 +1060,12 @@
     "source": "modrinth",
     "slug": "wearthat",
     "id": "FT20RvJM"
+  },
+  "william-wythers-overhauled-overworld-(datapack)": {
+    "name": "William Wythers Overhauled Overworld (datapack)",
+    "type": "datapack",
+    "source": "modrinth",
+    "slug": "william-wythers-overhauled-overworld-(datapack)"
   },
   "worldedit": {
     "name": "WorldEdit",

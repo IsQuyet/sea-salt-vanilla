@@ -46,12 +46,13 @@ def cached_modrinth_project(project_ref: str, project_cache: dict[str, Any]) -> 
     return None
 
 
-def entry_from_modrinth(project: dict[str, Any]) -> dict[str, Any]:
+def entry_from_modrinth(project: dict[str, Any], documented_type: str | None = None) -> dict[str, Any]:
+    project_type = documented_type or str(project.get("project_type") or "")
     return normalize_entry(
         {
             "name": project.get("title"),
             "source": "modrinth",
-            "type": project.get("project_type"),
+            "type": project_type,
             "slug": project.get("slug"),
             "id": project.get("id"),
         }
@@ -66,11 +67,11 @@ def entry_from_documented_ref(ref: dict[str, Any], project_cache: dict[str, Any]
     if source == "modrinth" and slug:
         project = cached_modrinth_project(slug, project_cache)
         if project:
-            return entry_from_modrinth(project)
+            return entry_from_modrinth(project, project_type)
 
     return normalize_entry(
         {
-            "name": display_name_from_slug(slug),
+            "name": ref.get("name") or display_name_from_slug(slug),
             "type": project_type,
             "source": source,
             "slug": slug,

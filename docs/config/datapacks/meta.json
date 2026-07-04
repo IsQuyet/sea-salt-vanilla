@@ -1,0 +1,13 @@
+{
+  "title": {
+    "en": "Data pack feature matrix",
+    "zh": "数据包功能矩阵"
+  },
+  "versions": [
+    "1.21.1"
+  ],
+  "introduction": {
+    "en": "This page tracks which data pack provides each data-driven gameplay or world behavior feature in released Minecraft versions. Sections group related goals, rows describe specific features, and version columns name the data pack used for that version.",
+    "zh": "这页跟踪每个已发布 Minecraft 版本中，由哪个数据包提供对应的数据驱动玩法或世界行为功能。章节用于归类相关目标，表格行描述具体功能，版本列填写该版本使用的数据包。"
+  }
+}
