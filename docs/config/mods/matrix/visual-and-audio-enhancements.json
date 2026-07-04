@@ -165,7 +165,17 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "distanthorizons"
-              }
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "bobby"
+                },
+                {
+                  "source": "modrinth",
+                  "slug": "voxy"
+                }
+              ]
             }
           }
         },
@@ -405,21 +415,6 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "perception"
-              }
-            }
-          }
-        },
-        {
-          "id": "darkness-effect-accessibility",
-          "feature": {
-            "en": "Darkness effect accessibility",
-            "zh": "黑暗效果可访问性"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "mindful-darkness"
               }
             }
           }
@@ -817,6 +812,21 @@
                   "slug": "smooth-scrolling-refurbished"
                 }
               ]
+            }
+          }
+        },
+        {
+          "id": "automatic-gui-dark-mode",
+          "feature": {
+            "en": "Automatic GUI dark mode",
+            "zh": "自动 GUI 深色模式"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "mindful-darkness"
+              }
             }
           }
         },

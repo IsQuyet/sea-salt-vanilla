@@ -339,8 +339,14 @@
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
-                "slug": "better-mount-hud"
-              }
+                "slug": "leave-my-bars-alone"
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "better-mount-hud"
+                }
+              ]
             }
           }
         },
@@ -481,21 +487,6 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "skinshuffle"
-              }
-            }
-          }
-        },
-        {
-          "id": "status-bar-visibility",
-          "feature": {
-            "en": "Status bar visibility",
-            "zh": "状态栏可见性"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "leave-my-bars-alone"
               }
             }
           }

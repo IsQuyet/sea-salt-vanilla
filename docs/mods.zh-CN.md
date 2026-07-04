@@ -84,26 +84,25 @@
 
 这些条目添加客户端氛围、远景地形、光影扩展、粒子和细节视觉反馈。
 
-| 功能 | 1.21.1 |
-| --- | --- |
-| 远景地形渲染 | [Distant Horizons](https://modrinth.com/mod/distanthorizons) |
-| Complementary 光影视觉扩展 | [Euphoria Patches](https://modrinth.com/mod/euphoria-patches) |
-| 氛围粒子 | [Visuality](https://modrinth.com/mod/visuality) |
-| 洞穴尘埃氛围 | [Cave Dust](https://modrinth.com/mod/cave-dust) |
-| 船上物品显示 | [Boat Item View](https://modrinth.com/mod/boat-item-view) |
-| 连接方块轮廓 | [Seamless](https://modrinth.com/mod/seamless) |
-| 细节视觉效果 | [Subtle Effects](https://modrinth.com/mod/subtle-effects) |
-| 额外粒子效果 | [Particle Effects](https://modrinth.com/mod/particle-effects) |
-| 背包粒子效果 | [Inventory Particles](https://modrinth.com/mod/inventory-particles) |
-| 氛围视觉效果 | [Mas Effects](https://modrinth.com/mod/mas-effects) |
-| 粒子交互 | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |
-| 气泡破裂效果 | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |
-| 落叶粒子 | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |
-| 爆炸效果 | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |
-| 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |
-| 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |
-| 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception) |
-| 黑暗效果可访问性 | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
+| 远景地形渲染 | [Distant Horizons](https://modrinth.com/mod/distanthorizons) | [Bobby](https://modrinth.com/mod/bobby), [Voxy](https://modrinth.com/mod/voxy) |
+| Complementary 光影视觉扩展 | [Euphoria Patches](https://modrinth.com/mod/euphoria-patches) |  |
+| 氛围粒子 | [Visuality](https://modrinth.com/mod/visuality) |  |
+| 洞穴尘埃氛围 | [Cave Dust](https://modrinth.com/mod/cave-dust) |  |
+| 船上物品显示 | [Boat Item View](https://modrinth.com/mod/boat-item-view) |  |
+| 连接方块轮廓 | [Seamless](https://modrinth.com/mod/seamless) |  |
+| 细节视觉效果 | [Subtle Effects](https://modrinth.com/mod/subtle-effects) |  |
+| 额外粒子效果 | [Particle Effects](https://modrinth.com/mod/particle-effects) |  |
+| 背包粒子效果 | [Inventory Particles](https://modrinth.com/mod/inventory-particles) |  |
+| 氛围视觉效果 | [Mas Effects](https://modrinth.com/mod/mas-effects) |  |
+| 粒子交互 | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |  |
+| 气泡破裂效果 | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |  |
+| 落叶粒子 | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |  |
+| 爆炸效果 | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |  |
+| 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
+| 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
+| 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception) |  |
 
 ### 音效
 
@@ -148,6 +147,7 @@
 | HUD 位置调整 | [Raised](https://modrinth.com/mod/raised) |  |
 | UI 背景模糊 | [Blur+](https://modrinth.com/mod/blur-plus) |  |
 | 平滑滚动 | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) | [Smooth Scrolling Refurbished](https://modrinth.com/mod/smooth-scrolling-refurbished) |
+| 自动 GUI 深色模式 | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |  |
 | 平滑 GUI 动画 | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
 | 现代 UI 框架与文字渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
 | 沉浸式 UI 交互 | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
@@ -208,7 +208,7 @@
 | --- | --- | --- |
 | 高级 HUD 浮层 | [MiniHUD](https://modrinth.com/mod/minihud) |  |
 | 背包 HUD 浮层 | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |  |
-| 骑乘 HUD 改进 | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |  |
+| 骑乘 HUD 改进 | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
 | 统计界面改进 | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
 | 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |  |
 | 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
@@ -218,7 +218,6 @@
 | 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | 盔甲细节显示 | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | 游戏内皮肤管理 | [Skinshuffle](https://modrinth.com/mod/skinshuffle) |  |
-| 状态栏可见性 | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) |  |
 | 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
 | 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
 | 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |  |
@@ -260,7 +259,6 @@
 | 近距离语音聊天 | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) |
 | 服务器资源包解包 | [Server Unpacker](https://modrinth.com/mod/server-unpacker) |
 | 多人服务器客户端增强 | [Noxesium](https://modrinth.com/mod/noxesium) |
-| 服务器远视距缓存 | [Bobby](https://modrinth.com/mod/bobby) |
 | 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) |
 | 社交客户端层 | [Essential Mod](https://modrinth.com/mod/essential) |
 | 玩家表情动作 | [Emotecraft](https://modrinth.com/mod/emotecraft) |

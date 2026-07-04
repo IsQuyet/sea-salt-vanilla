@@ -84,26 +84,25 @@ These entries provide OptiFine-style visual and resource-pack features through F
 
 These entries add client-side ambience, distant terrain, shader enhancements, particles, and small visual feedback effects.
 
-| Feature | 1.21.1 |
-| --- | --- |
-| Distant terrain renderer | [Distant Horizons](https://modrinth.com/mod/distanthorizons) |
-| Complementary shader visual extensions | [Euphoria Patches](https://modrinth.com/mod/euphoria-patches) |
-| Ambient particles | [Visuality](https://modrinth.com/mod/visuality) |
-| Cave dust ambience | [Cave Dust](https://modrinth.com/mod/cave-dust) |
-| Boat item display | [Boat Item View](https://modrinth.com/mod/boat-item-view) |
-| Connected block outlines | [Seamless](https://modrinth.com/mod/seamless) |
-| Subtle visual effects | [Subtle Effects](https://modrinth.com/mod/subtle-effects) |
-| Additional particle effects | [Particle Effects](https://modrinth.com/mod/particle-effects) |
-| Inventory particle effects | [Inventory Particles](https://modrinth.com/mod/inventory-particles) |
-| Ambient visual effects | [Mas Effects](https://modrinth.com/mod/mas-effects) |
-| Particle interactions | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |
-| Bubble pop effects | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |
-| Falling leaf particles | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |
-| Explosion effects | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |
-| Projectile visual style | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |
-| Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |
-| Immersive visual effects | [Perception](https://modrinth.com/mod/perception) |
-| Darkness effect accessibility | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
+| Distant terrain renderer | [Distant Horizons](https://modrinth.com/mod/distanthorizons) | [Bobby](https://modrinth.com/mod/bobby), [Voxy](https://modrinth.com/mod/voxy) |
+| Complementary shader visual extensions | [Euphoria Patches](https://modrinth.com/mod/euphoria-patches) |  |
+| Ambient particles | [Visuality](https://modrinth.com/mod/visuality) |  |
+| Cave dust ambience | [Cave Dust](https://modrinth.com/mod/cave-dust) |  |
+| Boat item display | [Boat Item View](https://modrinth.com/mod/boat-item-view) |  |
+| Connected block outlines | [Seamless](https://modrinth.com/mod/seamless) |  |
+| Subtle visual effects | [Subtle Effects](https://modrinth.com/mod/subtle-effects) |  |
+| Additional particle effects | [Particle Effects](https://modrinth.com/mod/particle-effects) |  |
+| Inventory particle effects | [Inventory Particles](https://modrinth.com/mod/inventory-particles) |  |
+| Ambient visual effects | [Mas Effects](https://modrinth.com/mod/mas-effects) |  |
+| Particle interactions | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |  |
+| Bubble pop effects | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |  |
+| Falling leaf particles | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |  |
+| Explosion effects | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |  |
+| Projectile visual style | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
+| Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
+| Immersive visual effects | [Perception](https://modrinth.com/mod/perception) |  |
 
 ### Audio
 
@@ -148,6 +147,7 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 | HUD positioning | [Raised](https://modrinth.com/mod/raised) |  |
 | UI background blur | [Blur+](https://modrinth.com/mod/blur-plus) |  |
 | Smooth scrolling | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) | [Smooth Scrolling Refurbished](https://modrinth.com/mod/smooth-scrolling-refurbished) |
+| Automatic GUI dark mode | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |  |
 | Smooth GUI animation | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
 | Modern UI framework and text rendering | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
 | Immersive UI interactions | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
@@ -208,7 +208,7 @@ These entries surface gameplay information or remove small interface friction.
 | --- | --- | --- |
 | Advanced HUD overlays | [MiniHUD](https://modrinth.com/mod/minihud) |  |
 | Inventory HUD overlay | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |  |
-| Mount HUD improvements | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |  |
+| Mount HUD improvements | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
 | Statistics screen improvements | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
 | Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) |  |
 | World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
@@ -218,7 +218,6 @@ These entries surface gameplay information or remove small interface friction.
 | Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | Armor detail display | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | In-game skin management | [Skinshuffle](https://modrinth.com/mod/skinshuffle) |  |
-| Status bar visibility | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) |  |
 | Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
 | Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
 | Resource pack warning suppression | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |  |
@@ -260,7 +259,6 @@ These entries mainly improve the client-side experience when playing online or o
 | Proximity voice chat | [Simple Voice Chat](https://modrinth.com/mod/simple-voice-chat) |
 | Server resource-pack unpacking | [Server Unpacker](https://modrinth.com/mod/server-unpacker) |
 | Multiplayer client enhancements | [Noxesium](https://modrinth.com/mod/noxesium) |
-| Remote view-distance cache | [Bobby](https://modrinth.com/mod/bobby) |
 | Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) |
 | Social client layer | [Essential Mod](https://modrinth.com/mod/essential) |
 | Player emotes | [Emotecraft](https://modrinth.com/mod/emotecraft) |

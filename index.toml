@@ -46,11 +46,6 @@ hash = "5c3eaf036c6725c2a0be6507f73217571eda0d71744796e104799ca83ab60616"
 metafile = true
 
 [[files]]
-file = "mods/better-mount-hud.pw.toml"
-hash = "7c45c50ac2431db0dd3697e16a180a55ac0f2a753540b0bd310eb593b8b0bd0a"
-metafile = true
-
-[[files]]
 file = "mods/better-stats.pw.toml"
 hash = "7b87ea6e0623ada323e65fa0420e0827f6e88689898a0454376e460ad8cbc5dc"
 metafile = true

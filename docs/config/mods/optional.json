@@ -66,21 +66,6 @@
           }
         },
         {
-          "id": "remote-view-distance-cache",
-          "feature": {
-            "en": "Remote view-distance cache",
-            "zh": "服务器远视距缓存"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "bobby"
-              }
-            }
-          }
-        },
-        {
           "id": "client-side-wearable-rendering",
           "feature": {
             "en": "Client-side wearable rendering",

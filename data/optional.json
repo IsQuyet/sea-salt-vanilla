@@ -12,6 +12,13 @@
     "slug": "better-block-entities",
     "id": "ONZm0H7Y"
   },
+  "better-mount-hud": {
+    "name": "Better Mount HUD",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "better-mount-hud",
+    "id": "kqJFAPU9"
+  },
   "biomeinfo": {
     "name": "BiomeInfo",
     "type": "mod",
@@ -215,6 +222,12 @@
     "source": "modrinth",
     "slug": "talkingheads",
     "id": "Os35nfkh"
+  },
+  "voxy": {
+    "name": "Voxy",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "voxy"
   },
   "wearthat": {
     "name": "WearThat",
