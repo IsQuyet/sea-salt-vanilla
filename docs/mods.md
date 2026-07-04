@@ -34,7 +34,7 @@ These entries improve frame pacing, memory use, lighting, networking, and render
 | General render culling | [More Culling](https://modrinth.com/mod/moreculling) |  |
 | Block entity rendering optimization | [Enhanced Block Entities](https://modrinth.com/mod/ebe) | [Better Block Entities](https://modrinth.com/mod/better-block-entities) |
 | Leaf rendering culling | [Cull Leaves](https://modrinth.com/mod/cull-leaves) |  |
-| Particle performance | [AsyncParticles](https://modrinth.com/mod/asyncparticles) |  |
+| Particle performance | [Particle Core](https://modrinth.com/mod/particle-core) | [AsyncParticles](https://modrinth.com/mod/asyncparticles) |
 | Memory allocation optimization | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  |
 | Client performance tweaks | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  |
 | Input event polling optimization | [Ixeris](https://modrinth.com/mod/ixeris) |  |
@@ -96,11 +96,12 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Connected block outlines | [Seamless](https://modrinth.com/mod/seamless) |  |
 | Subtle visual effects | [Subtle Effects](https://modrinth.com/mod/subtle-effects) |  |
 | Additional particle effects | [Particle Effects](https://modrinth.com/mod/particle-effects) |  |
-| Inventory particle effects | [Inventory Particles](https://modrinth.com/mod/inventory-particles) |  |
+| Inventory particle effects | [Inventory Particles](https://modrinth.com/mod/inventory-particles) | [Inventory Interactions](https://modrinth.com/mod/inventory-interactions) |
 | Ambient visual effects | [Mas Effects](https://modrinth.com/mod/mas-effects) |  |
 | Particle interactions | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |  |
 | Bubble pop effects | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |  |
 | Falling leaf particles | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |  |
+| Soft surface imprints | [Snow Imprints](https://modrinth.com/mod/snow-imprints) |  |
 | Explosion effects | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |  |
 | Projectile visual style | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
@@ -193,6 +194,7 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Item and recipe browser | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |  |
 | Block and entity overlay | [Jade 🔍](https://modrinth.com/mod/jade) |  |
 | Extra item and block hints | [Peek](https://modrinth.com/mod/peek) |  |
+| Enhanced tooltip details | [Enhancedtooltips](https://modrinth.com/mod/enhancedtooltips) |  |
 | Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
 | Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | Inventory profiles and sorting | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
@@ -239,6 +241,7 @@ These entries surface gameplay information or remove small interface friction.
 | Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
 | Screenshot viewer | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |  |
 | Hide interface for screenshots | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |  |
+| Nametag visibility toggle | [Hidetags](https://modrinth.com/mod/hidetags) |  |
 
 ### Map and navigation
 
@@ -281,12 +284,14 @@ These entries mainly improve the client-side experience when playing online or o
 
 These entries add small client-side quality-of-life features that are useful but not part of the default distribution.
 
-| Feature | 1.21.1 |
-| --- | --- |
-| Enchantment tooltip descriptions | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |
-| Item pickup notifications | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |
-| Item swapping tools | [Itemswapper](https://modrinth.com/mod/itemswapper) |
-| Completion tracking index | [Completionists Index](https://modrinth.com/mod/completionists-index) |
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
+| Enchantment tooltip descriptions | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |  |
+| Item pickup notifications | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |  |
+| Item swapping tools | [Itemswapper](https://modrinth.com/mod/itemswapper) | [Slot Cycler](https://modrinth.com/mod/slot-cycler) |
+| Completion tracking index | [Completionists Index](https://modrinth.com/mod/completionists-index) |  |
+| Health bar display | [New Health Bars](https://modrinth.com/mod/new-health-bars) |  |
+| Inventory tabs | [Inventory Tabs](https://modrinth.com/mod/inventory-tabs) |  |
 
 ### Optional pack management
 
@@ -308,6 +313,8 @@ These entries can strongly shape visual or audio ambience, so they are kept as o
 | Weather particle ambience | [Particle Rain](https://modrinth.com/mod/particle-rain) |
 | Realistic camera perspective | [Real Camera](https://modrinth.com/mod/real-camera) |
 | Atmospheric visual ambience | [Atmospherics](https://modrinth.com/mod/atmospherics) |
+| Better smoke effects | [Better Smoke](https://modrinth.com/mod/better-smoke) |
+| Natural water rendering | [Natural Waters](https://modrinth.com/mod/natural-waters) |
 
 ### Optional tools and workflows
 

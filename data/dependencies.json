@@ -38,6 +38,7 @@
     "slug": "fzzy-config",
     "id": "hYykXjDp",
     "required_by": [
+      "particle-core",
       "subtle-effects"
     ]
   },

@@ -149,7 +149,13 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "itemswapper"
-              }
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "slot-cycler"
+                }
+              ]
             }
           }
         },
@@ -164,6 +170,36 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "completionists-index"
+              }
+            }
+          }
+        },
+        {
+          "id": "health-bar-display",
+          "feature": {
+            "en": "Health bar display",
+            "zh": "生命值条显示"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "new-health-bars"
+              }
+            }
+          }
+        },
+        {
+          "id": "inventory-tabs",
+          "feature": {
+            "en": "Inventory tabs",
+            "zh": "背包标签页"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "inventory-tabs"
               }
             }
           }
@@ -295,6 +331,36 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "atmospherics"
+              }
+            }
+          }
+        },
+        {
+          "id": "better-smoke-effects",
+          "feature": {
+            "en": "Better smoke effects",
+            "zh": "烟雾效果改进"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "better-smoke"
+              }
+            }
+          }
+        },
+        {
+          "id": "natural-water-rendering",
+          "feature": {
+            "en": "Natural water rendering",
+            "zh": "自然水体渲染"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "natural-waters"
               }
             }
           }

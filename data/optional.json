@@ -1,4 +1,11 @@
 {
+  "asyncparticles": {
+    "name": "AsyncParticles",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "asyncparticles",
+    "id": "c3onkd5k"
+  },
   "atmospherics": {
     "name": "Atmospherics",
     "type": "mod",
@@ -24,6 +31,12 @@
     "source": "modrinth",
     "slug": "better-mount-hud",
     "id": "kqJFAPU9"
+  },
+  "better-smoke": {
+    "name": "Better Smoke",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "better-smoke"
   },
   "biomeinfo": {
     "name": "BiomeInfo",
@@ -86,6 +99,18 @@
     "slug": "headpat",
     "id": "vETxChiy"
   },
+  "inventory-interactions": {
+    "name": "Inventory Interactions",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "inventory-interactions"
+  },
+  "inventory-tabs": {
+    "name": "Inventory Tabs",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "inventory-tabs"
+  },
   "itemswapper": {
     "name": "Itemswapper",
     "type": "mod",
@@ -124,6 +149,18 @@
     "type": "mod",
     "source": "curseforge",
     "slug": "lottweaks"
+  },
+  "natural-waters": {
+    "name": "Natural Waters",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "natural-waters"
+  },
+  "new-health-bars": {
+    "name": "New Health Bars",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "new-health-bars"
   },
   "notebook": {
     "name": "Vanilla Notebook ",
@@ -190,6 +227,12 @@
     "source": "modrinth",
     "slug": "server-unpacker",
     "id": "B3fgRqfr"
+  },
+  "slot-cycler": {
+    "name": "Slot Cycler",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "slot-cycler"
   },
   "smooth-scrolling-refurbished": {
     "name": "Smooth Scrolling Refurbished",

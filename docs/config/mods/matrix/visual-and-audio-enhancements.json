@@ -295,7 +295,13 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "inventory-particles"
-              }
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "inventory-interactions"
+                }
+              ]
             }
           }
         },
@@ -355,6 +361,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "fallingleaves"
+              }
+            }
+          }
+        },
+        {
+          "id": "soft-surface-imprints",
+          "feature": {
+            "en": "Soft surface imprints",
+            "zh": "柔软表面印痕"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "snow-imprints"
               }
             }
           }

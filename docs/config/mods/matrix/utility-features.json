@@ -67,6 +67,21 @@
           }
         },
         {
+          "id": "enhanced-tooltip-details",
+          "feature": {
+            "en": "Enhanced tooltip details",
+            "zh": "增强提示信息"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "enhancedtooltips"
+              }
+            }
+          }
+        },
+        {
           "id": "food-value-display",
           "feature": {
             "en": "Food value display",
@@ -682,6 +697,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "better-f1-reborn"
+              }
+            }
+          }
+        },
+        {
+          "id": "nametag-visibility-toggle",
+          "feature": {
+            "en": "Nametag visibility toggle",
+            "zh": "名称标签可见性切换"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "hidetags"
               }
             }
           }

@@ -1,0 +1,13 @@
+name = "Toggle Nametags"
+filename = "togglenametags-2.1.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/qFlNttam/versions/NUcBNQea/togglenametags-2.1.1.jar"
+hash-format = "sha512"
+hash = "a48cd9d2cbfbfa465d17e57c3e9b55ed50100fac17f7ebeb51d1700b3007578b3ba46013ff342c8c3cdcbca7a6b23db1820afce8c27a7d9a7675ca8412382b17"
+
+[update]
+[update.modrinth]
+mod-id = "qFlNttam"
+version = "NUcBNQea"

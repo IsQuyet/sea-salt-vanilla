@@ -34,7 +34,7 @@
 | 通用渲染剔除 | [More Culling](https://modrinth.com/mod/moreculling) |  |
 | 方块实体渲染优化 | [Enhanced Block Entities](https://modrinth.com/mod/ebe) | [Better Block Entities](https://modrinth.com/mod/better-block-entities) |
 | 树叶渲染剔除 | [Cull Leaves](https://modrinth.com/mod/cull-leaves) |  |
-| 粒子性能优化 | [AsyncParticles](https://modrinth.com/mod/asyncparticles) |  |
+| 粒子性能优化 | [Particle Core](https://modrinth.com/mod/particle-core) | [AsyncParticles](https://modrinth.com/mod/asyncparticles) |
 | 内存分配优化 | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  |
 | 客户端性能微调 | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  |
 | 输入事件轮询优化 | [Ixeris](https://modrinth.com/mod/ixeris) |  |
@@ -96,11 +96,12 @@
 | 连接方块轮廓 | [Seamless](https://modrinth.com/mod/seamless) |  |
 | 细节视觉效果 | [Subtle Effects](https://modrinth.com/mod/subtle-effects) |  |
 | 额外粒子效果 | [Particle Effects](https://modrinth.com/mod/particle-effects) |  |
-| 背包粒子效果 | [Inventory Particles](https://modrinth.com/mod/inventory-particles) |  |
+| 背包粒子效果 | [Inventory Particles](https://modrinth.com/mod/inventory-particles) | [Inventory Interactions](https://modrinth.com/mod/inventory-interactions) |
 | 氛围视觉效果 | [Mas Effects](https://modrinth.com/mod/mas-effects) |  |
 | 粒子交互 | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |  |
 | 气泡破裂效果 | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |  |
 | 落叶粒子 | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |  |
+| 柔软表面印痕 | [Snow Imprints](https://modrinth.com/mod/snow-imprints) |  |
 | 爆炸效果 | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |  |
 | 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
@@ -193,6 +194,7 @@
 | 物品与配方浏览 | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |  |
 | 方块与实体信息浮层 | [Jade 🔍](https://modrinth.com/mod/jade) |  |
 | 额外物品与方块提示 | [Peek](https://modrinth.com/mod/peek) |  |
+| 增强提示信息 | [Enhancedtooltips](https://modrinth.com/mod/enhancedtooltips) |  |
 | 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
 | 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
@@ -239,6 +241,7 @@
 | 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
 | 截图查看器 | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |  |
 | 截图用界面隐藏 | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |  |
+| 名称标签可见性切换 | [Hidetags](https://modrinth.com/mod/hidetags) |  |
 
 ### 地图与导航
 
@@ -281,12 +284,14 @@
 
 这些条目添加小型客户端便利功能，实用但不作为默认分发内容加入。
 
-| 功能 | 1.21.1 |
-| --- | --- |
-| 附魔提示说明 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |
-| 物品拾取通知 | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |
-| 物品切换工具 | [Itemswapper](https://modrinth.com/mod/itemswapper) |
-| 完成度追踪索引 | [Completionists Index](https://modrinth.com/mod/completionists-index) |
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
+| 附魔提示说明 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |  |
+| 物品拾取通知 | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |  |
+| 物品切换工具 | [Itemswapper](https://modrinth.com/mod/itemswapper) | [Slot Cycler](https://modrinth.com/mod/slot-cycler) |
+| 完成度追踪索引 | [Completionists Index](https://modrinth.com/mod/completionists-index) |  |
+| 生命值条显示 | [New Health Bars](https://modrinth.com/mod/new-health-bars) |  |
+| 背包标签页 | [Inventory Tabs](https://modrinth.com/mod/inventory-tabs) |  |
 
 ### 可选包管理
 
@@ -308,6 +313,8 @@
 | 天气粒子氛围 | [Particle Rain](https://modrinth.com/mod/particle-rain) |
 | 写实镜头视角 | [Real Camera](https://modrinth.com/mod/real-camera) |
 | 大气视觉氛围 | [Atmospherics](https://modrinth.com/mod/atmospherics) |
+| 烟雾效果改进 | [Better Smoke](https://modrinth.com/mod/better-smoke) |
+| 自然水体渲染 | [Natural Waters](https://modrinth.com/mod/natural-waters) |
 
 ### 可选工具与工作流
 

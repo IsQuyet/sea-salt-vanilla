@@ -26,11 +26,6 @@ hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
 metafile = true
 
 [[files]]
-file = "mods/asyncparticles.pw.toml"
-hash = "376d9f98e4b807355ade1e800fc8a455ae34dd0ee5913e04484c87e2a67ca717"
-metafile = true
-
-[[files]]
 file = "mods/badoptimizations.pw.toml"
 hash = "dd56ff2bcc4253d1d70c08333632743fb56cdc4cf5518dc6afc024164633145d"
 metafile = true
@@ -221,6 +216,11 @@ hash = "b1f89407254a20cde6c60994a6315bd841b7f562669a1d29b436ec97463ff2ae"
 metafile = true
 
 [[files]]
+file = "mods/enhancedtooltips.pw.toml"
+hash = "4815423054d46084c5fd1dce2d963eb48dcdf4a6542afa28b3558a16d94b67b9"
+metafile = true
+
+[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "eb8252941ef1fd3cf0eeb8df8d0a77213f33306cd3a64e8fce0f65e1db9ef76e"
 metafile = true
@@ -303,6 +303,11 @@ metafile = true
 [[files]]
 file = "mods/globalpacks.pw.toml"
 hash = "83650ffbad97ff20b09e8db87784ef4aa6d8d6857f55abe24f6e09bf900cb9af"
+metafile = true
+
+[[files]]
+file = "mods/hidetags.pw.toml"
+hash = "432eb2f37090793f572380ef58777994bb700a96ae6876ba2466fda0a5719698"
 metafile = true
 
 [[files]]
@@ -541,6 +546,11 @@ hash = "f819a3b4b7bf7c9bf2c273898f149ac83b96019473fe48a6f453b5cb170a3649"
 metafile = true
 
 [[files]]
+file = "mods/particle-core.pw.toml"
+hash = "97156c7cbfd94c3f457f5ef89ab65f1b963b1559f98fd3923ab40cf8cc21a905"
+metafile = true
+
+[[files]]
 file = "mods/particle-effects.pw.toml"
 hash = "1201266618a477c1e417ef6b50ca3b30cf0e5bd164bb093a333168656ba6a7b0"
 metafile = true
@@ -668,6 +678,11 @@ metafile = true
 [[files]]
 file = "mods/smooth-swapping.pw.toml"
 hash = "d1bf7f6b6033b5adcb0e3efe98e66edfb57c1263a10aa364c1fd6242e1252c7a"
+metafile = true
+
+[[files]]
+file = "mods/snow-imprints.pw.toml"
+hash = "f695e1a3cb454875e41bf7b61c2d0e9aee19984c3939c04525ba41fde645aeab"
 metafile = true
 
 [[files]]

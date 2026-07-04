@@ -245,8 +245,14 @@
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
-                "slug": "asyncparticles"
-              }
+                "slug": "particle-core"
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "asyncparticles"
+                }
+              ]
             }
           }
         },

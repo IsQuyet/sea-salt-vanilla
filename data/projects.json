@@ -27,13 +27,6 @@
     "slug": "appleskin",
     "id": "EsAfCjCV"
   },
-  "asyncparticles": {
-    "name": "AsyncParticles",
-    "type": "mod",
-    "source": "modrinth",
-    "slug": "asyncparticles",
-    "id": "c3onkd5k"
-  },
   "badoptimizations": {
     "name": "BadOptimizations",
     "type": "mod",
@@ -309,6 +302,12 @@
     "slug": "ebe",
     "id": "OVuFYfre"
   },
+  "enhancedtooltips": {
+    "name": "Enhancedtooltips",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "enhancedtooltips"
+  },
   "entity-model-features": {
     "name": "[EMF] Entity Model Features",
     "type": "mod",
@@ -432,6 +431,12 @@
     "source": "modrinth",
     "slug": "globalpacks",
     "id": "NRLPy2mk"
+  },
+  "hidetags": {
+    "name": "Hidetags",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "hidetags"
   },
   "hold-my-items": {
     "name": "Hold My Items",
@@ -695,6 +700,12 @@
     "slug": "paperdoll",
     "id": "edwFXb9k"
   },
+  "particle-core": {
+    "name": "Particle Core",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "particle-core"
+  },
   "particle-effects": {
     "name": "Particle Effects",
     "type": "mod",
@@ -859,6 +870,12 @@
     "source": "modrinth",
     "slug": "smooth-swapping",
     "id": "ydZic5r4"
+  },
+  "snow-imprints": {
+    "name": "Snow Imprints",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "snow-imprints"
   },
   "sodium": {
     "name": "Sodium",
