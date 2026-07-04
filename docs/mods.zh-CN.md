@@ -47,7 +47,7 @@
 | 功能 | 1.21.1 | 可选替代 |
 | --- | --- | --- |
 | 资源包浏览 | [Resourcify](https://modrinth.com/mod/resourcify) |  |
-| 全局包加载 | [Global Packs](https://modrinth.com/mod/globalpacks) |  |
+| 全局包加载 | [Global Packs](https://modrinth.com/mod/globalpacks) | [Open Loader](https://modrinth.com/mod/open-loader), [Paxi](https://modrinth.com/mod/paxi) |
 | 嵌套包管理 | [Packed Packs](https://modrinth.com/mod/packed-packs) |  |
 | 默认客户端选项与配置分发 | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | [Default Options](https://modrinth.com/mod/default-options) |
 

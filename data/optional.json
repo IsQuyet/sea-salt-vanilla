@@ -182,12 +182,24 @@
     "slug": "ok-zoomer",
     "id": "aXf2OSFU"
   },
+  "open-loader": {
+    "name": "Open Loader",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "open-loader"
+  },
   "particle-rain": {
     "name": "Particle Rain",
     "type": "mod",
     "source": "modrinth",
     "slug": "particle-rain",
     "id": "nrikgvxm"
+  },
+  "paxi": {
+    "name": "Paxi",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "paxi"
   },
   "pick-up-notifier": {
     "name": "Pick Up Notifier",

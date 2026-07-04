@@ -47,7 +47,7 @@ These entries help discover, load, or distribute pack-level resources and defaul
 | Feature | 1.21.1 | Alternatives |
 | --- | --- | --- |
 | Resource pack discovery | [Resourcify](https://modrinth.com/mod/resourcify) |  |
-| Global pack loading | [Global Packs](https://modrinth.com/mod/globalpacks) |  |
+| Global pack loading | [Global Packs](https://modrinth.com/mod/globalpacks) | [Open Loader](https://modrinth.com/mod/open-loader), [Paxi](https://modrinth.com/mod/paxi) |
 | Packed pack management | [Packed Packs](https://modrinth.com/mod/packed-packs) |  |
 | Default client options and config seeding | [Your Options Shall Be Respected (YOSBR)](https://modrinth.com/mod/yosbr) | [Default Options](https://modrinth.com/mod/default-options) |
 

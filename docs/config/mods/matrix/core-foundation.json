@@ -355,7 +355,17 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "globalpacks"
-              }
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "open-loader"
+                },
+                {
+                  "source": "modrinth",
+                  "slug": "paxi"
+                }
+              ]
             }
           }
         },
