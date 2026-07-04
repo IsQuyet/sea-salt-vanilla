@@ -37,6 +37,7 @@ These entries improve frame pacing, memory use, lighting, networking, and render
 | Memory allocation optimization | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  |
 | Client performance tweaks | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  |
 | Input event polling optimization | [Ixeris](https://modrinth.com/mod/ixeris) |  |
+| Thread scheduling optimization | [Threadtweak](https://modrinth.com/mod/threadtweak) |  |
 
 ### Pack management and defaults
 
@@ -102,6 +103,7 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Projectile visual style | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |
 | Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |
 | Immersive visual effects | [Perception](https://modrinth.com/mod/perception) |
+| Darkness effect accessibility | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |
 
 ### Audio
 
@@ -112,41 +114,43 @@ These entries add ambience and improve how sound events feel in play.
 | Ambient soundscapes | [AmbientSounds](https://modrinth.com/mod/ambientsounds) |
 | Footstep sounds | [Presence Footsteps](https://modrinth.com/mod/presence-footsteps) |
 | Sound event improvements | [Sounds](https://modrinth.com/mod/sound) |
+| Dynamic rain sounds | [Coolrain](https://modrinth.com/mod/coolrain) |
 
 ### Animation and movement
 
 These entries improve first-person, third-person, item, block, and movement presentation.
 
-| Feature | 1.21.1 |
-| --- | --- |
-| Player animations | [Not Enough Animations](https://modrinth.com/mod/not-enough-animations) |
-| Eating animations | [Eating Animation](https://modrinth.com/mod/eating-animation) |
-| Item drop physics | [ItemPhysic Lite](https://modrinth.com/mod/itemphysic-lite) |
-| Falling block animations | [Vectorientation](https://modrinth.com/mod/vectorientation) |
-| Block placement animations | [A Good Place](https://modrinth.com/mod/a-good-place) |
-| First-person item animations | [Hold My Items](https://modrinth.com/mod/hold-my-items) |
-| Held item display | [YDM's Weapon Master](https://modrinth.com/mod/weaponmaster) |
-| Camera motion | [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul) |
-| Elytra flight controls | [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) |
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
+| Player animations | [Not Enough Animations](https://modrinth.com/mod/not-enough-animations) |  |
+| Eating animations | [Eating Animation](https://modrinth.com/mod/eating-animation) |  |
+| Item drop physics | [ItemPhysic Lite](https://modrinth.com/mod/itemphysic-lite) |  |
+| Falling block animations | [Vectorientation](https://modrinth.com/mod/vectorientation) |  |
+| Block placement animations | [A Good Place](https://modrinth.com/mod/a-good-place) |  |
+| First-person item animations | [Hold My Items](https://modrinth.com/mod/hold-my-items) |  |
+| Held item display | [YDM's Weapon Master](https://modrinth.com/mod/weaponmaster) |  |
+| Camera motion | [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul) |  |
+| Third-person shoulder camera | [Shoulder Surfing Reloaded](https://modrinth.com/mod/shoulder-surfing-reloaded) | [Leawind Third Person](https://modrinth.com/mod/leawind-third-person) |
+| Elytra flight controls | [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) |  |
 
 ### Interface polish
 
 These entries adjust menus, UI motion, text rendering, and screen layout.
 
-| Feature | 1.21.1 |
-| --- | --- |
-| Menu customization | [FancyMenu](https://modrinth.com/mod/fancymenu) |
-| Player paper doll | [Paper Doll](https://modrinth.com/mod/paperdoll) |
-| Head cosmetic disguises | [DisguiseHeads](https://modrinth.com/mod/disguiseheads) |
-| Status effect folding | [Mini Effects](https://modrinth.com/mod/mini-effects) |
-| Inventory item animations | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) |
-| Inventory item swap animations | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) |
-| HUD positioning | [Raised](https://modrinth.com/mod/raised) |
-| UI background blur | [Blur+](https://modrinth.com/mod/blur-plus) |
-| Smooth scrolling | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) |
-| Smooth GUI animation | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |
-| Modern UI framework and text rendering | [Modern UI](https://modrinth.com/mod/modern-ui) |
-| Immersive UI interactions | [Immersive UI](https://modrinth.com/mod/immersive-ui) |
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
+| Menu customization | [FancyMenu](https://modrinth.com/mod/fancymenu) |  |
+| Player paper doll | [Paper Doll](https://modrinth.com/mod/paperdoll) |  |
+| Head cosmetic disguises | [DisguiseHeads](https://modrinth.com/mod/disguiseheads) |  |
+| Status effect folding | [Mini Effects](https://modrinth.com/mod/mini-effects) |  |
+| Inventory item animations | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) |  |
+| Inventory item swap animations | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) |  |
+| HUD positioning | [Raised](https://modrinth.com/mod/raised) |  |
+| UI background blur | [Blur+](https://modrinth.com/mod/blur-plus) |  |
+| Smooth scrolling | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) | [Smooth Scrolling Refurbished](https://modrinth.com/mod/smooth-scrolling-refurbished) |
+| Smooth GUI animation | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
+| Modern UI framework and text rendering | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
+| Immersive UI interactions | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
 
 ### Chat and social UI
 
@@ -193,31 +197,34 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Inventory item highlighting | [Item Highlighter](https://modrinth.com/mod/item-highlighter) |  |
 | Input method conflict handling | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  |
 | Chinese character search support | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  |
+| Sign and book text editing | [Scribble](https://modrinth.com/mod/scribble) |  |
 | Zoom controls | [Zoomify (Zoom)](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer - It's Zoom!](https://modrinth.com/mod/ok-zoomer) |
 
 ### HUD information and client convenience
 
 These entries surface gameplay information or remove small interface friction.
 
-| Feature | 1.21.1 |
-| --- | --- |
-| Advanced HUD overlays | [MiniHUD](https://modrinth.com/mod/minihud) |
-| Inventory HUD overlay | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |
-| Mount HUD improvements | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
-| Statistics screen improvements | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |
-| Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) |
-| World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |
-| Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) |
-| Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |
-| Chat interface convenience | [Chat Patches](https://modrinth.com/mod/chatpatches) |
-| Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |
-| Armor detail display | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
-| Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |
-| Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |
-| Resource pack warning suppression | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |
-| Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |
-| Screenshot viewer | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |
-| Hide interface for screenshots | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
+| Advanced HUD overlays | [MiniHUD](https://modrinth.com/mod/minihud) |  |
+| Inventory HUD overlay | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |  |
+| Mount HUD improvements | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |  |
+| Statistics screen improvements | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
+| Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) |  |
+| World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
+| Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
+| Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
+| Chat interface convenience | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
+| Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
+| Armor detail display | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
+| In-game skin management | [Skinshuffle](https://modrinth.com/mod/skinshuffle) |  |
+| Status bar visibility | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) |  |
+| Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
+| Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
+| Resource pack warning suppression | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |  |
+| Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
+| Screenshot viewer | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |  |
+| Hide interface for screenshots | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |  |
 
 ### Map and navigation
 
@@ -263,6 +270,23 @@ These entries mainly improve the client-side experience when playing online or o
 | Collectible heads | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | Friendly interactions | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
 
+### Optional client convenience
+
+These entries add small client-side quality-of-life features that are useful but not part of the default distribution.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Enchantment tooltip descriptions | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |
+| Item pickup notifications | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |
+
+### Optional pack management
+
+These entries provide opt-in controls for resource packs, modpack resources, or pack-level behavior.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Resource pack override control | [Resource Pack Overrides](https://modrinth.com/mod/resource-pack-overrides) |
+
 ### Optional audiovisual ambience
 
 These entries can strongly shape visual or audio ambience, so they are kept as opt-in choices.
@@ -282,5 +306,6 @@ These entries support specific creative, building, recording, or input workflows
 | Orthographic screenshot tools | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
 | Schematic building | [Litematica](https://modrinth.com/mod/litematica) |  |
 | Creative builder tools | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
+| Advanced creative building tools | [Axiom](https://modrinth.com/mod/axiom) |  |
 | Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
 | Controller support | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |

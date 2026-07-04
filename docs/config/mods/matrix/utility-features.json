@@ -247,6 +247,21 @@
           }
         },
         {
+          "id": "sign-and-book-text-editing",
+          "feature": {
+            "en": "Sign and book text editing",
+            "zh": "告示牌与书本编辑"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "scribble"
+              }
+            }
+          }
+        },
+        {
           "id": "zoom-controls",
           "feature": {
             "en": "Zoom controls",
@@ -444,7 +459,43 @@
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
-                "slug": "detail-armor-bar"
+                "slug": "detail-armor-bar-reconstructed"
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "detail-armor-bar"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "in-game-skin-management",
+          "feature": {
+            "en": "In-game skin management",
+            "zh": "游戏内皮肤管理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "skinshuffle"
+              }
+            }
+          }
+        },
+        {
+          "id": "status-bar-visibility",
+          "feature": {
+            "en": "Status bar visibility",
+            "zh": "状态栏可见性"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "leave-my-bars-alone"
               }
             }
           }

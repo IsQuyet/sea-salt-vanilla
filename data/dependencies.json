@@ -143,6 +143,17 @@
       "modmenu"
     ]
   },
+  "puzzles-lib": {
+    "name": "Puzzles Lib",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "puzzles-lib",
+    "id": "QAGBst4M",
+    "required_by": [
+      "leave-my-bars-alone",
+      "mindful-darkness"
+    ]
+  },
   "searchables": {
     "name": "Searchables",
     "type": "mod",

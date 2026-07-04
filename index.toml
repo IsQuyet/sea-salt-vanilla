@@ -136,6 +136,11 @@ hash = "eecdc8127f69c74ff55fd183d1f1d7d5ef3e714d73845a239fe9e086147a67b1"
 metafile = true
 
 [[files]]
+file = "mods/coolrain.pw.toml"
+hash = "2a8390fe5190839d1206a8ac6d6fa245d821fd0c1cef5bf93ad43dab07339f5a"
+metafile = true
+
+[[files]]
 file = "mods/creativecore.pw.toml"
 hash = "cf82858ab1b2ccb3ac0af8f11d8e5f71440c903ef94525e2b6b45a41a4ccf43d"
 metafile = true
@@ -156,8 +161,8 @@ hash = "4ab83564a6e16a9b61b13b05e7f13d86ac05069a4b45b678eb0f3b6a66b460d0"
 metafile = true
 
 [[files]]
-file = "mods/detail-armor-bar.pw.toml"
-hash = "183a686a2e5076c6dbb6c6d8145a5b10d544295cf1a7bbffd8bbceaf072ede4f"
+file = "mods/detail-armor-bar-reconstructed.pw.toml"
+hash = "9001d2694a7541d4556df7c82ccba4b42c8280355a914d0424e7f1b32e873dde"
 metafile = true
 
 [[files]]
@@ -366,6 +371,11 @@ hash = "c4e45594c8d1ab3dacc3b49142f16fb253178dd31d97cc917bf4a4d54f21e081"
 metafile = true
 
 [[files]]
+file = "mods/leave-my-bars-alone.pw.toml"
+hash = "b0d31dcffb5f44ec5f63507f6bcaca7edbadf2145b57d51fb491480e16c36d74"
+metafile = true
+
+[[files]]
 file = "mods/libipn.pw.toml"
 hash = "78eafe609d6474acab89104fe0f47d15c00348974c1d4d9b95599ee20a213dbe"
 metafile = true
@@ -398,6 +408,11 @@ metafile = true
 [[files]]
 file = "mods/midnightlib.pw.toml"
 hash = "647807ff387e333abd790b47082a3cf6b7d41a2b27a4337ff65a611f096a7315"
+metafile = true
+
+[[files]]
+file = "mods/mindful-darkness.pw.toml"
+hash = "d70177535b81d2f9c35843c031a664945e6520122372137ad523b1de4aba63fc"
 metafile = true
 
 [[files]]
@@ -516,6 +531,11 @@ hash = "d4ad5c4462a3ee981f6ac3eff82c3cc1d6f08b3c01c99e16face1261a6161684"
 metafile = true
 
 [[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "29583ec68be91596c7444b0fcd5609676d4bc0a1d083336fb2c279e3b0e09b3f"
+metafile = true
+
+[[files]]
 file = "mods/raised.pw.toml"
 hash = "d31e198b99f302fd2bcb19e48675a96b7fbe4aa009988f754b0d5b3657ee22bc"
 metafile = true
@@ -546,6 +566,11 @@ hash = "ba23c74355d05314b666f63512ebc1b91abc4926a48b00c137bd5e2be6868e82"
 metafile = true
 
 [[files]]
+file = "mods/scribble.pw.toml"
+hash = "717906f148da2e135fa8a6b0bb1a206d5bf2369bffbb0c5f0878346eca5e7521"
+metafile = true
+
+[[files]]
 file = "mods/seamless.pw.toml"
 hash = "c42f17d185f150c9962bed6b9dc0ee6e119ec3b700b7d1a8315e9a9e2481eae4"
 metafile = true
@@ -561,8 +586,18 @@ hash = "9c9c2a9cc191c7cce4bb5143f19a5520253333e13d6c9f6ed873dcf63bc56628"
 metafile = true
 
 [[files]]
+file = "mods/shoulder-surfing-reloaded.pw.toml"
+hash = "5808fa18aa0600e58d7d49c08cbdf6d415364f6b810ae19e6f5eff917b474028"
+metafile = true
+
+[[files]]
 file = "mods/shulkerboxtooltip.pw.toml"
 hash = "83b5a1c0b39aa94492a13f319c097ff8e7e55a6718e287e5d73b32f7500f1727"
+metafile = true
+
+[[files]]
+file = "mods/skinshuffle.pw.toml"
+hash = "f0514cffe232d6c2f33b98176f0b61929caa91786547cda99a85dce28d65969f"
 metafile = true
 
 [[files]]
@@ -608,6 +643,11 @@ metafile = true
 [[files]]
 file = "mods/tcdcommons.pw.toml"
 hash = "ffa71e1ce188b71291daa8bb67e8094ff7d0ef695add362200591c28e75cf457"
+metafile = true
+
+[[files]]
+file = "mods/threadtweak.pw.toml"
+hash = "e77fe4473df0685a27bdc27f9a50c0dced4d298a2765301c2b1f0b11e078a887"
 metafile = true
 
 [[files]]

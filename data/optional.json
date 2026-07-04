@@ -1,4 +1,10 @@
 {
+  "axiom": {
+    "name": "Axiom",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "axiom"
+  },
   "better-block-entities": {
     "name": "Better Block Entities",
     "type": "mod",
@@ -41,12 +47,25 @@
     "slug": "default-options",
     "id": "WEg59z5b"
   },
+  "detail-armor-bar": {
+    "name": "Detail Armor Bar",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "detail-armor-bar",
+    "id": "hAt6ty93"
+  },
   "emotecraft": {
     "name": "Emotecraft",
     "type": "mod",
     "source": "modrinth",
     "slug": "emotecraft",
     "id": "pZ2wrerK"
+  },
+  "enchantment-descriptions": {
+    "name": "Enchantment Descriptions",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "enchantment-descriptions"
   },
   "essential": {
     "name": "Essential Mod",
@@ -68,6 +87,12 @@
     "source": "modrinth",
     "slug": "lambdynamiclights",
     "id": "yBW8D80W"
+  },
+  "leawind-third-person": {
+    "name": "Leawind Third Person",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "leawind-third-person"
   },
   "litematica": {
     "name": "Litematica",
@@ -117,6 +142,12 @@
     "slug": "particle-rain",
     "id": "nrikgvxm"
   },
+  "pick-up-notifier": {
+    "name": "Pick Up Notifier",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "pick-up-notifier"
+  },
   "pixelshot": {
     "name": "Pixelshot",
     "type": "mod",
@@ -138,6 +169,12 @@
     "slug": "repo-heads",
     "id": "Jaoe8qGe"
   },
+  "resource-pack-overrides": {
+    "name": "Resource Pack Overrides",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "resource-pack-overrides"
+  },
   "server-unpacker": {
     "name": "Server Unpacker",
     "type": "mod",
@@ -151,6 +188,12 @@
     "source": "modrinth",
     "slug": "simple-voice-chat",
     "id": "9eGKb6K1"
+  },
+  "smooth-scrolling-refurbished": {
+    "name": "Smooth Scrolling Refurbished",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "smooth-scrolling-refurbished"
   },
   "sound-physics-remastered": {
     "name": "Sound Physics Remastered",

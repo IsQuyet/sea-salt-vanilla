@@ -37,6 +37,7 @@
 | 内存分配优化 | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  |
 | 客户端性能微调 | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  |
 | 输入事件轮询优化 | [Ixeris](https://modrinth.com/mod/ixeris) |  |
+| 线程调度优化 | [Threadtweak](https://modrinth.com/mod/threadtweak) |  |
 
 ### 包管理与默认设置
 
@@ -102,6 +103,7 @@
 | 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |
 | 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |
 | 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception) |
+| 黑暗效果可访问性 | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |
 
 ### 音效
 
@@ -112,41 +114,43 @@
 | 环境音景 | [AmbientSounds](https://modrinth.com/mod/ambientsounds) |
 | 脚步声 | [Presence Footsteps](https://modrinth.com/mod/presence-footsteps) |
 | 声音事件改进 | [Sounds](https://modrinth.com/mod/sound) |
+| 动态雨声 | [Coolrain](https://modrinth.com/mod/coolrain) |
 
 ### 动画与移动
 
 这些条目改善第一人称、第三人称、物品、方块和移动表现。
 
-| 功能 | 1.21.1 |
-| --- | --- |
-| 玩家动画 | [Not Enough Animations](https://modrinth.com/mod/not-enough-animations) |
-| 进食动画 | [Eating Animation](https://modrinth.com/mod/eating-animation) |
-| 物品掉落物理 | [ItemPhysic Lite](https://modrinth.com/mod/itemphysic-lite) |
-| 下落方块动画 | [Vectorientation](https://modrinth.com/mod/vectorientation) |
-| 方块放置动画 | [A Good Place](https://modrinth.com/mod/a-good-place) |
-| 第一人称物品动画 | [Hold My Items](https://modrinth.com/mod/hold-my-items) |
-| 手持物品显示 | [YDM's Weapon Master](https://modrinth.com/mod/weaponmaster) |
-| 镜头运动 | [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul) |
-| 鞘翅飞行控制 | [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) |
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
+| 玩家动画 | [Not Enough Animations](https://modrinth.com/mod/not-enough-animations) |  |
+| 进食动画 | [Eating Animation](https://modrinth.com/mod/eating-animation) |  |
+| 物品掉落物理 | [ItemPhysic Lite](https://modrinth.com/mod/itemphysic-lite) |  |
+| 下落方块动画 | [Vectorientation](https://modrinth.com/mod/vectorientation) |  |
+| 方块放置动画 | [A Good Place](https://modrinth.com/mod/a-good-place) |  |
+| 第一人称物品动画 | [Hold My Items](https://modrinth.com/mod/hold-my-items) |  |
+| 手持物品显示 | [YDM's Weapon Master](https://modrinth.com/mod/weaponmaster) |  |
+| 镜头运动 | [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul) |  |
+| 第三人称肩视角镜头 | [Shoulder Surfing Reloaded](https://modrinth.com/mod/shoulder-surfing-reloaded) | [Leawind Third Person](https://modrinth.com/mod/leawind-third-person) |
+| 鞘翅飞行控制 | [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) |  |
 
 ### 界面美化
 
 这些条目调整菜单、UI 动效、文字渲染和界面布局。
 
-| 功能 | 1.21.1 |
-| --- | --- |
-| 菜单定制 | [FancyMenu](https://modrinth.com/mod/fancymenu) |
-| 纸娃娃显示 | [Paper Doll](https://modrinth.com/mod/paperdoll) |
-| 头部外观伪装 | [DisguiseHeads](https://modrinth.com/mod/disguiseheads) |
-| 状态效果折叠 | [Mini Effects](https://modrinth.com/mod/mini-effects) |
-| 背包物品动画 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) |
-| 背包物品交换动画 | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) |
-| HUD 位置调整 | [Raised](https://modrinth.com/mod/raised) |
-| UI 背景模糊 | [Blur+](https://modrinth.com/mod/blur-plus) |
-| 平滑滚动 | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) |
-| 平滑 GUI 动画 | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |
-| 现代 UI 框架与文字渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) |
-| 沉浸式 UI 交互 | [Immersive UI](https://modrinth.com/mod/immersive-ui) |
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
+| 菜单定制 | [FancyMenu](https://modrinth.com/mod/fancymenu) |  |
+| 纸娃娃显示 | [Paper Doll](https://modrinth.com/mod/paperdoll) |  |
+| 头部外观伪装 | [DisguiseHeads](https://modrinth.com/mod/disguiseheads) |  |
+| 状态效果折叠 | [Mini Effects](https://modrinth.com/mod/mini-effects) |  |
+| 背包物品动画 | [Tiny Item Animations](https://modrinth.com/mod/tiny-item-animations) |  |
+| 背包物品交换动画 | [Smooth Swapping](https://modrinth.com/mod/smooth-swapping) |  |
+| HUD 位置调整 | [Raised](https://modrinth.com/mod/raised) |  |
+| UI 背景模糊 | [Blur+](https://modrinth.com/mod/blur-plus) |  |
+| 平滑滚动 | [Smooth Scrolling](https://modrinth.com/mod/smooth-scroll) | [Smooth Scrolling Refurbished](https://modrinth.com/mod/smooth-scrolling-refurbished) |
+| 平滑 GUI 动画 | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
+| 现代 UI 框架与文字渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
+| 沉浸式 UI 交互 | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
 
 ### 聊天与社交 UI
 
@@ -193,31 +197,34 @@
 | 背包物品高亮 | [Item Highlighter](https://modrinth.com/mod/item-highlighter) |  |
 | 输入法冲突处理 | [IMBlocker](https://modrinth.com/mod/imblocker-original) |  |
 | 中文字符搜索支持 | [JustEnoughCharacters](https://modrinth.com/mod/justenoughcharacters) |  |
+| 告示牌与书本编辑 | [Scribble](https://modrinth.com/mod/scribble) |  |
 | 缩放控制 | [Zoomify (Zoom)](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer - It's Zoom!](https://modrinth.com/mod/ok-zoomer) |
 
 ### HUD 信息与客户端便利功能
 
 这些条目展示游戏信息，或减少界面操作中的小摩擦。
 
-| 功能 | 1.21.1 |
-| --- | --- |
-| 高级 HUD 浮层 | [MiniHUD](https://modrinth.com/mod/minihud) |
-| 背包 HUD 浮层 | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |
-| 骑乘 HUD 改进 | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
-| 统计界面改进 | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |
-| 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |
-| 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |
-| 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |
-| 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |
-| 聊天界面便利功能 | [Chat Patches](https://modrinth.com/mod/chatpatches) |
-| 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |
-| 盔甲细节显示 | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
-| 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |
-| 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |
-| 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |
-| 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |
-| 截图查看器 | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |
-| 截图用界面隐藏 | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
+| 高级 HUD 浮层 | [MiniHUD](https://modrinth.com/mod/minihud) |  |
+| 背包 HUD 浮层 | [InventoryHUD+](https://modrinth.com/mod/inventoryhudplus) |  |
+| 骑乘 HUD 改进 | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |  |
+| 统计界面改进 | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
+| 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |  |
+| 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
+| 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
+| 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
+| 聊天界面便利功能 | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
+| 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
+| 盔甲细节显示 | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
+| 游戏内皮肤管理 | [Skinshuffle](https://modrinth.com/mod/skinshuffle) |  |
+| 状态栏可见性 | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) |  |
+| 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
+| 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
+| 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |  |
+| 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
+| 截图查看器 | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |  |
+| 截图用界面隐藏 | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |  |
 
 ### 地图与导航
 
@@ -263,6 +270,23 @@
 | 收藏头像 | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | 好友互动 | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
 
+### 可选客户端便利功能
+
+这些条目添加小型客户端便利功能，实用但不作为默认分发内容加入。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 附魔提示说明 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |
+| 物品拾取通知 | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |
+
+### 可选包管理
+
+这些条目提供资源包、整合包资源或包级行为的可选控制。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 资源包覆盖控制 | [Resource Pack Overrides](https://modrinth.com/mod/resource-pack-overrides) |
+
 ### 可选视听氛围
 
 这些条目会明显影响画面或声音氛围，因此作为可选项保留。
@@ -282,5 +306,6 @@
 | 正交截图工具 | [OrthoCamera](https://modrinth.com/mod/orthocamera) | [Pixelshot](https://modrinth.com/mod/pixelshot) |
 | 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |  |
 | 创造模式建造工具 | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
+| 高级创造建造工具 | [Axiom](https://modrinth.com/mod/axiom) |  |
 | 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |  |
 | 手柄支持 | [Controlify (Controller support)](https://modrinth.com/mod/controlify) |  |

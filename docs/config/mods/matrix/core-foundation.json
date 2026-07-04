@@ -279,6 +279,21 @@
               }
             }
           }
+        },
+        {
+          "id": "thread-scheduling-optimization",
+          "feature": {
+            "en": "Thread scheduling optimization",
+            "zh": "线程调度优化"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "threadtweak"
+              }
+            }
+          }
         }
       ]
     },

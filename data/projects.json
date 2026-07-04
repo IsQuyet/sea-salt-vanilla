@@ -202,6 +202,12 @@
     "slug": "controlling",
     "id": "xv94TkTM"
   },
+  "coolrain": {
+    "name": "Coolrain",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "coolrain"
+  },
   "cull-leaves": {
     "name": "Cull Leaves",
     "type": "mod",
@@ -223,12 +229,11 @@
     "slug": "dcwa",
     "id": "HdwRs3kc"
   },
-  "detail-armor-bar": {
-    "name": "Detail Armor Bar",
+  "detail-armor-bar-reconstructed": {
+    "name": "Detail Armor Bar Reconstructed",
     "type": "mod",
     "source": "modrinth",
-    "slug": "detail-armor-bar",
-    "id": "hAt6ty93"
+    "slug": "detail-armor-bar-reconstructed"
   },
   "disguiseheads": {
     "name": "DisguiseHeads",
@@ -503,6 +508,12 @@
     "slug": "krypton",
     "id": "fQEb0iXm"
   },
+  "leave-my-bars-alone": {
+    "name": "Leave My Bars Alone",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "leave-my-bars-alone"
+  },
   "lithium": {
     "name": "Lithium",
     "type": "mod",
@@ -523,6 +534,12 @@
     "source": "modrinth",
     "slug": "mas-effects",
     "id": "YsP4hqhn"
+  },
+  "mindful-darkness": {
+    "name": "Mindful Darkness",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "mindful-darkness"
   },
   "mini-effects": {
     "name": "Mini Effects",
@@ -720,6 +737,12 @@
     "slug": "screenshot-viewer",
     "id": "laNoi025"
   },
+  "scribble": {
+    "name": "Scribble",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "scribble"
+  },
   "seamless": {
     "name": "Seamless",
     "type": "mod",
@@ -727,12 +750,24 @@
     "slug": "seamless",
     "id": "rhyHyQke"
   },
+  "shoulder-surfing-reloaded": {
+    "name": "Shoulder Surfing Reloaded",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "shoulder-surfing-reloaded"
+  },
   "shulkerboxtooltip": {
     "name": "Shulker Box Tooltip",
     "type": "mod",
     "source": "modrinth",
     "slug": "shulkerboxtooltip",
     "id": "2M01OLQq"
+  },
+  "skinshuffle": {
+    "name": "Skinshuffle",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "skinshuffle"
   },
   "smooth-gui": {
     "name": "Smooth Gui",
@@ -795,6 +830,12 @@
     "source": "modrinth",
     "slug": "subtle-effects",
     "id": "4q8UOK1d"
+  },
+  "threadtweak": {
+    "name": "Threadtweak",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "threadtweak"
   },
   "tiny-item-animations": {
     "name": "Tiny Item Animations",

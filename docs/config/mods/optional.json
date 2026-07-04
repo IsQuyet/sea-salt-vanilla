@@ -203,6 +203,77 @@
       ]
     },
     {
+      "id": "optional-client-convenience",
+      "title": {
+        "en": "Optional client convenience",
+        "zh": "可选客户端便利功能"
+      },
+      "description": {
+        "en": "These entries add small client-side quality-of-life features that are useful but not part of the default distribution.",
+        "zh": "这些条目添加小型客户端便利功能，实用但不作为默认分发内容加入。"
+      },
+      "rows": [
+        {
+          "id": "enchantment-tooltip-descriptions",
+          "feature": {
+            "en": "Enchantment tooltip descriptions",
+            "zh": "附魔提示说明"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "enchantment-descriptions"
+              }
+            }
+          }
+        },
+        {
+          "id": "item-pickup-notifications",
+          "feature": {
+            "en": "Item pickup notifications",
+            "zh": "物品拾取通知"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "pick-up-notifier"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "optional-pack-management",
+      "title": {
+        "en": "Optional pack management",
+        "zh": "可选包管理"
+      },
+      "description": {
+        "en": "These entries provide opt-in controls for resource packs, modpack resources, or pack-level behavior.",
+        "zh": "这些条目提供资源包、整合包资源或包级行为的可选控制。"
+      },
+      "rows": [
+        {
+          "id": "resource-pack-override-control",
+          "feature": {
+            "en": "Resource pack override control",
+            "zh": "资源包覆盖控制"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "resource-pack-overrides"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
       "id": "optional-audiovisual-ambience",
       "title": {
         "en": "Optional audiovisual ambience",
@@ -318,6 +389,21 @@
               "selected": {
                 "source": "curseforge",
                 "slug": "lottweaks"
+              }
+            }
+          }
+        },
+        {
+          "id": "advanced-creative-building-tools",
+          "feature": {
+            "en": "Advanced creative building tools",
+            "zh": "高级创造建造工具"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "axiom"
               }
             }
           }

@@ -408,6 +408,21 @@
               }
             }
           }
+        },
+        {
+          "id": "darkness-effect-accessibility",
+          "feature": {
+            "en": "Darkness effect accessibility",
+            "zh": "黑暗效果可访问性"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "mindful-darkness"
+              }
+            }
+          }
         }
       ]
     },
@@ -463,6 +478,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "sound"
+              }
+            }
+          }
+        },
+        {
+          "id": "dynamic-rain-sounds",
+          "feature": {
+            "en": "Dynamic rain sounds",
+            "zh": "动态雨声"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "coolrain"
               }
             }
           }
@@ -597,6 +627,27 @@
                 "source": "modrinth",
                 "slug": "cameraoverhaul"
               }
+            }
+          }
+        },
+        {
+          "id": "third-person-shoulder-camera",
+          "feature": {
+            "en": "Third-person shoulder camera",
+            "zh": "第三人称肩视角镜头"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "shoulder-surfing-reloaded"
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "leawind-third-person"
+                }
+              ]
             }
           }
         },
@@ -759,7 +810,13 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "smooth-scroll"
-              }
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "smooth-scrolling-refurbished"
+                }
+              ]
             }
           }
         },
