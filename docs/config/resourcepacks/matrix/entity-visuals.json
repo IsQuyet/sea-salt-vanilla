@@ -50,6 +50,27 @@
               }
             }
           }
+        },
+        {
+          "id": "fresh-animations-player-extension",
+          "feature": {
+            "en": "Third-person player animations",
+            "zh": "第三人称玩家动画"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "fa-player-extension"
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "detailed-animations"
+                }
+              ]
+            }
+          }
         }
       ]
     }

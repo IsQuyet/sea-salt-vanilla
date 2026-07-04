@@ -1,0 +1,13 @@
+name = "Vanilla Experience+"
+filename = "§6§lVanilla Experience+§0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/8bf2GogI/versions/SQLAPuga/%C2%A76%C2%A7lVanilla%20Experience%2B%C2%A70.zip"
+hash-format = "sha512"
+hash = "abf2da8f82e72a921381e548a72ed3b0fc8635fd8cd41d7408aeba43efa550af4430edfb1a923fecedb1d680fd741a77ddc27438380243a5252c3eabc9946711"
+
+[update]
+[update.modrinth]
+mod-id = "8bf2GogI"
+version = "SQLAPuga"

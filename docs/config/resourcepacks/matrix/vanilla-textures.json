@@ -35,6 +35,64 @@
               }
             }
           }
+        },
+        {
+          "id": "better-grass-textures",
+          "feature": {
+            "en": "Better grass textures",
+            "zh": "更好的草地贴图"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "fast-better-grass"
+              }
+            }
+          }
+        },
+        {
+          "id": "vanilla-experience-refinements",
+          "feature": {
+            "en": "Vanilla experience refinements",
+            "zh": "原版体验细节润色"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "vanilla-exp"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "gui-and-hud-textures",
+      "title": {
+        "en": "GUI and HUD textures",
+        "zh": "GUI 与 HUD 贴图"
+      },
+      "description": {
+        "en": "These resource packs refine container screens, HUD elements, and other vanilla interface textures.",
+        "zh": "这些资源包润色容器界面、HUD 元素和其他原版界面贴图。"
+      },
+      "rows": [
+        {
+          "id": "container-gui-and-hud-recolors",
+          "feature": {
+            "en": "Container GUI and HUD recolors",
+            "zh": "容器 GUI 与 HUD 重着色"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "recolourful-containers-gui"
+              }
+            }
+          }
         }
       ]
     }

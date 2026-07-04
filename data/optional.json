@@ -72,6 +72,12 @@
     "slug": "detail-armor-bar",
     "id": "hAt6ty93"
   },
+  "detailed-animations": {
+    "name": "Detailed Animations",
+    "type": "resourcepack",
+    "source": "modrinth",
+    "slug": "detailed-animations"
+  },
   "emotecraft": {
     "name": "Emotecraft",
     "type": "mod",

@@ -343,6 +343,12 @@
     "slug": "explosive-enhancement",
     "id": "OSQ8mw2r"
   },
+  "fa-player-extension": {
+    "name": "Fa Player Extension",
+    "type": "resourcepack",
+    "source": "modrinth",
+    "slug": "fa-player-extension"
+  },
   "fabric-api": {
     "name": "Fabric API",
     "type": "mod",
@@ -376,6 +382,12 @@
     "source": "modrinth",
     "slug": "fancymenu",
     "id": "Wq5SjeWM"
+  },
+  "fast-better-grass": {
+    "name": "Fast Better Grass",
+    "type": "resourcepack",
+    "source": "modrinth",
+    "slug": "fast-better-grass"
   },
   "fast-ip-ping": {
     "name": "Fast IP Ping",
@@ -769,6 +781,12 @@
     "slug": "reacharound",
     "id": "r3VgI4QN"
   },
+  "recolourful-containers-gui": {
+    "name": "Recolourful Containers Gui",
+    "type": "resourcepack",
+    "source": "modrinth",
+    "slug": "recolourful-containers-gui"
+  },
   "rei": {
     "name": "Roughly Enough Items (REI)",
     "type": "mod",
@@ -964,6 +982,12 @@
     "source": "modrinth",
     "slug": "twod_projectiles",
     "id": "W2K5WNdH"
+  },
+  "vanilla-exp": {
+    "name": "Vanilla Exp",
+    "type": "resourcepack",
+    "source": "modrinth",
+    "slug": "vanilla-exp"
   },
   "vectorientation": {
     "name": "Vectorientation",
