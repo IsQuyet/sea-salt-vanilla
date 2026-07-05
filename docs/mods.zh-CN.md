@@ -226,6 +226,7 @@
 | 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |  |
 | 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
 | 世界删除到回收站 | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
+| 断开连接确认 | [Confirm Disconnect](https://modrinth.com/mod/confirm-disconnect) |  |
 | 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
 | 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
 | 不安全聊天弹窗隐藏 | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |  |

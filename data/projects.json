@@ -188,6 +188,13 @@
     "slug": "configured",
     "id": "HlpEBg3R"
   },
+  "confirm-disconnect": {
+    "name": "Confirm Disconnect",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "confirm-disconnect",
+    "id": "qyu2y7wG"
+  },
   "continents": {
     "name": "Continents",
     "type": "datapack",

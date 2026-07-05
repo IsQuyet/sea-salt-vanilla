@@ -471,6 +471,21 @@
           }
         },
         {
+          "id": "disconnect-confirmation",
+          "feature": {
+            "en": "Disconnect confirmation",
+            "zh": "断开连接确认"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "confirm-disconnect"
+              }
+            }
+          }
+        },
+        {
           "id": "advancement-screen-improvements",
           "feature": {
             "en": "Advancement screen improvements",

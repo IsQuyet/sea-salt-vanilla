@@ -156,6 +156,11 @@ hash = "b5bdeb1177654fc3914be329612778078231cd3dc1b9157669c641c905146690"
 metafile = true
 
 [[files]]
+file = "mods/confirm-disconnect.pw.toml"
+hash = "c1b842bfa27a3480d3148c51d1bc8bcf775fb2926d3cd692ccbdb3f4c37a42b9"
+metafile = true
+
+[[files]]
 file = "mods/continuity.pw.toml"
 hash = "4f97764f3cb4c74f84afbe32cf8a1d2cefecda129c0f1441906562dcb8f2b8cb"
 metafile = true
