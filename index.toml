@@ -10,7 +10,7 @@ hash = "0fda8150841f88ee8d2cf4f92bc0c9085d01b5732d2040ed93492557c1e75326"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/assets/splash.txt"
-hash = "14d48f912c0636c59c7ce499fc98750ec909a9f77b637084d038b76313fccab1"
+hash = "9ac9fee5c13594591ab429303512ee73a0c8a3a5f4719164d13502badf34f665"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/customization/title_screen_layout.txt"
@@ -88,6 +88,11 @@ metafile = true
 [[files]]
 file = "mods/better-f1-reborn.pw.toml"
 hash = "5c3eaf036c6725c2a0be6507f73217571eda0d71744796e104799ca83ab60616"
+metafile = true
+
+[[files]]
+file = "mods/better-saved-hotbars.pw.toml"
+hash = "8136c7bbd401286b20651598161815d3f64e0bb634d72788d3128eee614fb12b"
 metafile = true
 
 [[files]]

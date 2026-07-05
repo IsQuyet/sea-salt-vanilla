@@ -198,6 +198,7 @@
 | 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
 | 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
+| 已保存快捷栏管理 | [Better Saved Hotbars](https://modrinth.com/mod/better-saved-hotbars) | [Better Saved Hotbars Forked](https://modrinth.com/mod/better-saved-hotbars-forked) |
 | 鼠标背包操作 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  |
 | 边缘方块放置 | [Reacharound](https://modrinth.com/mod/reacharound) |  |
 | 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove) |  |

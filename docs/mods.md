@@ -198,6 +198,7 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
 | Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | Inventory profiles and sorting | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
+| Saved hotbar management | [Better Saved Hotbars](https://modrinth.com/mod/better-saved-hotbars) | [Better Saved Hotbars Forked](https://modrinth.com/mod/better-saved-hotbars-forked) |
 | Mouse inventory actions | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  |
 | Edge block placement | [Reacharound](https://modrinth.com/mod/reacharound) |  |
 | Inventory movement | [InvMove](https://modrinth.com/mod/invmove) |  |

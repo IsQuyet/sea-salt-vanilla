@@ -127,6 +127,27 @@
           }
         },
         {
+          "id": "saved-hotbar-management",
+          "feature": {
+            "en": "Saved hotbar management",
+            "zh": "已保存快捷栏管理"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "better-saved-hotbars"
+              },
+              "alternatives": [
+                {
+                  "source": "modrinth",
+                  "slug": "better-saved-hotbars-forked"
+                }
+              ]
+            }
+          }
+        },
+        {
           "id": "mouse-inventory-actions",
           "feature": {
             "en": "Mouse inventory actions",
