@@ -3,13 +3,12 @@
 
 from __future__ import annotations
 
-import argparse
 import json
 from typing import Any
 
 from project_data_common import (
-    CACHE,
     DEPENDENCY_CACHE,
+    MissingModrinthCacheError,
     PROJECT_CACHE,
     TARGET_VERSION,
     build_documented_sets,
@@ -24,11 +23,7 @@ from project_data_common import (
     load_installed_projects,
     load_project_cache,
     load_project_catalog,
-    markdown_escape,
-    markdown_link,
-    required_by_names,
     write_json,
-    write_text,
 )
 from project_data_invariants import generated_data_invariants
 from project_data_identity import (
@@ -40,7 +35,6 @@ from project_data_identity import (
 )
 
 
-OUTPUT = CACHE / "project-data-check.zh-CN.md"
 EXPECTED_FOLDER_VERSION_LOADERS = {
     "datapack": "datapack",
 }
@@ -209,49 +203,41 @@ def expected_default_projects(
     return expected
 
 
-def table(lines: list[str], rows: list[dict[str, object]], required_by: dict[str, list[dict[str, object]]]) -> None:
-    lines.extend(
-        [
-            "| Project | Type | Slug | Side | Pack file | Required by |",
-            "| --- | --- | --- | --- | --- | --- |",
-        ]
-    )
-    for mod in rows:
-        project_id = str(mod.get("modrinth_id") or "")
-        lines.append(
-            "| "
-            + " | ".join(
-                [
-                    markdown_link(str(mod["name"]), project_id, str(mod.get("type") or "")),
-                    markdown_escape(mod.get("type")),
-                    markdown_escape(mod["slug"]),
-                    markdown_escape(mod["side"]),
-                    markdown_escape(mod["file"]),
-                    markdown_escape(required_by_names(project_id, required_by)),
-                ]
-            )
-            + " |"
-        )
-
-
-def check(*, persist_cache: bool = True) -> dict[str, object]:
+def check(
+    *,
+    persist_cache: bool = False,
+    allow_network: bool = False,
+    include_modrinth_cache_checks: bool = False,
+) -> dict[str, object]:
     installed = load_installed_projects()
     installed_index = build_installed_project_index(installed)
     project_meta: dict[str, dict[str, object]] = load_project_catalog()
     groups = load_feature_groups()
     documented = build_documented_sets(project_meta)
     declared_dependencies = load_declared_dependencies()
-    dependency_cache = load_dependency_cache()
-    project_cache = load_project_cache()
-    required_by = build_required_by(installed, dependency_cache)
-    missing_dependencies = build_missing_required(installed, dependency_cache, project_cache)
-    cache_errors = [
-        *collect_cache_errors(dependency_cache, "dependency-cache"),
-        *collect_cache_errors(project_cache, "project-cache"),
-    ]
-    if persist_cache:
-        write_json(DEPENDENCY_CACHE, dependency_cache)
-        write_json(PROJECT_CACHE, project_cache)
+    required_by: dict[str, list[dict[str, Any]]] = {}
+    missing_dependencies: dict[str, dict[str, Any]] = {}
+    cache_errors: list[str] = []
+    version_loader_conflict_issues: list[str] = []
+
+    if include_modrinth_cache_checks:
+        dependency_cache = load_dependency_cache()
+        project_cache = load_project_cache()
+        required_by = build_required_by(installed, dependency_cache, allow_network=allow_network)
+        missing_dependencies = build_missing_required(
+            installed,
+            dependency_cache,
+            project_cache,
+            allow_network=allow_network,
+        )
+        cache_errors = [
+            *collect_cache_errors(dependency_cache, "dependency-cache"),
+            *collect_cache_errors(project_cache, "project-cache"),
+        ]
+        version_loader_conflict_issues = version_loader_conflicts(installed, dependency_cache)
+        if persist_cache:
+            write_json(DEPENDENCY_CACHE, dependency_cache)
+            write_json(PROJECT_CACHE, project_cache)
 
     documented_installed: list[dict[str, object]] = []
     dependency_declared: list[dict[str, object]] = []
@@ -272,6 +258,7 @@ def check(*, persist_cache: bool = True) -> dict[str, object]:
     ]
 
     return {
+        "modrinth_cache_checks_enabled": include_modrinth_cache_checks,
         "installed": installed,
         "required_by": required_by,
         "documented_installed": documented_installed,
@@ -285,156 +272,11 @@ def check(*, persist_cache: bool = True) -> dict[str, object]:
         "missing_defaults": missing_defaults,
         "missing_dependencies": missing_dependencies,
         "folder_conflicts": folder_type_conflicts(installed, project_meta),
-        "version_loader_conflicts": version_loader_conflicts(installed, dependency_cache),
+        "version_loader_conflicts": version_loader_conflict_issues,
     }
 
 
-def render_report(result: dict[str, object]) -> str:
-    installed = result["installed"]
-    documented_installed = result["documented_installed"]
-    dependency_declared = result["dependency_declared"]
-    unexplained = result["unexplained"]
-    cache_errors = result["cache_errors"]
-    generated_data_invariant_issues = result["generated_data_invariants"]
-    unexpected = result["unexpected_installed"]
-    unknown_refs = result["unknown_refs"]
-    duplicate_refs = result["duplicate_refs"]
-    missing_defaults = result["missing_defaults"]
-    missing_dependencies = result["missing_dependencies"]
-    folder_conflicts = result["folder_conflicts"]
-    version_loader_conflict_issues = result["version_loader_conflicts"]
-    required_by = result["required_by"]
-
-    assert isinstance(installed, list)
-    assert isinstance(documented_installed, list)
-    assert isinstance(dependency_declared, list)
-    assert isinstance(unexplained, list)
-    assert isinstance(cache_errors, list)
-    assert isinstance(generated_data_invariant_issues, list)
-    assert isinstance(unexpected, list)
-    assert isinstance(unknown_refs, list)
-    assert isinstance(duplicate_refs, list)
-    assert isinstance(missing_defaults, list)
-    assert isinstance(missing_dependencies, dict)
-    assert isinstance(folder_conflicts, list)
-    assert isinstance(version_loader_conflict_issues, list)
-    assert isinstance(required_by, dict)
-
-    lines = [
-        "# 项目数据一致性检查",
-        "",
-        "这份报告对比 packwiz 实际安装的项目元文件（mods、resourcepacks、shaderpacks、datapacks 等目录下的 `*.pw.toml`）、`docs/config/` 文档配置与 `data/` 生成数据，并通过 Modrinth versions API 解析 required 依赖关系。",
-        "",
-        f"- 目标 Minecraft 版本：{TARGET_VERSION}",
-        f"- 已安装 packwiz 项目：{len(installed)}",
-        f"- 功能矩阵覆盖：{len(documented_installed)}",
-        f"- dependencies.json 覆盖：{len(dependency_declared)}",
-        f"- 未解释项目：{len(unexplained)}",
-        f"- 缓存错误：{len(cache_errors)}",
-        f"- 生成数据集合不变量问题：{len(generated_data_invariant_issues)}",
-        f"- 默认包缺失：{len(missing_defaults)}",
-        f"- 缺失 required 依赖：{len(missing_dependencies)}",
-        f"- 安装目录不符：{len(folder_conflicts)}",
-        f"- 版本加载器不符：{len(version_loader_conflict_issues)}",
-        f"- 意外安装项目：{len(unexpected)}",
-        f"- 未知项目引用：{len(unknown_refs)}",
-        f"- 重复项目引用：{len(duplicate_refs)}",
-        "",
-    ]
-
-    lines.extend(["## 缓存错误", ""])
-    if cache_errors:
-        lines.extend(f"- {error}" for error in cache_errors)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 生成数据集合不变量", ""])
-    if generated_data_invariant_issues:
-        lines.extend(f"- {issue}" for issue in generated_data_invariant_issues)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 默认包缺失", ""])
-    if missing_defaults:
-        lines.extend(f"- {project['name']}" for project in missing_defaults)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 缺失 required 依赖", ""])
-    if missing_dependencies:
-        lines.append("这些 Modrinth 项目被已安装项目声明为 required 依赖，但没有安装在任何 packwiz 目录中。")
-        lines.append("")
-        for project_id, entry in missing_dependencies.items():
-            title = markdown_link(str(entry["name"]), project_id, str(entry.get("type") or ""))
-            type_note = f"（{entry['type']}）" if entry.get("type") else ""
-            lines.append(f"- {title}{type_note}：被 {', '.join(entry['required_by'])} 依赖")
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 安装目录不符", ""])
-    if folder_conflicts:
-        lines.extend(f"- {conflict}" for conflict in folder_conflicts)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 版本加载器不符", ""])
-    if version_loader_conflict_issues:
-        lines.append("这些项目安装在需要特定 Modrinth loader 的目录中，但锁定的具体版本没有声明对应 loader。")
-        lines.append("")
-        lines.extend(f"- {conflict}" for conflict in version_loader_conflict_issues)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 意外安装项目", ""])
-    if unexpected:
-        lines.extend(f"- {conflict}" for conflict in unexpected)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 未知项目引用", ""])
-    if unknown_refs:
-        lines.extend(f"- {item}" for item in unknown_refs)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 重复项目引用", ""])
-    if duplicate_refs:
-        lines.extend(f"- {item}" for item in duplicate_refs)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 未解释项目", ""])
-    if unexplained:
-        lines.append("这些项目已经进入默认包，但当前既没有进入功能矩阵，也没有进入 `data/dependencies.json`。需要补功能矩阵、补依赖清单、修 alias，或手动归类。")
-        lines.append("")
-        table(lines, unexplained, required_by)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## dependencies.json 覆盖", ""])
-    if dependency_declared:
-        lines.append("这些项目没有进入公开功能矩阵，但已经在 `data/dependencies.json` 中声明为 dependency-only。")
-        lines.append("")
-        table(lines, dependency_declared, required_by)
-    else:
-        lines.append("无。")
-
-    lines.extend(["", "## 功能矩阵覆盖", ""])
-    table(lines, documented_installed, required_by)
-
-    return "\n".join(lines).rstrip() + "\n"
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Fail if packwiz mods and structured mod data are inconsistent.")
-    args = parser.parse_args()
-
-    result = check(persist_cache=not args.check)
-    report = render_report(result)
-    if not args.check:
-        write_text(OUTPUT, report)
-
+def result_summary(result: dict[str, object]) -> dict[str, object]:
     unexplained = result["unexplained"]
     cache_errors = result["cache_errors"]
     generated_data_invariant_issues = result["generated_data_invariants"]
@@ -456,7 +298,8 @@ def main() -> None:
     assert isinstance(folder_conflicts, list)
     assert isinstance(version_loader_conflict_issues, list)
 
-    summary = {
+    return {
+        "modrinth_cache_checks_enabled": result["modrinth_cache_checks_enabled"],
         "installed": len(result["installed"]),
         "documented": len(result["documented_installed"]),
         "dependencies": len(result["dependency_declared"]),
@@ -470,46 +313,67 @@ def main() -> None:
         "unexpected_installed": len(unexpected),
         "unknown_refs": len(unknown_refs),
         "duplicate_refs": len(duplicate_refs),
-        "output": str(OUTPUT.relative_to(CACHE.parents[1])),
     }
-    print(json.dumps(summary, ensure_ascii=False, indent=2))
 
-    if args.check and (
-        unexplained
-        or cache_errors
-        or generated_data_invariant_issues
-        or missing_defaults
-        or missing_dependencies
-        or folder_conflicts
-        or version_loader_conflict_issues
-        or unexpected
-        or unknown_refs
-        or duplicate_refs
-    ):
-        issues = []
-        if unexplained:
-            issues.extend(f"- undocumented: {mod['name']} ({mod['slug']})" for mod in unexplained)
-        if cache_errors:
-            issues.extend(f"- cache error: {error}" for error in cache_errors)
-        if generated_data_invariant_issues:
-            issues.extend(f"- generated data invariant: {issue}" for issue in generated_data_invariant_issues)
-        if missing_defaults:
-            issues.extend(f"- missing default: {project['name']}" for project in missing_defaults)
-        if missing_dependencies:
-            issues.extend(
-                f"- missing dependency: {entry['name']} ({project_id}) required by {', '.join(entry['required_by'])}"
-                for project_id, entry in missing_dependencies.items()
-            )
-        if folder_conflicts:
-            issues.extend(f"- folder conflict: {conflict}" for conflict in folder_conflicts)
-        if version_loader_conflict_issues:
-            issues.extend(f"- version loader conflict: {conflict}" for conflict in version_loader_conflict_issues)
-        if unexpected:
-            issues.extend(f"- unexpected installed: {conflict}" for conflict in unexpected)
-        if unknown_refs:
-            issues.extend(f"- unknown ref: {item}" for item in unknown_refs)
-        if duplicate_refs:
-            issues.extend(f"- duplicate ref: {item}" for item in duplicate_refs)
+
+def result_issues(result: dict[str, object]) -> list[str]:
+    unexplained = result["unexplained"]
+    cache_errors = result["cache_errors"]
+    generated_data_invariant_issues = result["generated_data_invariants"]
+    unexpected = result["unexpected_installed"]
+    unknown_refs = result["unknown_refs"]
+    duplicate_refs = result["duplicate_refs"]
+    missing_defaults = result["missing_defaults"]
+    missing_dependencies = result["missing_dependencies"]
+    folder_conflicts = result["folder_conflicts"]
+    version_loader_conflict_issues = result["version_loader_conflicts"]
+    assert isinstance(unexplained, list)
+    assert isinstance(cache_errors, list)
+    assert isinstance(generated_data_invariant_issues, list)
+    assert isinstance(unexpected, list)
+    assert isinstance(unknown_refs, list)
+    assert isinstance(duplicate_refs, list)
+    assert isinstance(missing_defaults, list)
+    assert isinstance(missing_dependencies, dict)
+    assert isinstance(folder_conflicts, list)
+    assert isinstance(version_loader_conflict_issues, list)
+
+    issues: list[str] = []
+    if unexplained:
+        issues.extend(f"- undocumented: {mod['name']} ({mod['slug']})" for mod in unexplained)
+    if cache_errors:
+        issues.extend(f"- cache error: {error}" for error in cache_errors)
+    if generated_data_invariant_issues:
+        issues.extend(f"- generated data invariant: {issue}" for issue in generated_data_invariant_issues)
+    if missing_defaults:
+        issues.extend(f"- missing default: {project['name']}" for project in missing_defaults)
+    if missing_dependencies:
+        issues.extend(
+            f"- missing dependency: {entry['name']} ({project_id}) required by {', '.join(entry['required_by'])}"
+            for project_id, entry in missing_dependencies.items()
+        )
+    if folder_conflicts:
+        issues.extend(f"- folder conflict: {conflict}" for conflict in folder_conflicts)
+    if version_loader_conflict_issues:
+        issues.extend(f"- version loader conflict: {conflict}" for conflict in version_loader_conflict_issues)
+    if unexpected:
+        issues.extend(f"- unexpected installed: {conflict}" for conflict in unexpected)
+    if unknown_refs:
+        issues.extend(f"- unknown ref: {item}" for item in unknown_refs)
+    if duplicate_refs:
+        issues.extend(f"- duplicate ref: {item}" for item in duplicate_refs)
+    return issues
+
+
+def main() -> None:
+    try:
+        result = check()
+    except MissingModrinthCacheError as error:
+        raise SystemExit(str(error)) from error
+
+    print(json.dumps(result_summary(result), ensure_ascii=False, indent=2))
+    issues = result_issues(result)
+    if issues:
         raise SystemExit("Project data check failed:\n" + "\n".join(issues))
 
 

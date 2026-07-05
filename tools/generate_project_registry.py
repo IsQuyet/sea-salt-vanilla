@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import argparse
 import json
 from pathlib import Path
 from typing import Any
@@ -12,6 +11,7 @@ from project_data_common import (
     OPTIONAL_PATH,
     PROJECTS_PATH,
     category_project_type,
+    get_project_cache_entry,
     load_feature_groups,
     load_project_cache,
 )
@@ -40,10 +40,7 @@ def display_name_from_slug(slug: str) -> str:
 
 def cached_modrinth_project(project_ref: str, project_cache: dict[str, Any]) -> dict[str, Any] | None:
     """Read cached Modrinth project metadata without blocking registry generation on the network."""
-    cached_project = project_cache.get(project_ref)
-    if isinstance(cached_project, dict) and "error" not in cached_project:
-        return cached_project
-    return None
+    return get_project_cache_entry(project_ref, project_cache)
 
 
 def entry_from_modrinth(project: dict[str, Any], documented_type: str | None = None) -> dict[str, Any]:
@@ -59,8 +56,11 @@ def entry_from_modrinth(project: dict[str, Any], documented_type: str | None = N
     )
 
 
-def entry_from_documented_ref(ref: dict[str, Any], project_cache: dict[str, Any]) -> dict[str, Any]:
-    source = str(ref.get("source") or "unknown")
+def entry_from_documented_ref(
+    ref: dict[str, Any],
+    project_cache: dict[str, Any],
+) -> dict[str, Any]:
+    source = str(ref.get("source") or "modrinth")
     slug = str(ref.get("slug") or ref.get("key") or "").lower()
     project_type = str(ref.get("type") or "mod")
 
@@ -87,7 +87,7 @@ def remember_project_ref(refs: dict[str, dict[str, Any]], ref: Any, project_type
     if isinstance(ref, dict):
         documented_ref = dict(ref)
     else:
-        documented_ref = {"source": "unknown", "slug": str(ref).lower()}
+        documented_ref = {"source": "modrinth", "slug": str(ref).lower()}
 
     documented_ref.setdefault("type", project_type)
     key = project_ref_key(documented_ref)
@@ -121,7 +121,9 @@ def collect_documented_project_refs() -> tuple[dict[str, dict[str, Any]], dict[s
     return default_refs, optional_refs
 
 
-def build_project_catalog(refs: dict[str, dict[str, Any]]) -> dict[str, dict[str, Any]]:
+def build_project_catalog(
+    refs: dict[str, dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
     project_cache = load_project_cache()
     entries = {
         generated_key: entry_from_documented_ref(ref, project_cache)
@@ -132,10 +134,6 @@ def build_project_catalog(refs: dict[str, dict[str, Any]]) -> dict[str, dict[str
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Check whether generated project catalogs are up to date without writing them.")
-    args = parser.parse_args()
-
     default_refs, optional_refs = collect_documented_project_refs()
     expected_default_catalog = build_project_catalog(default_refs)
     expected_optional_catalog = build_project_catalog(optional_refs)
@@ -143,19 +141,6 @@ def main() -> None:
         PROJECTS_PATH: project_json_text(expected_default_catalog),
         OPTIONAL_PATH: project_json_text(expected_optional_catalog),
     }
-
-    if args.check:
-        stale_paths: list[str] = []
-        for path, expected_text in expected_files.items():
-            current_text = path.read_text(encoding="utf-8-sig") if path.exists() else ""
-            if current_text != expected_text:
-                stale_paths.append(str(path.relative_to(Path.cwd())))
-        if stale_paths:
-            raise SystemExit(
-                f"{', '.join(stale_paths)} is not up to date. Run python tools/generate_project_registry.py"
-            )
-        print("Generated project catalogs are up to date")
-        return
 
     PROJECTS_PATH.write_text(expected_files[PROJECTS_PATH], encoding="utf-8", newline="\n")
     OPTIONAL_PATH.write_text(expected_files[OPTIONAL_PATH], encoding="utf-8", newline="\n")

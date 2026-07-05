@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import argparse
 from pathlib import Path
 from typing import Any
 
@@ -168,28 +167,12 @@ def category_outputs(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Check whether generated docs are up to date without writing them.")
-    args = parser.parse_args()
-
     all_groups = load_feature_groups()
     project_catalog = load_project_catalog()
 
     outputs: dict[Path, str] = {}
     for category in CATEGORIES:
         outputs.update(category_outputs(category, all_groups, project_catalog))
-
-    if args.check:
-        mismatches = [
-            str(path.relative_to(ROOT))
-            for path, text in outputs.items()
-            if not path.exists() or path.read_text(encoding="utf-8-sig") != text
-        ]
-        if mismatches:
-            details = "\n".join(f"- {path}" for path in mismatches)
-            raise SystemExit(f"Generated project docs are not up to date:\n{details}")
-        print("Generated project docs are up to date")
-        return
 
     for path, text in outputs.items():
         write_text(path, text)

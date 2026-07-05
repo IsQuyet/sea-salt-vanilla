@@ -39,7 +39,7 @@ python tools/update_project_data.py generate
 python tools/update_project_data.py check
 ```
 
-- `generate` 会更新项目注册表、依赖数据、公开文档，以及供人工阅读的一致性检查报告。
+- `generate` 会更新项目注册表、依赖数据和公开文档。
 - `check` 会验证生成文件、docs config、packwiz 元数据、依赖数据和项目唯一性，并且不写入生成产物。
 
 当前生成数据的语义：

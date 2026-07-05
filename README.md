@@ -39,7 +39,7 @@ python tools/update_project_data.py generate
 python tools/update_project_data.py check
 ```
 
-- `generate` updates generated project registries, dependency data, public documentation, and the human-readable consistency report.
+- `generate` updates generated project registries, dependency data, and public documentation.
 - `check` verifies generated files, docs config, packwiz metadata, dependency data, and project uniqueness without writing generated outputs.
 
 Current generated data semantics:

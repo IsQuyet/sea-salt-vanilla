@@ -28,7 +28,7 @@
 | --- | --- | --- |
 | 平滑实体动画 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) |  |
 | Fresh Animations 扩展 | [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |  |
-| 第三人称玩家动画 | [Fa Player Extension](https://modrinth.com/resourcepack/fa-player-extension) | [Detailed Animations](https://modrinth.com/resourcepack/detailed-animations) |
+| 第三人称玩家动画 | [Fresh Animations: Player Extension](https://modrinth.com/resourcepack/fa-player-extension) | [Detailed Animations](https://modrinth.com/resourcepack/detailed-animations) |
 
 ## 原版风格贴图
 
@@ -42,7 +42,7 @@
 | --- | --- |
 | 原版贴图重制润色 | [Stay True](https://www.curseforge.com/minecraft/texture-packs/stay-true) |
 | 更好的草地贴图 | [Fast Better Grass](https://modrinth.com/resourcepack/fast-better-grass) |
-| 原版体验细节润色 | [Vanilla Exp](https://modrinth.com/resourcepack/vanilla-exp) |
+| 原版体验细节润色 | [Vanilla Experience+](https://modrinth.com/resourcepack/vanilla-exp) |
 
 ### GUI 与 HUD 贴图
 
@@ -50,4 +50,4 @@
 
 | 功能 | 1.21.1 |
 | --- | --- |
-| 容器 GUI 与 HUD 重着色 | [Recolourful Containers Gui](https://modrinth.com/resourcepack/recolourful-containers-gui) |
+| 容器 GUI 与 HUD 重着色 | [Recolourful Containers GUI + HUD](https://modrinth.com/resourcepack/recolourful-containers-gui) |

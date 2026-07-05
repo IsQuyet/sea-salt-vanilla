@@ -1,6 +1,6 @@
 # 文档配置
 
-这个目录包含人工维护的源配置，用于生成公开项目文档和一致性报告。
+这个目录包含人工维护的源配置，用于生成公开项目文档和项目数据。
 
 工具链把每个被记录的条目都建模为 Modrinth 风格的*项目（project）*，而不仅仅是 Mod：它会扫描 `mods/`、`resourcepacks/`、`shaderpacks/`、`datapacks/`、`plugins/` 目录下的 packwiz `*.pw.toml` 元文件，生成的项目条目带有 `type` 字段（`mod`、`resourcepack`、`shader` 等），取值来自 Modrinth 的 `project_type`。依赖在项目层面解析，所以跨类型依赖（例如资源包依赖 Mod）与 Mod 之间的依赖走同一套机制。
 
@@ -18,11 +18,8 @@
 
 ## 命令
 
-- `python tools/update_project_data.py` 或 `python tools/update_project_data.py generate`：重新生成项目元数据、依赖元数据、公开文档和本地一致性报告。
-- `python tools/update_project_data.py check` 或 `python tools/update_project_data.py --check`：检查生成数据和文档是否为最新。一致性报告还会标记两类问题：被声明为 required 但没有安装在整合包任何目录中的 Modrinth 依赖，以及安装目录与其 Modrinth 项目类型不符的项目。
+- `python tools/update_project_data.py` 或 `python tools/update_project_data.py generate`：重新生成项目元数据、依赖元数据和公开文档。
+- `python tools/update_project_data.py check`：只读检查仓库一致性和生成文档是否最新；不会写文件，也不会读取本地 Modrinth cache。
 - `python tools/update_project_data.py projects`：只重新生成 `data/projects.json`。
 - `python tools/update_project_data.py dependencies`：只重新生成 `data/dependencies.json`。
 - `python tools/update_project_data.py docs`：只重新生成公开文档。
-- `python tools/update_project_data.py report`：只重新生成本地一致性报告。
-
-可以在单个步骤名称后加 `--check`，只检查该步骤是否最新。例如：`python tools/update_project_data.py docs --check`。

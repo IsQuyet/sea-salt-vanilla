@@ -7,16 +7,18 @@
     "id": "c3onkd5k"
   },
   "atmospherics": {
-    "name": "Atmospherics",
+    "name": "ATMOSPHERICS",
     "type": "mod",
     "source": "modrinth",
-    "slug": "atmospherics"
+    "slug": "atmospherics",
+    "id": "ft2cYBpB"
   },
   "axiom": {
     "name": "Axiom",
     "type": "mod",
     "source": "modrinth",
-    "slug": "axiom"
+    "slug": "axiom",
+    "id": "N6n5dqoA"
   },
   "better-block-entities": {
     "name": "Better Block Entities",
@@ -36,7 +38,8 @@
     "name": "Better Smoke",
     "type": "mod",
     "source": "modrinth",
-    "slug": "better-smoke"
+    "slug": "better-smoke",
+    "id": "Effrh3ze"
   },
   "biomeinfo": {
     "name": "BiomeInfo",
@@ -53,10 +56,11 @@
     "id": "M08ruV16"
   },
   "completionists-index": {
-    "name": "Completionists Index",
+    "name": "Completionist's Index",
     "type": "mod",
     "source": "modrinth",
-    "slug": "completionists-index"
+    "slug": "completionists-index",
+    "id": "iSCGCCV1"
   },
   "default-options": {
     "name": "Default Options",
@@ -76,7 +80,8 @@
     "name": "Detailed Animations",
     "type": "resourcepack",
     "source": "modrinth",
-    "slug": "detailed-animations"
+    "slug": "detailed-animations",
+    "id": "9pR04wDX"
   },
   "emotecraft": {
     "name": "Emotecraft",
@@ -89,7 +94,8 @@
     "name": "Enchantment Descriptions",
     "type": "mod",
     "source": "modrinth",
-    "slug": "enchantment-descriptions"
+    "slug": "enchantment-descriptions",
+    "id": "UVtY3ZAC"
   },
   "essential": {
     "name": "Essential Mod",
@@ -109,19 +115,22 @@
     "name": "Inventory Interactions",
     "type": "mod",
     "source": "modrinth",
-    "slug": "inventory-interactions"
+    "slug": "inventory-interactions",
+    "id": "FCzmUKBr"
   },
   "inventory-tabs": {
     "name": "Inventory Tabs",
     "type": "mod",
     "source": "modrinth",
-    "slug": "inventory-tabs"
+    "slug": "inventory-tabs",
+    "id": "VD1aynYU"
   },
   "itemswapper": {
-    "name": "Itemswapper",
+    "name": "ItemSwapper",
     "type": "mod",
     "source": "modrinth",
-    "slug": "itemswapper"
+    "slug": "itemswapper",
+    "id": "RPOSBQgq"
   },
   "lambdynamiclights": {
     "name": "LambDynamicLights - Dynamic Lights",
@@ -131,10 +140,11 @@
     "id": "yBW8D80W"
   },
   "leawind-third-person": {
-    "name": "Leawind Third Person",
+    "name": "Leawind's Third Person",
     "type": "mod",
     "source": "modrinth",
-    "slug": "leawind-third-person"
+    "slug": "leawind-third-person",
+    "id": "S3D3QF0M"
   },
   "litematica": {
     "name": "Litematica",
@@ -160,13 +170,15 @@
     "name": "Natural Waters",
     "type": "mod",
     "source": "modrinth",
-    "slug": "natural-waters"
+    "slug": "natural-waters",
+    "id": "aYttCyCw"
   },
   "new-health-bars": {
-    "name": "New Health Bars",
+    "name": "Health Bars",
     "type": "mod",
     "source": "modrinth",
-    "slug": "new-health-bars"
+    "slug": "new-health-bars",
+    "id": "A3VSiTms"
   },
   "notebook": {
     "name": "Vanilla Notebook ",
@@ -186,7 +198,8 @@
     "name": "Open Loader",
     "type": "mod",
     "source": "modrinth",
-    "slug": "open-loader"
+    "slug": "open-loader",
+    "id": "KwWsINvD"
   },
   "particle-rain": {
     "name": "Particle Rain",
@@ -199,13 +212,15 @@
     "name": "Paxi",
     "type": "mod",
     "source": "modrinth",
-    "slug": "paxi"
+    "slug": "paxi",
+    "id": "CU0PAyzb"
   },
   "pick-up-notifier": {
     "name": "Pick Up Notifier",
     "type": "mod",
     "source": "modrinth",
-    "slug": "pick-up-notifier"
+    "slug": "pick-up-notifier",
+    "id": "ZX66K16c"
   },
   "pixelshot": {
     "name": "Pixelshot",
@@ -218,13 +233,15 @@
     "name": "Real Camera",
     "type": "mod",
     "source": "modrinth",
-    "slug": "real-camera"
+    "slug": "real-camera",
+    "id": "fYYSAh4R"
   },
   "recursiveresources": {
-    "name": "Recursiveresources",
+    "name": "Recursive Resources",
     "type": "mod",
     "source": "modrinth",
-    "slug": "recursiveresources"
+    "slug": "recursiveresources",
+    "id": "CcL3MXyI"
   },
   "replaymod": {
     "name": "ReplayMod",
@@ -237,7 +254,8 @@
     "name": "Resource Pack Overrides",
     "type": "mod",
     "source": "modrinth",
-    "slug": "resource-pack-overrides"
+    "slug": "resource-pack-overrides",
+    "id": "YsFycamt"
   },
   "server-unpacker": {
     "name": "Server Unpacker",
@@ -250,13 +268,15 @@
     "name": "Slot Cycler",
     "type": "mod",
     "source": "modrinth",
-    "slug": "slot-cycler"
+    "slug": "slot-cycler",
+    "id": "3kl8Lmm9"
   },
   "smooth-scrolling-refurbished": {
     "name": "Smooth Scrolling Refurbished",
     "type": "mod",
     "source": "modrinth",
-    "slug": "smooth-scrolling-refurbished"
+    "slug": "smooth-scrolling-refurbished",
+    "id": "trr0scVt"
   },
   "sound-physics-remastered": {
     "name": "Sound Physics Remastered",
@@ -273,9 +293,10 @@
     "id": "BUpChT1v"
   },
   "voxy": {
-    "name": "Voxy",
+    "name": "voxy",
     "type": "mod",
     "source": "modrinth",
-    "slug": "voxy"
+    "slug": "voxy",
+    "id": "fxxUqruK"
   }
 }

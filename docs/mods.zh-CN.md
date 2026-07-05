@@ -38,7 +38,7 @@
 | 内存分配优化 | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  |
 | 客户端性能微调 | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  |
 | 输入事件轮询优化 | [Ixeris](https://modrinth.com/mod/ixeris) |  |
-| 线程调度优化 | [Threadtweak](https://modrinth.com/mod/threadtweak) |  |
+| 线程调度优化 | [ThreadTweak](https://modrinth.com/mod/threadtweak) |  |
 
 ### 包管理与默认设置
 
@@ -88,7 +88,7 @@
 
 | 功能 | 1.21.1 | 可选替代 |
 | --- | --- | --- |
-| 远景地形渲染 | [Distant Horizons](https://modrinth.com/mod/distanthorizons) | [Bobby](https://modrinth.com/mod/bobby), [Voxy](https://modrinth.com/mod/voxy) |
+| 远景地形渲染 | [Distant Horizons](https://modrinth.com/mod/distanthorizons) | [Bobby](https://modrinth.com/mod/bobby), [voxy](https://modrinth.com/mod/voxy) |
 | Complementary 光影视觉扩展 | [Euphoria Patches](https://modrinth.com/mod/euphoria-patches) |  |
 | 氛围粒子 | [Visuality](https://modrinth.com/mod/visuality) |  |
 | 洞穴尘埃氛围 | [Cave Dust](https://modrinth.com/mod/cave-dust) |  |
@@ -101,7 +101,7 @@
 | 粒子交互 | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |  |
 | 气泡破裂效果 | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |  |
 | 落叶粒子 | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |  |
-| 柔软表面印痕 | [Snow Imprints](https://modrinth.com/mod/snow-imprints) |  |
+| 柔软表面印痕 | [Soft Imprints](https://modrinth.com/mod/snow-imprints) |  |
 | 爆炸效果 | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |  |
 | 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
@@ -116,7 +116,7 @@
 | 环境音景 | [AmbientSounds](https://modrinth.com/mod/ambientsounds) |
 | 脚步声 | [Presence Footsteps](https://modrinth.com/mod/presence-footsteps) |
 | 声音事件改进 | [Sounds](https://modrinth.com/mod/sound) |
-| 动态雨声 | [Coolrain](https://modrinth.com/mod/coolrain) |
+| 动态雨声 | [Cool Rain](https://modrinth.com/mod/coolrain) |
 
 ### 动画与移动
 
@@ -132,9 +132,9 @@
 | 第一人称物品动画 | [Hold My Items](https://modrinth.com/mod/hold-my-items) |  |
 | 手持物品显示 | [YDM's Weapon Master](https://modrinth.com/mod/weaponmaster) |  |
 | 镜头运动 | [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul) |  |
-| 第三人称肩视角镜头 | [Shoulder Surfing Reloaded](https://modrinth.com/mod/shoulder-surfing-reloaded) | [Leawind Third Person](https://modrinth.com/mod/leawind-third-person) |
+| 第三人称肩视角镜头 | [Shoulder Surfing Reloaded](https://modrinth.com/mod/shoulder-surfing-reloaded) | [Leawind's Third Person](https://modrinth.com/mod/leawind-third-person) |
 | 鞘翅飞行控制 | [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) |  |
-| 世界动画润色 | [Fwa](https://modrinth.com/mod/fwa) |  |
+| 世界动画润色 | [Fancy World Animations](https://modrinth.com/mod/fwa) |  |
 
 ### 界面美化
 
@@ -154,7 +154,7 @@
 | 自动 GUI 深色模式 | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |  |
 | 平滑 GUI 动画 | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
 | 聊天消息动画 | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |  |
-| 弹出提示润色 | [Fancy Toasts](https://modrinth.com/mod/fancy-toasts) |  |
+| 弹出提示润色 | [Fancy Toasts \| Better Advancements](https://modrinth.com/mod/fancy-toasts) |  |
 | 现代 UI 框架与文字渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
 | 沉浸式 UI 交互 | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
 
@@ -194,7 +194,7 @@
 | 物品与配方浏览 | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |  |
 | 方块与实体信息浮层 | [Jade 🔍](https://modrinth.com/mod/jade) |  |
 | 额外物品与方块提示 | [Peek](https://modrinth.com/mod/peek) |  |
-| 增强提示信息 | [Enhancedtooltips](https://modrinth.com/mod/enhancedtooltips) |  |
+| 增强提示信息 | [EnhancedTooltips](https://modrinth.com/mod/enhancedtooltips) |  |
 | 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
 | 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
@@ -228,12 +228,12 @@
 | 世界删除到回收站 | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
 | 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
 | 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
-| 不安全聊天弹窗隐藏 | [Disableinsecurechattoast](https://modrinth.com/mod/disableinsecurechattoast) |  |
+| 不安全聊天弹窗隐藏 | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |  |
 | 聊天界面便利功能 | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
 | 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | 盔甲细节显示 | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) |  |
-| 游戏内皮肤管理 | [Skinshuffle](https://modrinth.com/mod/skinshuffle) |  |
+| 游戏内皮肤管理 | [Skin Shuffle](https://modrinth.com/mod/skinshuffle) |  |
 | 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
 | 居中准星 | [Centered Crosshair](https://modrinth.com/mod/centered-crosshair) |  |
 | 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
@@ -241,7 +241,7 @@
 | 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
 | 截图查看器 | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |  |
 | 截图用界面隐藏 | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |  |
-| 名称标签可见性切换 | [Hidetags](https://modrinth.com/mod/hidetags) |  |
+| 名称标签可见性切换 | [Toggle Nametags](https://modrinth.com/mod/hidetags) |  |
 
 ### 地图与导航
 
@@ -288,9 +288,9 @@
 | --- | --- | --- |
 | 附魔提示说明 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |  |
 | 物品拾取通知 | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |  |
-| 物品切换工具 | [Itemswapper](https://modrinth.com/mod/itemswapper) | [Slot Cycler](https://modrinth.com/mod/slot-cycler) |
-| 完成度追踪索引 | [Completionists Index](https://modrinth.com/mod/completionists-index) |  |
-| 生命值条显示 | [New Health Bars](https://modrinth.com/mod/new-health-bars) |  |
+| 物品切换工具 | [ItemSwapper](https://modrinth.com/mod/itemswapper) | [Slot Cycler](https://modrinth.com/mod/slot-cycler) |
+| 完成度追踪索引 | [Completionist's Index](https://modrinth.com/mod/completionists-index) |  |
+| 生命值条显示 | [Health Bars](https://modrinth.com/mod/new-health-bars) |  |
 | 背包标签页 | [Inventory Tabs](https://modrinth.com/mod/inventory-tabs) |  |
 
 ### 可选包管理
@@ -300,7 +300,7 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 资源包覆盖控制 | [Resource Pack Overrides](https://modrinth.com/mod/resource-pack-overrides) |
-| 递归资源加载 | [Recursiveresources](https://modrinth.com/mod/recursiveresources) |
+| 递归资源加载 | [Recursive Resources](https://modrinth.com/mod/recursiveresources) |
 
 ### 可选视听氛围
 
@@ -312,7 +312,7 @@
 | 物理音效 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) |
 | 天气粒子氛围 | [Particle Rain](https://modrinth.com/mod/particle-rain) |
 | 写实镜头视角 | [Real Camera](https://modrinth.com/mod/real-camera) |
-| 大气视觉氛围 | [Atmospherics](https://modrinth.com/mod/atmospherics) |
+| 大气视觉氛围 | [ATMOSPHERICS](https://modrinth.com/mod/atmospherics) |
 | 烟雾效果改进 | [Better Smoke](https://modrinth.com/mod/better-smoke) |
 | 自然水体渲染 | [Natural Waters](https://modrinth.com/mod/natural-waters) |
 

@@ -38,7 +38,7 @@ These entries improve frame pacing, memory use, lighting, networking, and render
 | Memory allocation optimization | [FerriteCore](https://modrinth.com/mod/ferrite-core) |  |
 | Client performance tweaks | [BadOptimizations](https://modrinth.com/mod/badoptimizations) |  |
 | Input event polling optimization | [Ixeris](https://modrinth.com/mod/ixeris) |  |
-| Thread scheduling optimization | [Threadtweak](https://modrinth.com/mod/threadtweak) |  |
+| Thread scheduling optimization | [ThreadTweak](https://modrinth.com/mod/threadtweak) |  |
 
 ### Pack management and defaults
 
@@ -88,7 +88,7 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 
 | Feature | 1.21.1 | Alternatives |
 | --- | --- | --- |
-| Distant terrain renderer | [Distant Horizons](https://modrinth.com/mod/distanthorizons) | [Bobby](https://modrinth.com/mod/bobby), [Voxy](https://modrinth.com/mod/voxy) |
+| Distant terrain renderer | [Distant Horizons](https://modrinth.com/mod/distanthorizons) | [Bobby](https://modrinth.com/mod/bobby), [voxy](https://modrinth.com/mod/voxy) |
 | Complementary shader visual extensions | [Euphoria Patches](https://modrinth.com/mod/euphoria-patches) |  |
 | Ambient particles | [Visuality](https://modrinth.com/mod/visuality) |  |
 | Cave dust ambience | [Cave Dust](https://modrinth.com/mod/cave-dust) |  |
@@ -101,7 +101,7 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Particle interactions | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |  |
 | Bubble pop effects | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |  |
 | Falling leaf particles | [Falling Leaves](https://modrinth.com/mod/fallingleaves) |  |
-| Soft surface imprints | [Snow Imprints](https://modrinth.com/mod/snow-imprints) |  |
+| Soft surface imprints | [Soft Imprints](https://modrinth.com/mod/snow-imprints) |  |
 | Explosion effects | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |  |
 | Projectile visual style | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
@@ -116,7 +116,7 @@ These entries add ambience and improve how sound events feel in play.
 | Ambient soundscapes | [AmbientSounds](https://modrinth.com/mod/ambientsounds) |
 | Footstep sounds | [Presence Footsteps](https://modrinth.com/mod/presence-footsteps) |
 | Sound event improvements | [Sounds](https://modrinth.com/mod/sound) |
-| Dynamic rain sounds | [Coolrain](https://modrinth.com/mod/coolrain) |
+| Dynamic rain sounds | [Cool Rain](https://modrinth.com/mod/coolrain) |
 
 ### Animation and movement
 
@@ -132,9 +132,9 @@ These entries improve first-person, third-person, item, block, and movement pres
 | First-person item animations | [Hold My Items](https://modrinth.com/mod/hold-my-items) |  |
 | Held item display | [YDM's Weapon Master](https://modrinth.com/mod/weaponmaster) |  |
 | Camera motion | [Camera Overhaul](https://modrinth.com/mod/cameraoverhaul) |  |
-| Third-person shoulder camera | [Shoulder Surfing Reloaded](https://modrinth.com/mod/shoulder-surfing-reloaded) | [Leawind Third Person](https://modrinth.com/mod/leawind-third-person) |
+| Third-person shoulder camera | [Shoulder Surfing Reloaded](https://modrinth.com/mod/shoulder-surfing-reloaded) | [Leawind's Third Person](https://modrinth.com/mod/leawind-third-person) |
 | Elytra flight controls | [Do a Barrel Roll](https://modrinth.com/mod/do-a-barrel-roll) |  |
-| World animation polish | [Fwa](https://modrinth.com/mod/fwa) |  |
+| World animation polish | [Fancy World Animations](https://modrinth.com/mod/fwa) |  |
 
 ### Interface polish
 
@@ -154,7 +154,7 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 | Automatic GUI dark mode | [Mindful Darkness](https://modrinth.com/mod/mindful-darkness) |  |
 | Smooth GUI animation | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
 | Chat message animation | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |  |
-| Toast notification polish | [Fancy Toasts](https://modrinth.com/mod/fancy-toasts) |  |
+| Toast notification polish | [Fancy Toasts \| Better Advancements](https://modrinth.com/mod/fancy-toasts) |  |
 | Modern UI framework and text rendering | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
 | Immersive UI interactions | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
 
@@ -194,7 +194,7 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Item and recipe browser | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |  |
 | Block and entity overlay | [Jade 🔍](https://modrinth.com/mod/jade) |  |
 | Extra item and block hints | [Peek](https://modrinth.com/mod/peek) |  |
-| Enhanced tooltip details | [Enhancedtooltips](https://modrinth.com/mod/enhancedtooltips) |  |
+| Enhanced tooltip details | [EnhancedTooltips](https://modrinth.com/mod/enhancedtooltips) |  |
 | Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
 | Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | Inventory profiles and sorting | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
@@ -228,12 +228,12 @@ These entries surface gameplay information or remove small interface friction.
 | Safe world deletion | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
 | Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
 | Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
-| Insecure chat toast suppression | [Disableinsecurechattoast](https://modrinth.com/mod/disableinsecurechattoast) |  |
+| Insecure chat toast suppression | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |  |
 | Chat interface convenience | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
 | Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | Armor detail display | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) |  |
-| In-game skin management | [Skinshuffle](https://modrinth.com/mod/skinshuffle) |  |
+| In-game skin management | [Skin Shuffle](https://modrinth.com/mod/skinshuffle) |  |
 | Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
 | Centered crosshair | [Centered Crosshair](https://modrinth.com/mod/centered-crosshair) |  |
 | Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
@@ -241,7 +241,7 @@ These entries surface gameplay information or remove small interface friction.
 | Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
 | Screenshot viewer | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |  |
 | Hide interface for screenshots | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |  |
-| Nametag visibility toggle | [Hidetags](https://modrinth.com/mod/hidetags) |  |
+| Nametag visibility toggle | [Toggle Nametags](https://modrinth.com/mod/hidetags) |  |
 
 ### Map and navigation
 
@@ -288,9 +288,9 @@ These entries add small client-side quality-of-life features that are useful but
 | --- | --- | --- |
 | Enchantment tooltip descriptions | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |  |
 | Item pickup notifications | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |  |
-| Item swapping tools | [Itemswapper](https://modrinth.com/mod/itemswapper) | [Slot Cycler](https://modrinth.com/mod/slot-cycler) |
-| Completion tracking index | [Completionists Index](https://modrinth.com/mod/completionists-index) |  |
-| Health bar display | [New Health Bars](https://modrinth.com/mod/new-health-bars) |  |
+| Item swapping tools | [ItemSwapper](https://modrinth.com/mod/itemswapper) | [Slot Cycler](https://modrinth.com/mod/slot-cycler) |
+| Completion tracking index | [Completionist's Index](https://modrinth.com/mod/completionists-index) |  |
+| Health bar display | [Health Bars](https://modrinth.com/mod/new-health-bars) |  |
 | Inventory tabs | [Inventory Tabs](https://modrinth.com/mod/inventory-tabs) |  |
 
 ### Optional pack management
@@ -300,7 +300,7 @@ These entries provide opt-in controls for resource packs, modpack resources, or 
 | Feature | 1.21.1 |
 | --- | --- |
 | Resource pack override control | [Resource Pack Overrides](https://modrinth.com/mod/resource-pack-overrides) |
-| Recursive resource loading | [Recursiveresources](https://modrinth.com/mod/recursiveresources) |
+| Recursive resource loading | [Recursive Resources](https://modrinth.com/mod/recursiveresources) |
 
 ### Optional audiovisual ambience
 
@@ -312,7 +312,7 @@ These entries can strongly shape visual or audio ambience, so they are kept as o
 | Sound physics | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) |
 | Weather particle ambience | [Particle Rain](https://modrinth.com/mod/particle-rain) |
 | Realistic camera perspective | [Real Camera](https://modrinth.com/mod/real-camera) |
-| Atmospheric visual ambience | [Atmospherics](https://modrinth.com/mod/atmospherics) |
+| Atmospheric visual ambience | [ATMOSPHERICS](https://modrinth.com/mod/atmospherics) |
 | Better smoke effects | [Better Smoke](https://modrinth.com/mod/better-smoke) |
 | Natural water rendering | [Natural Waters](https://modrinth.com/mod/natural-waters) |
 

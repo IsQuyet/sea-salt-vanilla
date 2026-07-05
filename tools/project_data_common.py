@@ -34,14 +34,50 @@ PROJECT_TYPE_CURSEFORGE_PATHS = {
 }
 DEFAULT_PROJECT_TYPE = "mod"
 PACK = ROOT / "pack.toml"
-CACHE = ROOT / "reference" / "modrinth-collections"
-DEPENDENCY_CACHE = CACHE / "modrinth-version-dependencies.json"
-PROJECT_CACHE = CACHE / "modrinth-projects.json"
+MODRINTH_CACHE = ROOT / "cache" / "modrinth"
+DEPENDENCY_CACHE = MODRINTH_CACHE / "modrinth-version-dependencies.json"
+PROJECT_CACHE = MODRINTH_CACHE / "modrinth-projects.json"
+MANIFEST_CACHE = MODRINTH_CACHE / "manifest.json"
 PROJECTS_PATH = DATA / "projects.json"
 OPTIONAL_PATH = DATA / "optional.json"
 DEPENDENCIES_PATH = DATA / "dependencies.json"
 MODRINTH_VERSIONS_API = "https://api.modrinth.com/v2/versions"
 MODRINTH_PROJECT_API = "https://api.modrinth.com/v2/project"
+MODRINTH_PROJECTS_API = "https://api.modrinth.com/v2/projects"
+PROJECT_CACHE_FIELDS = [
+    "id",
+    "slug",
+    "title",
+    "project_type",
+    "description",
+    "client_side",
+    "server_side",
+    "categories",
+    "additional_categories",
+    "loaders",
+    "game_versions",
+    "license",
+    "icon_url",
+    "color",
+    "published",
+    "updated",
+    "approved",
+    "queued",
+    "status",
+]
+
+
+class MissingModrinthCacheError(RuntimeError):
+    """Raised when offline project-data tooling needs metadata that is not cached."""
+
+
+class ModrinthFetchError(RuntimeError):
+    """Raised when an explicit Modrinth refresh cannot fetch required metadata."""
+
+
+def is_complete_version_cache_entry(entry: Any) -> bool:
+    """Return whether a cached Modrinth version entry has the fields used by checks."""
+    return isinstance(entry, dict) and not cache_entry_has_error(entry) and "loaders" in entry
 
 
 def feature_group_order(path: Path) -> tuple[int, str]:
@@ -152,7 +188,12 @@ def normalize_project_ref(ref: Any, category_name: str | None = None) -> dict[st
         normalized = dict(ref)
         normalized.setdefault("type", category_project_type(category_name))
         return normalized
-    return {"key": str(ref).lower(), "slug": str(ref).lower(), "type": category_project_type(category_name)}
+    return {
+        "source": "modrinth",
+        "key": str(ref).lower(),
+        "slug": str(ref).lower(),
+        "type": category_project_type(category_name),
+    }
 
 
 def load_installed_projects() -> list[dict[str, Any]]:
@@ -227,7 +268,7 @@ def load_optional_meta() -> dict[str, dict[str, Any]]:
 
 
 def load_project_catalog() -> dict[str, dict[str, Any]]:
-    """Return all projects declared by docs config, with defaults overriding optional entries."""
+    """Return the generated project catalog from data/optional.json and data/projects.json."""
     catalog = load_optional_meta()
     catalog.update(load_project_meta())
     return catalog
@@ -235,8 +276,35 @@ def load_project_catalog() -> dict[str, dict[str, Any]]:
 
 def load_project_cache() -> dict[str, Any]:
     if not PROJECT_CACHE.exists():
-        return {}
-    return read_json(PROJECT_CACHE)
+        return empty_project_cache()
+    return normalize_project_cache(read_json(PROJECT_CACHE))
+
+
+def empty_project_cache() -> dict[str, Any]:
+    """Return the structured project-cache shape used by current tooling."""
+    return {"schema_version": 2, "projects": {}, "aliases": {}, "errors": {}}
+
+
+def normalize_project_cache(cache: dict[str, Any]) -> dict[str, Any]:
+    """Validate and return the structured project-cache shape used by current tooling."""
+    if (
+        not isinstance(cache, dict)
+        or cache.get("schema_version") != 2
+        or not isinstance(cache.get("projects"), dict)
+        or not isinstance(cache.get("aliases"), dict)
+    ):
+        raise MissingModrinthCacheError(
+            f"{PROJECT_CACHE} uses an unsupported format. "
+            "Delete it and run python tools/refresh_modrinth_cache.py to rebuild the cache."
+        )
+
+    cache.setdefault("errors", {})
+    if not isinstance(cache["errors"], dict):
+        raise MissingModrinthCacheError(
+            f"{PROJECT_CACHE} has an invalid errors section. "
+            "Delete it and run python tools/refresh_modrinth_cache.py to rebuild the cache."
+        )
+    return cache
 
 
 def cache_entry_has_error(entry: Any) -> bool:
@@ -247,6 +315,12 @@ def cache_entry_has_error(entry: Any) -> bool:
 def collect_cache_errors(cache: dict[str, Any], cache_name: str) -> list[str]:
     """Collect unresolved cache errors for human-readable check output."""
     errors: list[str] = []
+    if isinstance(cache.get("errors"), dict):
+        for cache_key, entry in sorted(cache["errors"].items()):
+            if cache_entry_has_error(entry):
+                errors.append(f"{cache_name}:{cache_key}: {entry.get('error')}")
+        return errors
+
     for cache_key, entry in sorted(cache.items()):
         if cache_entry_has_error(entry):
             errors.append(f"{cache_name}:{cache_key}: {entry.get('error')}")
@@ -276,10 +350,66 @@ def collect_matrix_project_refs() -> list[dict[str, Any]]:
     return [refs[key] for key in sorted(refs)]
 
 
-def fetch_modrinth_project(project_ref: str, cache: dict[str, Any]) -> dict[str, Any] | None:
-    if project_ref in cache:
-        cached = cache[project_ref]
-        if isinstance(cached, dict) and "error" not in cached:
+def compact_project_cache_entry(data: dict[str, Any]) -> dict[str, Any]:
+    """Keep only project metadata fields used by generated data and multi-version checks."""
+    compact: dict[str, Any] = {}
+    for field_name in PROJECT_CACHE_FIELDS:
+        value = data.get(field_name)
+        if value in (None, "", [], {}):
+            continue
+        compact[field_name] = value
+    return compact
+
+
+def get_project_cache_entry(project_ref: str, cache: dict[str, Any]) -> dict[str, Any] | None:
+    """Resolve a project id or slug against the structured project cache."""
+    if not project_ref:
+        return None
+
+    projects = cache.get("projects", {})
+    aliases = cache.get("aliases", {})
+    if not isinstance(projects, dict) or not isinstance(aliases, dict):
+        return None
+
+    if project_ref in projects and not cache_entry_has_error(projects[project_ref]):
+        return projects[project_ref]
+    project_id = aliases.get(project_ref)
+    if project_id and project_id in projects and not cache_entry_has_error(projects[project_id]):
+        return projects[project_id]
+    return None
+
+
+def project_cache_has_entry(project_ref: str, cache: dict[str, Any]) -> bool:
+    return get_project_cache_entry(project_ref, cache) is not None
+
+
+def project_cache_project_count(cache: dict[str, Any]) -> int:
+    """Return the number of unique project metadata entries in a project cache."""
+    projects = cache.get("projects", {})
+    return len(projects) if isinstance(projects, dict) else 0
+
+
+def project_cache_alias_count(cache: dict[str, Any]) -> int:
+    """Return the number of alias keys in a structured project cache."""
+    aliases = cache.get("aliases", {})
+    return len(aliases) if isinstance(aliases, dict) else 0
+
+
+def set_project_cache_error(project_ref: str, cache: dict[str, Any], error: str, *, retryable: bool) -> None:
+    error_entry = {"error": error, "retryable": retryable}
+    if isinstance(cache.get("errors"), dict):
+        cache["errors"][project_ref] = error_entry
+        return
+    raise MissingModrinthCacheError(
+        f"{PROJECT_CACHE} uses an unsupported format. "
+        "Delete it and run python tools/refresh_modrinth_cache.py to rebuild the cache."
+    )
+
+
+def fetch_modrinth_project(project_ref: str, cache: dict[str, Any], *, force: bool = False) -> dict[str, Any] | None:
+    if not force:
+        cached = get_project_cache_entry(project_ref, cache)
+        if cached:
             return cached
 
     request = urllib.request.Request(
@@ -290,15 +420,73 @@ def fetch_modrinth_project(project_ref: str, cache: dict[str, Any]) -> dict[str,
         with urllib.request.urlopen(request, timeout=30) as response:
             project = json.loads(response.read().decode("utf-8"))
     except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
-        cache[project_ref] = {"error": str(error), "retryable": True}
+        set_project_cache_error(project_ref, cache, str(error), retryable=True)
         return None
 
-    cache[project_ref] = project
-    if project.get("id"):
-        cache[str(project["id"])] = project
-    if project.get("slug"):
-        cache[str(project["slug"])] = project
-    return project
+    return cache_project(project, cache, lookup_key=project_ref)
+
+
+def cache_project(data: dict[str, Any], cache: dict[str, Any], *, lookup_key: str | None = None) -> dict[str, Any]:
+    """Store a Modrinth project once and map slugs/lookup refs through aliases."""
+    compact_project = compact_project_cache_entry(data)
+    if isinstance(cache.get("projects"), dict):
+        project_id = str(data.get("id") or lookup_key or "")
+        if project_id:
+            cache["projects"][project_id] = compact_project
+            if lookup_key and lookup_key != project_id:
+                cache["aliases"][lookup_key] = project_id
+            if slug := data.get("slug"):
+                cache["aliases"][str(slug)] = project_id
+        return compact_project
+
+    raise MissingModrinthCacheError(
+        f"{PROJECT_CACHE} uses an unsupported format. "
+        "Delete it and run python tools/refresh_modrinth_cache.py to rebuild the cache."
+    )
+
+
+def fetch_missing_modrinth_projects(project_refs: list[str], cache: dict[str, Any], *, force: bool = False) -> None:
+    """Batch-fetch missing Modrinth project metadata by project id or slug."""
+    missing = [
+        project_ref
+        for project_ref in sorted(set(project_refs))
+        if project_ref
+        and (
+            force
+            or not project_cache_has_entry(project_ref, cache)
+        )
+    ]
+    if not missing:
+        return
+
+    for index in range(0, len(missing), 100):
+        batch = missing[index : index + 100]
+        query = urllib.parse.urlencode({"ids": json.dumps(batch)})
+        request = urllib.request.Request(
+            f"{MODRINTH_PROJECTS_API}?{query}",
+            headers={"User-Agent": "SeaSaltVanillaModDataTools/0.1 (local script)"},
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                projects = json.loads(response.read().decode("utf-8"))
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
+            # A mixed batch can fail because of one bad ref. Retry individually so valid
+            # projects still get cached and the final error list points to the bad refs.
+            for project_ref in batch:
+                fetch_modrinth_project(project_ref, cache, force=force)
+            continue
+
+        found_refs: set[str] = set()
+        for project in projects:
+            compact_project = cache_project(project, cache)
+            if compact_project.get("id"):
+                found_refs.add(str(compact_project["id"]))
+            if compact_project.get("slug"):
+                found_refs.add(str(compact_project["slug"]))
+
+        for project_ref in batch:
+            if project_ref not in found_refs and not project_cache_has_entry(project_ref, cache):
+                set_project_cache_error(project_ref, cache, "Project not returned by Modrinth API", retryable=False)
 
 
 def cache_version(data: dict[str, Any], cache: dict[str, Any]) -> None:
@@ -315,17 +503,36 @@ def cache_version(data: dict[str, Any], cache: dict[str, Any]) -> None:
     }
 
 
-def fetch_missing_modrinth_versions(version_ids: list[str], cache: dict[str, Any]) -> None:
+def missing_modrinth_version_cache_ids(version_ids: list[str], cache: dict[str, Any]) -> list[str]:
+    """Return Modrinth version ids that are absent or incomplete in the local cache."""
+    return [
+        version_id
+        for version_id in sorted(set(version_ids))
+        if version_id and not is_complete_version_cache_entry(cache.get(version_id))
+    ]
+
+
+def require_modrinth_version_cache(version_ids: list[str], cache: dict[str, Any]) -> None:
+    """Fail clearly when an offline check needs uncached Modrinth version metadata."""
+    missing = missing_modrinth_version_cache_ids(version_ids, cache)
+    if not missing:
+        return
+
+    preview = ", ".join(missing[:10])
+    if len(missing) > 10:
+        preview += f", ... ({len(missing)} total)"
+    raise MissingModrinthCacheError(
+        "Missing Modrinth version cache entries required for offline project-data checks: "
+        f"{preview}. Run python tools/refresh_modrinth_cache.py before running check."
+    )
+
+
+def fetch_missing_modrinth_versions(version_ids: list[str], cache: dict[str, Any], *, force: bool = False) -> None:
     missing = [
         version_id
         for version_id in sorted(set(version_ids))
         if version_id
-        and (
-            version_id not in cache
-            or cache_entry_has_error(cache.get(version_id))
-            or not isinstance(cache.get(version_id), dict)
-            or "loaders" not in cache[version_id]
-        )
+        and (force or not is_complete_version_cache_entry(cache.get(version_id)))
     ]
     if not missing:
         return
@@ -356,10 +563,19 @@ def fetch_missing_modrinth_versions(version_ids: list[str], cache: dict[str, Any
                 cache[version_id] = {"error": "Version not returned by Modrinth API", "retryable": False}
 
 
-def build_required_by(installed: list[dict[str, Any]], cache: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+def build_required_by(
+    installed: list[dict[str, Any]],
+    cache: dict[str, Any],
+    *,
+    allow_network: bool = True,
+) -> dict[str, list[dict[str, Any]]]:
     installed_ids = {mod["modrinth_id"] for mod in installed if mod["modrinth_id"]}
     required_by: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    fetch_missing_modrinth_versions([mod["modrinth_version"] for mod in installed], cache)
+    version_ids = [mod["modrinth_version"] for mod in installed]
+    if allow_network:
+        fetch_missing_modrinth_versions(version_ids, cache)
+    else:
+        require_modrinth_version_cache(version_ids, cache)
 
     for mod in installed:
         version_data = cache.get(mod["modrinth_version"])
@@ -379,10 +595,16 @@ def build_missing_required(
     installed: list[dict[str, Any]],
     cache: dict[str, Any],
     project_cache: dict[str, Any],
+    *,
+    allow_network: bool = True,
 ) -> dict[str, dict[str, Any]]:
     """Collect required Modrinth dependencies that are not installed in any project folder."""
     installed_ids = {project["modrinth_id"] for project in installed if project["modrinth_id"]}
-    fetch_missing_modrinth_versions([project["modrinth_version"] for project in installed], cache)
+    version_ids = [project["modrinth_version"] for project in installed]
+    if allow_network:
+        fetch_missing_modrinth_versions(version_ids, cache)
+    else:
+        require_modrinth_version_cache(version_ids, cache)
 
     dependents_by_id: dict[str, set[str]] = defaultdict(set)
     for project in installed:
@@ -398,7 +620,12 @@ def build_missing_required(
 
     missing: dict[str, dict[str, Any]] = {}
     for project_id, dependents in sorted(dependents_by_id.items()):
-        dependency_project = fetch_modrinth_project(project_id, project_cache)
+        dependency_project = fetch_modrinth_project(project_id, project_cache) if allow_network else project_cache.get(project_id)
+        if not allow_network and (not isinstance(dependency_project, dict) or cache_entry_has_error(dependency_project)):
+            raise MissingModrinthCacheError(
+                "Missing Modrinth project cache entry required for offline project-data checks: "
+                f"{project_id}. Run python tools/refresh_modrinth_cache.py before running check."
+            )
         missing[project_id] = {
             "name": str((dependency_project or {}).get("title") or project_id),
             "type": str((dependency_project or {}).get("project_type") or ""),

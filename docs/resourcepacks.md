@@ -28,7 +28,7 @@ These resource packs add or extend smooth entity animations. Extension packs dep
 | --- | --- | --- |
 | Smooth entity animations | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) |  |
 | Fresh Animations extensions | [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |  |
-| Third-person player animations | [Fa Player Extension](https://modrinth.com/resourcepack/fa-player-extension) | [Detailed Animations](https://modrinth.com/resourcepack/detailed-animations) |
+| Third-person player animations | [Fresh Animations: Player Extension](https://modrinth.com/resourcepack/fa-player-extension) | [Detailed Animations](https://modrinth.com/resourcepack/detailed-animations) |
 
 ## Vanilla-style textures
 
@@ -42,7 +42,7 @@ These resource packs improve the base game texture set without replacing it with
 | --- | --- |
 | Vanilla texture remaster | [Stay True](https://www.curseforge.com/minecraft/texture-packs/stay-true) |
 | Better grass textures | [Fast Better Grass](https://modrinth.com/resourcepack/fast-better-grass) |
-| Vanilla experience refinements | [Vanilla Exp](https://modrinth.com/resourcepack/vanilla-exp) |
+| Vanilla experience refinements | [Vanilla Experience+](https://modrinth.com/resourcepack/vanilla-exp) |
 
 ### GUI and HUD textures
 
@@ -50,4 +50,4 @@ These resource packs refine container screens, HUD elements, and other vanilla i
 
 | Feature | 1.21.1 |
 | --- | --- |
-| Container GUI and HUD recolors | [Recolourful Containers Gui](https://modrinth.com/resourcepack/recolourful-containers-gui) |
+| Container GUI and HUD recolors | [Recolourful Containers GUI + HUD](https://modrinth.com/resourcepack/recolourful-containers-gui) |

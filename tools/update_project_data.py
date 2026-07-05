@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Update or check generated project data and documentation."""
+"""Generate project data, or check repository-internal project consistency."""
 
 from __future__ import annotations
 
@@ -15,24 +15,28 @@ COMMANDS = {
     "projects": "tools/generate_project_registry.py",
     "dependencies": "tools/generate_project_dependencies.py",
     "docs": "tools/generate_project_docs.py",
-    "report": "tools/check_project_data.py",
 }
+GENERATE_STEPS = ["projects", "dependencies", "docs"]
+CHECK_STEPS = ["tools/check_project_data.py", "tools/check_generated_docs.py"]
 
 
 def run(args: list[str]) -> None:
     subprocess.run([sys.executable, *args], cwd=ROOT, check=True)
 
 
-def run_step(name: str, *, check: bool = False) -> None:
+def run_step(name: str) -> None:
     args = [COMMANDS[name]]
-    if check:
-        args.append("--check")
     run(args)
 
 
-def run_all(*, check: bool = False) -> None:
-    for name in ["projects", "dependencies", "docs", "report"]:
-        run_step(name, check=check)
+def generate_all() -> None:
+    for name in GENERATE_STEPS:
+        run_step(name)
+
+
+def check_consistency() -> None:
+    for script_path in CHECK_STEPS:
+        run([script_path])
 
 
 def main() -> None:
@@ -44,22 +48,17 @@ def main() -> None:
         choices=["generate", "check", *COMMANDS],
         help="Action to run. Defaults to generate. Use a step name to run only that step.",
     )
-    parser.add_argument(
-        "--check",
-        action="store_true",
-        help="Check instead of writing. With no step, this is the same as the check command.",
-    )
     args = parser.parse_args()
 
     if args.command == "generate":
-        run_all(check=args.check)
+        generate_all()
         return
 
     if args.command == "check":
-        run_all(check=True)
+        check_consistency()
         return
 
-    run_step(args.command, check=args.check)
+    run_step(args.command)
 
 
 if __name__ == "__main__":

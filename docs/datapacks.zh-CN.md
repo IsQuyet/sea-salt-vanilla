@@ -14,9 +14,9 @@
 
 | 功能 | 1.21.1 |
 | --- | --- |
-| 地牢与结构扩展 | [Dungeons And Taverns](https://modrinth.com/datapack/dungeons-and-taverns) |
-| 城镇与高塔结构 | [Towns And Towers](https://modrinth.com/datapack/towns-and-towers) |
+| 地牢与结构扩展 | [Dungeons and Taverns](https://modrinth.com/datapack/dungeons-and-taverns) |
+| 城镇与高塔结构 | [Towns and Towers](https://modrinth.com/datapack/towns-and-towers) |
 | 主世界地形塑造 | [Tectonic](https://modrinth.com/datapack/tectonic) |
 | 下界维度扩展 | [Incendium](https://modrinth.com/datapack/incendium) |
-| 主世界生物群系翻新 | [William Wythers Overhauled Overworld (datapack)](https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)) |
+| 主世界生物群系翻新 | [William Wythers' Overhauled Overworld (Datapack)](https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)) |
 | 大陆尺度地形布局 | [Continents](https://modrinth.com/datapack/continents) |

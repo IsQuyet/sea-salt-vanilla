@@ -115,7 +115,8 @@
     "name": "Centered Crosshair",
     "type": "mod",
     "source": "modrinth",
-    "slug": "centered-crosshair"
+    "slug": "centered-crosshair",
+    "id": "xUTHly0N"
   },
   "chat-heads": {
     "name": "Chat Heads",
@@ -191,7 +192,8 @@
     "name": "Continents",
     "type": "datapack",
     "source": "modrinth",
-    "slug": "continents"
+    "slug": "continents",
+    "id": "bQ5TJA1E"
   },
   "continuity": {
     "name": "Continuity",
@@ -215,10 +217,11 @@
     "id": "xv94TkTM"
   },
   "coolrain": {
-    "name": "Coolrain",
+    "name": "Cool Rain",
     "type": "mod",
     "source": "modrinth",
-    "slug": "coolrain"
+    "slug": "coolrain",
+    "id": "iDyqnQLT"
   },
   "cull-leaves": {
     "name": "Cull Leaves",
@@ -245,19 +248,22 @@
     "name": "Delete Worlds To Trash",
     "type": "mod",
     "source": "modrinth",
-    "slug": "delete-worlds-to-trash"
+    "slug": "delete-worlds-to-trash",
+    "id": "7diJQfvM"
   },
   "detail-armor-bar-reconstructed": {
     "name": "Detail Armor Bar Reconstructed",
     "type": "mod",
     "source": "modrinth",
-    "slug": "detail-armor-bar-reconstructed"
+    "slug": "detail-armor-bar-reconstructed",
+    "id": "Si9Uim4y"
   },
   "disableinsecurechattoast": {
-    "name": "Disableinsecurechattoast",
+    "name": "Disable Insecure Chat Toast",
     "type": "mod",
     "source": "modrinth",
-    "slug": "disableinsecurechattoast"
+    "slug": "disableinsecurechattoast",
+    "id": "i090SePT"
   },
   "disguiseheads": {
     "name": "DisguiseHeads",
@@ -288,10 +294,11 @@
     "id": "aLcHfalx"
   },
   "dungeons-and-taverns": {
-    "name": "Dungeons And Taverns",
+    "name": "Dungeons and Taverns",
     "type": "datapack",
     "source": "modrinth",
-    "slug": "dungeons-and-taverns"
+    "slug": "dungeons-and-taverns",
+    "id": "tpehi7ww"
   },
   "dynamiccrosshair": {
     "name": "Dynamic Crosshair",
@@ -315,10 +322,11 @@
     "id": "OVuFYfre"
   },
   "enhancedtooltips": {
-    "name": "Enhancedtooltips",
+    "name": "EnhancedTooltips",
     "type": "mod",
     "source": "modrinth",
-    "slug": "enhancedtooltips"
+    "slug": "enhancedtooltips",
+    "id": "8H6RXl2q"
   },
   "entity-model-features": {
     "name": "[EMF] Entity Model Features",
@@ -356,10 +364,11 @@
     "id": "OSQ8mw2r"
   },
   "fa-player-extension": {
-    "name": "Fa Player Extension",
+    "name": "Fresh Animations: Player Extension",
     "type": "resourcepack",
     "source": "modrinth",
-    "slug": "fa-player-extension"
+    "slug": "fa-player-extension",
+    "id": "TAIMVZCL"
   },
   "fabric-api": {
     "name": "Fabric API",
@@ -383,10 +392,11 @@
     "id": "WhbRG4iK"
   },
   "fancy-toasts": {
-    "name": "Fancy Toasts",
+    "name": "Fancy Toasts | Better Advancements",
     "type": "mod",
     "source": "modrinth",
-    "slug": "fancy-toasts"
+    "slug": "fancy-toasts",
+    "id": "eUziWqPC"
   },
   "fancymenu": {
     "name": "FancyMenu",
@@ -399,7 +409,8 @@
     "name": "Fast Better Grass",
     "type": "resourcepack",
     "source": "modrinth",
-    "slug": "fast-better-grass"
+    "slug": "fast-better-grass",
+    "id": "dspVZXKP"
   },
   "fast-ip-ping": {
     "name": "Fast IP Ping",
@@ -444,10 +455,11 @@
     "id": "YAVTU8mK"
   },
   "fwa": {
-    "name": "Fwa",
+    "name": "Fancy World Animations",
     "type": "mod",
     "source": "modrinth",
-    "slug": "fwa"
+    "slug": "fwa",
+    "id": "IAzUFvS6"
   },
   "globalpacks": {
     "name": "Global Packs",
@@ -457,10 +469,11 @@
     "id": "NRLPy2mk"
   },
   "hidetags": {
-    "name": "Hidetags",
+    "name": "Toggle Nametags",
     "type": "mod",
     "source": "modrinth",
-    "slug": "hidetags"
+    "slug": "hidetags",
+    "id": "qFlNttam"
   },
   "hold-my-items": {
     "name": "Hold My Items",
@@ -487,7 +500,8 @@
     "name": "Immersive Hotbar",
     "type": "mod",
     "source": "modrinth",
-    "slug": "immersive-hotbar"
+    "slug": "immersive-hotbar",
+    "id": "hsPB5xMD"
   },
   "immersive-ui": {
     "name": "Immersive UI",
@@ -500,7 +514,8 @@
     "name": "Incendium",
     "type": "datapack",
     "source": "modrinth",
-    "slug": "incendium"
+    "slug": "incendium",
+    "id": "ZVzW5oNS"
   },
   "inventory-particles": {
     "name": "Inventory Particles",
@@ -590,7 +605,8 @@
     "name": "Leave My Bars Alone",
     "type": "mod",
     "source": "modrinth",
-    "slug": "leave-my-bars-alone"
+    "slug": "leave-my-bars-alone",
+    "id": "gK9mebQg"
   },
   "lithium": {
     "name": "Lithium",
@@ -617,7 +633,8 @@
     "name": "Mindful Darkness",
     "type": "mod",
     "source": "modrinth",
-    "slug": "mindful-darkness"
+    "slug": "mindful-darkness",
+    "id": "pzCY6C3e"
   },
   "mini-effects": {
     "name": "Mini Effects",
@@ -721,7 +738,8 @@
     "name": "Packed Packs",
     "type": "mod",
     "source": "modrinth",
-    "slug": "packed-packs"
+    "slug": "packed-packs",
+    "id": "8Pq6Exn2"
   },
   "paperdoll": {
     "name": "Paper Doll",
@@ -734,7 +752,8 @@
     "name": "Particle Core",
     "type": "mod",
     "source": "modrinth",
-    "slug": "particle-core"
+    "slug": "particle-core",
+    "id": "RSeLon5O"
   },
   "particle-effects": {
     "name": "Particle Effects",
@@ -800,10 +819,11 @@
     "id": "r3VgI4QN"
   },
   "recolourful-containers-gui": {
-    "name": "Recolourful Containers Gui",
+    "name": "Recolourful Containers GUI + HUD",
     "type": "resourcepack",
     "source": "modrinth",
-    "slug": "recolourful-containers-gui"
+    "slug": "recolourful-containers-gui",
+    "id": "lewweaHO"
   },
   "rei": {
     "name": "Roughly Enough Items (REI)",
@@ -851,7 +871,8 @@
     "name": "Scribble",
     "type": "mod",
     "source": "modrinth",
-    "slug": "scribble"
+    "slug": "scribble",
+    "id": "yXAvIk0x"
   },
   "seamless": {
     "name": "Seamless",
@@ -864,7 +885,8 @@
     "name": "Shoulder Surfing Reloaded",
     "type": "mod",
     "source": "modrinth",
-    "slug": "shoulder-surfing-reloaded"
+    "slug": "shoulder-surfing-reloaded",
+    "id": "kepjj2sy"
   },
   "shulkerboxtooltip": {
     "name": "Shulker Box Tooltip",
@@ -881,10 +903,11 @@
     "id": "9eGKb6K1"
   },
   "skinshuffle": {
-    "name": "Skinshuffle",
+    "name": "Skin Shuffle",
     "type": "mod",
     "source": "modrinth",
-    "slug": "skinshuffle"
+    "slug": "skinshuffle",
+    "id": "3s19I5jr"
   },
   "smooth-gui": {
     "name": "Smooth Gui",
@@ -908,10 +931,11 @@
     "id": "ydZic5r4"
   },
   "snow-imprints": {
-    "name": "Snow Imprints",
+    "name": "Soft Imprints",
     "type": "mod",
     "source": "modrinth",
-    "slug": "snow-imprints"
+    "slug": "snow-imprints",
+    "id": "UhxJgB1o"
   },
   "sodium": {
     "name": "Sodium",
@@ -951,7 +975,8 @@
     "name": "Stylish Effects",
     "type": "mod",
     "source": "modrinth",
-    "slug": "stylish-effects"
+    "slug": "stylish-effects",
+    "id": "onDuQF5e"
   },
   "subtle-effects": {
     "name": "Subtle Effects",
@@ -971,13 +996,15 @@
     "name": "Tectonic",
     "type": "datapack",
     "source": "modrinth",
-    "slug": "tectonic"
+    "slug": "tectonic",
+    "id": "lWDHr9jE"
   },
   "threadtweak": {
-    "name": "Threadtweak",
+    "name": "ThreadTweak",
     "type": "mod",
     "source": "modrinth",
-    "slug": "threadtweak"
+    "slug": "threadtweak",
+    "id": "vSEH1ERy"
   },
   "tiny-item-animations": {
     "name": "Tiny Item Animations",
@@ -987,10 +1014,11 @@
     "id": "wMkevcSR"
   },
   "towns-and-towers": {
-    "name": "Towns And Towers",
+    "name": "Towns and Towers",
     "type": "datapack",
     "source": "modrinth",
-    "slug": "towns-and-towers"
+    "slug": "towns-and-towers",
+    "id": "DjLobEOy"
   },
   "translations-for-sodium": {
     "name": "Translations for Sodium",
@@ -1014,10 +1042,11 @@
     "id": "W2K5WNdH"
   },
   "vanilla-exp": {
-    "name": "Vanilla Exp",
+    "name": "Vanilla Experience+",
     "type": "resourcepack",
     "source": "modrinth",
-    "slug": "vanilla-exp"
+    "slug": "vanilla-exp",
+    "id": "8bf2GogI"
   },
   "vectorientation": {
     "name": "Vectorientation",
@@ -1062,10 +1091,11 @@
     "id": "FT20RvJM"
   },
   "william-wythers-overhauled-overworld-(datapack)": {
-    "name": "William Wythers Overhauled Overworld (datapack)",
+    "name": "William Wythers' Overhauled Overworld (Datapack)",
     "type": "datapack",
     "source": "modrinth",
-    "slug": "william-wythers-overhauled-overworld-(datapack)"
+    "slug": "william-wythers-overhauled-overworld-(datapack)",
+    "id": "4pbhwMQz"
   },
   "worldedit": {
     "name": "WorldEdit",
