@@ -1,0 +1,52 @@
+# Automatically validate generated project data and packwiz metadata on every
+# push and pull request. Full .mrpack exports are handled by the release workflow.
+
+name: build
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+
+      - name: setup python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: setup go
+        uses: actions/setup-go@v6
+        with:
+          go-version: stable
+
+      - name: install packwiz
+        run: |
+          go install github.com/packwiz/packwiz@latest
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: check generated project data
+        run: python tools/update_project_data.py check
+
+      - name: check packwiz index
+        run: |
+          packwiz refresh
+          git diff --exit-code -- pack.toml index.toml
+
+      - name: export modrinth pack
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          mkdir -p dist
+          packwiz modrinth export -o "dist/sea-salt-vanilla-${{ github.sha }}.mrpack"
+
+      - name: capture export test artifact
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: modrinth-pack-export-test
+          path: dist/*.mrpack

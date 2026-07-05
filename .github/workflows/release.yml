@@ -1,0 +1,149 @@
+# Manually publish a packwiz export to GitHub and, optionally, Modrinth.
+# This repository publishes .mrpack files instead of Gradle-built mod jars.
+# The release notes are read from CHANGELOG.md below the separator line.
+
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      destination:
+        type: choice
+        description: Where to publish the release
+        default: GH+MR
+        options:
+          - GH+MR
+          - GH
+          - MR
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+
+      - name: setup python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: setup go
+        uses: actions/setup-go@v6
+        with:
+          go-version: stable
+
+      - name: install packwiz
+        run: |
+          go install github.com/packwiz/packwiz@latest
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: resolve release metadata
+        id: metadata
+        run: |
+          python - <<'PY'
+          import os
+          import tomllib
+          from pathlib import Path
+
+          pack = tomllib.loads(Path('pack.toml').read_text(encoding='utf-8'))
+          version = str(pack.get('version', '')).strip()
+          if not version:
+              raise SystemExit('Release version is required in pack.toml.')
+          minecraft_version = str(pack.get('versions', {}).get('minecraft') or '').strip()
+          if not minecraft_version:
+              raise SystemExit('Minecraft version is required in pack.toml.')
+          release_tag = f"mc{minecraft_version}-{version}"
+          normalized_version = version.lower()
+          if 'alpha' in normalized_version:
+              release_type = 'alpha'
+          elif 'beta' in normalized_version:
+              release_type = 'beta'
+          else:
+              release_type = 'release'
+
+          notes = ''
+          changelog_path = Path('CHANGELOG.md')
+          if changelog_path.exists():
+              changelog_text = changelog_path.read_text(encoding='utf-8-sig')
+              changelog_parts = changelog_text.split('----------', 1)
+              notes = (changelog_parts[1] if len(changelog_parts) > 1 else changelog_parts[0]).strip()
+          if not notes:
+              notes = f"Sea Salt Vanilla {version}."
+          notes = (
+              notes.replace('[ReleaseTag]()', release_tag)
+              .replace('[MCVersion]()', minecraft_version)
+              .replace('[PackVersion]()', version)
+          )
+
+          Path('release-notes.md').write_text(notes + '\n', encoding='utf-8', newline='\n')
+
+          output_path = Path(os.environ['GITHUB_OUTPUT'])
+          with output_path.open('a', encoding='utf-8') as output:
+              output.write(f"version={version}\n")
+              output.write(f"release_tag={release_tag}\n")
+              output.write(f"release_type={release_type}\n")
+              output.write(f"artifact=sea-salt-vanilla-{release_tag}.mrpack\n")
+          PY
+
+      - name: check generated project data
+        run: python tools/update_project_data.py check
+
+      - name: check packwiz index
+        run: |
+          packwiz refresh
+          git diff --exit-code -- pack.toml index.toml
+
+      - name: export modrinth pack
+        run: |
+          mkdir -p dist
+          packwiz modrinth export -o "dist/${{ steps.metadata.outputs.artifact }}"
+
+      - name: capture release artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: release-artifacts
+          path: dist/*.mrpack
+
+      - name: publish github release
+        if: ${{ inputs.destination == 'GH+MR' || inputs.destination == 'GH' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ steps.metadata.outputs.release_tag }}" \
+            "dist/${{ steps.metadata.outputs.artifact }}" \
+            --title "Sea Salt Vanilla ${{ steps.metadata.outputs.release_tag }}" \
+            --notes-file release-notes.md
+
+      - name: validate modrinth release settings
+        if: ${{ inputs.destination == 'GH+MR' || inputs.destination == 'MR' }}
+        env:
+          MODRINTH_PROJECT_ID: ${{ vars.MODRINTH_PROJECT_ID }}
+          MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
+        run: |
+          if [ -z "$MODRINTH_PROJECT_ID" ]; then
+            echo "Set the MODRINTH_PROJECT_ID repository variable."
+            exit 1
+          fi
+          if [ -z "$MODRINTH_API_KEY" ]; then
+            echo "Set the MODRINTH_API_KEY repository secret."
+            exit 1
+          fi
+
+      - name: publish modrinth release
+        if: ${{ inputs.destination == 'GH+MR' || inputs.destination == 'MR' }}
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: ${{ vars.MODRINTH_PROJECT_ID }}
+          modrinth-token: ${{ secrets.MODRINTH_API_KEY }}
+          files: dist/${{ steps.metadata.outputs.artifact }}
+          name: Sea Salt Vanilla ${{ steps.metadata.outputs.release_tag }}
+          version: ${{ steps.metadata.outputs.release_tag }}
+          version-type: ${{ steps.metadata.outputs.release_type }}
+          changelog-file: release-notes.md
+          loaders: |
+            fabric
+          game-versions: |
+            1.21.1
