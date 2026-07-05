@@ -1,10 +1,13 @@
 # Repository maintenance files
+.github/
+CHANGELOG.md
 README.md
 README.zh-CN.md
 data/
 docs/
 tools/
 reference/
+cache/
 
 # Git and editor metadata
 .git/

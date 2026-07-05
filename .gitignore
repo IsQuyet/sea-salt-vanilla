@@ -17,12 +17,12 @@ screenshots/
 resourcepacks/*.zip
 shaderpacks/*.zip
 
-# Local player/client state
-options.txt
-optionsof.txt
-servers.dat
-usercache.json
-usernamecache.json
+# Local player/client state at repository root
+/options.txt
+/optionsof.txt
+/servers.dat
+/usercache.json
+/usernamecache.json
 
 # OS / editor noise
 .DS_Store
