@@ -1,0 +1,8 @@
+name = "FancyMenu Animation"
+filename = "animation.afma"
+side = "client"
+
+[download]
+url = "https://github.com/IsQuyet/sea-salt-vanilla/releases/download/fancymenu-assets-v1/animation.afma"
+hash-format = "sha256"
+hash = "a5205728deef9d7018823b1ec9021a7abe1528a30675e4523ba9e03fae6bd3c9"

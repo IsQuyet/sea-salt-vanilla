@@ -1,16 +1,22 @@
 hash-format = "sha256"
 
 [[files]]
-file = "config/yosbr/config/fancymenu/assets/animation.afma"
-hash = "68a03922e2c2df48c9533279746b193625cb1714acb5d216ef807320726dae6e"
+file = "config/yosbr/config/fancymenu/assets/animation.afma.pw.toml"
+hash = "70eec7ffd3c3467aa091351698eb64c7cdd3b3d8b811c720e3377d575523226c"
+metafile = true
 
 [[files]]
-file = "config/yosbr/config/fancymenu/assets/introaudio.wav"
-hash = "0fda8150841f88ee8d2cf4f92bc0c9085d01b5732d2040ed93492557c1e75326"
+file = "config/yosbr/config/fancymenu/assets/introaudio.wav.pw.toml"
+hash = "e1bda1475d1fa77255ee4d377ad49eab210adc53ca422792e33a2c427042d643"
+metafile = true
 
 [[files]]
 file = "config/yosbr/config/fancymenu/assets/splash.txt"
 hash = "9ac9fee5c13594591ab429303512ee73a0c8a3a5f4719164d13502badf34f665"
+
+[[files]]
+file = "config/yosbr/config/fancymenu/customizablemenus.txt"
+hash = "d6959e42a3b48b6e791da6ce8dbeb25d6796f7eb5dee672599f3d212ea1de75b"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/customization/title_screen_layout.txt"
@@ -18,7 +24,7 @@ hash = "fda82534382a9c36ea1bb4e4f987c479f1f4ffb66db532a873a092806e04a838"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/options.txt"
-hash = "b033e4aa1ef046a9fc6455f6799fd0023029806d8d5c1c5d16b32db0e68a4ab3"
+hash = "6290641e0fd0a67fcff88748eb8b6a5dc5835eca1f0f630a4452d3c600fae435"
 
 [[files]]
 file = "datapacks/continents.pw.toml"

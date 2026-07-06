@@ -1,0 +1,8 @@
+name = "FancyMenu Intro Audio"
+filename = "introaudio.wav"
+side = "client"
+
+[download]
+url = "https://github.com/IsQuyet/sea-salt-vanilla/releases/download/fancymenu-assets-v1/introaudio.wav"
+hash-format = "sha256"
+hash = "310af2157e4c0394ead12437711d5cf87ea36da788bc73cd5f6e288b537ad323"
