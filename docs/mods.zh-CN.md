@@ -176,7 +176,6 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 3D 皮肤层 | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) |
-| 收藏头像 | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | 披风物理效果 | [Wavey Capes](https://modrinth.com/mod/wavey-capes) |
 | 披风来源支持 | [Capes](https://modrinth.com/mod/capes) |
 | 自定义皮肤加载 | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) |
@@ -294,6 +293,7 @@
 | 完成度追踪索引 | [Completionist's Index](https://modrinth.com/mod/completionists-index) |  |
 | 生命值条显示 | [Health Bars](https://modrinth.com/mod/new-health-bars) |  |
 | 背包标签页 | [Inventory Tabs](https://modrinth.com/mod/inventory-tabs) |  |
+| 收藏头像 | [REPO Heads](https://modrinth.com/mod/repo-heads) |  |
 
 ### 可选包管理
 

@@ -176,7 +176,6 @@ These entries improve player skin, cape, and cosmetic display.
 | Feature | 1.21.1 |
 | --- | --- |
 | 3D skin layers | [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) |
-| Collectible heads | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | Cape physics | [Wavey Capes](https://modrinth.com/mod/wavey-capes) |
 | Cape provider support | [Capes](https://modrinth.com/mod/capes) |
 | Custom skin loading | [CustomSkinLoader](https://modrinth.com/mod/customskinloader) |
@@ -294,6 +293,7 @@ These entries add small client-side quality-of-life features that are useful but
 | Completion tracking index | [Completionist's Index](https://modrinth.com/mod/completionists-index) |  |
 | Health bar display | [Health Bars](https://modrinth.com/mod/new-health-bars) |  |
 | Inventory tabs | [Inventory Tabs](https://modrinth.com/mod/inventory-tabs) |  |
+| Collectible heads | [REPO Heads](https://modrinth.com/mod/repo-heads) |  |
 
 ### Optional pack management
 

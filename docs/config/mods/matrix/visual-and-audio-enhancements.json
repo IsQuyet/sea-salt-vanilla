@@ -1043,21 +1043,6 @@
           }
         },
         {
-          "id": "collectible-heads",
-          "feature": {
-            "en": "Collectible heads",
-            "zh": "收藏头像"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "repo-heads"
-              }
-            }
-          }
-        },
-        {
           "id": "cape-physics",
           "feature": {
             "en": "Cape physics",

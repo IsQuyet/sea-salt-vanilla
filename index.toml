@@ -2,17 +2,17 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/assets/animation.afma.pw.toml"
-hash = "70eec7ffd3c3467aa091351698eb64c7cdd3b3d8b811c720e3377d575523226c"
+hash = "ae74f9d913778927df812b072405d9d06b0615450293ac8a3d32e8fb643e1cd8"
 metafile = true
 
 [[files]]
 file = "config/yosbr/config/fancymenu/assets/introaudio.wav.pw.toml"
-hash = "e1bda1475d1fa77255ee4d377ad49eab210adc53ca422792e33a2c427042d643"
+hash = "f94c495561f59568388828ea9e1cd117070c440f636455b795b2d1a035191b24"
 metafile = true
 
 [[files]]
 file = "config/yosbr/config/fancymenu/assets/splash.txt"
-hash = "9ac9fee5c13594591ab429303512ee73a0c8a3a5f4719164d13502badf34f665"
+hash = "73aa3849f54f614d888c736f220d99eaf61a49981fb2539d44dc144f44817cb5"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/customizablemenus.txt"
@@ -20,7 +20,7 @@ hash = "d6959e42a3b48b6e791da6ce8dbeb25d6796f7eb5dee672599f3d212ea1de75b"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/customization/title_screen_layout.txt"
-hash = "fda82534382a9c36ea1bb4e4f987c479f1f4ffb66db532a873a092806e04a838"
+hash = "3276510b5e807a0568e66dd396bf2692754e4c81319262082c2d20dcea4794e1"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/options.txt"
@@ -669,11 +669,6 @@ metafile = true
 [[files]]
 file = "mods/rei.pw.toml"
 hash = "d22546ad55b555931eb527f163b3564e00c12c7dc8101378b87447dfcc8e0652"
-metafile = true
-
-[[files]]
-file = "mods/repo-heads.pw.toml"
-hash = "9a3bfde1a02992720bade1262be3ea3bbf88a7872a71198c014d6b8da555eef7"
 metafile = true
 
 [[files]]
