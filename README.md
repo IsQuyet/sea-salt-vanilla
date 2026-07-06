@@ -20,6 +20,10 @@ The goal: keep the vanilla experience recognizable, then quietly improve visuals
 - CurseForge packages may be provided when needed
 - Release notes are published through GitHub Releases and Modrinth version pages
 
+## Updating
+
+Use the Modrinth App if you want stable updates with the least manual work. Install the pack from its Modrinth project page, then update the existing instance when a new version is released. For PCL2, Prism Launcher, HMCL, or other launchers, download the latest `.mrpack` and update through the launcher's supported flow. Back up `saves/` before updating.
+
 ## Project documentation
 
 - [Mods](docs/mods.md)

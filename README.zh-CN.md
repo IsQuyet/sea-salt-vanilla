@@ -20,6 +20,10 @@
 - 必要时提供 CurseForge 包
 - 版本更新说明发布在 GitHub Releases 与 Modrinth 版本页面
 
+## 更新整合包
+
+如果你希望用最少的手动操作持续接收稳定更新，推荐使用 Modrinth App。从 Modrinth 项目页安装整合包后，新版本发布时更新已有实例即可。如果你使用 PCL2、Prism Launcher、HMCL 或其他启动器，请下载最新 `.mrpack`，再按启动器支持的方式更新。更新前建议备份 `saves/`。
+
 ## 项目文档
 
 - [模组](docs/mods.zh-CN.md)
