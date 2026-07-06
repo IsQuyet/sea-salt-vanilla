@@ -349,6 +349,13 @@
     "slug": "ebe",
     "id": "OVuFYfre"
   },
+  "elytra-contrails-mod": {
+    "name": "Elytra Contrails Mod",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "elytra-contrails-mod",
+    "id": "dWMHBEAQ"
+  },
   "enhancedtooltips": {
     "name": "EnhancedTooltips",
     "type": "mod",

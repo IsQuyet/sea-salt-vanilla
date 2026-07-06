@@ -106,7 +106,8 @@
 | 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
 | 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception) |  |
-| ??????? | [Burn By Soul Fire](https://modrinth.com/mod/burn-by-soul-fire) |  |
+| 灵魂火燃烧视觉 | [Burn By Soul Fire](https://modrinth.com/mod/burn-by-soul-fire) |  |
+| 鞘翅飞行尾迹 | [Elytra Contrails Mod](https://modrinth.com/mod/elytra-contrails-mod) |  |
 
 ### 音效
 
@@ -281,6 +282,7 @@
 | 玩家表情动作 | [Emotecraft](https://modrinth.com/mod/emotecraft) |
 | 语音聊天气泡 | [TalkBubbles](https://modrinth.com/mod/talkbubbles) |
 | 好友互动 | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
+| 玩家拍拍互动 | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |
 
 ### 可选客户端便利功能
 
@@ -318,6 +320,7 @@
 | 大气视觉氛围 | [ATMOSPHERICS](https://modrinth.com/mod/atmospherics) |
 | 烟雾效果改进 | [Better Smoke](https://modrinth.com/mod/better-smoke) |
 | 自然水体渲染 | [Natural Waters](https://modrinth.com/mod/natural-waters) |
+| 附魔闪光轮廓 | [Enchantment Glint Outline](https://modrinth.com/mod/enchantment-glint-outline) |
 
 ### 可选工具与工作流
 

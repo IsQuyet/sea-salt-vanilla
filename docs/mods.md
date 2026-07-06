@@ -107,6 +107,7 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
 | Immersive visual effects | [Perception](https://modrinth.com/mod/perception) |  |
 | Soul fire burn visuals | [Burn By Soul Fire](https://modrinth.com/mod/burn-by-soul-fire) |  |
+| Elytra contrails | [Elytra Contrails Mod](https://modrinth.com/mod/elytra-contrails-mod) |  |
 
 ### Audio
 
@@ -281,6 +282,7 @@ These entries mainly improve the client-side experience when playing online or o
 | Player emotes | [Emotecraft](https://modrinth.com/mod/emotecraft) |
 | Voice chat bubbles | [TalkBubbles](https://modrinth.com/mod/talkbubbles) |
 | Friendly interactions | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
+| Player pat interactions | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |
 
 ### Optional client convenience
 
@@ -318,6 +320,7 @@ These entries can strongly shape visual or audio ambience, so they are kept as o
 | Atmospheric visual ambience | [ATMOSPHERICS](https://modrinth.com/mod/atmospherics) |
 | Better smoke effects | [Better Smoke](https://modrinth.com/mod/better-smoke) |
 | Natural water rendering | [Natural Waters](https://modrinth.com/mod/natural-waters) |
+| Enchantment glint outline | [Enchantment Glint Outline](https://modrinth.com/mod/enchantment-glint-outline) |
 
 ### Optional tools and workflows
 

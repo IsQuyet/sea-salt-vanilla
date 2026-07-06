@@ -287,6 +287,11 @@ hash = "b1f89407254a20cde6c60994a6315bd841b7f562669a1d29b436ec97463ff2ae"
 metafile = true
 
 [[files]]
+file = "mods/elytra-contrails-mod.pw.toml"
+hash = "2ba255bde0903dcbd6c356d7f00becad023f05b68db87daeb79e8eaeb0fbab79"
+metafile = true
+
+[[files]]
 file = "mods/enhancedtooltips.pw.toml"
 hash = "4815423054d46084c5fd1dce2d963eb48dcdf4a6542afa28b3558a16d94b67b9"
 metafile = true

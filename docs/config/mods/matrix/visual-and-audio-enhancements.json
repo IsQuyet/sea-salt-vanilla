@@ -444,13 +444,28 @@
           "id": "soul-fire-burn-visuals",
           "feature": {
             "en": "Soul fire burn visuals",
-            "zh": "???????"
+            "zh": "灵魂火燃烧视觉"
           },
           "versions": {
             "1.21.1": {
               "selected": {
                 "source": "modrinth",
                 "slug": "burn-by-soul-fire"
+              }
+            }
+          }
+        },
+        {
+          "id": "elytra-contrails",
+          "feature": {
+            "en": "Elytra contrails",
+            "zh": "鞘翅飞行尾迹"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "elytra-contrails-mod"
               }
             }
           }

@@ -104,6 +104,13 @@
     "slug": "enchantment-descriptions",
     "id": "UVtY3ZAC"
   },
+  "enchantment-glint-outline": {
+    "name": "Enchantment Glint Outline",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "enchantment-glint-outline",
+    "id": "Qx2rzv1x"
+  },
   "essential": {
     "name": "Essential Mod",
     "type": "mod",
@@ -214,6 +221,13 @@
     "source": "modrinth",
     "slug": "particle-rain",
     "id": "nrikgvxm"
+  },
+  "patpat": {
+    "name": "PatPat [Mod & Plugin]",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "patpat",
+    "id": "dw7LChq9"
   },
   "paxi": {
     "name": "Paxi",

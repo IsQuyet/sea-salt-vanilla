@@ -94,6 +94,21 @@
               }
             }
           }
+        },
+        {
+          "id": "player-pat-interactions",
+          "feature": {
+            "en": "Player pat interactions",
+            "zh": "玩家拍拍互动"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "patpat"
+              }
+            }
+          }
         }
       ]
     },
@@ -376,6 +391,21 @@
               "selected": {
                 "source": "modrinth",
                 "slug": "natural-waters"
+              }
+            }
+          }
+        },
+        {
+          "id": "enchantment-glint-outline",
+          "feature": {
+            "en": "Enchantment glint outline",
+            "zh": "附魔闪光轮廓"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "enchantment-glint-outline"
               }
             }
           }

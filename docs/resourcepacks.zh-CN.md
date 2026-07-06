@@ -51,5 +51,5 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 容器 GUI 与 HUD 重着色 | [Recolourful Containers GUI + HUD](https://modrinth.com/resourcepack/recolourful-containers-gui) |
-| ???????? | [Chat Reporting Helper](https://modrinth.com/resourcepack/chat-reporting-helper) |
-| ?????? | [Low On Fire](https://modrinth.com/resourcepack/low-on-fire) |
+| 聊天举报提示贴图 | [Chat Reporting Helper](https://modrinth.com/resourcepack/chat-reporting-helper) |
+| 降低火焰遮挡 | [Low On Fire](https://modrinth.com/resourcepack/low-on-fire) |

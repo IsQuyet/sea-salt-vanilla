@@ -98,7 +98,7 @@
           "id": "chat-reporting-helper-textures",
           "feature": {
             "en": "Chat reporting helper textures",
-            "zh": "????????"
+            "zh": "聊天举报提示贴图"
           },
           "versions": {
             "1.21.1": {
@@ -113,7 +113,7 @@
           "id": "lower-fire-overlay",
           "feature": {
             "en": "Lower fire overlay",
-            "zh": "??????"
+            "zh": "降低火焰遮挡"
           },
           "versions": {
             "1.21.1": {
