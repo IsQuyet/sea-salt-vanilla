@@ -106,6 +106,7 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Projectile visual style | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
 | Immersive visual effects | [Perception](https://modrinth.com/mod/perception) |  |
+| Soul fire burn visuals | [Burn By Soul Fire](https://modrinth.com/mod/burn-by-soul-fire) |  |
 
 ### Audio
 

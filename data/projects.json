@@ -97,6 +97,13 @@
     "slug": "bsl-shaders",
     "id": "Q1vvjJYV"
   },
+  "burn-by-soul-fire": {
+    "name": "Burn By Soul Fire",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "burn-by-soul-fire",
+    "id": "UQSwebjQ"
+  },
   "cameraoverhaul": {
     "name": "Camera Overhaul",
     "type": "mod",
@@ -131,6 +138,13 @@
     "source": "modrinth",
     "slug": "chat-heads",
     "id": "Wb5oqrBJ"
+  },
+  "chat-reporting-helper": {
+    "name": "Chat Reporting Helper",
+    "type": "resourcepack",
+    "source": "modrinth",
+    "slug": "chat-reporting-helper",
+    "id": "tN4E9NfV"
   },
   "chatanimation": {
     "name": "Chat Animation [Smooth Chat]",
@@ -628,6 +642,13 @@
     "source": "modrinth",
     "slug": "lithium",
     "id": "gvQqBUqZ"
+  },
+  "low-on-fire": {
+    "name": "Low On Fire",
+    "type": "resourcepack",
+    "source": "modrinth",
+    "slug": "low-on-fire",
+    "id": "RRxvWKNC"
   },
   "make_bubbles_pop": {
     "name": "Make Bubbles Pop",

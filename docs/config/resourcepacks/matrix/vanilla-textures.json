@@ -93,6 +93,36 @@
               }
             }
           }
+        },
+        {
+          "id": "chat-reporting-helper-textures",
+          "feature": {
+            "en": "Chat reporting helper textures",
+            "zh": "????????"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "chat-reporting-helper"
+              }
+            }
+          }
+        },
+        {
+          "id": "lower-fire-overlay",
+          "feature": {
+            "en": "Lower fire overlay",
+            "zh": "??????"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "low-on-fire"
+              }
+            }
+          }
         }
       ]
     }

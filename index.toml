@@ -12,7 +12,7 @@ metafile = true
 
 [[files]]
 file = "config/yosbr/config/fancymenu/assets/splash.txt"
-hash = "73aa3849f54f614d888c736f220d99eaf61a49981fb2539d44dc144f44817cb5"
+hash = "9ac9fee5c13594591ab429303512ee73a0c8a3a5f4719164d13502badf34f665"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/customizablemenus.txt"
@@ -119,6 +119,11 @@ metafile = true
 [[files]]
 file = "mods/boat-item-view.pw.toml"
 hash = "c5833c66008b22b8cdcbc719300e34f9e29a14f5c67789c0498451448ab40296"
+metafile = true
+
+[[files]]
+file = "mods/burn-by-soul-fire.pw.toml"
+hash = "88ea6a63507b9bcdac93ea86cebd936d54be7774ad882c798394078f62d6c9ed"
 metafile = true
 
 [[files]]
@@ -872,6 +877,11 @@ hash = "96f866de9f3ebaa42dfcb92392684c241ff189f82ce24c3e7a32c1d0b8f37db8"
 metafile = true
 
 [[files]]
+file = "resourcepacks/chat-reporting-helper.pw.toml"
+hash = "3a34b65d2856f4f75023f02b712583472b3c0e7444b71da3ace465ef389af7d2"
+metafile = true
+
+[[files]]
 file = "resourcepacks/fa-player-extension.pw.toml"
 hash = "2e1a6866e4366cebe200dcf71ab52923b7653f76dc48741b93411ee3bf77372a"
 metafile = true
@@ -889,6 +899,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "6a1556a0e4fcb411b33efafc3382b4abd9a6e671f140dc0d42e9aad2808e24f3"
+metafile = true
+
+[[files]]
+file = "resourcepacks/low-on-fire.pw.toml"
+hash = "0ce41000cbbb72e9c03ae3738500aae1056f1102ddc4e5a46784ec18cabf6ca7"
 metafile = true
 
 [[files]]

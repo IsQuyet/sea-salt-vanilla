@@ -51,3 +51,5 @@ These resource packs refine container screens, HUD elements, and other vanilla i
 | Feature | 1.21.1 |
 | --- | --- |
 | Container GUI and HUD recolors | [Recolourful Containers GUI + HUD](https://modrinth.com/resourcepack/recolourful-containers-gui) |
+| Chat reporting helper textures | [Chat Reporting Helper](https://modrinth.com/resourcepack/chat-reporting-helper) |
+| Lower fire overlay | [Low On Fire](https://modrinth.com/resourcepack/low-on-fire) |

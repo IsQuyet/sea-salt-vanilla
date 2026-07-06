@@ -439,6 +439,21 @@
               }
             }
           }
+        },
+        {
+          "id": "soul-fire-burn-visuals",
+          "feature": {
+            "en": "Soul fire burn visuals",
+            "zh": "???????"
+          },
+          "versions": {
+            "1.21.1": {
+              "selected": {
+                "source": "modrinth",
+                "slug": "burn-by-soul-fire"
+              }
+            }
+          }
         }
       ]
     },

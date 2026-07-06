@@ -106,6 +106,7 @@
 | 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
 | 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception) |  |
+| ??????? | [Burn By Soul Fire](https://modrinth.com/mod/burn-by-soul-fire) |  |
 
 ### 音效
 

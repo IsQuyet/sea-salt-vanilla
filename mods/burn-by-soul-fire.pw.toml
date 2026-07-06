@@ -1,0 +1,13 @@
+name = "Burn By Soul Fire"
+filename = "burnbysoulfire-1.0.0-fabric-1.21.1-0.116.7.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/UQSwebjQ/versions/XNeczorg/burnbysoulfire-1.0.0-fabric-1.21.1-0.116.7.jar"
+hash-format = "sha512"
+hash = "c47bc5eac77ffb4ee780611a1aa63df55bf243db141edc95ec78156afecf81275cff5f1f12c6990fac9c9e17993712cf3653285170fd243daee73473f881e25b"
+
+[update]
+[update.modrinth]
+mod-id = "UQSwebjQ"
+version = "XNeczorg"
