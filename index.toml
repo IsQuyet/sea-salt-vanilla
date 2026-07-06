@@ -2,12 +2,12 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/assets/animation.afma.pw.toml"
-hash = "ae74f9d913778927df812b072405d9d06b0615450293ac8a3d32e8fb643e1cd8"
+hash = "70eec7ffd3c3467aa091351698eb64c7cdd3b3d8b811c720e3377d575523226c"
 metafile = true
 
 [[files]]
 file = "config/yosbr/config/fancymenu/assets/introaudio.wav.pw.toml"
-hash = "f94c495561f59568388828ea9e1cd117070c440f636455b795b2d1a035191b24"
+hash = "e1bda1475d1fa77255ee4d377ad49eab210adc53ca422792e33a2c427042d643"
 metafile = true
 
 [[files]]
