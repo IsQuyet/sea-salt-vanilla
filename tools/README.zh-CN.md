@@ -25,7 +25,7 @@ packwiz modrinth install <slug> --yes
 python tools/refresh_modrinth_cache.py
 # 编辑 docs/config/**/matrix/*.json
 python tools/update_project_data.py generate
-packwiz refresh
+python tools/refresh_packwiz.py
 python tools/update_project_data.py check
 git diff --check
 ```
@@ -35,7 +35,7 @@ git diff --check
 - 先安装，让 packwiz 记录项目和锁定版本。
 - 生成前刷新 Modrinth 缓存，让依赖数据可用。
 - 先改矩阵再运行 `generate`，让公开文档说明项目为什么默认分发。
-- 最后运行 `packwiz refresh` 和 `check`，更新索引并验证一致性。
+- 最后运行 `python tools/refresh_packwiz.py` 和 `check`，更新索引并验证一致性。
 
 ## 把默认项目移到可选
 
@@ -46,7 +46,7 @@ git diff --check
 # 添加到 docs/config/**/optional.json
 git rm <packwiz-project-file>.pw.toml
 python tools/update_project_data.py generate
-packwiz refresh
+python tools/refresh_packwiz.py
 python tools/update_project_data.py check
 git diff --check
 ```
@@ -71,7 +71,7 @@ git diff --check
 修改 packwiz metadata 或通过 packwiz 分发的配置文件后，使用这个流程。
 
 ```bash
-packwiz refresh
+python tools/refresh_packwiz.py
 python tools/update_project_data.py check
 git diff --check
 ```
@@ -81,7 +81,7 @@ git diff --check
 ```bash
 python tools/refresh_modrinth_cache.py
 python tools/update_project_data.py generate
-packwiz refresh
+python tools/refresh_packwiz.py
 python tools/update_project_data.py check
 git diff --check
 ```
@@ -93,7 +93,9 @@ git diff --check
 | `python tools/update_project_data.py generate` | 重新生成 `data/*.json` 和公开文档 | 是 |
 | `python tools/update_project_data.py check` | 检查 docs config、生成数据、packwiz 元数据和生成文档 | 否 |
 | `python tools/refresh_modrinth_cache.py` | 新增或更新 Modrinth 项目版本后刷新本地元数据；生成命令提示缺缓存时也运行 | 是，仅缓存 |
-| `packwiz refresh` | 刷新 `index.toml` 和 `pack.toml` 里的 index hash | 是 |
+| `python tools/normalize_line_endings.py` | 在 hash 敏感操作前，把 Git 管理为 `eol=lf` 的文件规范化为 LF | 是，仅行尾 |
+| `python tools/normalize_line_endings.py --check` | 检查工作区里需要行尾规范化的 `eol=lf` 文件 | 否 |
+| `python tools/refresh_packwiz.py` | 先规范化 LF-managed 文件，再刷新 `index.toml` 和 `pack.toml` 里的 index hash | 是 |
 
 辅助脚本：
 

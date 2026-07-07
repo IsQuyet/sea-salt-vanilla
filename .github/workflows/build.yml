@@ -42,7 +42,7 @@ jobs:
 
       - name: check packwiz index
         run: |
-          packwiz refresh
+          python tools/refresh_packwiz.py
           git diff --exit-code -- pack.toml index.toml
 
       - name: export modrinth pack

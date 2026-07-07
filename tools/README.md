@@ -25,7 +25,7 @@ packwiz modrinth install <slug> --yes
 python tools/refresh_modrinth_cache.py
 # edit docs/config/**/matrix/*.json
 python tools/update_project_data.py generate
-packwiz refresh
+python tools/refresh_packwiz.py
 python tools/update_project_data.py check
 git diff --check
 ```
@@ -35,7 +35,7 @@ Order matters:
 - Install first so packwiz records the project and locked version.
 - Refresh the Modrinth cache before generation so dependency data is available.
 - Edit the matrix before `generate` so docs explain why the project ships.
-- Run `packwiz refresh` and `check` last to update indexes and verify consistency.
+- Run `python tools/refresh_packwiz.py` and `check` last to update indexes and verify consistency.
 
 ## Move a default project to optional
 
@@ -46,7 +46,7 @@ Use this flow when a project should remain recognized by the pack but should no 
 # add the project to docs/config/**/optional.json
 git rm <packwiz-project-file>.pw.toml
 python tools/update_project_data.py generate
-packwiz refresh
+python tools/refresh_packwiz.py
 python tools/update_project_data.py check
 git diff --check
 ```
@@ -71,7 +71,7 @@ Run `python tools/refresh_modrinth_cache.py` first only if generation says requi
 Use this flow after changing packwiz metadata or files that ship through packwiz.
 
 ```bash
-packwiz refresh
+python tools/refresh_packwiz.py
 python tools/update_project_data.py check
 git diff --check
 ```
@@ -81,7 +81,7 @@ If you added or updated Modrinth project versions, refresh the Modrinth cache an
 ```bash
 python tools/refresh_modrinth_cache.py
 python tools/update_project_data.py generate
-packwiz refresh
+python tools/refresh_packwiz.py
 python tools/update_project_data.py check
 git diff --check
 ```
@@ -93,7 +93,9 @@ git diff --check
 | `python tools/update_project_data.py generate` | Regenerate `data/*.json` and public docs | Yes |
 | `python tools/update_project_data.py check` | Check docs config, generated data, packwiz metadata, and generated docs | No |
 | `python tools/refresh_modrinth_cache.py` | Refresh local Modrinth metadata after adding or changing Modrinth versions, or when generation reports missing cache entries | Yes, cache only |
-| `packwiz refresh` | Refresh `index.toml` and the index hash in `pack.toml` | Yes |
+| `python tools/normalize_line_endings.py` | Normalize tracked files managed as `eol=lf` before hash-sensitive operations | Yes, only line endings |
+| `python tools/normalize_line_endings.py --check` | Report tracked `eol=lf` files whose working-tree line endings need normalization | No |
+| `python tools/refresh_packwiz.py` | Normalize LF-managed files, then refresh `index.toml` and the index hash in `pack.toml` | Yes |
 
 Supporting scripts:
 
