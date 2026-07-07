@@ -477,21 +477,6 @@
           }
         },
         {
-          "id": "safe-world-deletion",
-          "feature": {
-            "en": "Safe world deletion",
-            "zh": "世界删除到回收站"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "delete-worlds-to-trash"
-              }
-            }
-          }
-        },
-        {
           "id": "disconnect-confirmation",
           "feature": {
             "en": "Disconnect confirmation",

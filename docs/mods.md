@@ -227,7 +227,6 @@ These entries surface gameplay information or remove small interface friction.
 | Statistics screen improvements | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
 | Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) |  |
 | World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
-| Safe world deletion | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
 | Disconnect confirmation | [Confirm Disconnect](https://modrinth.com/mod/confirm-disconnect) |  |
 | Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
 | Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
@@ -292,6 +291,7 @@ These entries add small client-side quality-of-life features that are useful but
 | --- | --- | --- |
 | Enchantment tooltip descriptions | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |  |
 | Item pickup notifications | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |  |
+| Safe world deletion | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
 | Item swapping tools | [ItemSwapper](https://modrinth.com/mod/itemswapper) | [Slot Cycler](https://modrinth.com/mod/slot-cycler) |
 | Completion tracking index | [Completionist's Index](https://modrinth.com/mod/completionists-index) |  |
 | Health bar display | [Health Bars](https://modrinth.com/mod/new-health-bars) |  |

@@ -227,7 +227,6 @@
 | 统计界面改进 | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
 | 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |  |
 | 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
-| 世界删除到回收站 | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
 | 断开连接确认 | [Confirm Disconnect](https://modrinth.com/mod/confirm-disconnect) |  |
 | 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
 | 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
@@ -292,6 +291,7 @@
 | --- | --- | --- |
 | 附魔提示说明 | [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) |  |
 | 物品拾取通知 | [Pick Up Notifier](https://modrinth.com/mod/pick-up-notifier) |  |
+| 世界删除到回收站 | [Delete Worlds To Trash](https://modrinth.com/mod/delete-worlds-to-trash) |  |
 | 物品切换工具 | [ItemSwapper](https://modrinth.com/mod/itemswapper) | [Slot Cycler](https://modrinth.com/mod/slot-cycler) |
 | 完成度追踪索引 | [Completionist's Index](https://modrinth.com/mod/completionists-index) |  |
 | 生命值条显示 | [Health Bars](https://modrinth.com/mod/new-health-bars) |  |

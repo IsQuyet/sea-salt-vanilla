@@ -76,6 +76,13 @@
     "slug": "default-options",
     "id": "WEg59z5b"
   },
+  "delete-worlds-to-trash": {
+    "name": "Delete Worlds To Trash",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "delete-worlds-to-trash",
+    "id": "7diJQfvM"
+  },
   "detail-armor-bar": {
     "name": "Detail Armor Bar",
     "type": "mod",

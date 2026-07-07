@@ -1,4 +1,4 @@
 *.pw.toml text eol=lf
+*.txt text eol=lf
 index.toml text eol=lf
 pack.toml text eol=lf
-config/yosbr/config/fancymenu/assets/splash.txt text eol=lf
