@@ -1,4 +1,2 @@
-*.pw.toml text eol=lf
+*.toml text eol=lf
 *.txt text eol=lf
-index.toml text eol=lf
-pack.toml text eol=lf

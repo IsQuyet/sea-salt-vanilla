@@ -1,0 +1,18 @@
+# Sea Salt Vanilla overrides Global Packs' generated defaults so packwiz-installed
+# datapacks are available during world creation without being forced on every world.
+config_version = 4
+
+# If set to true, Global Packs creates user-wide pack folders under the home directory.
+enable_system_global_packs = false
+
+# Enable only while debugging pack IDs for builtin packs.
+log_pack_ids = false
+
+[resourcepacks]
+	required = ["global_packs/required_resources/"]
+	enable_builtin = []
+
+[datapacks]
+	required = []
+	optional = ["datapacks/", "resourcepacks/", "global_packs/optional_data/"]
+	enable_builtin = []
