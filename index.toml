@@ -644,6 +644,11 @@ hash = "6a085c05e1c4f0712bf68d60cd3ed4d658e87e6fd186caaf380015ece32eaf57"
 metafile = true
 
 [[files]]
+file = "mods/patpat.pw.toml"
+hash = "8ec95c5e86a53707cbc784f779e587a573b2f222c181077d1389bad9b2328a5e"
+metafile = true
+
+[[files]]
 file = "mods/peek.pw.toml"
 hash = "9a231802010f57e98e78a7bc980511ee19f0b0fa66f43236854ee0cf18a3ce09"
 metafile = true

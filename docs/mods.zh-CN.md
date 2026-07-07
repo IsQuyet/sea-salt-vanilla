@@ -232,6 +232,7 @@
 | 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
 | 不安全聊天弹窗隐藏 | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |  |
 | 聊天界面便利功能 | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
+| 玩家拍拍互动 | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |  |
 | 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | 盔甲细节显示 | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) |  |
@@ -281,7 +282,6 @@
 | 玩家表情动作 | [Emotecraft](https://modrinth.com/mod/emotecraft) |
 | 语音聊天气泡 | [TalkBubbles](https://modrinth.com/mod/talkbubbles) |
 | 好友互动 | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
-| 玩家拍拍互动 | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |
 
 ### 可选客户端便利功能
 

@@ -804,6 +804,13 @@
     "slug": "particle-interactions",
     "id": "xFCYuAs8"
   },
+  "patpat": {
+    "name": "PatPat [Mod & Plugin]",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "patpat",
+    "id": "dw7LChq9"
+  },
   "peek": {
     "name": "Peek",
     "type": "mod",

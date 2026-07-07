@@ -232,6 +232,7 @@ These entries surface gameplay information or remove small interface friction.
 | Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
 | Insecure chat toast suppression | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |  |
 | Chat interface convenience | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
+| Player pat interactions | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |  |
 | Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | Armor detail display | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) |  |
@@ -281,7 +282,6 @@ These entries mainly improve the client-side experience when playing online or o
 | Player emotes | [Emotecraft](https://modrinth.com/mod/emotecraft) |
 | Voice chat bubbles | [TalkBubbles](https://modrinth.com/mod/talkbubbles) |
 | Friendly interactions | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
-| Player pat interactions | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |
 
 ### Optional client convenience
 

@@ -94,21 +94,6 @@
               }
             }
           }
-        },
-        {
-          "id": "player-pat-interactions",
-          "feature": {
-            "en": "Player pat interactions",
-            "zh": "玩家拍拍互动"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "patpat"
-              }
-            }
-          }
         }
       ]
     },
