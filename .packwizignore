@@ -1,6 +1,7 @@
 # Repository maintenance files
 .github/
 CHANGELOG.md
+LICENSE
 README.md
 README.zh-CN.md
 data/

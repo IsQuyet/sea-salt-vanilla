@@ -58,7 +58,7 @@ These entries provide mod lists, in-game config screens, and config frameworks u
 | Feature | 1.21.1 |
 | --- | --- |
 | Mod list and config entry | [Mod Menu](https://modrinth.com/mod/modmenu) |
-| In-game configuration screens | [Configured](https://modrinth.com/mod/configured) |
+| In-game configuration screens | [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) |
 | YACL configuration framework | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) |
 | Cloth Config framework | [Cloth Config API](https://modrinth.com/mod/cloth-config) |
 | Forge config compatibility | [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) |

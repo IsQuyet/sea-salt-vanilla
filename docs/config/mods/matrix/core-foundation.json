@@ -404,7 +404,7 @@
           "versions": {
             "1.21.1": {
               "selected": [
-                { "source": "modrinth", "slug": "configured" }
+                { "source": "curseforge", "slug": "configured" }
               ]
             }
           }

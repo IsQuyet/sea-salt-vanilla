@@ -205,9 +205,8 @@
   "configured": {
     "name": "Configured",
     "type": "mod",
-    "source": "modrinth",
-    "slug": "configured",
-    "id": "HlpEBg3R"
+    "source": "curseforge",
+    "slug": "configured"
   },
   "confirm-disconnect": {
     "name": "Confirm Disconnect",

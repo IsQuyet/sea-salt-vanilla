@@ -58,7 +58,7 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | Mod 列表与配置入口 | [Mod Menu](https://modrinth.com/mod/modmenu) |
-| 游戏内配置界面 | [Configured](https://modrinth.com/mod/configured) |
+| 游戏内配置界面 | [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) |
 | YACL 配置框架 | [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl) |
 | Cloth Config 配置框架 | [Cloth Config API](https://modrinth.com/mod/cloth-config) |
 | Forge 配置兼容 | [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port) |
