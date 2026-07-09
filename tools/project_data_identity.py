@@ -5,6 +5,13 @@ from __future__ import annotations
 from typing import Any
 
 
+def project_refs_from_selected(selected: Any, location: str = "selected") -> list[Any]:
+    """Return default project refs from a required docs/config selected list."""
+    if isinstance(selected, list):
+        return selected
+    raise TypeError(f"{location}: selected must be a list of project refs")
+
+
 def project_ref_key(ref: Any) -> str | None:
     """Return the canonical catalog key for a string or compact object reference."""
     if ref is None:

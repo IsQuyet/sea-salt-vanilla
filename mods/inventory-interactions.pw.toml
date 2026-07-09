@@ -1,0 +1,13 @@
+name = "Inventory Interactions"
+filename = "InventoryInteractions-1.3.0+1.21.1+fabric.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/FCzmUKBr/versions/Ft6XJsh7/InventoryInteractions-1.3.0%2B1.21.1%2Bfabric.jar"
+hash-format = "sha512"
+hash = "3c2611154c371394ea2deb91bbd4854908a2a88c2779aa884a4a2ec09d747a74e553c3c71617f0d97d8d2f765b85e5741a7670ff19ed88b7b79984945533bcf7"
+
+[update]
+[update.modrinth]
+mod-id = "FCzmUKBr"
+version = "Ft6XJsh7"

@@ -29,10 +29,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "bliss-shader"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "bliss-shader" }
+              ]
             }
           }
         },
@@ -44,10 +43,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "bsl-shaders"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "bsl-shaders" }
+              ]
             }
           }
         },
@@ -59,10 +57,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "complementary-reimagined"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "complementary-reimagined" }
+              ]
             }
           }
         },
@@ -74,10 +71,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "complementary-unbound"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "complementary-unbound" }
+              ]
             }
           }
         },
@@ -89,10 +85,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "photon-shader"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "photon-shader" }
+              ]
             }
           }
         },
@@ -104,10 +99,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "rethinking-voxels"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "rethinking-voxels" }
+              ]
             }
           }
         }

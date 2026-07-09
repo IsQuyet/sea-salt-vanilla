@@ -28,10 +28,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "server-unpacker"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "server-unpacker" }
+              ]
             }
           }
         },
@@ -43,10 +42,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "essential"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "essential" }
+              ]
             }
           }
         },
@@ -58,10 +56,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "emotecraft"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "emotecraft" }
+              ]
             }
           }
         },
@@ -73,10 +70,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "talkbubbles"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "talkbubbles" }
+              ]
             }
           }
         },
@@ -88,10 +84,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "headpat"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "headpat" }
+              ]
             }
           }
         }
@@ -116,10 +111,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "enchantment-descriptions"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "enchantment-descriptions" }
+              ]
             }
           }
         },
@@ -131,10 +125,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "pick-up-notifier"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "pick-up-notifier" }
+              ]
             }
           }
         },
@@ -146,10 +139,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "delete-worlds-to-trash"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "delete-worlds-to-trash" }
+              ]
             }
           }
         },
@@ -161,15 +153,11 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "itemswapper"
-              },
+              "selected": [
+                { "source": "modrinth", "slug": "itemswapper" }
+              ],
               "alternatives": [
-                {
-                  "source": "modrinth",
-                  "slug": "slot-cycler"
-                }
+                { "source": "modrinth", "slug": "slot-cycler" }
               ]
             }
           }
@@ -182,10 +170,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "completionists-index"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "completionists-index" }
+              ]
             }
           }
         },
@@ -197,10 +184,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "new-health-bars"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "new-health-bars" }
+              ]
             }
           }
         },
@@ -212,10 +198,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "inventory-tabs"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "inventory-tabs" }
+              ]
             }
           }
         },
@@ -227,10 +212,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "repo-heads"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "repo-heads" }
+              ]
             }
           }
         }
@@ -255,10 +239,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "resource-pack-overrides"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "resource-pack-overrides" }
+              ]
             }
           }
         },
@@ -270,10 +253,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "recursiveresources"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "recursiveresources" }
+              ]
             }
           }
         }
@@ -298,10 +280,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "lambdynamiclights"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "lambdynamiclights" }
+              ]
             }
           }
         },
@@ -313,10 +294,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "sound-physics-remastered"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "sound-physics-remastered" }
+              ]
             }
           }
         },
@@ -328,10 +308,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "particle-rain"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "particle-rain" }
+              ]
             }
           }
         },
@@ -343,10 +322,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "real-camera"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "real-camera" }
+              ]
             }
           }
         },
@@ -358,10 +336,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "atmospherics"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "atmospherics" }
+              ]
             }
           }
         },
@@ -373,10 +350,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "better-smoke"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "better-smoke" }
+              ]
             }
           }
         },
@@ -388,10 +364,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "natural-waters"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "natural-waters" }
+              ]
             }
           }
         },
@@ -403,10 +378,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "enchantment-glint-outline"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "enchantment-glint-outline" }
+              ]
             }
           }
         }
@@ -431,10 +405,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "litematica"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "litematica" }
+              ]
             }
           }
         },
@@ -446,10 +419,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "curseforge",
-                "slug": "lottweaks"
-              }
+              "selected": [
+                { "source": "curseforge", "slug": "lottweaks" }
+              ]
             }
           }
         },
@@ -461,10 +433,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "axiom"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "axiom" }
+              ]
             }
           }
         },
@@ -476,10 +447,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "replaymod"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "replaymod" }
+              ]
             }
           }
         },
@@ -491,10 +461,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "notebook"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "notebook" }
+              ]
             }
           }
         }

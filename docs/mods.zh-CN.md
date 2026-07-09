@@ -96,7 +96,7 @@
 | 连接方块轮廓 | [Seamless](https://modrinth.com/mod/seamless) |  |
 | 细节视觉效果 | [Subtle Effects](https://modrinth.com/mod/subtle-effects) |  |
 | 额外粒子效果 | [Particle Effects](https://modrinth.com/mod/particle-effects) |  |
-| 背包粒子效果 | [Inventory Particles](https://modrinth.com/mod/inventory-particles) | [Inventory Interactions](https://modrinth.com/mod/inventory-interactions) |
+| 背包粒子效果 | [Inventory Particles](https://modrinth.com/mod/inventory-particles), [Inventory Interactions](https://modrinth.com/mod/inventory-interactions) |  |
 | 氛围视觉效果 | [Mas Effects](https://modrinth.com/mod/mas-effects) |  |
 | 粒子交互 | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |  |
 | 气泡破裂效果 | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |  |

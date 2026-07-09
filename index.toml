@@ -39,6 +39,10 @@ file = "config/yosbr/config/global_packs.toml"
 hash = "6b7804008f006ae01058688e214bfc13ca5ebe82f46693018ffb5e9f07cf22df"
 
 [[files]]
+file = "config/yosbr/config/stylisheffects-client.toml"
+hash = "408e0375b75824e8bc7446edc7db829ed627a6c0d69089947c51534143d0bbcc"
+
+[[files]]
 file = "datapacks/continents.pw.toml"
 hash = "3b09047e919cedab7efc86db2ddfb751c6b4028abe090223789a925ed15b0de3"
 metafile = true
@@ -421,6 +425,11 @@ metafile = true
 [[files]]
 file = "mods/immersive-ui.pw.toml"
 hash = "8e54aa67b2e446ba49f4c0a877a87b9e22a72f61e30e5d9b650f97b5c0f335a4"
+metafile = true
+
+[[files]]
+file = "mods/inventory-interactions.pw.toml"
+hash = "99557a15c2e85e9416b64b02dab72f9687b80f08950d9751a87e3f142e85b5f9"
 metafile = true
 
 [[files]]

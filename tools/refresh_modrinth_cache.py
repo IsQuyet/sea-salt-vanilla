@@ -209,7 +209,10 @@ def refresh_cache(
     project_errors: list[str] = []
     missing_project_refs: list[str] = []
     if not only_versions:
-        verbose_print("Collecting Modrinth project refs from docs, packwiz metadata, and dependencies...", verbose=verbose)
+        verbose_print(
+            "Collecting Modrinth project refs from docs, packwiz metadata, and dependencies...",
+            verbose=verbose,
+        )
         project_refs = collect_project_refs_to_refresh(installed_projects, dependency_cache, project_cache)
         missing_project_refs = missing_project_cache_refs(project_refs, project_cache, force=force)
         verbose_print(
@@ -274,10 +277,26 @@ def refresh_cache(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--force", action="store_true", help="Fetch all required Modrinth metadata even when cache entries already exist.")
-    parser.add_argument("--dry-run", action="store_true", help="Print refresh scope without fetching or writing cache files.")
-    parser.add_argument("--only-projects", action="store_true", help="Refresh only Modrinth project metadata.")
-    parser.add_argument("--only-versions", action="store_true", help="Refresh only Modrinth version metadata.")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Fetch all required Modrinth metadata even when cache entries already exist.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Print refresh scope without fetching or writing cache files.",
+    )
+    parser.add_argument(
+        "--only-projects",
+        action="store_true",
+        help="Refresh only Modrinth project metadata.",
+    )
+    parser.add_argument(
+        "--only-versions",
+        action="store_true",
+        help="Refresh only Modrinth version metadata.",
+    )
     parser.add_argument("--verbose", action="store_true", help="Print progress while refreshing metadata.")
     args = parser.parse_args()
 

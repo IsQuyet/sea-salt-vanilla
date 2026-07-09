@@ -29,10 +29,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "dungeons-and-taverns"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "dungeons-and-taverns" }
+              ]
             }
           }
         },
@@ -44,10 +43,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "towns-and-towers"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "towns-and-towers" }
+              ]
             }
           }
         },
@@ -59,10 +57,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "tectonic"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "tectonic" }
+              ]
             }
           }
         },
@@ -74,10 +71,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "incendium"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "incendium" }
+              ]
             }
           }
         },
@@ -89,10 +85,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "william-wythers-overhauled-overworld-(datapack)"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "william-wythers-overhauled-overworld-(datapack)" }
+              ]
             }
           }
         },
@@ -104,10 +99,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "continents"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "continents" }
+              ]
             }
           }
         }

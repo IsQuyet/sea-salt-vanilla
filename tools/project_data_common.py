@@ -9,9 +9,9 @@ import urllib.parse
 import urllib.request
 from collections import defaultdict
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterator
 
-from project_data_identity import project_ref_key
+from project_data_identity import project_ref_key, project_refs_from_selected
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -180,6 +180,45 @@ def category_project_type(category_name: str | None) -> str:
     return PROJECT_TYPE_DIRS.get(category_name, DEFAULT_PROJECT_TYPE)
 
 
+def feature_row_version_location(
+    group: dict[str, Any],
+    section: dict[str, Any],
+    row: dict[str, Any],
+    version: str,
+) -> str:
+    """Return a compact human-readable docs/config row location."""
+    group_id = group.get("id", "<unknown-group>")
+    section_id = section.get("id", "<unknown-section>")
+    row_id = row.get("id", "<unknown-row>")
+    return f"{group_id}/{section_id}/{row_id} ({version})"
+
+
+def selected_project_refs_from_version(
+    group: dict[str, Any],
+    section: dict[str, Any],
+    row: dict[str, Any],
+    version: str,
+    version_data: dict[str, Any],
+) -> list[Any]:
+    """Return the selected refs for a docs/config version entry."""
+    return project_refs_from_selected(
+        version_data.get("selected"),
+        feature_row_version_location(group, section, row, version),
+    )
+
+
+def iter_feature_versions(
+    groups: list[dict[str, Any]] | None = None,
+) -> Iterator[tuple[dict[str, Any], dict[str, Any], dict[str, Any], str, dict[str, Any]]]:
+    """Yield every docs/config version row with its surrounding context."""
+    feature_groups = load_feature_groups() if groups is None else groups
+    for group in feature_groups:
+        for section in group.get("sections", []):
+            for row in section.get("rows", []):
+                for version, version_data in row.get("versions", {}).items():
+                    yield group, section, row, version, version_data
+
+
 def normalize_project_ref(ref: Any, category_name: str | None = None) -> dict[str, Any] | None:
     """Normalize a docs/config project reference into a compact metadata object."""
     if ref is None:
@@ -339,13 +378,18 @@ def collect_matrix_project_refs() -> list[dict[str, Any]]:
             return
         refs.setdefault(key, normalized)
 
-    for group in load_feature_groups():
-        for section in group.get("sections", []):
-            for row in section.get("rows", []):
-                for version_data in row.get("versions", {}).values():
-                    remember(version_data.get("selected"), group.get("_category"))
-                    for ref in version_data.get("alternatives", []):
-                        remember(ref, group.get("_category"))
+    for group, section, row, version, version_data in iter_feature_versions():
+        selected_refs = selected_project_refs_from_version(
+            group,
+            section,
+            row,
+            version,
+            version_data,
+        )
+        for selected_ref in selected_refs:
+            remember(selected_ref, group.get("_category"))
+        for alternative_ref in version_data.get("alternatives", []):
+            remember(alternative_ref, group.get("_category"))
 
     return [refs[key] for key in sorted(refs)]
 
@@ -620,8 +664,15 @@ def build_missing_required(
 
     missing: dict[str, dict[str, Any]] = {}
     for project_id, dependents in sorted(dependents_by_id.items()):
-        dependency_project = fetch_modrinth_project(project_id, project_cache) if allow_network else project_cache.get(project_id)
-        if not allow_network and (not isinstance(dependency_project, dict) or cache_entry_has_error(dependency_project)):
+        if allow_network:
+            dependency_project = fetch_modrinth_project(project_id, project_cache)
+        else:
+            dependency_project = project_cache.get(project_id)
+
+        missing_offline_project = not isinstance(dependency_project, dict) or cache_entry_has_error(
+            dependency_project
+        )
+        if not allow_network and missing_offline_project:
             raise MissingModrinthCacheError(
                 "Missing Modrinth project cache entry required for offline project-data checks: "
                 f"{project_id}. Run python tools/refresh_modrinth_cache.py before running check."
@@ -667,21 +718,18 @@ def build_documented_sets(project_meta: dict[str, dict[str, Any]]) -> dict[str, 
             return
         remember_project(project)
 
-    def walk_rows(value: Any) -> None:
-        if isinstance(value, dict):
-            if "versions" in value:
-                for version_data in value.get("versions", {}).values():
-                    remember_ref(version_data.get("selected"))
-                    for ref in version_data.get("alternatives", []):
-                        remember_ref(ref)
-            for child in value.values():
-                walk_rows(child)
-        elif isinstance(value, list):
-            for child in value:
-                walk_rows(child)
-
-    for file_name in FEATURE_GROUP_FILES:
-        walk_rows(read_json(file_name))
+    for group, section, row, version, version_data in iter_feature_versions():
+        selected_refs = selected_project_refs_from_version(
+            group,
+            section,
+            row,
+            version,
+            version_data,
+        )
+        for selected_ref in selected_refs:
+            remember_ref(selected_ref)
+        for alternative_ref in version_data.get("alternatives", []):
+            remember_ref(alternative_ref)
 
     return documented
 

@@ -545,6 +545,13 @@
     "slug": "incendium",
     "id": "ZVzW5oNS"
   },
+  "inventory-interactions": {
+    "name": "Inventory Interactions",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "inventory-interactions",
+    "id": "FCzmUKBr"
+  },
   "inventory-particles": {
     "name": "Inventory Particles",
     "type": "mod",

@@ -16,13 +16,16 @@ from project_data_common import (
     build_required_by,
     cache_entry_has_error,
     collect_cache_errors,
+    feature_row_version_location,
     is_documented,
+    iter_feature_versions,
     load_declared_dependencies,
     load_dependency_cache,
     load_feature_groups,
     load_installed_projects,
     load_project_cache,
     load_project_catalog,
+    selected_project_refs_from_version,
     write_json,
 )
 from project_data_invariants import generated_data_invariants
@@ -110,24 +113,30 @@ def unexpected_installed_projects(
 ) -> list[str]:
     conflicts: list[str] = []
 
-    for group in groups:
+    for group, section, row, version, version_data in iter_feature_versions(groups):
+        if version != TARGET_VERSION:
+            continue
+
         is_optional_group = bool(group["_optional"])
-        for section in group["sections"]:
-            for row in section["rows"]:
-                for version, version_data in row.get("versions", {}).items():
-                    if version != TARGET_VERSION:
-                        continue
-                    project = resolve_project_ref(project_meta, version_data.get("selected"))
-                    if is_optional_group and is_project_installed(project, installed_index):
-                        conflicts.append(
-                            f"{row['id']} ({version}): {project['name']} is optional but is installed"
-                        )
-                    for ref in version_data.get("alternatives", []):
-                        alternative = resolve_project_ref(project_meta, ref)
-                        if is_project_installed(alternative, installed_index):
-                            conflicts.append(
-                                f"{row['id']} ({version}): {alternative['name']} is an alternative but is installed"
-                            )
+        selected_refs = selected_project_refs_from_version(
+            group,
+            section,
+            row,
+            version,
+            version_data,
+        )
+        for selected_ref in selected_refs:
+            project = resolve_project_ref(project_meta, selected_ref)
+            if is_optional_group and is_project_installed(project, installed_index):
+                conflicts.append(
+                    f"{row['id']} ({version}): {project['name']} is optional but is installed"
+                )
+        for ref in version_data.get("alternatives", []):
+            alternative = resolve_project_ref(project_meta, ref)
+            if is_project_installed(alternative, installed_index):
+                conflicts.append(
+                    f"{row['id']} ({version}): {alternative['name']} is an alternative but is installed"
+                )
     return conflicts
 
 
@@ -143,14 +152,19 @@ def unknown_project_refs(groups: list[dict[str, Any]], project_meta: dict[str, d
         if key not in project_meta:
             unknown.append(f"{location}: unknown project ref {ref}")
 
-    for group in groups:
-        for section in group["sections"]:
-            for row in section["rows"]:
-                for version, version_data in row.get("versions", {}).items():
-                    location = f"{group['id']}/{section['id']}/{row['id']} ({version})"
-                    check_ref(version_data.get("selected"), location)
-                    for ref in version_data.get("alternatives", []):
-                        check_ref(ref, f"{location} alternative")
+    for group, section, row, version, version_data in iter_feature_versions(groups):
+        location = feature_row_version_location(group, section, row, version)
+        selected_refs = selected_project_refs_from_version(
+            group,
+            section,
+            row,
+            version,
+            version_data,
+        )
+        for selected_ref in selected_refs:
+            check_ref(selected_ref, location)
+        for ref in version_data.get("alternatives", []):
+            check_ref(ref, f"{location} alternative")
 
     return unknown
 
@@ -170,16 +184,22 @@ def duplicate_project_refs(groups: list[dict[str, Any]], project_meta: dict[str,
             return
         seen[key] = location
 
-    for group in groups:
-        for section in group["sections"]:
-            for row in section["rows"]:
-                version_data = row.get("versions", {}).get(TARGET_VERSION)
-                if not version_data:
-                    continue
-                location = f"{group['id']}/{section['id']}/{row['id']} ({TARGET_VERSION})"
-                remember(version_data.get("selected"), location)
-                for ref in version_data.get("alternatives", []):
-                    remember(ref, f"{location} alternative")
+    for group, section, row, version, version_data in iter_feature_versions(groups):
+        if version != TARGET_VERSION:
+            continue
+
+        location = feature_row_version_location(group, section, row, TARGET_VERSION)
+        selected_refs = selected_project_refs_from_version(
+            group,
+            section,
+            row,
+            TARGET_VERSION,
+            version_data,
+        )
+        for selected_ref in selected_refs:
+            remember(selected_ref, location)
+        for ref in version_data.get("alternatives", []):
+            remember(ref, f"{location} alternative")
 
     return duplicates
 
@@ -189,17 +209,21 @@ def expected_default_projects(
     project_meta: dict[str, dict[str, Any]],
 ) -> list[dict[str, Any]]:
     expected: list[dict[str, Any]] = []
-    for group in groups:
-        if group["_optional"]:
+    for group, section, row, version, version_data in iter_feature_versions(groups):
+        if group["_optional"] or version != TARGET_VERSION:
             continue
-        for section in group["sections"]:
-            for row in section["rows"]:
-                version_data = row.get("versions", {}).get(TARGET_VERSION)
-                if not version_data:
-                    continue
-                project = resolve_project_ref(project_meta, version_data.get("selected"))
-                if project is not None:
-                    expected.append(project)
+
+        selected_refs = selected_project_refs_from_version(
+            group,
+            section,
+            row,
+            TARGET_VERSION,
+            version_data,
+        )
+        for selected_ref in selected_refs:
+            project = resolve_project_ref(project_meta, selected_ref)
+            if project is not None:
+                expected.append(project)
     return expected
 
 

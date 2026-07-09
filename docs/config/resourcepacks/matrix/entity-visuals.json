@@ -29,10 +29,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "fresh-animations"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "fresh-animations" }
+              ]
             }
           }
         },
@@ -44,10 +43,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "fresh-animations-extensions"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "fresh-animations-extensions" }
+              ]
             }
           }
         },
@@ -59,15 +57,11 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "fa-player-extension"
-              },
+              "selected": [
+                { "source": "modrinth", "slug": "fa-player-extension" }
+              ],
               "alternatives": [
-                {
-                  "source": "modrinth",
-                  "slug": "detailed-animations"
-                }
+                { "source": "modrinth", "slug": "detailed-animations" }
               ]
             }
           }

@@ -12,8 +12,9 @@ from project_data_common import (
     PROJECTS_PATH,
     category_project_type,
     get_project_cache_entry,
-    load_feature_groups,
+    iter_feature_versions,
     load_project_cache,
+    selected_project_refs_from_version,
 )
 from project_data_identity import project_entry_key, project_ref_key
 
@@ -99,20 +100,22 @@ def collect_documented_project_refs() -> tuple[dict[str, dict[str, Any]], dict[s
     default_refs: dict[str, dict[str, Any]] = {}
     optional_refs: dict[str, dict[str, Any]] = {}
 
-    for group in load_feature_groups():
+    for group, section, row, version, version_data in iter_feature_versions():
         is_optional_group = bool(group.get("_optional"))
         project_type = category_project_type(str(group.get("_category") or ""))
-        for section in group.get("sections", []):
-            for row in section.get("rows", []):
-                for version_data in row.get("versions", {}).values():
-                    selected_ref = version_data.get("selected")
-                    if is_optional_group:
-                        remember_project_ref(optional_refs, selected_ref, project_type)
-                    else:
-                        remember_project_ref(default_refs, selected_ref, project_type)
+        refs = optional_refs if is_optional_group else default_refs
+        selected_refs = selected_project_refs_from_version(
+            group,
+            section,
+            row,
+            version,
+            version_data,
+        )
+        for selected_ref in selected_refs:
+            remember_project_ref(refs, selected_ref, project_type)
 
-                    for alternative_ref in version_data.get("alternatives", []):
-                        remember_project_ref(optional_refs, alternative_ref, project_type)
+        for alternative_ref in version_data.get("alternatives", []):
+            remember_project_ref(optional_refs, alternative_ref, project_type)
 
     for key in list(optional_refs):
         if key in default_refs:

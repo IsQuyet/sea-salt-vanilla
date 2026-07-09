@@ -29,10 +29,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "iris"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "iris" }
+              ]
             }
           }
         },
@@ -44,10 +43,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "sodium-extra"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "sodium-extra" }
+              ]
             }
           }
         },
@@ -59,10 +57,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "puzzle"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "puzzle" }
+              ]
             }
           }
         },
@@ -74,10 +71,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "entity-model-features"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "entity-model-features" }
+              ]
             }
           }
         },
@@ -89,10 +85,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "entitytexturefeatures"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "entitytexturefeatures" }
+              ]
             }
           }
         },
@@ -104,10 +99,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "cit-resewn"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "cit-resewn" }
+              ]
             }
           }
         },
@@ -119,10 +113,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "continuity"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "continuity" }
+              ]
             }
           }
         },
@@ -134,10 +127,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "optigui"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "optigui" }
+              ]
             }
           }
         }
@@ -162,19 +154,12 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "distanthorizons"
-              },
+              "selected": [
+                { "source": "modrinth", "slug": "distanthorizons" }
+              ],
               "alternatives": [
-                {
-                  "source": "modrinth",
-                  "slug": "bobby"
-                },
-                {
-                  "source": "modrinth",
-                  "slug": "voxy"
-                }
+                { "source": "modrinth", "slug": "bobby" },
+                { "source": "modrinth", "slug": "voxy" }
               ]
             }
           }
@@ -187,10 +172,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "euphoria-patches"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "euphoria-patches" }
+              ]
             }
           }
         },
@@ -202,10 +186,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "visuality"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "visuality" }
+              ]
             }
           }
         },
@@ -217,10 +200,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "cave-dust"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "cave-dust" }
+              ]
             }
           }
         },
@@ -232,10 +214,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "boat-item-view"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "boat-item-view" }
+              ]
             }
           }
         },
@@ -247,10 +228,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "seamless"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "seamless" }
+              ]
             }
           }
         },
@@ -262,10 +242,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "subtle-effects"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "subtle-effects" }
+              ]
             }
           }
         },
@@ -277,10 +256,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "particle-effects"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "particle-effects" }
+              ]
             }
           }
         },
@@ -292,15 +270,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "inventory-particles"
-              },
-              "alternatives": [
-                {
-                  "source": "modrinth",
-                  "slug": "inventory-interactions"
-                }
+              "selected": [
+                { "source": "modrinth", "slug": "inventory-particles" },
+                { "source": "modrinth", "slug": "inventory-interactions" }
               ]
             }
           }
@@ -313,10 +285,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "mas-effects"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "mas-effects" }
+              ]
             }
           }
         },
@@ -328,10 +299,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "particle-interactions"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "particle-interactions" }
+              ]
             }
           }
         },
@@ -343,10 +313,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "make_bubbles_pop"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "make_bubbles_pop" }
+              ]
             }
           }
         },
@@ -358,10 +327,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "fallingleaves"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "fallingleaves" }
+              ]
             }
           }
         },
@@ -373,10 +341,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "snow-imprints"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "snow-imprints" }
+              ]
             }
           }
         },
@@ -388,10 +355,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "explosive-enhancement"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "explosive-enhancement" }
+              ]
             }
           }
         },
@@ -403,10 +369,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "twod_projectiles"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "twod_projectiles" }
+              ]
             }
           }
         },
@@ -418,10 +383,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "mining_and_placing_animations"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "mining_and_placing_animations" }
+              ]
             }
           }
         },
@@ -433,10 +397,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "perception"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "perception" }
+              ]
             }
           }
         },
@@ -448,10 +411,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "burn-by-soul-fire"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "burn-by-soul-fire" }
+              ]
             }
           }
         },
@@ -463,10 +425,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "elytra-contrails-mod"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "elytra-contrails-mod" }
+              ]
             }
           }
         }
@@ -491,10 +452,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "ambientsounds"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "ambientsounds" }
+              ]
             }
           }
         },
@@ -506,10 +466,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "presence-footsteps"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "presence-footsteps" }
+              ]
             }
           }
         },
@@ -521,10 +480,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "sound"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "sound" }
+              ]
             }
           }
         },
@@ -536,10 +494,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "coolrain"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "coolrain" }
+              ]
             }
           }
         }
@@ -564,10 +521,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "not-enough-animations"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "not-enough-animations" }
+              ]
             }
           }
         },
@@ -579,10 +535,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "eating-animation"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "eating-animation" }
+              ]
             }
           }
         },
@@ -594,10 +549,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "itemphysic-lite"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "itemphysic-lite" }
+              ]
             }
           }
         },
@@ -609,10 +563,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "vectorientation"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "vectorientation" }
+              ]
             }
           }
         },
@@ -624,10 +577,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "a-good-place"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "a-good-place" }
+              ]
             }
           }
         },
@@ -639,10 +591,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "hold-my-items"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "hold-my-items" }
+              ]
             }
           }
         },
@@ -654,10 +605,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "weaponmaster"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "weaponmaster" }
+              ]
             }
           }
         },
@@ -669,10 +619,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "cameraoverhaul"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "cameraoverhaul" }
+              ]
             }
           }
         },
@@ -684,15 +633,11 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "shoulder-surfing-reloaded"
-              },
+              "selected": [
+                { "source": "modrinth", "slug": "shoulder-surfing-reloaded" }
+              ],
               "alternatives": [
-                {
-                  "source": "modrinth",
-                  "slug": "leawind-third-person"
-                }
+                { "source": "modrinth", "slug": "leawind-third-person" }
               ]
             }
           }
@@ -705,10 +650,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "do-a-barrel-roll"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "do-a-barrel-roll" }
+              ]
             }
           }
         },
@@ -720,10 +664,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "fwa"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "fwa" }
+              ]
             }
           }
         }
@@ -748,10 +691,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "fancymenu"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "fancymenu" }
+              ]
             }
           }
         },
@@ -763,10 +705,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "paperdoll"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "paperdoll" }
+              ]
             }
           }
         },
@@ -778,10 +719,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "disguiseheads"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "disguiseheads" }
+              ]
             }
           }
         },
@@ -793,10 +733,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "mini-effects"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "mini-effects" }
+              ]
             }
           }
         },
@@ -808,10 +747,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "tiny-item-animations"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "tiny-item-animations" }
+              ]
             }
           }
         },
@@ -823,10 +761,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "smooth-swapping"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "smooth-swapping" }
+              ]
             }
           }
         },
@@ -838,10 +775,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "raised"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "raised" }
+              ]
             }
           }
         },
@@ -853,10 +789,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "blur-plus"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "blur-plus" }
+              ]
             }
           }
         },
@@ -868,15 +803,11 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "smooth-scroll"
-              },
+              "selected": [
+                { "source": "modrinth", "slug": "smooth-scroll" }
+              ],
               "alternatives": [
-                {
-                  "source": "modrinth",
-                  "slug": "smooth-scrolling-refurbished"
-                }
+                { "source": "modrinth", "slug": "smooth-scrolling-refurbished" }
               ]
             }
           }
@@ -889,10 +820,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "mindful-darkness"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "mindful-darkness" }
+              ]
             }
           }
         },
@@ -904,10 +834,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "smooth-gui"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "smooth-gui" }
+              ]
             }
           }
         },
@@ -919,10 +848,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "chatanimation"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "chatanimation" }
+              ]
             }
           }
         },
@@ -934,10 +862,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "fancy-toasts"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "fancy-toasts" }
+              ]
             }
           }
         },
@@ -949,10 +876,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "modern-ui"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "modern-ui" }
+              ]
             }
           }
         },
@@ -964,10 +890,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "immersive-ui"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "immersive-ui" }
+              ]
             }
           }
         }
@@ -992,10 +917,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "chat-heads"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "chat-heads" }
+              ]
             }
           }
         },
@@ -1007,10 +931,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "simple-voice-chat"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "simple-voice-chat" }
+              ]
             }
           }
         },
@@ -1022,10 +945,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "chatimage"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "chatimage" }
+              ]
             }
           }
         },
@@ -1037,10 +959,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "talkingheads"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "talkingheads" }
+              ]
             }
           }
         }
@@ -1065,10 +986,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "3dskinlayers"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "3dskinlayers" }
+              ]
             }
           }
         },
@@ -1080,10 +1000,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "wavey-capes"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "wavey-capes" }
+              ]
             }
           }
         },
@@ -1095,10 +1014,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "capes"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "capes" }
+              ]
             }
           }
         },
@@ -1110,10 +1028,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "customskinloader"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "customskinloader" }
+              ]
             }
           }
         }

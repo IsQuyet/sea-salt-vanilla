@@ -29,10 +29,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "curseforge",
-                "slug": "stay-true"
-              }
+              "selected": [
+                { "source": "curseforge", "slug": "stay-true" }
+              ]
             }
           }
         },
@@ -44,10 +43,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "fast-better-grass"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "fast-better-grass" }
+              ]
             }
           }
         },
@@ -59,10 +57,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "vanilla-exp"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "vanilla-exp" }
+              ]
             }
           }
         }
@@ -87,10 +84,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "recolourful-containers-gui"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "recolourful-containers-gui" }
+              ]
             }
           }
         },
@@ -102,10 +98,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "chat-reporting-helper"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "chat-reporting-helper" }
+              ]
             }
           }
         },
@@ -117,10 +112,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "low-on-fire"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "low-on-fire" }
+              ]
             }
           }
         }

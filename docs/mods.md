@@ -96,7 +96,7 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Connected block outlines | [Seamless](https://modrinth.com/mod/seamless) |  |
 | Subtle visual effects | [Subtle Effects](https://modrinth.com/mod/subtle-effects) |  |
 | Additional particle effects | [Particle Effects](https://modrinth.com/mod/particle-effects) |  |
-| Inventory particle effects | [Inventory Particles](https://modrinth.com/mod/inventory-particles) | [Inventory Interactions](https://modrinth.com/mod/inventory-interactions) |
+| Inventory particle effects | [Inventory Particles](https://modrinth.com/mod/inventory-particles), [Inventory Interactions](https://modrinth.com/mod/inventory-interactions) |  |
 | Ambient visual effects | [Mas Effects](https://modrinth.com/mod/mas-effects) |  |
 | Particle interactions | [Particle Interactions](https://modrinth.com/mod/particle-interactions) |  |
 | Bubble pop effects | [Make Bubbles Pop](https://modrinth.com/mod/make_bubbles_pop) |  |

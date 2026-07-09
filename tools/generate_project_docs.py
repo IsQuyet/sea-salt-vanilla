@@ -13,6 +13,7 @@ from project_data_common import (
     load_project_catalog,
     markdown_escape,
     read_json,
+    selected_project_refs_from_version,
     write_text,
 )
 from project_data_identity import resolve_project_ref
@@ -64,9 +65,22 @@ def render_project(project: dict[str, Any] | None) -> str:
     return f"[{name}]({link})"
 
 
-def version_project(data: dict[str, Any], row: dict[str, Any], version: str) -> dict[str, Any] | None:
+def version_projects(
+    data: dict[str, Any],
+    group: dict[str, Any],
+    section: dict[str, Any],
+    row: dict[str, Any],
+    version: str,
+) -> list[dict[str, Any]]:
     version_data = row.get("versions", {}).get(version, {})
-    return project_from_ref(data, version_data.get("selected"))
+    selected_refs = selected_project_refs_from_version(
+        group,
+        section,
+        row,
+        version,
+        version_data,
+    )
+    return [project for ref in selected_refs if (project := project_from_ref(data, ref)) is not None]
 
 
 def version_alternatives(data: dict[str, Any], row: dict[str, Any], version: str) -> list[dict[str, Any]]:
@@ -76,6 +90,10 @@ def version_alternatives(data: dict[str, Any], row: dict[str, Any], version: str
         for ref in version_data.get("alternatives", [])
         if (project := project_from_ref(data, ref)) is not None
     ]
+
+
+def render_projects(projects: list[dict[str, Any]]) -> str:
+    return ", ".join(render_project(project) for project in projects)
 
 
 def render_header(data: dict[str, Any], language: str) -> list[str]:
@@ -91,62 +109,98 @@ def render_header(data: dict[str, Any], language: str) -> list[str]:
     ]
 
 
+def render_group_intro(group: dict[str, Any], language: str) -> list[str]:
+    return [
+        f"## {group['title'][language]}",
+        "",
+        group["description"][language],
+        "",
+    ]
+
+
+def render_section_intro(section: dict[str, Any], language: str) -> list[str]:
+    return [
+        f"### {section['title'][language]}",
+        "",
+        section["description"][language],
+        "",
+    ]
+
+
+def section_has_alternatives(
+    data: dict[str, Any],
+    section: dict[str, Any],
+    versions: list[str],
+) -> bool:
+    return any(
+        version_alternatives(data, row, version)
+        for row in section["rows"]
+        for version in versions
+    )
+
+
+def table_headers(versions: list[str], language: str, show_alternatives: bool) -> list[str]:
+    headers = ["功能", *versions] if language == "zh" else ["Feature", *versions]
+    if not show_alternatives:
+        return headers
+
+    headers.append("可选替代" if language == "zh" else "Alternatives")
+    return headers
+
+
+def render_feature_row(
+    data: dict[str, Any],
+    group: dict[str, Any],
+    section: dict[str, Any],
+    row: dict[str, Any],
+    versions: list[str],
+    language: str,
+    show_alternatives: bool,
+) -> str:
+    cells = [markdown_escape(str(row["feature"][language]))]
+
+    for version in versions:
+        projects = version_projects(data, group, section, row, version)
+        cells.append(render_projects(projects))
+
+    if show_alternatives:
+        alternatives = [
+            render_project(alternative)
+            for version in versions
+            for alternative in version_alternatives(data, row, version)
+        ]
+        cells.append(", ".join(alternatives))
+
+    return f"| {' | '.join(cells)} |"
+
+
+def render_section(
+    data: dict[str, Any],
+    group: dict[str, Any],
+    section: dict[str, Any],
+    versions: list[str],
+    language: str,
+) -> list[str]:
+    lines = render_section_intro(section, language)
+    show_alternatives = section_has_alternatives(data, section, versions)
+    headers = table_headers(versions, language, show_alternatives)
+
+    lines.append(f"| {' | '.join(headers)} |")
+    lines.append(f"| {' | '.join('---' for _ in headers)} |")
+    for row in section["rows"]:
+        lines.append(render_feature_row(data, group, section, row, versions, language, show_alternatives))
+    lines.append("")
+    return lines
+
+
 def render_matrix(data: dict[str, Any], language: str) -> str:
     versions = list(data["versions"])
     lines = render_header(data, language)
 
     for group in data["groups"]:
-        lines.extend([
-            f"## {group['title'][language]}",
-            "",
-            group["description"][language],
-            "",
-        ])
-
+        lines.extend(render_group_intro(group, language))
         for section in group["sections"]:
-            lines.extend([
-                f"### {section['title'][language]}",
-                "",
-                section["description"][language],
-                "",
-            ])
-
-            show_alternatives = any(
-                version_alternatives(data, row, version)
-                for row in section["rows"]
-                for version in versions
-            )
-
-            if language == "zh":
-                headers = ["功能", *versions]
-                if show_alternatives:
-                    headers.append("可选替代")
-            else:
-                headers = ["Feature", *versions]
-                if show_alternatives:
-                    headers.append("Alternatives")
-
-            lines.append(f"| {' | '.join(headers)} |")
-            lines.append(f"| {' | '.join('---' for _ in headers)} |")
-
-            for row in section["rows"]:
-                cells = [markdown_escape(str(row["feature"][language]))]
-
-                for version in versions:
-                    project = version_project(data, row, version)
-                    cells.append(render_project(project))
-
-                if show_alternatives:
-                    alternatives = [
-                        render_project(alternative)
-                        for version in versions
-                        for alternative in version_alternatives(data, row, version)
-                    ]
-                    cells.append(", ".join(alternatives))
-
-                lines.append(f"| {' | '.join(cells)} |")
-
-            lines.append("")
+            lines.extend(render_section(data, group, section, versions, language))
 
     while lines and lines[-1] == "":
         lines.pop()

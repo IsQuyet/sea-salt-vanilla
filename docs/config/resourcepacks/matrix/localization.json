@@ -29,10 +29,9 @@
           },
           "versions": {
             "1.21.1": {
-              "selected": {
-                "source": "modrinth",
-                "slug": "translations-for-sodium"
-              }
+              "selected": [
+                { "source": "modrinth", "slug": "translations-for-sodium" }
+              ]
             }
           }
         }

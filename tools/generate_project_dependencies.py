@@ -15,11 +15,12 @@ from project_data_common import (
     cache_entry_has_error,
     category_project_type,
     get_project_cache_entry,
+    iter_feature_versions,
     load_dependency_cache,
-    load_feature_groups,
     load_installed_projects,
     load_project_cache,
     require_modrinth_version_cache,
+    selected_project_refs_from_version,
     write_json,
 )
 from project_data_identity import project_ref_key
@@ -56,22 +57,26 @@ def collect_target_version_project_refs() -> tuple[list[dict[str, Any]], list[di
         seen_keys.add(key)
         refs.append(normalized)
 
-    for group in load_feature_groups():
+    for group, section, row, version, version_data in iter_feature_versions():
+        if version != TARGET_VERSION:
+            continue
+
         is_optional_group = bool(group.get("_optional"))
         project_type = category_project_type(str(group.get("_category") or ""))
-        for section in group.get("sections", []):
-            for row in section.get("rows", []):
-                version_data = row.get("versions", {}).get(TARGET_VERSION)
-                if not version_data:
-                    continue
+        refs = optional_refs if is_optional_group else default_refs
+        seen_keys = seen_optional_keys if is_optional_group else seen_default_keys
+        selected_refs = selected_project_refs_from_version(
+            group,
+            section,
+            row,
+            TARGET_VERSION,
+            version_data,
+        )
+        for selected_ref in selected_refs:
+            remember(refs, seen_keys, selected_ref, project_type)
 
-                if is_optional_group:
-                    remember(optional_refs, seen_optional_keys, version_data.get("selected"), project_type)
-                else:
-                    remember(default_refs, seen_default_keys, version_data.get("selected"), project_type)
-
-                for alternative_ref in version_data.get("alternatives", []):
-                    remember(optional_refs, seen_optional_keys, alternative_ref, project_type)
+        for alternative_ref in version_data.get("alternatives", []):
+            remember(optional_refs, seen_optional_keys, alternative_ref, project_type)
 
     default_keys = {project_ref_key(ref) for ref in default_refs}
     optional_refs = [ref for ref in optional_refs if project_ref_key(ref) not in default_keys]
@@ -219,7 +224,11 @@ def expected_dependency_data_from_docs_roots(
     dependency_required_by: dict[str, set[str]] = {}
     queued_projects = list(root_projects)
     visited_version_ids: set[str] = set()
-    root_project_ids = {str(project.get("modrinth_id") or "") for project in root_projects if project.get("modrinth_id")}
+    root_project_ids = {
+        str(project.get("modrinth_id") or "")
+        for project in root_projects
+        if project.get("modrinth_id")
+    }
 
     while queued_projects:
         current_project = queued_projects.pop(0)
@@ -249,7 +258,11 @@ def expected_dependency_data_from_docs_roots(
 
             installed_dependency = installed_indexes["modrinth_ids"].get(dependency_project_id)
             cached_dependency = project_cache_entry_for_id(dependency_project_id, project_cache)
-            dependency_slug = str((cached_dependency or {}).get("slug") or (installed_dependency or {}).get("slug") or "").lower()
+            dependency_slug = str(
+                (cached_dependency or {}).get("slug")
+                or (installed_dependency or {}).get("slug")
+                or ""
+            ).lower()
             if dependency_project_id in documented["project_ids"] or dependency_slug in documented["slugs"]:
                 continue
 
@@ -266,7 +279,11 @@ def expected_dependency_data_from_docs_roots(
     return dict(sorted(entries.items()))
 
 
-def load_expected_dependencies(*, persist_cache: bool = True, allow_network: bool = False) -> dict[str, dict[str, Any]]:
+def load_expected_dependencies(
+    *,
+    persist_cache: bool = True,
+    allow_network: bool = False,
+) -> dict[str, dict[str, Any]]:
     expected_dependencies = expected_dependency_data_from_docs_roots(allow_network=allow_network)
     if persist_cache:
         write_json(DEPENDENCY_CACHE, load_dependency_cache())

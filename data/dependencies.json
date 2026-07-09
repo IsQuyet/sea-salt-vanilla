@@ -121,6 +121,7 @@
     "slug": "mossylib",
     "id": "ffLDUGbm",
     "required_by": [
+      "inventory-interactions",
       "inventory-particles"
     ]
   },
