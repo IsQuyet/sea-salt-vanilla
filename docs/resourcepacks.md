@@ -26,8 +26,7 @@ These resource packs add or extend smooth entity animations. Extension packs dep
 
 | Feature | 1.21.1 | Alternatives |
 | --- | --- | --- |
-| Smooth entity animations | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) |  |
-| Fresh Animations extensions | [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |  |
+| Smooth entity animations | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations), [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |  |
 | Third-person player animations | [Fresh Animations: Player Extension](https://modrinth.com/resourcepack/fa-player-extension) | [Detailed Animations](https://modrinth.com/resourcepack/detailed-animations) |
 
 ## Vanilla-style textures

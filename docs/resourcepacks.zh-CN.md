@@ -26,8 +26,7 @@
 
 | 功能 | 1.21.1 | 可选替代 |
 | --- | --- | --- |
-| 平滑实体动画 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations) |  |
-| Fresh Animations 扩展 | [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |  |
+| 平滑实体动画 | [Fresh Animations](https://modrinth.com/resourcepack/fresh-animations), [Fresh Animations: Extensions](https://modrinth.com/resourcepack/fresh-animations-extensions) |  |
 | 第三人称玩家动画 | [Fresh Animations: Player Extension](https://modrinth.com/resourcepack/fa-player-extension) | [Detailed Animations](https://modrinth.com/resourcepack/detailed-animations) |
 
 ## 原版风格贴图

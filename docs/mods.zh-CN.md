@@ -202,8 +202,7 @@
 | 已保存快捷栏管理 | [Better Saved Hotbars](https://modrinth.com/mod/better-saved-hotbars) | [Better Saved Hotbars Forked](https://modrinth.com/mod/better-saved-hotbars-forked) |
 | 鼠标背包操作 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  |
 | 边缘方块放置 | [Reacharound](https://modrinth.com/mod/reacharound) |  |
-| 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove) |  |
-| 背包移动兼容 | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  |
+| 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove), [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  |
 | 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  |
 | 可视化键位总览 | [VisualKeys](https://modrinth.com/mod/visualkeys) |  |
 | 闪烁提醒 | [Flash](https://modrinth.com/mod/flash) |  |
@@ -236,7 +235,7 @@
 | 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | 盔甲细节显示 | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) |  |
-| 游戏内皮肤管理 | [Skin Shuffle](https://modrinth.com/mod/skinshuffle) |  |
+| 游戏内皮肤管理 | [Skin Shuffle](https://modrinth.com/mod/skinshuffle) | [Quick Skin](https://modrinth.com/mod/quick-skin) |
 | 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
 | 居中准星 | [Centered Crosshair](https://modrinth.com/mod/centered-crosshair) |  |
 | 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |

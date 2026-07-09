@@ -30,20 +30,7 @@
           "versions": {
             "1.21.1": {
               "selected": [
-                { "source": "modrinth", "slug": "fresh-animations" }
-              ]
-            }
-          }
-        },
-        {
-          "id": "fresh-animations-extensions",
-          "feature": {
-            "en": "Fresh Animations extensions",
-            "zh": "Fresh Animations 扩展"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": [
+                { "source": "modrinth", "slug": "fresh-animations" },
                 { "source": "modrinth", "slug": "fresh-animations-extensions" }
               ]
             }

@@ -173,20 +173,7 @@
           "versions": {
             "1.21.1": {
               "selected": [
-                { "source": "modrinth", "slug": "invmove" }
-              ]
-            }
-          }
-        },
-        {
-          "id": "inventory-movement-compatibility",
-          "feature": {
-            "en": "Inventory movement compatibility",
-            "zh": "背包移动兼容"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": [
+                { "source": "modrinth", "slug": "invmove" },
                 { "source": "modrinth", "slug": "invmovecompats" }
               ]
             }
@@ -575,6 +562,9 @@
             "1.21.1": {
               "selected": [
                 { "source": "modrinth", "slug": "skinshuffle" }
+              ],
+              "alternatives": [
+                { "source": "modrinth", "slug": "quick-skin" }
               ]
             }
           }

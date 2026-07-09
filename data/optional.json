@@ -243,6 +243,12 @@
     "slug": "pixelshot",
     "id": "MUoQGQVU"
   },
+  "quick-skin": {
+    "name": "Quick Skin",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "quick-skin"
+  },
   "real-camera": {
     "name": "Real Camera",
     "type": "mod",

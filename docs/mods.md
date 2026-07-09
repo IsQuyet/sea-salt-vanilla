@@ -202,8 +202,7 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Saved hotbar management | [Better Saved Hotbars](https://modrinth.com/mod/better-saved-hotbars) | [Better Saved Hotbars Forked](https://modrinth.com/mod/better-saved-hotbars-forked) |
 | Mouse inventory actions | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  |
 | Edge block placement | [Reacharound](https://modrinth.com/mod/reacharound) |  |
-| Inventory movement | [InvMove](https://modrinth.com/mod/invmove) |  |
-| Inventory movement compatibility | [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  |
+| Inventory movement | [InvMove](https://modrinth.com/mod/invmove), [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  |
 | Keybinding search and conflicts | [Controlling](https://modrinth.com/mod/controlling) |  |
 | Visual keybinding overview | [VisualKeys](https://modrinth.com/mod/visualkeys) |  |
 | Attention flash notifications | [Flash](https://modrinth.com/mod/flash) |  |
@@ -236,7 +235,7 @@ These entries surface gameplay information or remove small interface friction.
 | Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
 | Armor detail display | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) |  |
-| In-game skin management | [Skin Shuffle](https://modrinth.com/mod/skinshuffle) |  |
+| In-game skin management | [Skin Shuffle](https://modrinth.com/mod/skinshuffle) | [Quick Skin](https://modrinth.com/mod/quick-skin) |
 | Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
 | Centered crosshair | [Centered Crosshair](https://modrinth.com/mod/centered-crosshair) |  |
 | Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
