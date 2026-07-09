@@ -17,6 +17,6 @@ These rows will document data packs that ship as default pack content instead of
 | Dungeon and structure expansion | [Dungeons and Taverns](https://modrinth.com/datapack/dungeons-and-taverns) |
 | Town and tower structures | [Towns and Towers](https://modrinth.com/datapack/towns-and-towers) |
 | Overworld terrain shaping | [Tectonic](https://modrinth.com/datapack/tectonic) |
-| Nether dimension expansion | [Incendium](https://modrinth.com/datapack/incendium) |
+| Nether dimension expansion | [Incendium Legacy](https://modrinth.com/datapack/incendium) |
 | Overworld biome overhaul | [William Wythers' Overhauled Overworld (Datapack)](https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)) |
 | Continent-scale terrain layout | [Continents](https://modrinth.com/datapack/continents) |

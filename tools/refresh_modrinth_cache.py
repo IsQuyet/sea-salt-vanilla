@@ -33,6 +33,9 @@ from project_data_common import (
 )
 
 
+MAX_DISPLAYED_REFRESH_ERRORS = 50
+
+
 def modrinth_ref_value(ref: dict[str, Any]) -> str:
     """Return the best Modrinth project lookup key for a docs/config project ref."""
     source = str(ref.get("source") or "").lower()
@@ -173,6 +176,129 @@ def verbose_print(message: str, *, verbose: bool) -> None:
         print(message, flush=True)
 
 
+def format_refresh_error_report(errors: list[str]) -> str:
+    displayed_errors = errors[:MAX_DISPLAYED_REFRESH_ERRORS]
+    joined_errors = "\n".join(f"- {error}" for error in displayed_errors)
+    if len(errors) <= MAX_DISPLAYED_REFRESH_ERRORS:
+        return joined_errors
+    hidden_error_count = len(errors) - MAX_DISPLAYED_REFRESH_ERRORS
+    return f"{joined_errors}\n... {hidden_error_count} more"
+
+
+def refresh_version_cache(
+    version_ids: list[str],
+    dependency_cache: dict[str, Any],
+    *,
+    force: bool,
+    dry_run: bool,
+    verbose: bool,
+) -> None:
+    verbose_print(f"Version refs: {len(set(version_ids))}", verbose=verbose)
+    if not dry_run:
+        verbose_print("Fetching missing Modrinth version metadata...", verbose=verbose)
+        fetch_missing_modrinth_versions(version_ids, dependency_cache, force=force)
+
+    version_errors = collect_version_cache_errors(version_ids, dependency_cache)
+    if version_errors and not dry_run:
+        raise ModrinthFetchError(
+            "Could not refresh all required Modrinth version metadata. "
+            "The existing cache files were not updated.\n"
+            f"{format_refresh_error_report(version_errors)}"
+        )
+
+
+def refresh_project_cache(
+    installed_projects: list[dict[str, Any]],
+    dependency_cache: dict[str, Any],
+    project_cache: dict[str, Any],
+    *,
+    force: bool,
+    dry_run: bool,
+    verbose: bool,
+) -> tuple[list[str], list[str]]:
+    verbose_print(
+        "Collecting Modrinth project refs from docs, packwiz metadata, and dependencies...",
+        verbose=verbose,
+    )
+    project_refs = collect_project_refs_to_refresh(installed_projects, dependency_cache, project_cache)
+    missing_project_refs = missing_project_cache_refs(project_refs, project_cache, force=force)
+    verbose_print(
+        f"Project refs: {len(project_refs)} total, {len(missing_project_refs)} to fetch",
+        verbose=verbose,
+    )
+
+    if not dry_run:
+        verbose_print("Fetching missing Modrinth project metadata...", verbose=verbose)
+        fetch_missing_modrinth_projects(project_refs, project_cache, force=force)
+
+    project_errors = collect_project_cache_errors(project_refs, project_cache)
+    if project_errors and not dry_run:
+        raise ModrinthFetchError(
+            "Could not refresh all required Modrinth project metadata. "
+            "The existing cache files were not updated.\n"
+            f"{format_refresh_error_report(project_errors)}"
+        )
+
+    return project_refs, missing_project_refs
+
+
+def build_refresh_summary(
+    *,
+    force: bool,
+    dry_run: bool,
+    only_projects: bool,
+    only_versions: bool,
+    installed_projects: list[dict[str, Any]],
+    version_ids: list[str],
+    dependency_cache: dict[str, Any],
+    project_refs: list[str],
+    missing_project_refs: list[str],
+    project_cache: dict[str, Any],
+) -> dict[str, int | str | bool]:
+    installed_modrinth_version_refs = {
+        version_id
+        for version_id in version_ids
+        if version_id
+    }
+
+    return {
+        "force": force,
+        "dry_run": dry_run,
+        "only_projects": only_projects,
+        "only_versions": only_versions,
+        "target_minecraft_version": TARGET_VERSION,
+        "installed_projects": len(installed_projects),
+        "installed_modrinth_version_refs": len(installed_modrinth_version_refs),
+        "version_cache_entries": len(dependency_cache),
+        "project_refs": len(project_refs),
+        "project_refs_to_fetch": len(missing_project_refs),
+        "project_cache_projects": project_cache_project_count(project_cache),
+        "project_cache_aliases": project_cache_alias_count(project_cache),
+    }
+
+
+def write_refresh_outputs(
+    *,
+    summary: dict[str, int | str | bool],
+    dependency_cache: dict[str, Any],
+    project_cache: dict[str, Any],
+    only_projects: bool,
+    only_versions: bool,
+) -> None:
+    if not only_projects:
+        write_json(DEPENDENCY_CACHE, dependency_cache)
+    if not only_versions:
+        write_json(PROJECT_CACHE, project_cache)
+
+    manifest = {
+        "schema_version": 1,
+        "generated_at": datetime.now(UTC).isoformat(),
+        "generator": "tools/refresh_modrinth_cache.py",
+        **summary,
+    }
+    write_json(MANIFEST_CACHE, manifest)
+
+
 def refresh_cache(
     *,
     force: bool = False,
@@ -189,90 +315,50 @@ def refresh_cache(
     project_cache = load_project_cache()
 
     version_ids = [str(project.get("modrinth_version") or "") for project in installed_projects]
-    version_errors: list[str] = []
     if not only_projects:
-        verbose_print(f"Version refs: {len(set(version_ids))}", verbose=verbose)
-        if not dry_run:
-            verbose_print("Fetching missing Modrinth version metadata...", verbose=verbose)
-            fetch_missing_modrinth_versions(version_ids, dependency_cache, force=force)
-        version_errors = collect_version_cache_errors(version_ids, dependency_cache)
-        if version_errors and not dry_run:
-            joined_errors = "\n".join(f"- {error}" for error in version_errors[:50])
-            overflow = "" if len(version_errors) <= 50 else f"\n... {len(version_errors) - 50} more"
-            raise ModrinthFetchError(
-                "Could not refresh all required Modrinth version metadata. "
-                "The existing cache files were not updated.\n"
-                f"{joined_errors}{overflow}"
-            )
+        refresh_version_cache(
+            version_ids,
+            dependency_cache,
+            force=force,
+            dry_run=dry_run,
+            verbose=verbose,
+        )
 
     project_refs: list[str] = []
-    project_errors: list[str] = []
     missing_project_refs: list[str] = []
     if not only_versions:
-        verbose_print(
-            "Collecting Modrinth project refs from docs, packwiz metadata, and dependencies...",
+        project_refs, missing_project_refs = refresh_project_cache(
+            installed_projects,
+            dependency_cache,
+            project_cache,
+            force=force,
+            dry_run=dry_run,
             verbose=verbose,
         )
-        project_refs = collect_project_refs_to_refresh(installed_projects, dependency_cache, project_cache)
-        missing_project_refs = missing_project_cache_refs(project_refs, project_cache, force=force)
-        verbose_print(
-            f"Project refs: {len(project_refs)} total, {len(missing_project_refs)} to fetch",
-            verbose=verbose,
-        )
-        if not dry_run:
-            verbose_print("Fetching missing Modrinth project metadata...", verbose=verbose)
-            fetch_missing_modrinth_projects(project_refs, project_cache, force=force)
-        project_errors = collect_project_cache_errors(project_refs, project_cache)
 
-        if project_errors and not dry_run:
-            joined_errors = "\n".join(f"- {error}" for error in project_errors[:50])
-            overflow = "" if len(project_errors) <= 50 else f"\n... {len(project_errors) - 50} more"
-            raise ModrinthFetchError(
-                "Could not refresh all required Modrinth project metadata. "
-                "The existing cache files were not updated.\n"
-                f"{joined_errors}{overflow}"
-            )
+    summary = build_refresh_summary(
+        force=force,
+        dry_run=dry_run,
+        only_projects=only_projects,
+        only_versions=only_versions,
+        installed_projects=installed_projects,
+        version_ids=version_ids,
+        dependency_cache=dependency_cache,
+        project_refs=project_refs,
+        missing_project_refs=missing_project_refs,
+        project_cache=project_cache,
+    )
 
     if not dry_run:
-        if not only_projects:
-            write_json(DEPENDENCY_CACHE, dependency_cache)
-        if not only_versions:
-            write_json(PROJECT_CACHE, project_cache)
-        write_json(
-            MANIFEST_CACHE,
-            {
-                "schema_version": 1,
-                "generated_at": datetime.now(UTC).isoformat(),
-                "generator": "tools/refresh_modrinth_cache.py",
-                "force": force,
-                "dry_run": dry_run,
-                "only_projects": only_projects,
-                "only_versions": only_versions,
-                "target_minecraft_version": TARGET_VERSION,
-                "installed_projects": len(installed_projects),
-                "version_refs": len(set(version_ids)),
-                "version_cache_entries": len(dependency_cache),
-                "project_refs": len(project_refs),
-                "project_refs_to_fetch": len(missing_project_refs),
-                "project_cache_projects": project_cache_project_count(project_cache),
-                "project_cache_aliases": project_cache_alias_count(project_cache),
-            },
+        write_refresh_outputs(
+            summary=summary,
+            dependency_cache=dependency_cache,
+            project_cache=project_cache,
+            only_projects=only_projects,
+            only_versions=only_versions,
         )
 
-    return {
-        "force": force,
-        "dry_run": dry_run,
-        "only_projects": only_projects,
-        "only_versions": only_versions,
-        "target_minecraft_version": TARGET_VERSION,
-        "installed_projects": len(installed_projects),
-        "version_refs": len(set(version_ids)),
-        "version_cache_entries": len(dependency_cache),
-        "project_refs": len(project_refs),
-        "project_refs_to_fetch": len(missing_project_refs),
-        "project_cache_projects": project_cache_project_count(project_cache),
-        "project_cache_aliases": project_cache_alias_count(project_cache),
-    }
+    return summary
 
 
 def main() -> None:

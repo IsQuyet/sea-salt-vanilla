@@ -17,22 +17,42 @@ from project_data_identity import project_ref_key, project_refs_from_selected
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 DOCS_CONFIG = ROOT / "docs" / "config"
-# packwiz folder name -> Modrinth project_type
+DEFAULT_PROJECT_TYPE = "mod"
+PROJECT_TYPE_METADATA = [
+    {
+        "folder": "mods",
+        "modrinth_type": "mod",
+        "curseforge_path": "mc-mods",
+    },
+    {
+        "folder": "resourcepacks",
+        "modrinth_type": "resourcepack",
+        "curseforge_path": "texture-packs",
+    },
+    {
+        "folder": "shaderpacks",
+        "modrinth_type": "shader",
+        "curseforge_path": "customization",
+    },
+    {
+        "folder": "datapacks",
+        "modrinth_type": "datapack",
+        "curseforge_path": "data-packs",
+    },
+    {
+        "folder": "plugins",
+        "modrinth_type": "plugin",
+        "curseforge_path": "bukkit-plugins",
+    },
+]
 PROJECT_TYPE_DIRS = {
-    "mods": "mod",
-    "resourcepacks": "resourcepack",
-    "shaderpacks": "shader",
-    "datapacks": "datapack",
-    "plugins": "plugin",
+    metadata["folder"]: metadata["modrinth_type"]
+    for metadata in PROJECT_TYPE_METADATA
 }
 PROJECT_TYPE_CURSEFORGE_PATHS = {
-    "mod": "mc-mods",
-    "resourcepack": "texture-packs",
-    "shader": "customization",
-    "datapack": "data-packs",
-    "plugin": "bukkit-plugins",
+    metadata["modrinth_type"]: metadata["curseforge_path"]
+    for metadata in PROJECT_TYPE_METADATA
 }
-DEFAULT_PROJECT_TYPE = "mod"
 PACK = ROOT / "pack.toml"
 MODRINTH_CACHE = ROOT / "cache" / "modrinth"
 DEPENDENCY_CACHE = MODRINTH_CACHE / "modrinth-version-dependencies.json"
