@@ -27,13 +27,9 @@
             "en": "Vanilla texture remaster",
             "zh": "原版贴图重制润色"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "curseforge", "slug": "stay-true" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "curseforge", "slug": "stay-true" }
+          ]
         },
         {
           "id": "better-grass-textures",
@@ -41,13 +37,9 @@
             "en": "Better grass textures",
             "zh": "更好的草地贴图"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "fast-better-grass" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "fast-better-grass" }
+          ]
         },
         {
           "id": "vanilla-experience-refinements",
@@ -55,13 +47,9 @@
             "en": "Vanilla experience refinements",
             "zh": "原版体验细节润色"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "vanilla-exp" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "vanilla-exp" }
+          ]
         }
       ]
     },
@@ -82,13 +70,9 @@
             "en": "Container GUI and HUD recolors",
             "zh": "容器 GUI 与 HUD 重着色"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "recolourful-containers-gui" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "recolourful-containers-gui" }
+          ]
         },
         {
           "id": "chat-reporting-helper-textures",
@@ -96,13 +80,9 @@
             "en": "Chat reporting helper textures",
             "zh": "聊天举报提示贴图"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "chat-reporting-helper" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "chat-reporting-helper" }
+          ]
         },
         {
           "id": "lower-fire-overlay",
@@ -110,13 +90,9 @@
             "en": "Lower fire overlay",
             "zh": "降低火焰遮挡"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "low-on-fire" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "low-on-fire" }
+          ]
         }
       ]
     }

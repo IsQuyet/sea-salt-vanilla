@@ -27,13 +27,9 @@
             "en": "Balanced cinematic shader style",
             "zh": "均衡电影感光影风格"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "bliss-shader" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "bliss-shader" }
+          ]
         },
         {
           "id": "bsl-shaders",
@@ -41,13 +37,9 @@
             "en": "Classic BSL shader style",
             "zh": "经典 BSL 光影风格"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "bsl-shaders" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "bsl-shaders" }
+          ]
         },
         {
           "id": "complementary-reimagined",
@@ -55,13 +47,9 @@
             "en": "Vanilla-preserving Complementary style",
             "zh": "保留原版观感的 Complementary 风格"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "complementary-reimagined" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "complementary-reimagined" }
+          ]
         },
         {
           "id": "complementary-unbound",
@@ -69,13 +57,9 @@
             "en": "Realistic Complementary style",
             "zh": "偏写实的 Complementary 风格"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "complementary-unbound" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "complementary-unbound" }
+          ]
         },
         {
           "id": "photon-shaders",
@@ -83,13 +67,9 @@
             "en": "Modern realistic lighting",
             "zh": "现代写实光照"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "photon-shader" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "photon-shader" }
+          ]
         },
         {
           "id": "rethinking-voxels",
@@ -97,13 +77,9 @@
             "en": "Voxel-inspired lighting style",
             "zh": "体素灵感光照风格"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "rethinking-voxels" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "rethinking-voxels" }
+          ]
         }
       ]
     }

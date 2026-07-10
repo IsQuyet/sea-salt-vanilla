@@ -27,13 +27,9 @@
             "en": "Fabric API support",
             "zh": "Fabric API 支持"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "fabric-api" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "fabric-api" }
+          ]
         },
         {
           "id": "kotlin-runtime",
@@ -41,13 +37,9 @@
             "en": "Kotlin runtime",
             "zh": "Kotlin 运行时"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "fabric-language-kotlin" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "fabric-language-kotlin" }
+          ]
         }
       ]
     },
@@ -68,13 +60,9 @@
             "en": "Rendering engine optimization",
             "zh": "渲染引擎优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "sodium" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "sodium" }
+          ]
         },
         {
           "id": "game-logic-optimization",
@@ -82,13 +70,9 @@
             "en": "Game logic optimization",
             "zh": "游戏逻辑优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "lithium" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "lithium" }
+          ]
         },
         {
           "id": "startup-and-memory-fixes",
@@ -96,13 +80,9 @@
             "en": "Startup and memory fixes",
             "zh": "启动与内存修复"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "modernfix" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "modernfix" }
+          ]
         },
         {
           "id": "immediate-rendering-optimization",
@@ -110,13 +90,9 @@
             "en": "Immediate rendering optimization",
             "zh": "即时渲染优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "immediatelyfast" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "immediatelyfast" }
+          ]
         },
         {
           "id": "network-stack-optimization",
@@ -124,13 +100,9 @@
             "en": "Network stack optimization",
             "zh": "网络栈优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "krypton" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "krypton" }
+          ]
         },
         {
           "id": "multiplayer-client-optimization",
@@ -138,13 +110,9 @@
             "en": "Multiplayer client optimization",
             "zh": "多人客户端优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "noxesium" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "noxesium" }
+          ]
         },
         {
           "id": "light-engine-optimization",
@@ -152,13 +120,9 @@
             "en": "Light engine optimization",
             "zh": "光照引擎优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "scalablelux" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "scalablelux" }
+          ]
         },
         {
           "id": "entity-render-culling",
@@ -166,13 +130,9 @@
             "en": "Entity render culling",
             "zh": "实体渲染剔除"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "entityculling" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "entityculling" }
+          ]
         },
         {
           "id": "general-render-culling",
@@ -180,13 +140,9 @@
             "en": "General render culling",
             "zh": "通用渲染剔除"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "moreculling" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "moreculling" }
+          ]
         },
         {
           "id": "block-entity-rendering-optimization",
@@ -194,16 +150,12 @@
             "en": "Block entity rendering optimization",
             "zh": "方块实体渲染优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "ebe" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "better-block-entities" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "ebe" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "better-block-entities" }
+          ]
         },
         {
           "id": "leaf-rendering-culling",
@@ -211,13 +163,9 @@
             "en": "Leaf rendering culling",
             "zh": "树叶渲染剔除"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "cull-leaves" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "cull-leaves" }
+          ]
         },
         {
           "id": "particle-performance",
@@ -225,16 +173,12 @@
             "en": "Particle performance",
             "zh": "粒子性能优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "particle-core" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "asyncparticles" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "particle-core" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "asyncparticles" }
+          ]
         },
         {
           "id": "memory-allocation-optimization",
@@ -242,13 +186,9 @@
             "en": "Memory allocation optimization",
             "zh": "内存分配优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "ferrite-core" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "ferrite-core" }
+          ]
         },
         {
           "id": "client-performance-tweaks",
@@ -256,13 +196,9 @@
             "en": "Client performance tweaks",
             "zh": "客户端性能微调"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "badoptimizations" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "badoptimizations" }
+          ]
         },
         {
           "id": "input-event-polling-optimization",
@@ -270,13 +206,9 @@
             "en": "Input event polling optimization",
             "zh": "输入事件轮询优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "ixeris" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "ixeris" }
+          ]
         },
         {
           "id": "thread-scheduling-optimization",
@@ -284,13 +216,9 @@
             "en": "Thread scheduling optimization",
             "zh": "线程调度优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "threadtweak" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "threadtweak" }
+          ]
         }
       ]
     },
@@ -311,13 +239,9 @@
             "en": "Resource pack discovery",
             "zh": "资源包浏览"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "resourcify" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "resourcify" }
+          ]
         },
         {
           "id": "global-pack-loading",
@@ -325,17 +249,13 @@
             "en": "Global pack loading",
             "zh": "全局包加载"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "globalpacks" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "open-loader" },
-                { "source": "modrinth", "slug": "paxi" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "globalpacks" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "open-loader" },
+            { "source": "modrinth", "slug": "paxi" }
+          ]
         },
         {
           "id": "packed-pack-management",
@@ -343,13 +263,9 @@
             "en": "Packed pack management",
             "zh": "嵌套包管理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "packed-packs" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "packed-packs" }
+          ]
         },
         {
           "id": "default-options-and-keybinds",
@@ -357,16 +273,12 @@
             "en": "Default client options and config seeding",
             "zh": "默认客户端选项与配置分发"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "yosbr" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "default-options" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "yosbr" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "default-options" }
+          ]
         }
       ]
     },
@@ -387,13 +299,9 @@
             "en": "Mod list and config entry",
             "zh": "Mod 列表与配置入口"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "modmenu" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "modmenu" }
+          ]
         },
         {
           "id": "in-game-configuration-screens",
@@ -401,13 +309,9 @@
             "en": "In-game configuration screens",
             "zh": "游戏内配置界面"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "curseforge", "slug": "configured" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "curseforge", "slug": "configured" }
+          ]
         },
         {
           "id": "yacl-configuration-framework",
@@ -415,13 +319,9 @@
             "en": "YACL configuration framework",
             "zh": "YACL 配置框架"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "yacl" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "yacl" }
+          ]
         },
         {
           "id": "cloth-config-framework",
@@ -429,13 +329,9 @@
             "en": "Cloth Config framework",
             "zh": "Cloth Config 配置框架"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "cloth-config" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "cloth-config" }
+          ]
         },
         {
           "id": "forge-config-compatibility",
@@ -443,13 +339,9 @@
             "en": "Forge config compatibility",
             "zh": "Forge 配置兼容"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "forge-config-api-port" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "forge-config-api-port" }
+          ]
         }
       ]
     }

@@ -1,0 +1,1190 @@
+{
+  "schema_version": 1,
+  "projects": {
+    "curseforge:353554": {
+      "slug": "stay-true",
+      "name": "Stay True",
+      "page": "https://www.curseforge.com/minecraft/texture-packs/stay-true"
+    },
+    "curseforge:417768": {
+      "slug": "lottweaks",
+      "name": "LotTweaks",
+      "page": "https://www.curseforge.com/minecraft/mc-mods/lottweaks"
+    },
+    "curseforge:457570": {
+      "slug": "configured",
+      "name": "Configured",
+      "page": "https://www.curseforge.com/minecraft/mc-mods/configured"
+    },
+    "modrinth:1IjD5062": {
+      "slug": "continuity",
+      "name": "Continuity",
+      "page": "https://modrinth.com/mod/continuity"
+    },
+    "modrinth:1bokaNcj": {
+      "slug": "xaeros-minimap",
+      "name": "Xaero's Minimap",
+      "page": "https://modrinth.com/mod/xaeros-minimap"
+    },
+    "modrinth:1eAoo2KR": {
+      "slug": "yacl",
+      "name": "YetAnotherConfigLib (YACL)",
+      "page": "https://modrinth.com/mod/yacl"
+    },
+    "modrinth:1u6JkXh5": {
+      "slug": "worldedit",
+      "name": "WorldEdit",
+      "page": "https://modrinth.com/mod/worldedit"
+    },
+    "modrinth:2JIeCmxb": {
+      "slug": "better-f1-reborn",
+      "name": "Better F1 Reborn",
+      "page": "https://modrinth.com/mod/better-f1-reborn"
+    },
+    "modrinth:2M01OLQq": {
+      "slug": "shulkerboxtooltip",
+      "name": "Shulker Box Tooltip",
+      "page": "https://modrinth.com/mod/shulkerboxtooltip"
+    },
+    "modrinth:3IuO68q1": {
+      "slug": "puzzle",
+      "name": "Puzzle",
+      "page": "https://modrinth.com/mod/puzzle"
+    },
+    "modrinth:3azQ6p0W": {
+      "slug": "cherished-worlds",
+      "name": "Cherished Worlds",
+      "page": "https://modrinth.com/mod/cherished-worlds"
+    },
+    "modrinth:3kl8Lmm9": {
+      "slug": "slot-cycler",
+      "name": "Slot Cycler",
+      "page": "https://modrinth.com/mod/slot-cycler"
+    },
+    "modrinth:3s19I5jr": {
+      "slug": "skinshuffle",
+      "name": "Skin Shuffle",
+      "page": "https://modrinth.com/mod/skinshuffle"
+    },
+    "modrinth:3sjzyvGR": {
+      "slug": "modern-ui",
+      "name": "Modern UI",
+      "page": "https://modrinth.com/mod/modern-ui"
+    },
+    "modrinth:4H6sumDB": {
+      "slug": "euphoria-patches",
+      "name": "Euphoria Patches",
+      "page": "https://modrinth.com/mod/euphoria-patches"
+    },
+    "modrinth:4I1XuqiY": {
+      "slug": "entity-model-features",
+      "name": "[EMF] Entity Model Features",
+      "page": "https://modrinth.com/mod/entity-model-features"
+    },
+    "modrinth:4pbhwMQz": {
+      "slug": "william-wythers-overhauled-overworld-(datapack)",
+      "name": "William Wythers' Overhauled Overworld (Datapack)",
+      "page": "https://modrinth.com/datapack/william-wythers-overhauled-overworld-(datapack)"
+    },
+    "modrinth:4q8UOK1d": {
+      "slug": "subtle-effects",
+      "name": "Subtle Effects",
+      "page": "https://modrinth.com/mod/subtle-effects"
+    },
+    "modrinth:50dA9Sha": {
+      "slug": "fresh-animations",
+      "name": "Fresh Animations",
+      "page": "https://modrinth.com/resourcepack/fresh-animations"
+    },
+    "modrinth:51shyZVL": {
+      "slug": "moreculling",
+      "name": "More Culling",
+      "page": "https://modrinth.com/mod/moreculling"
+    },
+    "modrinth:5ZwdcRci": {
+      "slug": "immediatelyfast",
+      "name": "ImmediatelyFast",
+      "page": "https://modrinth.com/mod/immediatelyfast"
+    },
+    "modrinth:5faXoLqX": {
+      "slug": "iceberg",
+      "name": "Iceberg",
+      "page": "https://modrinth.com/mod/iceberg"
+    },
+    "modrinth:6FtRfnLg": {
+      "slug": "do-a-barrel-roll",
+      "name": "Do a Barrel Roll",
+      "page": "https://modrinth.com/mod/do-a-barrel-roll"
+    },
+    "modrinth:6IpcGP7T": {
+      "slug": "invmovecompats",
+      "name": "InvMoveCompats",
+      "page": "https://modrinth.com/mod/invmovecompats"
+    },
+    "modrinth:6xKUDQcB": {
+      "slug": "no-resource-pack-warnings",
+      "name": "No Resource Pack Warnings",
+      "page": "https://modrinth.com/mod/no-resource-pack-warnings"
+    },
+    "modrinth:7diJQfvM": {
+      "slug": "delete-worlds-to-trash",
+      "name": "Delete Worlds To Trash",
+      "page": "https://modrinth.com/mod/delete-worlds-to-trash"
+    },
+    "modrinth:89Wsn8GD": {
+      "slug": "capes",
+      "name": "Capes",
+      "page": "https://modrinth.com/mod/capes"
+    },
+    "modrinth:8H6RXl2q": {
+      "slug": "enhancedtooltips",
+      "name": "EnhancedTooltips",
+      "page": "https://modrinth.com/mod/enhancedtooltips"
+    },
+    "modrinth:8Pq6Exn2": {
+      "slug": "packed-packs",
+      "name": "Packed Packs",
+      "page": "https://modrinth.com/mod/packed-packs"
+    },
+    "modrinth:8bOImuGU": {
+      "slug": "logical-zoom",
+      "name": "Logical Zoom",
+      "page": "https://modrinth.com/mod/logical-zoom"
+    },
+    "modrinth:8bf2GogI": {
+      "slug": "vanilla-exp",
+      "name": "Vanilla Experience+",
+      "page": "https://modrinth.com/resourcepack/vanilla-exp"
+    },
+    "modrinth:8shC1gFX": {
+      "slug": "betterf3",
+      "name": "BetterF3",
+      "page": "https://modrinth.com/mod/betterf3"
+    },
+    "modrinth:9eGKb6K1": {
+      "slug": "simple-voice-chat",
+      "name": "Simple Voice Chat",
+      "page": "https://modrinth.com/mod/simple-voice-chat"
+    },
+    "modrinth:9mtu0sUO": {
+      "slug": "fast-ip-ping",
+      "name": "Fast IP Ping",
+      "page": "https://modrinth.com/mod/fast-ip-ping"
+    },
+    "modrinth:9pR04wDX": {
+      "slug": "detailed-animations",
+      "name": "Detailed Animations",
+      "page": "https://modrinth.com/resourcepack/detailed-animations"
+    },
+    "modrinth:9s6osm5g": {
+      "slug": "cloth-config",
+      "name": "Cloth Config API",
+      "page": "https://modrinth.com/mod/cloth-config"
+    },
+    "modrinth:9wv7LuMc": {
+      "slug": "immersive-ui",
+      "name": "Immersive UI",
+      "page": "https://modrinth.com/mod/immersive-ui"
+    },
+    "modrinth:A3VSiTms": {
+      "slug": "new-health-bars",
+      "name": "Health Bars",
+      "page": "https://modrinth.com/mod/new-health-bars"
+    },
+    "modrinth:AANobbMI": {
+      "slug": "sodium",
+      "name": "Sodium",
+      "page": "https://modrinth.com/mod/sodium"
+    },
+    "modrinth:AP8rDDLS": {
+      "slug": "hold-my-items",
+      "name": "Hold My Items",
+      "page": "https://modrinth.com/mod/hold-my-items"
+    },
+    "modrinth:B3fgRqfr": {
+      "slug": "server-unpacker",
+      "name": "Server Unpacker",
+      "page": "https://modrinth.com/mod/server-unpacker"
+    },
+    "modrinth:BUpChT1v": {
+      "slug": "talkbubbles",
+      "name": "TalkBubbles",
+      "page": "https://modrinth.com/mod/talkbubbles"
+    },
+    "modrinth:BVzZfTc1": {
+      "slug": "entitytexturefeatures",
+      "name": "[ETF] Entity Texture Features",
+      "page": "https://modrinth.com/mod/entitytexturefeatures"
+    },
+    "modrinth:BdKIyOLe": {
+      "slug": "boat-item-view",
+      "name": "Boat Item View",
+      "page": "https://modrinth.com/mod/boat-item-view"
+    },
+    "modrinth:BwPeriwJ": {
+      "slug": "a-good-place",
+      "name": "A Good Place",
+      "page": "https://modrinth.com/mod/a-good-place"
+    },
+    "modrinth:CU0PAyzb": {
+      "slug": "paxi",
+      "name": "Paxi",
+      "page": "https://modrinth.com/mod/paxi"
+    },
+    "modrinth:CVT4pFB2": {
+      "slug": "melody",
+      "name": "Melody",
+      "page": "https://modrinth.com/mod/melody"
+    },
+    "modrinth:CcL3MXyI": {
+      "slug": "recursiveresources",
+      "name": "Recursive Resources",
+      "page": "https://modrinth.com/mod/recursiveresources"
+    },
+    "modrinth:CllP7wW0": {
+      "slug": "smooth-scroll",
+      "name": "Smooth Scrolling",
+      "page": "https://modrinth.com/mod/smooth-scroll"
+    },
+    "modrinth:DOUdJVEm": {
+      "slug": "controlify",
+      "name": "Controlify (Controller support)",
+      "page": "https://modrinth.com/mod/controlify"
+    },
+    "modrinth:DjLobEOy": {
+      "slug": "towns-and-towers",
+      "name": "Towns and Towers",
+      "page": "https://modrinth.com/datapack/towns-and-towers"
+    },
+    "modrinth:DnNYdJsx": {
+      "slug": "chatanimation",
+      "name": "Chat Animation [Smooth Chat]",
+      "page": "https://modrinth.com/mod/chatanimation"
+    },
+    "modrinth:Effrh3ze": {
+      "slug": "better-smoke",
+      "name": "Better Smoke",
+      "page": "https://modrinth.com/mod/better-smoke"
+    },
+    "modrinth:Eldc1g37": {
+      "slug": "tcdcommons",
+      "name": "TCDCommons API",
+      "page": "https://modrinth.com/mod/tcdcommons"
+    },
+    "modrinth:EsAfCjCV": {
+      "slug": "appleskin",
+      "name": "AppleSkin",
+      "page": "https://modrinth.com/mod/appleskin"
+    },
+    "modrinth:FCzmUKBr": {
+      "slug": "inventory-interactions",
+      "name": "Inventory Interactions",
+      "page": "https://modrinth.com/mod/inventory-interactions"
+    },
+    "modrinth:FT20RvJM": {
+      "slug": "wearthat",
+      "name": "WearThat",
+      "page": "https://modrinth.com/mod/wearthat"
+    },
+    "modrinth:Fws7jX8r": {
+      "slug": "biomeinfo",
+      "name": "BiomeInfo",
+      "page": "https://modrinth.com/mod/biomeinfo"
+    },
+    "modrinth:GNxdLCoP": {
+      "slug": "cull-leaves",
+      "name": "Cull Leaves",
+      "page": "https://modrinth.com/mod/cull-leaves"
+    },
+    "modrinth:GcWjdA9I": {
+      "slug": "malilib",
+      "name": "MaLiLib",
+      "page": "https://modrinth.com/mod/malilib"
+    },
+    "modrinth:GdSOHJIu": {
+      "slug": "better-saved-hotbars-forked",
+      "name": "Better Saved Hotbars Forked",
+      "page": "https://modrinth.com/mod/better-saved-hotbars-forked"
+    },
+    "modrinth:HEds12HI": {
+      "slug": "visualkeys",
+      "name": "VisualKeys",
+      "page": "https://modrinth.com/mod/visualkeys"
+    },
+    "modrinth:HVnmMxH1": {
+      "slug": "complementary-reimagined",
+      "name": "Complementary Shaders - Reimagined",
+      "page": "https://modrinth.com/shader/complementary-reimagined"
+    },
+    "modrinth:Ha28R6CL": {
+      "slug": "fabric-language-kotlin",
+      "name": "Fabric Language Kotlin",
+      "page": "https://modrinth.com/mod/fabric-language-kotlin"
+    },
+    "modrinth:HdwRs3kc": {
+      "slug": "dcwa",
+      "name": "Disable Custom Worlds Advice",
+      "page": "https://modrinth.com/mod/dcwa"
+    },
+    "modrinth:I7k4B65h": {
+      "slug": "justenoughcharacters",
+      "name": "JustEnoughCharacters",
+      "page": "https://modrinth.com/mod/justenoughcharacters"
+    },
+    "modrinth:IAzUFvS6": {
+      "slug": "fwa",
+      "name": "Fancy World Animations",
+      "page": "https://modrinth.com/mod/fwa"
+    },
+    "modrinth:IwCkru1D": {
+      "slug": "cicada",
+      "name": "CICADA",
+      "page": "https://modrinth.com/mod/cicada"
+    },
+    "modrinth:J81TRJWm": {
+      "slug": "konkrete",
+      "name": "Konkrete",
+      "page": "https://modrinth.com/mod/konkrete"
+    },
+    "modrinth:Jaoe8qGe": {
+      "slug": "repo-heads",
+      "name": "REPO Heads",
+      "page": "https://modrinth.com/mod/repo-heads"
+    },
+    "modrinth:JtifUr64": {
+      "slug": "travelers-titles",
+      "name": "Traveler's Titles",
+      "page": "https://modrinth.com/mod/travelers-titles"
+    },
+    "modrinth:JuksLGBQ": {
+      "slug": "optigui",
+      "name": "OptiGUI",
+      "page": "https://modrinth.com/mod/optigui"
+    },
+    "modrinth:KaKEuH9Q": {
+      "slug": "notebook",
+      "name": "Vanilla Notebook ",
+      "page": "https://modrinth.com/mod/notebook"
+    },
+    "modrinth:Kp2uclYl": {
+      "slug": "inventoryhudplus",
+      "name": "InventoryHUD+",
+      "page": "https://modrinth.com/mod/inventoryhudplus"
+    },
+    "modrinth:Kw7Sm3Xf": {
+      "slug": "noxesium",
+      "name": "Noxesium",
+      "page": "https://modrinth.com/mod/noxesium"
+    },
+    "modrinth:KwWsINvD": {
+      "slug": "open-loader",
+      "name": "Open Loader",
+      "page": "https://modrinth.com/mod/open-loader"
+    },
+    "modrinth:LKVZxR8L": {
+      "slug": "mining_and_placing_animations",
+      "name": "Mining & Placing Animations",
+      "page": "https://modrinth.com/mod/mining_and_placing_animations"
+    },
+    "modrinth:M08ruV16": {
+      "slug": "bobby",
+      "name": "Bobby",
+      "page": "https://modrinth.com/mod/bobby"
+    },
+    "modrinth:MOqt4Z5n": {
+      "slug": "chatpatches",
+      "name": "Chat Patches",
+      "page": "https://modrinth.com/mod/chatpatches"
+    },
+    "modrinth:MPCX6s5C": {
+      "slug": "not-enough-animations",
+      "name": "Not Enough Animations",
+      "page": "https://modrinth.com/mod/not-enough-animations"
+    },
+    "modrinth:MUoQGQVU": {
+      "slug": "pixelshot",
+      "name": "Pixelshot",
+      "page": "https://modrinth.com/mod/pixelshot"
+    },
+    "modrinth:N6n5dqoA": {
+      "slug": "axiom",
+      "name": "Axiom",
+      "page": "https://modrinth.com/mod/axiom"
+    },
+    "modrinth:NK39zBp2": {
+      "slug": "blur-plus",
+      "name": "Blur+",
+      "page": "https://modrinth.com/mod/blur-plus"
+    },
+    "modrinth:NNAgCjsB": {
+      "slug": "entityculling",
+      "name": "Entity Culling",
+      "page": "https://modrinth.com/mod/entityculling"
+    },
+    "modrinth:NRLPy2mk": {
+      "slug": "globalpacks",
+      "name": "Global Packs",
+      "page": "https://modrinth.com/mod/globalpacks"
+    },
+    "modrinth:NcUtCpym": {
+      "slug": "xaeros-world-map",
+      "name": "Xaero's World Map",
+      "page": "https://modrinth.com/mod/xaeros-world-map"
+    },
+    "modrinth:NpPKJQg6": {
+      "slug": "vectorientation",
+      "name": "Vectorientation",
+      "page": "https://modrinth.com/mod/vectorientation"
+    },
+    "modrinth:Nv2fQJo5": {
+      "slug": "replaymod",
+      "name": "ReplayMod",
+      "page": "https://modrinth.com/mod/replaymod"
+    },
+    "modrinth:O7RBXm3n": {
+      "slug": "inventory-profiles-next",
+      "name": "Inventory Profiles Next",
+      "page": "https://modrinth.com/mod/inventory-profiles-next"
+    },
+    "modrinth:OB69KhRA": {
+      "slug": "orthocamera",
+      "name": "OrthoCamera",
+      "page": "https://modrinth.com/mod/orthocamera"
+    },
+    "modrinth:ONZm0H7Y": {
+      "slug": "better-block-entities",
+      "name": "Better Block Entities",
+      "page": "https://modrinth.com/mod/better-block-entities"
+    },
+    "modrinth:OSQ8mw2r": {
+      "slug": "explosive-enhancement",
+      "name": "Explosive Enhancement",
+      "page": "https://modrinth.com/mod/explosive-enhancement"
+    },
+    "modrinth:OVuFYfre": {
+      "slug": "ebe",
+      "name": "Enhanced Block Entities",
+      "page": "https://modrinth.com/mod/ebe"
+    },
+    "modrinth:Os35nfkh": {
+      "slug": "talkingheads",
+      "name": "Talking Heads",
+      "page": "https://modrinth.com/mod/talkingheads"
+    },
+    "modrinth:OsZiaDHq": {
+      "slug": "creativecore",
+      "name": "CreativeCore",
+      "page": "https://modrinth.com/mod/creativecore"
+    },
+    "modrinth:OuyCgP8t": {
+      "slug": "itemphysic-lite",
+      "name": "ItemPhysic Lite",
+      "page": "https://modrinth.com/mod/itemphysic-lite"
+    },
+    "modrinth:P7dR8mSH": {
+      "slug": "fabric-api",
+      "name": "Fabric API",
+      "page": "https://modrinth.com/mod/fabric-api"
+    },
+    "modrinth:P8STLvzB": {
+      "slug": "perception",
+      "name": "Perception",
+      "page": "https://modrinth.com/mod/perception"
+    },
+    "modrinth:PLAGcSFJ": {
+      "slug": "particle-effects",
+      "name": "Particle Effects",
+      "page": "https://modrinth.com/mod/particle-effects"
+    },
+    "modrinth:Ps1zyz6x": {
+      "slug": "scalablelux",
+      "name": "ScalableLux",
+      "page": "https://modrinth.com/mod/scalablelux"
+    },
+    "modrinth:PtjYWJkn": {
+      "slug": "sodium-extra",
+      "name": "Sodium Extra",
+      "page": "https://modrinth.com/mod/sodium-extra"
+    },
+    "modrinth:Q1vvjJYV": {
+      "slug": "bsl-shaders",
+      "name": "BSL Shaders",
+      "page": "https://modrinth.com/shader/bsl-shaders"
+    },
+    "modrinth:Q2OqKxDG": {
+      "slug": "better-advancements",
+      "name": "Better Advancements",
+      "page": "https://modrinth.com/mod/better-advancements"
+    },
+    "modrinth:QAGBst4M": {
+      "slug": "puzzles-lib",
+      "name": "Puzzles Lib",
+      "page": "https://modrinth.com/mod/puzzles-lib"
+    },
+    "modrinth:Qx2rzv1x": {
+      "slug": "enchantment-glint-outline",
+      "name": "Enchantment Glint Outline",
+      "page": "https://modrinth.com/mod/enchantment-glint-outline"
+    },
+    "modrinth:R6NEzAwj": {
+      "slug": "complementary-unbound",
+      "name": "Complementary Shaders - Unbound",
+      "page": "https://modrinth.com/shader/complementary-unbound"
+    },
+    "modrinth:REfW2AEX": {
+      "slug": "invmove",
+      "name": "InvMove",
+      "page": "https://modrinth.com/mod/invmove"
+    },
+    "modrinth:RH2KUdKJ": {
+      "slug": "shatterbyte-lib",
+      "name": "ShatterLib | OctoLib",
+      "page": "https://modrinth.com/mod/shatterbyte-lib"
+    },
+    "modrinth:RLzHAoZe": {
+      "slug": "resourcify",
+      "name": "Resourcify",
+      "page": "https://modrinth.com/mod/resourcify"
+    },
+    "modrinth:RPOSBQgq": {
+      "slug": "itemswapper",
+      "name": "ItemSwapper",
+      "page": "https://modrinth.com/mod/itemswapper"
+    },
+    "modrinth:RRxvWKNC": {
+      "slug": "low-on-fire",
+      "name": "Low On Fire",
+      "page": "https://modrinth.com/resourcepack/low-on-fire"
+    },
+    "modrinth:RSeLon5O": {
+      "slug": "particle-core",
+      "name": "Particle Core",
+      "page": "https://modrinth.com/mod/particle-core"
+    },
+    "modrinth:S3D3QF0M": {
+      "slug": "leawind-third-person",
+      "name": "Leawind's Third Person",
+      "page": "https://modrinth.com/mod/leawind-third-person"
+    },
+    "modrinth:SNVQ2c0g": {
+      "slug": "mru",
+      "name": "M.R.U",
+      "page": "https://modrinth.com/mod/mru"
+    },
+    "modrinth:Si9Uim4y": {
+      "slug": "detail-armor-bar-reconstructed",
+      "name": "Detail Armor Bar Reconstructed",
+      "page": "https://modrinth.com/mod/detail-armor-bar-reconstructed"
+    },
+    "modrinth:TAIMVZCL": {
+      "slug": "fa-player-extension",
+      "name": "Fresh Animations: Player Extension",
+      "page": "https://modrinth.com/resourcepack/fa-player-extension"
+    },
+    "modrinth:TnOXNf5e": {
+      "slug": "peek",
+      "name": "Peek",
+      "page": "https://modrinth.com/mod/peek"
+    },
+    "modrinth:UMxybHE8": {
+      "slug": "minihud",
+      "name": "MiniHUD",
+      "page": "https://modrinth.com/mod/minihud"
+    },
+    "modrinth:UQSwebjQ": {
+      "slug": "burn-by-soul-fire",
+      "name": "Burn By Soul Fire",
+      "page": "https://modrinth.com/mod/burn-by-soul-fire"
+    },
+    "modrinth:UVtY3ZAC": {
+      "slug": "enchantment-descriptions",
+      "name": "Enchantment Descriptions",
+      "page": "https://modrinth.com/mod/enchantment-descriptions"
+    },
+    "modrinth:Ua7DFN59": {
+      "slug": "yungs-api",
+      "name": "YUNG's API",
+      "page": "https://modrinth.com/mod/yungs-api"
+    },
+    "modrinth:UhxJgB1o": {
+      "slug": "snow-imprints",
+      "name": "Soft Imprints",
+      "page": "https://modrinth.com/mod/snow-imprints"
+    },
+    "modrinth:UqcThEX0": {
+      "slug": "mini-effects",
+      "name": "Mini Effects",
+      "page": "https://modrinth.com/mod/mini-effects"
+    },
+    "modrinth:VD1aynYU": {
+      "slug": "inventory-tabs",
+      "name": "Inventory Tabs",
+      "page": "https://modrinth.com/mod/inventory-tabs"
+    },
+    "modrinth:W2K5WNdH": {
+      "slug": "twod_projectiles",
+      "name": "2D Projectiles ➵",
+      "page": "https://modrinth.com/mod/twod_projectiles"
+    },
+    "modrinth:WEg59z5b": {
+      "slug": "default-options",
+      "name": "Default Options",
+      "page": "https://modrinth.com/mod/default-options"
+    },
+    "modrinth:WMDesFsZ": {
+      "slug": "imblocker-original",
+      "name": "IMBlocker",
+      "page": "https://modrinth.com/mod/imblocker-original"
+    },
+    "modrinth:Wb5oqrBJ": {
+      "slug": "chat-heads",
+      "name": "Chat Heads",
+      "page": "https://modrinth.com/mod/chat-heads"
+    },
+    "modrinth:WhbRG4iK": {
+      "slug": "fallingleaves",
+      "name": "Falling Leaves",
+      "page": "https://modrinth.com/mod/fallingleaves"
+    },
+    "modrinth:Wq5SjeWM": {
+      "slug": "fancymenu",
+      "name": "FancyMenu",
+      "page": "https://modrinth.com/mod/fancymenu"
+    },
+    "modrinth:WwbubTsV": {
+      "slug": "yosbr",
+      "name": "Your Options Shall Be Respected (YOSBR)",
+      "page": "https://modrinth.com/mod/yosbr"
+    },
+    "modrinth:XYnKrsxH": {
+      "slug": "inventory-particles",
+      "name": "Inventory Particles",
+      "page": "https://modrinth.com/mod/inventory-particles"
+    },
+    "modrinth:Y5DGNK4o": {
+      "slug": "better-saved-hotbars",
+      "name": "Better Saved Hotbars",
+      "page": "https://modrinth.com/mod/better-saved-hotbars"
+    },
+    "modrinth:YAVTU8mK": {
+      "slug": "fresh-animations-extensions",
+      "name": "Fresh Animations: Extensions",
+      "page": "https://modrinth.com/resourcepack/fresh-animations-extensions"
+    },
+    "modrinth:YL57xq9U": {
+      "slug": "iris",
+      "name": "Iris Shaders",
+      "page": "https://modrinth.com/mod/iris"
+    },
+    "modrinth:YsFycamt": {
+      "slug": "resource-pack-overrides",
+      "name": "Resource Pack Overrides",
+      "page": "https://modrinth.com/mod/resource-pack-overrides"
+    },
+    "modrinth:YsP4hqhn": {
+      "slug": "mas-effects",
+      "name": "Mas Effects",
+      "page": "https://modrinth.com/mod/mas-effects"
+    },
+    "modrinth:ZVzW5oNS": {
+      "slug": "incendium",
+      "name": "Incendium Legacy",
+      "page": "https://modrinth.com/datapack/incendium"
+    },
+    "modrinth:ZX66K16c": {
+      "slug": "pick-up-notifier",
+      "name": "Pick Up Notifier",
+      "page": "https://modrinth.com/mod/pick-up-notifier"
+    },
+    "modrinth:ZcR9weSm": {
+      "slug": "dynamiccrosshair",
+      "name": "Dynamic Crosshair",
+      "page": "https://modrinth.com/mod/dynamiccrosshair"
+    },
+    "modrinth:Zmu8jXWA": {
+      "slug": "flash",
+      "name": "Flash",
+      "page": "https://modrinth.com/mod/flash"
+    },
+    "modrinth:ZouiUX7t": {
+      "slug": "sound",
+      "name": "Sounds",
+      "page": "https://modrinth.com/mod/sound"
+    },
+    "modrinth:ZvMtQlho": {
+      "slug": "bliss-shader",
+      "name": "Bliss Shaders",
+      "page": "https://modrinth.com/shader/bliss-shader"
+    },
+    "modrinth:aC3cM3Vq": {
+      "slug": "mouse-tweaks",
+      "name": "Mouse Tweaks",
+      "page": "https://modrinth.com/mod/mouse-tweaks"
+    },
+    "modrinth:aLcHfalx": {
+      "slug": "draggable-lists",
+      "name": "Draggable Lists",
+      "page": "https://modrinth.com/mod/draggable-lists"
+    },
+    "modrinth:aXf2OSFU": {
+      "slug": "ok-zoomer",
+      "name": "Ok Zoomer - It's Zoom!",
+      "page": "https://modrinth.com/mod/ok-zoomer"
+    },
+    "modrinth:aYttCyCw": {
+      "slug": "natural-waters",
+      "name": "Natural Waters",
+      "page": "https://modrinth.com/mod/natural-waters"
+    },
+    "modrinth:bEpr0Arc": {
+      "slug": "litematica",
+      "name": "Litematica",
+      "page": "https://modrinth.com/mod/litematica"
+    },
+    "modrinth:bQ5TJA1E": {
+      "slug": "continents",
+      "name": "Continents",
+      "page": "https://modrinth.com/datapack/continents"
+    },
+    "modrinth:c3onkd5k": {
+      "slug": "asyncparticles",
+      "name": "AsyncParticles",
+      "page": "https://modrinth.com/mod/asyncparticles"
+    },
+    "modrinth:cVNW5lr6": {
+      "slug": "item-highlighter",
+      "name": "Item Highlighter",
+      "page": "https://modrinth.com/mod/item-highlighter"
+    },
+    "modrinth:codAaoxh": {
+      "slug": "midnightlib",
+      "name": "MidnightLib",
+      "page": "https://modrinth.com/mod/midnightlib"
+    },
+    "modrinth:dWMHBEAQ": {
+      "slug": "elytra-contrails-mod",
+      "name": "Elytra Contrails Mod",
+      "page": "https://modrinth.com/mod/elytra-contrails-mod"
+    },
+    "modrinth:dspVZXKP": {
+      "slug": "fast-better-grass",
+      "name": "Fast Better Grass",
+      "page": "https://modrinth.com/resourcepack/fast-better-grass"
+    },
+    "modrinth:dw7LChq9": {
+      "slug": "patpat",
+      "name": "PatPat [Mod & Plugin]",
+      "page": "https://modrinth.com/mod/patpat"
+    },
+    "modrinth:eUziWqPC": {
+      "slug": "fancy-toasts",
+      "name": "Fancy Toasts | Better Advancements",
+      "page": "https://modrinth.com/mod/fancy-toasts"
+    },
+    "modrinth:eXts2L7r": {
+      "slug": "placeholder-api",
+      "name": "Text Placeholder API",
+      "page": "https://modrinth.com/mod/placeholder-api"
+    },
+    "modrinth:edwFXb9k": {
+      "slug": "paperdoll",
+      "name": "Paper Doll",
+      "page": "https://modrinth.com/mod/paperdoll"
+    },
+    "modrinth:fM515JnW": {
+      "slug": "ambientsounds",
+      "name": "AmbientSounds",
+      "page": "https://modrinth.com/mod/ambientsounds"
+    },
+    "modrinth:fQEb0iXm": {
+      "slug": "krypton",
+      "name": "Krypton",
+      "page": "https://modrinth.com/mod/krypton"
+    },
+    "modrinth:fYYSAh4R": {
+      "slug": "real-camera",
+      "name": "Real Camera",
+      "page": "https://modrinth.com/mod/real-camera"
+    },
+    "modrinth:ffLDUGbm": {
+      "slug": "mossylib",
+      "name": "MossyLib",
+      "page": "https://modrinth.com/mod/mossylib"
+    },
+    "modrinth:ft2cYBpB": {
+      "slug": "atmospherics",
+      "name": "ATMOSPHERICS",
+      "page": "https://modrinth.com/mod/atmospherics"
+    },
+    "modrinth:fuuu3xnx": {
+      "slug": "searchables",
+      "name": "Searchables",
+      "page": "https://modrinth.com/mod/searchables"
+    },
+    "modrinth:fxxUqruK": {
+      "slug": "voxy",
+      "name": "voxy",
+      "page": "https://modrinth.com/mod/voxy"
+    },
+    "modrinth:g96Z4WVZ": {
+      "slug": "badoptimizations",
+      "name": "BadOptimizations",
+      "page": "https://modrinth.com/mod/badoptimizations"
+    },
+    "modrinth:gK9mebQg": {
+      "slug": "leave-my-bars-alone",
+      "name": "Leave My Bars Alone",
+      "page": "https://modrinth.com/mod/leave-my-bars-alone"
+    },
+    "modrinth:gPCdW0Wr": {
+      "slug": "make_bubbles_pop",
+      "name": "Make Bubbles Pop",
+      "page": "https://modrinth.com/mod/make_bubbles_pop"
+    },
+    "modrinth:gvQqBUqZ": {
+      "slug": "lithium",
+      "name": "Lithium",
+      "page": "https://modrinth.com/mod/lithium"
+    },
+    "modrinth:hAt6ty93": {
+      "slug": "detail-armor-bar",
+      "name": "Detail Armor Bar",
+      "page": "https://modrinth.com/mod/detail-armor-bar"
+    },
+    "modrinth:hYykXjDp": {
+      "slug": "fzzy-config",
+      "name": "Fzzy Config",
+      "page": "https://modrinth.com/mod/fzzy-config"
+    },
+    "modrinth:hsPB5xMD": {
+      "slug": "immersive-hotbar",
+      "name": "Immersive Hotbar",
+      "page": "https://modrinth.com/mod/immersive-hotbar"
+    },
+    "modrinth:i090SePT": {
+      "slug": "disableinsecurechattoast",
+      "name": "Disable Insecure Chat Toast",
+      "page": "https://modrinth.com/mod/disableinsecurechattoast"
+    },
+    "modrinth:iDyqnQLT": {
+      "slug": "coolrain",
+      "name": "Cool Rain",
+      "page": "https://modrinth.com/mod/coolrain"
+    },
+    "modrinth:iSCGCCV1": {
+      "slug": "completionists-index",
+      "name": "Completionist's Index",
+      "page": "https://modrinth.com/mod/completionists-index"
+    },
+    "modrinth:idMHQ4n2": {
+      "slug": "customskinloader",
+      "name": "CustomSkinLoader",
+      "page": "https://modrinth.com/mod/customskinloader"
+    },
+    "modrinth:j6yrZogB": {
+      "slug": "smooth-gui",
+      "name": "Smooth Gui",
+      "page": "https://modrinth.com/mod/smooth-gui"
+    },
+    "modrinth:jawg7zT1": {
+      "slug": "cave-dust",
+      "name": "Cave Dust",
+      "page": "https://modrinth.com/mod/cave-dust"
+    },
+    "modrinth:k2ZPuTBm": {
+      "slug": "essential",
+      "name": "Essential Mod",
+      "page": "https://modrinth.com/mod/essential"
+    },
+    "modrinth:kYuIpRLv": {
+      "slug": "wavey-capes",
+      "name": "Wavey Capes",
+      "page": "https://modrinth.com/mod/wavey-capes"
+    },
+    "modrinth:kepjj2sy": {
+      "slug": "shoulder-surfing-reloaded",
+      "name": "Shoulder Surfing Reloaded",
+      "page": "https://modrinth.com/mod/shoulder-surfing-reloaded"
+    },
+    "modrinth:kmwfVOoi": {
+      "slug": "rethinking-voxels",
+      "name": "Rethinking Voxels",
+      "page": "https://modrinth.com/shader/rethinking-voxels"
+    },
+    "modrinth:kqJFAPU9": {
+      "slug": "better-mount-hud",
+      "name": "Better Mount HUD",
+      "page": "https://modrinth.com/mod/better-mount-hud"
+    },
+    "modrinth:l6YH9Als": {
+      "slug": "spark",
+      "name": "spark",
+      "page": "https://modrinth.com/mod/spark"
+    },
+    "modrinth:lLqFfGNs": {
+      "slug": "photon-shader",
+      "name": "Photon Shaders",
+      "page": "https://modrinth.com/shader/photon-shader"
+    },
+    "modrinth:lWDHr9jE": {
+      "slug": "tectonic",
+      "name": "Tectonic",
+      "page": "https://modrinth.com/datapack/tectonic"
+    },
+    "modrinth:laNoi025": {
+      "slug": "screenshot-viewer",
+      "name": "Screenshot Viewer",
+      "page": "https://modrinth.com/mod/screenshot-viewer"
+    },
+    "modrinth:lewweaHO": {
+      "slug": "recolourful-containers-gui",
+      "name": "Recolourful Containers GUI + HUD",
+      "page": "https://modrinth.com/resourcepack/recolourful-containers-gui"
+    },
+    "modrinth:lfHFW1mp": {
+      "slug": "journeymap",
+      "name": "JourneyMap",
+      "page": "https://modrinth.com/mod/journeymap"
+    },
+    "modrinth:lhGA9TYQ": {
+      "slug": "architectury-api",
+      "name": "Architectury API",
+      "page": "https://modrinth.com/mod/architectury-api"
+    },
+    "modrinth:m0oRwcZx": {
+      "slug": "cameraoverhaul",
+      "name": "Camera Overhaul",
+      "page": "https://modrinth.com/mod/cameraoverhaul"
+    },
+    "modrinth:mOgUt4GM": {
+      "slug": "modmenu",
+      "name": "Mod Menu",
+      "page": "https://modrinth.com/mod/modmenu"
+    },
+    "modrinth:n6PXGAoM": {
+      "slug": "better-stats",
+      "name": "Better Statistics Screen",
+      "page": "https://modrinth.com/mod/better-stats"
+    },
+    "modrinth:nCQRBEiR": {
+      "slug": "raised",
+      "name": "Raised",
+      "page": "https://modrinth.com/mod/raised"
+    },
+    "modrinth:nfn13YXA": {
+      "slug": "rei",
+      "name": "Roughly Enough Items (REI)",
+      "page": "https://modrinth.com/mod/rei"
+    },
+    "modrinth:nmDcB62a": {
+      "slug": "modernfix",
+      "name": "ModernFix",
+      "page": "https://modrinth.com/mod/modernfix"
+    },
+    "modrinth:nrikgvxm": {
+      "slug": "particle-rain",
+      "name": "Particle Rain",
+      "page": "https://modrinth.com/mod/particle-rain"
+    },
+    "modrinth:nvQzSEkH": {
+      "slug": "jade",
+      "name": "Jade 🔍",
+      "page": "https://modrinth.com/mod/jade"
+    },
+    "modrinth:ohNO6lps": {
+      "slug": "forge-config-api-port",
+      "name": "Forge Config API Port",
+      "page": "https://modrinth.com/mod/forge-config-api-port"
+    },
+    "modrinth:onDuQF5e": {
+      "slug": "stylish-effects",
+      "name": "Stylish Effects",
+      "page": "https://modrinth.com/mod/stylish-effects"
+    },
+    "modrinth:onSQdWhM": {
+      "slug": "libipn",
+      "name": "libIPN",
+      "page": "https://modrinth.com/mod/libipn"
+    },
+    "modrinth:otVJckYQ": {
+      "slug": "cit-resewn",
+      "name": "CIT Resewn",
+      "page": "https://modrinth.com/mod/cit-resewn"
+    },
+    "modrinth:p8RJPJIC": {
+      "slug": "ixeris",
+      "name": "Ixeris",
+      "page": "https://modrinth.com/mod/ixeris"
+    },
+    "modrinth:pZ2wrerK": {
+      "slug": "emotecraft",
+      "name": "Emotecraft",
+      "page": "https://modrinth.com/mod/emotecraft"
+    },
+    "modrinth:pzCY6C3e": {
+      "slug": "mindful-darkness",
+      "name": "Mindful Darkness",
+      "page": "https://modrinth.com/mod/mindful-darkness"
+    },
+    "modrinth:qFlNttam": {
+      "slug": "hidetags",
+      "name": "Toggle Nametags",
+      "page": "https://modrinth.com/mod/hidetags"
+    },
+    "modrinth:qQyHxfxd": {
+      "slug": "no-chat-reports",
+      "name": "No Chat Reports",
+      "page": "https://modrinth.com/mod/no-chat-reports"
+    },
+    "modrinth:qi1sj2da": {
+      "slug": "weaponmaster",
+      "name": "YDM's Weapon Master",
+      "page": "https://modrinth.com/mod/weaponmaster"
+    },
+    "modrinth:qyVF9oeo": {
+      "slug": "sound-physics-remastered",
+      "name": "Sound Physics Remastered",
+      "page": "https://modrinth.com/mod/sound-physics-remastered"
+    },
+    "modrinth:qyu2y7wG": {
+      "slug": "confirm-disconnect",
+      "name": "Confirm Disconnect",
+      "page": "https://modrinth.com/mod/confirm-disconnect"
+    },
+    "modrinth:r3VgI4QN": {
+      "slug": "reacharound",
+      "name": "Reacharound",
+      "page": "https://modrinth.com/mod/reacharound"
+    },
+    "modrinth:rI0hvYcd": {
+      "slug": "visuality",
+      "name": "Visuality",
+      "page": "https://modrinth.com/mod/visuality"
+    },
+    "modrinth:rUgZvGzi": {
+      "slug": "eating-animation",
+      "name": "Eating Animation",
+      "page": "https://modrinth.com/mod/eating-animation"
+    },
+    "modrinth:rcTfTZr3": {
+      "slug": "presence-footsteps",
+      "name": "Presence Footsteps",
+      "page": "https://modrinth.com/mod/presence-footsteps"
+    },
+    "modrinth:rhyHyQke": {
+      "slug": "seamless",
+      "name": "Seamless",
+      "page": "https://modrinth.com/mod/seamless"
+    },
+    "modrinth:tN4E9NfV": {
+      "slug": "chat-reporting-helper",
+      "name": "Chat Reporting Helper",
+      "page": "https://modrinth.com/resourcepack/chat-reporting-helper"
+    },
+    "modrinth:tpehi7ww": {
+      "slug": "dungeons-and-taverns",
+      "name": "Dungeons and Taverns",
+      "page": "https://modrinth.com/datapack/dungeons-and-taverns"
+    },
+    "modrinth:trr0scVt": {
+      "slug": "smooth-scrolling-refurbished",
+      "name": "Smooth Scrolling Refurbished",
+      "page": "https://modrinth.com/mod/smooth-scrolling-refurbished"
+    },
+    "modrinth:u4pgScAU": {
+      "slug": "disguiseheads",
+      "name": "DisguiseHeads",
+      "page": "https://modrinth.com/mod/disguiseheads"
+    },
+    "modrinth:uCdwusMi": {
+      "slug": "distanthorizons",
+      "name": "Distant Horizons",
+      "page": "https://modrinth.com/mod/distanthorizons"
+    },
+    "modrinth:uXXizFIs": {
+      "slug": "ferrite-core",
+      "name": "FerriteCore",
+      "page": "https://modrinth.com/mod/ferrite-core"
+    },
+    "modrinth:ufdDoWPd": {
+      "slug": "kiwi",
+      "name": "Kiwi 🥝",
+      "page": "https://modrinth.com/mod/kiwi"
+    },
+    "modrinth:vETxChiy": {
+      "slug": "headpat",
+      "name": "Headpat a Friend!",
+      "page": "https://modrinth.com/mod/headpat"
+    },
+    "modrinth:vSEH1ERy": {
+      "slug": "threadtweak",
+      "name": "ThreadTweak",
+      "page": "https://modrinth.com/mod/threadtweak"
+    },
+    "modrinth:w7ThoJFB": {
+      "slug": "zoomify",
+      "name": "Zoomify (Zoom)",
+      "page": "https://modrinth.com/mod/zoomify"
+    },
+    "modrinth:wMkevcSR": {
+      "slug": "tiny-item-animations",
+      "name": "Tiny Item Animations",
+      "page": "https://modrinth.com/mod/tiny-item-animations"
+    },
+    "modrinth:wkzK5379": {
+      "slug": "voxelmap-updated",
+      "name": "VoxelMap-Updated",
+      "page": "https://modrinth.com/mod/voxelmap-updated"
+    },
+    "modrinth:xFCYuAs8": {
+      "slug": "particle-interactions",
+      "name": "Particle Interactions",
+      "page": "https://modrinth.com/mod/particle-interactions"
+    },
+    "modrinth:xUTHly0N": {
+      "slug": "centered-crosshair",
+      "name": "Centered Crosshair",
+      "page": "https://modrinth.com/mod/centered-crosshair"
+    },
+    "modrinth:xv94TkTM": {
+      "slug": "controlling",
+      "name": "Controlling",
+      "page": "https://modrinth.com/mod/controlling"
+    },
+    "modrinth:yBW8D80W": {
+      "slug": "lambdynamiclights",
+      "name": "LambDynamicLights - Dynamic Lights",
+      "page": "https://modrinth.com/mod/lambdynamiclights"
+    },
+    "modrinth:yXAvIk0x": {
+      "slug": "scribble",
+      "name": "Scribble",
+      "page": "https://modrinth.com/mod/scribble"
+    },
+    "modrinth:ydZic5r4": {
+      "slug": "smooth-swapping",
+      "name": "Smooth Swapping",
+      "page": "https://modrinth.com/mod/smooth-swapping"
+    },
+    "modrinth:yfDziwn1": {
+      "slug": "translations-for-sodium",
+      "name": "Translations for Sodium",
+      "page": "https://modrinth.com/resourcepack/translations-for-sodium"
+    },
+    "modrinth:zAIE84Ch": {
+      "slug": "quick-skin",
+      "name": "Quick Skin",
+      "page": "https://modrinth.com/mod/quick-skin"
+    },
+    "modrinth:zV5r3pPn": {
+      "slug": "3dskinlayers",
+      "name": "3D Skin Layers",
+      "page": "https://modrinth.com/mod/3dskinlayers"
+    },
+    "modrinth:zhVN1dvW": {
+      "slug": "chatimage",
+      "name": "ChatImage",
+      "page": "https://modrinth.com/mod/chatimage"
+    }
+  }
+}

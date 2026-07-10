@@ -27,13 +27,9 @@
             "en": "Item and recipe browser",
             "zh": "物品与配方浏览"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "rei" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "rei" }
+          ]
         },
         {
           "id": "block-and-entity-overlay",
@@ -41,13 +37,9 @@
             "en": "Block and entity overlay",
             "zh": "方块与实体信息浮层"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "jade" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "jade" }
+          ]
         },
         {
           "id": "extra-item-and-block-hints",
@@ -55,13 +47,9 @@
             "en": "Extra item and block hints",
             "zh": "额外物品与方块提示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "peek" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "peek" }
+          ]
         },
         {
           "id": "enhanced-tooltip-details",
@@ -69,13 +57,9 @@
             "en": "Enhanced tooltip details",
             "zh": "增强提示信息"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "enhancedtooltips" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "enhancedtooltips" }
+          ]
         },
         {
           "id": "food-value-display",
@@ -83,13 +67,9 @@
             "en": "Food value display",
             "zh": "食物数值显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "appleskin" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "appleskin" }
+          ]
         },
         {
           "id": "shulker-box-preview",
@@ -97,13 +77,9 @@
             "en": "Shulker box preview",
             "zh": "潜影盒预览"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "shulkerboxtooltip" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "shulkerboxtooltip" }
+          ]
         },
         {
           "id": "inventory-profiles-and-sorting",
@@ -111,13 +87,9 @@
             "en": "Inventory profiles and sorting",
             "zh": "背包配置与整理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "inventory-profiles-next" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "inventory-profiles-next" }
+          ]
         },
         {
           "id": "saved-hotbar-management",
@@ -125,16 +97,12 @@
             "en": "Saved hotbar management",
             "zh": "已保存快捷栏管理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "better-saved-hotbars" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "better-saved-hotbars-forked" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "better-saved-hotbars" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "better-saved-hotbars-forked" }
+          ]
         },
         {
           "id": "mouse-inventory-actions",
@@ -142,13 +110,9 @@
             "en": "Mouse inventory actions",
             "zh": "鼠标背包操作"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "mouse-tweaks" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "mouse-tweaks" }
+          ]
         },
         {
           "id": "edge-block-placement",
@@ -156,13 +120,9 @@
             "en": "Edge block placement",
             "zh": "边缘方块放置"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "reacharound" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "reacharound" }
+          ]
         },
         {
           "id": "inventory-movement",
@@ -170,14 +130,10 @@
             "en": "Inventory movement",
             "zh": "打开背包时移动"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "invmove" },
-                { "source": "modrinth", "slug": "invmovecompats" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "invmove" },
+            { "source": "modrinth", "slug": "invmovecompats" }
+          ]
         },
         {
           "id": "keybinding-search-and-conflicts",
@@ -185,13 +141,9 @@
             "en": "Keybinding search and conflicts",
             "zh": "键位搜索与冲突提示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "controlling" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "controlling" }
+          ]
         },
         {
           "id": "visual-keybinding-overview",
@@ -199,13 +151,9 @@
             "en": "Visual keybinding overview",
             "zh": "可视化键位总览"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "visualkeys" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "visualkeys" }
+          ]
         },
         {
           "id": "attention-flash-notifications",
@@ -213,13 +161,9 @@
             "en": "Attention flash notifications",
             "zh": "闪烁提醒"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "flash" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "flash" }
+          ]
         },
         {
           "id": "inventory-item-highlighting",
@@ -227,13 +171,9 @@
             "en": "Inventory item highlighting",
             "zh": "背包物品高亮"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "item-highlighter" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "item-highlighter" }
+          ]
         },
         {
           "id": "input-method-conflict-handling",
@@ -241,13 +181,9 @@
             "en": "Input method conflict handling",
             "zh": "输入法冲突处理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "imblocker-original" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "imblocker-original" }
+          ]
         },
         {
           "id": "chinese-character-search",
@@ -255,13 +191,9 @@
             "en": "Chinese character search support",
             "zh": "中文字符搜索支持"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "justenoughcharacters" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "justenoughcharacters" }
+          ]
         },
         {
           "id": "sign-and-book-text-editing",
@@ -269,13 +201,9 @@
             "en": "Sign and book text editing",
             "zh": "告示牌与书本编辑"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "scribble" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "scribble" }
+          ]
         },
         {
           "id": "zoom-controls",
@@ -283,17 +211,13 @@
             "en": "Zoom controls",
             "zh": "缩放控制"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "zoomify" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "logical-zoom" },
-                { "source": "modrinth", "slug": "ok-zoomer" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "zoomify" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "logical-zoom" },
+            { "source": "modrinth", "slug": "ok-zoomer" }
+          ]
         }
       ]
     },
@@ -314,13 +238,9 @@
             "en": "Advanced HUD overlays",
             "zh": "高级 HUD 浮层"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "minihud" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "minihud" }
+          ]
         },
         {
           "id": "inventory-hud-overlay",
@@ -328,13 +248,9 @@
             "en": "Inventory HUD overlay",
             "zh": "背包 HUD 浮层"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "inventoryhudplus" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "inventoryhudplus" }
+          ]
         },
         {
           "id": "immersive-hotbar-display",
@@ -342,13 +258,9 @@
             "en": "Immersive hotbar display",
             "zh": "沉浸式快捷栏显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "immersive-hotbar" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "immersive-hotbar" }
+          ]
         },
         {
           "id": "mount-hud-improvements",
@@ -356,16 +268,12 @@
             "en": "Mount HUD improvements",
             "zh": "骑乘 HUD 改进"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "leave-my-bars-alone" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "better-mount-hud" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "leave-my-bars-alone" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "better-mount-hud" }
+          ]
         },
         {
           "id": "status-effect-display",
@@ -373,13 +281,9 @@
             "en": "Status effect display",
             "zh": "状态效果显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "stylish-effects" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "stylish-effects" }
+          ]
         },
         {
           "id": "statistics-screen-improvements",
@@ -387,13 +291,9 @@
             "en": "Statistics screen improvements",
             "zh": "统计界面改进"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "better-stats" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "better-stats" }
+          ]
         },
         {
           "id": "debug-screen-improvements",
@@ -401,13 +301,9 @@
             "en": "Debug screen improvements",
             "zh": "调试界面改进"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "betterf3" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "betterf3" }
+          ]
         },
         {
           "id": "world-favorite-management",
@@ -415,13 +311,9 @@
             "en": "World favorite management",
             "zh": "世界收藏管理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "cherished-worlds" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "cherished-worlds" }
+          ]
         },
         {
           "id": "disconnect-confirmation",
@@ -429,13 +321,9 @@
             "en": "Disconnect confirmation",
             "zh": "断开连接确认"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "confirm-disconnect" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "confirm-disconnect" }
+          ]
         },
         {
           "id": "advancement-screen-improvements",
@@ -443,13 +331,9 @@
             "en": "Advancement screen improvements",
             "zh": "进度界面改进"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "better-advancements" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "better-advancements" }
+          ]
         },
         {
           "id": "chat-report-friction-removal",
@@ -457,13 +341,9 @@
             "en": "Chat report friction removal",
             "zh": "聊天举报提示与摩擦移除"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "no-chat-reports" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "no-chat-reports" }
+          ]
         },
         {
           "id": "insecure-chat-toast-suppression",
@@ -471,13 +351,9 @@
             "en": "Insecure chat toast suppression",
             "zh": "不安全聊天弹窗隐藏"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "disableinsecurechattoast" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "disableinsecurechattoast" }
+          ]
         },
         {
           "id": "chat-interface-convenience",
@@ -485,13 +361,9 @@
             "en": "Chat interface convenience",
             "zh": "聊天界面便利功能"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "chatpatches" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "chatpatches" }
+          ]
         },
         {
           "id": "player-pat-interactions",
@@ -499,13 +371,9 @@
             "en": "Player pat interactions",
             "zh": "玩家拍拍互动"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "patpat" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "patpat" }
+          ]
         },
         {
           "id": "server-list-ping-optimization",
@@ -513,13 +381,9 @@
             "en": "Server list ping optimization",
             "zh": "服务器列表 Ping 优化"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "fast-ip-ping" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "fast-ip-ping" }
+          ]
         },
         {
           "id": "armor-detail-display",
@@ -527,16 +391,12 @@
             "en": "Armor detail display",
             "zh": "盔甲细节显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "detail-armor-bar-reconstructed" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "detail-armor-bar" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "detail-armor-bar-reconstructed" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "detail-armor-bar" }
+          ]
         },
         {
           "id": "client-side-wearable-rendering",
@@ -544,13 +404,9 @@
             "en": "Client-side wearable rendering",
             "zh": "客户端穿戴渲染"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "wearthat" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "wearthat" }
+          ]
         },
         {
           "id": "in-game-skin-management",
@@ -558,16 +414,12 @@
             "en": "In-game skin management",
             "zh": "游戏内皮肤管理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "skinshuffle" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "quick-skin" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "skinshuffle" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "quick-skin" }
+          ]
         },
         {
           "id": "dynamic-crosshair",
@@ -575,13 +427,9 @@
             "en": "Dynamic crosshair",
             "zh": "动态准星"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "dynamiccrosshair" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "dynamiccrosshair" }
+          ]
         },
         {
           "id": "centered-crosshair",
@@ -589,13 +437,9 @@
             "en": "Centered crosshair",
             "zh": "居中准星"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "centered-crosshair" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "centered-crosshair" }
+          ]
         },
         {
           "id": "draggable-resource-pack-lists",
@@ -603,13 +447,9 @@
             "en": "Draggable resource pack lists",
             "zh": "可拖动资源包列表"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "draggable-lists" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "draggable-lists" }
+          ]
         },
         {
           "id": "resource-pack-warning-suppression",
@@ -617,13 +457,9 @@
             "en": "Resource pack warning suppression",
             "zh": "资源包警告隐藏"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "no-resource-pack-warnings" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "no-resource-pack-warnings" }
+          ]
         },
         {
           "id": "custom-world-warning-suppression",
@@ -631,13 +467,9 @@
             "en": "Custom world warning suppression",
             "zh": "自定义世界警告隐藏"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "dcwa" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "dcwa" }
+          ]
         },
         {
           "id": "screenshot-viewer",
@@ -645,13 +477,9 @@
             "en": "Screenshot viewer",
             "zh": "截图查看器"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "screenshot-viewer" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "screenshot-viewer" }
+          ]
         },
         {
           "id": "hide-interface-for-screenshots",
@@ -659,13 +487,9 @@
             "en": "Hide interface for screenshots",
             "zh": "截图用界面隐藏"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "better-f1-reborn" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "better-f1-reborn" }
+          ]
         },
         {
           "id": "nametag-visibility-toggle",
@@ -673,13 +497,9 @@
             "en": "Nametag visibility toggle",
             "zh": "名称标签可见性切换"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "hidetags" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "hidetags" }
+          ]
         }
       ]
     },
@@ -700,18 +520,14 @@
             "en": "Minimap, world map, and waypoint navigation",
             "zh": "小地图、世界地图与路径点导航"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "xaeros-minimap" },
-                { "source": "modrinth", "slug": "xaeros-world-map" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "journeymap" },
-                { "source": "modrinth", "slug": "voxelmap-updated" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "xaeros-minimap" },
+            { "source": "modrinth", "slug": "xaeros-world-map" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "journeymap" },
+            { "source": "modrinth", "slug": "voxelmap-updated" }
+          ]
         },
         {
           "id": "location-title-cards",
@@ -719,16 +535,12 @@
             "en": "Location title cards",
             "zh": "位置标题卡"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "travelers-titles" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "biomeinfo" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "travelers-titles" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "biomeinfo" }
+          ]
         }
       ]
     },
@@ -749,13 +561,9 @@
             "en": "Performance profiler",
             "zh": "性能分析"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "spark" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "spark" }
+          ]
         },
         {
           "id": "world-editing",
@@ -763,13 +571,9 @@
             "en": "World editing",
             "zh": "世界编辑"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "worldedit" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "worldedit" }
+          ]
         },
         {
           "id": "orthographic-screenshot-tools",
@@ -777,16 +581,12 @@
             "en": "Orthographic screenshot tools",
             "zh": "正交截图工具"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "orthocamera" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "pixelshot" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "orthocamera" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "pixelshot" }
+          ]
         },
         {
           "id": "controller-support",
@@ -794,13 +594,9 @@
             "en": "Controller support",
             "zh": "手柄支持"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "controlify" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "controlify" }
+          ]
         }
       ]
     }

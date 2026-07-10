@@ -27,13 +27,9 @@
             "en": "Shader loader",
             "zh": "光影加载"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "iris" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "iris" }
+          ]
         },
         {
           "id": "sodium-video-option-extensions",
@@ -41,13 +37,9 @@
             "en": "Sodium video option extensions",
             "zh": "Sodium 视频选项扩展"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "sodium-extra" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "sodium-extra" }
+          ]
         },
         {
           "id": "optifine-alternatives-integration",
@@ -55,13 +47,9 @@
             "en": "OptiFine alternatives integration",
             "zh": "OptiFine 平替集成"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "puzzle" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "puzzle" }
+          ]
         },
         {
           "id": "custom-entity-models",
@@ -69,13 +57,9 @@
             "en": "Custom entity models",
             "zh": "自定义实体模型"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "entity-model-features" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "entity-model-features" }
+          ]
         },
         {
           "id": "custom-entity-textures",
@@ -83,13 +67,9 @@
             "en": "Custom entity textures",
             "zh": "自定义实体纹理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "entitytexturefeatures" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "entitytexturefeatures" }
+          ]
         },
         {
           "id": "custom-item-textures",
@@ -97,13 +77,9 @@
             "en": "Custom item textures",
             "zh": "自定义物品纹理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "cit-resewn" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "cit-resewn" }
+          ]
         },
         {
           "id": "connected-textures",
@@ -111,13 +87,9 @@
             "en": "Connected textures",
             "zh": "连接纹理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "continuity" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "continuity" }
+          ]
         },
         {
           "id": "custom-gui-resource-pack-support",
@@ -125,13 +97,9 @@
             "en": "Custom GUI resource pack support",
             "zh": "自定义 GUI 资源包支持"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "optigui" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "optigui" }
+          ]
         }
       ]
     },
@@ -152,17 +120,13 @@
             "en": "Distant terrain renderer",
             "zh": "远景地形渲染"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "distanthorizons" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "bobby" },
-                { "source": "modrinth", "slug": "voxy" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "distanthorizons" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "bobby" },
+            { "source": "modrinth", "slug": "voxy" }
+          ]
         },
         {
           "id": "complementary-shader-visual-extensions",
@@ -170,13 +134,9 @@
             "en": "Complementary shader visual extensions",
             "zh": "Complementary 光影视觉扩展"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "euphoria-patches" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "euphoria-patches" }
+          ]
         },
         {
           "id": "ambient-particles",
@@ -184,13 +144,9 @@
             "en": "Ambient particles",
             "zh": "氛围粒子"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "visuality" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "visuality" }
+          ]
         },
         {
           "id": "cave-dust-ambience",
@@ -198,13 +154,9 @@
             "en": "Cave dust ambience",
             "zh": "洞穴尘埃氛围"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "cave-dust" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "cave-dust" }
+          ]
         },
         {
           "id": "boat-item-display",
@@ -212,13 +164,9 @@
             "en": "Boat item display",
             "zh": "船上物品显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "boat-item-view" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "boat-item-view" }
+          ]
         },
         {
           "id": "connected-block-outlines",
@@ -226,13 +174,9 @@
             "en": "Connected block outlines",
             "zh": "连接方块轮廓"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "seamless" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "seamless" }
+          ]
         },
         {
           "id": "subtle-visual-effects",
@@ -240,13 +184,9 @@
             "en": "Subtle visual effects",
             "zh": "细节视觉效果"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "subtle-effects" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "subtle-effects" }
+          ]
         },
         {
           "id": "additional-particle-effects",
@@ -254,13 +194,9 @@
             "en": "Additional particle effects",
             "zh": "额外粒子效果"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "particle-effects" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "particle-effects" }
+          ]
         },
         {
           "id": "inventory-particle-effects",
@@ -268,14 +204,10 @@
             "en": "Inventory particle effects",
             "zh": "背包粒子效果"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "inventory-particles" },
-                { "source": "modrinth", "slug": "inventory-interactions" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "inventory-particles" },
+            { "source": "modrinth", "slug": "inventory-interactions" }
+          ]
         },
         {
           "id": "ambient-visual-effects",
@@ -283,13 +215,9 @@
             "en": "Ambient visual effects",
             "zh": "氛围视觉效果"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "mas-effects" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "mas-effects" }
+          ]
         },
         {
           "id": "particle-interactions",
@@ -297,13 +225,9 @@
             "en": "Particle interactions",
             "zh": "粒子交互"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "particle-interactions" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "particle-interactions" }
+          ]
         },
         {
           "id": "bubble-pop-effects",
@@ -311,13 +235,9 @@
             "en": "Bubble pop effects",
             "zh": "气泡破裂效果"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "make_bubbles_pop" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "make_bubbles_pop" }
+          ]
         },
         {
           "id": "falling-leaf-particles",
@@ -325,13 +245,9 @@
             "en": "Falling leaf particles",
             "zh": "落叶粒子"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "fallingleaves" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "fallingleaves" }
+          ]
         },
         {
           "id": "soft-surface-imprints",
@@ -339,13 +255,9 @@
             "en": "Soft surface imprints",
             "zh": "柔软表面印痕"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "snow-imprints" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "snow-imprints" }
+          ]
         },
         {
           "id": "explosion-effects",
@@ -353,13 +265,9 @@
             "en": "Explosion effects",
             "zh": "爆炸效果"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "explosive-enhancement" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "explosive-enhancement" }
+          ]
         },
         {
           "id": "projectile-visual-style",
@@ -367,13 +275,9 @@
             "en": "Projectile visual style",
             "zh": "弹射物视觉风格"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "twod_projectiles" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "twod_projectiles" }
+          ]
         },
         {
           "id": "mining-visual-feedback",
@@ -381,13 +285,9 @@
             "en": "Mining visual feedback",
             "zh": "挖掘视觉反馈"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "mining_and_placing_animations" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "mining_and_placing_animations" }
+          ]
         },
         {
           "id": "immersive-visual-effects",
@@ -395,13 +295,9 @@
             "en": "Immersive visual effects",
             "zh": "沉浸式视觉效果"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "perception" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "perception" }
+          ]
         },
         {
           "id": "soul-fire-burn-visuals",
@@ -409,13 +305,9 @@
             "en": "Soul fire burn visuals",
             "zh": "灵魂火燃烧视觉"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "burn-by-soul-fire" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "burn-by-soul-fire" }
+          ]
         },
         {
           "id": "elytra-contrails",
@@ -423,13 +315,9 @@
             "en": "Elytra contrails",
             "zh": "鞘翅飞行尾迹"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "elytra-contrails-mod" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "elytra-contrails-mod" }
+          ]
         }
       ]
     },
@@ -450,13 +338,9 @@
             "en": "Ambient soundscapes",
             "zh": "环境音景"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "ambientsounds" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "ambientsounds" }
+          ]
         },
         {
           "id": "footstep-sounds",
@@ -464,13 +348,9 @@
             "en": "Footstep sounds",
             "zh": "脚步声"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "presence-footsteps" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "presence-footsteps" }
+          ]
         },
         {
           "id": "sound-event-improvements",
@@ -478,13 +358,9 @@
             "en": "Sound event improvements",
             "zh": "声音事件改进"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "sound" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "sound" }
+          ]
         },
         {
           "id": "dynamic-rain-sounds",
@@ -492,13 +368,9 @@
             "en": "Dynamic rain sounds",
             "zh": "动态雨声"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "coolrain" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "coolrain" }
+          ]
         }
       ]
     },
@@ -519,13 +391,9 @@
             "en": "Player animations",
             "zh": "玩家动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "not-enough-animations" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "not-enough-animations" }
+          ]
         },
         {
           "id": "eating-animations",
@@ -533,13 +401,9 @@
             "en": "Eating animations",
             "zh": "进食动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "eating-animation" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "eating-animation" }
+          ]
         },
         {
           "id": "item-drop-physics",
@@ -547,13 +411,9 @@
             "en": "Item drop physics",
             "zh": "物品掉落物理"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "itemphysic-lite" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "itemphysic-lite" }
+          ]
         },
         {
           "id": "falling-block-animations",
@@ -561,13 +421,9 @@
             "en": "Falling block animations",
             "zh": "下落方块动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "vectorientation" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "vectorientation" }
+          ]
         },
         {
           "id": "block-placement-animations",
@@ -575,13 +431,9 @@
             "en": "Block placement animations",
             "zh": "方块放置动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "a-good-place" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "a-good-place" }
+          ]
         },
         {
           "id": "first-person-item-animations",
@@ -589,13 +441,9 @@
             "en": "First-person item animations",
             "zh": "第一人称物品动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "hold-my-items" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "hold-my-items" }
+          ]
         },
         {
           "id": "held-item-display",
@@ -603,13 +451,9 @@
             "en": "Held item display",
             "zh": "手持物品显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "weaponmaster" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "weaponmaster" }
+          ]
         },
         {
           "id": "camera-motion",
@@ -617,13 +461,9 @@
             "en": "Camera motion",
             "zh": "镜头运动"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "cameraoverhaul" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "cameraoverhaul" }
+          ]
         },
         {
           "id": "third-person-shoulder-camera",
@@ -631,16 +471,12 @@
             "en": "Third-person shoulder camera",
             "zh": "第三人称肩视角镜头"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "shoulder-surfing-reloaded" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "leawind-third-person" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "shoulder-surfing-reloaded" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "leawind-third-person" }
+          ]
         },
         {
           "id": "elytra-flight-controls",
@@ -648,13 +484,9 @@
             "en": "Elytra flight controls",
             "zh": "鞘翅飞行控制"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "do-a-barrel-roll" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "do-a-barrel-roll" }
+          ]
         },
         {
           "id": "world-animation-polish",
@@ -662,13 +494,9 @@
             "en": "World animation polish",
             "zh": "世界动画润色"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "fwa" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "fwa" }
+          ]
         }
       ]
     },
@@ -689,13 +517,9 @@
             "en": "Menu customization",
             "zh": "菜单定制"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "fancymenu" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "fancymenu" }
+          ]
         },
         {
           "id": "player-paper-doll",
@@ -703,13 +527,9 @@
             "en": "Player paper doll",
             "zh": "纸娃娃显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "paperdoll" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "paperdoll" }
+          ]
         },
         {
           "id": "head-cosmetic-disguises",
@@ -717,13 +537,9 @@
             "en": "Head cosmetic disguises",
             "zh": "头部外观伪装"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "disguiseheads" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "disguiseheads" }
+          ]
         },
         {
           "id": "status-effect-folding",
@@ -731,13 +547,9 @@
             "en": "Status effect folding",
             "zh": "状态效果折叠"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "mini-effects" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "mini-effects" }
+          ]
         },
         {
           "id": "inventory-item-animations",
@@ -745,13 +557,9 @@
             "en": "Inventory item animations",
             "zh": "背包物品动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "tiny-item-animations" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "tiny-item-animations" }
+          ]
         },
         {
           "id": "inventory-item-swap-animations",
@@ -759,13 +567,9 @@
             "en": "Inventory item swap animations",
             "zh": "背包物品交换动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "smooth-swapping" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "smooth-swapping" }
+          ]
         },
         {
           "id": "hud-positioning",
@@ -773,13 +577,9 @@
             "en": "HUD positioning",
             "zh": "HUD 位置调整"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "raised" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "raised" }
+          ]
         },
         {
           "id": "ui-background-blur",
@@ -787,13 +587,9 @@
             "en": "UI background blur",
             "zh": "UI 背景模糊"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "blur-plus" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "blur-plus" }
+          ]
         },
         {
           "id": "smooth-scrolling",
@@ -801,16 +597,12 @@
             "en": "Smooth scrolling",
             "zh": "平滑滚动"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "smooth-scroll" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "smooth-scrolling-refurbished" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "smooth-scroll" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "smooth-scrolling-refurbished" }
+          ]
         },
         {
           "id": "automatic-gui-dark-mode",
@@ -818,13 +610,9 @@
             "en": "Automatic GUI dark mode",
             "zh": "自动 GUI 深色模式"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "mindful-darkness" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "mindful-darkness" }
+          ]
         },
         {
           "id": "smooth-gui-animation",
@@ -832,13 +620,9 @@
             "en": "Smooth GUI animation",
             "zh": "平滑 GUI 动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "smooth-gui" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "smooth-gui" }
+          ]
         },
         {
           "id": "chat-message-animation",
@@ -846,13 +630,9 @@
             "en": "Chat message animation",
             "zh": "聊天消息动画"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "chatanimation" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "chatanimation" }
+          ]
         },
         {
           "id": "toast-notification-polish",
@@ -860,13 +640,9 @@
             "en": "Toast notification polish",
             "zh": "弹出提示润色"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "fancy-toasts" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "fancy-toasts" }
+          ]
         },
         {
           "id": "modern-ui-framework-and-text-rendering",
@@ -874,13 +650,9 @@
             "en": "Modern UI framework and text rendering",
             "zh": "现代 UI 框架与文字渲染"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "modern-ui" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "modern-ui" }
+          ]
         },
         {
           "id": "immersive-ui-interactions",
@@ -888,13 +660,9 @@
             "en": "Immersive UI interactions",
             "zh": "沉浸式 UI 交互"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "immersive-ui" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "immersive-ui" }
+          ]
         }
       ]
     },
@@ -915,13 +683,9 @@
             "en": "Chat avatars",
             "zh": "聊天头像"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "chat-heads" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "chat-heads" }
+          ]
         },
         {
           "id": "proximity-voice-chat",
@@ -929,13 +693,9 @@
             "en": "Proximity voice chat",
             "zh": "近距离语音聊天"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "simple-voice-chat" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "simple-voice-chat" }
+          ]
         },
         {
           "id": "chat-image-display",
@@ -943,13 +703,9 @@
             "en": "Chat image display",
             "zh": "聊天图片显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "chatimage" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "chatimage" }
+          ]
         },
         {
           "id": "talking-head-indicators",
@@ -957,13 +713,9 @@
             "en": "Talking head indicators",
             "zh": "说话头像提示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "talkingheads" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "talkingheads" }
+          ]
         }
       ]
     },
@@ -984,13 +736,9 @@
             "en": "3D skin layers",
             "zh": "3D 皮肤层"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "3dskinlayers" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "3dskinlayers" }
+          ]
         },
         {
           "id": "cape-physics",
@@ -998,13 +746,9 @@
             "en": "Cape physics",
             "zh": "披风物理效果"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "wavey-capes" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "wavey-capes" }
+          ]
         },
         {
           "id": "cape-provider-support",
@@ -1012,13 +756,9 @@
             "en": "Cape provider support",
             "zh": "披风来源支持"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "capes" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "capes" }
+          ]
         },
         {
           "id": "custom-skin-loading",
@@ -1026,13 +766,9 @@
             "en": "Custom skin loading",
             "zh": "自定义皮肤加载"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "customskinloader" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "customskinloader" }
+          ]
         }
       ]
     }

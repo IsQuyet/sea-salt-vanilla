@@ -27,13 +27,9 @@
             "en": "Sodium option translations",
             "zh": "Sodium 选项翻译"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "translations-for-sodium" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "translations-for-sodium" }
+          ]
         }
       ]
     }

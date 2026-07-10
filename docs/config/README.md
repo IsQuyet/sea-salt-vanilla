@@ -1,51 +1,80 @@
 # Documentation config
 
-This directory contains the human-maintained source config used to generate the public project documentation and project data.
+This directory is the human-maintained source for the public project tables.
+The repository currently targets only the Minecraft version declared in
+`pack.toml`; rows therefore use direct `selected` and `alternatives` fields and
+do not contain a version map.
 
-The tooling models every documented entry as a provider-neutral *project*, not just a mod. It scans `mods/`, `resourcepacks/`, `shaderpacks/`, `datapacks/`, and `plugins/` for packwiz `*.pw.toml` metafiles. The documentation category supplies the intended project `type` (`mod`, `resourcepack`, `shader`, ...), while local Modrinth and CurseForge caches supply canonical IDs, slugs, and names.
+## Project references
 
-Project refs use `source` to select a provider and normally use a compact `slug`. `selected` is always a list and contains every default implementation for the feature; `alternatives` uses the same ref shape for optional substitutes. Do not add display names merely to compensate for missing cache metadata: refresh the relevant provider cache instead.
+Project references stay compact:
 
-The generated catalog remains keyed by human-facing slug, but identity checks are provider-qualified. Distinct projects from the same provider may not repeat across target-version rows, and different provider identities may not silently claim the same generated catalog key.
+```json
+{ "source": "modrinth", "slug": "fabric-api" }
+```
 
-## Project-data contract
+- `source` is `modrinth` or `curseforge`.
+- `selected` is always a list and contains every default implementation for a feature.
+- `alternatives` uses the same shape for optional substitutes.
+- Do not copy display names into matrix refs. Refresh project metadata instead.
 
-The current target version is described by four sets:
+Canonical identity is `provider + provider project ID`. Slugs are lookup and
+display coordinates, not identity. The same provider project may not be
+declared more than once, while cross-provider equivalence is intentionally not
+guessed.
 
-- **P**: non-optional selected projects from the target-version matrices.
-- **O**: optional selections and alternatives from the target-version matrices.
-- **D**: required dependency-only Modrinth projects derived from P and concrete packwiz locks.
+## Inventory contract
+
+The maintainer inventory derives four sets in memory:
+
+- **P**: default projects selected by non-optional matrices.
+- **O**: optional selections and alternatives.
+- **D**: required dependency-only Modrinth projects reachable from P.
 - **A**: all projects installed by packwiz.
 
-Checks compare projects by provider-qualified ID and require P, O, and D to be pairwise disjoint, with `A = P union D`. This makes an installed project invalid when it is neither directly documented nor reachable as a required Modrinth dependency of P.
+Checks require P, O, and D to be pairwise disjoint and require `A = P union D`.
+This detects packwiz projects left behind after a default project is removed.
 
-Automatic dependency analysis is intentionally Modrinth-only. Prefer Modrinth for mods with dependency relationships. Use CurseForge for direct or self-contained projects when necessary; without the CurseForge API, their dependency closure is reported as unverified rather than guessed.
+Dependency analysis is deliberately Modrinth-only. Prefer Modrinth for mods
+with external dependencies. CurseForge remains supported for direct projects
+and self-contained resources, but a default CurseForge mod is reported as
+having an unverified dependency closure.
 
 ## Layout
 
-Every subdirectory that contains a `meta.json` is a *documentation category*. Each category renders to `docs/<category>.md` and `docs/<category>.zh-CN.md`.
+Every category directory with a `meta.json` renders to
+`docs/<category>.md` and `docs/<category>.zh-CN.md`.
 
-A category directory contains:
+- `meta.json`: bilingual title and introduction.
+- `matrix/*.json`: ordered default feature groups.
+- `optional.json`: optional capabilities that do not ship by default.
 
-- `meta.json`: document title, supported Minecraft versions, and introduction text.
-- `matrix/*.json`: default feature matrices. Rows may reference any project type by slug - the category only decides which document a matrix renders into, not what it may reference. Each matrix file must include an `order` number; lower numbers render first.
-- `optional.json` (optional file): optional capability matrix. Entries here are documented as optional and are not expected to be installed in the default pack.
+Persisted support data has one purpose per file:
 
-Generated machine-readable artifacts are:
+- `data/project-metadata.json`: tracked canonical slug, name, and project page.
+- `data/modrinth-dependencies.json`: tracked required edges for offline checks.
+- `cache/modrinth/versions.json`: ignored local provider version facts.
 
-- `data/projects.json`: P for the current target version.
-- `data/optional.json`: O for the current target version.
-- `data/dependencies.json`: D for the current target version.
-- `data/project-catalog.json`: canonical metadata for projects referenced by every rendered version.
-- `data/modrinth-locks.json`: minimal required edges for current packwiz Modrinth version locks, used by offline checks.
-
-Do not edit these generated files by hand.
+The inventory classifications P, O, D, and A are not written as separate
+registries.
 
 ## Commands
 
-- `python tools/update_project_data.py` or `python tools/update_project_data.py generate`: regenerate project metadata, dependency metadata, and public documentation.
-- `python tools/update_project_data.py check`: check repository consistency and generated documentation freshness without writing files or making network requests.
-- `python tools/update_project_data.py projects`: regenerate P, O, and the all-version project catalog.
-- `python tools/update_project_data.py locks`: regenerate the tracked Modrinth lock graph from the local version cache.
-- `python tools/update_project_data.py dependencies`: regenerate only `data/dependencies.json`.
-- `python tools/update_project_data.py docs`: regenerate only the public documentation.
+```bash
+python tools/maintain.py status
+python tools/maintain.py check
+python tools/maintain.py refresh --dry-run
+python tools/maintain.py refresh
+python tools/maintain.py generate
+python tools/maintain.py index
+```
+
+- `status` is read-only and shows resource/provider/status counts.
+- `check` is the ordinary offline, cache-free consistency check.
+- `check --deep` additionally compares the tracked dependency snapshot with the local version pool.
+- `refresh` queries provider metadata; use `--provider`, `--scope`, `--force`, or `--dry-run` as needed.
+- `generate` writes the dependency snapshot and public Markdown.
+- `index` normalizes LF-managed files and refreshes packwiz indexes.
+- `sync` runs refresh, generate, index, and deep check in sequence.
+
+All reporting commands support `--json` for machine-readable output.

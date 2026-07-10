@@ -94,14 +94,14 @@ jobs:
           PY
 
       - name: check project data consistency
-        run: python tools/update_project_data.py check
+        run: python tools/maintain.py check
 
       - name: ensure consistency check is read-only
         run: git diff --exit-code -- data docs
 
       - name: check packwiz index
         run: |
-          python tools/refresh_packwiz.py
+          python tools/maintain.py index
           git diff --exit-code -- pack.toml index.toml
 
       - name: export modrinth pack

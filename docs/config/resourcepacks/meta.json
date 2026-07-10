@@ -3,9 +3,6 @@
     "en": "Resource pack feature matrix",
     "zh": "资源包功能矩阵"
   },
-  "versions": [
-    "1.21.1"
-  ],
   "introduction": {
     "en": "This page tracks which resource pack provides each feature in released Minecraft versions. Sections group related features, rows describe specific features, and version columns name the resource pack used for that version.",
     "zh": "这页跟踪每个已发布 Minecraft 版本中，由哪个资源包提供对应功能。章节用于归类相关功能，表格行描述具体功能，版本列填写该版本使用的资源包。"

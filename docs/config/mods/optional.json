@@ -26,13 +26,9 @@
             "en": "Server resource-pack unpacking",
             "zh": "服务器资源包解包"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "server-unpacker" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "server-unpacker" }
+          ]
         },
         {
           "id": "social-client-layer",
@@ -40,13 +36,9 @@
             "en": "Social client layer",
             "zh": "社交客户端层"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "essential" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "essential" }
+          ]
         },
         {
           "id": "player-emotes",
@@ -54,13 +46,9 @@
             "en": "Player emotes",
             "zh": "玩家表情动作"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "emotecraft" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "emotecraft" }
+          ]
         },
         {
           "id": "voice-chat-bubbles",
@@ -68,13 +56,9 @@
             "en": "Voice chat bubbles",
             "zh": "语音聊天气泡"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "talkbubbles" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "talkbubbles" }
+          ]
         },
         {
           "id": "friendly-interactions",
@@ -82,13 +66,9 @@
             "en": "Friendly interactions",
             "zh": "好友互动"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "headpat" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "headpat" }
+          ]
         }
       ]
     },
@@ -109,13 +89,9 @@
             "en": "Enchantment tooltip descriptions",
             "zh": "附魔提示说明"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "enchantment-descriptions" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "enchantment-descriptions" }
+          ]
         },
         {
           "id": "item-pickup-notifications",
@@ -123,13 +99,9 @@
             "en": "Item pickup notifications",
             "zh": "物品拾取通知"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "pick-up-notifier" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "pick-up-notifier" }
+          ]
         },
         {
           "id": "safe-world-deletion",
@@ -137,13 +109,9 @@
             "en": "Safe world deletion",
             "zh": "世界删除到回收站"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "delete-worlds-to-trash" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "delete-worlds-to-trash" }
+          ]
         },
         {
           "id": "item-swapping-tools",
@@ -151,16 +119,12 @@
             "en": "Item swapping tools",
             "zh": "物品切换工具"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "itemswapper" }
-              ],
-              "alternatives": [
-                { "source": "modrinth", "slug": "slot-cycler" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "itemswapper" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "slot-cycler" }
+          ]
         },
         {
           "id": "completion-tracking-index",
@@ -168,13 +132,9 @@
             "en": "Completion tracking index",
             "zh": "完成度追踪索引"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "completionists-index" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "completionists-index" }
+          ]
         },
         {
           "id": "health-bar-display",
@@ -182,13 +142,9 @@
             "en": "Health bar display",
             "zh": "生命值条显示"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "new-health-bars" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "new-health-bars" }
+          ]
         },
         {
           "id": "inventory-tabs",
@@ -196,13 +152,9 @@
             "en": "Inventory tabs",
             "zh": "背包标签页"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "inventory-tabs" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "inventory-tabs" }
+          ]
         },
         {
           "id": "collectible-heads",
@@ -210,13 +162,9 @@
             "en": "Collectible heads",
             "zh": "收藏头像"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "repo-heads" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "repo-heads" }
+          ]
         }
       ]
     },
@@ -237,13 +185,9 @@
             "en": "Resource pack override control",
             "zh": "资源包覆盖控制"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "resource-pack-overrides" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "resource-pack-overrides" }
+          ]
         },
         {
           "id": "recursive-resource-loading",
@@ -251,13 +195,9 @@
             "en": "Recursive resource loading",
             "zh": "递归资源加载"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "recursiveresources" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "recursiveresources" }
+          ]
         }
       ]
     },
@@ -278,13 +218,9 @@
             "en": "Dynamic lighting",
             "zh": "动态光源"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "lambdynamiclights" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "lambdynamiclights" }
+          ]
         },
         {
           "id": "sound-physics",
@@ -292,13 +228,9 @@
             "en": "Sound physics",
             "zh": "物理音效"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "sound-physics-remastered" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "sound-physics-remastered" }
+          ]
         },
         {
           "id": "weather-particle-ambience",
@@ -306,13 +238,9 @@
             "en": "Weather particle ambience",
             "zh": "天气粒子氛围"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "particle-rain" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "particle-rain" }
+          ]
         },
         {
           "id": "realistic-camera-perspective",
@@ -320,13 +248,9 @@
             "en": "Realistic camera perspective",
             "zh": "写实镜头视角"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "real-camera" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "real-camera" }
+          ]
         },
         {
           "id": "atmospheric-visual-ambience",
@@ -334,13 +258,9 @@
             "en": "Atmospheric visual ambience",
             "zh": "大气视觉氛围"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "atmospherics" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "atmospherics" }
+          ]
         },
         {
           "id": "better-smoke-effects",
@@ -348,13 +268,9 @@
             "en": "Better smoke effects",
             "zh": "烟雾效果改进"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "better-smoke" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "better-smoke" }
+          ]
         },
         {
           "id": "natural-water-rendering",
@@ -362,13 +278,9 @@
             "en": "Natural water rendering",
             "zh": "自然水体渲染"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "natural-waters" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "natural-waters" }
+          ]
         },
         {
           "id": "enchantment-glint-outline",
@@ -376,13 +288,9 @@
             "en": "Enchantment glint outline",
             "zh": "附魔闪光轮廓"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "enchantment-glint-outline" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "enchantment-glint-outline" }
+          ]
         }
       ]
     },
@@ -403,13 +311,9 @@
             "en": "Schematic building",
             "zh": "投影建造"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "litematica" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "litematica" }
+          ]
         },
         {
           "id": "creative-builder-tools",
@@ -417,13 +321,9 @@
             "en": "Creative builder tools",
             "zh": "创造模式建造工具"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "curseforge", "slug": "lottweaks" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "curseforge", "slug": "lottweaks" }
+          ]
         },
         {
           "id": "advanced-creative-building-tools",
@@ -431,13 +331,9 @@
             "en": "Advanced creative building tools",
             "zh": "高级创造建造工具"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "axiom" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "axiom" }
+          ]
         },
         {
           "id": "replay-recording",
@@ -445,13 +341,9 @@
             "en": "Replay recording",
             "zh": "回放录制"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "replaymod" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "replaymod" }
+          ]
         },
         {
           "id": "in-game-notes",
@@ -459,13 +351,9 @@
             "en": "In-game notes",
             "zh": "游戏内笔记"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "notebook" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "notebook" }
+          ]
         }
       ]
     }

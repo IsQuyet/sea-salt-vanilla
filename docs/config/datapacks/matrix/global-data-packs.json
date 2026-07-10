@@ -27,13 +27,9 @@
             "en": "Dungeon and structure expansion",
             "zh": "地牢与结构扩展"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "dungeons-and-taverns" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "dungeons-and-taverns" }
+          ]
         },
         {
           "id": "town-and-tower-structures",
@@ -41,13 +37,9 @@
             "en": "Town and tower structures",
             "zh": "城镇与高塔结构"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "towns-and-towers" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "towns-and-towers" }
+          ]
         },
         {
           "id": "overworld-terrain-shaping",
@@ -55,13 +47,9 @@
             "en": "Overworld terrain shaping",
             "zh": "主世界地形塑造"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "tectonic" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "tectonic" }
+          ]
         },
         {
           "id": "nether-dimension-expansion",
@@ -69,13 +57,9 @@
             "en": "Nether dimension expansion",
             "zh": "下界维度扩展"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "incendium" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "incendium" }
+          ]
         },
         {
           "id": "overworld-biome-overhaul",
@@ -83,13 +67,9 @@
             "en": "Overworld biome overhaul",
             "zh": "主世界生物群系翻新"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "william-wythers-overhauled-overworld-(datapack)" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "william-wythers-overhauled-overworld-(datapack)" }
+          ]
         },
         {
           "id": "continent-scale-terrain-layout",
@@ -97,13 +77,9 @@
             "en": "Continent-scale terrain layout",
             "zh": "大陆尺度地形布局"
           },
-          "versions": {
-            "1.21.1": {
-              "selected": [
-                { "source": "modrinth", "slug": "continents" }
-              ]
-            }
-          }
+          "selected": [
+            { "source": "modrinth", "slug": "continents" }
+          ]
         }
       ]
     }
