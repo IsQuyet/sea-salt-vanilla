@@ -4,6 +4,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/sea-salt-vanilla?logo=modrinth&label=Modrinth&color=00AF5C)](https://modrinth.com/modpack/sea-salt-vanilla)
 [![GitHub Releases](https://img.shields.io/badge/GitHub-Releases-181717?logo=github&logoColor=white)](https://github.com/IsQuyet/sea-salt-vanilla/releases)
 [![License](https://img.shields.io/github/license/IsQuyet/sea-salt-vanilla?label=License&color=blue)](LICENSE)
 

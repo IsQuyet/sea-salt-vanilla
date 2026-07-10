@@ -7,6 +7,7 @@ name: release
 env:
   GO_VERSION: '1.23.0'
   PACKWIZ_VERSION: 'v0.0.0-20260218225342-dfd8b68a4796'
+  MODRINTH_PROJECT_ID: 'p0JQ4YsG'
 
 on:
   workflow_dispatch:
@@ -50,17 +51,33 @@ jobs:
         run: |
           python - <<'PY'
           import os
+          import re
           import tomllib
           from pathlib import Path
 
           pack = tomllib.loads(Path('pack.toml').read_text(encoding='utf-8'))
+          pack_name = str(pack.get('name', '')).strip()
+          if not pack_name:
+              raise SystemExit('Pack name is required in pack.toml.')
+          pack_slug = re.sub(r'[^a-z0-9]+', '-', pack_name.lower()).strip('-')
+          if not pack_slug:
+              raise SystemExit('Pack slug could not be derived from pack.toml name.')
           version = str(pack.get('version', '')).strip()
           if not version:
               raise SystemExit('Release version is required in pack.toml.')
-          minecraft_version = str(pack.get('versions', {}).get('minecraft') or '').strip()
+          versions = pack.get('versions', {})
+          minecraft_version = str(versions.get('minecraft') or '').strip()
           if not minecraft_version:
               raise SystemExit('Minecraft version is required in pack.toml.')
+          loaders = [loader for loader in versions if loader != 'minecraft']
+          if not loaders:
+              raise SystemExit('At least one loader is required in pack.toml versions.')
+          if len(loaders) != 1:
+              raise SystemExit(f'Expected exactly one loader in pack.toml versions, found: {", ".join(loaders)}.')
+          loader = loaders[0]
           release_tag = f"mc{minecraft_version}-{version}"
+          release_name = f"{pack_name} {version} for Minecraft {minecraft_version}"
+          artifact = f"{pack_slug}-{version}+mc{minecraft_version}.mrpack"
           normalized_version = version.lower()
           if 'alpha' in normalized_version:
               release_type = 'alpha'
@@ -76,7 +93,7 @@ jobs:
               changelog_parts = changelog_text.split('----------', 1)
               notes = (changelog_parts[1] if len(changelog_parts) > 1 else changelog_parts[0]).strip()
           if not notes:
-              notes = f"Sea Salt Vanilla {version}."
+              notes = f"{pack_name} {version}."
           notes = (
               notes.replace('[ReleaseTag]()', release_tag)
               .replace('[MCVersion]()', minecraft_version)
@@ -87,10 +104,15 @@ jobs:
 
           output_path = Path(os.environ['GITHUB_OUTPUT'])
           with output_path.open('a', encoding='utf-8') as output:
+              output.write(f"pack_name={pack_name}\n")
+              output.write(f"pack_slug={pack_slug}\n")
               output.write(f"version={version}\n")
+              output.write(f"minecraft_version={minecraft_version}\n")
+              output.write(f"loader={loader}\n")
               output.write(f"release_tag={release_tag}\n")
+              output.write(f"release_name={release_name}\n")
               output.write(f"release_type={release_type}\n")
-              output.write(f"artifact=sea-salt-vanilla-{release_tag}.mrpack\n")
+              output.write(f"artifact={artifact}\n")
           PY
 
       - name: check project data consistency
@@ -122,17 +144,16 @@ jobs:
         run: |
           gh release create "${{ steps.metadata.outputs.release_tag }}" \
             "dist/${{ steps.metadata.outputs.artifact }}" \
-            --title "Sea Salt Vanilla ${{ steps.metadata.outputs.release_tag }}" \
+            --title "${{ steps.metadata.outputs.release_name }}" \
             --notes-file release-notes.md
 
       - name: validate modrinth release settings
         if: ${{ inputs.destination == 'GH+MR' || inputs.destination == 'MR' }}
         env:
-          MODRINTH_PROJECT_ID: ${{ vars.MODRINTH_PROJECT_ID }}
           MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
         run: |
           if [ -z "$MODRINTH_PROJECT_ID" ]; then
-            echo "Set the MODRINTH_PROJECT_ID repository variable."
+            echo "Set the MODRINTH_PROJECT_ID workflow environment variable."
             exit 1
           fi
           if [ -z "$MODRINTH_API_KEY" ]; then
@@ -144,14 +165,14 @@ jobs:
         if: ${{ inputs.destination == 'GH+MR' || inputs.destination == 'MR' }}
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: ${{ vars.MODRINTH_PROJECT_ID }}
+          modrinth-id: ${{ env.MODRINTH_PROJECT_ID }}
           modrinth-token: ${{ secrets.MODRINTH_API_KEY }}
           files: dist/${{ steps.metadata.outputs.artifact }}
-          name: Sea Salt Vanilla ${{ steps.metadata.outputs.release_tag }}
+          name: ${{ steps.metadata.outputs.release_name }}
           version: ${{ steps.metadata.outputs.release_tag }}
           version-type: ${{ steps.metadata.outputs.release_type }}
           changelog-file: release-notes.md
           loaders: |
-            fabric
+            ${{ steps.metadata.outputs.loader }}
           game-versions: |
-            1.21.1
+            ${{ steps.metadata.outputs.minecraft_version }}
