@@ -251,8 +251,7 @@
 
 | 功能 | 1.21.1 | 可选替代 |
 | --- | --- | --- |
-| 小地图 | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) |  |
-| 世界地图 | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) |  |
+| 小地图、世界地图与路径点导航 | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap), [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | [JourneyMap](https://modrinth.com/mod/journeymap), [VoxelMap-Updated](https://modrinth.com/mod/voxelmap-updated) |
 | 位置标题卡 | [Traveler's Titles](https://modrinth.com/mod/travelers-titles) | [BiomeInfo](https://modrinth.com/mod/biomeinfo) |
 
 ### 创造工具与诊断

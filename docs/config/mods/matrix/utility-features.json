@@ -695,29 +695,20 @@
       },
       "rows": [
         {
-          "id": "minimap",
+          "id": "map-and-waypoint-navigation",
           "feature": {
-            "en": "Minimap",
-            "zh": "小地图"
+            "en": "Minimap, world map, and waypoint navigation",
+            "zh": "小地图、世界地图与路径点导航"
           },
           "versions": {
             "1.21.1": {
               "selected": [
-                { "source": "modrinth", "slug": "xaeros-minimap" }
-              ]
-            }
-          }
-        },
-        {
-          "id": "world-map",
-          "feature": {
-            "en": "World map",
-            "zh": "世界地图"
-          },
-          "versions": {
-            "1.21.1": {
-              "selected": [
+                { "source": "modrinth", "slug": "xaeros-minimap" },
                 { "source": "modrinth", "slug": "xaeros-world-map" }
+              ],
+              "alternatives": [
+                { "source": "modrinth", "slug": "journeymap" },
+                { "source": "modrinth", "slug": "voxelmap-updated" }
               ]
             }
           }

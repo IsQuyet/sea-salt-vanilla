@@ -146,6 +146,13 @@
     "slug": "itemswapper",
     "id": "RPOSBQgq"
   },
+  "journeymap": {
+    "name": "JourneyMap",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "journeymap",
+    "id": "lfHFW1mp"
+  },
   "lambdynamiclights": {
     "name": "LambDynamicLights - Dynamic Lights",
     "type": "mod",
@@ -247,7 +254,8 @@
     "name": "Quick Skin",
     "type": "mod",
     "source": "modrinth",
-    "slug": "quick-skin"
+    "slug": "quick-skin",
+    "id": "zAIE84Ch"
   },
   "real-camera": {
     "name": "Real Camera",
@@ -318,6 +326,13 @@
     "source": "modrinth",
     "slug": "talkbubbles",
     "id": "BUpChT1v"
+  },
+  "voxelmap-updated": {
+    "name": "VoxelMap-Updated",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "voxelmap-updated",
+    "id": "wkzK5379"
   },
   "voxy": {
     "name": "voxy",

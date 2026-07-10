@@ -251,8 +251,7 @@ These entries provide client-side map, minimap, and location presentation tools.
 
 | Feature | 1.21.1 | Alternatives |
 | --- | --- | --- |
-| Minimap | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap) |  |
-| World map | [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) |  |
+| Minimap, world map, and waypoint navigation | [Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap), [Xaero's World Map](https://modrinth.com/mod/xaeros-world-map) | [JourneyMap](https://modrinth.com/mod/journeymap), [VoxelMap-Updated](https://modrinth.com/mod/voxelmap-updated) |
 | Location title cards | [Traveler's Titles](https://modrinth.com/mod/travelers-titles) | [BiomeInfo](https://modrinth.com/mod/biomeinfo) |
 
 ### Creative tools and diagnostics
