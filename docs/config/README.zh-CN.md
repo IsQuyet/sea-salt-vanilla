@@ -19,7 +19,7 @@
 ## 命令
 
 - `python tools/update_project_data.py` 或 `python tools/update_project_data.py generate`：重新生成项目元数据、依赖元数据和公开文档。
-- `python tools/update_project_data.py check`：只读检查仓库一致性和生成文档是否最新；不会写文件，也不会读取本地 Modrinth cache。
+- `python tools/update_project_data.py check`：只读检查仓库一致性和生成文档是否最新；不会写文件，也不会发起网络请求。
 - `python tools/update_project_data.py projects`：只重新生成 `data/projects.json`。
 - `python tools/update_project_data.py dependencies`：只重新生成 `data/dependencies.json`。
 - `python tools/update_project_data.py docs`：只重新生成公开文档。

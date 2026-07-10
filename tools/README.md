@@ -10,7 +10,7 @@ Run these commands from the repository root. This guide covers the normal mainte
 | --- | --- | --- |
 | `docs/config/` | Public classification: feature rows, optional projects, alternatives, and display order | Yes |
 | `mods/`, `resourcepacks/`, `shaderpacks/`, `datapacks/` | Default packwiz projects. A `.pw.toml` file here means the project ships by default | Yes |
-| `cache/modrinth/` | Local Modrinth metadata cache for generation | No. Refresh it and do not commit it |
+| `cache/modrinth/`, `cache/curseforge/` | Local provider metadata caches for generation | No. Refresh them and do not commit them |
 | `data/projects.json` | Generated catalog of documented default projects | No |
 | `data/optional.json` | Generated catalog of optional projects and alternatives | No |
 | `data/dependencies.json` | Generated catalog of dependency-only projects pulled by defaults | No |
@@ -36,6 +36,26 @@ Order matters:
 - Refresh the Modrinth cache before generation so dependency data is available.
 - Edit the matrix before `generate` so docs explain why the project ships.
 - Run `python tools/refresh_packwiz.py` and `check` last to update indexes and verify consistency.
+
+## Add default CurseForge projects
+
+Use this flow when a project is available only from CurseForge.
+
+```bash
+packwiz curseforge add <slug-or-url> --yes
+# edit docs/config/**/matrix/*.json
+python tools/refresh_curseforge_cache.py
+python tools/update_project_data.py generate
+python tools/refresh_packwiz.py
+python tools/update_project_data.py check
+git diff --check
+```
+
+The CurseForge refresh uses the keyless CFWidget metadata API by default. If
+`CURSEFORGE_API_KEY` or `CF_API_KEY` is configured, it uses the official
+CurseForge API instead. Slug lookups preserve the matrix project type so mods,
+resource packs, shaders, data packs, and plugins use the correct CurseForge
+category path.
 
 ## Move a default project to optional
 
@@ -93,6 +113,7 @@ git diff --check
 | `python tools/update_project_data.py generate` | Regenerate `data/*.json` and public docs | Yes |
 | `python tools/update_project_data.py check` | Check docs config, generated data, packwiz metadata, and generated docs | No |
 | `python tools/refresh_modrinth_cache.py` | Refresh local Modrinth metadata after adding or changing Modrinth versions, or when generation reports missing cache entries | Yes, cache only |
+| `python tools/refresh_curseforge_cache.py` | Refresh local CurseForge project metadata through CFWidget, or the official API when a key is configured | Yes, cache only |
 | `python tools/normalize_line_endings.py` | Normalize tracked files managed as `eol=lf` before hash-sensitive operations | Yes, only line endings |
 | `python tools/normalize_line_endings.py --check` | Report tracked `eol=lf` files whose working-tree line endings need normalization | No |
 | `python tools/refresh_packwiz.py` | Normalize LF-managed files, then refresh `index.toml` and the index hash in `pack.toml` | Yes |
@@ -102,6 +123,7 @@ Supporting scripts:
 - `generate_project_registry.py`: writes `data/projects.json` and `data/optional.json`
 - `generate_project_dependencies.py`: writes `data/dependencies.json`
 - `generate_project_docs.py`: writes public Markdown docs
+- `refresh_curseforge_cache.py`: caches CurseForge project names, IDs, slugs, and links without downloading project files
 - `check_project_data.py`: checks docs config, generated data, and packwiz metadata
 - `check_generated_docs.py`: checks generated Markdown freshness
 

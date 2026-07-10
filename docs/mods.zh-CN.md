@@ -327,7 +327,7 @@
 | 功能 | 1.21.1 |
 | --- | --- |
 | 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |
-| 创造模式建造工具 | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
+| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
 | 高级创造建造工具 | [Axiom](https://modrinth.com/mod/axiom) |
 | 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |
 | 游戏内笔记 | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |

@@ -6,24 +6,29 @@ from __future__ import annotations
 import json
 from typing import Any
 
-from project_data_common import (
+from curseforge_cache import (
+    CurseForgeCacheError,
+    load_curseforge_project_cache,
+)
+from modrinth_cache import (
     DEPENDENCY_CACHE,
-    MissingModrinthCacheError,
     PROJECT_CACHE,
+    MissingModrinthCacheError,
+    load_dependency_cache,
+    load_modrinth_project_cache,
+)
+from project_cache import cache_entry_has_error, collect_cache_errors
+from project_data_common import (
     TARGET_VERSION,
     build_documented_sets,
     build_missing_required,
     build_required_by,
-    cache_entry_has_error,
-    collect_cache_errors,
     feature_row_version_location,
     is_documented,
     iter_feature_versions,
     load_declared_dependencies,
-    load_dependency_cache,
     load_feature_groups,
     load_installed_projects,
-    load_project_cache,
     load_project_catalog,
     selected_project_refs_from_version,
     write_json,
@@ -244,9 +249,12 @@ def check(
     cache_errors: list[str] = []
     version_loader_conflict_issues: list[str] = []
 
+    curseforge_project_cache = load_curseforge_project_cache()
+    cache_errors.extend(collect_cache_errors(curseforge_project_cache, "curseforge-project-cache"))
+
     if include_modrinth_cache_checks:
         dependency_cache = load_dependency_cache()
-        project_cache = load_project_cache()
+        project_cache = load_modrinth_project_cache()
         required_by = build_required_by(installed, dependency_cache, allow_network=allow_network)
         missing_dependencies = build_missing_required(
             installed,
@@ -254,10 +262,12 @@ def check(
             project_cache,
             allow_network=allow_network,
         )
-        cache_errors = [
-            *collect_cache_errors(dependency_cache, "dependency-cache"),
-            *collect_cache_errors(project_cache, "project-cache"),
-        ]
+        cache_errors.extend(
+            [
+                *collect_cache_errors(dependency_cache, "dependency-cache"),
+                *collect_cache_errors(project_cache, "project-cache"),
+            ]
+        )
         version_loader_conflict_issues = version_loader_conflicts(installed, dependency_cache)
         if persist_cache:
             write_json(DEPENDENCY_CACHE, dependency_cache)
@@ -392,7 +402,7 @@ def result_issues(result: dict[str, object]) -> list[str]:
 def main() -> None:
     try:
         result = check()
-    except MissingModrinthCacheError as error:
+    except (CurseForgeCacheError, MissingModrinthCacheError) as error:
         raise SystemExit(str(error)) from error
 
     print(json.dumps(result_summary(result), ensure_ascii=False, indent=2))

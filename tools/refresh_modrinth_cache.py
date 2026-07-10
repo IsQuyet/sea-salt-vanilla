@@ -13,27 +13,34 @@ from generate_project_dependencies import (
     collect_target_version_project_refs,
     find_installed_project_for_ref,
 )
-from project_data_common import (
+from modrinth_cache import (
     DEPENDENCY_CACHE,
     MANIFEST_CACHE,
     PROJECT_CACHE,
-    TARGET_VERSION,
     ModrinthFetchError,
-    cache_entry_has_error,
-    fetch_missing_modrinth_versions,
     fetch_missing_modrinth_projects,
-    get_project_cache_entry,
+    fetch_missing_modrinth_versions,
     is_complete_version_cache_entry,
     load_dependency_cache,
-    load_installed_projects,
-    load_project_cache,
+    load_modrinth_project_cache,
+)
+from project_cache import (
+    cache_entry_has_error,
+    get_project_cache_entry,
     project_cache_alias_count,
     project_cache_project_count,
+)
+from project_cache_refresh import (
+    collect_project_refresh_errors,
+    format_refresh_error_report,
+    missing_project_cache_refs,
+    verbose_print,
+)
+from project_data_common import (
+    TARGET_VERSION,
+    load_installed_projects,
     write_json,
 )
-
-
-MAX_DISPLAYED_REFRESH_ERRORS = 50
 
 
 def modrinth_ref_value(ref: dict[str, Any]) -> str:
@@ -140,51 +147,6 @@ def collect_version_cache_errors(version_ids: list[str], dependency_cache: dict[
     return errors
 
 
-def collect_project_cache_errors(project_refs: list[str], project_cache: dict[str, Any]) -> list[str]:
-    """Collect missing or failed project entries after a refresh attempt."""
-    errors: list[str] = []
-    for project_ref in sorted(set(project_refs)):
-        if not project_ref:
-            continue
-        entry = get_project_cache_entry(project_ref, project_cache)
-        if cache_entry_has_error(entry):
-            errors.append(f"{project_ref}: {entry.get('error')}")
-        elif entry is None:
-            errors.append(f"{project_ref}: missing project metadata")
-    return errors
-
-
-def missing_project_cache_refs(
-    project_refs: list[str],
-    project_cache: dict[str, Any],
-    *,
-    force: bool = False,
-) -> list[str]:
-    """Return project refs that would be fetched in the current refresh mode."""
-    missing: list[str] = []
-    for project_ref in sorted(set(project_refs)):
-        if not project_ref:
-            continue
-        entry = get_project_cache_entry(project_ref, project_cache)
-        if force or entry is None:
-            missing.append(project_ref)
-    return missing
-
-
-def verbose_print(message: str, *, verbose: bool) -> None:
-    if verbose:
-        print(message, flush=True)
-
-
-def format_refresh_error_report(errors: list[str]) -> str:
-    displayed_errors = errors[:MAX_DISPLAYED_REFRESH_ERRORS]
-    joined_errors = "\n".join(f"- {error}" for error in displayed_errors)
-    if len(errors) <= MAX_DISPLAYED_REFRESH_ERRORS:
-        return joined_errors
-    hidden_error_count = len(errors) - MAX_DISPLAYED_REFRESH_ERRORS
-    return f"{joined_errors}\n... {hidden_error_count} more"
-
-
 def refresh_version_cache(
     version_ids: list[str],
     dependency_cache: dict[str, Any],
@@ -231,7 +193,7 @@ def refresh_project_cache(
         verbose_print("Fetching missing Modrinth project metadata...", verbose=verbose)
         fetch_missing_modrinth_projects(project_refs, project_cache, force=force)
 
-    project_errors = collect_project_cache_errors(project_refs, project_cache)
+    project_errors = collect_project_refresh_errors(project_refs, project_cache)
     if project_errors and not dry_run:
         raise ModrinthFetchError(
             "Could not refresh all required Modrinth project metadata. "
@@ -312,7 +274,7 @@ def refresh_cache(
 
     installed_projects = load_installed_projects()
     dependency_cache = load_dependency_cache()
-    project_cache = load_project_cache()
+    project_cache = load_modrinth_project_cache()
 
     version_ids = [str(project.get("modrinth_version") or "") for project in installed_projects]
     if not only_projects:

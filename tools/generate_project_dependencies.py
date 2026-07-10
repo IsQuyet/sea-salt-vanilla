@@ -7,19 +7,21 @@ import json
 from pathlib import Path
 from typing import Any
 
-from project_data_common import (
-    DEPENDENCIES_PATH,
+from modrinth_cache import (
     DEPENDENCY_CACHE,
     MissingModrinthCacheError,
-    TARGET_VERSION,
-    cache_entry_has_error,
-    category_project_type,
-    get_project_cache_entry,
-    iter_feature_versions,
+    fetch_missing_modrinth_versions,
     load_dependency_cache,
-    load_installed_projects,
-    load_project_cache,
+    load_modrinth_project_cache,
     require_modrinth_version_cache,
+)
+from project_cache import cache_entry_has_error, get_project_cache_entry
+from project_data_common import (
+    DEPENDENCIES_PATH,
+    TARGET_VERSION,
+    category_project_type,
+    iter_feature_versions,
+    load_installed_projects,
     selected_project_refs_from_version,
     write_json,
 )
@@ -204,7 +206,7 @@ def expected_dependency_data_from_docs_roots(
     installed_projects = load_installed_projects()
     installed_indexes = build_installed_indexes(installed_projects)
     dependency_cache = load_dependency_cache()
-    project_cache = load_project_cache()
+    project_cache = load_modrinth_project_cache()
     default_refs, optional_refs = collect_target_version_project_refs()
     documented = collect_documented_identities(default_refs, optional_refs, project_cache)
 
@@ -215,8 +217,6 @@ def expected_dependency_data_from_docs_roots(
     ]
     root_version_ids = [str(project.get("modrinth_version") or "") for project in root_projects]
     if allow_network:
-        from project_data_common import fetch_missing_modrinth_versions
-
         fetch_missing_modrinth_versions(root_version_ids, dependency_cache)
     else:
         require_modrinth_version_cache(root_version_ids, dependency_cache)
@@ -238,8 +238,6 @@ def expected_dependency_data_from_docs_roots(
         visited_version_ids.add(current_version_id)
 
         if allow_network:
-            from project_data_common import fetch_missing_modrinth_versions
-
             fetch_missing_modrinth_versions([current_version_id], dependency_cache)
         else:
             require_modrinth_version_cache([current_version_id], dependency_cache)

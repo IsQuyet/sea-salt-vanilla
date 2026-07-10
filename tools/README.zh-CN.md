@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | `docs/config/` | 公开分类：功能行、可选项目、替代项目和展示顺序 | 是 |
 | `mods/`、`resourcepacks/`、`shaderpacks/`、`datapacks/` | 默认 packwiz 项目。这些目录里的 `.pw.toml` 表示项目会默认分发 | 是 |
-| `cache/modrinth/` | 生成步骤使用的本地 Modrinth 元数据缓存 | 否。刷新即可，不要提交 |
+| `cache/modrinth/`、`cache/curseforge/` | 生成步骤使用的本地平台元数据缓存 | 否。刷新即可，不要提交 |
 | `data/projects.json` | 生成的默认分发项目目录 | 否 |
 | `data/optional.json` | 生成的可选项目和替代项目目录 | 否 |
 | `data/dependencies.json` | 生成的仅依赖项目目录 | 否 |
@@ -36,6 +36,25 @@ git diff --check
 - 生成前刷新 Modrinth 缓存，让依赖数据可用。
 - 先改矩阵再运行 `generate`，让公开文档说明项目为什么默认分发。
 - 最后运行 `python tools/refresh_packwiz.py` 和 `check`，更新索引并验证一致性。
+
+## 添加默认 CurseForge 项目
+
+当项目只在 CurseForge 提供时，使用这个流程。
+
+```bash
+packwiz curseforge add <slug-or-url> --yes
+# 编辑 docs/config/**/matrix/*.json
+python tools/refresh_curseforge_cache.py
+python tools/update_project_data.py generate
+python tools/refresh_packwiz.py
+python tools/update_project_data.py check
+git diff --check
+```
+
+CurseForge 刷新默认使用无需密钥的 CFWidget 元数据接口。如果配置了
+`CURSEFORGE_API_KEY` 或 `CF_API_KEY`，则改用 CurseForge 官方 API。按 slug
+查询时会保留矩阵中的项目类型，使模组、资源包、光影包、数据包和插件使用
+正确的 CurseForge 分类路径。
 
 ## 把默认项目移到可选
 
@@ -93,6 +112,7 @@ git diff --check
 | `python tools/update_project_data.py generate` | 重新生成 `data/*.json` 和公开文档 | 是 |
 | `python tools/update_project_data.py check` | 检查 docs config、生成数据、packwiz 元数据和生成文档 | 否 |
 | `python tools/refresh_modrinth_cache.py` | 新增或更新 Modrinth 项目版本后刷新本地元数据；生成命令提示缺缓存时也运行 | 是，仅缓存 |
+| `python tools/refresh_curseforge_cache.py` | 通过 CFWidget 刷新本地 CurseForge 项目元数据；配置密钥时改用官方 API | 是，仅缓存 |
 | `python tools/normalize_line_endings.py` | 在 hash 敏感操作前，把 Git 管理为 `eol=lf` 的文件规范化为 LF | 是，仅行尾 |
 | `python tools/normalize_line_endings.py --check` | 检查工作区里需要行尾规范化的 `eol=lf` 文件 | 否 |
 | `python tools/refresh_packwiz.py` | 先规范化 LF-managed 文件，再刷新 `index.toml` 和 `pack.toml` 里的 index hash | 是 |
@@ -102,6 +122,7 @@ git diff --check
 - `generate_project_registry.py`：写出 `data/projects.json` 和 `data/optional.json`
 - `generate_project_dependencies.py`：写出 `data/dependencies.json`
 - `generate_project_docs.py`：写出公开 Markdown 文档
+- `refresh_curseforge_cache.py`：缓存 CurseForge 项目名称、ID、slug 和链接，不下载项目文件
 - `check_project_data.py`：检查 docs config、生成数据和 packwiz 元数据
 - `check_generated_docs.py`：检查生成 Markdown 是否新鲜
 

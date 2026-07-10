@@ -7,13 +7,14 @@ import json
 from pathlib import Path
 from typing import Any
 
+from curseforge_cache import load_curseforge_project_cache
+from modrinth_cache import load_modrinth_project_cache
+from project_cache import get_project_cache_entry
 from project_data_common import (
     OPTIONAL_PATH,
     PROJECTS_PATH,
     category_project_type,
-    get_project_cache_entry,
     iter_feature_versions,
-    load_project_cache,
     selected_project_refs_from_version,
 )
 from project_data_identity import project_entry_key, project_ref_key
@@ -39,8 +40,15 @@ def display_name_from_slug(slug: str) -> str:
     return " ".join(word.capitalize() for word in slug.replace("_", "-").split("-") if word)
 
 
-def cached_modrinth_project(project_ref: str, project_cache: dict[str, Any]) -> dict[str, Any] | None:
-    """Read cached Modrinth project metadata without blocking registry generation on the network."""
+def cached_project(
+    source: str,
+    project_ref: str,
+    project_caches: dict[str, dict[str, Any]],
+) -> dict[str, Any] | None:
+    """Read provider metadata without blocking registry generation on the network."""
+    project_cache = project_caches.get(source)
+    if not project_cache:
+        return None
     return get_project_cache_entry(project_ref, project_cache)
 
 
@@ -57,18 +65,31 @@ def entry_from_modrinth(project: dict[str, Any], documented_type: str | None = N
     )
 
 
+def entry_from_curseforge(project: dict[str, Any], documented_type: str | None = None) -> dict[str, Any]:
+    return normalize_entry(
+        {
+            "name": project.get("name"),
+            "source": "curseforge",
+            "type": documented_type or "mod",
+            "slug": project.get("slug"),
+            "id": project.get("id"),
+        }
+    )
+
+
 def entry_from_documented_ref(
     ref: dict[str, Any],
-    project_cache: dict[str, Any],
+    project_caches: dict[str, dict[str, Any]],
 ) -> dict[str, Any]:
     source = str(ref.get("source") or "modrinth")
     slug = str(ref.get("slug") or ref.get("key") or "").lower()
     project_type = str(ref.get("type") or "mod")
 
-    if source == "modrinth" and slug:
-        project = cached_modrinth_project(slug, project_cache)
-        if project:
-            return entry_from_modrinth(project, project_type)
+    project = cached_project(source, slug, project_caches) if slug else None
+    if source == "modrinth" and project:
+        return entry_from_modrinth(project, project_type)
+    if source == "curseforge" and project:
+        return entry_from_curseforge(project, project_type)
 
     return normalize_entry(
         {
@@ -126,10 +147,10 @@ def collect_documented_project_refs() -> tuple[dict[str, dict[str, Any]], dict[s
 
 def build_project_catalog(
     refs: dict[str, dict[str, Any]],
+    project_caches: dict[str, dict[str, Any]],
 ) -> dict[str, dict[str, Any]]:
-    project_cache = load_project_cache()
     entries = {
-        generated_key: entry_from_documented_ref(ref, project_cache)
+        generated_key: entry_from_documented_ref(ref, project_caches)
         for key, ref in refs.items()
         if (generated_key := project_entry_key(ref, key))
     }
@@ -138,8 +159,12 @@ def build_project_catalog(
 
 def main() -> None:
     default_refs, optional_refs = collect_documented_project_refs()
-    expected_default_catalog = build_project_catalog(default_refs)
-    expected_optional_catalog = build_project_catalog(optional_refs)
+    project_caches = {
+        "modrinth": load_modrinth_project_cache(),
+        "curseforge": load_curseforge_project_cache(),
+    }
+    expected_default_catalog = build_project_catalog(default_refs, project_caches)
+    expected_optional_catalog = build_project_catalog(optional_refs, project_caches)
     expected_files = {
         PROJECTS_PATH: project_json_text(expected_default_catalog),
         OPTIONAL_PATH: project_json_text(expected_optional_catalog),

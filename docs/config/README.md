@@ -19,7 +19,7 @@ Generated machine-readable registries live in `data/projects.json` and `data/dep
 ## Commands
 
 - `python tools/update_project_data.py` or `python tools/update_project_data.py generate`: regenerate project metadata, dependency metadata, and public documentation.
-- `python tools/update_project_data.py check`: check repository consistency and generated documentation freshness without writing files or reading the local Modrinth cache.
+- `python tools/update_project_data.py check`: check repository consistency and generated documentation freshness without writing files or making network requests.
 - `python tools/update_project_data.py projects`: regenerate only `data/projects.json`.
 - `python tools/update_project_data.py dependencies`: regenerate only `data/dependencies.json`.
 - `python tools/update_project_data.py docs`: regenerate only the public documentation.

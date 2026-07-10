@@ -182,10 +182,11 @@
     "id": "8bOImuGU"
   },
   "lottweaks": {
-    "name": "Lottweaks",
+    "name": "LotTweaks",
     "type": "mod",
     "source": "curseforge",
-    "slug": "lottweaks"
+    "slug": "lottweaks",
+    "id": 417768
   },
   "natural-waters": {
     "name": "Natural Waters",

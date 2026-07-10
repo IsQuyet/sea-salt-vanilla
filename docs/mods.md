@@ -327,7 +327,7 @@ These entries support specific creative, building, recording, or input workflows
 | Feature | 1.21.1 |
 | --- | --- |
 | Schematic building | [Litematica](https://modrinth.com/mod/litematica) |
-| Creative builder tools | [Lottweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
+| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
 | Advanced creative building tools | [Axiom](https://modrinth.com/mod/axiom) |
 | Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |
 | In-game notes | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |

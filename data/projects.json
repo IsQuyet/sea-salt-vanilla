@@ -206,7 +206,8 @@
     "name": "Configured",
     "type": "mod",
     "source": "curseforge",
-    "slug": "configured"
+    "slug": "configured",
+    "id": 457570
   },
   "confirm-disconnect": {
     "name": "Confirm Disconnect",
@@ -1010,7 +1011,8 @@
     "name": "Stay True",
     "type": "resourcepack",
     "source": "curseforge",
-    "slug": "stay-true"
+    "slug": "stay-true",
+    "id": 353554
   },
   "stylish-effects": {
     "name": "Stylish Effects",
