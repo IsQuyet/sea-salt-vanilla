@@ -1,0 +1,150 @@
+{
+  "id": "supplementary-visuals",
+  "order": 40,
+  "title": {
+    "en": "Supplementary visuals",
+    "zh": "补充视觉细节"
+  },
+  "description": {
+    "en": "These entries add focused player, item, block, map, and entity presentation details.",
+    "zh": "这些条目补充玩家、物品、方块、地图和实体的专项视觉细节。"
+  },
+  "sections": [
+    {
+      "id": "focused-visual-details",
+      "title": {
+        "en": "Focused visual details",
+        "zh": "专项视觉细节"
+      },
+      "description": {
+        "en": "These entries each enhance one specific presentation feature.",
+        "zh": "这些条目分别增强一项具体的视觉呈现功能。"
+      },
+      "rows": [
+        {
+          "id": "animated-player-expressions",
+          "feature": {
+            "en": "Animated player facial expressions",
+            "zh": "玩家面部表情动画"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "just-expressions" }
+          ]
+        },
+        {
+          "id": "unique-enchanted-book-textures",
+          "feature": {
+            "en": "Unique enchanted book textures",
+            "zh": "附魔书专属贴图"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "even-better-enchants" }
+          ]
+        },
+        {
+          "id": "decorative-bed-textures",
+          "feature": {
+            "en": "Decorative bed textures",
+            "zh": "装饰性床铺贴图"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "fancy-beds" }
+          ]
+        },
+        {
+          "id": "fresh-animations-map-icons",
+          "feature": {
+            "en": "Fresh Animations map icons",
+            "zh": "Fresh Animations 地图图标"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "icon-fresh" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fresh-animations-compatible-entity-variants",
+      "title": {
+        "en": "Fresh Animations-compatible entity variants",
+        "zh": "支持 Fresh Animations 的实体动画变体"
+      },
+      "description": {
+        "en": "These are Fresh Animations-compatible editions of standalone entity-variant resource packs, not additions for modded entities. Load them above Fresh Animations. Releases targeting nearby 1.21.x versions are included for in-game compatibility testing.",
+        "zh": "这些条目是各自独立实体变体资源包的 Fresh Animations 兼容版本，并非为 Mod 生物提供扩展。使用时应加载在 Fresh Animations 上方；部分项目采用相邻 1.21.x 版本，需在游戏内测试兼容性。"
+      },
+      "rows": [
+        {
+          "id": "animated-allay-variants",
+          "feature": {
+            "en": "Animated allay variants",
+            "zh": "悦灵动画变体"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "assorted-allays-x-fresh-animations" }
+          ]
+        },
+        {
+          "id": "fresh-skeleton-variants",
+          "feature": {
+            "en": "Fresh Animations skeleton variants",
+            "zh": "Fresh Animations 骷髅变体"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "als-skeletons-revamped-x-fresh-animations" }
+          ]
+        },
+        {
+          "id": "fresh-scorpion-and-crab-variants",
+          "feature": {
+            "en": "Fresh Animations scorpion and crab variants",
+            "zh": "Fresh Animations 蝎子与螃蟹变体"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "als-scorpions-crabs-x-fresh-animations" }
+          ]
+        },
+        {
+          "id": "fresh-boss-variants",
+          "feature": {
+            "en": "Fresh Animations boss variants",
+            "zh": "Fresh Animations Boss 变体"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "als-boss-rush-x-fresh-animations" }
+          ]
+        },
+        {
+          "id": "fresh-enderman-variants",
+          "feature": {
+            "en": "Fresh Animations enderman variants",
+            "zh": "Fresh Animations 末影人变体"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "als-enderman-revamped-x-fresh-animations" }
+          ]
+        },
+        {
+          "id": "fresh-zombie-variants",
+          "feature": {
+            "en": "Fresh Animations zombie variants",
+            "zh": "Fresh Animations 僵尸变体"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "als-zombies-revamped-x-fresh-animations" }
+          ]
+        },
+        {
+          "id": "fresh-piglin-variants",
+          "feature": {
+            "en": "Fresh Animations piglin variants",
+            "zh": "Fresh Animations 猪灵变体"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "als-piglins-revamped-x-fresh-animations" }
+          ]
+        }
+      ]
+    }
+  ]
+}

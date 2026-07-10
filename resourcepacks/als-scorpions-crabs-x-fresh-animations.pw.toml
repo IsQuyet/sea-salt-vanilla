@@ -1,0 +1,13 @@
+name = "AL's Scorpions & Crabs x Fresh Animations"
+filename = "AL's Scorpions & Crabs+FA.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/6vTt8GmW/versions/kQ2klcof/AL%27s%20Scorpions%20%26%20Crabs%2BFA.zip"
+hash-format = "sha512"
+hash = "a03b66cb776ed9ae23f72e02f19a6621fb87063c71d07ec4efa986caa1d9aaf795a395218bfb136951140404103162093612e81855fc66e459553bf703549964"
+
+[update]
+[update.modrinth]
+mod-id = "6vTt8GmW"
+version = "kQ2klcof"

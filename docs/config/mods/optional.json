@@ -61,6 +61,16 @@
           ]
         },
         {
+          "id": "voice-reactive-head-animation",
+          "feature": {
+            "en": "Voice-reactive head animation",
+            "zh": "语音联动头部动画"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "repo-heads" }
+          ]
+        },
+        {
           "id": "friendly-interactions",
           "feature": {
             "en": "Friendly interactions",
@@ -154,16 +164,6 @@
           },
           "selected": [
             { "source": "modrinth", "slug": "inventory-tabs" }
-          ]
-        },
-        {
-          "id": "collectible-heads",
-          "feature": {
-            "en": "Collectible heads",
-            "zh": "收藏头像"
-          },
-          "selected": [
-            { "source": "modrinth", "slug": "repo-heads" }
           ]
         }
       ]
@@ -343,6 +343,9 @@
           },
           "selected": [
             { "source": "modrinth", "slug": "replaymod" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "flashback" }
           ]
         },
         {

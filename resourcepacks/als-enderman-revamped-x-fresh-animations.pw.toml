@@ -1,0 +1,13 @@
+name = "AL's Enderman Revamped x Fresh Animations"
+filename = "AL's Enderman Revamped+FA 1.2.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ERTkxp3u/versions/ElDBbDlG/AL%27s%20Enderman%20Revamped%2BFA%201.2.zip"
+hash-format = "sha512"
+hash = "e847d06504ffad97a279635969d4d0a3320cf06c7a745b4bf94f9c722590418289bbb68bd789cb06df134fd3e4bc75d4ec281ac0d2f95c706448bf87e2203fd6"
+
+[update]
+[update.modrinth]
+mod-id = "ERTkxp3u"
+version = "ElDBbDlG"

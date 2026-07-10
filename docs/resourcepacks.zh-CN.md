@@ -52,3 +52,32 @@
 | 容器 GUI 与 HUD 重着色 | [Recolourful Containers GUI + HUD](https://modrinth.com/resourcepack/recolourful-containers-gui) |
 | 聊天举报提示贴图 | [Chat Reporting Helper](https://modrinth.com/resourcepack/chat-reporting-helper) |
 | 降低火焰遮挡 | [Low On Fire](https://modrinth.com/resourcepack/low-on-fire) |
+
+## 补充视觉细节
+
+这些条目补充玩家、物品、方块、地图和实体的专项视觉细节。
+
+### 专项视觉细节
+
+这些条目分别增强一项具体的视觉呈现功能。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 玩家面部表情动画 | [Just Expressions](https://modrinth.com/resourcepack/just-expressions) |
+| 附魔书专属贴图 | [Even Better Enchants](https://modrinth.com/resourcepack/even-better-enchants) |
+| 装饰性床铺贴图 | [Fancy Beds](https://modrinth.com/resourcepack/fancy-beds) |
+| Fresh Animations 地图图标 | [Icon Fresh](https://modrinth.com/resourcepack/icon-fresh) |
+
+### 支持 Fresh Animations 的实体动画变体
+
+这些条目是各自独立实体变体资源包的 Fresh Animations 兼容版本，并非为 Mod 生物提供扩展。使用时应加载在 Fresh Animations 上方；部分项目采用相邻 1.21.x 版本，需在游戏内测试兼容性。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 悦灵动画变体 | [Assorted Allays x Fresh Animations](https://modrinth.com/resourcepack/assorted-allays-x-fresh-animations) |
+| Fresh Animations 骷髅变体 | [AL's Skeletons Revamped x Fresh Animations](https://modrinth.com/resourcepack/als-skeletons-revamped-x-fresh-animations) |
+| Fresh Animations 蝎子与螃蟹变体 | [AL's Scorpions & Crabs x Fresh Animations](https://modrinth.com/resourcepack/als-scorpions-crabs-x-fresh-animations) |
+| Fresh Animations Boss 变体 | [AL's Boss Rush x Fresh Animations](https://modrinth.com/resourcepack/als-boss-rush-x-fresh-animations) |
+| Fresh Animations 末影人变体 | [AL's Enderman Revamped x Fresh Animations](https://modrinth.com/resourcepack/als-enderman-revamped-x-fresh-animations) |
+| Fresh Animations 僵尸变体 | [AL's Zombies Revamped x Fresh Animations](https://modrinth.com/resourcepack/als-zombies-revamped-x-fresh-animations) |
+| Fresh Animations 猪灵变体 | [AL's Piglins Revamped x Fresh Animations](https://modrinth.com/resourcepack/als-piglins-revamped-x-fresh-animations) |

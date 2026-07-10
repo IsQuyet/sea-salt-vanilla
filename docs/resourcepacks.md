@@ -52,3 +52,32 @@ These resource packs refine container screens, HUD elements, and other vanilla i
 | Container GUI and HUD recolors | [Recolourful Containers GUI + HUD](https://modrinth.com/resourcepack/recolourful-containers-gui) |
 | Chat reporting helper textures | [Chat Reporting Helper](https://modrinth.com/resourcepack/chat-reporting-helper) |
 | Lower fire overlay | [Low On Fire](https://modrinth.com/resourcepack/low-on-fire) |
+
+## Supplementary visuals
+
+These entries add focused player, item, block, map, and entity presentation details.
+
+### Focused visual details
+
+These entries each enhance one specific presentation feature.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Animated player facial expressions | [Just Expressions](https://modrinth.com/resourcepack/just-expressions) |
+| Unique enchanted book textures | [Even Better Enchants](https://modrinth.com/resourcepack/even-better-enchants) |
+| Decorative bed textures | [Fancy Beds](https://modrinth.com/resourcepack/fancy-beds) |
+| Fresh Animations map icons | [Icon Fresh](https://modrinth.com/resourcepack/icon-fresh) |
+
+### Fresh Animations-compatible entity variants
+
+These are Fresh Animations-compatible editions of standalone entity-variant resource packs, not additions for modded entities. Load them above Fresh Animations. Releases targeting nearby 1.21.x versions are included for in-game compatibility testing.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Animated allay variants | [Assorted Allays x Fresh Animations](https://modrinth.com/resourcepack/assorted-allays-x-fresh-animations) |
+| Fresh Animations skeleton variants | [AL's Skeletons Revamped x Fresh Animations](https://modrinth.com/resourcepack/als-skeletons-revamped-x-fresh-animations) |
+| Fresh Animations scorpion and crab variants | [AL's Scorpions & Crabs x Fresh Animations](https://modrinth.com/resourcepack/als-scorpions-crabs-x-fresh-animations) |
+| Fresh Animations boss variants | [AL's Boss Rush x Fresh Animations](https://modrinth.com/resourcepack/als-boss-rush-x-fresh-animations) |
+| Fresh Animations enderman variants | [AL's Enderman Revamped x Fresh Animations](https://modrinth.com/resourcepack/als-enderman-revamped-x-fresh-animations) |
+| Fresh Animations zombie variants | [AL's Zombies Revamped x Fresh Animations](https://modrinth.com/resourcepack/als-zombies-revamped-x-fresh-animations) |
+| Fresh Animations piglin variants | [AL's Piglins Revamped x Fresh Animations](https://modrinth.com/resourcepack/als-piglins-revamped-x-fresh-animations) |

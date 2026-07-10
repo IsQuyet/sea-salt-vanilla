@@ -1,0 +1,13 @@
+name = "AL's Piglins Revamped x Fresh Animations"
+filename = "AL's Piglins Revamped+FA.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/RQUfNOVH/versions/aNE4TBbR/AL%27s%20Piglins%20Revamped%2BFA.zip"
+hash-format = "sha512"
+hash = "990bd34ef784a48fcc36b6bf4c1474d626d4240ceadf2f3f9455d2cbbacb1b258ae320c99c60fd837ae12e1740c66b84e337fc92a6b489cd432b6fc747f159d4"
+
+[update]
+[update.modrinth]
+mod-id = "RQUfNOVH"
+version = "aNE4TBbR"

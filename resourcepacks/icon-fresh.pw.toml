@@ -1,0 +1,13 @@
+name = "Icon Fresh"
+filename = "Icon Fresh 1.2.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/u4iPx1Dr/versions/qs58YoNc/Icon%20Fresh%201.2.zip"
+hash-format = "sha512"
+hash = "aa0cd87212144e72f595e3609db1831ae190d1b35bd0db549c13436a5ad4a679734250bee8e0fd7e6f9b8d910dee92eaed44fa8879572ca40de32f67a8c72414"
+
+[update]
+[update.modrinth]
+mod-id = "u4iPx1Dr"
+version = "qs58YoNc"

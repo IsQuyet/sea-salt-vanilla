@@ -1,24 +1,24 @@
 {
-  "id": "visual-styles",
+  "id": "recommended-shaderpacks",
   "order": 10,
   "title": {
-    "en": "Visual styles",
-    "zh": "视觉风格"
+    "en": "Recommended shader packs",
+    "zh": "推荐光影包"
   },
   "description": {
-    "en": "These shader packs provide the default curated shader styles for the pack.",
-    "zh": "这些光影包提供整合包默认收录的精选光影风格。"
+    "en": "These shader packs are installed and recommended as curated visual choices for the pack.",
+    "zh": "这些光影包均随整合包安装，并作为精选视觉方案推荐使用。"
   },
   "sections": [
     {
-      "id": "curated-shaderpacks",
+      "id": "visual-style-choices",
       "title": {
-        "en": "Curated shader packs",
-        "zh": "精选光影包"
+        "en": "Visual style choices",
+        "zh": "视觉风格选择"
       },
       "description": {
-        "en": "These entries come from the maintained Modrinth shader pack collection and are installed as default shader choices.",
-        "zh": "这些条目来自维护中的 Modrinth 光影包收藏夹，并作为默认光影选择安装。"
+        "en": "These entries provide distinct vanilla-friendly, cinematic, realistic, and fantasy visual directions.",
+        "zh": "这些条目提供原版友好、电影感、写实和幻想等不同视觉方向。"
       },
       "rows": [
         {
@@ -72,13 +72,46 @@
           ]
         },
         {
+          "id": "solas-shader",
+          "feature": {
+            "en": "Fantasy style with colored lighting",
+            "zh": "带彩色光照的幻想风格"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "solas-shader" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "performance-oriented-choices",
+      "title": {
+        "en": "Performance-oriented choices",
+        "zh": "性能取向选择"
+      },
+      "description": {
+        "en": "These entries have hardware requirements or performance adaptability as a defining part of their positioning.",
+        "zh": "这些条目以硬件需求或性能适配能力作为核心定位之一。"
+      },
+      "rows": [
+        {
           "id": "rethinking-voxels",
           "feature": {
-            "en": "Voxel-inspired lighting style",
-            "zh": "体素灵感光照风格"
+            "en": "Voxel-inspired lighting style for high-performance hardware",
+            "zh": "面向高性能硬件的体素光照风格"
           },
           "selected": [
             { "source": "modrinth", "slug": "rethinking-voxels" }
+          ]
+        },
+        {
+          "id": "makeup-ultra-fast-shaders",
+          "feature": {
+            "en": "Configurable shader for low-end hardware",
+            "zh": "低配友好的可配置光影"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "makeup-ultra-fast-shaders" }
           ]
         }
       ]

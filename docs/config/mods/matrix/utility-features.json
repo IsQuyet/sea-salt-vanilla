@@ -11,14 +11,14 @@
   },
   "sections": [
     {
-      "id": "lookup-inventory-and-controls",
+      "id": "information-lookup-and-tooltips",
       "title": {
-        "en": "Lookup, inventory, and controls",
-        "zh": "查询、背包与控制"
+        "en": "Information lookup and tooltips",
+        "zh": "信息查询与提示"
       },
       "description": {
-        "en": "These entries improve item lookup, inventory interaction, controls, and input handling.",
-        "zh": "这些条目改善物品查询、背包交互、控制和输入处理。"
+        "en": "These entries make item, block, entity, food, and container information easier to inspect.",
+        "zh": "这些条目让物品、方块、实体、食物和容器信息更容易查询。"
       },
       "rows": [
         {
@@ -80,7 +80,20 @@
           "selected": [
             { "source": "modrinth", "slug": "shulkerboxtooltip" }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "inventory-and-item-interaction",
+      "title": {
+        "en": "Inventory and item interaction",
+        "zh": "背包与物品操作"
+      },
+      "description": {
+        "en": "These entries improve inventory organization, item handling, placement, and movement while screens are open.",
+        "zh": "这些条目改善背包整理、物品操作、方块放置和界面打开时的移动体验。"
+      },
+      "rows": [
         {
           "id": "inventory-profiles-and-sorting",
           "feature": {
@@ -134,7 +147,20 @@
             { "source": "modrinth", "slug": "invmove" },
             { "source": "modrinth", "slug": "invmovecompats" }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "input-text-and-view-controls",
+      "title": {
+        "en": "Input, text, and view controls",
+        "zh": "输入、文本与视角控制"
+      },
+      "description": {
+        "en": "These entries improve keybindings, text input, attention cues, item highlighting, and camera controls.",
+        "zh": "这些条目改善键位、文本输入、提醒提示、物品高亮和镜头控制。"
+      },
+      "rows": [
         {
           "id": "keybinding-search-and-conflicts",
           "feature": {
@@ -222,14 +248,14 @@
       ]
     },
     {
-      "id": "hud-information-and-client-convenience",
+      "id": "hud-and-gameplay-information",
       "title": {
-        "en": "HUD information and client convenience",
-        "zh": "HUD 信息与客户端便利功能"
+        "en": "HUD and gameplay information",
+        "zh": "HUD 与游戏信息"
       },
       "description": {
-        "en": "These entries surface gameplay information or remove small interface friction.",
-        "zh": "这些条目展示游戏信息，或减少界面操作中的小摩擦。"
+        "en": "These entries present inventory, hotbar, mount, and status information during play.",
+        "zh": "这些条目在游玩过程中呈现背包、快捷栏、骑乘和状态信息。"
       },
       "rows": [
         {
@@ -284,7 +310,20 @@
           "selected": [
             { "source": "modrinth", "slug": "stylish-effects" }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "interface-and-menu-improvements",
+      "title": {
+        "en": "Interface and menu improvements",
+        "zh": "界面与菜单改进"
+      },
+      "description": {
+        "en": "These entries improve statistics, debug, world, connection, and advancement screens.",
+        "zh": "这些条目改善统计、调试、世界、连接和进度界面。"
+      },
+      "rows": [
         {
           "id": "statistics-screen-improvements",
           "feature": {
@@ -334,7 +373,20 @@
           "selected": [
             { "source": "modrinth", "slug": "better-advancements" }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "chat-and-multiplayer-convenience",
+      "title": {
+        "en": "Chat and multiplayer convenience",
+        "zh": "聊天与联机便利功能"
+      },
+      "description": {
+        "en": "These entries reduce chat friction and improve lightweight multiplayer interactions and server browsing.",
+        "zh": "这些条目减少聊天摩擦，并改善轻量联机互动和服务器浏览体验。"
+      },
+      "rows": [
         {
           "id": "chat-report-friction-removal",
           "feature": {
@@ -384,7 +436,20 @@
           "selected": [
             { "source": "modrinth", "slug": "fast-ip-ping" }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "appearance-and-targeting-controls",
+      "title": {
+        "en": "Appearance and targeting controls",
+        "zh": "外观与瞄准控制"
+      },
+      "description": {
+        "en": "These entries control armor details, wearable and skin presentation, and crosshair behavior.",
+        "zh": "这些条目控制盔甲细节、穿戴与皮肤呈现，以及准星行为。"
+      },
+      "rows": [
         {
           "id": "armor-detail-display",
           "feature": {
@@ -440,7 +505,20 @@
           "selected": [
             { "source": "modrinth", "slug": "centered-crosshair" }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "resource-world-and-capture-controls",
+      "title": {
+        "en": "Resource, world, and capture controls",
+        "zh": "资源、世界与截图控制"
+      },
+      "description": {
+        "en": "These entries streamline resource-pack and world prompts, screenshots, and visibility controls.",
+        "zh": "这些条目简化资源包与世界提示，并提供截图和可见性控制。"
+      },
+      "rows": [
         {
           "id": "draggable-resource-pack-lists",
           "feature": {

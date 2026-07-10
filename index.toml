@@ -903,13 +903,58 @@ hash = "96f866de9f3ebaa42dfcb92392684c241ff189f82ce24c3e7a32c1d0b8f37db8"
 metafile = true
 
 [[files]]
+file = "resourcepacks/als-boss-rush-x-fresh-animations.pw.toml"
+hash = "52aba9dab2b30e83b24c8bdeb6481954c65094cd38691998d43a7048f5bcbb88"
+metafile = true
+
+[[files]]
+file = "resourcepacks/als-enderman-revamped-x-fresh-animations.pw.toml"
+hash = "4b7063e6edbb4f7723c202136e740f2e2496eccf20c4c5086f464542d3d4c41c"
+metafile = true
+
+[[files]]
+file = "resourcepacks/als-piglins-revamped-x-fresh-animations.pw.toml"
+hash = "29d635639ba38826bd24962f2436599fb3599fcbea1d6382cf685152eccac53e"
+metafile = true
+
+[[files]]
+file = "resourcepacks/als-scorpions-crabs-x-fresh-animations.pw.toml"
+hash = "7b4502bcd9a30c3ea1b30d7a9976ad849bd74c07e2fabf33c68a55e4f7e5969a"
+metafile = true
+
+[[files]]
+file = "resourcepacks/als-skeletons-revamped-x-fresh-animations.pw.toml"
+hash = "288a28d0f30c0e5b9ea2704f078213f3214c9f58c38e6cfba7c54f7791b5d52d"
+metafile = true
+
+[[files]]
+file = "resourcepacks/als-zombies-revamped-x-fresh-animations.pw.toml"
+hash = "7105113c37057f59e78fd5456ac8735de95cf0f45493a36a48bbb26ac227174d"
+metafile = true
+
+[[files]]
+file = "resourcepacks/assorted-allays-x-fresh-animations.pw.toml"
+hash = "f549fbf002d7af55a5d00dc19a96f30ae0fe8e8d0f8f1510fa4c9220871ad269"
+metafile = true
+
+[[files]]
 file = "resourcepacks/chat-reporting-helper.pw.toml"
 hash = "3a34b65d2856f4f75023f02b712583472b3c0e7444b71da3ace465ef389af7d2"
 metafile = true
 
 [[files]]
+file = "resourcepacks/even-better-enchants.pw.toml"
+hash = "590d63ddd680c1a9ce96945cec48c1b1dca146090003c850cf7a9cb855452699"
+metafile = true
+
+[[files]]
 file = "resourcepacks/fa-player-extension.pw.toml"
 hash = "2e1a6866e4366cebe200dcf71ab52923b7653f76dc48741b93411ee3bf77372a"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fancy-beds.pw.toml"
+hash = "48f5227713491697281eec979e11c153c6fc68e7e43b9c2bb817dbe70fa3109b"
 metafile = true
 
 [[files]]
@@ -925,6 +970,16 @@ metafile = true
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "6a1556a0e4fcb411b33efafc3382b4abd9a6e671f140dc0d42e9aad2808e24f3"
+metafile = true
+
+[[files]]
+file = "resourcepacks/icon-fresh.pw.toml"
+hash = "21f19123eb37d3bb48d100cff35b06db83519d9eb52bee62df92960b24095500"
+metafile = true
+
+[[files]]
+file = "resourcepacks/just-expressions.pw.toml"
+hash = "35a9ac12407b86a17d0271404a4e4f0cc2ad7e47bef74ce21b3b7c22f2888750"
 metafile = true
 
 [[files]]
@@ -973,6 +1028,11 @@ hash = "608b87f75b2387a9fbd340cb18a8238bbbe5a0afc54202634b34f3000246b6e7"
 metafile = true
 
 [[files]]
+file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
+hash = "6e3714b3eee005229146eb0c36a911380f209fac39fedeaa0f2d303d7ca06402"
+metafile = true
+
+[[files]]
 file = "shaderpacks/photon-shader.pw.toml"
 hash = "e9112a2da03f65451c8c949331d71b92546bbd75ff78eac554d27f6c41e1ba29"
 metafile = true
@@ -980,4 +1040,9 @@ metafile = true
 [[files]]
 file = "shaderpacks/rethinking-voxels.pw.toml"
 hash = "0a3f01f56afd065dc65dffb073b4fc5f9ae031aaef08d95d9df92e0093ac8504"
+metafile = true
+
+[[files]]
+file = "shaderpacks/solas-shader.pw.toml"
+hash = "43c4f5e052b72a8ceaf9d8e5d1000760464d4f0e9d630827140ec4dcb21832e6"
 metafile = true

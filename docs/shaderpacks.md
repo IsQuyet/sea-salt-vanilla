@@ -4,13 +4,13 @@
 
 This page tracks which shader pack provides each visual style in released Minecraft versions. Sections group related looks, rows describe specific shader goals, and version columns name the shader pack used for that version.
 
-## Visual styles
+## Recommended shader packs
 
-These shader packs provide the default curated shader styles for the pack.
+These shader packs are installed and recommended as curated visual choices for the pack.
 
-### Curated shader packs
+### Visual style choices
 
-These entries come from the maintained Modrinth shader pack collection and are installed as default shader choices.
+These entries provide distinct vanilla-friendly, cinematic, realistic, and fantasy visual directions.
 
 | Feature | 1.21.1 |
 | --- | --- |
@@ -19,4 +19,13 @@ These entries come from the maintained Modrinth shader pack collection and are i
 | Vanilla-preserving Complementary style | [Complementary Shaders - Reimagined](https://modrinth.com/shader/complementary-reimagined) |
 | Realistic Complementary style | [Complementary Shaders - Unbound](https://modrinth.com/shader/complementary-unbound) |
 | Modern realistic lighting | [Photon Shaders](https://modrinth.com/shader/photon-shader) |
-| Voxel-inspired lighting style | [Rethinking Voxels](https://modrinth.com/shader/rethinking-voxels) |
+| Fantasy style with colored lighting | [Solas Shader](https://modrinth.com/shader/solas-shader) |
+
+### Performance-oriented choices
+
+These entries have hardware requirements or performance adaptability as a defining part of their positioning.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Voxel-inspired lighting style for high-performance hardware | [Rethinking Voxels](https://modrinth.com/shader/rethinking-voxels) |
+| Configurable shader for low-end hardware | [MakeUp - Ultra Fast](https://modrinth.com/shader/makeup-ultra-fast-shaders) |

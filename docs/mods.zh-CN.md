@@ -186,23 +186,37 @@
 
 这些条目让信息查询、导航、控制、多人体验和创造/诊断工作流更方便。
 
-### 查询、背包与控制
+### 信息查询与提示
 
-这些条目改善物品查询、背包交互、控制和输入处理。
+这些条目让物品、方块、实体、食物和容器信息更容易查询。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 物品与配方浏览 | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |
+| 方块与实体信息浮层 | [Jade 🔍](https://modrinth.com/mod/jade) |
+| 额外物品与方块提示 | [Peek](https://modrinth.com/mod/peek) |
+| 增强提示信息 | [EnhancedTooltips](https://modrinth.com/mod/enhancedtooltips) |
+| 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |
+| 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |
+
+### 背包与物品操作
+
+这些条目改善背包整理、物品操作、方块放置和界面打开时的移动体验。
 
 | 功能 | 1.21.1 | 可选替代 |
 | --- | --- | --- |
-| 物品与配方浏览 | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |  |
-| 方块与实体信息浮层 | [Jade 🔍](https://modrinth.com/mod/jade) |  |
-| 额外物品与方块提示 | [Peek](https://modrinth.com/mod/peek) |  |
-| 增强提示信息 | [EnhancedTooltips](https://modrinth.com/mod/enhancedtooltips) |  |
-| 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
-| 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | 背包配置与整理 | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
 | 已保存快捷栏管理 | [Better Saved Hotbars](https://modrinth.com/mod/better-saved-hotbars) | [Better Saved Hotbars Forked](https://modrinth.com/mod/better-saved-hotbars-forked) |
 | 鼠标背包操作 | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  |
 | 边缘方块放置 | [Reacharound](https://modrinth.com/mod/reacharound) |  |
 | 打开背包时移动 | [InvMove](https://modrinth.com/mod/invmove), [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  |
+
+### 输入、文本与视角控制
+
+这些条目改善键位、文本输入、提醒提示、物品高亮和镜头控制。
+
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
 | 键位搜索与冲突提示 | [Controlling](https://modrinth.com/mod/controlling) |  |
 | 可视化键位总览 | [VisualKeys](https://modrinth.com/mod/visualkeys) |  |
 | 闪烁提醒 | [Flash](https://modrinth.com/mod/flash) |  |
@@ -212,9 +226,9 @@
 | 告示牌与书本编辑 | [Scribble](https://modrinth.com/mod/scribble) |  |
 | 缩放控制 | [Zoomify (Zoom)](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer - It's Zoom!](https://modrinth.com/mod/ok-zoomer) |
 
-### HUD 信息与客户端便利功能
+### HUD 与游戏信息
 
-这些条目展示游戏信息，或减少界面操作中的小摩擦。
+这些条目在游玩过程中呈现背包、快捷栏、骑乘和状态信息。
 
 | 功能 | 1.21.1 | 可选替代 |
 | --- | --- | --- |
@@ -223,27 +237,55 @@
 | 沉浸式快捷栏显示 | [Immersive Hotbar](https://modrinth.com/mod/immersive-hotbar) |  |
 | 骑乘 HUD 改进 | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
 | 状态效果显示 | [Stylish Effects](https://modrinth.com/mod/stylish-effects) |  |
-| 统计界面改进 | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
-| 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |  |
-| 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
-| 断开连接确认 | [Confirm Disconnect](https://modrinth.com/mod/confirm-disconnect) |  |
-| 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
-| 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
-| 不安全聊天弹窗隐藏 | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |  |
-| 聊天界面便利功能 | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
-| 玩家拍拍互动 | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |  |
-| 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
+
+### 界面与菜单改进
+
+这些条目改善统计、调试、世界、连接和进度界面。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 统计界面改进 | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |
+| 调试界面改进 | [BetterF3](https://modrinth.com/mod/betterf3) |
+| 世界收藏管理 | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |
+| 断开连接确认 | [Confirm Disconnect](https://modrinth.com/mod/confirm-disconnect) |
+| 进度界面改进 | [Better Advancements](https://modrinth.com/mod/better-advancements) |
+
+### 聊天与联机便利功能
+
+这些条目减少聊天摩擦，并改善轻量联机互动和服务器浏览体验。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 聊天举报提示与摩擦移除 | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |
+| 不安全聊天弹窗隐藏 | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |
+| 聊天界面便利功能 | [Chat Patches](https://modrinth.com/mod/chatpatches) |
+| 玩家拍拍互动 | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |
+| 服务器列表 Ping 优化 | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |
+
+### 外观与瞄准控制
+
+这些条目控制盔甲细节、穿戴与皮肤呈现，以及准星行为。
+
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
 | 盔甲细节显示 | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | 客户端穿戴渲染 | [WearThat](https://modrinth.com/mod/wearthat) |  |
 | 游戏内皮肤管理 | [Skin Shuffle](https://modrinth.com/mod/skinshuffle) | [Quick Skin](https://modrinth.com/mod/quick-skin) |
 | 动态准星 | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
 | 居中准星 | [Centered Crosshair](https://modrinth.com/mod/centered-crosshair) |  |
-| 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
-| 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |  |
-| 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
-| 截图查看器 | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |  |
-| 截图用界面隐藏 | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |  |
-| 名称标签可见性切换 | [Toggle Nametags](https://modrinth.com/mod/hidetags) |  |
+
+### 资源、世界与截图控制
+
+这些条目简化资源包与世界提示，并提供截图和可见性控制。
+
+| 功能 | 1.21.1 |
+| --- | --- |
+| 可拖动资源包列表 | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |
+| 资源包警告隐藏 | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |
+| 自定义世界警告隐藏 | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |
+| 截图查看器 | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |
+| 截图用界面隐藏 | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |
+| 名称标签可见性切换 | [Toggle Nametags](https://modrinth.com/mod/hidetags) |
 
 ### 地图与导航
 
@@ -279,6 +321,7 @@
 | 社交客户端层 | [Essential Mod](https://modrinth.com/mod/essential) |
 | 玩家表情动作 | [Emotecraft](https://modrinth.com/mod/emotecraft) |
 | 语音聊天气泡 | [TalkBubbles](https://modrinth.com/mod/talkbubbles) |
+| 语音联动头部动画 | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | 好友互动 | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
 
 ### 可选客户端便利功能
@@ -294,7 +337,6 @@
 | 完成度追踪索引 | [Completionist's Index](https://modrinth.com/mod/completionists-index) |  |
 | 生命值条显示 | [Health Bars](https://modrinth.com/mod/new-health-bars) |  |
 | 背包标签页 | [Inventory Tabs](https://modrinth.com/mod/inventory-tabs) |  |
-| 收藏头像 | [REPO Heads](https://modrinth.com/mod/repo-heads) |  |
 
 ### 可选包管理
 
@@ -324,10 +366,10 @@
 
 这些条目服务于特定的创作、建造、录制或输入工作流。
 
-| 功能 | 1.21.1 |
-| --- | --- |
-| 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |
-| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
-| 高级创造建造工具 | [Axiom](https://modrinth.com/mod/axiom) |
-| 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) |
-| 游戏内笔记 | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |
+| 功能 | 1.21.1 | 可选替代 |
+| --- | --- | --- |
+| 投影建造 | [Litematica](https://modrinth.com/mod/litematica) |  |
+| 创造模式建造工具 | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
+| 高级创造建造工具 | [Axiom](https://modrinth.com/mod/axiom) |  |
+| 回放录制 | [ReplayMod](https://modrinth.com/mod/replaymod) | [Flashback](https://modrinth.com/mod/flashback) |
+| 游戏内笔记 | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |  |

@@ -46,6 +46,11 @@
       "name": "Shulker Box Tooltip",
       "page": "https://modrinth.com/mod/shulkerboxtooltip"
     },
+    "modrinth:36ri01j6": {
+      "slug": "assorted-allays-x-fresh-animations",
+      "name": "Assorted Allays x Fresh Animations",
+      "page": "https://modrinth.com/resourcepack/assorted-allays-x-fresh-animations"
+    },
     "modrinth:3IuO68q1": {
       "slug": "puzzle",
       "name": "Puzzle",
@@ -80,6 +85,11 @@
       "slug": "entity-model-features",
       "name": "[EMF] Entity Model Features",
       "page": "https://modrinth.com/mod/entity-model-features"
+    },
+    "modrinth:4das1Fjq": {
+      "slug": "flashback",
+      "name": "Flashback",
+      "page": "https://modrinth.com/mod/flashback"
     },
     "modrinth:4pbhwMQz": {
       "slug": "william-wythers-overhauled-overworld-(datapack)",
@@ -120,6 +130,16 @@
       "slug": "invmovecompats",
       "name": "InvMoveCompats",
       "page": "https://modrinth.com/mod/invmovecompats"
+    },
+    "modrinth:6udpuGCH": {
+      "slug": "even-better-enchants",
+      "name": "Even Better Enchants",
+      "page": "https://modrinth.com/resourcepack/even-better-enchants"
+    },
+    "modrinth:6vTt8GmW": {
+      "slug": "als-scorpions-crabs-x-fresh-animations",
+      "name": "AL's Scorpions & Crabs x Fresh Animations",
+      "page": "https://modrinth.com/resourcepack/als-scorpions-crabs-x-fresh-animations"
     },
     "modrinth:6xKUDQcB": {
       "slug": "no-resource-pack-warnings",
@@ -261,6 +281,11 @@
       "name": "Chat Animation [Smooth Chat]",
       "page": "https://modrinth.com/mod/chatanimation"
     },
+    "modrinth:ERTkxp3u": {
+      "slug": "als-enderman-revamped-x-fresh-animations",
+      "name": "AL's Enderman Revamped x Fresh Animations",
+      "page": "https://modrinth.com/resourcepack/als-enderman-revamped-x-fresh-animations"
+    },
     "modrinth:Effrh3ze": {
       "slug": "better-smoke",
       "name": "Better Smoke",
@@ -270,6 +295,11 @@
       "slug": "tcdcommons",
       "name": "TCDCommons API",
       "page": "https://modrinth.com/mod/tcdcommons"
+    },
+    "modrinth:EpQFjzrQ": {
+      "slug": "solas-shader",
+      "name": "Solas Shader",
+      "page": "https://modrinth.com/shader/solas-shader"
     },
     "modrinth:EsAfCjCV": {
       "slug": "appleskin",
@@ -506,6 +536,11 @@
       "name": "Sodium Extra",
       "page": "https://modrinth.com/mod/sodium-extra"
     },
+    "modrinth:Q1DELmr6": {
+      "slug": "als-skeletons-revamped-x-fresh-animations",
+      "name": "AL's Skeletons Revamped x Fresh Animations",
+      "page": "https://modrinth.com/resourcepack/als-skeletons-revamped-x-fresh-animations"
+    },
     "modrinth:Q1vvjJYV": {
       "slug": "bsl-shaders",
       "name": "BSL Shaders",
@@ -550,6 +585,11 @@
       "slug": "itemswapper",
       "name": "ItemSwapper",
       "page": "https://modrinth.com/mod/itemswapper"
+    },
+    "modrinth:RQUfNOVH": {
+      "slug": "als-piglins-revamped-x-fresh-animations",
+      "name": "AL's Piglins Revamped x Fresh Animations",
+      "page": "https://modrinth.com/resourcepack/als-piglins-revamped-x-fresh-animations"
     },
     "modrinth:RRxvWKNC": {
       "slug": "low-on-fire",
@@ -851,6 +891,11 @@
       "name": "Detail Armor Bar",
       "page": "https://modrinth.com/mod/detail-armor-bar"
     },
+    "modrinth:hFoOkEdk": {
+      "slug": "fancy-beds",
+      "name": "Fancy Beds",
+      "page": "https://modrinth.com/resourcepack/fancy-beds"
+    },
     "modrinth:hYykXjDp": {
       "slug": "fzzy-config",
       "name": "Fzzy Config",
@@ -871,6 +916,11 @@
       "name": "Cool Rain",
       "page": "https://modrinth.com/mod/coolrain"
     },
+    "modrinth:iKIcN9kc": {
+      "slug": "als-zombies-revamped-x-fresh-animations",
+      "name": "AL's Zombies Revamped x Fresh Animations",
+      "page": "https://modrinth.com/resourcepack/als-zombies-revamped-x-fresh-animations"
+    },
     "modrinth:iSCGCCV1": {
       "slug": "completionists-index",
       "name": "Completionist's Index",
@@ -880,6 +930,11 @@
       "slug": "customskinloader",
       "name": "CustomSkinLoader",
       "page": "https://modrinth.com/mod/customskinloader"
+    },
+    "modrinth:izsIPI7a": {
+      "slug": "makeup-ultra-fast-shaders",
+      "name": "MakeUp - Ultra Fast",
+      "page": "https://modrinth.com/shader/makeup-ultra-fast-shaders"
     },
     "modrinth:j6yrZogB": {
       "slug": "smooth-gui",
@@ -1091,6 +1146,11 @@
       "name": "Smooth Scrolling Refurbished",
       "page": "https://modrinth.com/mod/smooth-scrolling-refurbished"
     },
+    "modrinth:u4iPx1Dr": {
+      "slug": "icon-fresh",
+      "name": "Icon Fresh",
+      "page": "https://modrinth.com/resourcepack/icon-fresh"
+    },
     "modrinth:u4pgScAU": {
       "slug": "disguiseheads",
       "name": "DisguiseHeads",
@@ -1115,6 +1175,11 @@
       "slug": "headpat",
       "name": "Headpat a Friend!",
       "page": "https://modrinth.com/mod/headpat"
+    },
+    "modrinth:vPaHlT2U": {
+      "slug": "just-expressions",
+      "name": "Just Expressions",
+      "page": "https://modrinth.com/resourcepack/just-expressions"
     },
     "modrinth:vSEH1ERy": {
       "slug": "threadtweak",
@@ -1145,6 +1210,11 @@
       "slug": "centered-crosshair",
       "name": "Centered Crosshair",
       "page": "https://modrinth.com/mod/centered-crosshair"
+    },
+    "modrinth:xbzFxAxu": {
+      "slug": "als-boss-rush-x-fresh-animations",
+      "name": "AL's Boss Rush x Fresh Animations",
+      "page": "https://modrinth.com/resourcepack/als-boss-rush-x-fresh-animations"
     },
     "modrinth:xv94TkTM": {
       "slug": "controlling",

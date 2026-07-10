@@ -186,23 +186,37 @@ These entries improve player skin, cape, and cosmetic display.
 
 These entries make information, navigation, controls, multiplayer use, and creative workflows easier.
 
-### Lookup, inventory, and controls
+### Information lookup and tooltips
 
-These entries improve item lookup, inventory interaction, controls, and input handling.
+These entries make item, block, entity, food, and container information easier to inspect.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Item and recipe browser | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |
+| Block and entity overlay | [Jade 🔍](https://modrinth.com/mod/jade) |
+| Extra item and block hints | [Peek](https://modrinth.com/mod/peek) |
+| Enhanced tooltip details | [EnhancedTooltips](https://modrinth.com/mod/enhancedtooltips) |
+| Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |
+| Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |
+
+### Inventory and item interaction
+
+These entries improve inventory organization, item handling, placement, and movement while screens are open.
 
 | Feature | 1.21.1 | Alternatives |
 | --- | --- | --- |
-| Item and recipe browser | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |  |
-| Block and entity overlay | [Jade 🔍](https://modrinth.com/mod/jade) |  |
-| Extra item and block hints | [Peek](https://modrinth.com/mod/peek) |  |
-| Enhanced tooltip details | [EnhancedTooltips](https://modrinth.com/mod/enhancedtooltips) |  |
-| Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |  |
-| Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |  |
 | Inventory profiles and sorting | [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) |  |
 | Saved hotbar management | [Better Saved Hotbars](https://modrinth.com/mod/better-saved-hotbars) | [Better Saved Hotbars Forked](https://modrinth.com/mod/better-saved-hotbars-forked) |
 | Mouse inventory actions | [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks) |  |
 | Edge block placement | [Reacharound](https://modrinth.com/mod/reacharound) |  |
 | Inventory movement | [InvMove](https://modrinth.com/mod/invmove), [InvMoveCompats](https://modrinth.com/mod/invmovecompats) |  |
+
+### Input, text, and view controls
+
+These entries improve keybindings, text input, attention cues, item highlighting, and camera controls.
+
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
 | Keybinding search and conflicts | [Controlling](https://modrinth.com/mod/controlling) |  |
 | Visual keybinding overview | [VisualKeys](https://modrinth.com/mod/visualkeys) |  |
 | Attention flash notifications | [Flash](https://modrinth.com/mod/flash) |  |
@@ -212,9 +226,9 @@ These entries improve item lookup, inventory interaction, controls, and input ha
 | Sign and book text editing | [Scribble](https://modrinth.com/mod/scribble) |  |
 | Zoom controls | [Zoomify (Zoom)](https://modrinth.com/mod/zoomify) | [Logical Zoom](https://modrinth.com/mod/logical-zoom), [Ok Zoomer - It's Zoom!](https://modrinth.com/mod/ok-zoomer) |
 
-### HUD information and client convenience
+### HUD and gameplay information
 
-These entries surface gameplay information or remove small interface friction.
+These entries present inventory, hotbar, mount, and status information during play.
 
 | Feature | 1.21.1 | Alternatives |
 | --- | --- | --- |
@@ -223,27 +237,55 @@ These entries surface gameplay information or remove small interface friction.
 | Immersive hotbar display | [Immersive Hotbar](https://modrinth.com/mod/immersive-hotbar) |  |
 | Mount HUD improvements | [Leave My Bars Alone](https://modrinth.com/mod/leave-my-bars-alone) | [Better Mount HUD](https://modrinth.com/mod/better-mount-hud) |
 | Status effect display | [Stylish Effects](https://modrinth.com/mod/stylish-effects) |  |
-| Statistics screen improvements | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |  |
-| Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) |  |
-| World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |  |
-| Disconnect confirmation | [Confirm Disconnect](https://modrinth.com/mod/confirm-disconnect) |  |
-| Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) |  |
-| Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |  |
-| Insecure chat toast suppression | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |  |
-| Chat interface convenience | [Chat Patches](https://modrinth.com/mod/chatpatches) |  |
-| Player pat interactions | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |  |
-| Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |  |
+
+### Interface and menu improvements
+
+These entries improve statistics, debug, world, connection, and advancement screens.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Statistics screen improvements | [Better Statistics Screen](https://modrinth.com/mod/better-stats) |
+| Debug screen improvements | [BetterF3](https://modrinth.com/mod/betterf3) |
+| World favorite management | [Cherished Worlds](https://modrinth.com/mod/cherished-worlds) |
+| Disconnect confirmation | [Confirm Disconnect](https://modrinth.com/mod/confirm-disconnect) |
+| Advancement screen improvements | [Better Advancements](https://modrinth.com/mod/better-advancements) |
+
+### Chat and multiplayer convenience
+
+These entries reduce chat friction and improve lightweight multiplayer interactions and server browsing.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Chat report friction removal | [No Chat Reports](https://modrinth.com/mod/no-chat-reports) |
+| Insecure chat toast suppression | [Disable Insecure Chat Toast](https://modrinth.com/mod/disableinsecurechattoast) |
+| Chat interface convenience | [Chat Patches](https://modrinth.com/mod/chatpatches) |
+| Player pat interactions | [PatPat [Mod & Plugin]](https://modrinth.com/mod/patpat) |
+| Server list ping optimization | [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping) |
+
+### Appearance and targeting controls
+
+These entries control armor details, wearable and skin presentation, and crosshair behavior.
+
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
 | Armor detail display | [Detail Armor Bar Reconstructed](https://modrinth.com/mod/detail-armor-bar-reconstructed) | [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) |
 | Client-side wearable rendering | [WearThat](https://modrinth.com/mod/wearthat) |  |
 | In-game skin management | [Skin Shuffle](https://modrinth.com/mod/skinshuffle) | [Quick Skin](https://modrinth.com/mod/quick-skin) |
 | Dynamic crosshair | [Dynamic Crosshair](https://modrinth.com/mod/dynamiccrosshair) |  |
 | Centered crosshair | [Centered Crosshair](https://modrinth.com/mod/centered-crosshair) |  |
-| Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |  |
-| Resource pack warning suppression | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |  |
-| Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |  |
-| Screenshot viewer | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |  |
-| Hide interface for screenshots | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |  |
-| Nametag visibility toggle | [Toggle Nametags](https://modrinth.com/mod/hidetags) |  |
+
+### Resource, world, and capture controls
+
+These entries streamline resource-pack and world prompts, screenshots, and visibility controls.
+
+| Feature | 1.21.1 |
+| --- | --- |
+| Draggable resource pack lists | [Draggable Lists](https://modrinth.com/mod/draggable-lists) |
+| Resource pack warning suppression | [No Resource Pack Warnings](https://modrinth.com/mod/no-resource-pack-warnings) |
+| Custom world warning suppression | [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) |
+| Screenshot viewer | [Screenshot Viewer](https://modrinth.com/mod/screenshot-viewer) |
+| Hide interface for screenshots | [Better F1 Reborn](https://modrinth.com/mod/better-f1-reborn) |
+| Nametag visibility toggle | [Toggle Nametags](https://modrinth.com/mod/hidetags) |
 
 ### Map and navigation
 
@@ -279,6 +321,7 @@ These entries mainly improve the client-side experience when playing online or o
 | Social client layer | [Essential Mod](https://modrinth.com/mod/essential) |
 | Player emotes | [Emotecraft](https://modrinth.com/mod/emotecraft) |
 | Voice chat bubbles | [TalkBubbles](https://modrinth.com/mod/talkbubbles) |
+| Voice-reactive head animation | [REPO Heads](https://modrinth.com/mod/repo-heads) |
 | Friendly interactions | [Headpat a Friend!](https://modrinth.com/mod/headpat) |
 
 ### Optional client convenience
@@ -294,7 +337,6 @@ These entries add small client-side quality-of-life features that are useful but
 | Completion tracking index | [Completionist's Index](https://modrinth.com/mod/completionists-index) |  |
 | Health bar display | [Health Bars](https://modrinth.com/mod/new-health-bars) |  |
 | Inventory tabs | [Inventory Tabs](https://modrinth.com/mod/inventory-tabs) |  |
-| Collectible heads | [REPO Heads](https://modrinth.com/mod/repo-heads) |  |
 
 ### Optional pack management
 
@@ -324,10 +366,10 @@ These entries can strongly shape visual or audio ambience, so they are kept as o
 
 These entries support specific creative, building, recording, or input workflows.
 
-| Feature | 1.21.1 |
-| --- | --- |
-| Schematic building | [Litematica](https://modrinth.com/mod/litematica) |
-| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |
-| Advanced creative building tools | [Axiom](https://modrinth.com/mod/axiom) |
-| Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) |
-| In-game notes | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |
+| Feature | 1.21.1 | Alternatives |
+| --- | --- | --- |
+| Schematic building | [Litematica](https://modrinth.com/mod/litematica) |  |
+| Creative builder tools | [LotTweaks](https://www.curseforge.com/minecraft/mc-mods/lottweaks) |  |
+| Advanced creative building tools | [Axiom](https://modrinth.com/mod/axiom) |  |
+| Replay recording | [ReplayMod](https://modrinth.com/mod/replaymod) | [Flashback](https://modrinth.com/mod/flashback) |
+| In-game notes | [Vanilla Notebook ](https://modrinth.com/mod/notebook) |  |
