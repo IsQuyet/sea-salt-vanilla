@@ -1,58 +1,138 @@
-"""Generated data invariant checks for docs, packwiz, and data catalogs."""
+"""Validate generated project data against the formal P/O/D/A contract."""
 
 from __future__ import annotations
 
 from typing import Any
 
 from project_data_common import (
-    TARGET_VERSION,
-    iter_feature_versions,
+    load_documentation_catalog,
     load_optional_meta,
     load_project_meta,
-    selected_project_refs_from_version,
 )
-from project_data_identity import project_ref_key
+from project_data_contract import (
+    build_project_data_indexes,
+    collect_documentation_project_refs,
+    index_projects_by_identity,
+    resolved_ref_identities,
+)
 
 
-def collect_documented_ref_sets(groups: list[dict[str, Any]]) -> dict[str, set[str]]:
-    """Return the project keys declared by docs config for the target Minecraft version."""
-    default_refs: set[str] = set()
-    optional_refs: set[str] = set()
+def remember_set_difference(
+    issues: list[str],
+    label: str,
+    values: set[str],
+) -> None:
+    if values:
+        issues.append(f"{label}: {', '.join(sorted(values))}")
 
-    def ref_key(ref: Any) -> str | None:
-        key = project_ref_key(ref)
-        return key.lower() if key else None
 
-    for group, section, row, version, version_data in iter_feature_versions(groups):
-        if version != TARGET_VERSION:
-            continue
-
-        is_optional_group = bool(group["_optional"])
-        selected_ref_set = optional_refs if is_optional_group else default_refs
-
-        selected_refs = selected_project_refs_from_version(
-            group,
-            section,
-            row,
-            TARGET_VERSION,
-            version_data,
-        )
-        for selected_ref in selected_refs:
-            selected_key = ref_key(selected_ref)
-            if selected_key:
-                selected_ref_set.add(selected_key)
-
-        for alternative in version_data.get("alternatives", []):
-            alternative_key = ref_key(alternative)
-            if alternative_key:
-                optional_refs.add(alternative_key)
-
-    optional_refs -= default_refs
-    return {
-        "default": default_refs,
-        "optional": optional_refs,
-        "all": default_refs | optional_refs,
+def catalog_shape_issues(
+    catalogs: dict[str, dict[str, dict[str, Any]]],
+) -> list[str]:
+    """Keep human-facing slug keys consistent and globally unambiguous."""
+    issues: list[str] = []
+    keys_by_catalog = {
+        label: set(catalog)
+        for label, catalog in catalogs.items()
     }
+
+    for label, catalog in catalogs.items():
+        for catalog_key, project in catalog.items():
+            canonical_slug = str(project.get("slug") or "").lower()
+            if canonical_slug != catalog_key:
+                issues.append(
+                    f"{label} key {catalog_key} does not match canonical slug "
+                    f"{canonical_slug or '<missing>'}."
+                )
+
+    labels = list(catalogs)
+    for left_index, left_label in enumerate(labels):
+        for right_label in labels[left_index + 1 :]:
+            overlap = keys_by_catalog[left_label] & keys_by_catalog[right_label]
+            remember_set_difference(
+                issues,
+                f"{left_label} intersects {right_label} by catalog key",
+                overlap,
+            )
+    return issues
+
+
+def documentation_source_issues(
+    groups: list[dict[str, Any]],
+    default_projects: dict[str, dict[str, Any]],
+    optional_projects: dict[str, dict[str, Any]],
+    documentation_catalog: dict[str, dict[str, Any]],
+) -> list[str]:
+    """Verify P/O and the all-version catalog are generated from the right docs scope."""
+    documented_refs = collect_documentation_project_refs(groups)
+    issues: list[str] = []
+
+    expected_default_ids, default_ref_issues = resolved_ref_identities(
+        documented_refs.defaults,
+        documentation_catalog,
+        label="P",
+    )
+    expected_optional_ids, optional_ref_issues = resolved_ref_identities(
+        documented_refs.optional,
+        documentation_catalog,
+        label="O",
+    )
+    expected_catalog_ids, catalog_ref_issues = resolved_ref_identities(
+        documented_refs.all_versions,
+        documentation_catalog,
+        label="project-catalog",
+    )
+    issues.extend(default_ref_issues)
+    issues.extend(optional_ref_issues)
+    issues.extend(catalog_ref_issues)
+
+    actual_default_index, actual_default_issues = index_projects_by_identity(
+        default_projects,
+        label="P",
+    )
+    actual_optional_index, actual_optional_issues = index_projects_by_identity(
+        optional_projects,
+        label="O",
+    )
+    actual_catalog_index, actual_catalog_issues = index_projects_by_identity(
+        documentation_catalog,
+        label="project-catalog",
+    )
+    issues.extend(actual_default_issues)
+    issues.extend(actual_optional_issues)
+    issues.extend(actual_catalog_issues)
+
+    remember_set_difference(
+        issues,
+        "projects.json contains identities outside target-version defaults",
+        set(actual_default_index) - expected_default_ids,
+    )
+    remember_set_difference(
+        issues,
+        "target-version defaults missing from projects.json",
+        expected_default_ids - set(actual_default_index),
+    )
+    remember_set_difference(
+        issues,
+        "optional.json contains identities outside target-version optional refs",
+        set(actual_optional_index) - expected_optional_ids,
+    )
+    remember_set_difference(
+        issues,
+        "target-version optional refs missing from optional.json",
+        expected_optional_ids - set(actual_optional_index),
+    )
+    remember_set_difference(
+        issues,
+        "project-catalog.json contains identities outside documented versions",
+        set(actual_catalog_index) - expected_catalog_ids,
+    )
+    remember_set_difference(
+        issues,
+        "documented-version identities missing from project-catalog.json",
+        expected_catalog_ids - set(actual_catalog_index),
+    )
+    return issues
 
 
 def generated_data_invariants(
@@ -60,53 +140,33 @@ def generated_data_invariants(
     installed: list[dict[str, Any]],
     declared_dependencies: dict[str, dict[str, Any]],
 ) -> list[str]:
-    """Verify generated data catalogs remain disjoint and match their source sets."""
-    project_keys = set(load_project_meta())
-    optional_keys = set(load_optional_meta())
-    dependency_keys = set(declared_dependencies)
-    installed_keys = {str(project["slug"]).lower() for project in installed}
-    documented_refs = collect_documented_ref_sets(groups)
+    """Verify target intent, dependency-only data, and packwiz installed facts."""
+    default_projects = load_project_meta()
+    optional_projects = load_optional_meta()
+    documentation_catalog = load_documentation_catalog()
 
-    issues: list[str] = []
-
-    def remember_set_difference(label: str, values: set[str]) -> None:
-        if values:
-            issues.append(f"{label}: {', '.join(sorted(values))}")
-
-    remember_set_difference("projects.json intersects optional.json", project_keys & optional_keys)
-    remember_set_difference("projects.json intersects dependencies.json", project_keys & dependency_keys)
-    remember_set_difference("optional.json intersects dependencies.json", optional_keys & dependency_keys)
-    remember_set_difference(
-        "projects.json contains entries outside docs default refs",
-        project_keys - documented_refs["default"],
+    indexes = build_project_data_indexes(
+        defaults=default_projects,
+        optional=optional_projects,
+        dependencies=declared_dependencies,
+        installed=installed,
     )
-    remember_set_difference(
-        "docs default refs missing from projects.json",
-        documented_refs["default"] - project_keys,
+    issues = list(indexes.issues)
+    issues.extend(
+        catalog_shape_issues(
+            {
+                "projects.json": default_projects,
+                "optional.json": optional_projects,
+                "dependencies.json": declared_dependencies,
+            }
+        )
     )
-    remember_set_difference(
-        "optional.json contains entries outside docs optional refs",
-        optional_keys - documented_refs["optional"],
+    issues.extend(
+        documentation_source_issues(
+            groups,
+            default_projects,
+            optional_projects,
+            documentation_catalog,
+        )
     )
-    remember_set_difference(
-        "docs optional refs missing from optional.json",
-        documented_refs["optional"] - optional_keys,
-    )
-    remember_set_difference(
-        "projects.json + optional.json contains entries outside docs refs",
-        (project_keys | optional_keys) - documented_refs["all"],
-    )
-    remember_set_difference(
-        "docs refs missing from projects.json + optional.json",
-        documented_refs["all"] - (project_keys | optional_keys),
-    )
-    remember_set_difference(
-        "projects.json + dependencies.json contains entries outside packwiz",
-        (project_keys | dependency_keys) - installed_keys,
-    )
-    remember_set_difference(
-        "packwiz installed entries missing from projects.json + dependencies.json",
-        installed_keys - (project_keys | dependency_keys),
-    )
-
-    return issues
+    return list(dict.fromkeys(issues))

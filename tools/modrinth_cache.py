@@ -16,6 +16,7 @@ from project_cache import (
     get_project_cache_entry,
     load_project_cache,
     project_cache_has_entry,
+    remove_project_cache_entry,
     set_project_cache_error,
     store_project_cache_entry,
 )
@@ -34,27 +35,6 @@ MODRINTH_PROJECT_CACHE_SPEC = ProjectCacheSpec(
 MODRINTH_VERSIONS_API = "https://api.modrinth.com/v2/versions"
 MODRINTH_PROJECT_API = "https://api.modrinth.com/v2/project"
 MODRINTH_PROJECTS_API = "https://api.modrinth.com/v2/projects"
-MODRINTH_PROJECT_CACHE_FIELDS = [
-    "id",
-    "slug",
-    "title",
-    "project_type",
-    "description",
-    "client_side",
-    "server_side",
-    "categories",
-    "additional_categories",
-    "loaders",
-    "game_versions",
-    "license",
-    "icon_url",
-    "color",
-    "published",
-    "updated",
-    "approved",
-    "queued",
-    "status",
-]
 
 
 class MissingModrinthCacheError(RuntimeError):
@@ -68,7 +48,10 @@ class ModrinthFetchError(RuntimeError):
 def load_modrinth_project_cache() -> dict[str, Any]:
     """Load the structured Modrinth project cache."""
     try:
-        return load_project_cache(MODRINTH_PROJECT_CACHE_SPEC)
+        return load_project_cache(
+            MODRINTH_PROJECT_CACHE_SPEC,
+            migrate_legacy_entry=normalize_modrinth_project,
+        )
     except ProjectCacheError as error:
         raise MissingModrinthCacheError(str(error)) from error
 
@@ -77,20 +60,41 @@ def load_dependency_cache() -> dict[str, Any]:
     """Load the flat Modrinth version/dependency cache."""
     if not DEPENDENCY_CACHE.exists():
         return {}
-    return json.loads(DEPENDENCY_CACHE.read_text(encoding="utf-8-sig"))
+    cache = json.loads(DEPENDENCY_CACHE.read_text(encoding="utf-8-sig"))
+    if not isinstance(cache, dict):
+        raise MissingModrinthCacheError(
+            f"{DEPENDENCY_CACHE} has an unsupported format. Delete it and refresh the cache."
+        )
+
+    normalized_cache: dict[str, Any] = {}
+    for version_id, entry in cache.items():
+        if cache_entry_has_error(entry):
+            normalized_cache[str(version_id)] = {"error": str(entry.get("error"))}
+            continue
+        normalized_cache[str(version_id)] = normalize_modrinth_version(entry)
+    return normalized_cache
 
 
 def is_complete_version_cache_entry(entry: Any) -> bool:
     """Return whether a cached Modrinth version entry has the fields used by checks."""
-    return isinstance(entry, dict) and not cache_entry_has_error(entry) and "loaders" in entry
+    return (
+        isinstance(entry, dict)
+        and not cache_entry_has_error(entry)
+        and set(entry) == {"project_id", "loaders", "dependencies"}
+        and bool(entry.get("project_id"))
+        and isinstance(entry.get("loaders"), list)
+        and isinstance(entry.get("dependencies"), list)
+        and all(isinstance(dependency, dict) for dependency in entry["dependencies"])
+    )
 
 
-def compact_modrinth_project(data: dict[str, Any]) -> dict[str, Any]:
-    """Keep only Modrinth project metadata used by project-data tooling."""
+def normalize_modrinth_project(data: dict[str, Any]) -> dict[str, str]:
+    """Convert Modrinth project metadata into the shared minimal project shape."""
     return {
-        field_name: value
-        for field_name in MODRINTH_PROJECT_CACHE_FIELDS
-        if (value := data.get(field_name)) not in (None, "", [], {})
+        "id": str(data.get("id") or ""),
+        "slug": str(data.get("slug") or "").lower(),
+        "name": str(data.get("name") or data.get("title") or ""),
+        "type": str(data.get("type") or data.get("project_type") or ""),
     }
 
 
@@ -100,17 +104,17 @@ def cache_modrinth_project(
     *,
     lookup_key: str | None = None,
 ) -> dict[str, Any]:
-    """Store a Modrinth project and its id/slug aliases."""
-    project_id = str(data.get("id") or lookup_key or "")
-    compact_project = compact_modrinth_project(data)
+    """Store a normalized Modrinth project."""
+    normalized_project = normalize_modrinth_project(data)
+    project_id = normalized_project["id"]
     if not project_id:
-        return compact_project
+        raise ModrinthFetchError("Modrinth project response is missing a project id.")
 
     return store_project_cache_entry(
         cache,
-        compact_project,
+        normalized_project,
         project_id=project_id,
-        slug=str(data.get("slug") or ""),
+        slug=normalized_project["slug"],
         lookup_key=lookup_key,
     )
 
@@ -124,6 +128,8 @@ def fetch_modrinth_project(
     """Fetch one Modrinth project by id or slug."""
     if not force and (cached := get_project_cache_entry(project_ref, cache)):
         return cached
+    if force:
+        remove_project_cache_entry(project_ref, cache)
 
     request = urllib.request.Request(
         f"{MODRINTH_PROJECT_API}/{urllib.parse.quote(project_ref, safe='')}",
@@ -133,7 +139,7 @@ def fetch_modrinth_project(
         with urllib.request.urlopen(request, timeout=30) as response:
             project = json.loads(response.read().decode("utf-8"))
     except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
-        set_project_cache_error(project_ref, cache, str(error), retryable=True)
+        set_project_cache_error(project_ref, cache, str(error))
         return None
 
     return cache_modrinth_project(project, cache, lookup_key=project_ref)
@@ -154,6 +160,10 @@ def fetch_missing_modrinth_projects(
     if not missing_refs:
         return
 
+    if force:
+        for project_ref in missing_refs:
+            remove_project_cache_entry(project_ref, cache)
+
     for batch_start in range(0, len(missing_refs), 100):
         batch = missing_refs[batch_start : batch_start + 100]
         query = urllib.parse.urlencode({"ids": json.dumps(batch)})
@@ -171,10 +181,10 @@ def fetch_missing_modrinth_projects(
 
         found_refs: set[str] = set()
         for project in projects:
-            compact_project = cache_modrinth_project(project, cache)
-            if project_id := compact_project.get("id"):
+            normalized_project = cache_modrinth_project(project, cache)
+            if project_id := normalized_project.get("id"):
                 found_refs.add(str(project_id))
-            if slug := compact_project.get("slug"):
+            if slug := normalized_project.get("slug"):
                 found_refs.add(str(slug))
 
         for project_ref in batch:
@@ -183,22 +193,44 @@ def fetch_missing_modrinth_projects(
                     project_ref,
                     cache,
                     "Project not returned by Modrinth API",
-                    retryable=False,
                 )
+
+
+def normalize_modrinth_dependency(dependency: Any) -> dict[str, str] | None:
+    """Keep only dependency identity and relationship fields used by traversal."""
+    if not isinstance(dependency, dict):
+        return None
+    project_id = str(dependency.get("project_id") or "")
+    dependency_type = str(dependency.get("dependency_type") or "")
+    if not project_id or not dependency_type:
+        return None
+    return {
+        "project_id": project_id,
+        "dependency_type": dependency_type,
+    }
+
+
+def normalize_modrinth_version(data: Any) -> dict[str, Any]:
+    """Convert version metadata into the minimal dependency-analysis shape."""
+    if not isinstance(data, dict):
+        return {"project_id": "", "loaders": [], "dependencies": []}
+    dependencies = [
+        normalized_dependency
+        for dependency in data.get("dependencies", [])
+        if (normalized_dependency := normalize_modrinth_dependency(dependency))
+    ]
+    return {
+        "project_id": str(data.get("project_id") or ""),
+        "loaders": [str(loader) for loader in data.get("loaders", [])],
+        "dependencies": dependencies,
+    }
 
 
 def cache_version(data: dict[str, Any], cache: dict[str, Any]) -> None:
     version_id = str(data.get("id") or "")
     if not version_id:
         return
-    cache[version_id] = {
-        "id": data.get("id"),
-        "project_id": data.get("project_id"),
-        "version_number": data.get("version_number"),
-        "loaders": data.get("loaders", []),
-        "files": [file.get("filename") for file in data.get("files", []) if file.get("filename")],
-        "dependencies": data.get("dependencies", []),
-    }
+    cache[version_id] = normalize_modrinth_version(data)
 
 
 def missing_modrinth_version_cache_ids(version_ids: list[str], cache: dict[str, Any]) -> list[str]:
@@ -208,6 +240,20 @@ def missing_modrinth_version_cache_ids(version_ids: list[str], cache: dict[str, 
         for version_id in sorted(set(version_ids))
         if version_id and not is_complete_version_cache_entry(cache.get(version_id))
     ]
+
+
+def retain_modrinth_version_cache_entries(
+    version_ids: list[str],
+    cache: dict[str, Any],
+) -> None:
+    """Keep only locked versions required by the current packwiz metadata."""
+    retained_cache = {
+        version_id: cache[version_id]
+        for version_id in sorted(set(version_ids))
+        if version_id in cache
+    }
+    cache.clear()
+    cache.update(retained_cache)
 
 
 def require_modrinth_version_cache(version_ids: list[str], cache: dict[str, Any]) -> None:
@@ -252,7 +298,7 @@ def fetch_missing_modrinth_versions(
                 versions = json.loads(response.read().decode("utf-8"))
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
             for version_id in batch:
-                cache[version_id] = {"error": str(error), "retryable": True}
+                cache[version_id] = {"error": str(error)}
             continue
 
         found_ids: set[str] = set()
@@ -262,8 +308,7 @@ def fetch_missing_modrinth_versions(
                 found_ids.add(str(version_id))
 
         for version_id in batch:
-            if version_id not in found_ids and version_id not in cache:
+            if version_id not in found_ids:
                 cache[version_id] = {
                     "error": "Version not returned by Modrinth API",
-                    "retryable": False,
                 }

@@ -4,12 +4,16 @@
 from __future__ import annotations
 
 from generate_project_docs import ROOT, category_outputs
-from project_data_common import CATEGORIES, load_feature_groups, load_project_catalog
+from project_data_common import (
+    CATEGORIES,
+    load_documentation_catalog,
+    load_feature_groups,
+)
 
 
 def main() -> None:
     all_groups = load_feature_groups()
-    project_catalog = load_project_catalog()
+    project_catalog = load_documentation_catalog()
 
     mismatched_paths: list[str] = []
     for category in CATEGORIES:

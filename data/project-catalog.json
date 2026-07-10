@@ -27,6 +27,27 @@
     "slug": "appleskin",
     "id": "EsAfCjCV"
   },
+  "asyncparticles": {
+    "name": "AsyncParticles",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "asyncparticles",
+    "id": "c3onkd5k"
+  },
+  "atmospherics": {
+    "name": "ATMOSPHERICS",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "atmospherics",
+    "id": "ft2cYBpB"
+  },
+  "axiom": {
+    "name": "Axiom",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "axiom",
+    "id": "N6n5dqoA"
+  },
   "badoptimizations": {
     "name": "BadOptimizations",
     "type": "mod",
@@ -41,6 +62,13 @@
     "slug": "better-advancements",
     "id": "Q2OqKxDG"
   },
+  "better-block-entities": {
+    "name": "Better Block Entities",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "better-block-entities",
+    "id": "ONZm0H7Y"
+  },
   "better-f1-reborn": {
     "name": "Better F1 Reborn",
     "type": "mod",
@@ -48,12 +76,33 @@
     "slug": "better-f1-reborn",
     "id": "2JIeCmxb"
   },
+  "better-mount-hud": {
+    "name": "Better Mount HUD",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "better-mount-hud",
+    "id": "kqJFAPU9"
+  },
   "better-saved-hotbars": {
     "name": "Better Saved Hotbars",
     "type": "mod",
     "source": "modrinth",
     "slug": "better-saved-hotbars",
     "id": "Y5DGNK4o"
+  },
+  "better-saved-hotbars-forked": {
+    "name": "Better Saved Hotbars Forked",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "better-saved-hotbars-forked",
+    "id": "GdSOHJIu"
+  },
+  "better-smoke": {
+    "name": "Better Smoke",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "better-smoke",
+    "id": "Effrh3ze"
   },
   "better-stats": {
     "name": "Better Statistics Screen",
@@ -68,6 +117,13 @@
     "source": "modrinth",
     "slug": "betterf3",
     "id": "8shC1gFX"
+  },
+  "biomeinfo": {
+    "name": "BiomeInfo",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "biomeinfo",
+    "id": "Fws7jX8r"
   },
   "bliss-shader": {
     "name": "Bliss Shaders",
@@ -89,6 +145,13 @@
     "source": "modrinth",
     "slug": "boat-item-view",
     "id": "BdKIyOLe"
+  },
+  "bobby": {
+    "name": "Bobby",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "bobby",
+    "id": "M08ruV16"
   },
   "bsl-shaders": {
     "name": "BSL Shaders",
@@ -202,6 +265,13 @@
     "slug": "complementary-unbound",
     "id": "R6NEzAwj"
   },
+  "completionists-index": {
+    "name": "Completionist's Index",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "completionists-index",
+    "id": "iSCGCCV1"
+  },
   "configured": {
     "name": "Configured",
     "type": "mod",
@@ -272,12 +342,40 @@
     "slug": "dcwa",
     "id": "HdwRs3kc"
   },
+  "default-options": {
+    "name": "Default Options",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "default-options",
+    "id": "WEg59z5b"
+  },
+  "delete-worlds-to-trash": {
+    "name": "Delete Worlds To Trash",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "delete-worlds-to-trash",
+    "id": "7diJQfvM"
+  },
+  "detail-armor-bar": {
+    "name": "Detail Armor Bar",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "detail-armor-bar",
+    "id": "hAt6ty93"
+  },
   "detail-armor-bar-reconstructed": {
     "name": "Detail Armor Bar Reconstructed",
     "type": "mod",
     "source": "modrinth",
     "slug": "detail-armor-bar-reconstructed",
     "id": "Si9Uim4y"
+  },
+  "detailed-animations": {
+    "name": "Detailed Animations",
+    "type": "resourcepack",
+    "source": "modrinth",
+    "slug": "detailed-animations",
+    "id": "9pR04wDX"
   },
   "disableinsecurechattoast": {
     "name": "Disable Insecure Chat Toast",
@@ -349,6 +447,27 @@
     "slug": "elytra-contrails-mod",
     "id": "dWMHBEAQ"
   },
+  "emotecraft": {
+    "name": "Emotecraft",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "emotecraft",
+    "id": "pZ2wrerK"
+  },
+  "enchantment-descriptions": {
+    "name": "Enchantment Descriptions",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "enchantment-descriptions",
+    "id": "UVtY3ZAC"
+  },
+  "enchantment-glint-outline": {
+    "name": "Enchantment Glint Outline",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "enchantment-glint-outline",
+    "id": "Qx2rzv1x"
+  },
   "enhancedtooltips": {
     "name": "EnhancedTooltips",
     "type": "mod",
@@ -376,6 +495,13 @@
     "source": "modrinth",
     "slug": "entitytexturefeatures",
     "id": "BVzZfTc1"
+  },
+  "essential": {
+    "name": "Essential Mod",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "essential",
+    "id": "k2ZPuTBm"
   },
   "euphoria-patches": {
     "name": "Euphoria Patches",
@@ -496,6 +622,13 @@
     "slug": "globalpacks",
     "id": "NRLPy2mk"
   },
+  "headpat": {
+    "name": "Headpat a Friend!",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "headpat",
+    "id": "vETxChiy"
+  },
   "hidetags": {
     "name": "Toggle Nametags",
     "type": "mod",
@@ -566,6 +699,13 @@
     "slug": "inventory-profiles-next",
     "id": "O7RBXm3n"
   },
+  "inventory-tabs": {
+    "name": "Inventory Tabs",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "inventory-tabs",
+    "id": "VD1aynYU"
+  },
   "inventoryhudplus": {
     "name": "InventoryHUD+",
     "type": "mod",
@@ -608,6 +748,13 @@
     "slug": "itemphysic-lite",
     "id": "OuyCgP8t"
   },
+  "itemswapper": {
+    "name": "ItemSwapper",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "itemswapper",
+    "id": "RPOSBQgq"
+  },
   "ixeris": {
     "name": "Ixeris",
     "type": "mod",
@@ -621,6 +768,13 @@
     "source": "modrinth",
     "slug": "jade",
     "id": "nvQzSEkH"
+  },
+  "journeymap": {
+    "name": "JourneyMap",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "journeymap",
+    "id": "lfHFW1mp"
   },
   "justenoughcharacters": {
     "name": "JustEnoughCharacters",
@@ -636,6 +790,13 @@
     "slug": "krypton",
     "id": "fQEb0iXm"
   },
+  "lambdynamiclights": {
+    "name": "LambDynamicLights - Dynamic Lights",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "lambdynamiclights",
+    "id": "yBW8D80W"
+  },
   "leave-my-bars-alone": {
     "name": "Leave My Bars Alone",
     "type": "mod",
@@ -643,12 +804,40 @@
     "slug": "leave-my-bars-alone",
     "id": "gK9mebQg"
   },
+  "leawind-third-person": {
+    "name": "Leawind's Third Person",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "leawind-third-person",
+    "id": "S3D3QF0M"
+  },
+  "litematica": {
+    "name": "Litematica",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "litematica",
+    "id": "bEpr0Arc"
+  },
   "lithium": {
     "name": "Lithium",
     "type": "mod",
     "source": "modrinth",
     "slug": "lithium",
     "id": "gvQqBUqZ"
+  },
+  "logical-zoom": {
+    "name": "Logical Zoom",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "logical-zoom",
+    "id": "8bOImuGU"
+  },
+  "lottweaks": {
+    "name": "LotTweaks",
+    "type": "mod",
+    "source": "curseforge",
+    "slug": "lottweaks",
+    "id": "417768"
   },
   "low-on-fire": {
     "name": "Low On Fire",
@@ -734,6 +923,20 @@
     "slug": "mouse-tweaks",
     "id": "aC3cM3Vq"
   },
+  "natural-waters": {
+    "name": "Natural Waters",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "natural-waters",
+    "id": "aYttCyCw"
+  },
+  "new-health-bars": {
+    "name": "Health Bars",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "new-health-bars",
+    "id": "A3VSiTms"
+  },
   "no-chat-reports": {
     "name": "No Chat Reports",
     "type": "mod",
@@ -755,12 +958,33 @@
     "slug": "not-enough-animations",
     "id": "MPCX6s5C"
   },
+  "notebook": {
+    "name": "Vanilla Notebook ",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "notebook",
+    "id": "KaKEuH9Q"
+  },
   "noxesium": {
     "name": "Noxesium",
     "type": "mod",
     "source": "modrinth",
     "slug": "noxesium",
     "id": "Kw7Sm3Xf"
+  },
+  "ok-zoomer": {
+    "name": "Ok Zoomer - It's Zoom!",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "ok-zoomer",
+    "id": "aXf2OSFU"
+  },
+  "open-loader": {
+    "name": "Open Loader",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "open-loader",
+    "id": "KwWsINvD"
   },
   "optigui": {
     "name": "OptiGUI",
@@ -811,12 +1035,26 @@
     "slug": "particle-interactions",
     "id": "xFCYuAs8"
   },
+  "particle-rain": {
+    "name": "Particle Rain",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "particle-rain",
+    "id": "nrikgvxm"
+  },
   "patpat": {
     "name": "PatPat [Mod & Plugin]",
     "type": "mod",
     "source": "modrinth",
     "slug": "patpat",
     "id": "dw7LChq9"
+  },
+  "paxi": {
+    "name": "Paxi",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "paxi",
+    "id": "CU0PAyzb"
   },
   "peek": {
     "name": "Peek",
@@ -839,6 +1077,20 @@
     "slug": "photon-shader",
     "id": "lLqFfGNs"
   },
+  "pick-up-notifier": {
+    "name": "Pick Up Notifier",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "pick-up-notifier",
+    "id": "ZX66K16c"
+  },
+  "pixelshot": {
+    "name": "Pixelshot",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "pixelshot",
+    "id": "MUoQGQVU"
+  },
   "presence-footsteps": {
     "name": "Presence Footsteps",
     "type": "mod",
@@ -852,6 +1104,13 @@
     "source": "modrinth",
     "slug": "puzzle",
     "id": "3IuO68q1"
+  },
+  "quick-skin": {
+    "name": "Quick Skin",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "quick-skin",
+    "id": "zAIE84Ch"
   },
   "raised": {
     "name": "Raised",
@@ -867,6 +1126,13 @@
     "slug": "reacharound",
     "id": "r3VgI4QN"
   },
+  "real-camera": {
+    "name": "Real Camera",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "real-camera",
+    "id": "fYYSAh4R"
+  },
   "recolourful-containers-gui": {
     "name": "Recolourful Containers GUI + HUD",
     "type": "resourcepack",
@@ -874,12 +1140,40 @@
     "slug": "recolourful-containers-gui",
     "id": "lewweaHO"
   },
+  "recursiveresources": {
+    "name": "Recursive Resources",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "recursiveresources",
+    "id": "CcL3MXyI"
+  },
   "rei": {
     "name": "Roughly Enough Items (REI)",
     "type": "mod",
     "source": "modrinth",
     "slug": "rei",
     "id": "nfn13YXA"
+  },
+  "replaymod": {
+    "name": "ReplayMod",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "replaymod",
+    "id": "Nv2fQJo5"
+  },
+  "repo-heads": {
+    "name": "REPO Heads",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "repo-heads",
+    "id": "Jaoe8qGe"
+  },
+  "resource-pack-overrides": {
+    "name": "Resource Pack Overrides",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "resource-pack-overrides",
+    "id": "YsFycamt"
   },
   "resourcify": {
     "name": "Resourcify",
@@ -923,6 +1217,13 @@
     "slug": "seamless",
     "id": "rhyHyQke"
   },
+  "server-unpacker": {
+    "name": "Server Unpacker",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "server-unpacker",
+    "id": "B3fgRqfr"
+  },
   "shoulder-surfing-reloaded": {
     "name": "Shoulder Surfing Reloaded",
     "type": "mod",
@@ -951,6 +1252,13 @@
     "slug": "skinshuffle",
     "id": "3s19I5jr"
   },
+  "slot-cycler": {
+    "name": "Slot Cycler",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "slot-cycler",
+    "id": "3kl8Lmm9"
+  },
   "smooth-gui": {
     "name": "Smooth Gui",
     "type": "mod",
@@ -964,6 +1272,13 @@
     "source": "modrinth",
     "slug": "smooth-scroll",
     "id": "CllP7wW0"
+  },
+  "smooth-scrolling-refurbished": {
+    "name": "Smooth Scrolling Refurbished",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "smooth-scrolling-refurbished",
+    "id": "trr0scVt"
   },
   "smooth-swapping": {
     "name": "Smooth Swapping",
@@ -1000,6 +1315,13 @@
     "slug": "sound",
     "id": "ZouiUX7t"
   },
+  "sound-physics-remastered": {
+    "name": "Sound Physics Remastered",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "sound-physics-remastered",
+    "id": "qyVF9oeo"
+  },
   "spark": {
     "name": "spark",
     "type": "mod",
@@ -1027,6 +1349,13 @@
     "source": "modrinth",
     "slug": "subtle-effects",
     "id": "4q8UOK1d"
+  },
+  "talkbubbles": {
+    "name": "TalkBubbles",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "talkbubbles",
+    "id": "BUpChT1v"
   },
   "talkingheads": {
     "name": "Talking Heads",
@@ -1111,6 +1440,20 @@
     "source": "modrinth",
     "slug": "visualkeys",
     "id": "HEds12HI"
+  },
+  "voxelmap-updated": {
+    "name": "VoxelMap-Updated",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "voxelmap-updated",
+    "id": "wkzK5379"
+  },
+  "voxy": {
+    "name": "voxy",
+    "type": "mod",
+    "source": "modrinth",
+    "slug": "voxy",
+    "id": "fxxUqruK"
   },
   "wavey-capes": {
     "name": "Wavey Capes",

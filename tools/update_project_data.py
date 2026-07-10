@@ -13,10 +13,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 COMMANDS = {
     "projects": "tools/generate_project_registry.py",
+    "locks": "tools/generate_modrinth_locks.py",
     "dependencies": "tools/generate_project_dependencies.py",
     "docs": "tools/generate_project_docs.py",
 }
-GENERATE_STEPS = ["projects", "dependencies", "docs"]
+GENERATE_STEPS = ["projects", "locks", "dependencies", "docs"]
 CHECK_STEPS = ["tools/check_project_data.py", "tools/check_generated_docs.py"]
 
 

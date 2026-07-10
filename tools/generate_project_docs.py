@@ -9,8 +9,8 @@ from typing import Any
 from project_data_common import (
     CATEGORIES,
     PROJECT_TYPE_CURSEFORGE_PATHS,
+    load_documentation_catalog,
     load_feature_groups,
-    load_project_catalog,
     markdown_escape,
     read_json,
     selected_project_refs_from_version,
@@ -222,7 +222,7 @@ def category_outputs(
 
 def main() -> None:
     all_groups = load_feature_groups()
-    project_catalog = load_project_catalog()
+    project_catalog = load_documentation_catalog()
 
     outputs: dict[Path, str] = {}
     for category in CATEGORIES:

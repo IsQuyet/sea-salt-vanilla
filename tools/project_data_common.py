@@ -1,21 +1,13 @@
-"""Shared matrix, packwiz, catalog, and dependency-analysis helpers."""
+"""Shared repository paths, matrix traversal, packwiz loading, and file I/O."""
 
 from __future__ import annotations
 
 import json
 import tomllib
-from collections import defaultdict
 from pathlib import Path
 from typing import Any, Iterator
 
-from modrinth_cache import (
-    MissingModrinthCacheError,
-    fetch_missing_modrinth_versions,
-    fetch_modrinth_project,
-    require_modrinth_version_cache,
-)
-from project_cache import cache_entry_has_error, get_project_cache_entry
-from project_data_identity import project_ref_key, project_refs_from_selected
+from project_data_identity import project_refs_from_selected
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,6 +17,8 @@ PACK = ROOT / "pack.toml"
 PROJECTS_PATH = DATA / "projects.json"
 OPTIONAL_PATH = DATA / "optional.json"
 DEPENDENCIES_PATH = DATA / "dependencies.json"
+PROJECT_CATALOG_PATH = DATA / "project-catalog.json"
+MODRINTH_LOCKS_PATH = DATA / "modrinth-locks.json"
 
 DEFAULT_PROJECT_TYPE = "mod"
 PROJECT_TYPE_METADATA = [
@@ -213,50 +207,6 @@ def iter_feature_versions(
                     yield group, section, row, version, version_data
 
 
-def normalize_project_ref(ref: Any, category_name: str | None = None) -> dict[str, Any] | None:
-    """Normalize a docs/config project reference into a compact metadata object."""
-    if ref is None:
-        return None
-    if isinstance(ref, dict):
-        normalized = dict(ref)
-        normalized.setdefault("type", category_project_type(category_name))
-        return normalized
-    return {
-        "source": "modrinth",
-        "key": str(ref).lower(),
-        "slug": str(ref).lower(),
-        "type": category_project_type(category_name),
-    }
-
-
-def collect_matrix_project_refs() -> list[dict[str, Any]]:
-    """Collect unique selected and alternative refs from all feature matrices."""
-    refs: dict[str, dict[str, Any]] = {}
-
-    def remember(ref: Any, category_name: str | None) -> None:
-        normalized = normalize_project_ref(ref, category_name)
-        if not normalized:
-            return
-        key = project_ref_key(normalized)
-        if key:
-            refs.setdefault(key, normalized)
-
-    for group, section, row, version, version_data in iter_feature_versions():
-        selected_refs = selected_project_refs_from_version(
-            group,
-            section,
-            row,
-            version,
-            version_data,
-        )
-        for selected_ref in selected_refs:
-            remember(selected_ref, group.get("_category"))
-        for alternative_ref in version_data.get("alternatives", []):
-            remember(alternative_ref, group.get("_category"))
-
-    return [refs[key] for key in sorted(refs)]
-
-
 def load_installed_projects() -> list[dict[str, Any]]:
     """Load packwiz project metadata from every supported project folder."""
     installed: list[dict[str, Any]] = []
@@ -272,6 +222,7 @@ def load_installed_projects() -> list[dict[str, Any]]:
             updates = metadata.get("update", {})
             modrinth = updates.get("modrinth", {})
             curseforge = updates.get("curseforge", {})
+            provider_conflict = bool(modrinth and curseforge)
             source = "unknown"
             project_id = ""
             modrinth_id = ""
@@ -301,6 +252,7 @@ def load_installed_projects() -> list[dict[str, Any]]:
                     "modrinth_id": modrinth_id,
                     "modrinth_version": modrinth_version,
                     "curseforge_file_id": curseforge_file_id,
+                    "provider_conflict": provider_conflict,
                 }
             )
 
@@ -327,179 +279,15 @@ def load_optional_meta() -> dict[str, dict[str, Any]]:
     return read_json(OPTIONAL_PATH)
 
 
-def load_project_catalog() -> dict[str, dict[str, Any]]:
-    """Return the generated catalog from optional and default project data."""
-    catalog = load_optional_meta()
-    catalog.update(load_project_meta())
-    return catalog
+def load_documentation_catalog() -> dict[str, dict[str, Any]]:
+    """Return metadata for every project referenced by rendered documentation."""
+    if not PROJECT_CATALOG_PATH.exists():
+        return {}
+    return read_json(PROJECT_CATALOG_PATH)
 
 
-def build_required_by(
-    installed: list[dict[str, Any]],
-    cache: dict[str, Any],
-    *,
-    allow_network: bool = True,
-) -> dict[str, list[dict[str, Any]]]:
-    installed_ids = {project["modrinth_id"] for project in installed if project["modrinth_id"]}
-    required_by: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    version_ids = [project["modrinth_version"] for project in installed]
-    if allow_network:
-        fetch_missing_modrinth_versions(version_ids, cache)
-    else:
-        require_modrinth_version_cache(version_ids, cache)
-
-    for project in installed:
-        version_data = cache.get(project["modrinth_version"])
-        if not version_data:
-            continue
-        for dependency in version_data.get("dependencies", []):
-            if dependency.get("dependency_type") != "required":
-                continue
-            project_id = str(dependency.get("project_id") or "")
-            if project_id and project_id in installed_ids:
-                required_by[project_id].append(project)
-    return required_by
-
-
-def build_missing_required(
-    installed: list[dict[str, Any]],
-    cache: dict[str, Any],
-    project_cache: dict[str, Any],
-    *,
-    allow_network: bool = True,
-) -> dict[str, dict[str, Any]]:
-    """Collect required Modrinth dependencies absent from all project folders."""
-    installed_ids = {project["modrinth_id"] for project in installed if project["modrinth_id"]}
-    version_ids = [project["modrinth_version"] for project in installed]
-    if allow_network:
-        fetch_missing_modrinth_versions(version_ids, cache)
-    else:
-        require_modrinth_version_cache(version_ids, cache)
-
-    dependents_by_id: dict[str, set[str]] = defaultdict(set)
-    for project in installed:
-        version_data = cache.get(project["modrinth_version"])
-        if not version_data:
-            continue
-        for dependency in version_data.get("dependencies", []):
-            if dependency.get("dependency_type") != "required":
-                continue
-            project_id = str(dependency.get("project_id") or "")
-            if project_id and project_id not in installed_ids:
-                dependents_by_id[project_id].add(project["slug"])
-
-    missing: dict[str, dict[str, Any]] = {}
-    for project_id, dependents in sorted(dependents_by_id.items()):
-        dependency_project = (
-            fetch_modrinth_project(project_id, project_cache)
-            if allow_network
-            else get_project_cache_entry(project_id, project_cache)
-        )
-        if not allow_network and dependency_project is None:
-            raise MissingModrinthCacheError(
-                "Missing Modrinth project cache entry required for offline project-data checks: "
-                f"{project_id}. Run python tools/refresh_modrinth_cache.py before running check."
-            )
-
-        missing[project_id] = {
-            "name": str((dependency_project or {}).get("title") or project_id),
-            "type": str((dependency_project or {}).get("project_type") or ""),
-            "slug": str((dependency_project or {}).get("slug") or ""),
-            "required_by": sorted(dependents),
-        }
-    return missing
-
-
-def build_documented_sets(project_meta: dict[str, dict[str, Any]]) -> dict[str, set[str]]:
-    documented = {
-        "refs": set(),
-        "slugs": set(),
-        "names": set(),
-        "ids": set(),
-        "source_ids": set(),
-    }
-
-    def remember_project(project: dict[str, Any]) -> None:
-        if slug := project.get("slug"):
-            documented["slugs"].add(str(slug).lower())
-        if name := project.get("name"):
-            documented["names"].add(str(name).lower())
-        if project_id := project.get("id"):
-            documented["ids"].add(str(project_id))
-            if source := project.get("source"):
-                documented["source_ids"].add(f"{source}:{project_id}")
-        if modrinth_id := project.get("modrinth_id"):
-            documented["ids"].add(str(modrinth_id))
-
-    def remember_ref(ref: Any) -> None:
-        if not ref:
-            return
-        if isinstance(ref, dict):
-            remember_project(ref)
-            key = project_ref_key(ref)
-            if key and (project := project_meta.get(key)):
-                remember_project(project)
-            return
-
-        key = str(ref)
-        documented["refs"].add(key.lower())
-        if project := project_meta.get(key):
-            remember_project(project)
-
-    for group, section, row, version, version_data in iter_feature_versions():
-        selected_refs = selected_project_refs_from_version(
-            group,
-            section,
-            row,
-            version,
-            version_data,
-        )
-        for selected_ref in selected_refs:
-            remember_ref(selected_ref)
-        for alternative_ref in version_data.get("alternatives", []):
-            remember_ref(alternative_ref)
-    return documented
-
-
-def is_documented(project: dict[str, Any], documented: dict[str, set[str]]) -> bool:
-    source_id = (
-        f"{project.get('source')}:{project.get('id')}"
-        if project.get("source") and project.get("id")
-        else ""
-    )
-    return (
-        project["slug"] in documented["refs"]
-        or project["slug"] in documented["slugs"]
-        or project["name"].lower() in documented["names"]
-        or (source_id and source_id in documented["source_ids"])
-        or (project.get("id") and str(project["id"]) in documented["ids"])
-        or (project["modrinth_id"] and project["modrinth_id"] in documented["ids"])
-    )
-
-
-def required_by_names(project_id: str, required_by: dict[str, list[dict[str, Any]]]) -> str:
-    names = sorted({project["name"] for project in required_by.get(project_id, [])})
-    return ", ".join(names)
-
-
-def expected_dependency_data(
-    installed: list[dict[str, Any]],
-    documented: dict[str, set[str]],
-    required_by: dict[str, list[dict[str, Any]]],
-) -> dict[str, dict[str, Any]]:
-    entries: dict[str, dict[str, Any]] = {}
-    for project in installed:
-        if is_documented(project, documented):
-            continue
-        dependents = required_by.get(project["modrinth_id"], [])
-        if not dependents:
-            continue
-        entries[project["slug"]] = {
-            "name": project["name"],
-            "type": project["type"],
-            "source": project.get("source") or "unknown",
-            "slug": project["slug"],
-            "id": project.get("id") or project["modrinth_id"],
-            "required_by": sorted({dependent["slug"] for dependent in dependents}),
-        }
-    return dict(sorted(entries.items()))
+def load_modrinth_locks() -> dict[str, Any]:
+    """Return the tracked locked-version graph used by offline checks."""
+    if not MODRINTH_LOCKS_PATH.exists():
+        return {}
+    return read_json(MODRINTH_LOCKS_PATH)

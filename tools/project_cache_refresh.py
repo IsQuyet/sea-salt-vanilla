@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 from project_cache import get_project_cache_entry, get_project_cache_error
+from project_refresh_plan import PlannedProject
 
 
 MAX_DISPLAYED_REFRESH_ERRORS = 50
@@ -15,37 +16,62 @@ def verbose_print(message: str, *, verbose: bool) -> None:
         print(message, flush=True)
 
 
-def missing_project_cache_refs(
-    project_refs: list[str],
+def planned_project_is_cached(
+    project: PlannedProject,
+    project_cache: dict[str, Any],
+) -> bool:
+    """Return whether every known provider coordinate resolves from the cache."""
+    return bool(project.cache_keys) and all(
+        get_project_cache_entry(cache_key, project_cache) is not None
+        for cache_key in project.cache_keys
+    )
+
+
+def planned_projects_requiring_refresh(
+    projects: list[PlannedProject],
     project_cache: dict[str, Any],
     *,
-    force: bool = False,
-) -> list[str]:
-    """Return project refs that would be fetched in the current refresh mode."""
+    force: bool,
+) -> list[PlannedProject]:
+    """Return logical provider projects requiring one lookup each."""
     return [
-        project_ref
-        for project_ref in sorted(set(project_refs))
-        if project_ref and (force or get_project_cache_entry(project_ref, project_cache) is None)
+        project
+        for project in projects
+        if force or not planned_project_is_cached(project, project_cache)
     ]
 
 
-def collect_project_refresh_errors(
-    project_refs: list[str],
+def collect_planned_project_refresh_errors(
+    projects: list[PlannedProject],
     project_cache: dict[str, Any],
 ) -> list[str]:
-    """Collect stored fetch errors or missing metadata for required project refs."""
+    """Collect one clear error for each unresolved logical provider project."""
     errors: list[str] = []
-    for project_ref in sorted(set(project_refs)):
-        if not project_ref:
+    for project in projects:
+        if planned_project_is_cached(project, project_cache):
             continue
 
-        error_entry = get_project_cache_error(project_ref, project_cache)
+        error_entry = next(
+            (
+                cached_error
+                for cache_key in project.cache_keys
+                if (cached_error := get_project_cache_error(cache_key, project_cache))
+            ),
+            None,
+        )
+        display_ref = project.slug or project.project_id
         if error_entry:
-            errors.append(f"{project_ref}: {error_entry.get('error')}")
+            errors.append(f"{display_ref}: {error_entry.get('error')}")
             continue
 
-        if get_project_cache_entry(project_ref, project_cache) is None:
-            errors.append(f"{project_ref}: missing project metadata")
+        missing_keys = [
+            cache_key
+            for cache_key in project.cache_keys
+            if get_project_cache_entry(cache_key, project_cache) is None
+        ]
+        errors.append(
+            f"{display_ref}: missing project metadata for {', '.join(missing_keys)}"
+        )
     return errors
 
 

@@ -5,215 +5,94 @@ from __future__ import annotations
 
 import argparse
 import json
-from datetime import UTC, datetime
 from typing import Any
 
 from curseforge_cache import (
     CURSEFORGE_MANIFEST_CACHE,
     CURSEFORGE_PROJECT_CACHE,
+    CurseForgeCacheError,
     CurseForgeFetchError,
     CurseForgeProjectRef,
     curseforge_api_key,
     fetch_missing_curseforge_projects,
     load_curseforge_project_cache,
 )
-from project_cache import (
-    get_project_cache_entry,
-    get_project_cache_error,
-    project_cache_alias_count,
-    project_cache_project_count,
-)
+from project_cache import retain_project_cache_entries
+from project_cache_manifest import build_provider_manifest
 from project_cache_refresh import (
+    collect_planned_project_refresh_errors,
     format_refresh_error_report,
+    planned_project_is_cached,
+    planned_projects_requiring_refresh,
     verbose_print,
 )
-from project_data_common import (
-    PROJECT_TYPE_CURSEFORGE_PATHS,
-    TARGET_VERSION,
-    collect_matrix_project_refs,
-    load_installed_projects,
-    write_json,
-)
+from project_data_common import load_installed_projects, write_json
+from project_refresh_plan import PlannedProject, ProjectRefreshPlan, build_project_refresh_plan
 
 
-def curseforge_category_path(project_type: str) -> str:
-    """Return the CurseForge URL category for one normalized project type."""
-    return PROJECT_TYPE_CURSEFORGE_PATHS.get(project_type, "mc-mods")
+def curseforge_metadata_source() -> str:
+    """Return the active CurseForge metadata adapter name."""
+    return "curseforge-api" if curseforge_api_key() else "cfwidget"
 
 
-def project_ref_from_installed(project: dict[str, Any]) -> CurseForgeProjectRef | None:
-    """Build a category-aware CurseForge ref from installed packwiz metadata."""
-    if project.get("source") != "curseforge":
-        return None
-
-    project_id = str(project.get("id") or "")
-    slug = str(project.get("slug") or "").lower()
-    if not project_id and not slug:
-        return None
-
-    project_type = str(project.get("type") or "mod")
+def curseforge_ref_from_planned_project(
+    project: PlannedProject,
+) -> CurseForgeProjectRef:
+    """Adapt one provider-neutral plan entry to a CurseForge request."""
     return CurseForgeProjectRef(
-        project_id=project_id,
-        slug=slug,
-        category_path=curseforge_category_path(project_type),
+        project_id=project.project_id,
+        slug=project.slug,
+        project_type=project.project_type or "mod",
     )
 
 
-def project_ref_from_matrix(ref: dict[str, Any]) -> CurseForgeProjectRef | None:
-    """Build a category-aware CurseForge ref from a docs/config project ref."""
-    if str(ref.get("source") or "").lower() != "curseforge":
-        return None
-
-    project_id = str(ref.get("id") or "")
-    slug = str(ref.get("slug") or ref.get("key") or "").lower()
-    if not project_id and not slug:
-        return None
-
-    project_type = str(ref.get("type") or "mod")
-    return CurseForgeProjectRef(
-        project_id=project_id,
-        slug=slug,
-        category_path=curseforge_category_path(project_type),
-    )
-
-
-def project_refs_identify_same_project(
-    existing: CurseForgeProjectRef,
-    candidate: CurseForgeProjectRef,
-) -> bool:
-    """Return whether two refs identify the same CurseForge project."""
-    same_project_id = bool(
-        existing.project_id
-        and candidate.project_id
-        and existing.project_id == candidate.project_id
-    )
-    same_category_slug = bool(
-        existing.slug
-        and candidate.slug
-        and existing.slug == candidate.slug
-        and existing.category_path == candidate.category_path
-    )
-    return same_project_id or same_category_slug
-
-
-def remember_project_ref(
-    project_refs: list[CurseForgeProjectRef],
-    candidate: CurseForgeProjectRef | None,
-) -> None:
-    """Merge duplicate ID and slug forms into one structured project ref."""
-    if candidate is None:
+def require_conflict_free_plan(plan: ProjectRefreshPlan) -> None:
+    """Stop before provider access when same-provider identities contradict."""
+    if not plan.conflicts:
         return
-
-    for index, existing in enumerate(project_refs):
-        if not project_refs_identify_same_project(existing, candidate):
-            continue
-
-        project_refs[index] = CurseForgeProjectRef(
-            project_id=existing.project_id or candidate.project_id,
-            slug=existing.slug or candidate.slug,
-            category_path=existing.category_path or candidate.category_path,
-        )
-        return
-
-    project_refs.append(candidate)
-
-
-def collect_project_refs_to_refresh(
-    installed_projects: list[dict[str, Any]],
-) -> list[CurseForgeProjectRef]:
-    """Collect unique category-aware CurseForge projects from docs and packwiz."""
-    project_refs: list[CurseForgeProjectRef] = []
-    for project in installed_projects:
-        remember_project_ref(project_refs, project_ref_from_installed(project))
-
-    for ref in collect_matrix_project_refs():
-        remember_project_ref(project_refs, project_ref_from_matrix(ref))
-
-    return sorted(
-        project_refs,
-        key=lambda ref: (ref.category_path, ref.slug, ref.project_id),
+    raise CurseForgeFetchError(
+        "Project refresh plan contains identity conflicts.\n"
+        f"{format_refresh_error_report(plan.conflicts)}"
     )
-
-
-def project_ref_is_cached(
-    project_ref: CurseForgeProjectRef,
-    project_cache: dict[str, Any],
-) -> bool:
-    """Return whether every known ID and slug alias resolves from the cache."""
-    return bool(project_ref.cache_keys) and all(
-        get_project_cache_entry(cache_key, project_cache) is not None
-        for cache_key in project_ref.cache_keys
-    )
-
-
-def missing_curseforge_project_refs(
-    project_refs: list[CurseForgeProjectRef],
-    project_cache: dict[str, Any],
-    *,
-    force: bool,
-) -> list[CurseForgeProjectRef]:
-    """Return projects that would be fetched in the current refresh mode."""
-    return [
-        project_ref
-        for project_ref in project_refs
-        if force or not project_ref_is_cached(project_ref, project_cache)
-    ]
-
-
-def collect_curseforge_refresh_errors(
-    project_refs: list[CurseForgeProjectRef],
-    project_cache: dict[str, Any],
-) -> list[str]:
-    """Collect one clear provider error for each unresolved project."""
-    errors: list[str] = []
-    for project_ref in project_refs:
-        if project_ref_is_cached(project_ref, project_cache):
-            continue
-
-        error_entry = None
-        for cache_key in project_ref.cache_keys:
-            error_entry = get_project_cache_error(cache_key, project_cache)
-            if error_entry:
-                break
-
-        display_ref = project_ref.slug or project_ref.project_id
-        if error_entry:
-            errors.append(f"{display_ref}: {error_entry.get('error')}")
-        else:
-            errors.append(f"{display_ref}: missing project metadata")
-    return errors
 
 
 def refresh_project_cache(
-    installed_projects: list[dict[str, Any]],
+    plan: ProjectRefreshPlan,
     project_cache: dict[str, Any],
     *,
     force: bool,
     dry_run: bool,
     verbose: bool,
-) -> tuple[list[CurseForgeProjectRef], list[CurseForgeProjectRef]]:
-    verbose_print(
-        "Collecting CurseForge project refs from docs and packwiz metadata...",
-        verbose=verbose,
-    )
-    project_refs = collect_project_refs_to_refresh(installed_projects)
-    missing_project_refs = missing_curseforge_project_refs(
-        project_refs,
+) -> tuple[list[PlannedProject], int, int, int]:
+    """Refresh every planned CurseForge project exactly once."""
+    require_conflict_free_plan(plan)
+    provider_projects = plan.projects_for("curseforge")
+    pending_projects = planned_projects_requiring_refresh(
+        provider_projects,
         project_cache,
         force=force,
     )
-    metadata_source = "CurseForge API" if curseforge_api_key() else "CFWidget"
-    verbose_print(f"Metadata source: {metadata_source}", verbose=verbose)
     verbose_print(
-        f"Projects: {len(project_refs)} total, {len(missing_project_refs)} to fetch",
+        f"Metadata source: {curseforge_metadata_source()}",
+        verbose=verbose,
+    )
+    verbose_print(
+        f"Projects: {len(provider_projects)} unique, {len(pending_projects)} to fetch",
         verbose=verbose,
     )
 
-    if not dry_run:
-        verbose_print("Fetching missing CurseForge project metadata...", verbose=verbose)
-        fetch_missing_curseforge_projects(missing_project_refs, project_cache, force=force)
+    if not dry_run and pending_projects:
+        verbose_print("Fetching CurseForge project metadata...", verbose=verbose)
+        provider_refs = [
+            curseforge_ref_from_planned_project(project)
+            for project in pending_projects
+        ]
+        fetch_missing_curseforge_projects(provider_refs, project_cache, force=force)
 
-    project_errors = collect_curseforge_refresh_errors(project_refs, project_cache)
+    project_errors = collect_planned_project_refresh_errors(
+        provider_projects,
+        project_cache,
+    )
     if project_errors and not dry_run:
         raise CurseForgeFetchError(
             "Could not refresh all required CurseForge project metadata. "
@@ -221,40 +100,14 @@ def refresh_project_cache(
             f"{format_refresh_error_report(project_errors)}"
         )
 
-    return project_refs, missing_project_refs
-
-
-def build_refresh_summary(
-    *,
-    force: bool,
-    dry_run: bool,
-    installed_projects: list[dict[str, Any]],
-    project_refs: list[CurseForgeProjectRef],
-    missing_project_refs: list[CurseForgeProjectRef],
-    project_cache: dict[str, Any],
-) -> dict[str, int | str | bool]:
-    return {
-        "force": force,
-        "dry_run": dry_run,
-        "metadata_source": "curseforge-api" if curseforge_api_key() else "cfwidget",
-        "target_minecraft_version": TARGET_VERSION,
-        "installed_projects": len(installed_projects),
-        "curseforge_projects": len(project_refs),
-        "curseforge_projects_to_fetch": len(missing_project_refs),
-        "project_cache_projects": project_cache_project_count(project_cache),
-        "project_cache_aliases": project_cache_alias_count(project_cache),
-    }
-
-
-def write_refresh_outputs(*, summary: dict[str, int | str | bool], project_cache: dict[str, Any]) -> None:
-    write_json(CURSEFORGE_PROJECT_CACHE, project_cache)
-    manifest = {
-        "schema_version": 1,
-        "generated_at": datetime.now(UTC).isoformat(),
-        "generator": "tools/refresh_curseforge_cache.py",
-        **summary,
-    }
-    write_json(CURSEFORGE_MANIFEST_CACHE, manifest)
+    fetched_count = 0
+    if not dry_run:
+        fetched_count = sum(
+            planned_project_is_cached(project, project_cache)
+            for project in pending_projects
+        )
+    failed_count = 0 if dry_run else len(project_errors)
+    return provider_projects, len(pending_projects), fetched_count, failed_count
 
 
 def refresh_cache(
@@ -262,44 +115,95 @@ def refresh_cache(
     force: bool = False,
     dry_run: bool = False,
     verbose: bool = False,
-) -> dict[str, int | str | bool]:
+) -> dict[str, Any]:
+    """Refresh the CurseForge project cache and return its common manifest."""
     installed_projects = load_installed_projects()
     project_cache = load_curseforge_project_cache()
-    project_refs, missing_project_refs = refresh_project_cache(
+    plan = build_project_refresh_plan(
         installed_projects,
+        {"curseforge": project_cache},
+    )
+    (
+        provider_projects,
+        projects_to_fetch_count,
+        projects_fetched_count,
+        projects_failed_count,
+    ) = refresh_project_cache(
+        plan,
         project_cache,
         force=force,
         dry_run=dry_run,
         verbose=verbose,
     )
-    summary = build_refresh_summary(
+
+    manifest = build_provider_manifest(
+        provider="curseforge",
+        metadata_source=curseforge_metadata_source(),
+        target_minecraft_version=plan.target_minecraft_version,
         force=force,
         dry_run=dry_run,
-        installed_projects=installed_projects,
-        project_refs=project_refs,
-        missing_project_refs=missing_project_refs,
+        scopes=["projects"],
+        plan=plan,
+        provider_projects=provider_projects,
+        projects_to_fetch=projects_to_fetch_count,
+        projects_fetched=projects_fetched_count,
+        projects_failed=projects_failed_count,
         project_cache=project_cache,
     )
 
     if not dry_run:
-        write_refresh_outputs(summary=summary, project_cache=project_cache)
-
-    return summary
+        retain_project_cache_entries(
+            [project.lookup_key for project in provider_projects],
+            project_cache,
+        )
+        write_json(CURSEFORGE_PROJECT_CACHE, project_cache)
+        manifest = build_provider_manifest(
+            provider="curseforge",
+            metadata_source=curseforge_metadata_source(),
+            target_minecraft_version=plan.target_minecraft_version,
+            force=force,
+            dry_run=dry_run,
+            scopes=["projects"],
+            plan=plan,
+            provider_projects=provider_projects,
+            projects_to_fetch=projects_to_fetch_count,
+            projects_fetched=projects_fetched_count,
+            projects_failed=projects_failed_count,
+            project_cache=project_cache,
+        )
+        write_json(CURSEFORGE_MANIFEST_CACHE, manifest)
+    return manifest
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--force", action="store_true", help="Refetch projects even if cached.")
-    parser.add_argument("--dry-run", action="store_true", help="Report what would be refreshed without writing caches.")
-    parser.add_argument("--verbose", action="store_true", help="Print refresh progress before the JSON summary.")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Fetch every required CurseForge project even when already cached.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Report the project refresh plan without fetching or writing caches.",
+    )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Print refresh progress before the JSON manifest.",
+    )
     args = parser.parse_args()
 
     try:
-        summary = refresh_cache(force=args.force, dry_run=args.dry_run, verbose=args.verbose)
-    except CurseForgeFetchError as error:
+        manifest = refresh_cache(
+            force=args.force,
+            dry_run=args.dry_run,
+            verbose=args.verbose,
+        )
+    except (CurseForgeCacheError, CurseForgeFetchError) as error:
         raise SystemExit(str(error)) from error
 
-    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    print(json.dumps(manifest, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sync the global project registry used by the feature matrices."""
+"""Generate target project sets and the all-version documentation catalog."""
 
 from __future__ import annotations
 
@@ -13,11 +13,13 @@ from project_cache import get_project_cache_entry
 from project_data_common import (
     OPTIONAL_PATH,
     PROJECTS_PATH,
-    category_project_type,
-    iter_feature_versions,
-    selected_project_refs_from_version,
+    PROJECT_CATALOG_PATH,
 )
-from project_data_identity import project_entry_key, project_ref_key
+from project_data_contract import (
+    collect_project_set_overlap_issues,
+    collect_documentation_project_refs,
+)
+from project_data_identity import normalize_project_source, project_entry_key, provider_ref_key
 
 
 def project_json_text(data: dict[str, dict[str, Any]]) -> str:
@@ -25,155 +27,106 @@ def project_json_text(data: dict[str, dict[str, Any]]) -> str:
 
 
 def normalize_entry(entry: dict[str, Any]) -> dict[str, Any]:
-    ordered: dict[str, Any] = {}
-    for key in ["name", "type", "source", "slug", "id"]:
-        if key in entry and entry[key]:
-            ordered[key] = entry[key]
-    for key in sorted(entry):
-        if key not in ordered and entry[key]:
-            ordered[key] = entry[key]
-    return ordered
+    """Order the stable generated project fields for readable diffs."""
+    ordered_entry: dict[str, Any] = {}
+    for field_name in ["name", "type", "source", "slug", "id"]:
+        if entry.get(field_name):
+            ordered_entry[field_name] = entry[field_name]
+    return ordered_entry
 
 
-def display_name_from_slug(slug: str) -> str:
-    """Create a readable fallback name without requiring network metadata."""
-    return " ".join(word.capitalize() for word in slug.replace("_", "-").split("-") if word)
-
-
-def cached_project(
-    source: str,
-    project_ref: str,
-    project_caches: dict[str, dict[str, Any]],
-) -> dict[str, Any] | None:
-    """Read provider metadata without blocking registry generation on the network."""
-    project_cache = project_caches.get(source)
-    if not project_cache:
-        return None
-    return get_project_cache_entry(project_ref, project_cache)
-
-
-def entry_from_modrinth(project: dict[str, Any], documented_type: str | None = None) -> dict[str, Any]:
-    project_type = documented_type or str(project.get("project_type") or "")
-    return normalize_entry(
-        {
-            "name": project.get("title"),
-            "source": "modrinth",
-            "type": project_type,
-            "slug": project.get("slug"),
-            "id": project.get("id"),
-        }
-    )
-
-
-def entry_from_curseforge(project: dict[str, Any], documented_type: str | None = None) -> dict[str, Any]:
-    return normalize_entry(
-        {
-            "name": project.get("name"),
-            "source": "curseforge",
-            "type": documented_type or "mod",
-            "slug": project.get("slug"),
-            "id": project.get("id"),
-        }
-    )
-
-
-def entry_from_documented_ref(
+def resolve_cached_project(
     ref: dict[str, Any],
     project_caches: dict[str, dict[str, Any]],
 ) -> dict[str, Any]:
-    source = str(ref.get("source") or "modrinth")
-    slug = str(ref.get("slug") or ref.get("key") or "").lower()
-    project_type = str(ref.get("type") or "mod")
+    """Resolve one documented ref through its provider project cache."""
+    source = normalize_project_source(ref.get("source"))
+    if source not in {"modrinth", "curseforge"}:
+        raise ValueError(f"Unsupported project source {source!r} in docs config.")
 
-    project = cached_project(source, slug, project_caches) if slug else None
-    if source == "modrinth" and project:
-        return entry_from_modrinth(project, project_type)
-    if source == "curseforge" and project:
-        return entry_from_curseforge(project, project_type)
+    project_slug = str(ref.get("slug") or ref.get("key") or "").lower()
+    lookup_ref = str(ref.get("id") or project_slug)
+    if not lookup_ref:
+        raise ValueError(f"Project ref {ref!r} has neither an id nor a slug.")
+
+    project_cache = project_caches.get(source, {})
+    cached_project = get_project_cache_entry(lookup_ref, project_cache)
+    if not cached_project:
+        raise ValueError(
+            f"Missing {source} project metadata for {lookup_ref}. "
+            f"Run python tools/refresh_{source}_cache.py before generating project data."
+        )
 
     return normalize_entry(
         {
-            "name": ref.get("name") or display_name_from_slug(slug),
-            "type": project_type,
+            "name": cached_project.get("name"),
+            "type": ref.get("type") or cached_project.get("type"),
             "source": source,
-            "slug": slug,
-            "id": ref.get("id"),
+            "slug": cached_project.get("slug"),
+            "id": cached_project.get("id"),
         }
     )
-
-
-def remember_project_ref(refs: dict[str, dict[str, Any]], ref: Any, project_type: str) -> None:
-    if ref is None:
-        return
-
-    if isinstance(ref, dict):
-        documented_ref = dict(ref)
-    else:
-        documented_ref = {"source": "modrinth", "slug": str(ref).lower()}
-
-    documented_ref.setdefault("type", project_type)
-    key = project_ref_key(documented_ref)
-    if key:
-        refs.setdefault(key, documented_ref)
-
-
-def collect_documented_project_refs() -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]]]:
-    default_refs: dict[str, dict[str, Any]] = {}
-    optional_refs: dict[str, dict[str, Any]] = {}
-
-    for group, section, row, version, version_data in iter_feature_versions():
-        is_optional_group = bool(group.get("_optional"))
-        project_type = category_project_type(str(group.get("_category") or ""))
-        refs = optional_refs if is_optional_group else default_refs
-        selected_refs = selected_project_refs_from_version(
-            group,
-            section,
-            row,
-            version,
-            version_data,
-        )
-        for selected_ref in selected_refs:
-            remember_project_ref(refs, selected_ref, project_type)
-
-        for alternative_ref in version_data.get("alternatives", []):
-            remember_project_ref(optional_refs, alternative_ref, project_type)
-
-    for key in list(optional_refs):
-        if key in default_refs:
-            del optional_refs[key]
-
-    return default_refs, optional_refs
 
 
 def build_project_catalog(
     refs: dict[str, dict[str, Any]],
     project_caches: dict[str, dict[str, Any]],
 ) -> dict[str, dict[str, Any]]:
-    entries = {
-        generated_key: entry_from_documented_ref(ref, project_caches)
-        for key, ref in refs.items()
-        if (generated_key := project_entry_key(ref, key))
-    }
-    return dict(sorted(entries.items()))
+    """Resolve refs into a canonical slug-keyed generated catalog."""
+    catalog: dict[str, dict[str, Any]] = {}
+
+    for fallback_key, ref in refs.items():
+        entry = resolve_cached_project(ref, project_caches)
+        catalog_key = project_entry_key(entry, fallback_key)
+        if not catalog_key:
+            raise ValueError(f"Project ref {ref!r} has no canonical catalog slug.")
+
+        existing_entry = catalog.get(catalog_key)
+        if existing_entry:
+            existing_identity = provider_ref_key(existing_entry)
+            candidate_identity = provider_ref_key(entry)
+            if existing_identity != candidate_identity:
+                raise ValueError(
+                    f"Catalog slug {catalog_key} is used by both "
+                    f"{existing_identity} and {candidate_identity}."
+                )
+            continue
+        catalog[catalog_key] = entry
+
+    return dict(sorted(catalog.items()))
 
 
 def main() -> None:
-    default_refs, optional_refs = collect_documented_project_refs()
+    documented_refs = collect_documentation_project_refs()
     project_caches = {
         "modrinth": load_modrinth_project_cache(),
         "curseforge": load_curseforge_project_cache(),
     }
-    expected_default_catalog = build_project_catalog(default_refs, project_caches)
-    expected_optional_catalog = build_project_catalog(optional_refs, project_caches)
-    expected_files = {
-        PROJECTS_PATH: project_json_text(expected_default_catalog),
-        OPTIONAL_PATH: project_json_text(expected_optional_catalog),
-    }
 
-    PROJECTS_PATH.write_text(expected_files[PROJECTS_PATH], encoding="utf-8", newline="\n")
-    OPTIONAL_PATH.write_text(expected_files[OPTIONAL_PATH], encoding="utf-8", newline="\n")
-    print(f"Generated {Path('data/projects.json')}")
-    print(f"Generated {Path('data/optional.json')}")
+    default_catalog = build_project_catalog(documented_refs.defaults, project_caches)
+    optional_catalog = build_project_catalog(documented_refs.optional, project_caches)
+    documentation_catalog = build_project_catalog(
+        documented_refs.all_versions,
+        project_caches,
+    )
+
+    catalog_contract_issues = collect_project_set_overlap_issues(
+        default_catalog,
+        optional_catalog,
+        left_label="P",
+        right_label="O",
+    )
+    if catalog_contract_issues:
+        raise ValueError("\n".join(catalog_contract_issues))
+
+    expected_files = {
+        PROJECTS_PATH: project_json_text(default_catalog),
+        OPTIONAL_PATH: project_json_text(optional_catalog),
+        PROJECT_CATALOG_PATH: project_json_text(documentation_catalog),
+    }
+    for output_path, output_text in expected_files.items():
+        output_path.write_text(output_text, encoding="utf-8", newline="\n")
+        print(f"Generated {Path('data') / output_path.name}")
 
 
 if __name__ == "__main__":
