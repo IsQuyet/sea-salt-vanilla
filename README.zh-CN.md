@@ -1,6 +1,13 @@
+<div align="center">
+
 # Sea Salt Vanilla
 
 [English](README.md) | [简体中文](README.zh-CN.md)
+
+[![GitHub Releases](https://img.shields.io/badge/GitHub-Releases-181717?logo=github&logoColor=white)](https://github.com/IsQuyet/sea-salt-vanilla/releases)
+[![License](https://img.shields.io/github/license/IsQuyet/sea-salt-vanilla?label=License&color=blue)](LICENSE)
+
+</div>
 
 海盐香草（Sea Salt Vanilla）是一个以客户端体验为核心的 Fabric 整合包，面向单人游玩与多人联机，改善日常 Minecraft 客户端体验。
 
@@ -40,4 +47,4 @@
 
 ## 许可证说明
 
-本仓库计划仅包含整合包配置、元数据、文档，以及为本整合包制作的自定义脚本/资源。第三方 Mod、资源包、光影、数据包和其他外部内容的版权归其原作者所有，并遵循各自许可证。
+除非另有说明，本仓库原创的整合包配置、元数据、文档及自定义脚本/资源采用 [BSD 3-Clause 许可证](LICENSE)。第三方 Mod、资源包、光影包、数据包和其他外部内容的版权归其原作者所有，并遵循各自许可证。

@@ -1,6 +1,13 @@
+<div align="center">
+
 # Sea Salt Vanilla
 
 [English](README.md) | [简体中文](README.zh-CN.md)
+
+[![GitHub Releases](https://img.shields.io/badge/GitHub-Releases-181717?logo=github&logoColor=white)](https://github.com/IsQuyet/sea-salt-vanilla/releases)
+[![License](https://img.shields.io/github/license/IsQuyet/sea-salt-vanilla?label=License&color=blue)](LICENSE)
+
+</div>
 
 Sea Salt Vanilla is a client-first Fabric modpack that improves the everyday Minecraft client experience across singleplayer and multiplayer.
 
@@ -40,4 +47,4 @@ If this pack helps you enjoy Minecraft, please consider learning about the proje
 
 ## License notes
 
-This repository is intended to contain only modpack configuration, metadata, documentation, and custom scripts/assets made for the pack. Third-party mods, resource packs, shader packs, data packs, and other external content remain owned by their original authors and follow their own licenses.
+Unless otherwise noted, original modpack configuration, metadata, documentation, and custom scripts/assets in this repository are licensed under the [BSD 3-Clause License](LICENSE). Third-party mods, resource packs, shader packs, data packs, and other external content remain owned by their original authors and follow their own licenses.
