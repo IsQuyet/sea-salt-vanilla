@@ -157,7 +157,7 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 | Smooth GUI animation | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
 | Chat message animation | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |  |
 | Toast notification polish | [Fancy Toasts \| Better Advancements](https://modrinth.com/mod/fancy-toasts) |  |
-| Modern UI framework and text rendering | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
+| Font rendering | [Modern UI](https://modrinth.com/mod/modern-ui) | [Caxton](https://modrinth.com/mod/caxton) |
 
 ### Chat and social UI
 

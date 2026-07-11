@@ -646,13 +646,16 @@
           ]
         },
         {
-          "id": "modern-ui-framework-and-text-rendering",
+          "id": "font-rendering",
           "feature": {
-            "en": "Modern UI framework and text rendering",
-            "zh": "现代 UI 框架与文字渲染"
+            "en": "Font rendering",
+            "zh": "字体渲染"
           },
           "selected": [
             { "source": "modrinth", "slug": "modern-ui" }
+          ],
+          "alternatives": [
+            { "source": "modrinth", "slug": "caxton" }
           ]
         }
       ]

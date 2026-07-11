@@ -157,7 +157,7 @@
 | 平滑 GUI 动画 | [Smooth Gui](https://modrinth.com/mod/smooth-gui) |  |
 | 聊天消息动画 | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |  |
 | 弹出提示润色 | [Fancy Toasts \| Better Advancements](https://modrinth.com/mod/fancy-toasts) |  |
-| 现代 UI 框架与文字渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
+| 字体渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) | [Caxton](https://modrinth.com/mod/caxton) |
 
 ### 聊天与社交 UI
 
