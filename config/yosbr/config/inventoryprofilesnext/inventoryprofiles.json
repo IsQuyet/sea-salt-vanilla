@@ -1,0 +1,18 @@
+{
+    "Features": {
+        "highlight_foused_items": {
+            "value": false
+        }
+    },
+    "ModSettings": {
+        "first_run": false,
+        "highlight_foused_items": {
+            "value": false
+        }
+    },
+    "AutoRefillSettings": {
+        "auto_refill_enable_horbar_indicator_icons": {
+            "value": false
+        }
+    }
+}

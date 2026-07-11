@@ -195,7 +195,6 @@
 | 物品与配方浏览 | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |
 | 方块与实体信息浮层 | [Jade 🔍](https://modrinth.com/mod/jade) |
 | 额外物品与方块提示 | [Peek](https://modrinth.com/mod/peek) |
-| 增强提示信息 | [EnhancedTooltips](https://modrinth.com/mod/enhancedtooltips) |
 | 食物数值显示 | [AppleSkin](https://modrinth.com/mod/appleskin) |
 | 潜影盒预览 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |
 

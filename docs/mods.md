@@ -195,7 +195,6 @@ These entries make item, block, entity, food, and container information easier t
 | Item and recipe browser | [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) |
 | Block and entity overlay | [Jade 🔍](https://modrinth.com/mod/jade) |
 | Extra item and block hints | [Peek](https://modrinth.com/mod/peek) |
-| Enhanced tooltip details | [EnhancedTooltips](https://modrinth.com/mod/enhancedtooltips) |
 | Food value display | [AppleSkin](https://modrinth.com/mod/appleskin) |
 | Shulker box preview | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) |
 

@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/yosbr/config/DistantHorizons.toml"
+hash = "bc4ed73d7923be97359fe4abe3f5bc508049f51c8b48847315547c61c66accb0"
+
+[[files]]
+file = "config/yosbr/config/chatpatches.json"
+hash = "32f8f4b992625dc5963aa54097c4728256f616f2f7e90c07d83fc546dbd4a7cb"
+
+[[files]]
 file = "config/yosbr/config/fancymenu/assets/animation.afma.pw.toml"
 hash = "70eec7ffd3c3467aa091351698eb64c7cdd3b3d8b811c720e3377d575523226c"
 metafile = true
@@ -28,7 +36,7 @@ hash = "02cbd887ec1ef1afeaeee18422594677d68f3e1b52818435319598b9500bb651"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/customization/title_screen_layout.txt"
-hash = "3276510b5e807a0568e66dd396bf2692754e4c81319262082c2d20dcea4794e1"
+hash = "51d668a23ea4b162d27e1400e5df3f7ab9a2fb8463f655fac81b64664edc37fb"
 
 [[files]]
 file = "config/yosbr/config/fancymenu/options.txt"
@@ -39,8 +47,84 @@ file = "config/yosbr/config/global_packs.toml"
 hash = "6b7804008f006ae01058688e214bfc13ca5ebe82f46693018ffb5e9f07cf22df"
 
 [[files]]
+file = "config/yosbr/config/inventoryprofilesnext/inventoryprofiles.json"
+hash = "377c3fb857c5be7c1fa2ff112592021a96508c7a72d4dc65ad5f49aef6296c8a"
+
+[[files]]
+file = "config/yosbr/config/minihud.json"
+hash = "8cd8fee953c39a80182da000fb484562f6ce4d6116c4df01d1eb2ac949cc59d1"
+
+[[files]]
+file = "config/yosbr/config/packed_packs/config.json"
+hash = "60fdc2c02b1926b892815300c3b58f451e3d699fed2fdaf975d22b80965eec65"
+
+[[files]]
 file = "config/yosbr/config/stylisheffects-client.toml"
 hash = "408e0375b75824e8bc7446edc7db829ed627a6c0d69089947c51534143d0bbcc"
+
+[[files]]
+file = "config/yosbr/config/xaero/lib/client.cfg"
+hash = "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336"
+
+[[files]]
+file = "config/yosbr/config/xaero/lib/common.cfg"
+hash = "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2"
+
+[[files]]
+file = "config/yosbr/config/xaero/lib/profiles/default.cfg"
+hash = "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907"
+
+[[files]]
+file = "config/yosbr/config/xaero/lib/server_profiles/default.cfg"
+hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
+
+[[files]]
+file = "config/yosbr/config/xaero/minimap/client.cfg"
+hash = "c3a5f6ac41491bec17a6874f5da6cf39de1a71d2e3ea0bc414bb12375b7733bf"
+
+[[files]]
+file = "config/yosbr/config/xaero/minimap/common.cfg"
+hash = "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0"
+
+[[files]]
+file = "config/yosbr/config/xaero/minimap/default_radar_categories_client.json"
+hash = "b8ddf54611a9ab8c53177fc0d062321e9e731192b65b9e50d0fcb38a86a91696"
+
+[[files]]
+file = "config/yosbr/config/xaero/minimap/default_radar_categories_server.json"
+hash = "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd"
+
+[[files]]
+file = "config/yosbr/config/xaero/minimap/profiles/default.cfg"
+hash = "db49c4dde15db318eb25e8a43fa06992778f0e17b3a963fff5cbee35da11fb81"
+
+[[files]]
+file = "config/yosbr/config/xaero/minimap/profiles/info_display_config/default.cfg.txt"
+hash = "184e654fa1fc8ad09943c97c4e65ab78acb5b3cfca22417a831513d1b6d9bbc6"
+
+[[files]]
+file = "config/yosbr/config/xaero/minimap/server_profiles/default.cfg"
+hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
+
+[[files]]
+file = "config/yosbr/config/xaero/world-map/client.cfg"
+hash = "abd4818a60ff7355d6a9e9728655255161325966b94e864bcba22d6847dd16ea"
+
+[[files]]
+file = "config/yosbr/config/xaero/world-map/common.cfg"
+hash = "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d"
+
+[[files]]
+file = "config/yosbr/config/xaero/world-map/profiles/default.cfg"
+hash = "7b24c882801bcc7f0a8aedc625d419f661fa490fa0e9d5ebe39599a1ce2dcbd5"
+
+[[files]]
+file = "config/yosbr/config/xaero/world-map/server_profiles/default.cfg"
+hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
+
+[[files]]
+file = "config/yosbr/config/xaerohud.txt"
+hash = "6de57f88c55043cfafb952219205e2080da514284c822a277cd9f1ef804f0def"
 
 [[files]]
 file = "datapacks/continents.pw.toml"
@@ -300,11 +384,6 @@ metafile = true
 [[files]]
 file = "mods/elytra-contrails-mod.pw.toml"
 hash = "2ba255bde0903dcbd6c356d7f00becad023f05b68db87daeb79e8eaeb0fbab79"
-metafile = true
-
-[[files]]
-file = "mods/enhancedtooltips.pw.toml"
-hash = "4815423054d46084c5fd1dce2d963eb48dcdf4a6542afa28b3558a16d94b67b9"
 metafile = true
 
 [[files]]

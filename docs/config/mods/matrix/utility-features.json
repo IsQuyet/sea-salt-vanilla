@@ -52,16 +52,6 @@
           ]
         },
         {
-          "id": "enhanced-tooltip-details",
-          "feature": {
-            "en": "Enhanced tooltip details",
-            "zh": "增强提示信息"
-          },
-          "selected": [
-            { "source": "modrinth", "slug": "enhancedtooltips" }
-          ]
-        },
-        {
           "id": "food-value-display",
           "feature": {
             "en": "Food value display",
