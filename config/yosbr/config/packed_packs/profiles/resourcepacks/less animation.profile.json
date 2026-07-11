@@ -1,0 +1,27 @@
+{
+  "locked": false,
+  "name": "less animation",
+  "overrides": {},
+  "packIds": [
+    "file/SodiumTranslations.zip",
+    "flat_shulker_icons",
+    "file/Recolourful Containers 3.1.2 (1.19.4+).zip",
+    "file/Chat Reporting Helper.zip",
+    "file/LowOnFire v26.2§8.zip",
+    "file/EvenBetterEnchants_v2_r1.zip",
+    "file/§6§lVanilla Experience+§0.zip",
+    "file/Icon Fresh 1.2.zip",
+    "file/FA+Player-v1.1.zip",
+    "file/FreshAnimations_v1.10.4.zip",
+    "file/JustExpressions_v1.2.1.zip",
+    "file/Fancy_Beds-v4.1.zip",
+    "file/Stay_True_1.21.zip",
+    "file/Fast Better Grass.zip",
+    "cullleaves:smartleaves",
+    "subtle_effects:biome_color_water_particles",
+    "continuity:default",
+    "continuity:glass_pane_culling_fix",
+    "fabric",
+    "vanilla"
+  ]
+}

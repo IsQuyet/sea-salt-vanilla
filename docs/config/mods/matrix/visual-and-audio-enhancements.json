@@ -296,7 +296,8 @@
             "zh": "沉浸式视觉效果"
           },
           "selected": [
-            { "source": "modrinth", "slug": "perception" }
+            { "source": "modrinth", "slug": "perception" },
+            { "source": "modrinth", "slug": "shatterbyte-lib" }
           ]
         },
         {
@@ -652,16 +653,6 @@
           },
           "selected": [
             { "source": "modrinth", "slug": "modern-ui" }
-          ]
-        },
-        {
-          "id": "immersive-ui-interactions",
-          "feature": {
-            "en": "Immersive UI interactions",
-            "zh": "沉浸式 UI 交互"
-          },
-          "selected": [
-            { "source": "modrinth", "slug": "immersive-ui" }
           ]
         }
       ]

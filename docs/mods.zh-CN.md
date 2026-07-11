@@ -105,7 +105,7 @@
 | 爆炸效果 | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |  |
 | 弹射物视觉风格 | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | 挖掘视觉反馈 | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
-| 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception) |  |
+| 沉浸式视觉效果 | [Perception](https://modrinth.com/mod/perception), [ShatterLib \| OctoLib](https://modrinth.com/mod/shatterbyte-lib) |  |
 | 灵魂火燃烧视觉 | [Burn By Soul Fire](https://modrinth.com/mod/burn-by-soul-fire) |  |
 | 鞘翅飞行尾迹 | [Elytra Contrails Mod](https://modrinth.com/mod/elytra-contrails-mod) |  |
 
@@ -158,7 +158,6 @@
 | 聊天消息动画 | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |  |
 | 弹出提示润色 | [Fancy Toasts \| Better Advancements](https://modrinth.com/mod/fancy-toasts) |  |
 | 现代 UI 框架与文字渲染 | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
-| 沉浸式 UI 交互 | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
 
 ### 聊天与社交 UI
 
@@ -356,6 +355,7 @@
 | 物理音效 | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) |
 | 天气粒子氛围 | [Particle Rain](https://modrinth.com/mod/particle-rain) |
 | 写实镜头视角 | [Real Camera](https://modrinth.com/mod/real-camera) |
+| 沉浸式 UI 交互 | [Immersive UI](https://modrinth.com/mod/immersive-ui) |
 | 大气视觉氛围 | [ATMOSPHERICS](https://modrinth.com/mod/atmospherics) |
 | 烟雾效果改进 | [Better Smoke](https://modrinth.com/mod/better-smoke) |
 | 自然水体渲染 | [Natural Waters](https://modrinth.com/mod/natural-waters) |

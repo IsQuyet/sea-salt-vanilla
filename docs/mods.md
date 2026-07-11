@@ -105,7 +105,7 @@ These entries add client-side ambience, distant terrain, shader enhancements, pa
 | Explosion effects | [Explosive Enhancement](https://modrinth.com/mod/explosive-enhancement) |  |
 | Projectile visual style | [2D Projectiles ➵](https://modrinth.com/mod/twod_projectiles) |  |
 | Mining visual feedback | [Mining & Placing Animations](https://modrinth.com/mod/mining_and_placing_animations) |  |
-| Immersive visual effects | [Perception](https://modrinth.com/mod/perception) |  |
+| Immersive visual effects | [Perception](https://modrinth.com/mod/perception), [ShatterLib \| OctoLib](https://modrinth.com/mod/shatterbyte-lib) |  |
 | Soul fire burn visuals | [Burn By Soul Fire](https://modrinth.com/mod/burn-by-soul-fire) |  |
 | Elytra contrails | [Elytra Contrails Mod](https://modrinth.com/mod/elytra-contrails-mod) |  |
 
@@ -158,7 +158,6 @@ These entries adjust menus, UI motion, text rendering, and screen layout.
 | Chat message animation | [Chat Animation [Smooth Chat]](https://modrinth.com/mod/chatanimation) |  |
 | Toast notification polish | [Fancy Toasts \| Better Advancements](https://modrinth.com/mod/fancy-toasts) |  |
 | Modern UI framework and text rendering | [Modern UI](https://modrinth.com/mod/modern-ui) |  |
-| Immersive UI interactions | [Immersive UI](https://modrinth.com/mod/immersive-ui) |  |
 
 ### Chat and social UI
 
@@ -356,6 +355,7 @@ These entries can strongly shape visual or audio ambience, so they are kept as o
 | Sound physics | [Sound Physics Remastered](https://modrinth.com/mod/sound-physics-remastered) |
 | Weather particle ambience | [Particle Rain](https://modrinth.com/mod/particle-rain) |
 | Realistic camera perspective | [Real Camera](https://modrinth.com/mod/real-camera) |
+| Immersive UI interactions | [Immersive UI](https://modrinth.com/mod/immersive-ui) |
 | Atmospheric visual ambience | [ATMOSPHERICS](https://modrinth.com/mod/atmospherics) |
 | Better smoke effects | [Better Smoke](https://modrinth.com/mod/better-smoke) |
 | Natural water rendering | [Natural Waters](https://modrinth.com/mod/natural-waters) |

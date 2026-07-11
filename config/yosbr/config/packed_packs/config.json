@@ -9,7 +9,12 @@
     "hideIncompatibleWarnings": true,
     "additionalFolders": [],
     "rememberLastViewedProfile": false,
-    "profileOrder": []
+    "profileOrder": [
+      "more animation",
+      "default animation",
+      "less animation",
+      "no animation"
+    ]
   },
   "datapacks": {
     "replaceOriginal": true,

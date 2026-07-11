@@ -1,0 +1,9 @@
+#Tooltip Config
+[tooltip]
+	#Whether to enable Modern UI enhanced tooltip, or back to vanilla default.
+	enable = false
+
+#General Config
+[general]
+	#Use the vanilla GUI scale control and range.
+	useNewGuiScale = false

@@ -253,6 +253,16 @@
           ]
         },
         {
+          "id": "immersive-ui-interactions",
+          "feature": {
+            "en": "Immersive UI interactions",
+            "zh": "沉浸式 UI 交互"
+          },
+          "selected": [
+            { "source": "modrinth", "slug": "immersive-ui" }
+          ]
+        },
+        {
           "id": "atmospheric-visual-ambience",
           "feature": {
             "en": "Atmospheric visual ambience",
